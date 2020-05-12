@@ -5,6 +5,9 @@
 ![embellished B7-10](./assets/backgrounds/B7-10.png)
 ![B7-gallery, partially reverting to gameboy colour scheme](./assets/backgrounds/B7-gallery.png)
 
+# Current gameplay
+
+[![Watch the video](https://i9.ytimg.com/vi/ao587hBJDpk/mq1.jpg?sqp=CIOJ6_UF&rs=AOn4CLDfwfTD_M1oCaUTFKZUEfp9f8Swdg)](https://youtu.be/ao587hBJDpk)
 
 
 
