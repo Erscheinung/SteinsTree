@@ -3,7 +3,7 @@
 ![logo](./assets/backgrounds/logo.png)
 ![titlescreen](./assets/backgrounds/titlescreen.png)
 ![embellished B7-10](./assets/backgrounds/B7-10.png)
-![B7-gallery, partially reverting to gameboy colour scheme](./assets/backgrounds/B7 gallery.png)
+![B7-gallery, partially reverting to gameboy colour scheme](./assets/backgrounds/B7-gallery.png)
 
 
 
