@@ -18,6 +18,8 @@ This version makes the following changes.
 - Clone this repository
 - Add your ROM file as `rom/game.gb` (or edit romPath in js/other/mobile.js to point to your ROM file)
 - Upload to a webserver and visit index.html
+- #May not work for some browswers (only worked on Edge for me)
+- #You can also run the rom on a gameboy emulator
 
 ## Keyboard Controls
 
