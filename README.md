@@ -1,16 +1,3 @@
-# Current Scenes:
-
-![logo](./assets/backgrounds/logo.png)
-![titlescreen](./assets/backgrounds/titlescreen.png)
-![embellished B7-10](./assets/backgrounds/B7-10.png)
-![B7-gallery, partially reverting to gameboy colour scheme](./assets/backgrounds/B7-gallery.png)
-
-# Current gameplay
-
-[![Watch the video](https://i9.ytimg.com/vi/ao587hBJDpk/mq1.jpg?sqp=CIOJ6_UF&rs=AOn4CLDfwfTD_M1oCaUTFKZUEfp9f8Swdg)](https://youtu.be/ao587hBJDpk)
-
-
-
 # JavaScript GameBoy Color Emulator
 
 Fork of Grant Galitz's JavaScript GameBoy Color Emulator made for running a single ROM
@@ -31,8 +18,6 @@ This version makes the following changes.
 - Clone this repository
 - Add your ROM file as `rom/game.gb` (or edit romPath in js/other/mobile.js to point to your ROM file)
 - Upload to a webserver and visit index.html
-- # May not work for some browswers (only worked on Edge for me)
-- # You can also run the rom on a gameboy emulator
 
 ## Keyboard Controls
 
