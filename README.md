@@ -7,7 +7,7 @@
 
 # Current gameplay
 
-[![Watch the video](https://imgur.com/qD7zxI0)](https://youtu.be/ao587hBJDpk)
+[![Watch the video](https://i.imgur.com/qD7zxI0.jpg)](https://youtu.be/ao587hBJDpk)
 
 
 # JavaScript GameBoy Color Emulator
