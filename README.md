@@ -16,7 +16,9 @@
 
 [![Watch the video](https://i.imgur.com/qD7zxI0.jpg)](https://youtu.be/ao587hBJDpk)
 
-# HOW TO RUN THE GAME: either drag the game.gb file (in ./rom/game.gb) into bgb.exe or run index.html. If index.html doesn't run the game, use the emulator.
+# HOW TO RUN THE GAME: 
+
+either drag the game.gb file (in ./rom/game.gb) into bgb.exe or run index.html. If index.html doesn't run the game, use the emulator.
 
 
 ## Browser Controls:
@@ -35,13 +37,13 @@ Edit by changing `bindKeyboard` in `js/other/controls.js`.
 
 ## Emulator Controls:
 
+Up - Up Arrow  
 
-Up - Up Arrow 
-Down - Down Arrow 
-Left - Left Arrow
-Right - Right Arrow 
-A/Interact key - S 
-B/Back key - A button
+Down - Down Arrow   
+Left - Left Arrow  
+Right - Right Arrow   
+A/Interact key - S  
+B/Back key - A button  
 
 
 [Game backgrounds are given in the assets folder]
