@@ -12,14 +12,14 @@
 ![B7-lounge](./assets/backgrounds/B7-back-left.png)
 
 
-# Current gameplay Video
+# Sample gameplay Video
 
 [![Watch the video](https://i.imgur.com/qD7zxI0.jpg)](https://youtu.be/ao587hBJDpk)
 
 #HOW TO RUN THE GAME: either drag the game.gb file (in ./rom/game.gb) into bgb.exe or run index.html. If index.html doesn't run the game, use the emulator.
 
 
-##Browser Controls:
+## Browser Controls:
 
 Up - Up Arrow  
 Down - Down Arrow  
@@ -33,7 +33,7 @@ Select - Shift
 Edit by changing `bindKeyboard` in `js/other/controls.js`.
 
 
-##Emulator Controls:
+## Emulator Controls:
 
 Up - Up Arrow 
 Down - Down Arrow 
