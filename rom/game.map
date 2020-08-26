@@ -17,39 +17,41 @@ AREA .  .ABS.
 		l__LIT	0000
 		l__GSINITTAIL	0001
 		l__BSS	005E
-		l__CODE_5	008C
+		l__CODE_5	0092
+		l__CODE_8	01CB
 		l__BASE	01DA
 		l__HEADER	01E1
 		s__CODE	0200
 		l__HOME	0312
-		l__DATA	04EE
+		l__DATA	04F0
 		l__CODE_1	0671
-		l__GSINIT	06F0
+		l__GSINIT	06FC
 		l__CODE	1BAC
 		s__HOME	1DAC
 		s__BASE	20BE
 		s__LIT	2298
 		s__GSINIT	2298
 		l__CODE_3	296C
-		s__GSINITTAIL	2988
-		s__GSFINAL	2989
+		s__GSINITTAIL	2994
+		s__GSFINAL	2995
 		l__CODE_4	3006
-		l__CODE_7	38E2
-		l__CODE_6	3E05
+		l__CODE_6	3C97
+		l__CODE_7	3FC6
 		s__CODE_1	4000
 		s__CODE_3	4000
 		s__CODE_4	4000
 		s__CODE_5	4000
 		s__CODE_6	4000
 		s__CODE_7	4000
+		s__CODE_8	4000
 		.OAM	C000
 		s__DATA	C0A0
-		s__BSS	C58E
-		s__HEAP	C5EC
-		s__BSEG	C5EC
-		s__ISEG	C5EC
-		s__XSEG	C5EC
-		s__OVERLAY	C5EC
+		s__BSS	C590
+		s__HEAP	C5EE
+		s__BSEG	C5EE
+		s__ISEG	C5EE
+		s__XSEG	C5EE
+		s__OVERLAY	C5EE
 		.STACK	E000
 		.refresh_OAM	FF80
 AREA _CODE
@@ -257,24 +259,24 @@ AREA _LIT
 AREA _GSINIT
 	RADIX HEX
 	BASE 2298
-	SIZE 06F0
+	SIZE 06FC
 	ATTRIB REL CON
 	GLOBALS
 		gsinit	2298
 AREA _GSINITTAIL
 	RADIX HEX
-	BASE 2988
+	BASE 2994
 	SIZE 0001
 	ATTRIB REL CON
 AREA _GSFINAL
 	RADIX HEX
-	BASE 2989
+	BASE 2995
 	SIZE 0000
 	ATTRIB REL CON
 AREA _DATA
 	RADIX HEX
 	BASE C0A0
-	SIZE 04EE
+	SIZE 04F0
 	ATTRIB REL CON
 	GLOBALS
 		_bank_stack	C0A0
@@ -403,55 +405,55 @@ AREA _DATA
 		gbt_have_to_stop_next_step	C571
 		gbt_update_pattern_pointers	C572
 		_bank_data_ptrs	C573
-		_music_tracks	C583
-		_script_variables	C587
+		_music_tracks	C585
+		_script_variables	C589
 AREA _BSS
 	RADIX HEX
-	BASE C58E
+	BASE C590
 	SIZE 005E
 	ATTRIB REL CON
 	GLOBALS
-		__cpu	C58E
-		.mode	C58F
-		__io_out	C590
-		__io_in	C591
-		__io_status	C592
-		.vbl_done	C593
-		__current_bank	C594
-		_sys_time	C595
-		.sys_time	C595
-		.int_0x40	C597
-		.int_0x48	C5A7
-		.int_0x50	C5B7
-		.int_0x58	C5C7
-		.int_0x60	C5D7
-		.randhi	C5E7
-		.randlo	C5E8
+		__cpu	C590
+		.mode	C591
+		__io_out	C592
+		__io_in	C593
+		__io_status	C594
+		.vbl_done	C595
+		__current_bank	C596
+		_sys_time	C597
+		.sys_time	C597
+		.int_0x40	C599
+		.int_0x48	C5A9
+		.int_0x50	C5B9
+		.int_0x58	C5C9
+		.int_0x60	C5D9
+		.randhi	C5E9
+		.randlo	C5EA
 AREA _HEAP
 	RADIX HEX
-	BASE C5EC
+	BASE C5EE
 	SIZE 0000
 	ATTRIB REL CON
 	GLOBALS
-		_malloc_heap_start	C5EC
+		_malloc_heap_start	C5EE
 AREA _OVERLAY
 	RADIX HEX
-	BASE C5EC
+	BASE C5EE
 	SIZE 0000
 	ATTRIB REL CON
 AREA _ISEG
 	RADIX HEX
-	BASE C5EC
+	BASE C5EE
 	SIZE 0000
 	ATTRIB REL CON
 AREA _BSEG
 	RADIX HEX
-	BASE C5EC
+	BASE C5EE
 	SIZE 0000
 	ATTRIB REL CON
 AREA _XSEG
 	RADIX HEX
-	BASE C5EC
+	BASE C5EE
 	SIZE 0000
 	ATTRIB REL CON
 AREA _CODE_3
@@ -628,69 +630,78 @@ AREA _CODE_1
 AREA _CODE_6
 	RADIX HEX
 	BASE 4000
-	SIZE 3E05
+	SIZE 3C97
 	ATTRIB REL CON
 	GLOBALS
 		_bank_6_data	4000
 AREA _CODE_7
 	RADIX HEX
 	BASE 4000
-	SIZE 38E2
+	SIZE 3FC6
 	ATTRIB REL CON
 	GLOBALS
 		_bank_7_data	4000
+AREA _CODE_8
+	RADIX HEX
+	BASE 4000
+	SIZE 01CB
+	ATTRIB REL CON
+	GLOBALS
+		_bank_8_data	4000
 AREA _CODE_5
 	RADIX HEX
 	BASE 4000
-	SIZE 008C
+	SIZE 0092
 	ATTRIB REL CON
 	GLOBALS
 		_tileset_bank_ptrs	4000
 		_background_bank_ptrs	400C
-		_sprite_bank_ptrs	4033
-		_scene_bank_ptrs	4039
-		_string_bank_ptrs	4060
-		_avatar_bank_ptrs	4087
-		_music_banks	408A
+		_sprite_bank_ptrs	4036
+		_scene_bank_ptrs	403C
+		_string_bank_ptrs	4066
+		_avatar_bank_ptrs	408D
+		_music_banks	4090
 MODULES
 	FILE C:\Users\HP\AppData\Local\Temp/_gbs/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE obj/BankData.o
-		NAME lcc155520
+		NAME lcc129880
 	FILE obj/BankManager.o
-		NAME lcc14560
+		NAME lcc81200
 	FILE obj/FadeManager.o
-		NAME lcc83520
+		NAME lcc135120
 	FILE obj/Math.o
-		NAME lcc212640
+		NAME lcc81400
 	FILE obj/MusicManager.o
-		NAME lcc155160
+		NAME lcc97840
 	FILE obj/Scene.o
-		NAME lcc72440
+		NAME lcc22760
 	FILE obj/Scene_b.o
-		NAME lcc221520
+		NAME lcc83080
 	FILE obj/ScriptRunner.o
-		NAME lcc21120
+		NAME lcc35520
 	FILE obj/ScriptRunner_b.o
-		NAME lcc80880
+		NAME lcc117800
 	FILE obj/SpriteHelpers.o
-		NAME lcc105560
+		NAME lcc71480
 	FILE obj/Stack.o
-		NAME lcc243640
+		NAME lcc150280
 	FILE obj/UI.o
-		NAME lcc156160
+		NAME lcc26720
 	FILE obj/UI_b.o
-		NAME lcc94360
+		NAME lcc41160
 	FILE obj/game.o
-		NAME lcc191000
+		NAME lcc8120
 	FILE obj/gbt_player.o
 	FILE obj/gbt_player_bank1.o
 	FILE obj/data/bank_6.o
-		NAME lcc8640
+		NAME lcc133640
 	FILE obj/data/bank_7.o
-		NAME lcc181360
+		NAME lcc72280
+	FILE obj/data/bank_8.o
+		NAME lcc123720
 	FILE obj/data/data_ptrs.o
-		NAME lcc214920
+		NAME lcc149240
 LIBRARIES
 	LIBRARY C:\Users\HP\AppData\Local\Temp/_gbs/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o

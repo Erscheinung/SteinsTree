@@ -5,6 +5,7 @@
 ![embellished B7-10](./assets/backgrounds/B7-10.png)
 ![B7-front](./assets/backgrounds/B7-front.png)
 ![B7-front-right](./assets/backgrounds/B7-front-right.png)
+![B7-front-left](./assets/backgrounds/B7-front-left.png)
 ![B7-gallery, partially reverting to gameboy colour scheme](./assets/backgrounds/B7.png)
 ![B7 entrance](./assets/backgrounds/B7-entrance.png)
 ![B7-back](./assets/backgrounds/B7-back.png)
