@@ -17,8 +17,7 @@ AREA .  .ABS.
 		l__LIT	0000
 		l__GSINITTAIL	0001
 		l__BSS	005E
-		l__CODE_5	0092
-		l__CODE_8	01CB
+		l__CODE_5	009B
 		l__BASE	01DA
 		l__HEADER	01E1
 		s__CODE	0200
@@ -26,17 +25,18 @@ AREA .  .ABS.
 		l__DATA	04F0
 		l__CODE_1	0671
 		l__GSINIT	06FC
-		l__CODE	1BAC
-		s__HOME	1DAC
-		s__BASE	20BE
-		s__LIT	2298
-		s__GSINIT	2298
+		l__CODE_8	1B39
+		l__CODE	1BA3
+		s__HOME	1DA3
+		s__BASE	20B5
+		s__LIT	228F
+		s__GSINIT	228F
 		l__CODE_3	296C
-		s__GSINITTAIL	2994
-		s__GSFINAL	2995
+		s__GSINITTAIL	298B
+		s__GSFINAL	298C
 		l__CODE_4	3006
-		l__CODE_6	3C97
-		l__CODE_7	3FC6
+		l__CODE_7	32FA
+		l__CODE_6	3FA5
 		s__CODE_1	4000
 		s__CODE_3	4000
 		s__CODE_4	4000
@@ -57,7 +57,7 @@ AREA .  .ABS.
 AREA _CODE
 	RADIX HEX
 	BASE 0200
-	SIZE 1BAC
+	SIZE 1BA3
 	ATTRIB REL CON
 	GLOBALS
 		_SetBankedBkgData	0200
@@ -109,58 +109,58 @@ AREA _CODE
 		_UISetTextBuffer	122B
 		_UIDrawTextBuffer	1261
 		_UIDrawTextBufferChar	1275
-		_UISetPos	153C
-		_UIMoveTo	1553
-		_UIIsClosed	1580
-		_UIDrawMenuCursor	15AB
-		_UICloseDialogue	1635
-		_UIOnInteract	167B
-		_UIAtDest	1852
-		_UISetColor	187F
-		_vbl_update	1899
-		_main	18AA
-		_game_loop	1979
-		gbt_get_pattern_ptr	1A35
-		_gbt_play	1A52
-		_gbt_pause	1B0D
-		_gbt_loop	1B19
-		_gbt_stop	1B20
-		_gbt_enable_channels	1B2B
-		_gbt_update	1B32
-		_rand	1C37
-		_randw	1C37
-		__mulschar_rrx_s	1C62
-		__mulschar_rrx_hds	1C69
-		__muluchar_rrx_s	1C75
-		__mulsint_rrx_s	1C82
-		__muluint_rrx_s	1C82
-		__mulsint_rrx_hds	1C8E
-		__muluint_rrx_hds	1C8E
-		__muluchar_rrx_hds	1C8E
-		__divschar_rrx_s	1CAA
-		__divschar_rrx_hds	1CB1
-		__modschar_rrx_s	1CB8
-		__modschar_rrx_hds	1CBF
-		__divsint_rrx_s	1CC4
-		__divsint_rrx_hds	1CD0
-		__modsint_rrx_s	1CD8
-		__modsint_rrx_hds	1CE4
-		__divuchar_rrx_s	1CEA
-		__divuchar_rrx_hds	1CF1
-		__moduchar_rrx_s	1CF8
-		__moduchar_rrx_hds	1CFF
-		__divuint_rrx_s	1D04
-		__divuint_rrx_hds	1D10
-		__moduint_rrx_s	1D18
-		__moduint_rrx_hds	1D24
-		.mod8	1D2A
-		.div8	1D2A
-		.mod16	1D32
-		.div16	1D32
-		.modu8	1D6C
-		.divu8	1D6C
-		.modu16	1D6F
-		.divu16	1D6F
+		_UISetPos	1533
+		_UIMoveTo	154A
+		_UIIsClosed	1577
+		_UIDrawMenuCursor	15A2
+		_UICloseDialogue	162C
+		_UIOnInteract	1672
+		_UIAtDest	1849
+		_UISetColor	1876
+		_vbl_update	1890
+		_main	18A1
+		_game_loop	1970
+		gbt_get_pattern_ptr	1A2C
+		_gbt_play	1A49
+		_gbt_pause	1B04
+		_gbt_loop	1B10
+		_gbt_stop	1B17
+		_gbt_enable_channels	1B22
+		_gbt_update	1B29
+		_rand	1C2E
+		_randw	1C2E
+		__mulschar_rrx_s	1C59
+		__mulschar_rrx_hds	1C60
+		__muluchar_rrx_s	1C6C
+		__mulsint_rrx_s	1C79
+		__muluint_rrx_s	1C79
+		__mulsint_rrx_hds	1C85
+		__muluint_rrx_hds	1C85
+		__muluchar_rrx_hds	1C85
+		__divschar_rrx_s	1CA1
+		__divschar_rrx_hds	1CA8
+		__modschar_rrx_s	1CAF
+		__modschar_rrx_hds	1CB6
+		__divsint_rrx_s	1CBB
+		__divsint_rrx_hds	1CC7
+		__modsint_rrx_s	1CCF
+		__modsint_rrx_hds	1CDB
+		__divuchar_rrx_s	1CE1
+		__divuchar_rrx_hds	1CE8
+		__moduchar_rrx_s	1CEF
+		__moduchar_rrx_hds	1CF6
+		__divuint_rrx_s	1CFB
+		__divuint_rrx_hds	1D07
+		__moduint_rrx_s	1D0F
+		__moduint_rrx_hds	1D1B
+		.mod8	1D21
+		.div8	1D21
+		.mod16	1D29
+		.div16	1D29
+		.modu8	1D63
+		.divu8	1D63
+		.modu16	1D66
+		.divu16	1D66
 AREA _HEADER
 	RADIX HEX
 	BASE 0000
@@ -170,107 +170,107 @@ AREA _HEADER
 		_exit	01D2
 AREA _HOME
 	RADIX HEX
-	BASE 1DAC
+	BASE 1DA3
 	SIZE 0312
 	ATTRIB REL CON
 	GLOBALS
-		.set_mode	1DAC
-		.remove_VBL	1DBC
-		.remove_LCD	1DC2
-		.remove_TIM	1DC8
-		.remove_SIO	1DCE
-		.remove_JOY	1DD4
-		.add_VBL	1DDA
-		.add_LCD	1DE0
-		.add_TIM	1DE6
-		.add_SIO	1DEC
-		.add_JOY	1DF2
-		.remove_int	1DF8
-		.add_int	1E18
-		.wait_vbl_done	1E34
-		_wait_vbl_done	1E34
-		_display_off	1E4B
-		.display_off	1E4B
-		.serial_IO	1E6C
-		_mode	1E9B
-		_get_mode	1EA4
-		_enable_interrupts	1EA9
-		_disable_interrupts	1EAB
-		_reset	1EAD
-		.reset	1EAD
-		_set_interrupts	1EB3
-		_remove_VBL	1EBE
-		_remove_LCD	1EC9
-		_remove_TIM	1ED4
-		_remove_SIO	1EDF
-		_remove_JOY	1EEA
-		_add_VBL	1EF5
-		_add_LCD	1F00
-		_add_TIM	1F0B
-		_add_SIO	1F16
-		_add_JOY	1F21
-		_clock	1F2C
-		__printTStates	1F35
-		banked_call	1F36
-		banked_ret	1F4F
-		__initrleblock	1F58
-		_strcpy	1F7F
-		_memcpy	1FB2
-		_strcmp	1FF7
-		_strcat	204F
-		_strlen	2098
+		.set_mode	1DA3
+		.remove_VBL	1DB3
+		.remove_LCD	1DB9
+		.remove_TIM	1DBF
+		.remove_SIO	1DC5
+		.remove_JOY	1DCB
+		.add_VBL	1DD1
+		.add_LCD	1DD7
+		.add_TIM	1DDD
+		.add_SIO	1DE3
+		.add_JOY	1DE9
+		.remove_int	1DEF
+		.add_int	1E0F
+		.wait_vbl_done	1E2B
+		_wait_vbl_done	1E2B
+		_display_off	1E42
+		.display_off	1E42
+		.serial_IO	1E63
+		_mode	1E92
+		_get_mode	1E9B
+		_enable_interrupts	1EA0
+		_disable_interrupts	1EA2
+		_reset	1EA4
+		.reset	1EA4
+		_set_interrupts	1EAA
+		_remove_VBL	1EB5
+		_remove_LCD	1EC0
+		_remove_TIM	1ECB
+		_remove_SIO	1ED6
+		_remove_JOY	1EE1
+		_add_VBL	1EEC
+		_add_LCD	1EF7
+		_add_TIM	1F02
+		_add_SIO	1F0D
+		_add_JOY	1F18
+		_clock	1F23
+		__printTStates	1F2C
+		banked_call	1F2D
+		banked_ret	1F46
+		__initrleblock	1F4F
+		_strcpy	1F76
+		_memcpy	1FA9
+		_strcmp	1FEE
+		_strcat	2046
+		_strlen	208F
 AREA _BASE
 	RADIX HEX
-	BASE 20BE
+	BASE 20B5
 	SIZE 01DA
 	ATTRIB REL CON
 	GLOBALS
-		.set_sprite_prop	20BE
-		_set_sprite_prop	20CB
-		_initrand	20D6
-		.initrand	20D8
-		.mv_sprite	20E1
-		_move_sprite	20F0
-		_set_win_tiles	20FD
-		_set_win_data	2111
-		_set_bkg_data	2111
-		_set_sprite_data	215E
-		.padup	218D
-		_waitpadup	218D
-		.jpad	219D
-		.wait_pad	21CA
-		_joypad	21D1
-		_waitpad	21D6
-		.set_sprite_tile	21E0
-		_set_sprite_tile	21ED
-		.copy_vram	21F8
-		_get_data	2207
-		_set_data	2207
-		_set_bkg_tiles	221A
-		.set_xy_wtt	222E
-		.set_xy_btt	223F
-		.set_xy_tt	224E
-		_set_tiles	227F
+		.set_sprite_prop	20B5
+		_set_sprite_prop	20C2
+		_initrand	20CD
+		.initrand	20CF
+		.mv_sprite	20D8
+		_move_sprite	20E7
+		_set_win_tiles	20F4
+		_set_win_data	2108
+		_set_bkg_data	2108
+		_set_sprite_data	2155
+		.padup	2184
+		_waitpadup	2184
+		.jpad	2194
+		.wait_pad	21C1
+		_joypad	21C8
+		_waitpad	21CD
+		.set_sprite_tile	21D7
+		_set_sprite_tile	21E4
+		.copy_vram	21EF
+		_get_data	21FE
+		_set_data	21FE
+		_set_bkg_tiles	2211
+		.set_xy_wtt	2225
+		.set_xy_btt	2236
+		.set_xy_tt	2245
+		_set_tiles	2276
 AREA _LIT
 	RADIX HEX
-	BASE 2298
+	BASE 228F
 	SIZE 0000
 	ATTRIB REL CON
 AREA _GSINIT
 	RADIX HEX
-	BASE 2298
+	BASE 228F
 	SIZE 06FC
 	ATTRIB REL CON
 	GLOBALS
-		gsinit	2298
+		gsinit	228F
 AREA _GSINITTAIL
 	RADIX HEX
-	BASE 2994
+	BASE 298B
 	SIZE 0001
 	ATTRIB REL CON
 AREA _GSFINAL
 	RADIX HEX
-	BASE 2995
+	BASE 298C
 	SIZE 0000
 	ATTRIB REL CON
 AREA _DATA
@@ -630,78 +630,78 @@ AREA _CODE_1
 AREA _CODE_6
 	RADIX HEX
 	BASE 4000
-	SIZE 3C97
+	SIZE 3FA5
 	ATTRIB REL CON
 	GLOBALS
 		_bank_6_data	4000
 AREA _CODE_7
 	RADIX HEX
 	BASE 4000
-	SIZE 3FC6
+	SIZE 32FA
 	ATTRIB REL CON
 	GLOBALS
 		_bank_7_data	4000
 AREA _CODE_8
 	RADIX HEX
 	BASE 4000
-	SIZE 01CB
+	SIZE 1B39
 	ATTRIB REL CON
 	GLOBALS
 		_bank_8_data	4000
 AREA _CODE_5
 	RADIX HEX
 	BASE 4000
-	SIZE 0092
+	SIZE 009B
 	ATTRIB REL CON
 	GLOBALS
 		_tileset_bank_ptrs	4000
-		_background_bank_ptrs	400C
-		_sprite_bank_ptrs	4036
-		_scene_bank_ptrs	403C
-		_string_bank_ptrs	4066
-		_avatar_bank_ptrs	408D
-		_music_banks	4090
+		_background_bank_ptrs	400F
+		_sprite_bank_ptrs	403C
+		_scene_bank_ptrs	4042
+		_string_bank_ptrs	406F
+		_avatar_bank_ptrs	4096
+		_music_banks	4099
 MODULES
 	FILE C:\Users\HP\AppData\Local\Temp/_gbs/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE obj/BankData.o
-		NAME lcc129880
+		NAME lcc102720
 	FILE obj/BankManager.o
-		NAME lcc81200
+		NAME lcc114160
 	FILE obj/FadeManager.o
-		NAME lcc135120
+		NAME lcc117400
 	FILE obj/Math.o
-		NAME lcc81400
+		NAME lcc112720
 	FILE obj/MusicManager.o
-		NAME lcc97840
+		NAME lcc135600
 	FILE obj/Scene.o
-		NAME lcc22760
+		NAME lcc41800
 	FILE obj/Scene_b.o
-		NAME lcc83080
+		NAME lcc134160
 	FILE obj/ScriptRunner.o
-		NAME lcc35520
+		NAME lcc125800
 	FILE obj/ScriptRunner_b.o
-		NAME lcc117800
+		NAME lcc25440
 	FILE obj/SpriteHelpers.o
-		NAME lcc71480
+		NAME lcc40720
 	FILE obj/Stack.o
-		NAME lcc150280
+		NAME lcc132200
 	FILE obj/UI.o
-		NAME lcc26720
+		NAME lcc69040
 	FILE obj/UI_b.o
-		NAME lcc41160
+		NAME lcc58360
 	FILE obj/game.o
-		NAME lcc8120
+		NAME lcc130040
 	FILE obj/gbt_player.o
 	FILE obj/gbt_player_bank1.o
 	FILE obj/data/bank_6.o
-		NAME lcc133640
+		NAME lcc32040
 	FILE obj/data/bank_7.o
-		NAME lcc72280
+		NAME lcc80160
 	FILE obj/data/bank_8.o
-		NAME lcc123720
+		NAME lcc109320
 	FILE obj/data/data_ptrs.o
-		NAME lcc149240
+		NAME lcc14000
 LIBRARIES
 	LIBRARY C:\Users\HP\AppData\Local\Temp/_gbs/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o
