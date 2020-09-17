@@ -36,7 +36,7 @@ AREA .  .ABS.
 		s__GSFINAL	298C
 		l__CODE_4	3006
 		l__CODE_7	32FA
-		l__CODE_6	3FA5
+		l__CODE_6	3F95
 		s__CODE_1	4000
 		s__CODE_3	4000
 		s__CODE_4	4000
@@ -630,7 +630,7 @@ AREA _CODE_1
 AREA _CODE_6
 	RADIX HEX
 	BASE 4000
-	SIZE 3FA5
+	SIZE 3F95
 	ATTRIB REL CON
 	GLOBALS
 		_bank_6_data	4000
@@ -665,43 +665,43 @@ MODULES
 	FILE C:\Users\HP\AppData\Local\Temp/_gbs/gbdk/lib/small/asxxxx/gb/crt0.o
 		NAME Runtime
 	FILE obj/BankData.o
-		NAME lcc102720
+		NAME lcc157720
 	FILE obj/BankManager.o
-		NAME lcc114160
+		NAME lcc118760
 	FILE obj/FadeManager.o
-		NAME lcc117400
+		NAME lcc134480
 	FILE obj/Math.o
-		NAME lcc112720
+		NAME lcc109560
 	FILE obj/MusicManager.o
-		NAME lcc135600
+		NAME lcc89440
 	FILE obj/Scene.o
-		NAME lcc41800
+		NAME lcc137480
 	FILE obj/Scene_b.o
-		NAME lcc134160
+		NAME lcc25160
 	FILE obj/ScriptRunner.o
-		NAME lcc125800
+		NAME lcc105480
 	FILE obj/ScriptRunner_b.o
-		NAME lcc25440
+		NAME lcc158320
 	FILE obj/SpriteHelpers.o
-		NAME lcc40720
+		NAME lcc155000
 	FILE obj/Stack.o
-		NAME lcc132200
+		NAME lcc159200
 	FILE obj/UI.o
-		NAME lcc69040
+		NAME lcc117400
 	FILE obj/UI_b.o
-		NAME lcc58360
+		NAME lcc139960
 	FILE obj/game.o
-		NAME lcc130040
+		NAME lcc9920
 	FILE obj/gbt_player.o
 	FILE obj/gbt_player_bank1.o
 	FILE obj/data/bank_6.o
-		NAME lcc32040
+		NAME lcc162840
 	FILE obj/data/bank_7.o
-		NAME lcc80160
+		NAME lcc83680
 	FILE obj/data/bank_8.o
-		NAME lcc109320
+		NAME lcc94800
 	FILE obj/data/data_ptrs.o
-		NAME lcc14000
+		NAME lcc10280
 LIBRARIES
 	LIBRARY C:\Users\HP\AppData\Local\Temp/_gbs/gbdk/lib/small/asxxxx/gbz80/gbz80.lib
 		MODULE crt0_rle.o

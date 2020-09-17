@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 374,
-        "worldScrollY": 2052,
-        "zoom": 142.4653952854983,
+        "worldScrollX": 725,
+        "worldScrollY": 2791,
+        "zoom": 181.62945310398254,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -306,8 +306,8 @@
             "id": "382961a1-e615-4b92-92a7-f1a791b50b7a",
             "name": "Logo",
             "backgroundId": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
-            "x": 111,
-            "y": 308,
+            "x": 315.87269555620986,
+            "y": 463.42066559436665,
             "width": 20,
             "height": 18,
             "actors": [],
@@ -413,8 +413,8 @@
             "id": "4912bee2-387a-472f-ae4f-6679b6149517",
             "name": "Title Screen",
             "backgroundId": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
-            "x": 108,
-            "y": 509,
+            "x": 317.5824126954328,
+            "y": 650.2915141766962,
             "width": 20,
             "height": 18,
             "actors": [],
@@ -3071,7 +3071,7 @@
         },
         {
             "name": "Scene 15",
-            "backgroundId": "2fa35cf3-1f27-4f50-92f4-c5ea125b00b9",
+            "backgroundId": "238481e9-d392-494c-af6d-8493b5626ada",
             "width": 32,
             "height": 32,
             "collisions": [
@@ -3096,8 +3096,8 @@
                 255,
                 255,
                 0,
-                193,
-                127,
+                65,
+                0,
                 0,
                 0,
                 193,
@@ -3120,7 +3120,7 @@
                 143,
                 0,
                 0,
-                67,
+                65,
                 136,
                 0,
                 0,
@@ -3138,23 +3138,23 @@
                 0,
                 66,
                 136,
-                0,
-                0,
-                66,
-                136,
-                0,
+                252,
                 0,
                 66,
                 136,
+                2,
                 0,
+                98,
+                136,
+                226,
                 0,
                 66,
                 136,
-                0,
+                34,
                 0,
                 66,
                 136,
-                0,
+                254,
                 0,
                 66,
                 136,
@@ -3175,33 +3175,33 @@
                 2,
                 0,
                 0,
-                128,
-                3,
                 0,
+                2,
                 0,
-                128,
+                252,
+                0,
                 1,
                 0,
                 252,
+                128,
                 192,
+                12,
                 0,
+                64,
+                192,
+                12,
                 0,
-                252,
-                96,
+                32,
+                192,
+                12,
                 0,
-                0,
-                0,
-                48,
-                0,
-                0,
-                0,
-                24,
-                0,
-                0,
+                16,
+                192,
+                12,
                 0,
                 8,
-                0,
-                0,
+                192,
+                12,
                 0
             ],
             "id": "c8fd72d4-9bb0-41e8-8a16-c17e72187f30",
@@ -3223,15 +3223,15 @@
                     "x": 31,
                     "y": 21,
                     "width": 1,
-                    "height": 5
+                    "height": 4
                 },
                 {
                     "trigger": "walk",
                     "id": "c8a15619-9e41-4fcd-844b-a532022f620a",
                     "x": 31,
-                    "y": 28,
+                    "y": 27,
                     "width": 1,
-                    "height": 4
+                    "height": 5
                 },
                 {
                     "trigger": "walk",
@@ -3343,7 +3343,7 @@
             "imageWidth": 257,
             "imageHeight": 257,
             "filename": "B7-10.png",
-            "_v": 1598549793368
+            "_v": 1600350343484
         },
         {
             "id": "94e83ccf-a9c3-441f-8876-45a540382fd6",
@@ -3353,7 +3353,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-back-exit-right.png",
-            "_v": 1598549793367
+            "_v": 1600350343484
         },
         {
             "id": "8661d33b-93e2-4dee-b9d8-5701a13c6211",
@@ -3363,7 +3363,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-back-exit.png",
-            "_v": 1598549793368
+            "_v": 1600350343484
         },
         {
             "id": "c4344507-964b-4213-a899-6649c1c34af3",
@@ -3373,7 +3373,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-back-left.png",
-            "_v": 1598549793367
+            "_v": 1600350343484
         },
         {
             "id": "958c985b-229c-4b1d-a8e8-05f81834c3a5",
@@ -3383,17 +3383,17 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-back.png",
-            "_v": 1598549793368
+            "_v": 1600350343484
         },
         {
-            "id": "2fa35cf3-1f27-4f50-92f4-c5ea125b00b9",
+            "id": "238481e9-d392-494c-af6d-8493b5626ada",
             "name": "B7-chiller",
             "width": 32,
             "height": 32,
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-chiller.png",
-            "_v": 1598549827708
+            "_v": 1600350436652
         },
         {
             "id": "919ffc63-7226-4c3a-be2c-56ebc9dd0b49",
@@ -3403,7 +3403,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-entrance.png",
-            "_v": 1598549793368
+            "_v": 1600350343484
         },
         {
             "id": "006b8902-e9b8-4d72-ab2c-98aaad617b47",
@@ -3413,7 +3413,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-front-left.png",
-            "_v": 1598549793369
+            "_v": 1600350343484
         },
         {
             "id": "cf1e3cd2-291b-4c06-abce-028c0d58352c",
@@ -3423,7 +3423,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-front-right.png",
-            "_v": 1598549793368
+            "_v": 1600350343485
         },
         {
             "id": "4fcce021-bfdd-42b1-afc9-b3a8bc53b691",
@@ -3433,7 +3433,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-front.png",
-            "_v": 1598549793368
+            "_v": 1600350343484
         },
         {
             "id": "9c24c38a-084d-4dbe-9e9c-ad958644d100",
@@ -3443,7 +3443,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-lounge.png",
-            "_v": 1598549793368
+            "_v": 1600350343485
         },
         {
             "id": "5bf75ab1-46c8-467a-97ec-447cb92d6685",
@@ -3453,7 +3453,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7-right-exit.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         },
         {
             "id": "f828c902-7b62-4fe8-921b-3b885ea00a99",
@@ -3463,7 +3463,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "B7.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -3473,7 +3473,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         },
         {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
@@ -3483,7 +3483,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         }
     ],
     "spriteSheets": [
@@ -3493,7 +3493,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         },
         {
             "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
@@ -3501,7 +3501,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "checkbox.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         },
         {
             "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -3509,7 +3509,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         },
         {
             "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
@@ -3517,7 +3517,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         },
         {
             "id": "f2610e3c-8ff9-42fa-a9bb-d1591031fa17",
@@ -3525,7 +3525,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "_v": 1598549793369
+            "_v": 1600350343485
         },
         {
             "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
@@ -3533,7 +3533,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
@@ -3541,7 +3541,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
@@ -3549,7 +3549,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "52ad34df-f245-4b2a-b94c-a82af1002871",
@@ -3557,7 +3557,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc003.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
@@ -3565,7 +3565,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "a0442b6a-634f-44da-9962-77938e3ed839",
@@ -3573,7 +3573,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "3939e8d2-3987-4a22-953e-f1d82134eccf",
@@ -3581,7 +3581,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
@@ -3589,7 +3589,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "000a6dde-cb60-436e-b357-30a529daa139",
@@ -3597,7 +3597,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "_v": 1598549793369
+            "_v": 1600350343486
         },
         {
             "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
@@ -3605,7 +3605,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "_v": 1598549793370
+            "_v": 1600350343486
         },
         {
             "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
@@ -3613,7 +3613,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "_v": 1598549793370
+            "_v": 1600350343486
         }
     ],
     "music": [
@@ -3621,7 +3621,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1598549793360
+            "_v": 1600350343470
         }
     ],
     "customEvents": []
