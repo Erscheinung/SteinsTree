@@ -526,8 +526,8 @@
 ; Area: _CODE_5
 01:4000 _tileset_bank_ptrs
 01:400F _background_bank_ptrs
-01:403C _sprite_bank_ptrs
-01:4042 _scene_bank_ptrs
-01:406F _string_bank_ptrs
-01:4096 _avatar_bank_ptrs
-01:4099 _music_banks
+01:403F _sprite_bank_ptrs
+01:4045 _scene_bank_ptrs
+01:4075 _string_bank_ptrs
+01:409C _avatar_bank_ptrs
+01:409F _music_banks
