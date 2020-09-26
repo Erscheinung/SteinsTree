@@ -19,12 +19,12 @@
 01:4000 s__CODE_8
 00:C000 .OAM
 00:C0A0 s__DATA
-00:C590 s__BSS
-00:C5EE s__HEAP
-00:C5EE s__BSEG
-00:C5EE s__ISEG
-00:C5EE s__XSEG
-00:C5EE s__OVERLAY
+00:C594 s__BSS
+00:C5F2 s__HEAP
+00:C5F2 s__BSEG
+00:C5F2 s__ISEG
+00:C5F2 s__XSEG
+00:C5F2 s__OVERLAY
 00:E000 .STACK
 00:FF80 .refresh_OAM
 ; Area: _CODE
@@ -339,24 +339,24 @@
 00:C585 _music_tracks
 00:C589 _script_variables
 ; Area: _BSS
-00:C590 __cpu
-00:C591 .mode
-00:C592 __io_out
-00:C593 __io_in
-00:C594 __io_status
-00:C595 .vbl_done
-00:C596 __current_bank
-00:C597 _sys_time
-00:C597 .sys_time
-00:C599 .int_0x40
-00:C5A9 .int_0x48
-00:C5B9 .int_0x50
-00:C5C9 .int_0x58
-00:C5D9 .int_0x60
-00:C5E9 .randhi
-00:C5EA .randlo
+00:C594 __cpu
+00:C595 .mode
+00:C596 __io_out
+00:C597 __io_in
+00:C598 __io_status
+00:C599 .vbl_done
+00:C59A __current_bank
+00:C59B _sys_time
+00:C59B .sys_time
+00:C59D .int_0x40
+00:C5AD .int_0x48
+00:C5BD .int_0x50
+00:C5CD .int_0x58
+00:C5DD .int_0x60
+00:C5ED .randhi
+00:C5EE .randlo
 ; Area: _HEAP
-00:C5EE _malloc_heap_start
+00:C5F2 _malloc_heap_start
 ; Area: _OVERLAY
 ; Area: _ISEG
 ; Area: _BSEG
@@ -527,7 +527,7 @@
 01:4000 _tileset_bank_ptrs
 01:400F _background_bank_ptrs
 01:403F _sprite_bank_ptrs
-01:4045 _scene_bank_ptrs
-01:4075 _string_bank_ptrs
-01:409C _avatar_bank_ptrs
-01:409F _music_banks
+01:4048 _scene_bank_ptrs
+01:4078 _string_bank_ptrs
+01:40A5 _avatar_bank_ptrs
+01:40A8 _music_banks
