@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
+  "name": "player",
+  "symbol": "sprite_player",
+  "states": [
+    {
+      "id": "298a4a30-89d2-4c38-97ec-b23c52bababe",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "ecaf2dde-1951-4990-86b2-f68a57f93864",
+          "frames": [
+            {
+              "id": "57ccd2f7-5d82-4c7c-949f-0b79dd7a4745",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b9353606-abcb-465c-8b1b-d27e4179b697",
+          "frames": [
+            {
+              "id": "f7ef65d1-7747-465d-8e58-4043a2c0a10c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c4f0df87-9279-4402-842a-d1e9beceff5e",
+          "frames": [
+            {
+              "id": "f1e52c9a-c952-4bc8-8a84-784f4cd2fb52",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fd3ab07d-ab2c-4efa-b5d0-e9aa3c0a9999",
+          "frames": [
+            {
+              "id": "75f2868f-26e6-463c-96ac-73ccdd0c52b1",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ab265020-9f7f-4cf5-b038-027f71c2cc1c",
+          "frames": [
+            {
+              "id": "52256cdc-6225-4691-b7a5-d9f812863959",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "eb566323-b7be-4f45-b09c-fa7b2e060aa9",
+          "frames": [
+            {
+              "id": "312ec265-b8e4-4468-914e-cde2ef3f7f34",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "8402256f-754e-4823-9db9-55796936cca2",
+          "frames": [
+            {
+              "id": "9728b820-36eb-4f21-af30-5042474c1470",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fc18c997-14fc-4eef-aa73-b87aa34dc725",
+          "frames": [
+            {
+              "id": "a0debef7-d1c4-4374-a6fc-f8e683cb5ec3",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 0,
+  "boundsHeight": 8,
+  "animSpeed": 0,
+  "filename": "player.png",
+  "width": 96,
+  "height": 16,
+  "checksum": ""
+}

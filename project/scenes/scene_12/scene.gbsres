@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "e4bf5cd5-fe41-4ee7-8e1b-cd682272dff4",
+  "_index": 10,
+  "type": "TOPDOWN",
+  "name": "Scene 12",
+  "symbol": "scene_scene_12",
+  "x": 464,
+  "y": 130.79999999999995,
+  "width": 32,
+  "height": 32,
+  "backgroundId": "c4344507-964b-4213-a899-6649c1c34af3",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00b+0f8+0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0fe+00b+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!006+0fe+00b+0f!006+0f!0018+0f!006+0f!00d+"
+}

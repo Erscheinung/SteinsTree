@@ -1,0 +1,162 @@
+{
+  "_resourceType": "scene",
+  "id": "8d55091e-8af7-4cd5-8b69-e656e449f723",
+  "_index": 11,
+  "type": "TOPDOWN",
+  "name": "Scene 13",
+  "symbol": "scene_scene_13",
+  "x": 720,
+  "y": 1278,
+  "width": 32,
+  "height": 32,
+  "backgroundId": "4fcce021-bfdd-42b1-afc9-b3a8bc53b691",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "id": "cbdafef3-6a28-4d50-83b9-920e04112fde",
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "a5e0ec6c-2a2d-4e12-92ae-d7d3fe806fff",
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "player",
+              "emoteId": "7054718e-2614-42fc-9ca3-9c10cf5c6199"
+            }
+          },
+          {
+            "id": "9aba1e5c-2ac9-4acf-a541-13fe20ef4809",
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 10
+              },
+              "speed": 0
+            }
+          },
+          {
+            "id": "8b74bce5-c3a8-4d3b-a005-1c688fb81897",
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "238c1818-cfe9-4e45-b111-e1207545c50e",
+              "emoteId": "9b053db2-c927-48e9-adaa-2d3deaa0b220"
+            }
+          },
+          {
+            "id": "9008ad91-c219-441f-9cec-b448022f11c2",
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "238c1818-cfe9-4e45-b111-e1207545c50e",
+              "direction": {
+                "type": "direction",
+                "value": "left"
+              }
+            }
+          },
+          {
+            "id": "48e0f7dc-877e-47a2-b97e-e5c548cb3952",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Random MUJ\nscholar: grrrr!"
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "2a587342-d31a-417e-bc62-3141f88aff93",
+            "command": "EVENT_CAMERA_MOVE_TO",
+            "args": {
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "speed": 0
+            },
+            "__type": "event"
+          },
+          {
+            "id": "7282b2d1-9bd3-4b89-9a70-6dadcfd2fd28",
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "player",
+              "emoteId": "9b053db2-c927-48e9-adaa-2d3deaa0b220"
+            }
+          },
+          {
+            "id": "dc1b0911-3e9f-4243-ab07-9dadcb58c213",
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "number",
+                "value": 11
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "useCollisions": false,
+              "verticalFirst": false,
+              "collideWith": []
+            }
+          },
+          {
+            "id": "bb403c49-2596-4be7-80fb-01f97abe3be8",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "true"
+              }
+            }
+          },
+          {
+            "id": "249157eb-a178-4dec-b2ff-dc34d8737ceb",
+            "command": "EVENT_CAMERA_LOCK",
+            "args": {
+              "speed": 0,
+              "axis": [
+                "x",
+                "y"
+              ]
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "003+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!00f+0f5+002+0f6+003+0f!00f+0f!004+0f2+009+0f!00f+0f!004+0f8+003+0f!00f+0f!004+0f2+009+0f!00e+0f2+004+0f2+009+0f!00e+0f!005+0f2+009+0f8+002+0f6+005+0f3+0029+0ff+0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!006+0f7+004+0f!00d+0f!006+0f!009+0f10+006+0f!00!0f5+003+0f2+0014+0f2+0088+0f1d+003+0f1d+0040+"
+}

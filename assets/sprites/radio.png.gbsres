@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "a0442b6a-634f-44da-9962-77938e3ed839",
+  "name": "radio",
+  "symbol": "sprite_radio",
+  "states": [
+    {
+      "id": "4e444bc4-3ac8-4fd5-85c9-e189a78ca25c",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "007a23a0-6680-45d7-87ad-082bdb5dd54c",
+          "frames": [
+            {
+              "id": "35bbd195-9ad0-4fce-8f6f-ab6ca6a17b11",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c098b675-8920-4cdf-ba07-3da470405e1b",
+          "frames": [
+            {
+              "id": "eb46dd5c-8c5d-4d89-8d4e-735690d0f83a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "85d88402-4953-48dd-9d2e-390b68716250",
+          "frames": [
+            {
+              "id": "2f1fb7ce-0450-4b7c-a397-51f493d08730",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "60ebd5c0-1b1b-4520-a6e0-d079bfa0fac0",
+          "frames": [
+            {
+              "id": "f4c4d661-f891-4c7b-bc18-8ee410c8f04f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "156291d4-e1c8-4c39-af2b-40ffabccec7f",
+          "frames": [
+            {
+              "id": "037c6983-a117-4666-a5e1-6cd34667670c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "cf4667a8-96db-4e70-8ac5-0d349a820524",
+          "frames": [
+            {
+              "id": "a86071dc-1e2e-44e3-95cd-0f934ad50305",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4417aa70-3eb3-4696-ac87-eb39695fecad",
+          "frames": [
+            {
+              "id": "3c44ad68-b8e8-4989-9757-049bb82fd751",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "74bee2f6-1f13-4478-9e4e-9b0c839dc3d6",
+          "frames": [
+            {
+              "id": "a6103b58-60e4-41c1-bda6-fb0d4113b71d",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "radio.png",
+  "width": 16,
+  "height": 16,
+  "checksum": ""
+}

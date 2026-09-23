@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "5bf75ab1-46c8-467a-97ec-447cb92d6685",
+  "name": "B7-right-exit",
+  "symbol": "bg_b7_right_exit",
+  "tileColors": "",
+  "filename": "B7-right-exit.png",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256
+}

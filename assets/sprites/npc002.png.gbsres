@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
+  "name": "npc002",
+  "symbol": "sprite_npc002",
+  "states": [
+    {
+      "id": "180f2630-d084-4504-ad98-8ce3b8750ec6",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "ba04035d-d88c-4e41-acc8-49a8e2e899cf",
+          "frames": [
+            {
+              "id": "a76a3ea7-4fa6-4fa3-8b6c-5387a7fbe64c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e1a9eb87-0d0c-4ef7-a09a-298d48ea1177",
+          "frames": [
+            {
+              "id": "ff86bb7d-044d-4c95-9aeb-e4d8802dea92",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e2974f8a-9b50-43b3-a4d8-1b1b1875f5cf",
+          "frames": [
+            {
+              "id": "de890c96-b1ea-4dad-ac22-484a7c567fcd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f17caa4a-4103-4d67-bdf5-2c937a38d1b4",
+          "frames": [
+            {
+              "id": "f21e30a8-fd0c-435c-b7d2-65e3bd74afdf",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5fbfb6f4-54c5-4404-a1e6-9d1b034a985a",
+          "frames": [
+            {
+              "id": "24ff8ac7-2a64-4d60-8789-8c9811501afd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "aed9340e-7ad4-4a06-ac1f-6af228773251",
+          "frames": [
+            {
+              "id": "7d1b8bcf-f9c0-4e65-9659-5d20d4a40b6f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "76147d6f-6cff-4331-8faa-5c42ad617b25",
+          "frames": [
+            {
+              "id": "612c9878-9e42-458f-8e2c-32cc63f01c07",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ce589bcd-5e4a-40a7-9af3-e8ff27d38932",
+          "frames": [
+            {
+              "id": "237d0e32-0614-4432-8683-bdc31705bc5d",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "npc002.png",
+  "width": 48,
+  "height": 16,
+  "checksum": ""
+}

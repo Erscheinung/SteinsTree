@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
+  "name": "duck",
+  "symbol": "sprite_duck",
+  "states": [
+    {
+      "id": "8c96ceca-5921-4ad5-b14c-3e72d64c3ee6",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "1dfb5d54-deaa-4074-823f-4173fa56014f",
+          "frames": [
+            {
+              "id": "8513e5e4-ddcb-47b9-803f-eeb021bbcc97",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "cd3cf9b7-d41d-4479-82ac-79f69e313c0b",
+          "frames": [
+            {
+              "id": "068f4f97-533c-4adf-987c-e379956086d0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "718d5983-7d18-4ad8-9f49-ef2c76b785a8",
+          "frames": [
+            {
+              "id": "4f58b07f-8186-47c8-95da-c0e34cdf50cf",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "3f09da9d-4b87-4b10-a824-45f10eea8916",
+          "frames": [
+            {
+              "id": "b3d393e9-42ef-45e3-b0d0-c5f5f83579da",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "42cbef50-5eee-458b-a904-870fd47b49cc",
+          "frames": [
+            {
+              "id": "a1e28ba0-43be-4d05-9e2c-d40091d90d25",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c171659c-967a-4a48-9e04-31fb7c1333a8",
+          "frames": [
+            {
+              "id": "e4840bec-6570-4833-aad7-73eadfe7dea5",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a24a5a54-2187-41ec-96ed-fce8d6e00e86",
+          "frames": [
+            {
+              "id": "97a00cde-bc0b-4218-b462-f591f2540d58",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "468209f8-fa8f-41af-b863-bc544c2586ca",
+          "frames": [
+            {
+              "id": "aff7f35c-86aa-4a27-8733-8d04a6e3cecb",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "duck.png",
+  "width": 32,
+  "height": 16,
+  "checksum": ""
+}

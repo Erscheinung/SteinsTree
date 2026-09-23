@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
+  "name": "signpost",
+  "symbol": "sprite_signpost",
+  "states": [
+    {
+      "id": "bd6c2e8d-e128-4e3f-8d9d-6caa93d2c46c",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "782e53d9-25f1-43ce-8df1-1611f202828d",
+          "frames": [
+            {
+              "id": "7091c815-03de-493c-9e7d-7bcaf4a64e6e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b981161f-86db-49b5-99ef-6b1997a8d725",
+          "frames": [
+            {
+              "id": "43588573-6c35-48d3-9375-f6a02b3d6645",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "cd9ffc4d-fd99-4a43-8c21-b9f990be6d5a",
+          "frames": [
+            {
+              "id": "bc986bb5-08a5-42ab-8f2a-bbb261c9d15e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f60d942a-0e36-42f7-a40b-6fc0769c9d5b",
+          "frames": [
+            {
+              "id": "a52e8ce4-22bb-415d-8933-581b2275fc79",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "bdab0ea3-51bf-44d4-bc40-0a128823fa7e",
+          "frames": [
+            {
+              "id": "5b03989a-f7cd-49db-9f9d-891d74e24e6e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "33a6a0db-c67c-4152-8897-6b1ad1ad8a89",
+          "frames": [
+            {
+              "id": "7163401e-53a1-4796-ae90-7c6e0b9dde25",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "60e2f927-9767-406e-951b-81939e81cd64",
+          "frames": [
+            {
+              "id": "db66c12b-4620-4492-b385-9d5fc5f4fe47",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "14249661-6fe0-4353-95aa-2ad045858228",
+          "frames": [
+            {
+              "id": "8caee7f7-996a-4e10-afdb-f560aa093225",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "signpost.png",
+  "width": 16,
+  "height": 16,
+  "checksum": ""
+}

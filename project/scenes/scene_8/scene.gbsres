@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "bdd73ca3-4cd8-4630-bb76-e185db8bc9e9",
+  "_index": 6,
+  "type": "TOPDOWN",
+  "name": "Scene 8",
+  "symbol": "scene_scene_8",
+  "x": 719.3333333333334,
+  "y": 981.8333333333334,
+  "width": 32,
+  "height": 32,
+  "backgroundId": "919ffc63-7226-4c3a-be2c-56ebc9dd0b49",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f!007+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!00!0f8+008+0f!00d+0f!00!0f!006+0fa+00d+0f2+008+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f2+001e+0f!00!0f2+001c+0f!001f+0f!001f+0f!002+0f!001c+0f7+005+0f7+00c+0f!"
+}

@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "9c24c38a-084d-4dbe-9e9c-ad958644d100",
+  "name": "B7-lounge",
+  "symbol": "bg_b7_lounge",
+  "tileColors": "",
+  "filename": "B7-lounge.png",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256
+}

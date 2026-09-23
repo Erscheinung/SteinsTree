@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "8661d33b-93e2-4dee-b9d8-5701a13c6211",
+  "name": "B7-back-exit",
+  "symbol": "bg_b7_back_exit",
+  "tileColors": "",
+  "filename": "B7-back-exit.png",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256
+}

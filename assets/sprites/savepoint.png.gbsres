@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "000a6dde-cb60-436e-b357-30a529daa139",
+  "name": "savepoint",
+  "symbol": "sprite_savepoint",
+  "states": [
+    {
+      "id": "7b839555-d974-4a20-a191-dee036a06146",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "3dc15af1-b9e1-4f9b-8750-541db060a92f",
+          "frames": [
+            {
+              "id": "c29b1b07-4c96-48db-8190-d932b201d030",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "abcbc1d6-e173-4d00-af1a-368a938dd073",
+          "frames": [
+            {
+              "id": "2b591cc1-9e62-41d3-85d8-73d1bd9f828c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2e214525-eaae-41a4-8ee6-4ae0f65c9731",
+          "frames": [
+            {
+              "id": "ea107611-c121-4761-97f6-38e8c0ba6e8d",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4f965756-9e45-4edf-9251-55c7c3971ddf",
+          "frames": [
+            {
+              "id": "c115c0dd-82a8-4e46-88d0-7081987cfb3c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "1254d0e0-90e3-4884-a158-b9e91ea313d7",
+          "frames": [
+            {
+              "id": "bf725fee-443f-446c-905a-8f114f75a1b2",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "9e5ef4c3-85b9-45c8-97d1-dd8a47c8df3a",
+          "frames": [
+            {
+              "id": "3527aefa-058d-4792-a454-e78c3c4a4b5a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ad835537-5035-4b49-9312-8e6b124de121",
+          "frames": [
+            {
+              "id": "76391180-dc43-4081-a4a4-3b5c323cbfbc",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ee402eb2-aaf6-4a7e-84d5-fd56915422c2",
+          "frames": [
+            {
+              "id": "e1fe9524-a51b-45e6-8fe8-db8a65941b8a",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "savepoint.png",
+  "width": 32,
+  "height": 16,
+  "checksum": ""
+}

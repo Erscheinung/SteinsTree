@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
+  "name": "ice",
+  "symbol": "sprite_ice",
+  "states": [
+    {
+      "id": "46d2dde5-47a8-4f59-bb5c-e1cfd242c2b4",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "cf9ba148-4b8e-4ca7-8dbd-ebbe97a90e88",
+          "frames": [
+            {
+              "id": "4583004c-b48e-4a99-bfdd-9be0e9640543",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d0050bdf-340e-421f-99e0-a16587984c80",
+          "frames": [
+            {
+              "id": "2eb9a8c7-bbd9-433b-a673-23b7080cb4fe",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4da09fd1-c9aa-4247-ac89-e9f95d1e8cc3",
+          "frames": [
+            {
+              "id": "abb62189-12fd-4b32-8540-3b47d5132df0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f06bb56b-bf57-4d59-8e18-380769353ef1",
+          "frames": [
+            {
+              "id": "0938cc6f-47c0-4311-8f10-739090cb250a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "3056713a-d7d5-4fa0-8a23-e07eeb14a4b1",
+          "frames": [
+            {
+              "id": "f8f4113e-3a9b-4479-8f06-d6865fc04aca",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0f454dcc-8a37-45bd-a0f3-b9f1f190d1cb",
+          "frames": [
+            {
+              "id": "4155887e-5110-4bde-9bbd-b5af8d05258c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "09c38aa2-2a75-42e9-bdfb-654685ce2c9e",
+          "frames": [
+            {
+              "id": "db31333c-d3ca-454c-a5a1-3dae0e2247b4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f0e28666-ecc5-493c-90ed-a93481fe46bc",
+          "frames": [
+            {
+              "id": "fb53c4e1-2fbd-4dae-bd4b-6988a237a775",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "ice.png",
+  "width": 16,
+  "height": 16,
+  "checksum": ""
+}

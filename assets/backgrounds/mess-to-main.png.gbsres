@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "d41c3211-0fbf-4841-9bf3-5016d7e63033",
+  "name": "mess-to-main",
+  "symbol": "bg_mess_to_main",
+  "tileColors": "",
+  "filename": "mess-to-main.png",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256
+}

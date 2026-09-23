@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "4f68877c-5cdc-44b2-b66f-2fcb75a783b9",
+  "_index": 3,
+  "type": "TOPDOWN",
+  "name": "Scene 5",
+  "symbol": "scene_scene_5",
+  "x": 722.3333333333333,
+  "y": 694.5333333333333,
+  "width": 32,
+  "height": 32,
+  "backgroundId": "f828c902-7b62-4fe8-921b-3b885ea00a99",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f!0022+0f4+001b+0f3+00!0f!001b+0f3+001d+0f3+0011+0fa+002+0f3+00!0f!00f+0f!00c+0f5+00e+0f!0010+0f2+00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0010+0f2+00d+0f!0010+0f2+00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!001f+0f!001f+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!0011+0f!00d+0f!009+"
+}

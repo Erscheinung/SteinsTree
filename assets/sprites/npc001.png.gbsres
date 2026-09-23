@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
+  "name": "npc001",
+  "symbol": "sprite_npc001",
+  "states": [
+    {
+      "id": "840e16ff-bcdc-49d5-8c7e-b1a0667363be",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "4e63caef-90f3-498f-813d-c9dd2aa8c56f",
+          "frames": [
+            {
+              "id": "b894e168-d679-4d36-956b-e7933b87ef0c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5542b8f6-20e4-400b-8442-4d9c9c200678",
+          "frames": [
+            {
+              "id": "b0d2c485-c0e8-4854-9edc-83a96c42db34",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "67cd1b31-3d8e-4d9b-9ca9-0eec56a1451f",
+          "frames": [
+            {
+              "id": "396bc3ee-9585-4b7e-933f-bbe5d5ce388f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d5021b51-8497-4d44-92f9-f900f45f14d1",
+          "frames": [
+            {
+              "id": "73ec7f56-1efd-4f51-a716-a95ed3368557",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "12446b46-3ed4-442a-a835-63009709ba4f",
+          "frames": [
+            {
+              "id": "b31315fa-8e87-4e6a-a6cb-0cb306797d3b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7de7aae3-9f4c-421d-a2d8-0a0769f30643",
+          "frames": [
+            {
+              "id": "8071b71e-475b-459f-988d-1938cfa6833f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "16b895ab-1327-4a5f-bacf-a39a14dc5282",
+          "frames": [
+            {
+              "id": "e9ebcdd5-5b98-4ae4-b0d5-04c687c9e4d8",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5813c8d1-7a33-492f-a6fb-2feb53bdc100",
+          "frames": [
+            {
+              "id": "2e4a6639-12db-4b25-9e75-8fb2b414344f",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "npc001.png",
+  "width": 48,
+  "height": 16,
+  "checksum": ""
+}

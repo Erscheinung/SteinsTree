@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
+  "name": "sage",
+  "symbol": "sprite_sage",
+  "states": [
+    {
+      "id": "2097ffae-7446-47e7-89de-a1f434bef469",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "1ce7e734-cb3a-4c8e-b5f1-c9df842f4439",
+          "frames": [
+            {
+              "id": "158d0b4b-e426-486e-bb5f-64e5edb67b14",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "d172dd75-f27f-415c-b740-4e14267de494",
+          "frames": [
+            {
+              "id": "d977d734-b5ad-425f-8b55-c96a69f35d5c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ef1c15b6-f6da-41fe-9ee2-fabc7f19e935",
+          "frames": [
+            {
+              "id": "6734a02c-f3ce-4aa9-aad7-9b7f9c97911e",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "9e0e4f16-7bf0-4b27-8a85-16f48c71af17",
+          "frames": [
+            {
+              "id": "985666ff-9f30-4fe0-bd94-46300d178fe4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "b26cd9db-335c-4fbe-8cd2-4594ee410f1a",
+          "frames": [
+            {
+              "id": "49fc4058-79ad-47bc-b00b-d809ae66e4a0",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ea2428da-505c-43fe-8708-6ba94aa779dc",
+          "frames": [
+            {
+              "id": "8423e2ab-f253-4ecc-813a-3eda853cb868",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6fd73734-ee16-4c54-b735-17c8c61f5590",
+          "frames": [
+            {
+              "id": "472a6ce1-c42e-4803-be22-dedd679ee833",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "e83d8c1b-e708-4545-ba3e-bde88b9ec8a5",
+          "frames": [
+            {
+              "id": "e0aa7133-d093-466c-bc5a-4f5fb1972fca",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "sage.png",
+  "width": 16,
+  "height": 16,
+  "checksum": ""
+}

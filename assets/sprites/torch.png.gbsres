@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
+  "name": "torch",
+  "symbol": "sprite_torch",
+  "states": [
+    {
+      "id": "4d5f160f-7777-44cd-912b-78b939cd3549",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "68f3411b-8098-41c5-8bb0-d68a50a13ac8",
+          "frames": [
+            {
+              "id": "545be054-c6aa-4210-b42d-ee836882f2ae",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2aad8e39-2492-47e7-a4c4-a90b9a0a649f",
+          "frames": [
+            {
+              "id": "9c33052f-5469-4db7-a166-9f2d19a31c12",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "8800f3c8-27ea-46ac-b237-758dff36a38c",
+          "frames": [
+            {
+              "id": "146bc9f1-3b1c-4b1d-9c42-6e7e5a74e9b8",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "6e3a2da5-1603-4457-820d-e1738ba5e673",
+          "frames": [
+            {
+              "id": "b2506895-8175-4e85-81ed-f32f44933b3f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fd57a09e-9a2e-43de-bb4c-bb28621c4d23",
+          "frames": [
+            {
+              "id": "5ae5d2a5-6b04-43dd-99c5-08fa6c03a6b8",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "46cbeb64-552f-40e9-8edd-06a53c82e970",
+          "frames": [
+            {
+              "id": "1bbff5b2-52ab-44d2-b7d7-9dc73f52776b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "8e086d74-3479-4787-941a-de8522ae9b67",
+          "frames": [
+            {
+              "id": "a710ba1c-9a02-4015-80fd-efbed763325a",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "29facfdf-df86-4f74-90a2-dd2e70de19e0",
+          "frames": [
+            {
+              "id": "262c91d2-75dd-42bd-9025-a0079a69c5be",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "torch.png",
+  "width": 16,
+  "height": 16,
+  "checksum": ""
+}

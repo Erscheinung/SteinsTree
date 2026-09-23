@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
+  "name": "dog",
+  "symbol": "sprite_dog",
+  "states": [
+    {
+      "id": "63f1ca74-16a6-400a-abf5-73ad5cef7fe4",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "0a65c370-3d68-48fd-b5a2-e486e9594eef",
+          "frames": [
+            {
+              "id": "44a4e8ee-5932-4a16-8e85-8bef582b4264",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "aba5785a-cea8-44dc-9250-13586ed08ff3",
+          "frames": [
+            {
+              "id": "6bb139c6-2de2-4adc-a65c-b21fefcb028f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0dd5cc5d-5b0c-4bdf-8ac8-1c5b90ae38b0",
+          "frames": [
+            {
+              "id": "90ecc3bc-9a90-41c5-96d0-42c4308a07c7",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5247626e-c646-455b-8b00-bcfc24caa850",
+          "frames": [
+            {
+              "id": "71ae8619-3e9d-47a0-a322-3d0331dbf439",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fcd54bca-bf71-46a6-9b13-a8246277c4a7",
+          "frames": [
+            {
+              "id": "cf17a741-a839-4665-bf73-55f0493b2589",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "4b190dfd-4364-47b3-818e-9714a6849459",
+          "frames": [
+            {
+              "id": "13b721b8-3fc9-4c75-a576-77b1e5977d34",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "8ebad0a4-c216-47e5-91f1-d7feee889d4e",
+          "frames": [
+            {
+              "id": "e91382d9-59ae-444d-8d53-9fc359f2c2ba",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "11f24208-d521-4ab9-80bc-e57846abd2b1",
+          "frames": [
+            {
+              "id": "51e21eb7-13e2-4200-990d-7910d50b1a03",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "dog.png",
+  "width": 16,
+  "height": 16,
+  "checksum": ""
+}

@@ -67,4 +67,4 @@ under `assets/`; previews and editable sources stay under `art/`.
 The After Hours palette is `#E8DFC8`, `#9BA58D`, `#596579`, `#242337`, light to dark.
 Colored previews are separate from GB Studio's canonical import colors. New art
 does not replace existing scenes or rebuild the ROM. The reusable
-[sprite brief](sprite-prompt.md) supports any requested subject.
+sprite brief (`sprite-prompt.md`) is kept locally and excluded from version control.

@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "238481e9-d392-494c-af6d-8493b5626ada",
+  "name": "B7-chiller",
+  "symbol": "bg_b7_chiller",
+  "tileColors": "",
+  "filename": "B7-chiller.png",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256
+}

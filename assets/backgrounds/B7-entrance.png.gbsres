@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "919ffc63-7226-4c3a-be2c-56ebc9dd0b49",
+  "name": "B7-entrance",
+  "symbol": "bg_b7_entrance",
+  "tileColors": "",
+  "filename": "B7-entrance.png",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256
+}

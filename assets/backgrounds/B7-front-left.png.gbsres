@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "006b8902-e9b8-4d72-ab2c-98aaad617b47",
+  "name": "B7-front-left",
+  "symbol": "bg_b7_front_left",
+  "tileColors": "",
+  "filename": "B7-front-left.png",
+  "width": 32,
+  "height": 32,
+  "imageWidth": 256,
+  "imageHeight": 256
+}

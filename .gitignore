@@ -12,3 +12,4 @@ docs/local/
 .DS_Store
 __pycache__/
 *.pyc
+sprite-prompt.md

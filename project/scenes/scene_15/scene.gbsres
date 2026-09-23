@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "888f7a31-325f-4363-8637-f182e4161e47",
+  "_index": 13,
+  "type": "TOPDOWN",
+  "name": "Scene 14",
+  "symbol": "scene_scene_14",
+  "x": 449.2645877585029,
+  "y": 1279.3806065186643,
+  "width": 32,
+  "height": 32,
+  "backgroundId": "006b8902-e9b8-4d72-ab2c-98aaad617b47",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0035+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f!0018+0f!006+0f4+0015+0f!001f+0f!007+0f3+0015+0f!007+0f!0017+0f!007+0f!0017+0f!007+0f!0017+0f!007+0f!0017+0f!007+0f!0017+0f!006+0f4+0015+0f!006+0f2+0017+0f!001f+0f!001f+0f!001f+0f!001f+0f2+005+0f4+0016+0f!005+0f!0019+0f!005+0f!0019+0f!005+0f!003+"
+}

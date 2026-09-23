@@ -1,0 +1,102 @@
+{
+  "_resourceType": "sprite",
+  "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
+  "name": "checkbox",
+  "symbol": "sprite_checkbox",
+  "states": [
+    {
+      "id": "865e4141-0eeb-4d7b-867b-15d1d00931ee",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "9c585569-9581-41b0-b978-61ff7a394595",
+          "frames": [
+            {
+              "id": "92ba0b06-9f80-4379-a02f-b1f3a9ab851c",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "862a13df-6299-4641-9b28-7e643477834f",
+          "frames": [
+            {
+              "id": "ae2b0a67-adbc-441e-ba22-913cbd37015f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a0f40189-aefa-4f4f-8a22-4a7d9e5035b3",
+          "frames": [
+            {
+              "id": "078677ac-d6e1-487c-aad1-e1ff47efcbd8",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "262ffe0a-6fe3-4b78-8668-3ce774bff50c",
+          "frames": [
+            {
+              "id": "a0826283-6749-44e1-9dcc-1962ffc21127",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "55a24a7b-0e20-4bc5-8542-3e71b5bf1a94",
+          "frames": [
+            {
+              "id": "d985bf97-a79c-45f3-83ad-82bde24c16bd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "88f25c8c-4654-4cc7-94ac-4ac1b47c6369",
+          "frames": [
+            {
+              "id": "b7df0b04-2066-4e40-a4fe-7060e7a7ac21",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "894be395-2467-459b-93bf-6aab64746f69",
+          "frames": [
+            {
+              "id": "f527e64b-5a34-4ca8-a7f7-7319fb9c1496",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a253fbac-bb6c-464f-9b75-adcf789bbfd3",
+          "frames": [
+            {
+              "id": "def610b0-a89f-4444-b3ed-559cfd8ed690",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 0,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 32,
+  "canvasHeight": 32,
+  "boundsX": 0,
+  "boundsY": -8,
+  "boundsWidth": 0,
+  "boundsHeight": 0,
+  "animSpeed": 0,
+  "filename": "checkbox.png",
+  "width": 48,
+  "height": 16,
+  "checksum": ""
+}
