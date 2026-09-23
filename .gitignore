@@ -1,0 +1,14 @@
+# Local agent instructions and planning notes
+AGENTS.md
+Agents.md
+agents.md
+CLAUDE.md
+claude.md
+.claude/
+.codex/
+docs/local/
+.art-work/
+*.bak
+.DS_Store
+__pycache__/
+*.pyc

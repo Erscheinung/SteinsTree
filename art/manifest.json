@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "project": "SteinsTree",
+  "workflow": {
+    "editor": "LibreSprite",
+    "cli": "/Applications/libresprite.app/Contents/MacOS/libresprite",
+    "cliVersion": "LibreSprite 1.2-dev",
+    "paletteFiles": "GPL, JASC PAL, PNG swatch, and HEX are emitted for each palette.",
+    "remapTool": "tools/art/palette_remap.py",
+    "originalBackgroundTool": "tools/art/make_campus_background.py",
+    "remapMethod": "Full-color legacy art: nearest target brightness (Rec.601 weighted sRGB values), no dithering. Constrained display art: exact palette-index mapping to canonical import shades. This is a lossy study conversion, not a perceptual/color-managed match.",
+    "tileMetric": "Unique complete 8x8 RGBA tiles. Stats reports partial edges; validate rejects partial edges and enforces canonical colors, opacity, size and tile budget.",
+    "dependencies": "python3 -m pip install -r tools/art/requirements.txt",
+    "sourceEditing": "The campus .ase is a flattened editable source; sprite sources are layered and animated. Once edited by hand, do not regenerate over them."
+  },
+  "palettes": {
+    "afterHoursOriginal": {
+      "files": [
+        "art/palettes/after-hours.gpl",
+        "art/palettes/after-hours.pal",
+        "art/palettes/after-hours.png",
+        "art/palettes/after-hours.hex"
+      ],
+      "colorsLightToDark": [
+        "E8DFC8",
+        "9BA58D",
+        "596579",
+        "242337"
+      ],
+      "purpose": "Original display palette for After Hours assets."
+    },
+    "gbStudioBackgroundImport": {
+      "files": [
+        "art/palettes/gb-studio-after-hours-bg.gpl",
+        "art/palettes/gb-studio-after-hours-bg.pal",
+        "art/palettes/gb-studio-after-hours-bg.png",
+        "art/palettes/gb-studio-after-hours-bg.hex"
+      ],
+      "colorsLightToDark": [
+        "E0F8CF",
+        "86C06C",
+        "306850",
+        "071821"
+      ],
+      "purpose": "GB Studio canonical background import palette."
+    },
+    "gbStudioSpriteImport": {
+      "files": [
+        "art/palettes/gb-studio-after-hours-sprites.gpl",
+        "art/palettes/gb-studio-after-hours-sprites.pal",
+        "art/palettes/gb-studio-after-hours-sprites.png",
+        "art/palettes/gb-studio-after-hours-sprites.hex"
+      ],
+      "colorsInFileOrder": [
+        "E0F8CF",
+        "86C06C",
+        "071821",
+        "65FF00"
+      ],
+      "purpose": "GB Studio canonical sprite import palette; neon green is the fourth swatch."
+    }
+  },
+  "sources": [
+    {
+      "id": "pokemonEmeraldExteriorTileset",
+      "classification": "legacy-reference",
+      "newlyOriginal": false,
+      "sourceImage": "Game Boy Advance - Pokemon Emerald - Miscellaneous - Exterior Tileset.png",
+      "sourceImageSha256": "ed81a19979a68f5cb08c01f921d9f52eebabf472a5500e5bee262200ba9d126c",
+      "sourceTsx": "Game Boy Advance - Pokemon Emerald - Miscellaneous - Exterior Tileset.tsx",
+      "sourceTsxSha256": "37b99d7cda727e9a46ca689afcfdeec2b4f9ce783c6e26a673a1878ad07226fe",
+      "dimensions": [
+        1408,
+        1104
+      ],
+      "tileGrid": {
+        "tileWidth": 32,
+        "tileHeight": 32,
+        "columns": 44,
+        "tileCount": 1496,
+        "bottomRow": "partial"
+      },
+      "generated": "art/tilesets/pokemon-emerald-exterior-after-hours.png",
+      "generatedTsx": "art/tilesets/pokemon-emerald-exterior-after-hours.tsx",
+      "runtimeEligible": false,
+      "note": "Converted study/reference atlas only; preserve the source attribution and do not treat it as newly original art.",
+      "credit": "Pokemon Emerald artwork: Game Freak / Nintendo / The Pokemon Company; sheet rip credited to Heartlessdragoon in its footer. Recoloring does not grant a new license. Reference/study use; replace with own artwork for an original game."
+    },
+    {
+      "id": "b7EntranceBackground",
+      "classification": "existing-project-background",
+      "newlyOriginal": false,
+      "source": "assets/backgrounds/B7-entrance.png",
+      "sourceSha256": "3212e4e0fd2c9d9a3b3331c041c8dee6a908848d50c24c917273903d6cbb05c1",
+      "dimensions": [
+        256,
+        256
+      ],
+      "generated": [
+        "art/backgrounds/study-b7-entrance-after-hours.png",
+        "assets/backgrounds/study-b7-entrance-gb-import.png"
+      ],
+      "runtimeEligible": true,
+      "note": "Representative existing background remapped into display and canonical import palettes."
+    }
+  ],
+  "assets": [
+    {
+      "path": "art/backgrounds/study-campus-after-hours.png",
+      "classification": "newly-original-background",
+      "newlyOriginal": true,
+      "dimensions": [
+        160,
+        144
+      ],
+      "sha256": "d2437ff7ebc3a0e0b66f1f14a1f3e0aad043608f8811690e06d298f62559040e",
+      "palette": "afterHoursOriginal",
+      "unique8x8Tiles": 87,
+      "runtimeEligible": false,
+      "editableSource": "art/backgrounds/study-campus-after-hours.ase",
+      "note": "Original display-color campus preview; keep in art/backgrounds for LibreSprite editing rather than importing as a runtime background."
+    },
+    {
+      "path": "assets/backgrounds/study-campus-gb-import.png",
+      "classification": "newly-original-background",
+      "newlyOriginal": true,
+      "dimensions": [
+        160,
+        144
+      ],
+      "sha256": "99cf0eba91c92960bcb3e6b070ac4e6fbeceb06b54a2bd5e017b556a50a39398",
+      "palette": "gbStudioBackgroundImport",
+      "unique8x8Tiles": 87,
+      "runtimeEligible": true,
+      "resource": "assets/backgrounds/study-campus-gb-import.png.gbsres",
+      "note": "Canonical import counterpart of the original campus background."
+    },
+    {
+      "path": "art/backgrounds/study-b7-entrance-after-hours.png",
+      "classification": "derived-study-preview",
+      "newlyOriginal": false,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "807a36707ff77200c69b5d1816c74b3736a9b18d22421077b4b14e67ea807bbc",
+      "palette": "afterHoursOriginal",
+      "unique8x8Tiles": 48,
+      "runtimeEligible": false,
+      "note": "Display-color preview only; canonical import counterpart remains under assets/backgrounds."
+    },
+    {
+      "path": "assets/backgrounds/study-b7-entrance-gb-import.png",
+      "classification": "derived-study-preview",
+      "newlyOriginal": false,
+      "dimensions": [
+        256,
+        256
+      ],
+      "sha256": "74d8f904f0dad5d0d05c6ff47ac57dc2e38547ebf206da597697b1ef01aef64d",
+      "palette": "gbStudioBackgroundImport",
+      "unique8x8Tiles": 48,
+      "runtimeEligible": true
+    },
+    {
+      "path": "art/backgrounds/study-campus-after-hours.ase",
+      "classification": "editable-original-source",
+      "newlyOriginal": true,
+      "dimensions": [
+        160,
+        144
+      ],
+      "sha256": "81fface016f54b42085fcc5877629f8fcb19bcce8ee0446a81d4c19319b1d4d6",
+      "palette": "afterHoursOriginal",
+      "runtimeEligible": false,
+      "format": "Aseprite",
+      "sourceFor": "art/backgrounds/study-campus-after-hours.png",
+      "note": "Editable LibreSprite source exported from the original campus preview."
+    },
+    {
+      "path": "art/tilesets/pokemon-emerald-exterior-after-hours.png",
+      "classification": "derived-legacy-study-atlas",
+      "newlyOriginal": false,
+      "dimensions": [
+        1408,
+        1104
+      ],
+      "sha256": "bf3e152c97624c5e058bc0583a18a0ee2345695935d68d1ee23f7b98e6a99030",
+      "palette": "afterHoursOriginal",
+      "unique8x8Tiles": 6378,
+      "runtimeEligible": false,
+      "note": "Reference atlas exceeds the 192 unique tile budget and must remain outside runtime scenes."
+    },
+    {
+      "path": "art/tilesets/campus-original-8px.png",
+      "classification": "original-reusable-tile-atlas",
+      "newlyOriginal": true,
+      "runtimeEligible": false,
+      "tileSize": [
+        8,
+        8
+      ],
+      "columns": 16,
+      "tileCount": 87,
+      "note": "Unique courtyard tiles, scan order, no padding. Last row contains blank fill cells. Use as a LibreSprite copy/paste tile library or a Godot atlas, not a GB Studio scene.",
+      "sha256": "f813372f76c0e809e8a6d2852c1835945a76b69bfd89ac2219f81f9208f18071",
+      "dimensions": [
+        128,
+        48
+      ],
+      "unique8x8Tiles": 88
+    }
+  ],
+  "validation": {
+    "maxUnique8x8Tiles": 192,
+    "command": "python3 tools/art/palette_remap.py validate --input assets/backgrounds/study-campus-gb-import.png --input assets/backgrounds/study-b7-entrance-gb-import.png",
+    "referenceAtlasCommand": "python3 tools/art/palette_remap.py stats --input art/tilesets/pokemon-emerald-exterior-after-hours.png",
+    "expectedRuntimeTileCounts": {
+      "assets/backgrounds/study-campus-gb-import.png": 87,
+      "assets/backgrounds/study-b7-entrance-gb-import.png": 48
+    },
+    "expectedReferenceAtlasTileCount": 6378,
+    "regressionCommand": "python3 -m unittest discover -s tools/art -p 'test_*.py' -v",
+    "engineBuildRun": false
+  },
+  "generationCommands": [
+    "python3 tools/art/make_campus_background.py --output art/backgrounds/study-campus-after-hours.png --tiles-output art/tilesets/campus-original-8px.png",
+    "python3 tools/art/palette_remap.py remap --input art/backgrounds/study-campus-after-hours.png --output assets/backgrounds/study-campus-gb-import.png --mode index --source-palette art/palettes/after-hours.hex --palette art/palettes/gb-studio-after-hours-bg.hex",
+    "python3 tools/art/palette_remap.py remap --input assets/backgrounds/B7-entrance.png --output art/backgrounds/study-b7-entrance-after-hours.png --palette art/palettes/after-hours.hex",
+    "python3 tools/art/palette_remap.py remap --input art/backgrounds/study-b7-entrance-after-hours.png --output assets/backgrounds/study-b7-entrance-gb-import.png --mode index --source-palette art/palettes/after-hours.hex --palette art/palettes/gb-studio-after-hours-bg.hex",
+    "python3 tools/art/palette_remap.py remap --input SOURCE_ATLAS.png --output art/tilesets/pokemon-emerald-exterior-after-hours.png --palette art/palettes/after-hours.hex",
+    "libresprite --batch art/backgrounds/study-campus-after-hours.png --save-as art/backgrounds/study-campus-after-hours.ase"
+  ]
+}

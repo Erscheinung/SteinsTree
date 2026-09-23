@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "8d7ad727-3ee8-4a7c-9c12-2ccadab83055",
+  "name": "Study Campus GB Import",
+  "symbol": "bg_study_campus_gb_import",
+  "tileColors": "",
+  "filename": "study-campus-gb-import.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

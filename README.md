@@ -54,3 +54,17 @@ B/Back key - A button
 
 
 [The json file is the main configuration file for the game (open with Notepad).]
+
+# Art development pack
+
+Continue editing the game in GB Studio and pixel art in LibreSprite. New palettes
+live in [art/palettes](art/palettes), background studies in
+[art/backgrounds](art/backgrounds), atlas references in [art/tilesets](art/tilesets),
+and character animation studies in [art/sprites](art/sprites). Use the included
+manifests for provenance, frame order and validation results. Runtime exports are
+under `assets/`; previews and editable sources stay under `art/`.
+
+The After Hours palette is `#E8DFC8`, `#9BA58D`, `#596579`, `#242337`, light to dark.
+Colored previews are separate from GB Studio's canonical import colors. New art
+does not replace existing scenes or rebuild the ROM. The reusable
+[sprite brief](sprite-prompt.md) supports any requested subject.

@@ -1,0 +1,569 @@
+{
+  "pack": "afterhours_sprite_test",
+  "status": "TEST ASSETS. Visual interpretations of existing dialogue, not story canon. The owner intends to author final art; original sprites in assets/sprites/ are untouched.",
+  "provenance": {
+    "author": "Generated with Claude Code (model claude-opus-5-5) on 2026-09-23 at the owner's request.",
+    "method": "Original pixel art hand-specified as character grids in tools/sprites/afterhours_art.py and rendered by tools/sprites/afterhours_build.py. Not traced or edited from any existing or third-party sprite. No antialiasing, no scaling of runtime art.",
+    "regenerate": "python3 tools/sprites/afterhours_build.py && python3 tools/sprites/afterhours_validate.py",
+    "note": "Rebuilding overwrites the generated files listed here; once the owner edits an .ase by hand, treat that .ase as the source and stop regenerating it."
+  },
+  "project": {
+    "descriptor": "Dernier.json",
+    "gb_studio": "4.2",
+    "color_mode": "monochrome (unchanged)"
+  },
+  "frame_size_px": [
+    16,
+    16
+  ],
+  "palette": {
+    "runtime_import": {
+      "transparent_key": "#65FF00",
+      "light": "#E0F8CF",
+      "middle": "#86C06C",
+      "dark": "#071821"
+    },
+    "preview_display": {
+      "light": "#E8DFC8",
+      "middle": "#9BA58D",
+      "dark": "#242337",
+      "preview_background": "#596579"
+    },
+    "note": "Runtime PNGs contain only the four import colors. Previews map light/middle/dark to the After Hours colors and show transparency as #596579 (contact sheet also on #E8DFC8). Never import preview PNG/GIF files as sprites."
+  },
+  "ase_sources": "RGBA .ase, 16x16 canvas. Layer 'gbs_key_65FF00' (locked background, solid key) under layer 'art' (transparent where keyed). Frame durations = preview_ms; tags as listed. Export: File > Export Sprite Sheet, horizontal, no padding, both layers visible; or libresprite -b SOURCE.ase --sheet OUT.png --sheet-type horizontal.",
+  "characters": {
+    "player": {
+      "display_name": "Player (\"You\")",
+      "visual_interpretation": "Tired student: messy hair, side-swept fringe, heavy-lidded eyes, middle-tone hoodie with light backpack straps, dark trousers. Interpretation of the opening lines, not canon.",
+      "dialogue_sources": [
+        {
+          "path": "project/scenes/outside/triggers/begin.gbsres",
+          "text": "Life is\nmeaningless..."
+        },
+        {
+          "path": "project/scenes/outside/triggers/begin.gbsres",
+          "text": "And college sucks!"
+        },
+        {
+          "path": "project/scenes/scene_5/actors/mayank.gbsres",
+          "text": "You: I'm gonna\ncheck it out."
+        },
+        {
+          "path": "project/scenes/scene_13/triggers/trigger.gbsres",
+          "text": "What was that? I\nmust tell Mayank\nimmediately!"
+        }
+      ]
+    },
+    "mayank": {
+      "display_name": "Mayank",
+      "visual_interpretation": "Alert friend: neat side-parted hair, glasses, light collared shirt, belt, middle-tone trousers. Interpretation, not canon.",
+      "dialogue_sources": [
+        {
+          "path": "project/scenes/scene_5/actors/mayank.gbsres",
+          "text": "Something weird is\ngoing on...",
+          "note": "unlabelled line inside Mayank's actor script; speaker not asserted"
+        },
+        {
+          "path": "project/scenes/scene_5/actors/mayank.gbsres",
+          "text": "Mayank: Hey! Did\nyou\nhear that?"
+        },
+        {
+          "path": "project/scenes/scene_5/actors/mayank.gbsres",
+          "text": "came from the B7\nmain gate area."
+        },
+        {
+          "path": "project/scenes/scene_5/actors/mayank.gbsres",
+          "text": "Mayank: Ok, I'll\nwait here."
+        }
+      ]
+    },
+    "scholar": {
+      "display_name": "Random MUJ scholar",
+      "visual_interpretation": "Uncanny echo / optional zombie study: grey (middle) skin, blank light eyes, gaping mouth, tilted head, light coat with lanyard and card, torn hem, reaching arms and dragging gait. Reads as a zombie for the legacy idea or as a hollowed-out double of a student for the existential direction. Interpretation, not canon.",
+      "dialogue_sources": [
+        {
+          "path": "project/scenes/scene_13/scene.gbsres",
+          "text": "Random MUJ\nscholar: grrrr!"
+        }
+      ]
+    }
+  },
+  "strips": [
+    {
+      "name": "afterhours_player_walk",
+      "character": "player",
+      "kind": "walk",
+      "runtime_png": "assets/sprites/afterhours_player_walk.png",
+      "source_ase": "art/sprites/source/afterhours_player_walk.ase",
+      "preview_png": "art/sprites/preview/afterhours_player_walk_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_player_walk.gif",
+      "preview_gif_layout": "panels: down, up, right, left (right mirrored as GB Studio would)",
+      "size_px": [
+        96,
+        16
+      ],
+      "frame_count": 6,
+      "frames": [
+        {
+          "index": 0,
+          "label": "down_a",
+          "preview_ms": 180
+        },
+        {
+          "index": 1,
+          "label": "down_b",
+          "preview_ms": 180
+        },
+        {
+          "index": 2,
+          "label": "up_a",
+          "preview_ms": 180
+        },
+        {
+          "index": 3,
+          "label": "up_b",
+          "preview_ms": 180
+        },
+        {
+          "index": 4,
+          "label": "right_a",
+          "preview_ms": 180
+        },
+        {
+          "index": 5,
+          "label": "right_b",
+          "preview_ms": 180
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "walk_down",
+          "from": 0,
+          "to": 1
+        },
+        {
+          "name": "walk_up",
+          "from": 2,
+          "to": 3
+        },
+        {
+          "name": "walk_right",
+          "from": 4,
+          "to": 5
+        }
+      ],
+      "notes": "GB Studio walking actor order: down A, down B, up A, up B, right A, right B. Left = flipped right."
+    },
+    {
+      "name": "afterhours_player_idle",
+      "character": "player",
+      "kind": "idle",
+      "runtime_png": "assets/sprites/afterhours_player_idle.png",
+      "source_ase": "art/sprites/source/afterhours_player_idle.ase",
+      "preview_png": "art/sprites/preview/afterhours_player_idle_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_player_idle.gif",
+      "preview_gif_layout": "single front-facing panel",
+      "size_px": [
+        64,
+        16
+      ],
+      "frame_count": 4,
+      "frames": [
+        {
+          "index": 0,
+          "label": "stand",
+          "preview_ms": 700
+        },
+        {
+          "index": 1,
+          "label": "head_sinks",
+          "preview_ms": 400
+        },
+        {
+          "index": 2,
+          "label": "eyes_shut",
+          "preview_ms": 800
+        },
+        {
+          "index": 3,
+          "label": "gaze_down",
+          "preview_ms": 400
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "player_idle",
+          "from": 0,
+          "to": 3
+        }
+      ],
+      "notes": "Front-facing dialogue idle loop (separate sprite sheet)."
+    },
+    {
+      "name": "afterhours_player_react",
+      "character": "player",
+      "kind": "react",
+      "runtime_png": "assets/sprites/afterhours_player_react.png",
+      "source_ase": "art/sprites/source/afterhours_player_react.ase",
+      "preview_png": "art/sprites/preview/afterhours_player_react_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_player_react.gif",
+      "preview_gif_layout": "single front-facing panel",
+      "size_px": [
+        64,
+        16
+      ],
+      "frame_count": 4,
+      "frames": [
+        {
+          "index": 0,
+          "label": "hands_out",
+          "preview_ms": 200
+        },
+        {
+          "index": 1,
+          "label": "shrug",
+          "preview_ms": 200
+        },
+        {
+          "index": 2,
+          "label": "shrug_shout",
+          "preview_ms": 500
+        },
+        {
+          "index": 3,
+          "label": "drop_mutter",
+          "preview_ms": 500
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "player_react",
+          "from": 0,
+          "to": 3
+        }
+      ],
+      "notes": "Front-facing dialogue reaction, play once or loop (separate sprite sheet)."
+    },
+    {
+      "name": "afterhours_mayank_walk",
+      "character": "mayank",
+      "kind": "walk",
+      "runtime_png": "assets/sprites/afterhours_mayank_walk.png",
+      "source_ase": "art/sprites/source/afterhours_mayank_walk.ase",
+      "preview_png": "art/sprites/preview/afterhours_mayank_walk_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_mayank_walk.gif",
+      "preview_gif_layout": "panels: down, up, right, left (right mirrored as GB Studio would)",
+      "size_px": [
+        96,
+        16
+      ],
+      "frame_count": 6,
+      "frames": [
+        {
+          "index": 0,
+          "label": "down_a",
+          "preview_ms": 160
+        },
+        {
+          "index": 1,
+          "label": "down_b",
+          "preview_ms": 160
+        },
+        {
+          "index": 2,
+          "label": "up_a",
+          "preview_ms": 160
+        },
+        {
+          "index": 3,
+          "label": "up_b",
+          "preview_ms": 160
+        },
+        {
+          "index": 4,
+          "label": "right_a",
+          "preview_ms": 160
+        },
+        {
+          "index": 5,
+          "label": "right_b",
+          "preview_ms": 160
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "walk_down",
+          "from": 0,
+          "to": 1
+        },
+        {
+          "name": "walk_up",
+          "from": 2,
+          "to": 3
+        },
+        {
+          "name": "walk_right",
+          "from": 4,
+          "to": 5
+        }
+      ],
+      "notes": "GB Studio walking actor order: down A, down B, up A, up B, right A, right B. Left = flipped right."
+    },
+    {
+      "name": "afterhours_mayank_idle",
+      "character": "mayank",
+      "kind": "idle",
+      "runtime_png": "assets/sprites/afterhours_mayank_idle.png",
+      "source_ase": "art/sprites/source/afterhours_mayank_idle.ase",
+      "preview_png": "art/sprites/preview/afterhours_mayank_idle_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_mayank_idle.gif",
+      "preview_gif_layout": "single front-facing panel",
+      "size_px": [
+        64,
+        16
+      ],
+      "frame_count": 4,
+      "frames": [
+        {
+          "index": 0,
+          "label": "stand",
+          "preview_ms": 600
+        },
+        {
+          "index": 1,
+          "label": "glance_left",
+          "preview_ms": 500
+        },
+        {
+          "index": 2,
+          "label": "foot_tap",
+          "preview_ms": 300
+        },
+        {
+          "index": 3,
+          "label": "glance_right",
+          "preview_ms": 500
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "mayank_idle",
+          "from": 0,
+          "to": 3
+        }
+      ],
+      "notes": "Front-facing dialogue idle loop (separate sprite sheet)."
+    },
+    {
+      "name": "afterhours_mayank_react",
+      "character": "mayank",
+      "kind": "react",
+      "runtime_png": "assets/sprites/afterhours_mayank_react.png",
+      "source_ase": "art/sprites/source/afterhours_mayank_react.ase",
+      "preview_png": "art/sprites/preview/afterhours_mayank_react_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_mayank_react.gif",
+      "preview_gif_layout": "single front-facing panel",
+      "size_px": [
+        64,
+        16
+      ],
+      "frame_count": 4,
+      "frames": [
+        {
+          "index": 0,
+          "label": "wide_eyes",
+          "preview_ms": 200
+        },
+        {
+          "index": 1,
+          "label": "startle_hop",
+          "preview_ms": 150
+        },
+        {
+          "index": 2,
+          "label": "hand_to_ear",
+          "preview_ms": 400
+        },
+        {
+          "index": 3,
+          "label": "listen_right",
+          "preview_ms": 700
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "mayank_react",
+          "from": 0,
+          "to": 3
+        }
+      ],
+      "notes": "Front-facing dialogue reaction, play once or loop (separate sprite sheet)."
+    },
+    {
+      "name": "afterhours_scholar_walk",
+      "character": "scholar",
+      "kind": "walk",
+      "runtime_png": "assets/sprites/afterhours_scholar_walk.png",
+      "source_ase": "art/sprites/source/afterhours_scholar_walk.ase",
+      "preview_png": "art/sprites/preview/afterhours_scholar_walk_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_scholar_walk.gif",
+      "preview_gif_layout": "panels: down, up, right, left (right mirrored as GB Studio would)",
+      "size_px": [
+        96,
+        16
+      ],
+      "frame_count": 6,
+      "frames": [
+        {
+          "index": 0,
+          "label": "down_a",
+          "preview_ms": 280
+        },
+        {
+          "index": 1,
+          "label": "down_b",
+          "preview_ms": 280
+        },
+        {
+          "index": 2,
+          "label": "up_a",
+          "preview_ms": 280
+        },
+        {
+          "index": 3,
+          "label": "up_b",
+          "preview_ms": 280
+        },
+        {
+          "index": 4,
+          "label": "right_a",
+          "preview_ms": 280
+        },
+        {
+          "index": 5,
+          "label": "right_b",
+          "preview_ms": 280
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "walk_down",
+          "from": 0,
+          "to": 1
+        },
+        {
+          "name": "walk_up",
+          "from": 2,
+          "to": 3
+        },
+        {
+          "name": "walk_right",
+          "from": 4,
+          "to": 5
+        }
+      ],
+      "notes": "GB Studio walking actor order: down A, down B, up A, up B, right A, right B. Left = flipped right."
+    },
+    {
+      "name": "afterhours_scholar_idle",
+      "character": "scholar",
+      "kind": "idle",
+      "runtime_png": "assets/sprites/afterhours_scholar_idle.png",
+      "source_ase": "art/sprites/source/afterhours_scholar_idle.ase",
+      "preview_png": "art/sprites/preview/afterhours_scholar_idle_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_scholar_idle.gif",
+      "preview_gif_layout": "single front-facing panel",
+      "size_px": [
+        64,
+        16
+      ],
+      "frame_count": 4,
+      "frames": [
+        {
+          "index": 0,
+          "label": "tilt_right",
+          "preview_ms": 700
+        },
+        {
+          "index": 1,
+          "label": "droop",
+          "preview_ms": 500
+        },
+        {
+          "index": 2,
+          "label": "loll_left",
+          "preview_ms": 700
+        },
+        {
+          "index": 3,
+          "label": "twitch_blink",
+          "preview_ms": 120
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "scholar_idle",
+          "from": 0,
+          "to": 3
+        }
+      ],
+      "notes": "Front-facing dialogue idle loop (separate sprite sheet)."
+    },
+    {
+      "name": "afterhours_scholar_react",
+      "character": "scholar",
+      "kind": "react",
+      "runtime_png": "assets/sprites/afterhours_scholar_react.png",
+      "source_ase": "art/sprites/source/afterhours_scholar_react.ase",
+      "preview_png": "art/sprites/preview/afterhours_scholar_react_preview.png",
+      "preview_gif": "art/sprites/preview/afterhours_scholar_react.gif",
+      "preview_gif_layout": "single front-facing panel",
+      "size_px": [
+        64,
+        16
+      ],
+      "frame_count": 4,
+      "frames": [
+        {
+          "index": 0,
+          "label": "teeth",
+          "preview_ms": 250
+        },
+        {
+          "index": 1,
+          "label": "arms_up_growl",
+          "preview_ms": 200
+        },
+        {
+          "index": 2,
+          "label": "lunge",
+          "preview_ms": 300
+        },
+        {
+          "index": 3,
+          "label": "snarl_hold",
+          "preview_ms": 500
+        }
+      ],
+      "ase_tags": [
+        {
+          "name": "scholar_react",
+          "from": 0,
+          "to": 3
+        }
+      ],
+      "notes": "Front-facing dialogue reaction, play once or loop (separate sprite sheet)."
+    }
+  ],
+  "gb_studio_import": [
+    "GB Studio picks up new PNGs in assets/sprites/ automatically when the project is open/reloaded and creates its own .gbsres sidecar; this pack does not ship sidecars.",
+    "Walk strips: in the Sprite Editor choose an animation type with four directions, assign frames down=0,1 up=2,3 right=4,5 and enable flipping Right to create Left. Tune animation speed by eye.",
+    "Idle/react strips are separate sprite sheets. Use them in dialogue with 'Set Actor Sprite Sheet' (swap before/after the text) or combine frames into one image yourself if you want them as extra states of the walking sprite; a PNG strip alone does not configure a state.",
+    "Actors currently use their existing sprites; nothing in project/ or Dernier.json was changed."
+  ],
+  "not_performed": [
+    "No GB Studio import, compile or ROM build was run.",
+    "Sprite Editor tile/frame auto-detection for these PNGs was not observed."
+  ]
+}

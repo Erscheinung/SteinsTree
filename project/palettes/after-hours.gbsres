@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "after-hours",
+  "name": "After Hours",
+  "colors": [
+    "E8DFC8",
+    "9BA58D",
+    "596579",
+    "242337"
+  ],
+  "defaultName": "After Hours",
+  "defaultColors": [
+    "E8DFC8",
+    "9BA58D",
+    "596579",
+    "242337"
+  ]
+}
