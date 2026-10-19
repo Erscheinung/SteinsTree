@@ -25,8 +25,7 @@
         },
         "direction": "down",
         "fadeSpeed": "2"
-      },
-      "id": "15949c69-4a4a-7406-fb5a-abf31a0c05d0"
+      }
     }
   ],
   "leaveScript": []

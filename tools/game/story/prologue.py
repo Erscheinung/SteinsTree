@@ -26,7 +26,8 @@ def chapter_select(ctx):
     from build_game import LEGACY
 
     def jump(vars_, scene_key, x, y, d="down"):
-        ev = [set_var(k, v) for k, v in vars_.items()]
+        ev = [set_var(k, v) for k, v in vars_.items()] + \
+             [gbs.speed("player", 1), gbs.player_sprite(ctx.sprite("player"))]
         sid = LEGACY.get(scene_key) or ctx.sid_of(scene_key)
         return ev + [goto(sid, x, y, d)]
     alive = {"Alive_" + f: 1 for f in ("Mayank", "Divyansh", "Kanishk", "Parag", "Anshuman", "Garvita")}

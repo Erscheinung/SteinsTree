@@ -15,7 +15,7 @@
   "direction": "down",
   "moveSpeed": 1,
   "animSpeed": 15,
-  "isPinned": false,
+  "isPinned": true,
   "persistent": false,
   "collisionGroup": "",
   "collisionExtraFlags": [],
@@ -142,7 +142,7 @@
                 {
                   "command": "EVENT_SOUND_PLAY_EFFECT",
                   "args": {
-                    "type": "noise",
+                    "type": "crash",
                     "priority": "medium",
                     "pitch": 3,
                     "frequency": 200,

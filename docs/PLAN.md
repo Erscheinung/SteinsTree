@@ -134,7 +134,12 @@ editing it **without AI**.
 - The Codex review gate (`gpt-6.1-sol`):
   - round 1 (medium) found 2 blockers, 5 bugs, polish items and feature ideas;
     all were fixed or adopted;
-  - round 2 (high) results are folded in below.
+  - round 2 (high) ran a continuous playtest of the pre-fix ROM and
+    found 3 blockers (collision box, India start trap, off-camera controller
+    actors), 8 bugs and pacing notes.
+  - I made the final call on each finding. The blockers and bugs, plus most
+    polish items, are fixed and re-verified on the rebuilt ROM. The decisions
+    are listed in CLAUDE.md under "Review gate".
 - The layout audit is clean apart from intentional items: your original
   "Begin" trigger, isolated edge pockets, and overlaps already present in the
   original scenes.
@@ -148,3 +153,10 @@ editing it **without AI**.
   (see the [EDIT] items in docs/STORY.md).
 - Not verified on real hardware or in the GB Studio GUI's play mode, only in
   the CLI build, PyBoy and (structurally) the web export.
+- Pause is unavailable inside the blocking turn-based battles and the saw loop
+  (by GB Studio design); available everywhere else.
+- Deferred feature ideas from review:
+  - a free-evening friend picker / map highlight;
+  - "Return to Hub" from inside a memory;
+  - a re-arranged Muskaan motif for the reunion;
+  - studio overlays of actor bounds and activation areas.

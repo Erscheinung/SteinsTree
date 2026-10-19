@@ -333,7 +333,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "YOU      HP $145$\nZOMBIES  HP $146$"
+                            "YOU $145$HP SNACK $199$\nZOMBIES  HP $146$"
                           ],
                           "avatarId": ""
                         },
@@ -1017,6 +1017,30 @@
                   "id": "ff05c3f0-064a-ed5d-3b6f-4b2686f2b2fc"
                 },
                 {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.3,
+                    "frames": 18,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "id": "64e61316-2182-783c-c199-6bcb686693a9"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk:\n(clutching his\narm) Fine.",
+                      "I'm fine. Focus."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3f60dfd1-21a8-bf89-5dea-a48edc00655a"
+                },
+                {
                   "command": "EVENT_IF",
                   "args": {
                     "condition": {
@@ -1043,7 +1067,7 @@
                             "value": 1
                           }
                         },
-                        "id": "fe916ed1-ddb0-c2ca-f7aa-694dcac6e633"
+                        "id": "e90ce685-d066-ebd4-4d61-f90fb95fa0c6"
                       },
                       {
                         "command": "EVENT_TEXT",
@@ -1053,12 +1077,12 @@
                           ],
                           "avatarId": ""
                         },
-                        "id": "8ca7d0e0-e939-98df-da94-104a1e406d73"
+                        "id": "b089cc10-6b07-d65d-76ba-284b8c7674b7"
                       }
                     ],
                     "false": []
                   },
-                  "id": "64e61316-2182-783c-c199-6bcb686693a9"
+                  "id": "a1240e05-2d75-4148-44bd-4359a3a2d17d"
                 },
                 {
                   "command": "EVENT_LOOP_WHILE",
@@ -1081,11 +1105,11 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "YOU      HP $145$\nZOMBIES  HP $146$"
+                            "YOU $145$HP SNACK $199$\nZOMBIES  HP $146$"
                           ],
                           "avatarId": ""
                         },
-                        "id": "fb7bad86-2d05-ef5b-4e21-89566779828f"
+                        "id": "d48e27f9-f509-45a3-871e-127707d59c77"
                       },
                       {
                         "command": "EVENT_MENU",
@@ -1100,7 +1124,7 @@
                           "option3": "Barrier",
                           "option4": "Snack"
                         },
-                        "id": "51432ead-9cee-2ac2-b0aa-b65a99157aa9"
+                        "id": "ac796e1d-c401-8ebe-d599-00760a65fbb2"
                       },
                       {
                         "command": "EVENT_SWITCH",
@@ -1138,7 +1162,7 @@
                                 "maxValue": "6",
                                 "clamp": false
                               },
-                              "id": "c8452553-e272-9fe0-dcd3-62f1ee2bff8b"
+                              "id": "321af7e9-932e-b97c-f9f4-69bebd7c20cf"
                             },
                             {
                               "command": "EVENT_IF",
@@ -1169,7 +1193,7 @@
                                       "maxValue": "0",
                                       "clamp": true
                                     },
-                                    "id": "60e66f90-5e9c-513b-4279-cc6fc9818845"
+                                    "id": "5a0ce362-2c1f-b549-574c-9073af11972c"
                                   },
                                   {
                                     "command": "EVENT_SET_VALUE",
@@ -1180,7 +1204,7 @@
                                         "value": 0
                                       }
                                     },
-                                    "id": "06b4a086-3fad-378d-3ea5-78a89e3f89d7"
+                                    "id": "0cd82772-e49b-6c8a-ffab-06849343d9b3"
                                   },
                                   {
                                     "command": "EVENT_TEXT",
@@ -1190,12 +1214,12 @@
                                       ],
                                       "avatarId": ""
                                     },
-                                    "id": "9480d392-945b-57dd-c9c1-e033398cf11a"
+                                    "id": "9d260c2c-bd8e-3b55-a8f7-ac4d9c369e86"
                                   }
                                 ],
                                 "false": []
                               },
-                              "id": "86bdcc7d-e64d-8170-620d-ff421ea48cbf"
+                              "id": "3e4c90b6-19a8-d037-9c6d-5df8f5c21e53"
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -1205,7 +1229,7 @@
                                 ],
                                 "avatarId": ""
                               },
-                              "id": "f6e69ce1-489b-e9bb-b42b-1c9949af6e45"
+                              "id": "92551e6c-312f-7583-99b9-90058053be49"
                             },
                             {
                               "command": "EVENT_CAMERA_SHAKE",
@@ -1218,7 +1242,7 @@
                                   "value": 3
                                 }
                               },
-                              "id": "ae35ae9f-98ea-52ab-3ae6-afd50ce2dcb9"
+                              "id": "e099d47d-378e-3e67-eed0-8369db314026"
                             },
                             {
                               "command": "EVENT_SOUND_PLAY_EFFECT",
@@ -1231,7 +1255,7 @@
                                 "wait": false,
                                 "effect": 0
                               },
-                              "id": "68bba7ac-a279-a637-34f2-81b8d9173f6a"
+                              "id": "ef88d974-ac77-9e11-9b9d-ed986efc7956"
                             },
                             {
                               "command": "EVENT_VARIABLE_MATH",
@@ -1245,7 +1269,7 @@
                                 "maxValue": "0",
                                 "clamp": true
                               },
-                              "id": "09a6a846-5b19-8b72-2e9f-acacc47d3d11"
+                              "id": "004d6900-e108-b71e-8daa-1efc08e08051"
                             }
                           ],
                           "true1": [
@@ -1257,7 +1281,7 @@
                                 ],
                                 "avatarId": ""
                               },
-                              "id": "26ab765c-0543-ef17-dda6-8d10f93725ca"
+                              "id": "6af86fea-cb25-eade-09bd-45687e557b6a"
                             },
                             {
                               "command": "EVENT_SET_VALUE",
@@ -1268,7 +1292,7 @@
                                   "value": 1
                                 }
                               },
-                              "id": "27f49cae-57fe-a3e4-d8e9-5233128b094a"
+                              "id": "4a938776-bd10-e0bf-d765-1c23af2ab264"
                             }
                           ],
                           "true2": [
@@ -1280,7 +1304,7 @@
                                 ],
                                 "avatarId": ""
                               },
-                              "id": "3ef48dd8-13be-2800-0530-d5f24f7e2568"
+                              "id": "c92e27d1-ad1b-f287-8040-fb1814a8f014"
                             },
                             {
                               "command": "EVENT_SET_VALUE",
@@ -1291,7 +1315,7 @@
                                   "value": 1
                                 }
                               },
-                              "id": "a3bfc197-77e8-f729-ab90-ddbf857ad696"
+                              "id": "bab33db0-439b-f10e-0742-710c24b445c0"
                             }
                           ],
                           "true3": [
@@ -1324,7 +1348,7 @@
                                       "maxValue": "0",
                                       "clamp": true
                                     },
-                                    "id": "d34f11cb-4fa6-bb79-2089-37027eda233a"
+                                    "id": "710d4536-ff7b-32a0-8188-0099c5448ec3"
                                   },
                                   {
                                     "command": "EVENT_VARIABLE_MATH",
@@ -1337,7 +1361,7 @@
                                       "maxValue": "0",
                                       "clamp": true
                                     },
-                                    "id": "07589567-c423-1adb-2a5d-a0ee4231a8ee"
+                                    "id": "e3fe2348-fe50-8249-7c89-40c69553d59b"
                                   },
                                   {
                                     "command": "EVENT_IF",
@@ -1366,12 +1390,12 @@
                                               "value": 30
                                             }
                                           },
-                                          "id": "0fbff7f2-0f3a-66c6-f112-cf3ed3b6be96"
+                                          "id": "684ff239-1b8d-0b81-1e27-e8af80a0f4f0"
                                         }
                                       ],
                                       "false": []
                                     },
-                                    "id": "37775c86-b2c2-39b4-f917-4290e8377e9e"
+                                    "id": "4e66845f-cd07-349a-6fcf-cc17fe2f58bd"
                                   },
                                   {
                                     "command": "EVENT_TEXT",
@@ -1381,7 +1405,7 @@
                                       ],
                                       "avatarId": ""
                                     },
-                                    "id": "d49cea69-8881-d3f2-c31b-aecea9e7cb9b"
+                                    "id": "4e8f464c-47c7-13e5-3f30-0cba9c806c0e"
                                   }
                                 ],
                                 "false": [
@@ -1393,16 +1417,16 @@
                                       ],
                                       "avatarId": ""
                                     },
-                                    "id": "dda1723f-26d6-da4f-62b1-73d5712955c8"
+                                    "id": "40ed5867-4346-4b4c-b390-bbed0ac24753"
                                   }
                                 ]
                               },
-                              "id": "adb3ea15-1d9e-2f5b-cbc3-a9d727391214"
+                              "id": "bd8d66bb-e53b-95a8-b899-ea6419efe2a1"
                             }
                           ],
                           "false": []
                         },
-                        "id": "32d3425b-5d20-29c6-8ce0-c494e7c43d8d"
+                        "id": "94aa0205-31af-9b51-48ff-12fb39a3b998"
                       },
                       {
                         "command": "EVENT_IF",
@@ -1433,7 +1457,7 @@
                                 "maxValue": "5",
                                 "clamp": false
                               },
-                              "id": "ac8619c8-ad45-2d60-a454-7df8908ce885"
+                              "id": "20ac1233-436c-68b0-b878-3c2605689cad"
                             },
                             {
                               "command": "EVENT_IF",
@@ -1464,7 +1488,7 @@
                                       "maxValue": "0",
                                       "clamp": true
                                     },
-                                    "id": "95bfe477-d49a-e549-300d-259a77925a8a"
+                                    "id": "807b9a21-4465-fee8-351a-1ef714e5af87"
                                   },
                                   {
                                     "command": "EVENT_SET_VALUE",
@@ -1475,7 +1499,7 @@
                                         "value": 0
                                       }
                                     },
-                                    "id": "6798b02b-1cbe-83d3-bd6e-7834d84d0615"
+                                    "id": "76225859-b4ea-df1c-5ba4-d8a82ff90b96"
                                   },
                                   {
                                     "command": "EVENT_TEXT",
@@ -1485,12 +1509,12 @@
                                       ],
                                       "avatarId": ""
                                     },
-                                    "id": "3f940a5e-33f9-a039-c7b9-4b9f220f8dba"
+                                    "id": "8b9cd42f-1994-9d34-2acc-743bf3f304c8"
                                   }
                                 ],
                                 "false": []
                               },
-                              "id": "abbfe0f4-e23d-0dfc-0eba-1e5c3fecc865"
+                              "id": "7d3c5b86-fc7d-5a3d-26d6-8c1b1a34f972"
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -1500,7 +1524,7 @@
                                 ],
                                 "avatarId": ""
                               },
-                              "id": "7967cdd3-9d7e-7aab-bc5d-2b5df7ad36a9"
+                              "id": "69d0596f-d8bc-1757-b755-4527cf9ef9a5"
                             },
                             {
                               "command": "EVENT_CAMERA_SHAKE",
@@ -1513,7 +1537,7 @@
                                   "value": 4
                                 }
                               },
-                              "id": "9ff89f85-f1bd-06ee-2bd2-4d9b825b813f"
+                              "id": "6da1d815-7cc3-2fea-3f8f-d6ba3fbbc4ab"
                             },
                             {
                               "command": "EVENT_VARIABLE_MATH",
@@ -1527,7 +1551,7 @@
                                 "maxValue": "0",
                                 "clamp": true
                               },
-                              "id": "a955b92a-eef0-c377-5a2f-6a94db2d5d80"
+                              "id": "2dd5036a-1ada-9cae-a035-8240d4ffbda1"
                             },
                             {
                               "command": "EVENT_IF",
@@ -1555,7 +1579,7 @@
                                       ],
                                       "avatarId": ""
                                     },
-                                    "id": "92e25b58-7505-41ff-a75d-7c92fc7301a4"
+                                    "id": "86109f20-7422-9792-a3a5-7ae97c41e00f"
                                   },
                                   {
                                     "command": "EVENT_SET_VALUE",
@@ -1566,7 +1590,7 @@
                                         "value": 30
                                       }
                                     },
-                                    "id": "4449da5d-aa9b-9554-1f06-7f3d1b88390c"
+                                    "id": "ae7e1306-168e-1eae-f82b-bb1da278fda8"
                                   },
                                   {
                                     "command": "EVENT_SET_VALUE",
@@ -1577,7 +1601,7 @@
                                         "value": 0
                                       }
                                     },
-                                    "id": "ea5fe1e1-c8fe-b9e5-6d72-94596702f7c5"
+                                    "id": "79f2823f-5dce-cdb8-e7fc-4b8318799cff"
                                   },
                                   {
                                     "command": "EVENT_SET_VALUE",
@@ -1588,7 +1612,7 @@
                                         "value": 0
                                       }
                                     },
-                                    "id": "40913d52-fe98-7a37-1fbb-1b4d37e2f34c"
+                                    "id": "2bd3ebab-5b8f-bb51-bfad-aeaf062bfa0e"
                                   },
                                   {
                                     "command": "EVENT_SET_VALUE",
@@ -1599,21 +1623,21 @@
                                         "value": 1
                                       }
                                     },
-                                    "id": "a12d7df7-3e73-e383-b53a-1a3f7ccbc38d"
+                                    "id": "625315a0-75ea-cdad-b204-a32b1d03cf69"
                                   }
                                 ],
                                 "false": []
                               },
-                              "id": "521ed89d-17bd-09d3-4472-582eff6ce85d"
+                              "id": "3aceb3ae-b64a-cedf-4404-ca8fd541e5ea"
                             }
                           ],
                           "false": []
                         },
-                        "id": "cf9700b1-8255-1c07-6668-7bdb90a5fd8f"
+                        "id": "209f565f-fd92-3b76-7d3f-5559d6858374"
                       }
                     ]
                   },
-                  "id": "3f60dfd1-21a8-bf89-5dea-a48edc00655a"
+                  "id": "164d2c5c-424f-a1a1-5bac-ed0790e98da8"
                 },
                 {
                   "command": "EVENT_IF",
@@ -1641,7 +1665,7 @@
                           ],
                           "avatarId": ""
                         },
-                        "id": "e90ce685-d066-ebd4-4d61-f90fb95fa0c6"
+                        "id": "2c982660-6c66-21c9-0b89-96ab3d5cffa7"
                       },
                       {
                         "command": "EVENT_ACTOR_EFFECTS",
@@ -1651,19 +1675,19 @@
                           "time": 0.5,
                           "frames": 30
                         },
-                        "id": "b089cc10-6b07-d65d-76ba-284b8c7674b7"
+                        "id": "8918203b-d482-5f7a-ab49-af7162a1045a"
                       },
                       {
                         "command": "EVENT_ACTOR_DEACTIVATE",
                         "args": {
                           "actorId": "bb6ebec5-e799-5f84-a1e2-1e08439b2fff"
                         },
-                        "id": "e3747b9d-1275-eecf-9d3f-4ba2181447b0"
+                        "id": "4e4cb28a-2169-635c-7b9c-b5ddae966a03"
                       }
                     ],
                     "false": []
                   },
-                  "id": "a1240e05-2d75-4148-44bd-4359a3a2d17d"
+                  "id": "d1d4c010-1713-db85-0e17-d0aabb345c1b"
                 }
               ],
               "false": []
@@ -1829,7 +1853,7 @@
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
-                            "YOU      HP $145$\nZOMBIES  HP $146$"
+                            "YOU $145$HP SNACK $199$\nZOMBIES  HP $146$"
                           ],
                           "avatarId": ""
                         },

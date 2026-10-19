@@ -9,8 +9,8 @@ from story import travel, prologue, act1, act2, act3, legacy
 from story.legacy import pause_hook
 
 # scenes where START should not open the pause menu (cutscene-only screens)
-NO_PAUSE = {"battle_pocket", "day_card", "pause", "credits", "quess_siege", "old_mess_stand", "lanes",
-            "mem_flight", "dome_night", "chapter_select"}
+NO_PAUSE = {"battle_pocket", "day_card", "pause", "credits", "quess_siege", "old_mess_stand",
+            "dome_night", "chapter_select"}
 
 FOLDER_ROWS = ["0 Menus", "1 Prologue", "3 Days", "2 Campus", "2 Campus Interiors", "4 Outbreak",
                "5 The Middle", "6 Finale"]

@@ -35,12 +35,19 @@
       "command": "EVENT_TEXT",
       "args": {
         "text": [
-          "You were terrible.\nYou were happy.",
-          "(LIFE: football\nwith friends, fun\nwith kids)"
+          "You were terrible.\nYou were happy."
         ],
         "avatarId": ""
       },
       "id": "c8014cb2-e5e2-7f77-a42e-3bdb02975747"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "LIFE: football with friends, fun with kids",
+        "__collapse": false
+      },
+      "id": "b5984ff3-a83e-6ff6-2b0b-5da26d1bf53b"
     },
     {
       "command": "EVENT_SET_VALUE",
@@ -51,7 +58,7 @@
           "value": 1
         }
       },
-      "id": "b5984ff3-a83e-6ff6-2b0b-5da26d1bf53b"
+      "id": "13084545-e950-342b-d29d-6d1eaa4dca76"
     }
   ],
   "startScript": [],

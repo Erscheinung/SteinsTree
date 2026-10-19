@@ -54,13 +54,11 @@
               "palette5": "enr-mess-to-main-5-night",
               "palette6": "enr-mess-to-main-6-night",
               "palette7": "muj-ui"
-            },
-            "id": "0fa91382-caa9-135c-9448-4c66e803f81d"
+            }
           }
         ],
         "false": []
-      },
-      "id": "6d7811da-ed10-0cd9-c079-cd6dae2f3883"
+      }
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -78,12 +76,10 @@
             "args": {
               "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
               "__name": "Pause Menu"
-            },
-            "id": "488987ab-e4b0-c317-5176-982e35e0de79"
+            }
           }
         ]
-      },
-      "id": "372fb116-d30b-cb50-bb7d-fe797e73fc43"
+      }
     }
   ],
   "playerHit1Script": [],

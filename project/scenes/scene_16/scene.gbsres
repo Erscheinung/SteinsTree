@@ -54,13 +54,11 @@
               "palette5": "enr-b7-chiller-5-night",
               "palette6": "enr-b7-chiller-6-night",
               "palette7": "muj-ui"
-            },
-            "id": "b76af0a7-a5e4-2368-19f9-48d93f6dd807"
+            }
           }
         ],
         "false": []
-      },
-      "id": "102a96ca-dec7-88df-231b-47bcf5425708"
+      }
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -78,12 +76,10 @@
             "args": {
               "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
               "__name": "Pause Menu"
-            },
-            "id": "719fd829-2338-07f2-c488-4f9ab39b1d69"
+            }
           }
         ]
-      },
-      "id": "fd70f511-508f-baa5-775e-aa771f36202d"
+      }
     }
   ],
   "playerHit1Script": [],

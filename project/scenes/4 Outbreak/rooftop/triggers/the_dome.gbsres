@@ -6,9 +6,9 @@
   "prefabId": "",
   "name": "The Dome",
   "x": 91,
-  "y": 8,
+  "y": 0,
   "width": 3,
-  "height": 4,
+  "height": 12,
   "prefabScriptOverrides": {},
   "script": [
     {

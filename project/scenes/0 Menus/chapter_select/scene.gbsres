@@ -167,6 +167,22 @@
                   "id": "ca208f18-6dd1-5084-4fb6-2be183680e8c"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "ae9c9253-30bc-645a-da7b-ed58dfa4af28"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "2c11ee3f-a869-7711-bf0b-fa55ba1f1301"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "4ec4e8d9-1c3e-5be9-a4fe-e162d5d7ade0",
@@ -181,7 +197,7 @@
                     "direction": "down",
                     "fadeSpeed": "2"
                   },
-                  "id": "ae9c9253-30bc-645a-da7b-ed58dfa4af28"
+                  "id": "7626ae5a-1f6e-3cd8-e05d-d0c357cdd562"
                 }
               ],
               "true1": [
@@ -219,6 +235,22 @@
                   "id": "81990268-8f11-aceb-5309-a9154c40a6e6"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "ae267e6d-aca7-7590-f970-a2b8d3011294"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "6b2e10c6-0a37-e702-5e19-2b811f6c627d"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
@@ -233,7 +265,7 @@
                     "direction": "left",
                     "fadeSpeed": "2"
                   },
-                  "id": "ae267e6d-aca7-7590-f970-a2b8d3011294"
+                  "id": "8b9886b0-bb71-eb23-5f12-15bcdd4225f0"
                 }
               ],
               "true2": [
@@ -260,6 +292,22 @@
                   "id": "a2ebd69d-7250-8f80-038f-c7f78c27366d"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "7dfb1d4d-3978-a540-95eb-c4f723964ae0"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "9077864d-c1e0-957c-227f-edff5406981a"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "88181b9e-2a34-53b9-bb27-b52fa827a3f9",
@@ -274,7 +322,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "7dfb1d4d-3978-a540-95eb-c4f723964ae0"
+                  "id": "5e719647-9f76-314b-6ac5-7eaffc6d3ecb"
                 }
               ],
               "true3": [
@@ -301,6 +349,22 @@
                   "id": "7d904aac-fb44-6f17-3cf8-a831f90eefbf"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "ebf6450b-a7d4-3c7f-0e62-c01a68fc3375"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "08e7f7dd-e0fa-5cc1-ccce-13373bf9e0f2"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "e012ca19-b39a-57bc-af75-c68a89ce7ec4",
@@ -315,7 +379,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "ebf6450b-a7d4-3c7f-0e62-c01a68fc3375"
+                  "id": "7a7d655d-a8ed-ff01-82fc-9760b1671ff1"
                 }
               ],
               "true4": [
@@ -353,6 +417,22 @@
                   "id": "cbdec845-d394-2159-eac2-3a65d4c30e40"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "e4ad7bf9-34d3-dadd-3ae3-ee482fbef43e"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "750f1fb2-6c8d-345f-0c4d-4131c0e32af3"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
@@ -367,7 +447,7 @@
                     "direction": "down",
                     "fadeSpeed": "2"
                   },
-                  "id": "e4ad7bf9-34d3-dadd-3ae3-ee482fbef43e"
+                  "id": "f3c5d194-1966-1c5b-7f2f-012d27580f5b"
                 }
               ],
               "true5": [
@@ -394,6 +474,22 @@
                   "id": "134b7d00-0f5f-21ba-e2e0-0f5bc93104e8"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "9b4e54ef-8861-dd8b-f09c-bab7d1fff128"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "8d2f941b-9cd7-8be4-1fc0-80d16fae6909"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "83b28233-e33d-5b19-928f-517c11edaf2f",
@@ -408,7 +504,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "9b4e54ef-8861-dd8b-f09c-bab7d1fff128"
+                  "id": "97905192-03af-e7e9-6ebe-b94dedd02f1c"
                 }
               ],
               "true6": [
@@ -435,6 +531,22 @@
                   "id": "54403738-6308-52fb-6d37-998f4a352a28"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "011e06d9-3d92-a0dc-39e5-c1a77202dd2a"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "d3663d83-b000-931c-06cb-dbaea2c712ae"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "3fcf6568-7298-5f26-8065-b25d06911968",
@@ -449,7 +561,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "011e06d9-3d92-a0dc-39e5-c1a77202dd2a"
+                  "id": "27f11d54-2ef2-da21-ce2f-1fa5448effda"
                 }
               ],
               "false": []
@@ -537,6 +649,22 @@
                   "id": "62311834-dd28-314d-c0ec-2f47465e23a2"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "d33ca1db-7f28-93ed-dd9e-40c919f99d8f"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "9c24c2ec-2858-fc07-2be2-26d7dd986369"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "69545c6e-0a49-5e58-9be4-546e5f3ec87a",
@@ -551,7 +679,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "d33ca1db-7f28-93ed-dd9e-40c919f99d8f"
+                  "id": "60b4ac2d-566a-a6da-782b-2b7adceec01b"
                 }
               ],
               "true1": [
@@ -578,6 +706,22 @@
                   "id": "8d2b838e-b6bb-5231-1e65-195522444639"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "159e442c-7311-eea5-36d9-65d5a1bad06c"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "5811d107-61ce-0606-f829-bea169f9360e"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "f1609901-d9c4-53ef-802c-1fb8ed4bde32",
@@ -592,7 +736,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "159e442c-7311-eea5-36d9-65d5a1bad06c"
+                  "id": "32c346fa-d02c-08c7-6b4b-fdaf482c799f"
                 }
               ],
               "true2": [
@@ -619,6 +763,22 @@
                   "id": "0b7a06e9-1acb-9f22-d919-e24652b39340"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "2217891b-abd2-5fbc-f341-47944e00b051"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "d4836989-f157-d033-9950-3a1c76574fef"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "ee85cd3a-0ae6-539e-b6b5-85374cb85e45",
@@ -633,7 +793,7 @@
                     "direction": "down",
                     "fadeSpeed": "2"
                   },
-                  "id": "2217891b-abd2-5fbc-f341-47944e00b051"
+                  "id": "a2fd977b-cd13-c429-6614-c535c726e279"
                 }
               ],
               "true3": [
@@ -682,6 +842,22 @@
                   "id": "7302597a-5835-5e83-a3eb-fcf41fe9c417"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "6db79bfa-eed3-b44a-2089-3c113f2ae3e2"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "ad2759e9-4d98-700f-326e-b0f7961f75f8"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
@@ -696,7 +872,7 @@
                     "direction": "left",
                     "fadeSpeed": "2"
                   },
-                  "id": "6db79bfa-eed3-b44a-2089-3c113f2ae3e2"
+                  "id": "fe5e684d-c67c-3bea-c5be-286ce5be8198"
                 }
               ],
               "true4": [
@@ -800,6 +976,22 @@
                   "id": "04f21379-8791-fcff-dd19-0230b1752dc0"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "22c5379b-a326-b444-1f38-ad6c50e39339"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "9e2cdae6-acd9-2e60-4032-91947715d26b"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "28753070-08be-5490-9cbf-818fb7c62080",
@@ -814,7 +1006,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "22c5379b-a326-b444-1f38-ad6c50e39339"
+                  "id": "daae3dd7-b25b-a64f-c54a-dd84fa10fb71"
                 }
               ],
               "true5": [
@@ -918,6 +1110,22 @@
                   "id": "5d9a59f3-c4e1-bf6b-e314-72dbbda905aa"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "999c0b5c-6f54-165d-b41a-5f7500d1a45a"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "1f7a5add-1634-51b5-ca0c-3420abed8cb4"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "029ec5ea-594a-592b-9514-82523c6348fe",
@@ -932,7 +1140,7 @@
                     "direction": "right",
                     "fadeSpeed": "2"
                   },
-                  "id": "999c0b5c-6f54-165d-b41a-5f7500d1a45a"
+                  "id": "cc821196-93ee-c488-9a3d-1f96a14cb2dc"
                 }
               ],
               "true6": [
@@ -1036,6 +1244,22 @@
                   "id": "c29f2312-0d0b-c454-6a03-096ffdf1d441"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "ed6ff50a-b985-0cf6-6cb7-091f5009d220"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "849378e0-4898-ed78-32ff-45d87d35eac7"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "d4a3008d-31da-5edc-b9e4-486446a67437",
@@ -1050,7 +1274,7 @@
                     "direction": "right",
                     "fadeSpeed": "2"
                   },
-                  "id": "ed6ff50a-b985-0cf6-6cb7-091f5009d220"
+                  "id": "dd0cf2c2-0f3b-1fc3-3809-03b255c7f974"
                 }
               ],
               "false": []
@@ -1215,6 +1439,22 @@
                   "id": "0a460181-6c5b-f814-0b39-8ed3632284d7"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "8ab5260e-b789-b4dc-7f4d-cc4f682f28f7"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "b717bcbd-a14d-6d05-9ac7-72389dc86c4a"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "0956e7ea-fe2c-5fc6-bc41-0d8894cca01d",
@@ -1229,7 +1469,7 @@
                     "direction": "down",
                     "fadeSpeed": "2"
                   },
-                  "id": "8ab5260e-b789-b4dc-7f4d-cc4f682f28f7"
+                  "id": "59833e5d-5569-e7c9-cf70-171b85bfeb7f"
                 }
               ],
               "true1": [
@@ -1333,6 +1573,22 @@
                   "id": "5ee875d6-e9e1-70d9-8feb-e83b33270c1d"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "eeb6fb70-ad4a-0513-ca12-399941f0b65c"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "c94e2dac-323d-731a-9914-13fd9da61a69"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "d43619b1-9bfd-5d04-aa3c-f2a285329492",
@@ -1347,7 +1603,7 @@
                     "direction": "down",
                     "fadeSpeed": "2"
                   },
-                  "id": "eeb6fb70-ad4a-0513-ca12-399941f0b65c"
+                  "id": "95fa5022-ba53-0a75-81a3-04a2e42191ba"
                 }
               ],
               "true2": [
@@ -1451,6 +1707,22 @@
                   "id": "7be0b848-30e2-330f-35a4-2aeda0af86f5"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "6b04d8b0-5c8f-32f7-475b-8708834a1b42"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "5a761e1e-6bed-6212-2808-609b193e35fd"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "530ac373-1fd1-5fad-a3b8-9309eb0a262f",
@@ -1465,7 +1737,7 @@
                     "direction": "right",
                     "fadeSpeed": "2"
                   },
-                  "id": "6b04d8b0-5c8f-32f7-475b-8708834a1b42"
+                  "id": "4079323c-d46d-0d33-1cbb-d658dbb085b5"
                 }
               ],
               "true3": [
@@ -1569,6 +1841,22 @@
                   "id": "ca9a596a-448f-8f2a-b117-fb1157dbcd3b"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "592bfd5d-e1a2-6e11-6c2b-520a1971bf92"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "5e145d6e-90f7-9e6c-65c1-6a42f984d58c"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "16b417ab-7a4d-5d5f-a25a-254ef818c7fe",
@@ -1583,7 +1871,7 @@
                     "direction": "down",
                     "fadeSpeed": "2"
                   },
-                  "id": "592bfd5d-e1a2-6e11-6c2b-520a1971bf92"
+                  "id": "27b41954-304c-3bca-2d76-5c23d45d4d4b"
                 }
               ],
               "true4": [
@@ -1687,6 +1975,22 @@
                   "id": "f13f7166-16cd-46fd-8b11-692bb516135a"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "381455a8-e3d3-b20d-318b-7b8ff0dc932d"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "84405ff9-6574-77a8-b7fb-b1a6834832ec"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "8c1225d5-e80d-5dcd-b852-fbce734c69bf",
@@ -1701,7 +2005,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "381455a8-e3d3-b20d-318b-7b8ff0dc932d"
+                  "id": "d79664e1-cbb9-d165-7cac-73ffeeeaa657"
                 }
               ],
               "true5": [
@@ -1827,6 +2131,22 @@
                   "id": "5ec3d6ea-c9a9-9f24-b209-11185f8cadcb"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "f9894503-8791-72e8-e6c3-d21c6de55568"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "2c5eb9fc-edae-ae05-672d-eb6374a6d1cd"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
@@ -1841,7 +2161,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "f9894503-8791-72e8-e6c3-d21c6de55568"
+                  "id": "6361e497-bb2c-2dc3-050f-9f4e79fec5e6"
                 }
               ],
               "true6": [
@@ -1879,6 +2199,22 @@
                   "id": "8b3360a5-b7b9-9ff6-2363-8f9729c815b1"
                 },
                 {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "0a6b517b-dd52-20fb-85ce-e3e943dae0eb"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "4050796b-ed1a-f4e3-71ca-26cd00442417"
+                },
+                {
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
                     "sceneId": "4c318444-28b8-5881-89d0-07d3f1398cb0",
@@ -1893,7 +2229,7 @@
                     "direction": "up",
                     "fadeSpeed": "2"
                   },
-                  "id": "0a6b517b-dd52-20fb-85ce-e3e943dae0eb"
+                  "id": "1b72690e-18e3-7cfe-3684-d61bab3b3ab4"
                 }
               ],
               "false": []

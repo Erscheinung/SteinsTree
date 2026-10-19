@@ -53,7 +53,7 @@
           {
             "command": "EVENT_SOUND_PLAY_EFFECT",
             "args": {
-              "type": "noise",
+              "type": "crash",
               "priority": "medium",
               "pitch": 2,
               "frequency": 100,

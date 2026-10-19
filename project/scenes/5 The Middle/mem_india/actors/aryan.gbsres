@@ -67,13 +67,19 @@
             "args": {
               "text": [
                 "Aryan: Okay fine.\nYou can be on my\nteam.",
-                "But you're\ngoalkeeper.",
-                "Aryan: (LIFE:\nAryan. Uncertain\nbut heavenly.",
-                "A familiar abode.)"
+                "But you're\ngoalkeeper."
               ],
               "avatarId": ""
             },
             "id": "94dce5ab-5006-359e-a450-35a5d4645a26"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "LIFE: Aryan. Uncertain but heavenly. A familiar abode.",
+              "__collapse": false
+            },
+            "id": "efb6281e-8ee1-0c9f-91f0-cca15b14e99b"
           },
           {
             "command": "EVENT_SET_VALUE",
@@ -84,7 +90,7 @@
                 "value": 1
               }
             },
-            "id": "efb6281e-8ee1-0c9f-91f0-cca15b14e99b"
+            "id": "58130a96-e937-def4-8bf9-f3eabfce1f36"
           }
         ]
       },

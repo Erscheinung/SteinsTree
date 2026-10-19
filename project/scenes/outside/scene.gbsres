@@ -54,13 +54,11 @@
               "palette5": "enr-b7-10-5-night",
               "palette6": "enr-b7-10-6-night",
               "palette7": "muj-ui"
-            },
-            "id": "64df7622-5b69-6401-f25f-9ee014740116"
+            }
           }
         ],
         "false": []
-      },
-      "id": "4a6238c2-2b9b-c325-1ae3-57d2365f870f"
+      }
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -78,12 +76,10 @@
             "args": {
               "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
               "__name": "Pause Menu"
-            },
-            "id": "6df2370d-9098-1c41-0fbc-864b669f9429"
+            }
           }
         ]
-      },
-      "id": "bc383a87-2f66-7aa9-80d2-4945db6c6b29"
+      }
     },
     {
       "command": "EVENT_IF",
@@ -104,7 +100,7 @@
       "children": {
         "true": [
           {
-            "id": "b07aa3f6-c4c6-1e55-716c-48e79d254f2d",
+            "id": "fbc4fc45-bfa0-446c-97f3-e17fda729a74",
             "command": "EVENT_IF",
             "args": {
               "variable": "L0",
@@ -123,7 +119,7 @@
             "children": {
               "true": [
                 {
-                  "id": "e882376b-0f3c-0de4-e0f6-2d0336c4567b",
+                  "id": "e56d40a1-8d36-4a1b-b206-55e4b8d127f2",
                   "command": "EVENT_SET_TIMER_SCRIPT",
                   "args": {
                     "duration": 2,
@@ -132,7 +128,7 @@
                   "children": {
                     "script": [
                       {
-                        "id": "0399ed2f-8eba-8b23-e4e2-d0b4f9bfdd1d",
+                        "id": "b58e76e4-1c7d-440d-b7ee-2f022c73364b",
                         "command": "EVENT_CAMERA_SHAKE",
                         "args": {
                           "time": 0.7,
@@ -143,7 +139,7 @@
                         }
                       },
                       {
-                        "id": "d2243eb2-6d22-0fe9-789d-50cbac71c7a7",
+                        "id": "48b9c25d-794f-4c5f-be61-230470d40b30",
                         "command": "EVENT_ACTOR_EMOTE",
                         "args": {
                           "actorId": "player",
@@ -151,7 +147,7 @@
                         }
                       },
                       {
-                        "id": "5db2eb6a-65f5-8092-3e71-0ce84d9a3ca3",
+                        "id": "aca7a400-a6f1-4f00-b9fa-942378a824ba",
                         "command": "EVENT_TEXT",
                         "args": {
                           "text": [
@@ -161,7 +157,7 @@
                         }
                       },
                       {
-                        "id": "e889454e-70c2-5c12-7b5b-70c49d794534",
+                        "id": "bee022a7-14b0-421d-b1fb-aacb4b0f6983",
                         "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
                         "args": {
                           "actorId": "player",
@@ -169,7 +165,7 @@
                         }
                       },
                       {
-                        "id": "18147e48-2afa-78f7-141c-c3f2ee170b98",
+                        "id": "18f4595a-676c-4d62-ab15-31f2d2ca4bb9",
                         "command": "EVENT_TIMER_DISABLE",
                         "args": {
                           "timer": 1
@@ -183,7 +179,7 @@
             }
           },
           {
-            "id": "5c6fdb55-32e4-7fa4-fcd9-3e7d6bbd1ad9",
+            "id": "a5d234f9-aa52-4e8e-9885-d9ddac3edb97",
             "command": "EVENT_SET_VALUE",
             "args": {
               "variable": "L0",
@@ -201,8 +197,7 @@
               "speedOut": -1,
               "speed": 1,
               "allowFastForward": true
-            },
-            "id": "8f412740-9c34-fe5c-f3de-0e77ee278c5b"
+            }
           },
           {
             "command": "EVENT_IF",
@@ -251,8 +246,7 @@
                             "same song for the\nfourth time."
                           ],
                           "avatarId": ""
-                        },
-                        "id": "9e450bdd-5452-73c6-9b5b-7fe8d0122902"
+                        }
                       },
                       {
                         "command": "EVENT_TEXT",
@@ -261,15 +255,13 @@
                             "You: ...okay.\nToday was okay."
                           ],
                           "avatarId": ""
-                        },
-                        "id": "cb5df086-b4d2-a271-4256-0d62f1f4563d"
+                        }
                       },
                       {
                         "command": "EVENT_FADE_OUT",
                         "args": {
                           "speed": "1"
-                        },
-                        "id": "0e2cd9c0-584a-d025-bcbb-53b3d0be1144"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -279,8 +271,7 @@
                             "type": "number",
                             "value": 2
                           }
-                        },
-                        "id": "8a2e86a2-cf91-3caa-459e-93da8d568aaa"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -290,8 +281,7 @@
                             "type": "number",
                             "value": 0
                           }
-                        },
-                        "id": "111f36fb-e535-d073-84d6-d949a7f6635a"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -301,8 +291,7 @@
                             "type": "number",
                             "value": 0
                           }
-                        },
-                        "id": "d8f5abe6-62de-e37e-73e0-bb62fdca49b8"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -312,8 +301,7 @@
                             "type": "number",
                             "value": 5
                           }
-                        },
-                        "id": "1970ccf2-995d-a1fd-a37a-ac2a253f3483"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -323,8 +311,7 @@
                             "type": "number",
                             "value": 2
                           }
-                        },
-                        "id": "6490806c-6939-dc24-1ee4-ad5ed14a4ec5"
+                        }
                       },
                       {
                         "command": "EVENT_SAVE_DATA",
@@ -334,8 +321,7 @@
                         "children": {
                           "true": [],
                           "load": []
-                        },
-                        "id": "3fa610b6-315b-4cdb-6085-c0141eacb330"
+                        }
                       },
                       {
                         "command": "EVENT_SWITCH_SCENE",
@@ -351,8 +337,7 @@
                           },
                           "direction": "",
                           "fadeSpeed": "1"
-                        },
-                        "id": "d8a53040-89d1-1af9-fa3a-ccda93371963"
+                        }
                       }
                     ],
                     "true1": [
@@ -364,8 +349,7 @@
                             "same song for the\nfourth time."
                           ],
                           "avatarId": ""
-                        },
-                        "id": "5f850c21-86f0-d88b-1cb9-5705f10bc3ed"
+                        }
                       },
                       {
                         "command": "EVENT_TEXT",
@@ -374,15 +358,13 @@
                             "You: ...okay.\nToday was okay."
                           ],
                           "avatarId": ""
-                        },
-                        "id": "265a70f6-0ab3-cf7f-201e-2106d5e42dc1"
+                        }
                       },
                       {
                         "command": "EVENT_FADE_OUT",
                         "args": {
                           "speed": "1"
-                        },
-                        "id": "ad27e336-fac0-9aab-3928-d84eae824386"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -392,8 +374,7 @@
                             "type": "number",
                             "value": 3
                           }
-                        },
-                        "id": "f2217e23-f499-9a6a-69b3-13738be90ea4"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -403,8 +384,7 @@
                             "type": "number",
                             "value": 0
                           }
-                        },
-                        "id": "9bb617cf-90ec-7280-86bf-c67a2d106313"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -414,8 +394,7 @@
                             "type": "number",
                             "value": 0
                           }
-                        },
-                        "id": "3fd6dee3-b619-cbde-fec0-4db5ee20ff9b"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -425,8 +404,7 @@
                             "type": "number",
                             "value": 7
                           }
-                        },
-                        "id": "32346f20-848c-5fa5-bc3e-b1a3afc55dcc"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -436,8 +414,7 @@
                             "type": "number",
                             "value": 3
                           }
-                        },
-                        "id": "2bd34463-1410-c278-ad39-2b56328cee8a"
+                        }
                       },
                       {
                         "command": "EVENT_SAVE_DATA",
@@ -447,8 +424,7 @@
                         "children": {
                           "true": [],
                           "load": []
-                        },
-                        "id": "4202d758-082f-910b-9547-6022bb98c51b"
+                        }
                       },
                       {
                         "command": "EVENT_SWITCH_SCENE",
@@ -464,8 +440,7 @@
                           },
                           "direction": "",
                           "fadeSpeed": "1"
-                        },
-                        "id": "395fe9d8-9334-94c7-8170-24037272088c"
+                        }
                       }
                     ],
                     "true2": [
@@ -478,15 +453,13 @@
                             "You: Ask me\ntomorrow."
                           ],
                           "avatarId": ""
-                        },
-                        "id": "4b1bb4ad-6037-a67e-1687-146875687cad"
+                        }
                       },
                       {
                         "command": "EVENT_FADE_OUT",
                         "args": {
                           "speed": "1"
-                        },
-                        "id": "f5d85885-48f7-2759-c6d1-5f68a84b96dd"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -496,8 +469,7 @@
                             "type": "number",
                             "value": 4
                           }
-                        },
-                        "id": "3ca29775-7103-28be-6ae3-345dac1e4d8e"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -507,8 +479,7 @@
                             "type": "number",
                             "value": 0
                           }
-                        },
-                        "id": "24148512-78af-ee01-697e-7a4386308c91"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -518,8 +489,7 @@
                             "type": "number",
                             "value": 0
                           }
-                        },
-                        "id": "e94957b0-6498-a139-1c1e-7a68309cac88"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -529,8 +499,7 @@
                             "type": "number",
                             "value": 0
                           }
-                        },
-                        "id": "99ada544-6def-7274-4b3f-a7bbd74413b3"
+                        }
                       },
                       {
                         "command": "EVENT_SET_VALUE",
@@ -540,8 +509,7 @@
                             "type": "number",
                             "value": 4
                           }
-                        },
-                        "id": "f5677205-ab45-c5d1-91d3-fe1cae66769b"
+                        }
                       },
                       {
                         "command": "EVENT_SAVE_DATA",
@@ -551,8 +519,7 @@
                         "children": {
                           "true": [],
                           "load": []
-                        },
-                        "id": "54d48be9-6910-4da1-a2e5-202b1ab078d9"
+                        }
                       },
                       {
                         "command": "EVENT_SWITCH_SCENE",
@@ -568,13 +535,11 @@
                           },
                           "direction": "",
                           "fadeSpeed": "1"
-                        },
-                        "id": "ba99d0d5-99ef-54a9-5b5c-d7538f4e0701"
+                        }
                       }
                     ],
                     "false": []
-                  },
-                  "id": "7f099af3-fb40-3103-a161-ca611cf20768"
+                  }
                 }
               ],
               "false": [
@@ -601,8 +566,7 @@
                         "args": {
                           "musicId": "df1e087a-98ee-572d-962f-3952b685ce14",
                           "loop": true
-                        },
-                        "id": "24783dd5-b96d-8d25-a0f3-3ffb03febb2d"
+                        }
                       },
                       {
                         "command": "EVENT_SWITCH",
@@ -630,21 +594,19 @@
                               "args": {
                                 "text": "DAY 1 MORNING",
                                 "__collapse": false
-                              },
-                              "id": "38f0c70a-8c23-f37e-a8e8-8679660ac86d"
+                              }
                             },
                             {
                               "command": "EVENT_SOUND_PLAY_EFFECT",
                               "args": {
-                                "type": "noise",
+                                "type": "crash",
                                 "priority": "medium",
                                 "pitch": 4,
                                 "frequency": 200,
                                 "duration": 0.3,
                                 "wait": false,
                                 "effect": 0
-                              },
-                              "id": "5cc7a788-4574-7d8e-f25f-b6f1a19c688c"
+                              }
                             },
                             {
                               "command": "EVENT_CAMERA_SHAKE",
@@ -656,8 +618,7 @@
                                   "type": "number",
                                   "value": 2
                                 }
-                              },
-                              "id": "39329e9a-a8fc-62e5-4a43-172dce9380ee"
+                              }
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -666,8 +627,7 @@
                                   "KNOCK KNOCK KNOCK."
                                 ],
                                 "avatarId": ""
-                              },
-                              "id": "23a3837a-69be-a704-3f20-3aec34ff55f2"
+                              }
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -678,8 +638,7 @@
                                   "national census."
                                 ],
                                 "avatarId": ""
-                              },
-                              "id": "92662c4c-c94b-c79b-57d1-e48a7f45472f"
+                              }
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -688,8 +647,7 @@
                                   "You: It's 8:52."
                                 ],
                                 "avatarId": ""
-                              },
-                              "id": "aa768e12-2228-1426-5882-18aee4b4717f"
+                              }
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -700,8 +658,7 @@
                                   "AB1 is right\nthere."
                                 ],
                                 "avatarId": ""
-                              },
-                              "id": "9f556643-8014-21d5-c138-f7e91a80f4f3"
+                              }
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -711,8 +668,7 @@
                                   "on the campus map\nis where you need\nto be.)"
                                 ],
                                 "avatarId": ""
-                              },
-                              "id": "3500dd85-3826-65da-3eac-cf6b0413ec36"
+                              }
                             }
                           ],
                           "true1": [
@@ -721,8 +677,7 @@
                               "args": {
                                 "text": "DAY 2 MORNING",
                                 "__collapse": false
-                              },
-                              "id": "fbd0d5d2-9363-17e9-ae71-41516720543a"
+                              }
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -733,8 +688,7 @@
                                   "Divyansh will\n'borrow' one\nforever."
                                 ],
                                 "avatarId": ""
-                              },
-                              "id": "ebc4177b-1149-50ee-14d1-33f1ee987735"
+                              }
                             }
                           ],
                           "true2": [
@@ -743,8 +697,7 @@
                               "args": {
                                 "text": "DAY 3 MORNING",
                                 "__collapse": false
-                              },
-                              "id": "1395b59d-6475-e14f-979d-31ca0222afd7"
+                              }
                             },
                             {
                               "command": "EVENT_TEXT",
@@ -756,26 +709,21 @@
                                   "He checked my soul\nonce."
                                 ],
                                 "avatarId": ""
-                              },
-                              "id": "d6801bd1-7576-e4b7-f835-5bff71983103"
+                              }
                             }
                           ],
                           "false": []
-                        },
-                        "id": "cd73c390-8f6b-4700-f726-5e28cd64bcd8"
+                        }
                       }
                     ],
                     "false": []
-                  },
-                  "id": "a1e715cb-2dc8-5c8c-2bda-2796b38c1a8d"
+                  }
                 }
               ]
-            },
-            "id": "ca5c1858-4ee8-cf22-3464-84687e5c572c"
+            }
           }
         ]
-      },
-      "id": "ebdd78c9-ffb6-26d9-bbf5-80c64fecccb3"
+      }
     }
   ],
   "playerHit1Script": [],

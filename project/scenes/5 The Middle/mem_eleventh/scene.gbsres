@@ -119,10 +119,22 @@
         "variable": "201",
         "value": {
           "type": "number",
-          "value": 0
+          "value": 1
         }
       },
       "id": "2c2a4695-b8cc-bf07-a35e-7cd7c1358ece"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Eleventh. Too\nmuch. Everything\nat once.",
+          "(The deadlines\nchase you.",
+          "Or you could stop,\nin the middle.)"
+        ],
+        "avatarId": ""
+      },
+      "id": "a00682a7-1027-6649-1924-45b66490653f"
     },
     {
       "command": "EVENT_SET_TIMER_SCRIPT",
@@ -138,7 +150,7 @@
             "args": {
               "variable": "179"
             },
-            "id": "20e79d06-cbbf-f3c8-015b-51a72ed3ea57"
+            "id": "f36cf17b-2a59-6ed8-906a-4c0a65b1f954"
           },
           {
             "command": "EVENT_IF",
@@ -167,12 +179,12 @@
                       "value": 0
                     }
                   },
-                  "id": "230aeb04-17bd-44b5-60b5-d6251cd6dc26"
+                  "id": "cb5a05ec-9ed5-0763-683f-b8e4f20be515"
                 }
               ],
               "false": []
             },
-            "id": "9f5c0aea-5926-d958-de41-9e12822ad27a"
+            "id": "2752b8bc-c780-cbcd-beab-efad5eaaad28"
           },
           {
             "command": "EVENT_SWITCH",
@@ -207,7 +219,7 @@
                     "palette6": "muj-dreama-wood",
                     "palette7": "muj-ui"
                   },
-                  "id": "4ba47f46-32ae-ee56-2922-97faa29178df"
+                  "id": "0e3686ae-4841-6f13-82d3-7f8dd57c96db"
                 }
               ],
               "true1": [
@@ -223,7 +235,7 @@
                     "palette6": "muj-dreamc-wood",
                     "palette7": "muj-ui"
                   },
-                  "id": "66120f87-7f78-9317-d0e7-b5fe864e60f4"
+                  "id": "ae5b6969-4acc-994e-ab6b-b2df58b83019"
                 }
               ],
               "true2": [
@@ -239,28 +251,41 @@
                     "palette6": "muj-blood-wood",
                     "palette7": "muj-ui"
                   },
-                  "id": "137165a3-2445-1e17-ec34-e5df4d2ad2c3"
+                  "id": "e494ca26-5336-d1a0-6f59-3efa57aeba70"
                 }
               ],
               "false": []
             },
-            "id": "ebd20073-cb56-f65f-9e43-da7429c7ebc1"
+            "id": "e87e8144-8b56-19d5-b884-d8f29c10d76b"
           }
         ]
       },
-      "id": "a00682a7-1027-6649-1924-45b66490653f"
+      "id": "36d0d044-c26f-c1fa-084e-6c489cdd732f"
     },
     {
-      "command": "EVENT_TEXT",
+      "command": "EVENT_WAIT",
       "args": {
-        "text": [
-          "Eleventh. Too\nmuch. Everything\nat once.",
-          "(The deadlines\nchase you.",
-          "Or you could stop,\nin the middle.)"
-        ],
-        "avatarId": ""
+        "time": {
+          "type": "number",
+          "value": 1.0
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        }
       },
-      "id": "36d0d044-c26f-c1fa-084e-6c489cdd732f"
+      "id": "1090e5df-edbc-9cd0-89cf-1a5461f713e0"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "201",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "406c6cf8-6fb5-2b59-1544-190e2a1688a0"
     }
   ],
   "playerHit1Script": [],

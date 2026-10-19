@@ -153,10 +153,11 @@ def mem_london(ctx):
     sp = lambda x, y: open_spot(m["collisions"], m["cols"], m["rows"], x, y)
     k1 = s.actor("Kid with a ball", ctx.sprite("student"), *sp(10, 11), direction="left", script=[
         say("Kid", "Oi! You any good? We need a keeper."),
-        say("", "You were terrible. You were happy. (LIFE: football with friends, fun with kids)"),
+        say("", "You were terrible. You were happy."), comment("LIFE: football with friends, fun with kids"),
         set_var("LonA", 1)])
     k2 = s.actor("Girl at the library", ctx.sprite("garvita"), *sp(24, 12), direction="down", script=[
-        say("", "She lends you a book with a dragon on it. You read it twice. (LIFE: joy of reading, first love)"),
+        say("", "She lends you a book with a dragon on it. You read it twice."),
+        comment("LIFE: joy of reading, first love"),
         say("", "First love is mostly staring at someone in a library. It counts."),
         set_var("LonB", 1)])
     s.trigger("Airport", 38, 6, 2, 6, script=[
@@ -182,8 +183,8 @@ def mem_india(ctx):
         switch("Tries", {
             0: [say("Aryan", "...")],
             1: [say("Aryan", "You talk funny. Like a BBC news guy.")],
-        }, [say("Aryan", "Okay fine. You can be on my team. But you're goalkeeper.",
-                "(LIFE: Aryan. Uncertain but heavenly. A familiar abode.)"), set_var("India", 1)]),
+        }, [say("Aryan", "Okay fine. You can be on my team. But you're goalkeeper."),
+            comment("LIFE: Aryan. Uncertain but heavenly. A familiar abode."), set_var("India", 1)]),
         inc("Tries")])
     s.trigger("School gate", 14, 22, 4, 2, script=[
         if_var("India", "==", 1, [
@@ -275,7 +276,7 @@ def mem_eleventh(ctx):
                 if_near("$self$", "player", 1, [
                     inc("Stress"), sfx("noise", 3, 200, 0.2), shake(0.2, 3),
                     text(voices[i]),
-                    set_pos("$self$", *spots[(i + 3) % len(spots)]),
+                    set_pos("$self$", *spots[(i + 3) % len(spots)]), wait(1.0),
                 ]),
             ], [wait(0.2)]),
         ]
@@ -291,7 +292,8 @@ def mem_eleventh(ctx):
         text("Too much. The orbits pull you in.", "Until it crashes.", "The spaceship is lost. You have to get out."),
         palette("dreamB"),
     ] + choose + back_to_hub(ctx, "Mem6", MEMORIES[5][3], MEMORIES[5][4], s, 9, 5)
-    ref = s.actor("Referee", ctx.sprite("orb"), 19, 0, start=[hide("$self$"), gbs.collisions_off("$self$")])
+    ref = s.actor("Referee", ctx.sprite("orb"), 18, 0, pinned=True,
+                  start=[hide("$self$"), gbs.collisions_off("$self$")])
     ref.update = [if_var("Calm", "==", 0, [if_var("Stress", ">=", 6, crash)]), wait(0.1)]
     s.trigger("Stop", 8, 8, 4, 3, script=[
         if_var("Calm", "==", 0, [
@@ -302,9 +304,9 @@ def mem_eleventh(ctx):
     s.script += [
         palette("dreamB"), music(ctx.music("void")),
         comment("MEMORY 6 - ELEVENTH (playable: deadlines chase you; the calm centre ends it)"),
-        set_pos("player", 2, 15), set_var("Stress", 0), set_var("Calm", 0),
-        timer(0.3, cyc),
+        set_pos("player", 2, 15), set_var("Stress", 0), set_var("Calm", 1),
         text("Eleventh. Too much. Everything at once.", "(The deadlines chase you. Or you could stop, in the middle.)"),
+        timer(0.3, cyc), wait(1.0), set_var("Calm", 0),
     ]
 
 
@@ -340,7 +342,7 @@ def hall(ctx):
         ("If you'd never met them", "...", ),
         ("If you'd run, not hidden", "You'd have been somewhere else. The middle would still be the middle."),
     ]
-    xs = [4, 7, 13, 19, 22]
+    xs = [4, 10, 16, 21, 23]
     for i, wi in enumerate(whatifs):
         title, line = wi[0], wi[1]
         s.trigger("Door: " + title, xs[i], 6, 1, 1, script=[
@@ -368,11 +370,11 @@ def finale(ctx):
         "Divyansh": (["Bro! I hit it! Six! Over the Dome! ...okay it's a dream, but it COUNTS."],
                      ["I walked the walk. Once. Turns out once is enough."]),
         "Kanishk": (["I finally planned for the one variable. It was you showing up."],
-                    ["Eleven moves. You lasted eleven. Told you."]),
+                    ["You played it right. Mostly. That's more than most."]),
         "Parag": (["Second try worked. Look, I'm here. Kind of."],
-                  ["Burnt chip's still in my wallet. You keep it now."]),
+                  ["Second try. It always works on the second try."]),
         "Anshuman": (["You can see me. Everyone can, here. It's... nice."],
-                     ["Thanks for the noise on the trail."]),
+                     ["You can see me. That's enough."]),
         "Garvita": (["I ran so far. And look who's waiting at the finish."],
                     ["Race you to the pavilion. For real this time."]),
     }

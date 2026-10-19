@@ -304,6 +304,7 @@ def music_stop():
 
 
 def sfx(kind="beep", pitch=4, freq=200, duration=0.3):
+    kind = {"noise": "crash"}.get(kind, kind)   # GB Studio built-ins: beep, tone, crash
     return ev("EVENT_SOUND_PLAY_EFFECT", {"type": kind, "priority": "medium", "pitch": pitch, "frequency": freq,
                                           "duration": duration, "wait": False, "effect": 0})
 
@@ -423,14 +424,21 @@ def platform_state(state):
 # ---------------------------------------------------------------------------
 
 def _assign_ids(script, prefix):
-    import copy
-    script[:] = copy.deepcopy(script)
-    for i, e in enumerate(script):
-        p = "%s/%d" % (prefix, i)
-        e["id"] = str(uuid.UUID(hashlib.md5(p.encode()).hexdigest()))
-        for k, kids in (e.get("children") or {}).items():
-            _assign_ids(kids, p + "/" + k)
-    return script
+    """Return an independent copy of `script` with ids derived from `prefix`.
+    The input is never mutated, so a list shared by two owners can't end up
+    with the same event ids in both (GB Studio keys events by id)."""
+    # a JSON round trip (unlike deepcopy) never keeps shared sub-objects,
+    # so an event reused twice in one script still gets two distinct ids
+    out = json.loads(json.dumps(script))
+
+    def walk(events, pre):
+        for i, e in enumerate(events):
+            p = "%s/%d" % (pre, i)
+            e["id"] = str(uuid.UUID(hashlib.md5(p.encode()).hexdigest()))
+            for k, kids in (e.get("children") or {}).items():
+                walk(kids, p + "/" + k)
+    walk(out, prefix)
+    return out
 
 
 class Actor:

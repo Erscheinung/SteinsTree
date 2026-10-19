@@ -237,7 +237,7 @@ class Writer:
         self.touched = set()
         self.removed = []
 
-    def put(self, path, obj, key=None):
+    def put(self, path, obj, key=None, adopt=False):
         path = Path(path)
         rel = str(path.relative_to(ROOT))
         self.touched.add(rel)
@@ -247,8 +247,12 @@ class Writer:
             if cur == txt:
                 self.rec[rel] = _hash(txt)
                 return
-            if rel in self.rec and self.rec[rel] != _hash(cur) and key not in self.force and "*" not in self.force:
+            forced = key in self.force or "*" in self.force
+            if rel in self.rec and self.rec[rel] != _hash(cur) and not forced:
                 self.skipped.append(rel)
+                return
+            if rel not in self.rec and not adopt and not forced:
+                self.skipped.append(rel + " (exists but was not written by the generator)")
                 return
         if self.check:
             return
@@ -329,6 +333,24 @@ def validate(ctx):
     return problems
 
 
+def duplicate_event_ids():
+    from collections import Counter
+    c = Counter()
+    for p in list((ROOT / "project" / "scenes").rglob("*.gbsres")) + list((ROOT / "project" / "scripts").rglob("*.gbsres")):
+        for e in gbs.walk_events(_scripts_of(json.loads(p.read_text()))):
+            if "id" in e:
+                c[e["id"]] += 1
+    return [k for k, n in c.items() if n > 1]
+
+
+def _scripts_of(d):
+    out = []
+    for k in ("script", "startScript", "updateScript", "hit1Script", "hit2Script", "hit3Script", "leaveScript",
+              "playerHit1Script", "playerHit2Script", "playerHit3Script"):
+        out += d.get(k, []) or []
+    return out
+
+
 def main(argv):
     check = "--check" in argv
     force = []
@@ -340,11 +362,11 @@ def main(argv):
     problems = validate(ctx)
     w = Writer(force=force, check=check)
     for path, obj in palette_resources().items():
-        w.put(path, obj)
+        w.put(path, obj, adopt=True)
     for path, obj in music_files().items():
-        w.put(path, obj)
+        w.put(path, obj, adopt=True)
     p, s = settings_patch(ctx)
-    w.put(p, s, key="settings")
+    w.put(p, s, key="settings", adopt=True)
     for idx, key in enumerate(ctx.order):
         scene = ctx.scenes[key]
         pal_ids, spr_ids = story.palettes_for(ctx, scene)
@@ -354,11 +376,14 @@ def main(argv):
         for path, obj in gbs.write_script(sc).items():
             w.put(path, obj, key="scripts")
     for path, obj in story.legacy_patches(ctx).items():
-        w.put(path, obj, key="legacy")
+        w.put(path, obj, key="legacy", adopt=True)
     p, d = variables_resource()
-    w.put(p, d, key="variables")
+    w.put(p, d, key="variables", adopt=True)
     if not check:
         V.save()
+    dup = duplicate_event_ids()
+    if dup:
+        problems.append("%d event ids are used more than once (e.g. %s)" % (len(dup), dup[0]))
     w.prune()
     w.save()
     if w.removed:

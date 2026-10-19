@@ -54,13 +54,11 @@
               "palette5": "enr-b7-front-right-5-night",
               "palette6": "enr-b7-front-right-6-night",
               "palette7": "muj-ui"
-            },
-            "id": "00695037-bda7-f645-32e7-c3c2baa9e99f"
+            }
           }
         ],
         "false": []
-      },
-      "id": "35e89895-3179-ea3a-bd2c-ec14ce7d0a92"
+      }
     },
     {
       "command": "EVENT_SET_INPUT_SCRIPT",
@@ -78,12 +76,10 @@
             "args": {
               "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
               "__name": "Pause Menu"
-            },
-            "id": "74d13e36-1209-1bb4-d3b3-c42b43478c84"
+            }
           }
         ]
-      },
-      "id": "7d5cf627-8983-2fbd-334f-56685f2ba9d2"
+      }
     }
   ],
   "playerHit1Script": [],

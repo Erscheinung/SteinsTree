@@ -96,8 +96,7 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Parag: Burnt\nchip's still in my\nwallet.",
-                "You keep it now."
+                "Parag: Second try.\nIt always works on\nthe second try."
               ],
               "avatarId": ""
             },

@@ -50,7 +50,7 @@
               "wait": false,
               "effect": 0
             },
-            "id": "648a022c-4f9b-94b9-e415-88ebd1197663"
+            "id": "101bd249-82f0-730f-5207-b95dad60461f"
           },
           {
             "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
@@ -58,7 +58,7 @@
               "actorId": "player",
               "speed": 1
             },
-            "id": "0186e4cf-8782-d7a9-e0ae-0ba6ee170277"
+            "id": "304af51e-b884-8b69-96f5-1e3b07800a21"
           },
           {
             "command": "EVENT_SWITCH_SCENE",
@@ -75,12 +75,12 @@
               "direction": "down",
               "fadeSpeed": "1"
             },
-            "id": "894bcca9-f9e5-978c-6eb7-e02f14eb28bd"
+            "id": "77f87737-47fd-2961-4f7e-dec5264d29b4"
           }
         ],
         "false": []
       },
-      "id": "fe3e102a-1c8c-b6af-6d16-01c1af7739ea"
+      "id": "7b3f7038-5e25-c608-5605-970224422261"
     }
   ],
   "startScript": [

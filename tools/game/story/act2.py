@@ -59,11 +59,11 @@ def lounge(ctx):
 # Turn-based battles (Kanishk)
 # ---------------------------------------------------------------------------
 
-def battle_engine(waves, ally, ally_move, ally_line, ghoul_ids):
+def battle_engine(waves, ally, ally_move, ally_line, ghoul_ids, wave_lines=None):
     """Fully event-based turn battle. waves: [(name, hp)]"""
     hp, zhp = gbs.V["HP"], gbs.V["ZHP"]
     turn = [
-        gbs.raw("YOU      HP $%s$\nZOMBIES  HP $%s$" % (hp, zhp)),
+        gbs.raw("YOU $%s$HP SNACK $%s$\nZOMBIES  HP $%s$" % (hp, gbs.V["Snacks"], zhp)),
         menu("Pick", ["Attack", ally_move, "Barrier", "Snack"]),
         switch("Pick", {
             1: [rnd("Tmp", 3, 6), if_var("Read", "!=", 0, [add("Tmp", 5), set_var("Read", 0),
@@ -94,7 +94,7 @@ def battle_engine(waves, ally, ally_move, ally_line, ghoul_ids):
             set_var("Wave", i + 1), set_var("ZHP", whp), set_var("Read", 0), set_var("Guard", 0),
             set_var("HP", 30), set_var("Snacks", 3),
             text("WAVE %d: %s" % (i + 1, name)),
-        ] + assist + [
+        ] + (wave_lines or {}).get(i + 1, []) + assist + [
             loop_while("ZHP", ">", 0, turn),
             if_var("Lost", "==", 0, [text("Wave %d down." % (i + 1))] +
                    ([flicker(ghoul_ids[i], 0.5), deactivate(ghoul_ids[i])] if i < len(ghoul_ids) else [])),
@@ -138,7 +138,8 @@ def old_mess(ctx):
         say(N["Kanishk"], "You made it. I had a 61 percent estimate on that. Glad I was wrong low."),
         say(N["Kanishk"], "Old Mess. Two doors. We hold this, then you go up to AB2."),
     ] + battle_engine([("Old Mess regulars", 18), ("Kitchen crew", 22), ("The horde", 30)],
-                      N["Kanishk"], "Read", "Watch the third one. It leads. Hit it.", g) + [
+                      N["Kanishk"], "Read", "Watch the third one. It leads. Hit it.", g,
+                      wave_lines={2: [shake(0.3, 2), say(N["Kanishk"], "(clutching his arm) Fine. I'm fine. Focus.")]}) + [
         say(N["Kanishk"], "...Huh."),
         say("You", "Kanishk. Your arm."),
         say(N["Kanishk"], "During wave two. I accounted for every move on the board."),
@@ -186,7 +187,7 @@ def lanes(ctx):
         ]
         z.hit1 = [inc("Kills"), sfx("crash", 4, 600, 0.1), flicker("$self$", 0.2), set_pos("$self$", 18, ly)]
         zombies.append(z)
-    referee = s.actor("Referee", ctx.sprite("orb"), 19, 1)
+    referee = s.actor("Referee", ctx.sprite("orb"), 19, 1, pinned=True)
     zids = [z.id for z in zombies]
     stop_all = [set_var("LaneOn", 0)] + [deactivate(z) for z in zids]
     win = stop_all + [
@@ -229,8 +230,7 @@ def lanes(ctx):
                                        say(N["Parag"], "Spare barrels from the workshop. Two extra lives, partner.")]),
         say(N["Parag"], "Five lanes. Up and down to pick one. A to fire. Don't let them past the hedge."),
         say(N["Parag"], "Fifteen and the avenue's clear. Easy. Probably."),
-        input_script("a", [face("player", "right"),
-                           projectile(ctx.sprite("pea"), "player", "right", 4, 1.4, "1")]),
+        input_script("a", [projectile(ctx.sprite("pea"), "player", "right", 4, 1.4, "1")]),
         set_var("LaneOn", 1),
     ]
 
@@ -262,7 +262,7 @@ def stealth(ctx):
                   script=[set_var("Hidden", 1), say(N["Anshuman"], "(radio) Good. You're a shadow.")
                           if i == 0 else set_var("Hidden", 1)],
                   leave=[set_var("Hidden", 0)])
-    watcher = s.actor("Watcher", ctx.sprite("orb"), W - 2, 1)
+    watcher = s.actor("Watcher", ctx.sprite("orb"), 18, 1, pinned=True)
     caught = [
         set_var("Spotted", 1),
         sfx("crash", 4, 200, 0.4), shake(0.5, 4),
@@ -354,7 +354,8 @@ def divyansh(ctx):
                    say("", "Hands grab your sleeve. You tear free and fall back down the steps."),
                    set_pos("player", px, py)] + \
                   [set_pos(cid, *sp(22 + i * 4, 40)) for i, cid in enumerate(chasers)] + [wait(1.0), set_var("Chase", 1)]
-    ref = s.actor("Referee", ctx.sprite("orb"), W - 2, 1, start=[hide("$self$"), gbs.collisions_off("$self$")])
+    ref = s.actor("Referee", ctx.sprite("orb"), 18, 1, pinned=True,
+                  start=[hide("$self$"), gbs.collisions_off("$self$")])
     ref.update = [if_var("Caught", "==", 1, reset_chase), wait(0.1)]
     s.trigger("Escape", goal[0] - 1, goal[1] - 2, 4, 4, script=[
         if_var("Chase", "==", 1, [
@@ -422,7 +423,7 @@ def rooftop(ctx):
         g.update = [move_to("$self$", bx + bw - 3, top - 1), move_to("$self$", bx + 2, top - 1),
                     if_near("$self$", "player", 1, [shake(0.3, 3), gbs.set_pos_vars("player", "CheckX", "CheckY")])]
     last = blocks[-1]
-    s.trigger("The Dome", last[0] + 2, last[2] - 4, 3, 4, script=[
+    s.trigger("The Dome", last[0] + 2, 0, 3, last[2], script=[
         set_var("Step", 7),
         say(N["Garvita"], "Last gap. I'll jump first and catch you. Like at the ground."),
         shake(0.6, 4), sfx("crash", 3, 100, 0.6),

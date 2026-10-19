@@ -91,7 +91,7 @@
                 {
                   "command": "EVENT_SOUND_PLAY_EFFECT",
                   "args": {
-                    "type": "noise",
+                    "type": "crash",
                     "priority": "medium",
                     "pitch": 3,
                     "frequency": 200,
@@ -138,6 +138,20 @@
                     }
                   },
                   "id": "9666391d-81e0-dde5-0ba8-789942b92f63"
+                },
+                {
+                  "command": "EVENT_WAIT",
+                  "args": {
+                    "time": {
+                      "type": "number",
+                      "value": 1.0
+                    },
+                    "frames": {
+                      "type": "number",
+                      "value": 60
+                    }
+                  },
+                  "id": "837b2d48-6856-1bbe-e50b-44219d9a1fcc"
                 }
               ],
               "false": []

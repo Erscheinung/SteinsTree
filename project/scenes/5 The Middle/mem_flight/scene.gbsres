@@ -35,12 +35,35 @@
   "autoFadeSpeed": 1,
   "script": [
     {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "fb825eb4-8be7-09b2-2f3e-5381e5dbf7f9"
+          }
+        ]
+      },
+      "id": "eb5422ef-de7b-5acb-c693-02aac62f763b"
+    },
+    {
       "command": "EVENT_MUSIC_PLAY",
       "args": {
         "musicId": "352b406b-199f-53ea-ac30-ac9e915b6900",
         "loop": true
       },
-      "id": "eb5422ef-de7b-5acb-c693-02aac62f763b"
+      "id": "81a2dc3f-d680-342c-f997-d3dae1d6d418"
     },
     {
       "command": "EVENT_PLAYER_SET_SPRITE",
@@ -48,7 +71,7 @@
         "spriteSheetId": "e0188e30-a0a8-5088-b6c0-b5d536340ae0",
         "persist": true
       },
-      "id": "81a2dc3f-d680-342c-f997-d3dae1d6d418"
+      "id": "fc6e430e-5ffb-4415-b2dd-2347e0da6b0b"
     },
     {
       "command": "EVENT_ACTOR_SET_POSITION",
@@ -63,7 +86,7 @@
           "value": 8
         }
       },
-      "id": "fc6e430e-5ffb-4415-b2dd-2347e0da6b0b"
+      "id": "1ef199a4-d253-9f10-fbea-114cc2ca4833"
     },
     {
       "command": "EVENT_COMMENT",
@@ -71,7 +94,7 @@
         "text": "MEMORY 2a - FLYING TO LONDON (shmup). The 'spaceship' of the life-story levels.",
         "__collapse": false
       },
-      "id": "1ef199a4-d253-9f10-fbea-114cc2ca4833"
+      "id": "b9e20371-d964-b6ed-3161-2ea9779e8c2f"
     },
     {
       "command": "EVENT_TEXT",
@@ -82,7 +105,7 @@
         ],
         "avatarId": ""
       },
-      "id": "b9e20371-d964-b6ed-3161-2ea9779e8c2f"
+      "id": "ea584270-e00c-13be-4b37-1db82c8aaf13"
     },
     {
       "command": "EVENT_TEXT",
@@ -92,7 +115,7 @@
         ],
         "avatarId": ""
       },
-      "id": "ea584270-e00c-13be-4b37-1db82c8aaf13"
+      "id": "677ac488-4115-b729-b5c4-02753d41ae87"
     }
   ],
   "playerHit1Script": [],

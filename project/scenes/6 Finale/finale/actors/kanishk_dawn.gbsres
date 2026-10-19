@@ -97,7 +97,8 @@
             "command": "EVENT_TEXT",
             "args": {
               "text": [
-                "Kanishk: Eleven\nmoves. You lasted\neleven. Told you."
+                "Kanishk: You\nplayed it right.\nMostly.",
+                "That's more than\nmost."
               ],
               "avatarId": ""
             },
