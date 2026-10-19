@@ -5,8 +5,8 @@
   "symbol": "trigger_world_go_ghs_hostel_avenue",
   "prefabId": "",
   "name": "Go: GHS Hostel Avenue",
-  "x": 35,
-  "y": 83,
+  "x": 22,
+  "y": 8,
   "width": 2,
   "height": 1,
   "prefabScriptOverrides": {},
@@ -137,11 +137,11 @@
                     "sceneId": "267ed18d-9036-5992-9095-35ba2a9ff6e8",
                     "x": {
                       "type": "number",
-                      "value": 36
+                      "value": 14
                     },
                     "y": {
                       "type": "number",
-                      "value": 17
+                      "value": 20
                     },
                     "direction": "down",
                     "fadeSpeed": "2"

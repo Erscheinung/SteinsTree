@@ -243,8 +243,11 @@ def stealth(ctx):
     meta = ctx.meta("underpass")
     s = ctx.scene("stealth", "Underpass Stealth (Anshuman)", "underpass", FOLDER, bank="night")
     W, H = meta["cols"], meta["rows"]
-    sp = lambda x, y: open_spot(meta["collisions"], W, H, x, y)
-    start = sp(6, 41)
+    def sp(x, y):
+        x = max(0, min(W - 2, x))
+        y = max(1, min(H - 1, y))
+        return open_spot(meta["collisions"], W, H, x, y)
+    start = sp(10, H - 4)
     ctx.level_start["stealth"] = start
     door = [d for d in meta["doors"] if "hostel" in d["label"]][0]
     patrols = [((2, 34), (30, 34)), ((40, 27), (14, 27)), ((4, 18), (36, 18)), ((30, 10), (16, 10))]
@@ -258,6 +261,8 @@ def stealth(ctx):
     hides = [(5, 30), (22, 30), (8, 22), (26, 22), (14, 14), (36, 14), (24, 6)]
     for i, (x, y) in enumerate(hides):
         x, y = sp(x, y)
+        x = min(W - 3, x)
+        y = max(1, min(H - 2, y))
         s.trigger("Shadow %d" % (i + 1), x, y - 1, 3, 2,
                   script=[set_var("Hidden", 1), say(N["Anshuman"], "(radio) Good. You're a shadow.")
                           if i == 0 else set_var("Hidden", 1)],
@@ -330,17 +335,22 @@ def divyansh(ctx):
     meta = ctx.meta("grand_staircase")
     s = ctx.scene("staircase_stand", "Grand Staircase (Divyansh)", "grand_staircase", FOLDER, bank="night")
     W, H = meta["cols"], meta["rows"]
-    sp = lambda x, y: open_spot(meta["collisions"], W, H, x, y)
-    px, py = sp(24, 50)
+    def sp(x, y):
+        x = max(0, min(W - 2, x))
+        y = max(1, min(H - 1, y))
+        return open_spot(meta["collisions"], W, H, x, y)
+    # Keep the original staircase formation relative to the lower court so
+    # it remains valid when the owner-style map is regenerated compactly.
+    px, py = sp(15, H - 6)
     ctx.level_start["staircase_stand"] = (px, py)
-    dv = s.actor(N["Divyansh"], ctx.sprite("divyansh"), *sp(26, 48), direction="up")
-    may = s.actor(N["Mayank"], ctx.sprite("mayank"), *sp(21, 50), direction="up")
-    gar = s.actor(N["Garvita"], ctx.sprite("garvita"), *sp(28, 51), direction="up")
-    horde = [s.actor("Horde %d" % i, ctx.sprite("ghoul"), *sp(18 + i * 3, 42), direction="down").id
+    dv = s.actor(N["Divyansh"], ctx.sprite("divyansh"), *sp(17, H - 8), direction="up")
+    may = s.actor(N["Mayank"], ctx.sprite("mayank"), *sp(13, H - 6), direction="up")
+    gar = s.actor(N["Garvita"], ctx.sprite("garvita"), *sp(20, H - 5), direction="up")
+    horde = [s.actor("Horde %d" % i, ctx.sprite("ghoul"), *sp(10 + i * 3, H - 14), direction="down").id
              for i in range(4)]
     chasers = []
     for i in range(3):
-        c = s.actor("Chaser %d" % i, ctx.sprite("ghoul"), *sp(22 + i * 4, 40), direction="down",
+        c = s.actor("Chaser %d" % i, ctx.sprite("ghoul"), *sp(12 + i * 4, H - 16), direction="down",
                     move_speed=0.5)
         c.start = [deactivate("$self$")]
         c.update = [
@@ -349,11 +359,11 @@ def divyansh(ctx):
                 if_near("$self$", "player", 1, [set_var("Caught", 1)])]),
             wait(0.35)]
         chasers.append(c.id)
-    goal = sp(4, 55)
+    goal = sp(4, H - 3)
     reset_chase = [set_var("Chase", 0), set_var("Caught", 0),
                    say("", "Hands grab your sleeve. You tear free and fall back down the steps."),
                    set_pos("player", px, py)] + \
-                  [set_pos(cid, *sp(22 + i * 4, 40)) for i, cid in enumerate(chasers)] + [wait(1.0), set_var("Chase", 1)]
+                  [set_pos(cid, *sp(12 + i * 4, H - 16)) for i, cid in enumerate(chasers)] + [wait(1.0), set_var("Chase", 1)]
     ref = s.actor("Referee", ctx.sprite("orb"), 18, 1, pinned=True,
                   start=[hide("$self$"), gbs.collisions_off("$self$")])
     ref.update = [if_var("Caught", "==", 1, reset_chase), wait(0.1)]
@@ -375,11 +385,11 @@ def divyansh(ctx):
         say(N["Divyansh"], "Gym on Monday. Topper by sem two. Six over the Dome."),
         say(N["Divyansh"], "Watch me walk the walk. ONCE."),
         say(N["Garvita"], "Divyansh, NO--"),
-        speed(dv.id, 2), move_to(dv.id, 24, 42),
+        speed(dv.id, 2), move_to(dv.id, *sp(18, H - 10)),
     ]
     death = [
         shake(0.8, 5), sfx("crash", 4, 100, 0.8),
-    ] + [move_to(h, 24, 43) for h in horde] + [
+    ] + [move_to(h, *sp(18, H - 9)) for h in horde] + [
         say(N["Divyansh"], "HA! See?! I'm doing it! I'm actually--"),
         flicker(dv.id, 1.5), deactivate(dv.id),
         say(N["Divyansh"], "(far away) ...tell my mom I topped. Lie a little..."),

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "a9fea18b-9158-5254-a3ab-a9896a130d91",
+  "_index": 1,
+  "symbol": "trigger_girls_blocks_exit_e_3",
+  "prefabId": "",
+  "name": "Exit e 3",
+  "x": 27,
+  "y": 3,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 40
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "e42cc666-7e87-b398-cd01-0a7c01f2cc21"
+    }
+  ],
+  "leaveScript": []
+}

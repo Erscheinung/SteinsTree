@@ -1,14 +1,14 @@
 {
   "_resourceType": "scene",
   "id": "4c318444-28b8-5881-89d0-07d3f1398cb0",
-  "_index": 151,
+  "_index": 149,
   "type": "TOPDOWN",
   "name": "6 Finale/Reunion at Dawn",
   "symbol": "scene_finale",
   "x": 0,
-  "y": 5528,
-  "width": 64,
-  "height": 62,
+  "y": 3876,
+  "width": 32,
+  "height": 28,
   "backgroundId": "997dc07a-ec1a-5ffc-ab41-3b2f5fed5962",
   "tilesetId": "",
   "colorModeOverride": "none",
@@ -167,11 +167,11 @@
         "actorId": "player",
         "x": {
           "type": "number",
-          "value": 31
+          "value": 15
         },
         "y": {
           "type": "number",
-          "value": 36
+          "value": 25
         }
       },
       "id": "b0561815-fc3a-c3c5-ec7c-1275fe1c7c9f"
@@ -211,5 +211,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "0f1e+004+0f1f+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f!003f+0f!00c0+0f!003f+0f!003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+00e+0f6+0010+0f4+0016+0f16+006+0fe+0016+0f17+004+0f18+004+0fa+"
+  "collisions": "0f21+001e+0f2+00!0f1c+00!0f2+002+0f1a+002+0f!003+0f1a+006+0f1a+0043+0f!002+0f!0018+0f!002+0f2+001e+0f2+00!0f!001a+0f!00!0f2+002+0f2+0017+0f!002+0f!0043+0f!0018+0f!0023+0f!001e+0f2+002+0f!0017+0f2+002+0f2+00!0f!001a+0f!00!0f2+001b+0f!002+0f!003+0f!0018+0f!0026+0f1a+0023+0f!001e+0f2+00!0f!001a+0f!00!0f2+001e+0ff+004+0fe+"
 }

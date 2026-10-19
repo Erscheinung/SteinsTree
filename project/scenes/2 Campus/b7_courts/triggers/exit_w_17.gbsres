@@ -1,7 +1,7 @@
 {
   "_resourceType": "trigger",
   "id": "bdc680bb-32c6-5223-81ce-557cbc698bc8",
-  "_index": 14,
+  "_index": 6,
   "symbol": "trigger_b7_courts_exit_w_17",
   "prefabId": "",
   "name": "Exit w 17",
@@ -17,11 +17,11 @@
         "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
         "x": {
           "type": "number",
-          "value": 27
+          "value": 10
         },
         "y": {
           "type": "number",
-          "value": 58
+          "value": 10
         },
         "direction": "down",
         "fadeSpeed": "2"

@@ -1,11 +1,11 @@
 {
   "_resourceType": "scene",
   "id": "8ff9e14a-fbe4-546e-9d06-3f278d33944e",
-  "_index": 129,
+  "_index": 128,
   "type": "TOPDOWN",
   "name": "1 Prologue/Pocket Critters Battle",
   "symbol": "scene_battle_pocket",
-  "x": 200,
+  "x": 0,
   "y": 2164,
   "width": 20,
   "height": 18,
@@ -691,21 +691,95 @@
       "id": "9c5e6322-6777-adc1-7655-2898703b6748"
     },
     {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "100",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "6f0e7cc5-691e-2a13-544a-3f1821e2f9d6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "5d2443d1-4ac4-c742-72c8-e2a70ea11528"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "115",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "a86ada84-b36d-c8b7-28db-318c3e701243"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "116",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "5c1d251a-6d38-dab3-4775-8f5fb85a6f6e"
+          }
+        ],
+        "false": []
+      },
+      "id": "bb3f4627-aab0-a33b-b996-686cad5c308e"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "fbafca2c-6dfe-8059-aeeb-5b4fd911f494"
+    },
+    {
       "command": "EVENT_SWITCH_SCENE",
       "args": {
-        "sceneId": "4ec4e8d9-1c3e-5be9-a4fe-e162d5d7ade0",
+        "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
         "x": {
           "type": "number",
-          "value": 12
+          "value": 22
         },
         "y": {
           "type": "number",
-          "value": 10
+          "value": 20
         },
-        "direction": "up",
+        "direction": "left",
         "fadeSpeed": "1"
       },
-      "id": "bb3f4627-aab0-a33b-b996-686cad5c308e"
+      "id": "508fc12d-f280-fd06-8254-a8b2a93e0b28"
     }
   ],
   "playerHit1Script": [],

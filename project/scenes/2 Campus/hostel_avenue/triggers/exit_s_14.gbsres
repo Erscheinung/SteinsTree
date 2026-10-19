@@ -1,12 +1,12 @@
 {
   "_resourceType": "trigger",
   "id": "886d9b5b-d5f2-5fe2-9af0-101a9a970b7b",
-  "_index": 6,
+  "_index": 0,
   "symbol": "trigger_hostel_avenue_exit_s_14",
   "prefabId": "",
   "name": "Exit s 14",
   "x": 14,
-  "y": 33,
+  "y": 23,
   "width": 4,
   "height": 1,
   "prefabScriptOverrides": {},
@@ -17,11 +17,11 @@
         "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
         "x": {
           "type": "number",
-          "value": 35
+          "value": 22
         },
         "y": {
           "type": "number",
-          "value": 84
+          "value": 10
         },
         "direction": "down",
         "fadeSpeed": "2"

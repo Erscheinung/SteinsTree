@@ -1,4 +1,4 @@
-"""Prologue: pocket-monster nostalgia (2009), the day card, the pause menu.
+"""Prologue: pocket-monster nostalgia (2009) and the pause menu.
 
 All lines here are draft placeholders. Rewrite freely in GB Studio, in the
 studio (python3 tools/studio/studio.py serve) or in docs/STORY.md + a Claude
@@ -14,9 +14,7 @@ FOLDER = "1 Prologue"
 
 
 def build(ctx):
-    bedroom(ctx)
     battle(ctx)
-    card(ctx)
     pause(ctx)
 
 
@@ -32,13 +30,15 @@ def chapter_select(ctx):
         return ev + [goto(sid, x, y, d)]
     alive = {"Alive_" + f: 1 for f in ("Mayank", "Divyansh", "Kanishk", "Parag", "Anshuman", "Garvita")}
     pages = {
-        1: [("Prologue", jump({"Chapter": 0, "PrologueBattle": 0}, "prologue_bedroom", 8, 10)),
-            ("D1 Morn", jump({"Chapter": 1, "Phase": 0, "Objective": 1}, "room", 22, 20, "left")),
+        1: [("Prologue", jump({"Chapter": 0, "PrologueBattle": 0, "PrologueIntro": 0,
+                                "Day1IntroSeen": 0}, "room", 22, 20, "left")),
+            ("D1 Morn", jump({"Chapter": 1, "Phase": 0, "Objective": 1,
+                               "PrologueBattle": 1, "Day1IntroSeen": 0}, "room", 22, 20, "left")),
             ("D1 Phys", jump({"Chapter": 1, "Phase": 0}, "physics_class", 11, 13, "up")),
             ("D1 Dine", jump({"Chapter": 1, "Phase": 1}, "quess_mess_in", 12, 14, "up")),
             ("D1 Eve", jump({"Chapter": 1, "Phase": 2, "Objective": 3}, "world", *ctx.world_return["legacy_b7_front"])),
             ("D2 Maths", jump({"Chapter": 2, "Phase": 0}, "maths_class", 9, 14, "up")),
-            ("D2 Crik", jump({"Chapter": 2, "Phase": 1}, "cricket_ground", 28, 34, "up"))],
+            ("D2 Crik", jump({"Chapter": 2, "Phase": 1}, "cricket_ground", *ctx.entry["cricket_ground"], "up"))],
         2: [("D3 Chem", jump({"Chapter": 3, "Phase": 0}, "chem_lab", 9, 13, "up")),
             ("D3 Shop", jump({"Chapter": 3, "Phase": 1}, "workshop_in", 9, 11, "up")),
             ("D3 Walk", jump({"Chapter": 3, "Phase": 2}, "scrub_trail", *ctx.entry["scrub_trail"])),
@@ -54,7 +54,7 @@ def chapter_select(ctx):
             ("Dome", jump(dict(alive, Chapter=4, Step=7, Objective=15), "dome_night", 13, 13, "up")),
             ("Hub", jump(dict({"Mem%d" % i: 0 for i in range(1, 8)}, Chapter=5, MemCount=0, HubSeen=0,
                               Objective=16), "hub", 9, 12, "up")),
-            ("Finale", jump({"Chapter": 6, "FinaleTalks": 0, "Objective": 16}, "finale", 28, 40, "up"))],
+            ("Finale", jump({"Chapter": 6, "FinaleTalks": 0, "Objective": 16}, "finale", *ctx.final_entry, "up"))],
     }
     cases = {}
     for n, items in pages.items():
@@ -69,55 +69,30 @@ def chapter_select(ctx):
     ]
 
 
-def bedroom(ctx):
-    s = ctx.scene("prologue_bedroom", "Bedroom, 2009", "prologue_bedroom", FOLDER)
-    s.bank = "memory"
-    hx, hy = 12, 8
-    s.actor("Handheld", ctx.sprite("handheld"), hx, hy + 1, script=[
-        if_var("PrologueBattle", "==", 0, [
-            say("", "A PocketBoy. Batteries at 2 bars. Enough for one more battle."),
-            say("You", "Just one. Then homework. Probably."),
-            goto(ctx.sid_of("battle_pocket"), 1, 16, fade="1"),
-        ], [say("", "The screen is warm. SPARKLET is asleep in the corner of it.")])])
-    mom = s.actor("Mom", ctx.sprite("mama"), 4, 12, direction="right", script=[
-        if_var("PrologueBattle", "==", 0, [
-            say("Mom", "Beta, ten minutes. Then lights off. Deal?"),
-            say("You", "Deal. Fifteen."),
-        ], [say("Mom", "Sleep now. The critters will be there tomorrow.")])])
-    s.script += [
-        gbs.palette("memory"),
-        gbs.player_sprite(ctx.sprite("kid")),
-        text_speed(1),
-        music(ctx.music("intro")),
-        if_var("PrologueBattle", "==", 0, [
-            comment("PROLOGUE - edit freely. The first thing the player sees."),
-            if_var("PrologueIntro", "==", 0, [
-                text("Jaipur. 2009.", "A small room. A big world on a tiny screen."),
-                say("Mom", "Homework done?"),
-                say("You", "...define 'done'."),
-                say("Mom", "Ten minutes of your critters. Then sleep."),
-                set_var("PrologueIntro", 1),
-            ]),
-        ], [
-            say("", "GNAWBIT's eyes glowed for a second before it fainted. Weird."),
-            say("Mom", "Lights off, beta."),
-            gbs.palette("night"), hide(mom.id), hide("player"),
-            wait(0.8),
-            text("Eleven years later..."),
-            text("Manipal University Jaipur.", "B.Tech, Computer Science. First year.", "Block B7. Room 10."),
-            set_var("Chapter", CH_DAY1), set_var("Phase", 0), set_var("Objective", 1),
-            gbs.player_sprite(ctx.sprite("player")),
-            set_var("CardDay", 1),
-            goto(ctx.sid_of("day_card"), 1, 16, fade="1"),
+def handheld_script(ctx):
+    """Interaction for the PocketBoy in the owner's original Outside room.
+
+    The handheld is deliberately an actor in the legacy scene: it keeps the
+    owner's room as the opening scene while retaining the short childhood
+    flashback and the existing pocket battle implementation.
+    """
+    return [if_var("PrologueBattle", "==", 0, [
+        comment("PROLOGUE - the memory starts from the owner's room."),
+        say("", "A PocketBoy. Batteries at 2 bars. Enough for one more battle."),
+        say("You", "Just one. Then homework. Probably."),
+        if_var("PrologueIntro", "==", 0, [
+            text("Jaipur. 2009.", "A small room. A big world on a tiny screen."),
+            say("Mom", "Ten minutes of your critters. Then sleep."),
+            set_var("PrologueIntro", 1),
         ]),
-    ]
+        goto(ctx.sid_of("battle_pocket"), 1, 16, fade="1"),
+    ], [say("", "The screen is warm. SPARKLET is asleep in the corner of it.")])]
 
 
 def battle(ctx):
     s = ctx.scene("battle_pocket", "Pocket Critters Battle", "battle_pocket", FOLDER)
     s.actor("Sparklet", ctx.sprite("sparklet"), 5, 13, direction="right", animate=True)
     foe = s.actor("Gnawbit", ctx.sprite("gnawbit"), 14, 7, direction="left", animate=True)
-    bx, by = open_spot(ctx.meta("prologue_bedroom")["collisions"], 20, 18, 12, 10)
     turn = [
         gbs.raw("SPARKLET  HP $%s$\nGNAWBIT   HP $%s$" % (gbs.V["MyHP"], gbs.V["EnHP"])),
         menu("Pick", ["Fight", "Bag", "Run"]),
@@ -157,30 +132,14 @@ def battle(ctx):
         text("Wild GNAWBIT fainted!", "SPARKLET grew to Lv. 6!"),
         text("...for a second, GNAWBIT looked straight out of the screen. At you."),
         set_var("PrologueBattle", 1),
-        goto(ctx.sid_of("prologue_bedroom"), bx, by, "up", fade="1"),
-    ]
-
-
-def card(ctx):
-    """Persona-style calendar card shown at the start of every day."""
-    s = ctx.scene("day_card", "Day Card", "day_card", "3 Days")
-    days = {
-        1: ("MONDAY", "DAY 1", "Sunny"),
-        2: ("TUESDAY", "DAY 2", "Cloudy"),
-        3: ("WEDNESDAY", "DAY 3", "Clear"),
-        4: ("WEDNESDAY", "3:07 AM", "???"),
-    }
-    from build_game import LEGACY
-    cases = {}
-    for n, (d, label, weather) in days.items():
-        cases[n] = [gbs.text_draw(label, 4, 4), gbs.text_draw(d, 4, 6), gbs.text_draw(weather, 4, 9)]
-    s.script += [
-        hide("player"),
-        switch("CardDay", cases),
-        sfx("tone", 4, 1600, 0.2),
-        wait(1.5),
-        if_var("CardDay", "==", 4, [shake(0.6, 4)]),
-        goto(LEGACY["room"], 22, 20, "left", fade="2"),
+        # A replayed battle must not roll an in-progress day back to Day 1.
+        # Only the real prologue (Chapter 0) performs the initial transition.
+        if_var("Chapter", "==", CH_PROLOGUE, [
+            set_var("Chapter", CH_DAY1), set_var("Phase", 0), set_var("Objective", 1),
+            set_var("CardDay", 1),
+        ]),
+        show("player"),
+        goto(ctx.sid_of("room"), 22, 20, "left", fade="1"),
     ]
 
 

@@ -198,7 +198,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "139",
+                    "variable": "203",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -209,7 +209,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "136",
+                    "variable": "139",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -220,7 +220,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "180",
+                    "variable": "136",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -231,7 +231,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "129",
+                    "variable": "180",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -242,7 +242,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "116",
+                    "variable": "129",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -253,7 +253,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "122",
+                    "variable": "116",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -264,7 +264,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "123",
+                    "variable": "122",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -275,7 +275,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "124",
+                    "variable": "123",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -286,7 +286,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "125",
+                    "variable": "124",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -297,7 +297,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "126",
+                    "variable": "125",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -308,7 +308,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "127",
+                    "variable": "126",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -319,7 +319,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "172",
+                    "variable": "127",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -330,7 +330,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "173",
+                    "variable": "172",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -341,7 +341,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "174",
+                    "variable": "173",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -352,7 +352,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "175",
+                    "variable": "174",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -363,7 +363,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "176",
+                    "variable": "175",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -374,7 +374,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "177",
+                    "variable": "176",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -385,7 +385,7 @@
                 {
                   "command": "EVENT_SET_VALUE",
                   "args": {
-                    "variable": "178",
+                    "variable": "177",
                     "value": {
                       "type": "number",
                       "value": 0
@@ -394,19 +394,30 @@
                   "id": "8b124880-7df0-8a08-a3eb-5b4656fefd02"
                 },
                 {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "178",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "d59bc4e1-a0a1-8f46-e652-6d4e55495bee"
+                },
+                {
                   "id": "3e7b36fd-4560-4b5b-8089-fc57a1ba8900",
                   "command": "EVENT_SWITCH_SCENE",
                   "args": {
-                    "sceneId": "4ec4e8d9-1c3e-5be9-a4fe-e162d5d7ade0",
+                    "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
                     "x": {
                       "type": "number",
-                      "value": 8
+                      "value": 22
                     },
                     "y": {
                       "type": "number",
-                      "value": 10
+                      "value": 20
                     },
-                    "direction": "up",
+                    "direction": "left",
                     "fadeSpeed": "4"
                   }
                 }

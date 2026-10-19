@@ -5,8 +5,8 @@
   "symbol": "trigger_world_go_b7_courts",
   "prefabId": "",
   "name": "Go: B7 Courts",
-  "x": 27,
-  "y": 57,
+  "x": 10,
+  "y": 8,
   "width": 2,
   "height": 1,
   "prefabScriptOverrides": {},
@@ -95,7 +95,7 @@
                     "sceneId": "16870eca-6538-5052-bfc7-81b9a4eb386f",
                     "x": {
                       "type": "number",
-                      "value": 24
+                      "value": 13
                     },
                     "y": {
                       "type": "number",

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "480478aa-381a-51ab-8557-27c978ea60ea",
+  "_index": 3,
+  "symbol": "trigger_cricket_ground_exit_e_20",
+  "prefabId": "",
+  "name": "Exit e 20",
+  "x": 31,
+  "y": 20,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "e00e3c51-4791-c4d8-3c03-2e418731979f"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,12 +1,12 @@
 {
   "_resourceType": "trigger",
   "id": "f930ee84-b1fa-5fb5-96b2-b0f545274394",
-  "_index": 15,
+  "_index": 9,
   "symbol": "trigger_hostel_avenue_door_b1_block",
   "prefabId": "",
   "name": "Door B1 Block",
-  "x": 63,
-  "y": 2,
+  "x": 24,
+  "y": 6,
   "width": 2,
   "height": 1,
   "prefabScriptOverrides": {},
@@ -28,11 +28,11 @@
         "sceneId": "9a4d1317-cbff-5352-9a49-c9e6e2da8c00",
         "x": {
           "type": "number",
-          "value": 16
+          "value": 11
         },
         "y": {
           "type": "number",
-          "value": 26
+          "value": 13
         },
         "direction": "up",
         "fadeSpeed": "2"

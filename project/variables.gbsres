@@ -580,6 +580,11 @@
       "id": "202",
       "name": "FromWorld",
       "symbol": "var_fromworld"
+    },
+    {
+      "id": "203",
+      "name": "Day1IntroSeen",
+      "symbol": "var_day1introseen"
     }
   ],
   "constants": []

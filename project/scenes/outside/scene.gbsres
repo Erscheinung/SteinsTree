@@ -9,17 +9,17 @@
   "y": 704,
   "width": 32,
   "height": 32,
-  "backgroundId": "5423e038-2201-5938-a9ae-a49e67669f16",
+  "backgroundId": "d34cb344-522a-4055-a886-814dd5490fc6",
   "tilesetId": "",
-  "colorModeOverride": "none",
+  "colorModeOverride": "mono",
   "paletteIds": [
-    "enr-b7-10-0",
-    "enr-b7-10-1",
-    "enr-b7-10-2",
-    "enr-b7-10-3",
-    "enr-b7-10-4",
-    "enr-b7-10-5",
-    "enr-b7-10-6",
+    "dmg",
+    "dmg",
+    "dmg",
+    "dmg",
+    "dmg",
+    "dmg",
+    "dmg",
     "muj-ui"
   ],
   "spritePaletteIds": [],
@@ -46,13 +46,13 @@
           {
             "command": "EVENT_PALETTE_SET_BACKGROUND",
             "args": {
-              "palette0": "enr-b7-10-0-night",
-              "palette1": "enr-b7-10-1-night",
-              "palette2": "enr-b7-10-2-night",
-              "palette3": "enr-b7-10-3-night",
-              "palette4": "enr-b7-10-4-night",
-              "palette5": "enr-b7-10-5-night",
-              "palette6": "enr-b7-10-6-night",
+              "palette0": "dmg",
+              "palette1": "dmg",
+              "palette2": "dmg",
+              "palette3": "dmg",
+              "palette4": "dmg",
+              "palette5": "dmg",
+              "palette6": "dmg",
               "palette7": "muj-ui"
             },
             "id": "64df7622-5b69-6401-f25f-9ee014740116"
@@ -340,16 +340,16 @@
                       {
                         "command": "EVENT_SWITCH_SCENE",
                         "args": {
-                          "sceneId": "4d0a5af8-e106-5c91-ab63-722fbd5af13c",
+                          "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
                           "x": {
                             "type": "number",
-                            "value": 1
+                            "value": 22
                           },
                           "y": {
                             "type": "number",
-                            "value": 16
+                            "value": 20
                           },
-                          "direction": "",
+                          "direction": "left",
                           "fadeSpeed": "1"
                         },
                         "id": "d8a53040-89d1-1af9-fa3a-ccda93371963"
@@ -453,16 +453,16 @@
                       {
                         "command": "EVENT_SWITCH_SCENE",
                         "args": {
-                          "sceneId": "4d0a5af8-e106-5c91-ab63-722fbd5af13c",
+                          "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
                           "x": {
                             "type": "number",
-                            "value": 1
+                            "value": 22
                           },
                           "y": {
                             "type": "number",
-                            "value": 16
+                            "value": 20
                           },
-                          "direction": "",
+                          "direction": "left",
                           "fadeSpeed": "1"
                         },
                         "id": "395fe9d8-9334-94c7-8170-24037272088c"
@@ -557,16 +557,16 @@
                       {
                         "command": "EVENT_SWITCH_SCENE",
                         "args": {
-                          "sceneId": "4d0a5af8-e106-5c91-ab63-722fbd5af13c",
+                          "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
                           "x": {
                             "type": "number",
-                            "value": 1
+                            "value": 22
                           },
                           "y": {
                             "type": "number",
-                            "value": 16
+                            "value": 20
                           },
-                          "direction": "",
+                          "direction": "left",
                           "fadeSpeed": "1"
                         },
                         "id": "ba99d0d5-99ef-54a9-5b5c-d7538f4e0701"
@@ -626,93 +626,127 @@
                         "children": {
                           "true0": [
                             {
-                              "command": "EVENT_COMMENT",
+                              "command": "EVENT_IF",
                               "args": {
-                                "text": "DAY 1 MORNING",
-                                "__collapse": false
+                                "condition": {
+                                  "type": "eq",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "203"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_COMMENT",
+                                    "args": {
+                                      "text": "DAY 1 MORNING",
+                                      "__collapse": false
+                                    },
+                                    "id": "bbda133b-c5f1-4f5f-3b8c-5ba9254cecdc"
+                                  },
+                                  {
+                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                    "args": {
+                                      "type": "crash",
+                                      "priority": "medium",
+                                      "pitch": 4,
+                                      "frequency": 200,
+                                      "duration": 0.3,
+                                      "wait": false,
+                                      "effect": 0
+                                    },
+                                    "id": "26440d7b-ed15-bcb9-8280-14257894dd3b"
+                                  },
+                                  {
+                                    "command": "EVENT_CAMERA_SHAKE",
+                                    "args": {
+                                      "time": 0.2,
+                                      "frames": 12,
+                                      "shakeDirection": "horizontal",
+                                      "magnitude": {
+                                        "type": "number",
+                                        "value": 2
+                                      }
+                                    },
+                                    "id": "29664fd0-2c45-c2c3-5929-649e7efd638f"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "KNOCK KNOCK KNOCK."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "3c1e47f7-a27d-3689-a04f-15bf2202f348"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Mayank: Bro!\nPhysics! AB1! Nine\no'clock!",
+                                        "Mayank: Prof. Rao\ntakes attendance\nlike it's the",
+                                        "national census."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "d1998d7d-741e-655d-cfdc-01dcd6d94b0a"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "You: It's 8:52."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "3944935f-28ab-a984-68d6-a7537497275f"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Mayank: Then RUN.",
+                                        "Through the hostel\ngate, down the\nunderpass.",
+                                        "AB1 is right\nthere."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "fd2a4421-a926-a90c-b79c-bbc6ffd4811e"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "(Press START any\ntime for the menu.\nThe !",
+                                        "on the campus map\nis where you need\nto be.)"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "5cd6dcb4-ad88-028d-3484-8e425e33f9e6"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "203",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 1
+                                      }
+                                    },
+                                    "id": "c6ac8264-3b9b-88d0-652a-0b8e052274fc"
+                                  }
+                                ],
+                                "false": []
                               },
                               "id": "38f0c70a-8c23-f37e-a8e8-8679660ac86d"
-                            },
-                            {
-                              "command": "EVENT_SOUND_PLAY_EFFECT",
-                              "args": {
-                                "type": "crash",
-                                "priority": "medium",
-                                "pitch": 4,
-                                "frequency": 200,
-                                "duration": 0.3,
-                                "wait": false,
-                                "effect": 0
-                              },
-                              "id": "5cc7a788-4574-7d8e-f25f-b6f1a19c688c"
-                            },
-                            {
-                              "command": "EVENT_CAMERA_SHAKE",
-                              "args": {
-                                "time": 0.2,
-                                "frames": 12,
-                                "shakeDirection": "horizontal",
-                                "magnitude": {
-                                  "type": "number",
-                                  "value": 2
-                                }
-                              },
-                              "id": "39329e9a-a8fc-62e5-4a43-172dce9380ee"
-                            },
-                            {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "KNOCK KNOCK KNOCK."
-                                ],
-                                "avatarId": ""
-                              },
-                              "id": "23a3837a-69be-a704-3f20-3aec34ff55f2"
-                            },
-                            {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "Mayank: Bro!\nPhysics! AB1! Nine\no'clock!",
-                                  "Mayank: Prof. Rao\ntakes attendance\nlike it's the",
-                                  "national census."
-                                ],
-                                "avatarId": ""
-                              },
-                              "id": "92662c4c-c94b-c79b-57d1-e48a7f45472f"
-                            },
-                            {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "You: It's 8:52."
-                                ],
-                                "avatarId": ""
-                              },
-                              "id": "aa768e12-2228-1426-5882-18aee4b4717f"
-                            },
-                            {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "Mayank: Then RUN.",
-                                  "Through the hostel\ngate, down the\nunderpass.",
-                                  "AB1 is right\nthere."
-                                ],
-                                "avatarId": ""
-                              },
-                              "id": "9f556643-8014-21d5-c138-f7e91a80f4f3"
-                            },
-                            {
-                              "command": "EVENT_TEXT",
-                              "args": {
-                                "text": [
-                                  "(Press START any\ntime for the menu.\nThe !",
-                                  "on the campus map\nis where you need\nto be.)"
-                                ],
-                                "avatarId": ""
-                              },
-                              "id": "3500dd85-3826-65da-3eac-cf6b0413ec36"
                             }
                           ],
                           "true1": [

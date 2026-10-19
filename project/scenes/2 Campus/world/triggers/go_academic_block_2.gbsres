@@ -5,8 +5,8 @@
   "symbol": "trigger_world_go_academic_block_2",
   "prefabId": "",
   "name": "Go: Academic Block 2",
-  "x": 98,
-  "y": 77,
+  "x": 28,
+  "y": 15,
   "width": 2,
   "height": 1,
   "prefabScriptOverrides": {},
@@ -137,11 +137,11 @@
                     "sceneId": "a451ebb9-48d6-5fb1-971a-03446032d3f3",
                     "x": {
                       "type": "number",
-                      "value": 30
+                      "value": 13
                     },
                     "y": {
                       "type": "number",
-                      "value": 65
+                      "value": 15
                     },
                     "direction": "down",
                     "fadeSpeed": "2"

@@ -6,8 +6,8 @@
   "prefabId": "",
   "name": "Patrol 2",
   "coordinateType": "tiles",
-  "x": 40,
-  "y": 27,
+  "x": 28,
+  "y": 18,
   "frame": 0,
   "animate": false,
   "spriteSheetId": "97aff541-4f98-52ab-8ea2-25e7d4f4c66a",
@@ -33,7 +33,7 @@
         },
         "y": {
           "type": "number",
-          "value": 27
+          "value": 21
         },
         "collideWith": [],
         "moveType": "horizontal"
@@ -60,11 +60,11 @@
         "actorId": "$self$",
         "x": {
           "type": "number",
-          "value": 40
+          "value": 28
         },
         "y": {
           "type": "number",
-          "value": 27
+          "value": 18
         },
         "collideWith": [],
         "moveType": "horizontal"

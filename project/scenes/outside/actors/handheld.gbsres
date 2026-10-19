@@ -1,0 +1,166 @@
+{
+  "_resourceType": "actor",
+  "id": "5e4fd8de-9e9a-5090-a3b4-402bdeab5c69",
+  "_index": 0,
+  "symbol": "actor_outside_handheld",
+  "prefabId": "",
+  "name": "Handheld",
+  "coordinateType": "tiles",
+  "x": 19,
+  "y": 20,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9386794b-95da-5ba9-a26d-d047b2a59b94",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "113"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "PROLOGUE - the memory starts from the owner's room.",
+              "__collapse": false
+            },
+            "id": "576e54df-9881-15e0-fc92-aeb5b093e34f"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A PocketBoy.\nBatteries at 2\nbars.",
+                "Enough for one\nmore battle."
+              ],
+              "avatarId": ""
+            },
+            "id": "138917ac-5a88-8487-0cce-a7c680b6e86b"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You: Just one.\nThen homework.\nProbably."
+              ],
+              "avatarId": ""
+            },
+            "id": "62b824b0-3f10-46e4-612c-49f55e93582b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "114"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jaipur. 2009.",
+                      "A small room. A\nbig world on a\ntiny screen."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "c8d5c24b-bb3e-4cee-584b-e1ead7b6dbd6"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mom: Ten minutes\nof your critters.\nThen sleep."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "f8e66766-83b8-3e40-f7ff-597e2fec62c6"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "114",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "c101aab2-b520-0ac3-9740-8a96114f79e8"
+                }
+              ],
+              "false": []
+            },
+            "id": "22fd4458-fa9c-81e1-186c-3dedead8301c"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "8ff9e14a-fbe4-546e-9d06-3f278d33944e",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 16
+              },
+              "direction": "",
+              "fadeSpeed": "1"
+            },
+            "id": "af2019f0-7451-4ff5-3bbf-ef07c229c281"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The screen is\nwarm.",
+                "SPARKLET is asleep\nin the corner of\nit."
+              ],
+              "avatarId": ""
+            },
+            "id": "5ae98554-f52e-ebe6-00e3-ce7b666c1837"
+          }
+        ]
+      },
+      "id": "202475e8-5804-8369-ca71-aa7dba36efe2"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

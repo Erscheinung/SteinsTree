@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "9463beba-f28b-5c8f-a46c-44e909d2dbc9",
+  "_index": 6,
+  "symbol": "trigger_ab1_exit_w_16",
+  "prefabId": "",
+  "name": "Exit w 16",
+  "x": 0,
+  "y": 16,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 22
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "dee62946-a878-074c-4825-c41df21bd9d5"
+    }
+  ],
+  "leaveScript": []
+}

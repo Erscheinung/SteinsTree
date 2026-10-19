@@ -1,14 +1,14 @@
 {
   "_resourceType": "trigger",
   "id": "e0c501c4-0408-5644-9d33-0ce1d9494267",
-  "_index": 8,
+  "_index": 3,
   "symbol": "trigger_dome_exit_e_16",
   "prefabId": "",
   "name": "Exit e 16",
-  "x": 67,
+  "x": 29,
   "y": 16,
   "width": 1,
-  "height": 4,
+  "height": 3,
   "prefabScriptOverrides": {},
   "script": [
     {
@@ -17,11 +17,11 @@
         "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
         "x": {
           "type": "number",
-          "value": 86
+          "value": 16
         },
         "y": {
           "type": "number",
-          "value": 96
+          "value": 17
         },
         "direction": "down",
         "fadeSpeed": "2"

@@ -8,7 +8,7 @@
   "x": 0,
   "y": 17,
   "width": 1,
-  "height": 4,
+  "height": 3,
   "prefabScriptOverrides": {},
   "script": [
     {
@@ -17,11 +17,11 @@
         "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
         "x": {
           "type": "number",
-          "value": 32
+          "value": 4
         },
         "y": {
           "type": "number",
-          "value": 47
+          "value": 17
         },
         "direction": "down",
         "fadeSpeed": "2"

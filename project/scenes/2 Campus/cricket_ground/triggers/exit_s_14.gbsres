@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "e6f674a6-83f4-5cb8-9048-a9b6c374b3d2",
+  "_index": 0,
+  "symbol": "trigger_cricket_ground_exit_s_14",
+  "prefabId": "",
+  "name": "Exit s 14",
+  "x": 14,
+  "y": 27,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "32a4f8a3-028e-b426-2d43-1d8e17ec7b71"
+    }
+  ],
+  "leaveScript": []
+}

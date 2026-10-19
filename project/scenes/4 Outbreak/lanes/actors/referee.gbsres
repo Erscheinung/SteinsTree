@@ -446,11 +446,11 @@
                     "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
                     "x": {
                       "type": "number",
-                      "value": 35
+                      "value": 22
                     },
                     "y": {
                       "type": "number",
-                      "value": 84
+                      "value": 10
                     },
                     "direction": "down",
                     "fadeSpeed": "2"

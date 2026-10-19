@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "480892ac-137b-5ee5-a00c-d9386697b705",
+  "_index": 0,
+  "symbol": "trigger_dome_exit_s_13",
+  "prefabId": "",
+  "name": "Exit s 13",
+  "x": 13,
+  "y": 21,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "818a4a52-a016-f3dc-e62a-fdee950de926"
+    }
+  ],
+  "leaveScript": []
+}

@@ -3,8 +3,9 @@ docs/EDITING_GUIDE.md under "What the generator changed in your scenes").
 
 Rules: original dialogue text is never rewritten. Original events are kept
 verbatim and only wrapped in chapter checks; empty edge triggers get a
-"go to the campus map" script; backgrounds point at the enriched GBC copies
-(the original PNGs are untouched).
+"go to the campus map" script; backgrounds point at the original PNGs.  The
+legacy scenes use the DMG palette with an explicit mono scene override so their detail stays
+readable without flattening the source art into the generated GBC copies.
 """
 
 import copy
@@ -56,7 +57,7 @@ def snapshot():
 
 def patches(ctx):
     from build_game import LEGACY, LEGACY_DIRS, LEGACY_BG
-    from story import act1
+    from story import act1, prologue
     snapshot()
     out = {}
     for key, folder in LEGACY_DIRS.items():
@@ -70,9 +71,12 @@ def patches(ctx):
                 _patch_title(ctx, scene)
             out[d / "scene.gbsres"] = scene
             continue
-        prov = ctx.enriched[LEGACY_BG[key]]
-        scene["backgroundId"] = prov["background_id"]
-        scene["paletteIds"] = prov["palette_ids"]["day"] + ["muj-ui"]
+        scene["backgroundId"] = ctx.original_bg(LEGACY_BG[key])
+        # The project is CGB-only so generated maps may use 384 unique tiles.
+        # Keep the owner's original backgrounds on the DMG path explicitly;
+        # this preserves their source palette and the 192-tile legacy budget.
+        scene["colorModeOverride"] = "mono"
+        scene["paletteIds"] = ["dmg"] * 7 + ["muj-ui"]
         night = [if_var("Chapter", "==", CH_OUTBREAK, [palette_for(ctx, _Fake(key), "night")])]
         if key == "room":
             new = night + [pause_hook(ctx)] + [
@@ -107,6 +111,24 @@ def patches(ctx):
                                         a["id"] + "/gen-start")
                 a["updateScript"] = _ids([if_var("Chapter", "==", CH_OUTBREAK, upd)], a["id"] + "/gen-update")
                 out[p] = a
+        if key == "room":
+            # The owner's Outside scene has no generated actors.  Add the
+            # PocketBoy as a normal editable actor so the prologue starts in
+            # the original room at the owner's requested (22,20) arrival.
+            actor_id = gbs.sid("actor", "outside", "Handheld")
+            out[d / "actors" / "handheld.gbsres"] = {
+                "_resourceType": "actor", "id": actor_id, "_index": 0,
+                "symbol": "actor_outside_handheld", "prefabId": "",
+                "name": "Handheld", "coordinateType": "tiles", "x": 19,
+                "y": 20, "frame": 0, "animate": False,
+                "spriteSheetId": ctx.sprite("handheld"), "paletteId": "",
+                "direction": "down", "moveSpeed": 1, "animSpeed": 15,
+                "isPinned": False, "persistent": False, "collisionGroup": "",
+                "collisionExtraFlags": [], "prefabScriptOverrides": {},
+                "script": gbs._assign_ids(prologue.handheld_script(ctx), actor_id + "/script"),
+                "startScript": [], "updateScript": [], "hit1Script": [],
+                "hit2Script": [], "hit3Script": [],
+            }
         # clamp triggers that extend past the scene edge (one in the original Scene 13 data)
         for sp in sorted((s_dir / "triggers").glob("*.gbsres")) if (s_dir / "triggers").exists() else []:
             t = json.loads(sp.read_text())
@@ -146,9 +168,9 @@ def patches(ctx):
 
 
 def _patch_title(ctx, scene):
-    """New Game -> the prologue; story variables reset first."""
+    """New Game -> the owner's Outside room; story variables reset first."""
     from build_game import LEGACY
-    reset = [set_var(v, 0) for v in ("Chapter", "Phase", "Step", "Objective", "PrologueBattle", "PrologueIntro", "Grade",
+    reset = [set_var(v, 0) for v in ("Chapter", "Phase", "Step", "Objective", "PrologueBattle", "PrologueIntro", "Day1IntroSeen", "Grade",
                                       "MemCount", "HubSeen", "SawZombie", "CardDay")] + \
             [set_var("Bond_" + f, 0) for f in ("Mayank", "Divyansh", "Kanishk", "Parag", "Anshuman", "Garvita")] + \
             [set_var("Mem%d" % i, 0) for i in range(1, 8)]
@@ -157,10 +179,10 @@ def _patch_title(ctx, scene):
             kids = e["children"]["true"]
             for i, k in enumerate(kids):
                 if k["command"] == "EVENT_SWITCH_SCENE":
-                    k["args"]["sceneId"] = ctx.sid_of("prologue_bedroom")
-                    k["args"]["x"] = {"type": "number", "value": 8}
-                    k["args"]["y"] = {"type": "number", "value": 10}
-                    k["args"]["direction"] = "up"
+                    k["args"]["sceneId"] = ctx.sid_of("room")
+                    k["args"]["x"] = {"type": "number", "value": 22}
+                    k["args"]["y"] = {"type": "number", "value": 20}
+                    k["args"]["direction"] = "left"
                     if not any(x.get("args", {}).get("variable") == gbs.V["Chapter"] for x in kids):
                         e["children"]["true"] = _ids(copy.deepcopy(reset), scene["id"] + "/gen-reset") + kids
                     break

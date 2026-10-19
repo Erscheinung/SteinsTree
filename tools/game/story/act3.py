@@ -348,10 +348,13 @@ def hall(ctx):
         s.trigger("Door: " + title, xs[i], 6, 1, 1, script=[
             text(title + "?"), text(line),
             text("...and every door opens onto the same cricket ground at dawn.") if i == 3 else gbs.comment("")])
+    final_map = ctx.meta("cricket_ground")
+    final_entry = open_spot(final_map["collisions"], final_map["cols"], final_map["rows"],
+                            final_map["spawn"][0], min(final_map["rows"] - 1, final_map["spawn"][1] + 5))
     s.trigger("The last door", 13, 13, 2, 2, script=[
         text("The last door is just a door. You open it."),
         set_var("Chapter", CH_FINALE),
-        goto(ctx.sid_of("finale"), 28, 40, "up", fade="1")])
+        goto(ctx.sid_of("finale"), final_entry[0], final_entry[1], "up", fade="1")])
     s.script += [
         palette("dreamC"), music(ctx.music("void")),
         comment("HALL OF DOORS - questioning choices"),
@@ -363,8 +366,12 @@ def hall(ctx):
 def finale(ctx):
     s = ctx.scene("finale", "Reunion at Dawn", "cricket_ground", "6 Finale", bank="dusk")
     m = ctx.meta("cricket_ground")
-    cx, cy = open_spot(m["collisions"], m["cols"], m["rows"], 31, 28)
-    sp = lambda x, y: open_spot(m["collisions"], m["cols"], m["rows"], x, y)
+    def sp(x, y):
+        x = max(0, min(m["cols"] - 2, x))
+        y = max(1, min(m["rows"] - 1, y))
+        return open_spot(m["collisions"], m["cols"], m["rows"], x, y)
+    cx, cy = sp(m["spawn"][0], m["spawn"][1])
+    ctx.final_entry = sp(cx, min(m["rows"] - 1, cy + 5))
     friends = ["Divyansh", "Kanishk", "Parag", "Anshuman", "Garvita"]
     finals = {
         "Divyansh": (["Bro! I hit it! Six! Over the Dome! ...okay it's a dream, but it COUNTS."],
@@ -411,7 +418,7 @@ def finale(ctx):
         comment("FINALE - the reunion. Lines change with each friend's Bond."),
         set_var("FinaleTalks", 0),
     ] + [set_var("Talked" + f, 0) for f in friends] + [
-        set_pos("player", cx, cy + 8), face("player", "up"),
+        set_pos("player", *ctx.final_entry), face("player", "up"),
         text("Dawn. The cricket ground. Dew on everything."),
         text("They're all here."),
     ]

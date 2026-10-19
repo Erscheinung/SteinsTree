@@ -47,7 +47,10 @@ def build(ctx):
         avoid = ext_avoid(m)
         ctx.entry[name] = tuple(open_spot(m["collisions"], m["cols"], m["rows"], m["spawn"][0], m["spawn"][1],
                                           avoid=avoid))
-        back = ctx.world_return.get(name, (60, 60))
+        # The world overview is intentionally compact and may change size;
+        # use its centre as a safe fallback when a newly added exterior has
+        # not yet received a named location anchor.
+        back = ctx.world_return.get(name, (max(0, W // 2), max(0, H // 2)))
         for ex in m["exits"]:
             cells = ex["cells"]
             if ex["side"] in "ew":

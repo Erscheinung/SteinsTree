@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "646e396d-c552-5558-9afc-707521e5c018",
+  "_index": 4,
+  "symbol": "trigger_nbc_exit_w_10",
+  "prefabId": "",
+  "name": "Exit w 10",
+  "x": 0,
+  "y": 10,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 32
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "86c65fe5-b180-c6f1-baa3-aa61116e22e3"
+    }
+  ],
+  "leaveScript": []
+}

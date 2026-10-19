@@ -5,8 +5,8 @@
   "symbol": "trigger_world_go_nbc_food_court",
   "prefabId": "",
   "name": "Go: NBC Food Court",
-  "x": 60,
-  "y": 46,
+  "x": 32,
+  "y": 22,
   "width": 2,
   "height": 1,
   "prefabScriptOverrides": {},
@@ -95,11 +95,11 @@
                     "sceneId": "8bd8c200-cd76-5c5f-9a89-19f44c8a2c04",
                     "x": {
                       "type": "number",
-                      "value": 22
+                      "value": 13
                     },
                     "y": {
                       "type": "number",
-                      "value": 26
+                      "value": 20
                     },
                     "direction": "down",
                     "fadeSpeed": "2"

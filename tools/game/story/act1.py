@@ -30,6 +30,11 @@ def only_when(ch, ph):
 
 def spot(ctx, map_name, x, y, avoid=()):
     m = ctx.meta(map_name)
+    # Owner-style maps are compact and can be regenerated at a different
+    # size.  Keep story staging points inside the current map before asking
+    # the collision search for a walkable two-tile actor position.
+    x = max(0, min(m["cols"] - 2, x))
+    y = max(1, min(m["rows"] - 1, y))
     return open_spot(m["collisions"], m["cols"], m["rows"], x, y, avoid)
 
 
@@ -47,7 +52,18 @@ def room_script(ctx):
         set_var("Objective", {CH_DAY2: 5, CH_DAY3: 7, CH_OUTBREAK: 0}[ch]),
         set_var("CardDay", card),
         gbs.save_game(),
-        goto(ctx.sid_of("day_card"), 1, 16, fade="1"),
+        goto(ctx.sid_of("room"), 22, 20, "left", fade="1"),
+    ]
+    day1_morning = [
+        comment("DAY 1 MORNING"),
+        sfx("noise", 4, 200, 0.3), shake(0.2, 2),
+        say("", "KNOCK KNOCK KNOCK."),
+        say(N["Mayank"], "Bro! Physics! AB1! Nine o'clock!",
+            "Prof. Rao takes attendance like it's the national census."),
+        say("You", "It's 8:52."),
+        say(N["Mayank"], "Then RUN. Through the hostel gate, down the underpass. AB1 is right there."),
+        say("", "(Press START any time for the menu. The ! on the campus map is where you need to be.)"),
+        set_var("Day1IntroSeen", 1),
     ]
     return [
         gbs.text_speed(1),
@@ -61,23 +77,14 @@ def room_script(ctx):
                     set_var("Chapter", CH_OUTBREAK), set_var("Phase", 0), set_var("Step", 0),
                     set_var("Objective", 0), set_var("CardDay", 4),
                     gbs.save_game(),
-                    goto(ctx.sid_of("day_card"), 1, 16, fade="1"),
+                    goto(ctx.sid_of("room"), 22, 20, "left", fade="1"),
                 ],
             }),
         ], [
             if_var("Phase", "==", 0, [
                 music(ctx.music("days")),
                 switch("Chapter", {
-                    CH_DAY1: [
-                        comment("DAY 1 MORNING"),
-                        sfx("noise", 4, 200, 0.3), shake(0.2, 2),
-                        say("", "KNOCK KNOCK KNOCK."),
-                        say(N["Mayank"], "Bro! Physics! AB1! Nine o'clock!",
-                            "Prof. Rao takes attendance like it's the national census."),
-                        say("You", "It's 8:52."),
-                        say(N["Mayank"], "Then RUN. Through the hostel gate, down the underpass. AB1 is right there."),
-                        say("", "(Press START any time for the menu. The ! on the campus map is where you need to be.)"),
-                    ],
+                    CH_DAY1: [if_var("Day1IntroSeen", "==", 0, day1_morning)],
                     CH_DAY2: [
                         comment("DAY 2 MORNING"),
                         say(N["Mayank"], "Maths today. AB2, room 214. Bring a pen.",
@@ -309,12 +316,13 @@ def dinner(ctx):
 def cricket(ctx):
     s = ctx.scenes["cricket_ground"]
     cond = only_when(CH_DAY2, 1)
-    cx, cy = spot(ctx, "cricket_ground", 31, 30)
-    div = s.actor(N["Divyansh"], ctx.sprite("divyansh"), cx, cy + 4, direction="up", start=cond)
-    kan = s.actor(N["Kanishk"], ctx.sprite("kanishk"), cx + 6, cy - 2, direction="left", start=cond)
-    gar = s.actor(N["Garvita"], ctx.sprite("garvita"), cx - 7, cy - 6, direction="right", start=cond)
-    par = s.actor(N["Parag"], ctx.sprite("parag"), cx, cy - 8, direction="down", start=cond)
-    may = s.actor(N["Mayank"], ctx.sprite("mayank"), cx + 4, cy + 6, direction="left", start=cond)
+    cx, cy = spot(ctx, "cricket_ground", 15, 20)
+    actor_spot = lambda dx, dy: spot(ctx, "cricket_ground", cx + dx, cy + dy)
+    div = s.actor(N["Divyansh"], ctx.sprite("divyansh"), *actor_spot(0, 4), direction="up", start=cond)
+    kan = s.actor(N["Kanishk"], ctx.sprite("kanishk"), *actor_spot(6, -2), direction="left", start=cond)
+    gar = s.actor(N["Garvita"], ctx.sprite("garvita"), *actor_spot(-7, -6), direction="right", start=cond)
+    par = s.actor(N["Parag"], ctx.sprite("parag"), *actor_spot(0, -8), direction="down", start=cond)
+    may = s.actor(N["Mayank"], ctx.sprite("mayank"), *actor_spot(4, 6), direction="left", start=cond)
     s.script += [at(CH_DAY2, 1, [
         comment("DAY 2 - CRICKET MATCH"),
         set_pos("player", cx - 4, cy + 6), face("player", "up"),
@@ -395,7 +403,7 @@ def hangouts(ctx):
     for friend, (scene_key, (x, y), d1, d2) in HANGOUTS.items():
         s = ctx.scenes[scene_key]
         m = ctx.meta(scene_key)
-        x, y = open_spot(m["collisions"], m["cols"], m["rows"], x, y)
+        x, y = spot(ctx, scene_key, x, y)
         start = [if_var("Phase", "!=", 2, [deactivate("$self$")], [
             if_var("Chapter", ">", CH_DAY2, [deactivate("$self$")], [
                 if_var("Chapter", "<", CH_DAY1, [deactivate("$self$")])])])]
@@ -458,8 +466,14 @@ def world_marker(ctx):
                14: "ab2", 15: "dome"}
     cases = {}
     for k, t in targets.items():
+        if t not in loc:
+            # A compact overview may omit optional destinations; keep the
+            # objective actor valid while the corresponding gate is absent.
+            continue
         x, y = loc[t]
-        cases[k] = [set_pos("$self$", x, y - 1), show("$self$")]
+        x = max(0, min(w.width - 2, x))
+        y = max(0, min(w.height - 1, y - 1))
+        cases[k] = [set_pos("$self$", x, y), show("$self$")]
     w.actor("Objective", ctx.sprite("orb"), 1, 1, animate=True, start=[
         gbs.collisions_off("$self$"), hide("$self$"), switch("Objective", cases)])
     w.script += [

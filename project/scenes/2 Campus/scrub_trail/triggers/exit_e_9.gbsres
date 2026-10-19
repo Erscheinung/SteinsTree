@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "1bf37383-ccf1-560d-a87c-0c9ad1c63e6a",
+  "_index": 3,
+  "symbol": "trigger_scrub_trail_exit_e_9",
+  "prefabId": "",
+  "name": "Exit e 9",
+  "x": 27,
+  "y": 9,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "ef44d79e-8be6-6e87-6330-a8c0eb9e05aa"
+    }
+  ],
+  "leaveScript": []
+}

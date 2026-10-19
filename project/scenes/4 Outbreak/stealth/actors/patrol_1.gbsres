@@ -6,8 +6,8 @@
   "prefabId": "",
   "name": "Patrol 1",
   "coordinateType": "tiles",
-  "x": 1,
-  "y": 34,
+  "x": 3,
+  "y": 20,
   "frame": 0,
   "animate": false,
   "spriteSheetId": "97aff541-4f98-52ab-8ea2-25e7d4f4c66a",
@@ -29,11 +29,11 @@
         "actorId": "$self$",
         "x": {
           "type": "number",
-          "value": 30
+          "value": 28
         },
         "y": {
           "type": "number",
-          "value": 34
+          "value": 18
         },
         "collideWith": [],
         "moveType": "horizontal"
@@ -60,11 +60,11 @@
         "actorId": "$self$",
         "x": {
           "type": "number",
-          "value": 1
+          "value": 3
         },
         "y": {
           "type": "number",
-          "value": 34
+          "value": 20
         },
         "collideWith": [],
         "moveType": "horizontal"

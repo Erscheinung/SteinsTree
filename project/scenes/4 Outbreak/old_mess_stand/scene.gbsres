@@ -1,12 +1,12 @@
 {
   "_resourceType": "scene",
   "id": "530ac373-1fd1-5fad-a3b8-9309eb0a262f",
-  "_index": 138,
+  "_index": 136,
   "type": "TOPDOWN",
   "name": "4 Outbreak/Old Mess Last Stand (Kanishk)",
   "symbol": "scene_old_mess_stand",
-  "x": 1808,
-  "y": 4616,
+  "x": 1568,
+  "y": 3188,
   "width": 20,
   "height": 18,
   "backgroundId": "738b6f18-9a37-572a-a5aa-0a21f3e4d873",
@@ -2565,11 +2565,11 @@
         "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
         "x": {
           "type": "number",
-          "value": 84
+          "value": 34
         },
         "y": {
           "type": "number",
-          "value": 75
+          "value": 17
         },
         "direction": "down",
         "fadeSpeed": "2"

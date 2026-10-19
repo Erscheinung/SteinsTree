@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "108ce644-31da-59a5-a044-3e905f7e1184",
+  "_index": 0,
+  "symbol": "trigger_scrub_trail_exit_n_13",
+  "prefabId": "",
+  "name": "Exit n 13",
+  "x": 13,
+  "y": 0,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "59761a9b-abec-6c76-5c7a-11b1f37b083f"
+    }
+  ],
+  "leaveScript": []
+}

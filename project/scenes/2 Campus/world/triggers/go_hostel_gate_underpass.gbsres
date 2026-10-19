@@ -5,8 +5,8 @@
   "symbol": "trigger_world_go_hostel_gate_underpass",
   "prefabId": "",
   "name": "Go: Hostel Gate & Underpass",
-  "x": 54,
-  "y": 73,
+  "x": 10,
+  "y": 15,
   "width": 2,
   "height": 1,
   "prefabScriptOverrides": {},
@@ -90,11 +90,11 @@
                           "sceneId": "0956e7ea-fe2c-5fc6-bc41-0d8894cca01d",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           },
                           "direction": "right",
                           "fadeSpeed": "2"
@@ -137,11 +137,11 @@
                     "sceneId": "239a3611-8abd-5334-934f-f3cbd3100024",
                     "x": {
                       "type": "number",
-                      "value": 24
+                      "value": 14
                     },
                     "y": {
                       "type": "number",
-                      "value": 22
+                      "value": 19
                     },
                     "direction": "down",
                     "fadeSpeed": "2"

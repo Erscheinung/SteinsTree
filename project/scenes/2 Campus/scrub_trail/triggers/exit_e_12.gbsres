@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "dab2db64-a131-5e47-a717-b478885381a6",
+  "_index": 4,
+  "symbol": "trigger_scrub_trail_exit_e_12",
+  "prefabId": "",
+  "name": "Exit e 12",
+  "x": 27,
+  "y": 12,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "de1e103e-3da6-25f8-62e9-cb7555947a54"
+    }
+  ],
+  "leaveScript": []
+}

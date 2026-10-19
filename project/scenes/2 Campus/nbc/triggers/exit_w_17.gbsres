@@ -1,7 +1,7 @@
 {
   "_resourceType": "trigger",
   "id": "e29c08dd-d758-514b-b974-d7eab83c6757",
-  "_index": 12,
+  "_index": 5,
   "symbol": "trigger_nbc_exit_w_17",
   "prefabId": "",
   "name": "Exit w 17",
@@ -17,11 +17,11 @@
         "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
         "x": {
           "type": "number",
-          "value": 60
+          "value": 32
         },
         "y": {
           "type": "number",
-          "value": 48
+          "value": 24
         },
         "direction": "down",
         "fadeSpeed": "2"

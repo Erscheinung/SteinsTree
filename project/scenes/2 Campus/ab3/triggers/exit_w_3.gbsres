@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "91bdd03b-be5a-5750-94ca-95c4950c18fb",
+  "_index": 4,
+  "symbol": "trigger_ab3_exit_w_3",
+  "prefabId": "",
+  "name": "Exit w 3",
+  "x": 0,
+  "y": 3,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 40
+        },
+        "y": {
+          "type": "number",
+          "value": 17
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "35f4ce96-42b1-49c1-6bcb-ded78b77a15d"
+    }
+  ],
+  "leaveScript": []
+}

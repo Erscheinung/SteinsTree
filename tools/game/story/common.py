@@ -75,10 +75,14 @@ def night_palette(ctx, scene):
 
 
 def palette_for(ctx, scene, bank):
-    """Palette swap event for a scene: shared banks, or the enriched legacy set."""
+    """Palette swap event for a scene.
+
+    Legacy owner backgrounds are deliberately kept in their source form and
+    rendered with the DMG palette.  Generated scenes continue to use the
+    shared GBC banks under the project's colour-only mode.
+    """
     if getattr(scene, "legacy_bg", None):
-        prov = ctx.enriched[_legacy_bg_name(scene.legacy_bg)]
-        ids = prov["palette_ids"]["night" if bank in ("night", "blood") else "day"] + ["muj-ui"]
+        ids = ["dmg"] * 7 + ["muj-ui"]
         return gbs.ev("EVENT_PALETTE_SET_BACKGROUND", {"palette%d" % i: ids[i] for i in range(8)})
     return gbs.palette(bank)
 

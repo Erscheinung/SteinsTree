@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "025bc310-d39d-5d0f-9fd1-80ae28b27862",
+  "_index": 3,
+  "symbol": "trigger_block2_exit_e_12",
+  "prefabId": "",
+  "name": "Exit e 12",
+  "x": 23,
+  "y": 12,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "064a9a75-36de-7e1d-c2a9-64718936116d"
+    }
+  ],
+  "leaveScript": []
+}

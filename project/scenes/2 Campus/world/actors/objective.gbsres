@@ -103,11 +103,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 72
+                "value": 22
               },
               "y": {
                 "type": "number",
-                "value": 80
+                "value": 14
               }
             },
             "id": "87537919-0298-bf6f-5792-8a2a0b94b7fa"
@@ -127,11 +127,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 28
+                "value": 16
               },
               "y": {
                 "type": "number",
-                "value": 80
+                "value": 7
               }
             },
             "id": "000efd03-4511-3ac3-8eb6-d8ae6bec9d16"
@@ -151,11 +151,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 24
+                "value": 4
               },
               "y": {
                 "type": "number",
-                "value": 66
+                "value": 7
               }
             },
             "id": "ab8227ec-74db-d2de-b871-6dcf38ec8bbd"
@@ -175,11 +175,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 98
+                "value": 28
               },
               "y": {
                 "type": "number",
-                "value": 76
+                "value": 14
               }
             },
             "id": "215d4253-685f-c186-bb54-7ab2c5da745d"
@@ -199,11 +199,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 78
+                "value": 16
               },
               "y": {
                 "type": "number",
-                "value": 34
+                "value": 21
               }
             },
             "id": "e9407a36-d26d-beca-307d-4df0791d0a5f"
@@ -223,11 +223,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 72
+                "value": 40
               },
               "y": {
                 "type": "number",
-                "value": 51
+                "value": 14
               }
             },
             "id": "d35c290e-3c48-c044-d935-1001102721e0"
@@ -247,11 +247,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 117
+                "value": 44
               },
               "y": {
                 "type": "number",
-                "value": 66
+                "value": 14
               }
             },
             "id": "0cd75c9f-f38e-d9f1-4221-8514e8b1b065"
@@ -271,11 +271,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 32
+                "value": 4
               },
               "y": {
                 "type": "number",
-                "value": 45
+                "value": 14
               }
             },
             "id": "f22c33b7-c8f0-8320-c1c2-07e0dd44e366"
@@ -295,11 +295,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 35
+                "value": 22
               },
               "y": {
                 "type": "number",
-                "value": 82
+                "value": 7
               }
             },
             "id": "b02dcd77-d160-6f68-2ab9-c53794c919b0"
@@ -319,11 +319,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 54
+                "value": 10
               },
               "y": {
                 "type": "number",
-                "value": 72
+                "value": 14
               }
             },
             "id": "6911469b-9daa-107d-6b3e-66dfb39c9b3e"
@@ -343,11 +343,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 84
+                "value": 34
               },
               "y": {
                 "type": "number",
-                "value": 72
+                "value": 14
               }
             },
             "id": "ba5d7d98-7466-bed4-1734-74c13db7fb07"
@@ -367,11 +367,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 98
+                "value": 28
               },
               "y": {
                 "type": "number",
-                "value": 76
+                "value": 14
               }
             },
             "id": "6ab90314-61d0-d36c-3a2f-ec0035665aa7"
@@ -391,11 +391,11 @@
               "actorId": "$self$",
               "x": {
                 "type": "number",
-                "value": 86
+                "value": 16
               },
               "y": {
                 "type": "number",
-                "value": 93
+                "value": 14
               }
             },
             "id": "6e9c3b2e-2835-8e85-b165-26191f2fd49d"

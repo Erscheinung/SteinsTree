@@ -1,12 +1,12 @@
 {
   "_resourceType": "scene",
   "id": "029ec5ea-594a-592b-9514-82523c6348fe",
-  "_index": 133,
+  "_index": 131,
   "type": "TOPDOWN",
   "name": "4 Outbreak/Quess Mess Siege (Kanishk)",
   "symbol": "scene_quess_siege",
   "x": 296,
-  "y": 4616,
+  "y": 3188,
   "width": 20,
   "height": 18,
   "backgroundId": "738b6f18-9a37-572a-a5aa-0a21f3e4d873",
@@ -2541,11 +2541,11 @@
         "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
         "x": {
           "type": "number",
-          "value": 28
+          "value": 16
         },
         "y": {
           "type": "number",
-          "value": 83
+          "value": 10
         },
         "direction": "down",
         "fadeSpeed": "2"

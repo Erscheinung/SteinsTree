@@ -9,7 +9,7 @@ from story import travel, prologue, act1, act2, act3, legacy
 from story.legacy import pause_hook
 
 # scenes where START should not open the pause menu (cutscene-only screens)
-NO_PAUSE = {"battle_pocket", "day_card", "pause", "credits", "quess_siege", "old_mess_stand",
+NO_PAUSE = {"battle_pocket", "pause", "credits", "quess_siege", "old_mess_stand",
             "dome_night", "chapter_select"}
 
 FOLDER_ROWS = ["0 Menus", "1 Prologue", "3 Days", "2 Campus", "2 Campus Interiors", "4 Outbreak",
@@ -54,9 +54,10 @@ def layout(ctx):
 def palettes_for(ctx, scene):
     import gbc
     if getattr(scene, "legacy_bg", None):
-        from build_game import LEGACY_BG
-        prov = ctx.enriched[LEGACY_BG[scene.legacy_bg]]
-        bg = prov["palette_ids"]["night" if scene.bank == "night" else "day"] + ["muj-ui"]
+        # The owner's hand-made backgrounds stay intact.  Their source art
+        # was authored for the four-shade Game Boy palette, so use the DMG
+        # palette for every tile instead of the lossy enriched copy.
+        bg = ["dmg"] * 7 + ["muj-ui"]
     else:
         bg = gbc.palette_ids(scene.bank)
     # sprite palettes: default slot colours unless a sprite in this scene needs another

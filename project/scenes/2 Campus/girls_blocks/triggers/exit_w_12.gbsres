@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "0cb433ee-0f83-5ff2-8b1c-ff705adbd58a",
+  "_index": 6,
+  "symbol": "trigger_girls_blocks_exit_w_12",
+  "prefabId": "",
+  "name": "Exit w 12",
+  "x": 0,
+  "y": 12,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 40
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "d2e1b2dd-418b-6da7-7357-278dd1b32444"
+    }
+  ],
+  "leaveScript": []
+}

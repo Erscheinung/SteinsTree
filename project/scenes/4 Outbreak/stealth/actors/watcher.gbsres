@@ -152,11 +152,11 @@
                           "actorId": "player",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           }
                         },
                         "id": "4a007e68-6815-a7ec-c5ff-80414828b9a2"
@@ -266,11 +266,11 @@
                           "actorId": "player",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           }
                         },
                         "id": "d6c2807c-c60a-2006-1bbb-97f615949fa5"
@@ -380,11 +380,11 @@
                           "actorId": "player",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           }
                         },
                         "id": "de81bd47-3599-6a1c-fab7-82730210e2b4"
@@ -494,11 +494,11 @@
                           "actorId": "player",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           }
                         },
                         "id": "508085c1-6dde-aec4-2968-7aa71f3600bc"
@@ -610,11 +610,11 @@
                           "actorId": "player",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           }
                         },
                         "id": "a7e226ee-8473-b306-892a-5eaede1b05c6"
@@ -724,11 +724,11 @@
                           "actorId": "player",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           }
                         },
                         "id": "0ded22ac-ace4-9820-6711-ab66bcca4f48"
@@ -838,11 +838,11 @@
                           "actorId": "player",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           }
                         },
                         "id": "5901cb21-5472-3646-16cb-31955e4f6ecd"
@@ -952,11 +952,11 @@
                           "actorId": "player",
                           "x": {
                             "type": "number",
-                            "value": 6
+                            "value": 10
                           },
                           "y": {
                             "type": "number",
-                            "value": 41
+                            "value": 18
                           }
                         },
                         "id": "c0b9bcdc-ce7e-b62e-24d9-82eb65bc6d5d"

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "b8a5fdbc-6a94-59a7-ac88-1c029955c22c",
+  "_index": 4,
+  "symbol": "trigger_b7_courts_exit_w_3",
+  "prefabId": "",
+  "name": "Exit w 3",
+  "x": 0,
+  "y": 3,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "82322051-402f-7d47-8d46-10e4787c925d"
+    }
+  ],
+  "leaveScript": []
+}

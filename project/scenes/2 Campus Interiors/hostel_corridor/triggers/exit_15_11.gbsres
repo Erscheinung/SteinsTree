@@ -34,11 +34,11 @@
               "sceneId": "9a4d1317-cbff-5352-9a49-c9e6e2da8c00",
               "x": {
                 "type": "number",
-                "value": 7
+                "value": 12
               },
               "y": {
                 "type": "number",
-                "value": 43
+                "value": 7
               },
               "direction": "down",
               "fadeSpeed": "2"
@@ -53,11 +53,11 @@
               "sceneId": "654937e2-7496-551a-9abf-8361e4c109ae",
               "x": {
                 "type": "number",
-                "value": 22
+                "value": 12
               },
               "y": {
                 "type": "number",
-                "value": 35
+                "value": 7
               },
               "direction": "down",
               "fadeSpeed": "2"

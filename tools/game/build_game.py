@@ -115,6 +115,18 @@ class Ctx:
                 return json.loads(p.read_text())["id"]
         raise KeyError("background " + name)
 
+    def original_bg(self, name):
+        """Return the owner's untouched background resource id.
+
+        Legacy scenes intentionally use the original PNGs.  The generated
+        enriched copies remain available for comparison and old projects, but
+        must not silently replace the owner's art in this branch.
+        """
+        p = ROOT / "assets" / "backgrounds" / (name + ".png.gbsres")
+        if not p.exists():
+            raise KeyError("original background " + name)
+        return json.loads(p.read_text())["id"]
+
     def sprite(self, name):
         afterhours = {"player": "afterhours_player_walk", "mayank": "afterhours_mayank_walk",
                       "scholar": "afterhours_scholar_walk"}
@@ -141,7 +153,7 @@ class Ctx:
     def scene(self, key, name, map_name, folder, kind="TOPDOWN", bank="day", pos=None, legacy_bg=None):
         if legacy_bg:
             meta = self.legacy[legacy_bg]
-            bg_id = self.bg(LEGACY_BG[legacy_bg])
+            bg_id = self.original_bg(LEGACY_BG[legacy_bg])
             w, h, coll = meta["width"], meta["height"], meta["collisions"]
         else:
             meta = self.maps[map_name]
@@ -184,6 +196,10 @@ def palette_resources():
 def settings_patch(ctx):
     p = ROOT / "project" / "settings.gbsres"
     s = json.loads(p.read_text())
+    # Colour-only mode gives generated GBC backgrounds the full 384-tile
+    # budget. Legacy owner scenes opt into mono explicitly in story.legacy,
+    # retaining their source art and DMG palette without lowering the global
+    # limit for generated maps.
     s["colorMode"] = "color"
     s["musicDriver"] = "huge"
     s["defaultBackgroundPaletteIds"] = gbc.palette_ids("day")

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "df6294b8-9be6-581a-b9ac-5e64b636b066",
+  "_index": 4,
+  "symbol": "trigger_cricket_ground_exit_w_4",
+  "prefabId": "",
+  "name": "Exit w 4",
+  "x": 0,
+  "y": 4,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 24
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "8e50c868-afac-2b30-8980-54b28d8e1f73"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "ee80f786-6dc0-5429-9f07-ac53aba46581",
+  "_index": 4,
+  "symbol": "trigger_hostel_avenue_exit_w_3",
+  "prefabId": "",
+  "name": "Exit w 3",
+  "x": 0,
+  "y": 3,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 22
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "a7846fbb-a81a-acec-e4fd-b8148868828e"
+    }
+  ],
+  "leaveScript": []
+}

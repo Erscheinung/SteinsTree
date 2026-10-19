@@ -1,14 +1,14 @@
 {
   "_resourceType": "scene",
   "id": "d43619b1-9bfd-5d04-aa3c-f2a285329492",
-  "_index": 137,
+  "_index": 135,
   "type": "TOPDOWN",
   "name": "4 Outbreak/Grand Staircase (Divyansh)",
   "symbol": "scene_staircase_stand",
-  "x": 1416,
-  "y": 4616,
-  "width": 44,
-  "height": 60,
+  "x": 1272,
+  "y": 3188,
+  "width": 32,
+  "height": 32,
   "backgroundId": "afcee32b-eeaa-525c-9deb-65a9ebfc8c67",
   "tilesetId": "",
   "colorModeOverride": "none",
@@ -93,11 +93,11 @@
         "actorId": "player",
         "x": {
           "type": "number",
-          "value": 24
+          "value": 15
         },
         "y": {
           "type": "number",
-          "value": 50
+          "value": 25
         }
       },
       "id": "16dfd2b3-b4c6-9ed1-578b-effb243d6d6e"
@@ -292,11 +292,11 @@
         "actorId": "6b2fa0e2-62c6-5988-8bf6-b57b70fd4e9d",
         "x": {
           "type": "number",
-          "value": 24
+          "value": 18
         },
         "y": {
           "type": "number",
-          "value": 42
+          "value": 22
         },
         "collideWith": [],
         "moveType": "horizontal"
@@ -335,11 +335,11 @@
         "actorId": "830f8589-c0e2-517a-b9ac-e973ce5af15e",
         "x": {
           "type": "number",
-          "value": 24
+          "value": 18
         },
         "y": {
           "type": "number",
-          "value": 43
+          "value": 23
         },
         "collideWith": [],
         "moveType": "horizontal"
@@ -352,11 +352,11 @@
         "actorId": "315f778f-9a40-580c-baf4-370509a91b5f",
         "x": {
           "type": "number",
-          "value": 24
+          "value": 18
         },
         "y": {
           "type": "number",
-          "value": 43
+          "value": 23
         },
         "collideWith": [],
         "moveType": "horizontal"
@@ -369,11 +369,11 @@
         "actorId": "7a7c791b-19b1-58ed-a8db-df173c1fe61d",
         "x": {
           "type": "number",
-          "value": 24
+          "value": 18
         },
         "y": {
           "type": "number",
-          "value": 43
+          "value": 23
         },
         "collideWith": [],
         "moveType": "horizontal"
@@ -386,11 +386,11 @@
         "actorId": "c1b453df-dea5-5453-957d-1b64619dc8ae",
         "x": {
           "type": "number",
-          "value": 24
+          "value": 18
         },
         "y": {
           "type": "number",
-          "value": 43
+          "value": 23
         },
         "collideWith": [],
         "moveType": "horizontal"
@@ -583,5 +583,5 @@
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],
-  "collisions": "0f4+004+0f19+004+0f7+00c+0f14+006+0f6+00d+0f13+006+0f6+00d+0f13+006+0fa+009+0f13+006+0fa+004+0f2+003+0f13+002+0f2+002+0f3+003+0f4+004+0f2+003+0f13+002+0f2+008+0f4+00!0f2+006+0f13+00a+0f6+00!0f2+002+0f2+002+0f13+004+0f2+002+0f8+005+0f2+002+0f13+004+0f2+002+0f8+007+0f15+006+0fa+00!0f2+004+0f16+00!0f2+002+0fa+00!0f2+002+0f2+002+0f14+00!0f2+004+0f8+005+0f2+002+0f14+004+0f2+00!0f8+009+0f14+004+0f2+00!0f8+003+0f2+004+0f14+007+0f8+003+0f2+00!0f2+002+0f13+005+0fb+005+0f2+002+0f13+00!0f2+002+0fb+009+0f13+00!0f2+005+0f8+006+0f2+00!0f13+003+0f2+005+0f6+002+0f2+002+0f2+00!0f13+003+0f2+005+0f6+002+0f2+005+0f13+005+0f2+004+0f5+009+0f13+005+0f2+004+0f5+005+0f2+002+0f13+00b+0f2+008+0f2+002+0f13+00b+0f!00d+0f13+00a+0f!00e+0f14+009+0f!00e+0f14+002+0f2+004+0f2+00b+0f2+00!0f14+002+0f2+00!0f5+00b+0f2+002+0f13+005+0f6+00e+0f13+00!0f2+002+0f6+00b+0f2+00!0f13+00!0f2+003+0fa+002+0f2+002+0f2+00!0f13+006+0fa+002+0f2+005+0f13+006+0fa+005+0f2+002+0f15+004+0fa+005+0f2+002+0f15+00!0f2+00!0fa+009+0f13+003+0f2+00!0fa+002+0f2+005+0f13+006+0fa+002+0f2+005+0f13+007+0f9+005+0f2+002+0f13+004+0f2+00!0f9+005+0f2+002+0fd+00a+0f2+00!0f9+001c+0f2+005+0f9+004+0f2+0016+0f2+005+0f9+004+0f2+0019+0f2+004+0f7+001f+0f2+002+0f9+00!0f2+0020+0f9+00!0f2+0017+0f2+004+0f2+00!0f9+001a+0f2+004+0f2+00!0f9+002+0f2+001f+0fa+00!0f2+001d+0f2+003+0f7+0020+0f2+003+0f7+0025+0f7+001e+0f2+002a+0f2+00!0f2+00!0f!0028+0f2+00!0f4+0023+0f2+004+0f3+003+0f2+001e+0f2+007+0f2+00!0f2+0027+0f2+0027+0f!002+0f14+004+0f11+"
+  "collisions": "0f21+001e+0f2+00!0f1c+00!0f2+002+0f1a+002+0f2+002+0f1a+002+0f!003+0fd+00!0fc+0046+0f!001c+0f!001e+0f2+001e+0f2+001e+0f2+00!0f!0011+0f!008+0f!00!0f2+003+0f!001a+0f!0080+0f!001e+0f2+001a+0f!003+0f2+00!0f!009+0f!0010+0f!00!0f2+001e+0f2+001e+0f!001c+0f!0046+0fd+00!0fc+003+0f!001e+0f2+001e+0f2+00!0f!001a+0f!00!0f2+001e+0ff+004+0fe+"
 }

@@ -5,8 +5,8 @@
   "symbol": "trigger_world_go_scrub_trail_behind_b7",
   "prefabId": "",
   "name": "Go: Scrub Trail behind B7",
-  "x": 32,
-  "y": 46,
+  "x": 4,
+  "y": 15,
   "width": 2,
   "height": 1,
   "prefabScriptOverrides": {},
@@ -95,11 +95,11 @@
                     "sceneId": "ee85cd3a-0ae6-539e-b6b5-85374cb85e45",
                     "x": {
                       "type": "number",
-                      "value": 28
+                      "value": 13
                     },
                     "y": {
                       "type": "number",
-                      "value": 30
+                      "value": 18
                     },
                     "direction": "down",
                     "fadeSpeed": "2"

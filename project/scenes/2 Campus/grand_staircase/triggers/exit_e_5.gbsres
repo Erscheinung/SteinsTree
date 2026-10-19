@@ -1,14 +1,14 @@
 {
   "_resourceType": "trigger",
   "id": "3e390ce0-9f46-50f1-abf2-5d682b58ad3f",
-  "_index": 4,
+  "_index": 1,
   "symbol": "trigger_grand_staircase_exit_e_5",
   "prefabId": "",
   "name": "Exit e 5",
-  "x": 43,
+  "x": 31,
   "y": 5,
   "width": 1,
-  "height": 2,
+  "height": 4,
   "prefabScriptOverrides": {},
   "script": [
     {
@@ -17,11 +17,11 @@
         "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
         "x": {
           "type": "number",
-          "value": 84
+          "value": 34
         },
         "y": {
           "type": "number",
-          "value": 75
+          "value": 17
         },
         "direction": "down",
         "fadeSpeed": "2"
