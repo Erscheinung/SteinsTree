@@ -1,0 +1,235 @@
+{
+  "_resourceType": "scene",
+  "id": "25d127aa-1f91-5a0d-81cb-49c53cf0f106",
+  "_index": 114,
+  "type": "TOPDOWN",
+  "name": "2 Campus/Workshop Building",
+  "symbol": "scene_workshop",
+  "x": 1400,
+  "y": 3672,
+  "width": 44,
+  "height": 54,
+  "backgroundId": "548633a5-b6af-5ce0-be5d-a14abc738536",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "8758ed69-d84d-8730-e0ac-ef0e22a121bc"
+          }
+        ]
+      },
+      "id": "d3ed85bf-725a-0632-5280-f80a3acc0037"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "1acda02b-bfa3-7c73-a6ac-60062692fc46"
+                }
+              ],
+              "false": []
+            },
+            "id": "8b40008c-21d6-dc71-3b53-bd9f77888fda"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "3bfb6422-837c-a947-a89e-85541117123c"
+                }
+              ],
+              "false": []
+            },
+            "id": "90be608c-f6eb-501c-3e67-e1098fd7ed98"
+          }
+        ]
+      },
+      "id": "0aba9944-1d8c-cc68-53a2-66028ee25d59"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "67c51f5f-7672-8fdb-d604-ad36b1a366af"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "77739409-468b-f296-c9df-7138de6e7c20"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Workshop",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "2e92ab92-71ec-51cb-e34a-c81bae732deb"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "b06de16c-2df0-cb03-3b78-f723242c2e45"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "04bca35b-cddb-bf74-8c66-2468c81a8502"
+          }
+        ],
+        "false": []
+      },
+      "id": "a8e16153-55f0-96f8-7f9f-5584010c6119"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f14+004+0f15+002a+0f!002b+0f!002b+0f!0017+0f2+0012+0f!00e+0f2+007+0f3+004+0f2+00b+0f2+00a+0f2+00!0fc+004+0f2+00b+0f2+004+0f2+004+0f2+00!0fc+006+0f2+009+0f2+00!0f2+00!0f2+002+0f2+003+0fe+004+0f2+00a+0f!00!0f2+005+0f2+00!0f10+00!0f2+006+0f2+005+0f!006+0f2+003+0fe+003+0f2+006+0f2+005+0f2+005+0f2+005+0fc+008+0f2+008+0f2+007+0f2+003+0fe+006+0f2+003+0f2+002+0f4+00!0f2+003+0f2+00!0f2+00!0fd+008+0f2+00!0f2+002+0f4+00!0f2+006+0f2+00!0fb+005+0f2+003+0f2+005+0f4+004+0f2+006+0fb+005+0f2+00a+0f4+004+0f2+00!0f2+003+0fc+00b+0f2+003+0f!00a+0f2+003+0fc+003+0f2+006+0f2+003+0f!00f+0fc+003+0f2+00b+0f6+006+0f2+002+0fc+00!0f2+002+0f2+002+0f2+002+0f2+00!0f6+002+0f2+002+0f2+002+0fc+00!0f2+002+0f2+002+0f2+002+0f2+00!0f4+004+0f2+004+0fe+00b+0f2+003+0f4+00a+0fe+002+0f2+003+0f2+002+0f2+003+0f6+00a+0fc+002+0f2+003+0f2+007+0f6+002+0f2+006+0fe+003+0f2+005+0f2+003+0f3+004+0f2+006+0fe+003+0f2+005+0f2+003+0f3+00c+0fc+00a+0f2+005+0f5+00a+0fc+00!0f2+004+0f2+00!0f2+005+0f5+002+0f2+004+0fe+00!0f2+004+0f2+003+0f2+002+0f5+003+0f2+004+0fe+003+0f2+004+0f2+00!0f2+002+0f5+007+0f2+003+0fb+003+0f2+00!0f2+00!0f2+005+0f!004+0f2+005+0f2+003+0fb+00!0f2+003+0f2+005+0f2+00!0f!004+0f2+00!0f2+004+0f2+00!0fb+00!0f2+00!0f2+007+0f5+00!0f2+003+0f2+004+0f2+00!0fb+004+0f2+002+0f2+003+0f5+00!0f2+007+0f2+003+0fb+002+0f2+004+0f2+002+0fb+005+0f2+003+0fb+002+0f2+007+0f8+002+0f2+00a+0fd+004+0f2+002+0f9+00b+0f2+00!0fd+004+0f2+00!0fa+00b+0f2+00!0fc+002+0f2+004+0fa+00e+0fc+002+0f2+005+0f9+00e+0f2+0014+0f8+00e+0f2+004+0f7+002+0f2+006+0f7+00e+0fd+002+0f2+00!0f2+004+0f6+00e+0fb+007+0f2+00!0f2+002+0f5+00e+0fb+00!0f2+007+0f2+003+0f4+00!0f2+00b+0fe+002+0f2+009+0f3+00!0f2+00c+0f8+007+0f2+009+0f4+003+0f2+0011+0f2+0011+0f4+002+0f2+0011+0f2+00!0f2+003+0f2+009+0f4+00c+0f7+005+0f2+003+0f2+009+0f4+00!0f2+009+0f7+00!0f2+0012+0f3+002+0f2+00a+0fc+00e+0f6+00c+0fc+00e+0fb+004+0f14+004+0f6+"
+}

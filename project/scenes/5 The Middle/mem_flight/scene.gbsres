@@ -1,0 +1,102 @@
+{
+  "_resourceType": "scene",
+  "id": "58364817-4520-5c73-bd17-163b6743e7b6",
+  "_index": 142,
+  "type": "SHMUP",
+  "name": "5 The Middle/Memory: Flight to London",
+  "symbol": "scene_mem_flight",
+  "x": 216,
+  "y": 5216,
+  "width": 120,
+  "height": 18,
+  "backgroundId": "b09c2c91-5cf0-5f99-93d9-dfa4883bed84",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-storm",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "352b406b-199f-53ea-ac30-ac9e915b6900",
+        "loop": true
+      },
+      "id": "eb5422ef-de7b-5acb-c693-02aac62f763b"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "e0188e30-a0a8-5088-b6c0-b5d536340ae0",
+        "persist": true
+      },
+      "id": "81a2dc3f-d680-342c-f997-d3dae1d6d418"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 8
+        }
+      },
+      "id": "fc6e430e-5ffb-4415-b2dd-2347e0da6b0b"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY 2a - FLYING TO LONDON (shmup). The 'spaceship' of the life-story levels.",
+        "__collapse": false
+      },
+      "id": "1ef199a4-d253-9f10-fbea-114cc2ca4833"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Flying to a new\ncountry.",
+          "The whole world\nshrinks to a\nwindow seat."
+        ],
+        "avatarId": ""
+      },
+      "id": "b9e20371-d964-b6ed-3161-2ea9779e8c2f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "(Dodge the storm\nclouds. Fly east.)"
+        ],
+        "avatarId": ""
+      },
+      "id": "ea584270-e00c-13be-4b37-1db82c8aaf13"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00870+"
+}

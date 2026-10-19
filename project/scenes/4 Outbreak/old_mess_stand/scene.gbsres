@@ -1,0 +1,2560 @@
+{
+  "_resourceType": "scene",
+  "id": "530ac373-1fd1-5fad-a3b8-9309eb0a262f",
+  "_index": 138,
+  "type": "TOPDOWN",
+  "name": "4 Outbreak/Old Mess Last Stand (Kanishk)",
+  "symbol": "scene_old_mess_stand",
+  "x": 1808,
+  "y": 4616,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "738b6f18-9a37-572a-a5aa-0a21f3e4d873",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-blood-grass",
+    "muj-blood-path",
+    "muj-blood-stone",
+    "muj-blood-brick",
+    "muj-blood-roof",
+    "muj-blood-water",
+    "muj-blood-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-blood-grass",
+        "palette1": "muj-blood-path",
+        "palette2": "muj-blood-stone",
+        "palette3": "muj-blood-brick",
+        "palette4": "muj-blood-roof",
+        "palette5": "muj-blood-water",
+        "palette6": "muj-blood-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "99d334d8-73c3-d5de-d687-396272b5a957"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "7b6df120-4f24-50e5-8467-5c56ef1c3ecf",
+        "loop": true
+      },
+      "id": "7fac5e14-ca98-023a-0587-3d83175c67f1"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "KANISHK'S LAST STAND - his arc: the planner meets the variable he can't plan for",
+        "__collapse": false
+      },
+      "id": "2077ccbd-30ed-6365-d19e-8404777282af"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        }
+      },
+      "id": "7a810464-d722-9806-50d9-1111a2a74e05"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "1409c0e7-cd4a-75f4-2b10-2efcd30283da"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: You made\nit.",
+          "I had a 61 percent\nestimate on that.",
+          "Glad I was wrong\nlow."
+        ],
+        "avatarId": ""
+      },
+      "id": "9a88aa49-c936-8ad8-fa6a-f53cdffa43c9"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: Old Mess.\nTwo doors.",
+          "We hold this, then\nyou go up to AB2."
+        ],
+        "avatarId": ""
+      },
+      "id": "38780abc-784f-a4c6-a899-311e0d76bceb"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "145",
+        "value": {
+          "type": "number",
+          "value": 30
+        }
+      },
+      "id": "b61e9a1c-8aaa-32cd-022c-1ffbf6fbf1fe"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "149",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "1b4beb1d-0aa8-1d50-b9ea-0c98a523283f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "150",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "e33735bd-4aaa-b2e6-e550-48566464a403"
+    },
+    {
+      "command": "EVENT_LOOP_WHILE",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "150"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "150",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "59ac2c76-b972-886e-1bfc-560a467cf79c"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "150"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "149",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "7a4c28f9-d4c8-7f30-9786-02e16ef65894"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "146",
+                    "value": {
+                      "type": "number",
+                      "value": 18
+                    }
+                  },
+                  "id": "2b84d146-8337-868b-5998-231d4bd66390"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "147",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "7fe5e99b-1769-e508-8248-c21f00fdb005"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "148",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "8527a5d0-e083-d035-0dc3-57c45038e39c"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "145",
+                    "value": {
+                      "type": "number",
+                      "value": 30
+                    }
+                  },
+                  "id": "ba4c17a4-f763-4eb6-5adf-0826277ce1cf"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "199",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "374c8e2b-df81-c4cd-856d-d779301c2572"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "WAVE 1: Old Mess\nregulars"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "d3506684-8ba8-a9d3-29c6-d10d9ad8d0b0"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "124"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "147",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "4e35971a-8cf2-0245-2fd5-a4446431279b"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Kanishk: I already\nread this wave.\nFirst hit, double."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "9b345155-e0e4-744c-379b-aa23f5ef9d61"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "94009698-24cf-46bb-94f9-e7e2f3a3aa7d"
+                },
+                {
+                  "command": "EVENT_LOOP_WHILE",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "146"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "YOU      HP $145$\nZOMBIES  HP $146$"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "d8f951ac-3d3e-189a-efda-fa6c6bd973e3"
+                      },
+                      {
+                        "command": "EVENT_MENU",
+                        "args": {
+                          "variable": "119",
+                          "items": 4,
+                          "cancelOnLastOption": false,
+                          "cancelOnB": false,
+                          "layout": "menu",
+                          "option1": "Attack",
+                          "option2": "Read",
+                          "option3": "Barrier",
+                          "option4": "Snack"
+                        },
+                        "id": "110923d5-b101-85f3-e7be-97c7f5cbb986"
+                      },
+                      {
+                        "command": "EVENT_SWITCH",
+                        "args": {
+                          "variable": "119",
+                          "choices": 4,
+                          "__collapseElse": true,
+                          "value0": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "value1": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "value2": {
+                            "type": "number",
+                            "value": 3
+                          },
+                          "value3": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "children": {
+                          "true0": [
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "120",
+                                "operation": "set",
+                                "other": "rnd",
+                                "value": "0",
+                                "minValue": "3",
+                                "maxValue": "6",
+                                "clamp": false
+                              },
+                              "id": "74346961-6113-a377-22aa-40e9ae75af7b"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "ne",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "147"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "120",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "value": "5",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "d8a26bd1-9ee0-65cd-269a-c4a3099b7f97"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "147",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "17fee730-1d70-5892-f919-42aa8de47bdc"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Kanishk: Now! Left\nflank!"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "5d748f82-1efc-be5c-fa00-ffc538145cb6"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "82664aaf-a418-73a2-4493-3a5538357c44"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You swing the mess\nladle!"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "4a856631-cc1f-2368-5023-4a604fde3d92"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 0.2,
+                                "frames": 12,
+                                "shakeDirection": "horizontal",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 3
+                                }
+                              },
+                              "id": "7398e7d1-2bd2-b8b9-bf2d-967f17514c02"
+                            },
+                            {
+                              "command": "EVENT_SOUND_PLAY_EFFECT",
+                              "args": {
+                                "type": "crash",
+                                "priority": "medium",
+                                "pitch": 3,
+                                "frequency": 300,
+                                "duration": 0.2,
+                                "wait": false,
+                                "effect": 0
+                              },
+                              "id": "46160e3e-6fb4-4edd-3bd9-5cd48335ff2d"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "146",
+                                "operation": "sub",
+                                "other": "var",
+                                "vectorY": "120",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "0",
+                                "clamp": true
+                              },
+                              "id": "b6384a0e-0330-6def-67e7-c5a41d661283"
+                            }
+                          ],
+                          "true1": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Kanishk: Watch the\nthird one. It\nleads. Hit it."
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "f9c4e78f-1971-3802-15b4-e21544941fd8"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "147",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "faee58b7-0288-c2b2-2980-b8f0268a1038"
+                            }
+                          ],
+                          "true2": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You drag a table\nacross. Guard up."
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "cf7b0bd6-4d27-a4a0-0524-cff1dffa748b"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "148",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "e9aa3cb4-a74f-bb75-b0c5-0774f963a5b6"
+                            }
+                          ],
+                          "true3": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "gt",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "199"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "199",
+                                      "operation": "sub",
+                                      "other": "val",
+                                      "value": "1",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "fb480225-5c99-7888-2598-13c675a43555"
+                                  },
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "145",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "value": "8",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "0bb7e6da-572b-75ed-8449-e783484357b2"
+                                  },
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "gt",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "145"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 30
+                                        }
+                                      },
+                                      "__collapseElse": true
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_SET_VALUE",
+                                          "args": {
+                                            "variable": "145",
+                                            "value": {
+                                              "type": "number",
+                                              "value": 30
+                                            }
+                                          },
+                                          "id": "acdc3ef6-b7dc-10b2-405f-7f4cf9c0ded5"
+                                        }
+                                      ],
+                                      "false": []
+                                    },
+                                    "id": "85ed9f22-0ec2-9839-e666-287027810fa5"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Cold Maggi. +8 HP\nSnacks left: $199$"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "e6292fd0-8ede-6095-3fc1-5c95c047ea0b"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "No snacks left.\nThe packet is just\nair and regret."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "255828db-0222-1ed8-0e03-4dbe4dec1ed2"
+                                  }
+                                ]
+                              },
+                              "id": "7e69ff8f-3cdd-0f69-762d-3d800de10fe0"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "b508eb10-bdb3-126f-4de4-ba0ca2910759"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "gt",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "146"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "120",
+                                "operation": "set",
+                                "other": "rnd",
+                                "value": "0",
+                                "minValue": "2",
+                                "maxValue": "5",
+                                "clamp": false
+                              },
+                              "id": "5d3f11f2-ce44-5981-1ff3-d54a3367865b"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "ne",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "148"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "120",
+                                      "operation": "sub",
+                                      "other": "val",
+                                      "value": "4",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "40afbcec-108f-67f1-b7e2-f8310f3cfe23"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "148",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "f105aef5-f862-7d6e-d24f-f0f4eff66d08"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "The table holds...\nmostly."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "9c6d1791-ec4c-f841-268c-2d14b5766bcd"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "ed9f3bd8-7dac-b0af-41a5-57e7d6411cb8"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "The zombies lurch\nforward!"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "98de340a-07d8-ffbe-31f3-77093eb121d2"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 0.3,
+                                "frames": 18,
+                                "shakeDirection": "horizontal",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 4
+                                }
+                              },
+                              "id": "d1b1d501-6030-f936-b5a0-6fc5de95bf56"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "145",
+                                "operation": "sub",
+                                "other": "var",
+                                "vectorY": "120",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "0",
+                                "clamp": true
+                              },
+                              "id": "33d58ac0-ce57-2316-1ce3-15a4076fe8ea"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "lte",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "145"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Kanishk: Rewind.\nSame opening.\nBetter moves."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "5acc368a-b9fd-35d6-98bf-29662533fc5d"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "145",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 30
+                                      }
+                                    },
+                                    "id": "054e2730-cc47-0cb6-d0a5-7313160d3dbc"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "146",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "b6e3fb9c-f843-fbdd-c5d9-b84c9b06e894"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "149",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "81f32f5e-9518-af02-e4ee-3a69847090af"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "150",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 1
+                                      }
+                                    },
+                                    "id": "9b15f32b-cf10-62e1-b71c-18f653b6e9e8"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "108242fa-8e7c-3f74-c46b-def55fc4a347"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "5ef28fa5-142f-9181-b1a3-35271691e3be"
+                      }
+                    ]
+                  },
+                  "id": "51169414-fa70-3a9d-c3d8-05a21c14a9d7"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "150"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Wave 1 down."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "ccc10a6e-b4ba-d827-6229-1072caddb2d6"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EFFECTS",
+                        "args": {
+                          "effect": "flicker",
+                          "actorId": "ba0b1605-8182-5a3b-aea3-3bf56add72dd",
+                          "time": 0.5,
+                          "frames": 30
+                        },
+                        "id": "85139fab-89f5-4cb8-737a-f0f8b2e19dbb"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "ba0b1605-8182-5a3b-aea3-3bf56add72dd"
+                        },
+                        "id": "5f9c11d4-70eb-769d-4c07-4751803c259a"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "79ff6560-8577-6cc4-a45f-66f8335fea48"
+                }
+              ],
+              "false": []
+            },
+            "id": "1a9051d0-8b0b-5a30-a533-ada6eb31d906"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "150"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "149",
+                    "value": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "id": "e51228a2-087d-5f32-3612-af27656b4efa"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "146",
+                    "value": {
+                      "type": "number",
+                      "value": 22
+                    }
+                  },
+                  "id": "23182264-04b2-17ed-5f27-8b44c0e8fac6"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "147",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "11b72621-54c4-4e35-3f54-301c41a39792"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "148",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "0a5f243e-920d-5b02-6b25-a13e0a0264f1"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "145",
+                    "value": {
+                      "type": "number",
+                      "value": 30
+                    }
+                  },
+                  "id": "af1171f9-26cb-e73c-e98e-07ee497346c6"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "199",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "d4241137-081f-b438-a8a1-643d640c22f7"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "WAVE 2: Kitchen\ncrew"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "ff05c3f0-064a-ed5d-3b6f-4b2686f2b2fc"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "124"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "147",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "fe916ed1-ddb0-c2ca-f7aa-694dcac6e633"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Kanishk: I already\nread this wave.\nFirst hit, double."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "8ca7d0e0-e939-98df-da94-104a1e406d73"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "64e61316-2182-783c-c199-6bcb686693a9"
+                },
+                {
+                  "command": "EVENT_LOOP_WHILE",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "146"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "YOU      HP $145$\nZOMBIES  HP $146$"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "fb7bad86-2d05-ef5b-4e21-89566779828f"
+                      },
+                      {
+                        "command": "EVENT_MENU",
+                        "args": {
+                          "variable": "119",
+                          "items": 4,
+                          "cancelOnLastOption": false,
+                          "cancelOnB": false,
+                          "layout": "menu",
+                          "option1": "Attack",
+                          "option2": "Read",
+                          "option3": "Barrier",
+                          "option4": "Snack"
+                        },
+                        "id": "51432ead-9cee-2ac2-b0aa-b65a99157aa9"
+                      },
+                      {
+                        "command": "EVENT_SWITCH",
+                        "args": {
+                          "variable": "119",
+                          "choices": 4,
+                          "__collapseElse": true,
+                          "value0": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "value1": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "value2": {
+                            "type": "number",
+                            "value": 3
+                          },
+                          "value3": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "children": {
+                          "true0": [
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "120",
+                                "operation": "set",
+                                "other": "rnd",
+                                "value": "0",
+                                "minValue": "3",
+                                "maxValue": "6",
+                                "clamp": false
+                              },
+                              "id": "c8452553-e272-9fe0-dcd3-62f1ee2bff8b"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "ne",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "147"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "120",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "value": "5",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "60e66f90-5e9c-513b-4279-cc6fc9818845"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "147",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "06b4a086-3fad-378d-3ea5-78a89e3f89d7"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Kanishk: Now! Left\nflank!"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "9480d392-945b-57dd-c9c1-e033398cf11a"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "86bdcc7d-e64d-8170-620d-ff421ea48cbf"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You swing the mess\nladle!"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "f6e69ce1-489b-e9bb-b42b-1c9949af6e45"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 0.2,
+                                "frames": 12,
+                                "shakeDirection": "horizontal",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 3
+                                }
+                              },
+                              "id": "ae35ae9f-98ea-52ab-3ae6-afd50ce2dcb9"
+                            },
+                            {
+                              "command": "EVENT_SOUND_PLAY_EFFECT",
+                              "args": {
+                                "type": "crash",
+                                "priority": "medium",
+                                "pitch": 3,
+                                "frequency": 300,
+                                "duration": 0.2,
+                                "wait": false,
+                                "effect": 0
+                              },
+                              "id": "68bba7ac-a279-a637-34f2-81b8d9173f6a"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "146",
+                                "operation": "sub",
+                                "other": "var",
+                                "vectorY": "120",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "0",
+                                "clamp": true
+                              },
+                              "id": "09a6a846-5b19-8b72-2e9f-acacc47d3d11"
+                            }
+                          ],
+                          "true1": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Kanishk: Watch the\nthird one. It\nleads. Hit it."
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "26ab765c-0543-ef17-dda6-8d10f93725ca"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "147",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "27f49cae-57fe-a3e4-d8e9-5233128b094a"
+                            }
+                          ],
+                          "true2": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You drag a table\nacross. Guard up."
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "3ef48dd8-13be-2800-0530-d5f24f7e2568"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "148",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "a3bfc197-77e8-f729-ab90-ddbf857ad696"
+                            }
+                          ],
+                          "true3": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "gt",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "199"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "199",
+                                      "operation": "sub",
+                                      "other": "val",
+                                      "value": "1",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "d34f11cb-4fa6-bb79-2089-37027eda233a"
+                                  },
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "145",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "value": "8",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "07589567-c423-1adb-2a5d-a0ee4231a8ee"
+                                  },
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "gt",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "145"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 30
+                                        }
+                                      },
+                                      "__collapseElse": true
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_SET_VALUE",
+                                          "args": {
+                                            "variable": "145",
+                                            "value": {
+                                              "type": "number",
+                                              "value": 30
+                                            }
+                                          },
+                                          "id": "0fbff7f2-0f3a-66c6-f112-cf3ed3b6be96"
+                                        }
+                                      ],
+                                      "false": []
+                                    },
+                                    "id": "37775c86-b2c2-39b4-f917-4290e8377e9e"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Cold Maggi. +8 HP\nSnacks left: $199$"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "d49cea69-8881-d3f2-c31b-aecea9e7cb9b"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "No snacks left.\nThe packet is just\nair and regret."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "dda1723f-26d6-da4f-62b1-73d5712955c8"
+                                  }
+                                ]
+                              },
+                              "id": "adb3ea15-1d9e-2f5b-cbc3-a9d727391214"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "32d3425b-5d20-29c6-8ce0-c494e7c43d8d"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "gt",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "146"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "120",
+                                "operation": "set",
+                                "other": "rnd",
+                                "value": "0",
+                                "minValue": "2",
+                                "maxValue": "5",
+                                "clamp": false
+                              },
+                              "id": "ac8619c8-ad45-2d60-a454-7df8908ce885"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "ne",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "148"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "120",
+                                      "operation": "sub",
+                                      "other": "val",
+                                      "value": "4",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "95bfe477-d49a-e549-300d-259a77925a8a"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "148",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "6798b02b-1cbe-83d3-bd6e-7834d84d0615"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "The table holds...\nmostly."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "3f940a5e-33f9-a039-c7b9-4b9f220f8dba"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "abbfe0f4-e23d-0dfc-0eba-1e5c3fecc865"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "The zombies lurch\nforward!"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "7967cdd3-9d7e-7aab-bc5d-2b5df7ad36a9"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 0.3,
+                                "frames": 18,
+                                "shakeDirection": "horizontal",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 4
+                                }
+                              },
+                              "id": "9ff89f85-f1bd-06ee-2bd2-4d9b825b813f"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "145",
+                                "operation": "sub",
+                                "other": "var",
+                                "vectorY": "120",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "0",
+                                "clamp": true
+                              },
+                              "id": "a955b92a-eef0-c377-5a2f-6a94db2d5d80"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "lte",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "145"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Kanishk: Rewind.\nSame opening.\nBetter moves."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "92e25b58-7505-41ff-a75d-7c92fc7301a4"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "145",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 30
+                                      }
+                                    },
+                                    "id": "4449da5d-aa9b-9554-1f06-7f3d1b88390c"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "146",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "ea5fe1e1-c8fe-b9e5-6d72-94596702f7c5"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "149",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "40913d52-fe98-7a37-1fbb-1b4d37e2f34c"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "150",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 1
+                                      }
+                                    },
+                                    "id": "a12d7df7-3e73-e383-b53a-1a3f7ccbc38d"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "521ed89d-17bd-09d3-4472-582eff6ce85d"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "cf9700b1-8255-1c07-6668-7bdb90a5fd8f"
+                      }
+                    ]
+                  },
+                  "id": "3f60dfd1-21a8-bf89-5dea-a48edc00655a"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "150"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Wave 2 down."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "e90ce685-d066-ebd4-4d61-f90fb95fa0c6"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EFFECTS",
+                        "args": {
+                          "effect": "flicker",
+                          "actorId": "bb6ebec5-e799-5f84-a1e2-1e08439b2fff",
+                          "time": 0.5,
+                          "frames": 30
+                        },
+                        "id": "b089cc10-6b07-d65d-76ba-284b8c7674b7"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "bb6ebec5-e799-5f84-a1e2-1e08439b2fff"
+                        },
+                        "id": "e3747b9d-1275-eecf-9d3f-4ba2181447b0"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "a1240e05-2d75-4148-44bd-4359a3a2d17d"
+                }
+              ],
+              "false": []
+            },
+            "id": "a31d286f-97a5-dede-b7ae-f8a969e41034"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "150"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "149",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "e0590a93-1da1-4d10-4ae1-798ab7a08e42"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "146",
+                    "value": {
+                      "type": "number",
+                      "value": 30
+                    }
+                  },
+                  "id": "6f0a562c-6688-aa7d-ac37-85643fe40714"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "147",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "71d5842b-b387-7386-9b34-6a253abac80e"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "148",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "e4fac4dd-4d83-3350-881c-5aedecd0ef83"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "145",
+                    "value": {
+                      "type": "number",
+                      "value": 30
+                    }
+                  },
+                  "id": "280eb1fd-a0d7-e220-5c07-ee124beada34"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "199",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "dbf8eddb-6c42-09ef-7f99-7a9ed4cbd108"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "WAVE 3: The horde"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "79d79e7b-6df8-68e0-3864-d26bc2405f8a"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "124"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "147",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "76d7e86d-f60d-97f8-d1d1-ede7383043e9"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Kanishk: I already\nread this wave.\nFirst hit, double."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "e29d67e2-b77c-1119-658f-4762b8885fb8"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "2dce99f9-ed6d-6462-7066-e10ff9ba6035"
+                },
+                {
+                  "command": "EVENT_LOOP_WHILE",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "146"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "YOU      HP $145$\nZOMBIES  HP $146$"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "5908d187-30bc-b58a-b566-b482704e12f8"
+                      },
+                      {
+                        "command": "EVENT_MENU",
+                        "args": {
+                          "variable": "119",
+                          "items": 4,
+                          "cancelOnLastOption": false,
+                          "cancelOnB": false,
+                          "layout": "menu",
+                          "option1": "Attack",
+                          "option2": "Read",
+                          "option3": "Barrier",
+                          "option4": "Snack"
+                        },
+                        "id": "d23caeef-d6d8-c6f9-af2a-a60c8cb33dce"
+                      },
+                      {
+                        "command": "EVENT_SWITCH",
+                        "args": {
+                          "variable": "119",
+                          "choices": 4,
+                          "__collapseElse": true,
+                          "value0": {
+                            "type": "number",
+                            "value": 1
+                          },
+                          "value1": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "value2": {
+                            "type": "number",
+                            "value": 3
+                          },
+                          "value3": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "children": {
+                          "true0": [
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "120",
+                                "operation": "set",
+                                "other": "rnd",
+                                "value": "0",
+                                "minValue": "3",
+                                "maxValue": "6",
+                                "clamp": false
+                              },
+                              "id": "6008db00-819f-bc6b-7bcc-747416083eb2"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "ne",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "147"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "120",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "value": "5",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "45b81c8f-8ba1-2d0a-0da2-7e2226dd96d4"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "147",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "816ec763-2812-f5af-ee10-e3c2c7d3cdba"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Kanishk: Now! Left\nflank!"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "fa78dfad-d2c3-3a58-b19f-86a5158502e0"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "408fbd26-7eb1-74e9-ae0a-b3eec354e468"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You swing the mess\nladle!"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "7aa83a3c-2812-faa5-3d05-511404cb69a0"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 0.2,
+                                "frames": 12,
+                                "shakeDirection": "horizontal",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 3
+                                }
+                              },
+                              "id": "ab7d5c2d-58e4-e0c5-9077-d5b158c58574"
+                            },
+                            {
+                              "command": "EVENT_SOUND_PLAY_EFFECT",
+                              "args": {
+                                "type": "crash",
+                                "priority": "medium",
+                                "pitch": 3,
+                                "frequency": 300,
+                                "duration": 0.2,
+                                "wait": false,
+                                "effect": 0
+                              },
+                              "id": "f18c2590-4425-0ef7-51a7-e143b115b42d"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "146",
+                                "operation": "sub",
+                                "other": "var",
+                                "vectorY": "120",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "0",
+                                "clamp": true
+                              },
+                              "id": "90540dfa-3b07-1f57-f039-6fd6241fe549"
+                            }
+                          ],
+                          "true1": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "Kanishk: Watch the\nthird one. It\nleads. Hit it."
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "e4ec0d41-ffb4-45fe-a792-44e80d88ff3e"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "147",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "2bc3419a-2706-d005-a835-baf39923ae94"
+                            }
+                          ],
+                          "true2": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "You drag a table\nacross. Guard up."
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "22051f54-68c5-501e-296a-e404222523e6"
+                            },
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "148",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "3452499a-e932-2646-b042-345c3343dab9"
+                            }
+                          ],
+                          "true3": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "gt",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "199"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "199",
+                                      "operation": "sub",
+                                      "other": "val",
+                                      "value": "1",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "5c6a3722-1b61-a31a-cab9-38e1a13a290b"
+                                  },
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "145",
+                                      "operation": "add",
+                                      "other": "val",
+                                      "value": "8",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "657d7d8b-c00d-6b18-4707-e44dfa57872e"
+                                  },
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "gt",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "145"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 30
+                                        }
+                                      },
+                                      "__collapseElse": true
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_SET_VALUE",
+                                          "args": {
+                                            "variable": "145",
+                                            "value": {
+                                              "type": "number",
+                                              "value": 30
+                                            }
+                                          },
+                                          "id": "a8c1cc88-c99f-9e38-9512-d94073e13653"
+                                        }
+                                      ],
+                                      "false": []
+                                    },
+                                    "id": "34c8cd5c-e34c-33f8-ff82-0c13655f9950"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Cold Maggi. +8 HP\nSnacks left: $199$"
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "2e2891a8-2eb7-085b-f8fa-3642b96a5041"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "No snacks left.\nThe packet is just\nair and regret."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "58986108-694e-b1cd-a265-8ce0b1beccac"
+                                  }
+                                ]
+                              },
+                              "id": "8a566055-9cf5-e643-2399-cf5308a699d7"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "ae2999f3-017a-3f76-ef95-84871bdab87d"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "gt",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "146"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 0
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "120",
+                                "operation": "set",
+                                "other": "rnd",
+                                "value": "0",
+                                "minValue": "2",
+                                "maxValue": "5",
+                                "clamp": false
+                              },
+                              "id": "fba58dff-81dc-7359-d74b-fbf16730c540"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "ne",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "148"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_VARIABLE_MATH",
+                                    "args": {
+                                      "vectorX": "120",
+                                      "operation": "sub",
+                                      "other": "val",
+                                      "value": "4",
+                                      "minValue": "0",
+                                      "maxValue": "0",
+                                      "clamp": true
+                                    },
+                                    "id": "2f03a8bb-6bad-6da0-485b-1f181e4bc4e5"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "148",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "a23683f2-b89d-127c-f4f2-82f3e096eca1"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "The table holds...\nmostly."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "feaa641d-b517-ddb3-fd02-6ebcfeea6872"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "0c56a161-24a2-7f21-af99-519a5d296920"
+                            },
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "The zombies lurch\nforward!"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "9d9e0a67-6b3a-df64-6ca8-8a8de27c7ec7"
+                            },
+                            {
+                              "command": "EVENT_CAMERA_SHAKE",
+                              "args": {
+                                "time": 0.3,
+                                "frames": 18,
+                                "shakeDirection": "horizontal",
+                                "magnitude": {
+                                  "type": "number",
+                                  "value": 4
+                                }
+                              },
+                              "id": "37b8757c-5b4a-4b60-f58b-d296b05a8359"
+                            },
+                            {
+                              "command": "EVENT_VARIABLE_MATH",
+                              "args": {
+                                "vectorX": "145",
+                                "operation": "sub",
+                                "other": "var",
+                                "vectorY": "120",
+                                "value": "0",
+                                "minValue": "0",
+                                "maxValue": "0",
+                                "clamp": true
+                              },
+                              "id": "04c53d9e-c199-fa86-6af7-2e734b064467"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "lte",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "145"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 0
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Kanishk: Rewind.\nSame opening.\nBetter moves."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "7c578eb7-225c-683a-bd15-4d623af73929"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "145",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 30
+                                      }
+                                    },
+                                    "id": "94209012-08f8-5935-eb35-ff62f7350e3f"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "146",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "e67a9262-c704-5a30-d46f-5765e8522acc"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "149",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 0
+                                      }
+                                    },
+                                    "id": "7460fe40-9cc5-f8fb-2be7-59cce8c0aa5e"
+                                  },
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "150",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 1
+                                      }
+                                    },
+                                    "id": "0d9e5505-158b-5c7c-edf1-2b2baebb768c"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "b16fadf4-6ed0-cd48-baea-7be55a8e106e"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "60169aae-c91d-dc3a-f0b2-c701dce991f5"
+                      }
+                    ]
+                  },
+                  "id": "f108de9d-aa61-73f7-9cf3-be42a1446167"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "150"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Wave 3 down."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "390644fc-bf31-beba-2e18-c12b2999a579"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EFFECTS",
+                        "args": {
+                          "effect": "flicker",
+                          "actorId": "bc13d980-ea86-5241-972e-a3e4e192432d",
+                          "time": 0.5,
+                          "frames": 30
+                        },
+                        "id": "e2230e27-67f1-6f4d-722c-006c8dc55565"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "bc13d980-ea86-5241-972e-a3e4e192432d"
+                        },
+                        "id": "96297474-328e-2aac-a189-32272d97376a"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "8e752d00-31f5-bcc4-2ad4-fb520b3a9919"
+                }
+              ],
+              "false": []
+            },
+            "id": "8c8a5f65-dc81-94b0-7f25-237a26e4d378"
+          }
+        ]
+      },
+      "id": "fa9a30bf-0acc-9f64-119c-c81935972737"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: ...Huh."
+        ],
+        "avatarId": ""
+      },
+      "id": "6e9aad67-90c0-9572-1202-3d7d80e83e46"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You: Kanishk. Your\narm."
+        ],
+        "avatarId": ""
+      },
+      "id": "33b44c49-6ef2-c34c-7785-7497572d9beb"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: During\nwave two.",
+          "I accounted for\nevery move on the\nboard."
+        ],
+        "avatarId": ""
+      },
+      "id": "ff2cfea0-d9e6-6e20-6021-ae51105ff8f4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: Except\nthe one piece I\nnever count. Me."
+        ],
+        "avatarId": ""
+      },
+      "id": "874b5504-c46e-3dab-cd70-8ae307d961cc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: I'll lock\nthe door from\ninside.",
+          "Ninety seconds,\nminimum. Go up to\nAB2."
+        ],
+        "avatarId": ""
+      },
+      "id": "69079a0d-9e83-a110-a0d0-8bef0799f394"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: And hey.\nYou'd have lost in\nten moves.",
+          "Next time, eleven."
+        ],
+        "avatarId": ""
+      },
+      "id": "b2cb1100-2883-3f86-7068-e93d1a855aec"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "7c50e578-9459-58cd-b569-9ae2585e4832",
+        "time": 1.0,
+        "frames": 60
+      },
+      "id": "7a785120-0f48-77ff-119a-218b54e65e27"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "7c50e578-9459-58cd-b569-9ae2585e4832"
+      },
+      "id": "c082b88a-1fff-1794-3cc6-7a6fee6aefbf"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "132",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "d92d1e4d-504c-e807-8c2e-635d61de39cc"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "128",
+        "value": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "7d3e00b5-8ffb-043b-9094-fc2af2e363f8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "115",
+        "value": {
+          "type": "number",
+          "value": 14
+        }
+      },
+      "id": "5ec560c6-bb56-cd1d-1939-d8b248b79679"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 84
+        },
+        "y": {
+          "type": "number",
+          "value": 75
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "9c501753-6b45-2cb8-a15e-f40ebdf618c0"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f3d+00!0f2+002+0f!005+0f2+003+0f!00!0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+"
+}

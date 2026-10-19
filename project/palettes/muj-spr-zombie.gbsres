@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-zombie",
+  "name": "Sprite: Zombie",
+  "colors": [
+    "C8E0A0",
+    "6E9858",
+    "485830",
+    "202818"
+  ],
+  "defaultName": "Sprite: Zombie",
+  "defaultColors": [
+    "C8E0A0",
+    "6E9858",
+    "485830",
+    "202818"
+  ]
+}

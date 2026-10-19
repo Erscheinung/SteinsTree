@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "cf677cea-812f-5035-8e80-9713a2d00234",
+  "_index": 4,
+  "symbol": "actor_cricket_ground_mayank",
+  "prefabId": "",
+  "name": "Mayank",
+  "coordinateType": "tiles",
+  "x": 35,
+  "y": 36,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e6c451a2-6ff2-44c2-9f4e-5969df82a7e0",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1d06c3f8-8642-3bcd-ed0a-b9846163e221"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "ne",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "7d110822-97f7-d5f6-e1ea-29cf7728d68e"
+                }
+              ],
+              "false": []
+            },
+            "id": "0ef23149-ffb2-ee72-a851-43316105ca14"
+          }
+        ]
+      },
+      "id": "92390b24-74fa-f124-ef45-6b857f2bf172"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

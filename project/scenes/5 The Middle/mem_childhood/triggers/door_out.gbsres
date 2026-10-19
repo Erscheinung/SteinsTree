@@ -1,0 +1,179 @@
+{
+  "_resourceType": "trigger",
+  "id": "40b738fe-995c-5908-943f-f3304a816a8c",
+  "_index": 1,
+  "symbol": "trigger_mem_childhood_door_out",
+  "prefabId": "",
+  "name": "Door out",
+  "x": 10,
+  "y": 13,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "182"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MEMORY END - reflection",
+              "__collapse": false
+            },
+            "id": "2db72b07-db69-10c6-64ac-8dad26685177"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "b3956737-e5ba-5b96-bb48-ebba9927bb1d"
+            },
+            "id": "205d6fc6-9f96-22af-4176-855958eb1681"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "b3956737-e5ba-5b96-bb48-ebba9927bb1d",
+              "time": 0.6,
+              "frames": 36
+            },
+            "id": "684f703d-822f-722b-e84d-8f96cf34a7a4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Anshuman: You were\nthe quiet kid too.",
+                "Hiding in plain\nsight.",
+                "Anshuman: Funny.\nThe shadows were\nnever empty.",
+                "You were in them."
+              ],
+              "avatarId": ""
+            },
+            "id": "720423b2-8235-45be-7daa-90b137f65fab"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "b3956737-e5ba-5b96-bb48-ebba9927bb1d",
+              "time": 0.6,
+              "frames": 36
+            },
+            "id": "ec969066-6828-e564-c034-a5666901baf9"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "b3956737-e5ba-5b96-bb48-ebba9927bb1d"
+            },
+            "id": "ba6e33a2-27e2-476d-4c01-13b1256b985a"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "172"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "172",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "8553a882-6c2b-ce14-8066-9d5882259741"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "136"
+                  },
+                  "id": "7cd6f08d-c7e9-5274-1c14-f24e3c587756"
+                }
+              ],
+              "false": []
+            },
+            "id": "5f3e3a45-eb8a-cfb5-9945-024c507736c3"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            },
+            "id": "14eced5d-6686-e928-5b3a-43954e52ccd3"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+              "persist": true
+            },
+            "id": "ff4a5801-e595-40d5-9566-fe20d86b4591"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "472db1f8-4891-f9fb-c46a-0387a8cf09a3"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Not yet. Someone's\nin the corner,\nwaiting for you."
+              ],
+              "avatarId": ""
+            },
+            "id": "a0ae7f92-fc56-3311-54b5-1ec34515bd56"
+          }
+        ]
+      },
+      "id": "61105de5-176a-5cb7-739b-6ae92d543237"
+    }
+  ],
+  "leaveScript": []
+}

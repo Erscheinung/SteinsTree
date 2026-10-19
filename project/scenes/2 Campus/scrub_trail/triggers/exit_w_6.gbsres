@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "247244bc-ca20-54fd-9996-18f24c075e7a",
+  "_index": 7,
+  "symbol": "trigger_scrub_trail_exit_w_6",
+  "prefabId": "",
+  "name": "Exit w 6",
+  "x": 0,
+  "y": 6,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 32
+        },
+        "y": {
+          "type": "number",
+          "value": 47
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "21e0bebd-dc12-ca2f-7415-89962ab53356"
+    }
+  ],
+  "leaveScript": []
+}

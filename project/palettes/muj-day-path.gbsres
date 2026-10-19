@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-day-path",
+  "name": "MUJ day path",
+  "colors": [
+    "F8ECC8",
+    "E0BC80",
+    "B08850",
+    "98D060"
+  ],
+  "defaultName": "MUJ day path",
+  "defaultColors": [
+    "F8ECC8",
+    "E0BC80",
+    "B08850",
+    "98D060"
+  ]
+}

@@ -1,0 +1,633 @@
+{
+  "_resourceType": "scene",
+  "id": "83b28233-e33d-5b19-928f-517c11edaf2f",
+  "_index": 118,
+  "type": "TOPDOWN",
+  "name": "2 Campus Interiors/AB2-214: Engineering Mathematics",
+  "symbol": "scene_maths_class",
+  "x": 232,
+  "y": 4352,
+  "width": 24,
+  "height": 18,
+  "backgroundId": "4e68f4aa-3af9-5295-a87c-d6da1be50f62",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-prof"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "2962d6c9-53f1-9ad8-c3e0-95653a75db66"
+          }
+        ]
+      },
+      "id": "1c28614a-83ca-03cb-27da-78be88dcba0b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "f87d55cf-4240-c3d4-a261-cdbaa45a2a2a"
+                }
+              ],
+              "false": []
+            },
+            "id": "810ecce8-cc1a-739f-d5ff-15885dd7967c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "5dc4f145-2c06-20fa-a607-c26f73037f05"
+                }
+              ],
+              "false": []
+            },
+            "id": "519f13eb-76fc-8426-85a5-948138425fd5"
+          }
+        ]
+      },
+      "id": "68cc33eb-53f8-a9c0-7a8f-db35cd20ac0f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "DAY 2 - ENGINEERING MATHEMATICS (AB2-214)",
+                    "__collapse": false
+                  },
+                  "id": "09082506-621f-ce9f-8a35-894e2ce7f25b"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 14
+                    }
+                  },
+                  "id": "1c0ad4c2-03d5-f33d-ef1c-07234bb577f3"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "collideWith": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "6ae488ee-12f8-2a14-e05a-1da70c924002"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "player",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "4be5e46c-8c03-eca9-046c-61c6fbefad53"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Iyer: Good\nmorning. Today we\nintegrate.",
+                      "Emotionally and\nmathematically."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "befcf46e-2100-5b59-b805-4849c6ffd879"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Garvita: (to you)\nI sat in the back\nso I can leave",
+                      "first. Strategy."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "9e69c783-f58b-9b2f-b5aa-957a2b7a56aa"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: That's\nnot strategy.\nThat's an exit."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "6446114b-afd3-d7c1-5162-bb0157aa1ea5"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Iyer: The\nintegral of e^x dx\nis...?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "9789d5f1-300e-635d-8e0b-01ea7d7a11fc"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "e^x + C",
+                    "option2": "x e^x",
+                    "option3": "e"
+                  },
+                  "id": "e8da8f05-8f49-8816-5f2f-7a56102a6f44"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Iyer: Yes.\nNever forget the +\nC.",
+                            "It is the C of\ncompassion."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "2710888e-b0ea-82e7-17b1-d180e2c50b7b"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "139"
+                        },
+                        "id": "ce662507-8d33-b98d-8d71-4f7103791dd1"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Iyer: Close.\nPainfully close.\nWrong."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "d2710d34-2ad7-984d-3c31-4f5a8df97acd"
+                      }
+                    ]
+                  },
+                  "id": "62bc67a1-4489-0b0d-a37c-cacaf4f59844"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Iyer: Rank\nof the 3x3\nidentity matrix?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "0417482e-c025-109c-4ff6-d076981f4acd"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "0",
+                    "option2": "1",
+                    "option3": "3"
+                  },
+                  "id": "8d174e3f-2698-c8ae-5c17-29d72fa492dd"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Iyer: Three!",
+                            "Full rank, like\nyour attendance\nshould be."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "9dae43dd-6042-bcc3-8076-97aadd65e27b"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "139"
+                        },
+                        "id": "c7651b61-4abe-2b8c-2c42-1870e48a0e54"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Iyer:\nIdentity has full\nrank.",
+                            "Like your\nconfidence."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "798609ea-35a4-b0ec-c5ca-5e7f13beb90e"
+                      }
+                    ]
+                  },
+                  "id": "5a430f74-4555-f3df-3e07-05daa75ec28c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Iyer:\nDivyansh says 1/0\n= 'infinity,",
+                      "easy'. Is he..."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "d3433077-7182-9410-cdbb-50b76c5a8b46"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "right",
+                    "option2": "undefined",
+                    "option3": "Divyansh"
+                  },
+                  "id": "56400907-e4e6-0f10-7973-818919c8db3f"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Iyer:\nUndefined. Much\nlike his plans."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "83cd93dd-f2fa-0615-7ff3-3f8fddb99145"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "139"
+                        },
+                        "id": "8a742132-2728-c4ff-0251-3c3c22e3fddd"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Iyer:\nMathematically,\nDivyansh is a",
+                            "constant. Not a\ncorrect one."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "20908087-0ab4-c1b3-31e8-ee00db1d0f33"
+                      }
+                    ]
+                  },
+                  "id": "a4662d4b-ab6d-a5dc-2b06-156f58874f10"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: Ma'am, I\ndid all three in\nmy head.",
+                      "My head just\ndoesn't have a\npen."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "be9411cf-5237-5087-ad77-284d5fd40d4c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Iyer: Then\nlend your head a\npen.",
+                      "Class dismissed."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "c60fcbea-fa84-e719-88a7-794342bc6cf8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Garvita: Cricket\nmatch after class!\nHostel vs. Hostel.",
+                      "Ground near AB3."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "a00106ca-92da-8164-6844-6335ca5e86c5"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: I will\nhit a six. First\nball.",
+                      "Write it down."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "f9f8e7ce-6533-ab10-2878-4126a6d8de97"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: Writing\nit down. For\nevidence."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "26b23ef6-5892-290d-3c76-d40218482d6c"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "101",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "fa84831b-09d6-e0c8-bbe0-cbdbf89c36b3"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "115",
+                    "value": {
+                      "type": "number",
+                      "value": 6
+                    }
+                  },
+                  "id": "d2367a13-a15a-4e5f-38ea-590c6ec74f1e"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "787ac2a0-34df-580d-83e6-c3270ab92e93"
+                  },
+                  "id": "19768e99-0e96-ed72-a85a-e01f7cff3359"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "0df65a1c-8000-5bfb-a4a0-774778c50882"
+                  },
+                  "id": "cf30647f-4ce8-7c16-0f68-20acc57c61e7"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "742cf89a-c244-5fba-ad4d-a8a2fe269999"
+                  },
+                  "id": "9bffc4fb-59bd-c6e6-2efb-aaec1cb1a885"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "156940e1-de28-508c-873d-304200e72300"
+                  },
+                  "id": "4d28decc-1c66-f731-c31c-11215a7a0690"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "ed94b8f6-59c0-55c5-9383-cdcc6eb95f22"
+                  },
+                  "id": "dd86b9d2-4c96-2c26-ea32-7e2f647221bf"
+                }
+              ],
+              "false": []
+            },
+            "id": "b77ae91c-8c0b-ae51-209d-9ee6b2baa11a"
+          }
+        ],
+        "false": []
+      },
+      "id": "70a25e22-d401-ff7d-b295-95bbc0c6946c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f61+00!0f!0014+0f2+0016+0f2+00!0f4+00!0f4+00!0f4+00!0f4+002+0f2+0016+0f2+0016+0f2+00!0f4+00!0f4+00!0f4+00!0f4+002+0f2+0016+0f2+0016+0f2+00!0f4+00!0f4+00!0f4+00!0f4+002+0f2+0016+0f2+0016+0f3+0014+0f5+002+0f2b+"
+}

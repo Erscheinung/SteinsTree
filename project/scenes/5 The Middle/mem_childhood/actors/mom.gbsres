@@ -1,0 +1,40 @@
+{
+  "_resourceType": "actor",
+  "id": "02bd6780-032a-53ef-af7e-7466a6788843",
+  "_index": 1,
+  "symbol": "actor_mem_childhood_mom",
+  "prefabId": "",
+  "name": "Mom",
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "4a108507-d241-5d54-aa19-03598a239468",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mom: Later, okay?\nLater."
+        ],
+        "avatarId": ""
+      },
+      "id": "d71cc458-b0ea-46be-5573-c5b0ae1d3f70"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

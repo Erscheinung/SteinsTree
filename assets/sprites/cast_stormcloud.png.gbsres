@@ -1,0 +1,160 @@
+{
+  "_resourceType": "sprite",
+  "id": "601967cf-e5a5-5d8b-b1dd-d336b8d612c3",
+  "name": "cast_stormcloud",
+  "symbol": "sprite_cast_stormcloud",
+  "states": [
+    {
+      "id": "7cbf84b2-2cb7-560b-8c7a-654f30bd7d4e",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "ba98d5fa-f319-509d-a64a-9256ad702336",
+          "frames": [
+            {
+              "id": "18b9e3bb-f744-5413-a792-7218543c9ed9",
+              "tiles": [
+                {
+                  "id": "91a11210-c68e-5e6f-bb06-c143cebdef88",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 5,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "4458a1fd-16a6-56ca-96da-526e3a3a7b32",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 5,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "77ee1212-e8c6-55f3-8b8b-6675ffad10e0",
+              "tiles": [
+                {
+                  "id": "cc4639ad-8d08-5409-9c91-e8465c249072",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 5,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "04bae17e-be20-568f-acd1-2c1988761f2f",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 5,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "6f1eac7f-8c10-5264-ae1d-af0bb2b2446f",
+          "frames": [
+            {
+              "id": "a8a13ae9-33df-57c1-bdca-4ad1f5ce0bf4",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "039931bb-870e-55d5-9b45-efc8c0480a90",
+          "frames": [
+            {
+              "id": "7bb7681b-cc49-552c-9891-56432bac1e30",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0277d229-b0f1-58e2-8581-becc680469d9",
+          "frames": [
+            {
+              "id": "fdd58f40-fe2e-588a-ab09-f86f59c52961",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "67db67b7-0b19-51e0-ab89-ea7115e633b8",
+          "frames": [
+            {
+              "id": "2a1d52d6-71dd-525c-8dc5-7782b42429d6",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "81907864-ad23-5278-bfb9-d8005a63da0e",
+          "frames": [
+            {
+              "id": "b26acf29-2827-5d81-a4c5-9c53dbc67b66",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a14b3d48-a82b-5718-a7fa-4fcfcdd55959",
+          "frames": [
+            {
+              "id": "9bda81ed-7dae-532b-90f9-7e13d1d412f3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "aa0d6277-0c5b-5592-bc64-a57988e5636d",
+          "frames": [
+            {
+              "id": "8606b34d-a562-523c-908e-ba75c51bf2f2",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 4,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "cast_stormcloud.png",
+  "width": 32,
+  "height": 16,
+  "checksum": ""
+}

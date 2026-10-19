@@ -1,0 +1,50 @@
+{
+  "_resourceType": "trigger",
+  "id": "3b1120c5-8849-58c8-be73-1d0945798eba",
+  "_index": 5,
+  "symbol": "trigger_stealth_shadow_6",
+  "prefabId": "",
+  "name": "Shadow 6",
+  "x": 36,
+  "y": 15,
+  "width": 3,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "164",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "0f9eed89-5ada-2121-7740-eb3bd82f7030"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "164",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "aa9367f9-10a8-09e4-eaa7-e309baf54305"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "164",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "d8c3c3ff-d6e6-fd18-5eb0-88150ecb27ab"
+    }
+  ]
+}

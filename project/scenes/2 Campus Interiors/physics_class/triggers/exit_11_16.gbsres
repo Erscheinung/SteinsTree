@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "4e3c0f55-38df-5dc2-b66f-e8649764f344",
+  "_index": 0,
+  "symbol": "trigger_physics_class_exit_11_16",
+  "prefabId": "",
+  "name": "Exit 11 16",
+  "x": 11,
+  "y": 16,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "c4654d87-de41-5e81-9f0f-7c89735d757f",
+        "x": {
+          "type": "number",
+          "value": 26
+        },
+        "y": {
+          "type": "number",
+          "value": 66
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "029a0650-2837-2e00-d48a-10338fca5b42"
+    }
+  ],
+  "leaveScript": []
+}

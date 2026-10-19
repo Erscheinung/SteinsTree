@@ -1,0 +1,235 @@
+{
+  "_resourceType": "scene",
+  "id": "dfdc9fea-7f15-5237-a2cc-c1654f6e2c06",
+  "_index": 112,
+  "type": "TOPDOWN",
+  "name": "2 Campus/Old Mess & Grand Staircase",
+  "symbol": "scene_grand_staircase",
+  "x": 552,
+  "y": 3672,
+  "width": 44,
+  "height": 60,
+  "backgroundId": "afcee32b-eeaa-525c-9deb-65a9ebfc8c67",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "b5e56a6b-136c-255d-97cf-837f320bf454"
+          }
+        ]
+      },
+      "id": "c21f0426-88c7-d4d2-e4f9-ee7f81afd554"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "950f38fd-8b7c-5808-0786-bcbe7c5f5f31"
+                }
+              ],
+              "false": []
+            },
+            "id": "8c91b7de-0265-35f2-fc69-05ea5afd6413"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "f93e6b20-7f33-c123-bc3f-cf80e982eaa2"
+                }
+              ],
+              "false": []
+            },
+            "id": "6635f557-e2b6-5815-98d8-0b494c56cb25"
+          }
+        ]
+      },
+      "id": "7f3eed50-721a-73ea-eb93-5547e103c608"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "6be75888-575f-023c-4bef-9f0f71701e3e"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "47fd3c7e-4537-3660-97b7-0863aa8d71a0"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Grand Staircase",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "dbd84ec4-8b6c-57d0-7059-62baee424d4e"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "85e6bc85-8414-f056-bf4e-0b1237771056"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "e1fbda1c-dbf2-4579-1775-8a7a71f496b0"
+          }
+        ],
+        "false": []
+      },
+      "id": "6511f847-6a31-f733-7358-f94748e70348"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f4+004+0f19+004+0f7+00c+0f14+006+0f6+00d+0f13+006+0f6+00d+0f13+006+0fa+009+0f13+006+0fa+004+0f2+003+0f13+002+0f2+002+0f3+003+0f4+004+0f2+003+0f13+002+0f2+008+0f4+00!0f2+006+0f13+00a+0f6+00!0f2+002+0f2+002+0f13+004+0f2+002+0f8+005+0f2+002+0f13+004+0f2+002+0f8+007+0f15+006+0fa+00!0f2+004+0f16+00!0f2+002+0fa+00!0f2+002+0f2+002+0f14+00!0f2+004+0f8+005+0f2+002+0f14+004+0f2+00!0f8+009+0f14+004+0f2+00!0f8+003+0f2+004+0f14+007+0f8+003+0f2+00!0f2+002+0f13+005+0fb+005+0f2+002+0f13+00!0f2+002+0fb+009+0f13+00!0f2+005+0f8+006+0f2+00!0f13+003+0f2+005+0f6+002+0f2+002+0f2+00!0f13+003+0f2+005+0f6+002+0f2+005+0f13+005+0f2+004+0f5+009+0f13+005+0f2+004+0f5+005+0f2+002+0f13+00b+0f2+008+0f2+002+0f13+00b+0f!00d+0f13+00a+0f!00e+0f14+009+0f!00e+0f14+002+0f2+004+0f2+00b+0f2+00!0f14+002+0f2+00!0f5+00b+0f2+002+0f13+005+0f6+00e+0f13+00!0f2+002+0f6+00b+0f2+00!0f13+00!0f2+003+0fa+002+0f2+002+0f2+00!0f13+006+0fa+002+0f2+005+0f13+006+0fa+005+0f2+002+0f15+004+0fa+005+0f2+002+0f15+00!0f2+00!0fa+009+0f13+003+0f2+00!0fa+002+0f2+005+0f13+006+0fa+002+0f2+005+0f13+007+0f9+005+0f2+002+0f13+004+0f2+00!0f9+005+0f2+002+0fd+00a+0f2+00!0f9+001c+0f2+005+0f9+004+0f2+0016+0f2+005+0f9+004+0f2+0019+0f2+004+0f7+001f+0f2+002+0f9+00!0f2+0020+0f9+00!0f2+0017+0f2+004+0f2+00!0f9+001a+0f2+004+0f2+00!0f9+002+0f2+001f+0fa+00!0f2+001d+0f2+003+0f7+0020+0f2+003+0f7+0025+0f7+001e+0f2+002a+0f2+00!0f2+00!0f!0028+0f2+00!0f4+0023+0f2+004+0f3+003+0f2+001e+0f2+007+0f2+00!0f2+0027+0f2+0027+0f!002+0f14+004+0f11+"
+}

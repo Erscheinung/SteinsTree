@@ -1,0 +1,291 @@
+{
+  "_resourceType": "actor",
+  "id": "6616d95a-36b4-5a1d-bef9-be694100c016",
+  "_index": 0,
+  "symbol": "actor_hostel_avenue_parag_hangout",
+  "prefabId": "",
+  "name": "Parag (hangout)",
+  "coordinateType": "tiles",
+  "x": 30,
+  "y": 16,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "555228cd-be2f-5844-9f6b-8b9693573206",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "HANGOUT - Parag (Persona social link). Raises Bond_Parag.",
+        "__collapse": false
+      },
+      "id": "5f7a42ee-cec5-3f74-34aa-eac3ed6444fd"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Hang out",
+        "falseText": "Not now"
+      },
+      "id": "d79f8986-305c-6904-7bc2-9f744f46d436"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: See this\navenue? Perfect\ntest range.",
+                      "Long, straight, no\nprofessors.",
+                      "Parag: I fix\nthings.",
+                      "Fans, phones, my\nroommate's love\nlife.",
+                      "Okay, not that.",
+                      "Parag: If it\nbreaks, I build it\nagain.",
+                      "That's the whole\nphilosophy."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "9b8bc816-d2b1-e8ad-8361-909875e033dd"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: I failed my\nfirst robot in\nschool.",
+                      "It caught fire.\nEveryone laughed.",
+                      "Parag: I kept the\nburnt chip. It's\nin my wallet.",
+                      "Reminds me to try\ntwice.",
+                      "Parag: Things jam.\nPeople jam.",
+                      "You clear it and\nkeep going."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "758c2ef7-3a10-294b-386d-3f82adbbfb9b"
+                }
+              ]
+            },
+            "id": "d993092d-4751-b79d-0455-f347872f57fc"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "125",
+              "operation": "add",
+              "other": "val",
+              "value": "1",
+              "minValue": "0",
+              "maxValue": "0",
+              "clamp": true
+            },
+            "id": "36738ba0-7d70-fb2c-0ceb-e8688d86f047"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The evening slips\naway. You walk\nback to B7."
+              ],
+              "avatarId": ""
+            },
+            "id": "f0c6f7de-6d98-4010-5894-a17a8db58c12"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "37b9c095-0d31-efa7-2a61-094709f61586"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "115",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "7c8f05c7-4a2d-5eea-f700-84feb1f77884"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "144",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "ed5c239d-c4f2-5e3e-55b7-e3b79bf5d020"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "10086e21-b71f-12fa-651e-98644501ace4"
+          }
+        ],
+        "false": []
+      },
+      "id": "41487ff1-b887-23b9-3514-65b2ee99dcca"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "101"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "6aff950d-5d4b-47d0-c43e-685074200255"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "12d0e724-dd55-5abd-026d-9d5a04e0f745"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "100"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "1fcac5c7-929f-ad50-9c4d-44aac2f26e0b"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "bbb56183-cf70-d22b-8f0f-b3dfd553dcf3"
+                }
+              ]
+            },
+            "id": "a8b4dc54-8aaf-159f-9b59-c48786beb22c"
+          }
+        ]
+      },
+      "id": "a29d2534-e168-4dc2-663b-7bb4bb9252c8"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,307 @@
+{
+  "_resourceType": "scene",
+  "id": "a244d1aa-0559-5698-9db9-187935c8b693",
+  "_index": 136,
+  "type": "TOPDOWN",
+  "name": "4 Outbreak/The Tunnel (Anshuman)",
+  "symbol": "scene_tunnel",
+  "x": 1120,
+  "y": 4616,
+  "width": 32,
+  "height": 18,
+  "backgroundId": "0d9a67ba-92d8-538a-aeb8-780f87de7b94",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-night-grass",
+    "muj-night-path",
+    "muj-night-stone",
+    "muj-night-brick",
+    "muj-night-roof",
+    "muj-night-water",
+    "muj-night-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "bd2de7b2-1194-dc4b-8813-3fcf43046b45"
+          }
+        ]
+      },
+      "id": "615be484-30ad-daea-fbb9-83759f3f6dd8"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-night-grass",
+        "palette1": "muj-night-path",
+        "palette2": "muj-night-stone",
+        "palette3": "muj-night-brick",
+        "palette4": "muj-night-roof",
+        "palette5": "muj-night-water",
+        "palette6": "muj-night-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "d85798d0-d6cd-130e-be1d-d13a31285fc2"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ANSHUMAN'S GOODBYE - he becomes what he always was: unseen, and kind",
+        "__collapse": false
+      },
+      "id": "a7572b3f-433a-888d-f7b4-2ea820639888"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        }
+      },
+      "id": "3ffdce1e-a5cb-5859-b335-066dd8294591"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "right"
+        }
+      },
+      "id": "63d0c212-4d0f-0455-258d-6f57bfadb07f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: Listen.\nHear that?\nUniversity side.",
+          "A lot of them."
+        ],
+        "avatarId": ""
+      },
+      "id": "be093060-8f7a-0e68-4478-ce37c4c3aca5"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: I'll go\nfirst and pull\nthem off.",
+          "Count to sixty.\nThen run straight."
+        ],
+        "avatarId": ""
+      },
+      "id": "7291b939-3ed7-3d59-e0b4-8cd53326e381"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You: Anshuman--"
+        ],
+        "avatarId": ""
+      },
+      "id": "4a61510f-d19d-8664-45b9-52bb74ac38c0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: It's\nokay. I like the\ndark. Nobody",
+          "notices the guy\nwho doesn't want\nto be noticed."
+        ],
+        "avatarId": ""
+      },
+      "id": "4462b95c-096c-2a3b-4c23-b02253b87f28"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: But you\ndid. Thanks for\nthat."
+        ],
+        "avatarId": ""
+      },
+      "id": "fc2a40db-ec21-541b-0f15-672bfdd0efd4"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "f461437f-4b4f-509e-8156-1cc0cd366fae",
+        "x": {
+          "type": "number",
+          "value": 29
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "7a4723a6-2e3c-d198-46e7-7603d91da75b"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "f461437f-4b4f-509e-8156-1cc0cd366fae"
+      },
+      "id": "03976d76-a380-6c46-0fea-e322ab6b692a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 1.0
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        }
+      },
+      "id": "6eb9dd98-4c19-e5e1-45d0-a010408306c3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "(radio) ...it's\nquiet out here...",
+          "the peacocks\nare..."
+        ],
+        "avatarId": ""
+      },
+      "id": "640671af-d3c7-2a1e-cc86-f67e27beaefe"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "noise",
+        "priority": "medium",
+        "pitch": 1,
+        "frequency": 100,
+        "duration": 1.5,
+        "wait": false,
+        "effect": 0
+      },
+      "id": "db194b3e-8831-a57a-c9a2-d0db5e10a268"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.3,
+        "frames": 18,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "04cf50ce-17d7-4076-f1be-fcb118e7f6c4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "(radio)\nKSSSHHHHHHHHHH."
+        ],
+        "avatarId": ""
+      },
+      "id": "d9854caf-7f44-46ce-e56b-e0855207a12d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You: ...one. Two.\nThree..."
+        ],
+        "avatarId": ""
+      },
+      "id": "d1459255-5fba-6619-44c7-fef80f498543"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "134",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "cbd7c484-642d-59a5-9dc3-11a7733ba847"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "126",
+        "operation": "add",
+        "other": "val",
+        "value": "1",
+        "minValue": "0",
+        "maxValue": "0",
+        "clamp": true
+      },
+      "id": "712c1a31-c18e-3f58-080f-652437655fc7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "128",
+        "value": {
+          "type": "number",
+          "value": 4
+        }
+      },
+      "id": "2dde05b4-31db-779a-d99b-f1fe9cc78383"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "115",
+        "value": {
+          "type": "number",
+          "value": 13
+        }
+      },
+      "id": "ad3d107a-07c7-f971-74a4-fc27e32a9d15"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f100+0060+0fe0+"
+}

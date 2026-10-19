@@ -1,0 +1,256 @@
+{
+  "_resourceType": "scene",
+  "id": "80230d0f-ee87-5c3b-a11f-33b67a198881",
+  "_index": 146,
+  "type": "TOPDOWN",
+  "name": "5 The Middle/Memory: Ninth",
+  "symbol": "scene_mem_ninth",
+  "x": 2168,
+  "y": 5216,
+  "width": 24,
+  "height": 18,
+  "backgroundId": "4e68f4aa-3af9-5295-a87c-d6da1be50f62",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-memory-grass",
+    "muj-memory-path",
+    "muj-memory-stone",
+    "muj-memory-brick",
+    "muj-memory-roof",
+    "muj-memory-water",
+    "muj-memory-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "muj-spr-muskaan",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "6bf6d137-641a-a7ed-c7cd-1a6968b7dfc5"
+          }
+        ]
+      },
+      "id": "65be87af-c804-93f3-eb41-0b11bc7a7fa2"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-memory-grass",
+        "palette1": "muj-memory-path",
+        "palette2": "muj-memory-stone",
+        "palette3": "muj-memory-brick",
+        "palette4": "muj-memory-roof",
+        "palette5": "muj-memory-water",
+        "palette6": "muj-memory-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "95eed730-89eb-6c5f-781e-4a00a073cbd2"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "352b406b-199f-53ea-ac30-ac9e915b6900",
+        "loop": true
+      },
+      "id": "55da46af-f565-905b-41b2-4a1c10c9e29a"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY 5 - NINTH (LIFE: love, betrayal, heartbreak. The spaceship coughs.)",
+        "__collapse": false
+      },
+      "id": "4d993abe-36b0-5a4d-38f7-5b9eceb55d13"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        }
+      },
+      "id": "c570bcbb-fa4c-f75b-890c-4a8717b725f3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "d6ea35c5-aecc-a367-acdf-3193987d5be3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Ninth. Another\nlove. It blossoms.\nIt's nice.",
+          "You loved her."
+        ],
+        "avatarId": ""
+      },
+      "id": "0937148c-2569-c1b8-0a7b-a0ae61ca3a62"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Notes passed\nacross desks.",
+          "A name drawn in\nthe margin of a\nmaths book."
+        ],
+        "avatarId": ""
+      },
+      "id": "4c0c0c37-87e0-0ac7-690d-9f04b34bc3db"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "f53dca29-44e9-34e8-ef27-86aed1085bad"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-blood-grass",
+        "palette1": "muj-blood-path",
+        "palette2": "muj-blood-stone",
+        "palette3": "muj-blood-brick",
+        "palette4": "muj-blood-roof",
+        "palette5": "muj-blood-water",
+        "palette6": "muj-blood-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "722a27ba-e4d2-6c3d-ec2b-57b6caffb014"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.8,
+        "frames": 48,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "cb28b87b-ce74-d1d0-7625-4482c7539392"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "noise",
+        "priority": "medium",
+        "pitch": 3,
+        "frequency": 100,
+        "duration": 0.6,
+        "wait": false,
+        "effect": 0
+      },
+      "id": "7227fa81-9a9f-7a87-250c-63b17bdaf8d8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "And then:\nbetrayal.",
+          "Heartbreak.\nShattering."
+        ],
+        "avatarId": ""
+      },
+      "id": "26e62a95-c981-37c4-c391-99539eb4744f"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "82ae2259-fe48-5ed8-a662-e3cd332e4ed6",
+        "time": 1.0,
+        "frames": 60
+      },
+      "id": "4d487df3-d3b2-14e6-c38b-607e26a5f082"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "82ae2259-fe48-5ed8-a662-e3cd332e4ed6"
+      },
+      "id": "a0eb9253-fb6c-9fb1-93eb-b159c5ac5d4b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The spaceship\ncoughs. Slows\ndown."
+        ],
+        "avatarId": ""
+      },
+      "id": "de1dd9b5-0ed2-2e2f-c9bb-853405424740"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 0.5
+      },
+      "id": "f12d30f9-a675-e1af-006c-b69350e8fcb4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "(Walk to the door.\nIt's further than\nit was.)"
+        ],
+        "avatarId": ""
+      },
+      "id": "f516b24b-4184-88f2-5fa4-cca9998aa69d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f61+00!0f!0014+0f2+0016+0f2+00!0f4+00!0f4+00!0f4+00!0f4+002+0f2+0016+0f2+0016+0f2+00!0f4+00!0f4+00!0f4+00!0f4+002+0f2+0016+0f2+0016+0f2+00!0f4+00!0f4+00!0f4+00!0f4+002+0f2+0016+0f2+0016+0f3+0014+0f5+002+0f2b+"
+}

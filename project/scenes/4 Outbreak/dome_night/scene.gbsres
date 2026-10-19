@@ -1,0 +1,390 @@
+{
+  "_resourceType": "scene",
+  "id": "8c1225d5-e80d-5dcd-b852-fbce734c69bf",
+  "_index": 140,
+  "type": "TOPDOWN",
+  "name": "4 Outbreak/Under the Dome (Mayank)",
+  "symbol": "scene_dome_night",
+  "x": 2848,
+  "y": 4616,
+  "width": 28,
+  "height": 18,
+  "backgroundId": "dca4a476-a4bd-5df6-b053-2a6494cd69dd",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-night-grass",
+    "muj-night-path",
+    "muj-night-stone",
+    "muj-night-brick",
+    "muj-night-roof",
+    "muj-night-water",
+    "muj-night-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-night-grass",
+        "palette1": "muj-night-path",
+        "palette2": "muj-night-stone",
+        "palette3": "muj-night-brick",
+        "palette4": "muj-night-roof",
+        "palette5": "muj-night-water",
+        "palette6": "muj-night-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "5a8876d8-fb0a-9fc3-6e46-74a6fa60c64a"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bb6d35fc-b31c-553c-bd55-d8edfe476fa9",
+        "loop": true
+      },
+      "id": "f756bddc-c0a7-9a22-31c0-1535bcdcffa1"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MAYANK - the last friend, the first question",
+        "__collapse": false
+      },
+      "id": "895e045a-4fc3-9834-49e8-af443cf4a6a3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        }
+      },
+      "id": "ae493f1b-409f-782d-0178-60b17ed36ca3"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "d16e84b2-b33d-e68c-07b8-3db8d1129966"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: You made\nit. I took the\nlong way.",
+          "Through the\nlibrary. Sat down\nfor a bit."
+        ],
+        "avatarId": ""
+      },
+      "id": "631d970f-0c0a-c8ef-4028-c4325602b466"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You: The PA. The\nphone. We can\ncall--"
+        ],
+        "avatarId": ""
+      },
+      "id": "1590428a-47b5-1e2f-0c62-ad2b029609a4"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: Already\ndid. Nobody's\ncoming tonight."
+        ],
+        "avatarId": ""
+      },
+      "id": "50459252-87f9-e7c3-cc0a-81a08c6649c3"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: Hey. Look\nat the ceiling.\nThe dome.",
+          "It's beautiful\nfrom underneath."
+        ],
+        "avatarId": ""
+      },
+      "id": "3c0d7951-c5ab-e2de-b80c-e47ac920d566"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: I got bit\non the staircase.\nWhen Divyansh ran.",
+          "It's fine. It\ndoesn't hurt much."
+        ],
+        "avatarId": ""
+      },
+      "id": "baa676df-16fb-f693-37f9-6361a7b1d430"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "No. No no no.",
+        "falseText": "Sit with him"
+      },
+      "id": "c1cf0a90-c7a7-d712-dbbd-b2af7f391833"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Yeah.\nSame."
+              ],
+              "avatarId": ""
+            },
+            "id": "ea192320-19f5-a575-8f44-7b95a3410d75"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Sit with\nme anyway."
+              ],
+              "avatarId": ""
+            },
+            "id": "51612121-c54d-d63c-35a8-ec7a2bd1d50c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Thanks."
+              ],
+              "avatarId": ""
+            },
+            "id": "3e97ed38-3045-f1d4-19ed-f859d3f67f8a"
+          }
+        ]
+      },
+      "id": "6307658f-2b9a-82fe-fdea-d9ebebaa8023"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "122",
+        "operation": "add",
+        "other": "val",
+        "value": "1",
+        "minValue": "0",
+        "maxValue": "0",
+        "clamp": true
+      },
+      "id": "0f0fa788-e5e8-9411-0598-f1e0f4d6e1df"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: You never\nanswered me.\nBehind B7.",
+          "Why did you come\nhere?"
+        ],
+        "avatarId": ""
+      },
+      "id": "9926f7ab-630a-24ef-1bbd-323b860a03bb"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You: I... I don't\nknow."
+        ],
+        "avatarId": ""
+      },
+      "id": "0487281b-f314-bd72-bb27-685389e0c385"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: Then go\nfind out.",
+          "I think it's all\nstill in there.",
+          "Everything before\nthis."
+        ],
+        "avatarId": ""
+      },
+      "id": "c3cead03-298f-75c6-5ac6-e3383c31848f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: My nani\nsaid life is a\ncircle.",
+          "So this isn't the\nend."
+        ],
+        "avatarId": ""
+      },
+      "id": "ac690934-df48-bdf8-aa82-01a811894483"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: It's\njust... the\nmiddle."
+        ],
+        "avatarId": ""
+      },
+      "id": "b9ad7c57-537e-4156-d707-4492df3fb69d"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "3a048c55-85d9-5000-b940-b1b5822187b9",
+        "time": 1.5,
+        "frames": 90
+      },
+      "id": "88c51e20-20d4-c2be-5980-e38b958c2f7c"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "3a048c55-85d9-5000-b940-b1b5822187b9"
+      },
+      "id": "30de696f-e38b-fd24-4efa-3adaad668691"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "130",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "c8b2472d-4bd1-7c56-1ff2-4fcd05a13273"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 1.0,
+        "frames": 60,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "d460cda3-78e0-974f-e8e5-0666e126cbc4"
+    },
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": "1"
+      },
+      "id": "69c0db4a-dac1-4dae-b002-16ac6d8a91a8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "100",
+        "value": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "48b93670-3a2c-3ea3-2291-ef7e28f0ea81"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "128",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "9b7b113c-08cc-bb5a-df7d-c8115c14c3be"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "115",
+        "value": {
+          "type": "number",
+          "value": 16
+        }
+      },
+      "id": "fc3f0281-fde7-f2d5-a208-cf74bd79aeaf"
+    },
+    {
+      "command": "EVENT_SAVE_DATA",
+      "args": {
+        "saveSlot": 0
+      },
+      "children": {
+        "true": [],
+        "load": []
+      },
+      "id": "11ca4fe6-0da3-3701-49e1-c000c470b9c3"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "up",
+        "fadeSpeed": "1"
+      },
+      "id": "8a86534e-0884-3f60-00e4-c971dc2a1400"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f71+001a+0f2+00!0f!008+0f!004+0f!008+0f!00!0f2+005+0f2+00c+0f2+005+0f2+001a+0f2+001a+0f2+00!0f!0016+0f!00!0f2+001a+0f2+001a+0f2+005+0f2+00c+0f2+005+0f2+00!0f!008+0f!004+0f!008+0f!00!0f3+0018+0ff+002+0f45+"
+}

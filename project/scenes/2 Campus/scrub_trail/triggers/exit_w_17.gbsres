@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "596405d2-1a48-57f6-a593-96d372e69526",
+  "_index": 8,
+  "symbol": "trigger_scrub_trail_exit_w_17",
+  "prefabId": "",
+  "name": "Exit w 17",
+  "x": 0,
+  "y": 17,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 32
+        },
+        "y": {
+          "type": "number",
+          "value": 47
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "308a5092-bdf7-c0bf-5ae5-0b7adbb86464"
+    }
+  ],
+  "leaveScript": []
+}

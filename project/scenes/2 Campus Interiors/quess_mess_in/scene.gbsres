@@ -1,0 +1,536 @@
+{
+  "_resourceType": "scene",
+  "id": "e012ca19-b39a-57bc-af75-c68a89ce7ec4",
+  "_index": 121,
+  "type": "TOPDOWN",
+  "name": "2 Campus Interiors/Quess Mess",
+  "symbol": "scene_quess_mess_in",
+  "x": 944,
+  "y": 4352,
+  "width": 26,
+  "height": 18,
+  "backgroundId": "598d5e04-72cc-5f09-95b7-5c45c2bfa3b0",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-student"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "a36ad5f2-3fac-2b00-797a-043cbbc04b6b"
+          }
+        ]
+      },
+      "id": "53c6d7f1-c93a-12e6-ce17-d5864ffa3f3d"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "1e7c8a8e-0efd-750e-e1e7-d8d468fdd0c3"
+                }
+              ],
+              "false": []
+            },
+            "id": "77d91507-596e-3601-15aa-475517262b8c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "2af81aae-2c4a-1475-5cf0-3814dd5ad586"
+                }
+              ],
+              "false": []
+            },
+            "id": "39321d0e-f78a-ee6c-a030-3f50c8361fee"
+          }
+        ]
+      },
+      "id": "91df1b48-02fd-96fe-25cd-03a934552986"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "DAY 1 - DINNER AT THE QUESS MESS: meet the gang",
+                    "__collapse": false
+                  },
+                  "id": "0e579f89-388e-8fc3-81b2-2736db14e9a6"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 14
+                    }
+                  },
+                  "id": "d6bf226b-13d7-bd76-6b08-bf3129b9b38d"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "collideWith": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "a56a6f88-4015-2d5e-9606-f97e56b1f2ba"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "player",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "e02d7f26-a03a-bf8c-3a64-d4c88203e624"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mess Bhaiya: Rajma\nchawal. Again.\nIt's Monday.",
+                      "It's always rajma\non Monday."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3f57e297-9739-f4f4-d211-865accdfb71c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Okay.\nFormal\nintroductions.",
+                      "This is our new\nmember."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "2b1f80a3-730c-bc3e-32c4-49422f70fbda"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh:\nDivyansh.",
+                      "Future topper,\nfuture CEO, future\ngym guy.",
+                      "Divyansh: Starting\nMonday. Not this\none."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "d7a4fbe9-e758-62ad-076e-79f6bb5caacb"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: Parag. I\nbuild stuff.",
+                      "Mostly stuff that\nworks on the\nsecond try."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "0ccbb5c4-dcaa-c041-0033-ab3348452c03"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Garvita: Garvita.\nI run. Stairs,\nledges, anything.",
+                      "Don't race me."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5a606539-4c76-379f-6344-968837a102a2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: I could\nbeat her.",
+                      "I just don't want\nto embarrass her."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "2c3f862c-8a51-b7fd-ff62-942745c4bcd1"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Garvita: Race me\nto the counter\nthen."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "03773d69-5521-9a47-d639-e7208547271a"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: ...after\ndinner. Digestion\nis important."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "bfda128f-de18-5d54-3a0d-f1d138d07272"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: And\nAnshuman. He's...\nsomewhere."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3a04b70b-6000-796a-10ca-4a267ff3cfd9"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "d1a2a2d8-8109-50c5-8a90-80f65e7e1c60",
+                    "x": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 13
+                    },
+                    "collideWith": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "7f6cdc0f-5824-2211-7892-e4669158f6c2"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "player",
+                    "direction": {
+                      "type": "direction",
+                      "value": "down"
+                    }
+                  },
+                  "id": "b3e9d6da-8153-cb34-0840-f8f3a18537a0"
+                },
+                {
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "player",
+                    "emoteId": "9b053db2-c927-48e9-adaa-2d3deaa0b220"
+                  },
+                  "id": "a36b53bc-d5b2-33c6-374e-63b298390d4c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Anshuman: Behind\nyou. Since the\nrajma."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "b956d767-7f3d-e2d4-1455-e9fb8a8c1cf4"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You: HOW."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "1e32ee6a-9e67-4330-0a51-6f94559491f2"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Anshuman:\nPractice. Nobody\nnotices the guy",
+                      "who doesn't want\nto be noticed."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "2e456783-5bb9-2647-c2d1-47ce22fe0247"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Kanishk\nskipped. Library.",
+                      "He's 'planning the\nsemester like a\ncampaign'."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "bae0789e-2390-3e52-a8ea-f1f18ab11174"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: Okay,\nbill. I'll pay.\nDefinitely.",
+                      "Let me just...\nfind... my\nwallet..."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "9eda9e09-8eba-f015-ceb8-1ee6e3af4b64"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: Fifty\nrupees, Kanishk\ncalled it.",
+                      "He's not even here\nand he won."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "09a2d809-aabd-f7cb-8736-71dd77675c93"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Free\nevening! Hang out\nwith someone.",
+                      "They're around\ncampus.",
+                      "Mayank: Divyansh:\nNBC. Parag: the\navenue.",
+                      "Anshuman: the\nscrub trail.",
+                      "Garvita: cricket\nground.",
+                      "Mayank: Kanishk:\nthe Dome library.\nMe: B7 courts."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "acdccda0-45e4-af47-a627-5a1da8b591e4"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "101",
+                    "value": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "id": "b5da24c6-dae7-37f3-fdce-6f635c638f16"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "115",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "fe26c763-9b85-d523-c544-732ab539bbe5"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "22293b24-fe58-57c2-b019-2a30b9bbfbb2"
+                  },
+                  "id": "fca1a80a-423d-bcb1-4e3e-8f8c50e9129d"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "da88d7e4-99bd-5f85-8f71-34f1493c91bc"
+                  },
+                  "id": "002f8002-b331-f59b-ec9f-8ec510943c06"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "8bd80a4d-5940-5e86-8c1e-7e0aa5c86849"
+                  },
+                  "id": "bc2a79cc-0544-f2af-1020-3139e4ed9734"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "43a3d8c3-aa9b-5bad-8731-bd22c36591c0"
+                  },
+                  "id": "5b2b85c5-870e-71b1-d9e2-305186c39bb7"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "d1a2a2d8-8109-50c5-8a90-80f65e7e1c60"
+                  },
+                  "id": "88e2510e-e162-4cb0-1ffb-1fe3d595798c"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "4cbc52f3-a0fc-5342-9e6f-e8f49b62073e"
+                  },
+                  "id": "629760ad-8dda-7efe-b4e9-79f7c37c1d64"
+                }
+              ],
+              "false": []
+            },
+            "id": "3e3575ad-8a38-b1e7-0734-dd6c5aeadc89"
+          }
+        ],
+        "false": []
+      },
+      "id": "8bd3a8c9-214a-d2be-f523-373949eb57f1"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f69+00!0fc+00b+0f2+0018+0f2+002+0f4+004+0f4+004+0f4+002+0f2+002+0f4+004+0f4+004+0f4+002+0f2+0018+0f2+002+0f4+004+0f4+004+0f4+002+0f2+002+0f4+004+0f4+004+0f4+002+0f2+0018+0f2+002+0f4+004+0f4+004+0f4+002+0f2+0018+0f3+0016+0fd+002+0f41+"
+}

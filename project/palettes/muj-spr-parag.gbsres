@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-parag",
+  "name": "Sprite: Parag",
+  "colors": [
+    "F0C8A0",
+    "C84848",
+    "883030",
+    "281818"
+  ],
+  "defaultName": "Sprite: Parag",
+  "defaultColors": [
+    "F0C8A0",
+    "C84848",
+    "883030",
+    "281818"
+  ]
+}

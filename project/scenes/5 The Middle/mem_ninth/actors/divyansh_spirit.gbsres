@@ -1,0 +1,44 @@
+{
+  "_resourceType": "actor",
+  "id": "529cc95a-0d38-5248-83ff-187b6a2c046b",
+  "_index": 1,
+  "symbol": "actor_mem_ninth_divyansh_spirit",
+  "prefabId": "",
+  "name": "Divyansh (spirit)",
+  "coordinateType": "tiles",
+  "x": 11,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0eeee60a-0644-53cf-96cc-0d4aa4b9c725",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "d24cb8f8-2407-aa58-aae6-bbefba874a25"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "baf2eac0-b7c7-c9b5-661c-9f7ae7b5bb1a"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

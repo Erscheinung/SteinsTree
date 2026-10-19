@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "f17eb3df-6d28-58d8-bcab-c4808c3556a0",
+  "name": "day_card",
+  "symbol": "bg_day_card",
+  "tileColors": "022a+0310+0212e+",
+  "filename": "muj/day_card.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

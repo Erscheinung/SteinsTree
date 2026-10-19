@@ -1,0 +1,64 @@
+{
+  "_resourceType": "actor",
+  "id": "79e667ac-d888-568f-b1de-a329ff911b17",
+  "_index": 1,
+  "symbol": "actor_mem_london_girl_at_the_library",
+  "prefabId": "",
+  "name": "Girl at the library",
+  "coordinateType": "tiles",
+  "x": 24,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5ecd17ee-15a6-5e5c-a15b-2bec9d34f800",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "She lends you a\nbook with a dragon\non it.",
+          "You read it twice.",
+          "(LIFE: joy of\nreading, first\nlove)"
+        ],
+        "avatarId": ""
+      },
+      "id": "a5368bc1-2ef3-adb0-a2a6-c5e616f01982"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "First love is\nmostly staring at\nsomeone in a",
+          "library. It\ncounts."
+        ],
+        "avatarId": ""
+      },
+      "id": "c66c69b5-2238-c752-cfce-5b70885aa247"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "184",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "147bc846-e922-8566-1f0b-30a7da5c98da"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

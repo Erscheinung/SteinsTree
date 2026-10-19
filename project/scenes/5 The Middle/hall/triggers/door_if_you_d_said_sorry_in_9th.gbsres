@@ -1,0 +1,45 @@
+{
+  "_resourceType": "trigger",
+  "id": "e5b0c3c8-4ca1-5b91-9eb4-b0017c145da4",
+  "_index": 2,
+  "symbol": "trigger_hall_door_if_you_d_said_sorry_in_9th",
+  "prefabId": "",
+  "name": "Door: If you'd said sorry in 9th",
+  "x": 13,
+  "y": 6,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "If you'd said\nsorry in 9th?"
+        ],
+        "avatarId": ""
+      },
+      "id": "a3b5d8c1-f891-ac91-96f9-b8899ee172ea"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Maybe. Maybe not.",
+          "The heart heals\nthe same either\nway, just slower."
+        ],
+        "avatarId": ""
+      },
+      "id": "4ebde5e7-54bf-2dbd-f15a-04aba4ddd9c5"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "",
+        "__collapse": false
+      },
+      "id": "1c3a15a5-64cc-a9de-0e57-dc16447fe64e"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,18 @@
+{
+ "name": "childhood_school",
+ "title": "childhood_school",
+ "cols": 32,
+ "rows": 24,
+ "doors": [],
+ "exits": [],
+ "spawn": [
+  1,
+  1
+ ],
+ "unique_before_reduce": 117,
+ "tiles_merged": 0,
+ "unique_tiles": 117,
+ "palette_conflicts": 0,
+ "collisions": "002+0f1c+004+0f1c+004+0f1c+004+0f1c+004+0f1c+004+0f1c+004+0fd+002+0fd+0025+0f!005+0f!00b+0f!004+0f!00e7+0f3+00!0f3+00f+0f3+00!0f3+003+0f3+00!0f3+00f+0f3+00!0f3+003+0f3+00!0f5+00a+0f2+00!0f3+00!0f3+00a1+",
+ "kind": "special"
+}

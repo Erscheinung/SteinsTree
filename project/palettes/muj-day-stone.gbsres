@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-day-stone",
+  "name": "MUJ day stone",
+  "colors": [
+    "F0F0EC",
+    "B4B8C0",
+    "747C90",
+    "2C3044"
+  ],
+  "defaultName": "MUJ day stone",
+  "defaultColors": [
+    "F0F0EC",
+    "B4B8C0",
+    "747C90",
+    "2C3044"
+  ]
+}

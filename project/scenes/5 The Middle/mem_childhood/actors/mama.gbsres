@@ -1,0 +1,127 @@
+{
+  "_resourceType": "actor",
+  "id": "c7b4e565-4f10-5d97-959f-684d9f8a58fb",
+  "_index": 2,
+  "symbol": "actor_mem_childhood_mama",
+  "prefabId": "",
+  "name": "Mama",
+  "coordinateType": "tiles",
+  "x": 4,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "96545366-27f9-57fa-b72c-9224ade573fd",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "181"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mama: You took the\ncoins from the\njar, didn't you."
+              ],
+              "avatarId": ""
+            },
+            "id": "189b9886-0a06-c655-eb8c-e8588d3b3f0c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mama: ...Come.\nLet's buy jalebi\nwith them.",
+                "Together.",
+                "Then you'll put it\nback from your\npocket money."
+              ],
+              "avatarId": ""
+            },
+            "id": "160c7f55-9aaa-915b-a757-ae2a26950a22"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "LIFE: guilt, stealing, and Mama's kindness",
+              "__collapse": false
+            },
+            "id": "4397a366-16ef-2914-6bea-3604124dde9e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mama: Arre,\nchampion! Come,\nsit.",
+                "Tell me about your\ncritters."
+              ],
+              "avatarId": ""
+            },
+            "id": "c76c74ed-6a4d-1562-fafc-bcaf29893ee4"
+          }
+        ]
+      },
+      "id": "f72f58a0-5206-e1db-5277-17cb16a46391"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mama: Your parents\nlove you. They're\njust...",
+          "far away, even\nwhen they're\nclose."
+        ],
+        "avatarId": ""
+      },
+      "id": "56702329-fc3b-4437-84ce-6241ae38c5d1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mama: That's what\nI'm for."
+        ],
+        "avatarId": ""
+      },
+      "id": "f9ea20ef-0ad5-9aca-53c2-4e551f2b704a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "182",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "f44f4e15-483a-7ac2-b70f-23a1e06adfb2"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

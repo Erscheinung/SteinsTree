@@ -1,0 +1,235 @@
+{
+  "_resourceType": "scene",
+  "id": "16870eca-6538-5052-bfc7-81b9a4eb386f",
+  "_index": 102,
+  "type": "TOPDOWN",
+  "name": "2 Campus/B7 Courts",
+  "symbol": "scene_b7_courts",
+  "x": 1664,
+  "y": 2692,
+  "width": 48,
+  "height": 40,
+  "backgroundId": "5ff9820e-29da-5202-93fd-b2295830d280",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "839671b0-270c-04fe-e5b7-55c9fdb53088"
+          }
+        ]
+      },
+      "id": "4a5d31f9-7fd8-82ca-dd97-58cbfca042a6"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "fcc6fdb0-08f5-1faf-b5ce-568801308a44"
+                }
+              ],
+              "false": []
+            },
+            "id": "1edfc978-5912-1a6f-20f6-985834c816b5"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "30a9c55e-752c-2ca3-4222-00f8de3699b2"
+                }
+              ],
+              "false": []
+            },
+            "id": "a39e8670-e67f-3976-b944-2760836a28ae"
+          }
+        ]
+      },
+      "id": "9ba4ca8a-e18e-705b-7ff4-05076f9ea09b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "7fde4d22-ff0c-1aae-6706-0fb6350ce94f"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "6fcc2e89-4e27-1f2b-04e6-6982384d9ecc"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "B7 Courts",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "0ee5342c-62ab-ff4e-9134-c980fb26da58"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "41a74e33-baa6-af1c-c010-e7f59f396c5d"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "9b01d3c1-484d-6fbc-e1e7-6fb1118d1dbd"
+          }
+        ],
+        "false": []
+      },
+      "id": "c8e7518a-83dc-28d4-e914-0224da2e9fdc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f!004+0f25+004+0f3+0013+0f15+00d+0f23+00d+0f23+00d+0f23+003+0f2+00!0f!006+0f23+003+0f2+00!0f2+005+0f13+00!0fc+004+0f2+004+0f!005+0f7+001d+0f2+004+0f3+003+0f6+0020+0f2+00!0f4+003+0f6+0020+0f2+00!0f!003+0f2+00!0f6+0027+0f2+002+0f5+002b+0f5+002b+0f6+001f+0f2+00!0f2+006+0f6+001f+0f2+00!0f2+00!0f2+003+0f6+0023+0f!00!0f2+003+0f6+001e+0f2+00a+0f6+001e+0f2+00a+0f6+0026+0f2+002+0f6+001f+0f2+00!0f!003+0f2+002+0f6+001f+0f2+00!0f2+006+0f6+0023+0f!00!0f2+003+0f6+007+0f14+008+0f!00!0f2+00!0f23+004+0f2+00!0f!005+0f23+004+0f2+00!0f!007+0f21+007+0f!007+0f21+007+0f2+00!0f2+003+0f21+007+0f2+00!0f2+003+0f22+006+0f2+0012+0f16+006+0f2+0012+0f16+007+0f!0036+0f2+004+0f2+0024+0f2+002+0f2+004+0f2+0024+0f2+006+0f2+0022+0f!006+0f2+003+0f2+004+0f2+001c+0f2+005+0f2+009+0f2+001c+0f2+003+0f2+002+0f2+003+0f2+0020+0f2+003+0f2+002+0f2+003+0f2+0020+0f2+003+0f2+002+0f2+003+0f10+004+0ff+"
+}

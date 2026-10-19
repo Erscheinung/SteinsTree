@@ -1,0 +1,48 @@
+{
+  "_resourceType": "actor",
+  "id": "d59b97cf-ecf5-5e8a-86fc-80032f66a5ee",
+  "_index": 0,
+  "symbol": "actor_mem_childhood_dad",
+  "prefabId": "",
+  "name": "Dad",
+  "coordinateType": "tiles",
+  "x": 8,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "703e607f-7f18-5da5-a5e7-99bfaf73f6be",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dad: Not now,\nbeta. Work call."
+        ],
+        "avatarId": ""
+      },
+      "id": "3699f1ee-80cd-ffa5-ad7b-9c99c6ced3ea"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "LIFE: loneliness with parents",
+        "__collapse": false
+      },
+      "id": "c52b5fac-6826-6939-d484-80240f7f104a"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

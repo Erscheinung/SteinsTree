@@ -1,0 +1,618 @@
+{
+  "_resourceType": "scene",
+  "id": "3fcf6568-7298-5f26-8065-b25d06911968",
+  "_index": 115,
+  "type": "TOPDOWN",
+  "name": "2 Campus/Cricket Ground",
+  "symbol": "scene_cricket_ground",
+  "x": 1792,
+  "y": 3672,
+  "width": 64,
+  "height": 62,
+  "backgroundId": "997dc07a-ec1a-5ffc-ab41-3b2f5fed5962",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "78ddf4d2-dfa5-ed87-bf2f-73fa36e70567"
+          }
+        ]
+      },
+      "id": "c65dd961-57e6-f5a8-4697-2d610df21d44"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "64f1bed8-0afc-f61e-58e2-df1cbc2e611f"
+                }
+              ],
+              "false": []
+            },
+            "id": "3a161e67-77b3-93ff-f5ab-59d1a29cb82c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "b7b1a8af-c2aa-5f55-ffdf-9d487ee835af"
+                }
+              ],
+              "false": []
+            },
+            "id": "4a485c22-042d-f242-4944-d70f1afc8492"
+          }
+        ]
+      },
+      "id": "b81944b1-5e84-f96e-c9b8-9961a56b66f7"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "DAY 2 - CRICKET MATCH",
+                    "__collapse": false
+                  },
+                  "id": "0a205ed1-345f-fc05-71e9-544a828744f8"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 27
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 36
+                    }
+                  },
+                  "id": "02165ba8-4a15-e690-42a4-0df86bdd4837"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "player",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "ecf5e2cd-72eb-03e5-fa18-c1a6fd020770"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: Field\nplacements.",
+                      "Garvita deep\nmidwicket. Parag\nbowls. You, slip."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "88f29b3f-3646-2dad-ecf6-7f6d963c2182"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You: What's a\nslip?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "ebaeefd7-de51-7c3a-bf6d-32f78aeb56d8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: Exactly\nwhat you'll do.\nStand there."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "c3d2010f-f382-4db9-3c02-ed70f0728c16"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: Watch.\nFirst ball. Six.",
+                      "Over the solar\npanels. Into AB3."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "2364217c-85e6-6a7d-483a-c2ca3b42d26f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: That's two\nhundred metres."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "94a09d87-08dd-86cb-e027-bff5a0c32072"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: Two\nhundred and ONE.\nWrite it down."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "c8f1ab24-bc5c-35c0-804b-90e1bfa098fb"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 3,
+                    "frequency": 400,
+                    "duration": 0.2,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "a5dd1ed2-aea0-fc9e-2a9f-932cc869d9eb"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.3,
+                    "frames": 18,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "51a79291-a00a-7e36-cd82-367fe2e8208e"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "d5550bdc-3246-5202-a9a0-6f75f83c81dd",
+                    "x": {
+                      "type": "number",
+                      "value": 31
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 32
+                    },
+                    "collideWith": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "1928b830-8059-df71-a0cc-8e6e5d48de77"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag bowls.",
+                      "Divyansh swings\nwith his whole\nsoul."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "e28d1c3c-00db-146a-2d17-3fa165a1f5e3"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "The ball hits the\nstumps. The stumps\nfall over.",
+                      "Divyansh does not\nmove."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "a3faba8a-ba57-8e81-3ed7-a634f97e3128"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: ...I was\ntesting the\nbowler."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "2224e91f-3be6-6b84-1f0f-c436bf0a73a8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Garvita: I\nsprinted all the\nway from midwicket",
+                      "to laugh at you up\nclose."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "65068832-c7a8-4f64-d8e6-dd491ecc5194"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: Evidence\nlogged."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "c3bd4f9f-24f3-d18b-1754-df0119ad5a67"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "119",
+                    "trueText": "Cheer Divyansh up",
+                    "falseText": "Laugh along"
+                  },
+                  "id": "d6f25402-1cc8-760d-b987-ec06689028a8"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You: Next match.\nSeven. Over the\nDome."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "89470e43-61be-d1a8-8f73-e8033db443b7"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Divyansh: SEE?\nSomeone believes\nin me."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "f9b288c2-722d-a28c-edbd-85b6e95b51bc"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "123",
+                          "operation": "add",
+                          "other": "val",
+                          "value": "1",
+                          "minValue": "0",
+                          "maxValue": "0",
+                          "clamp": true
+                        },
+                        "id": "3ee60929-d1e3-4aed-49e8-bb9f6a5c8dad"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Divyansh: Laugh\nnow.",
+                            "When I'm famous,\nyou're not in the\ndocumentary."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "af3b3bb3-6475-ee90-d02d-c51f55b3c22d"
+                      }
+                    ]
+                  },
+                  "id": "5c85a564-b8ce-5818-568b-fb93eb0f29f3"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Free\nevening again.",
+                      "Same spots as\nyesterday. Go hang\nout with someone."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "63d80b7e-b45a-87e6-f103-6875d3aecad2"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "101",
+                    "value": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "id": "f02dcc67-aa1c-073e-ae01-e371c89915bb"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "115",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "4bc0d389-657b-1c9f-66fb-8e2d1429af7c"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "f12b94c1-f62c-5d2c-98ed-6d5e2fa0425a"
+                  },
+                  "id": "5f9992ee-0139-12ce-32e4-ce30c7549a01"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "c252ee74-34a3-58a5-a0e5-fcc587c490ec"
+                  },
+                  "id": "a5a77aeb-bddc-f091-fe35-939530e238c3"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "14d86a62-475c-5fe9-867e-67c1519c6d51"
+                  },
+                  "id": "cc93e2c4-2977-1793-8eea-985d89cc0f62"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "d5550bdc-3246-5202-a9a0-6f75f83c81dd"
+                  },
+                  "id": "22898679-284c-2d82-1403-9bdc977a547d"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "cf677cea-812f-5035-8e80-9713a2d00234"
+                  },
+                  "id": "8cc5fedb-77d0-91b2-9595-be56e4fd413f"
+                }
+              ],
+              "false": []
+            },
+            "id": "e164353c-6cfa-547d-d475-cd823c9d97e2"
+          }
+        ],
+        "false": []
+      },
+      "id": "07102028-3025-f3fa-1574-4a13ea317c00"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "8689da75-57ea-b394-74de-52fe400d18ca"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "da5adb88-d4e2-8ddd-2dc2-e4a1c4388b1e"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Cricket Ground",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "8c5b0706-e500-7706-8013-a4b252dce9d2"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "8413c42b-70a0-0dfa-326c-7e836a14e7d9"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "1e30f54e-9ef9-5b82-de98-00d181206fe9"
+          }
+        ],
+        "false": []
+      },
+      "id": "76b0a243-07c3-0a1b-9bc4-1b71f98d9e5c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1e+004+0f1f+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f!003f+0f!00c0+0f!003f+0f!003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+00e+0f6+0010+0f4+0016+0f16+006+0fe+0016+0f17+004+0f18+004+0fa+"
+}

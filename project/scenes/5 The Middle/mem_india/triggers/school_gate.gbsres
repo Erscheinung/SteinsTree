@@ -1,0 +1,190 @@
+{
+  "_resourceType": "trigger",
+  "id": "6e8cc8b2-86dd-5b87-b1bd-f2b989d70106",
+  "_index": 0,
+  "symbol": "trigger_mem_india_school_gate",
+  "prefabId": "",
+  "name": "School gate",
+  "x": 14,
+  "y": 22,
+  "width": 4,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "185"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Then a change of\nschools. Fifth\nclass.",
+                "Jarring and sad.",
+                "But slowly, it\ngets better."
+              ],
+              "avatarId": ""
+            },
+            "id": "51f7a496-c2a9-5db1-d47e-e8c9b0fd4d43"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MEMORY END - reflection",
+              "__collapse": false
+            },
+            "id": "b033c213-e992-e841-388f-9e7c5841be75"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "ebe1f4da-3160-5f2c-8b74-d540a282b476"
+            },
+            "id": "f4856a83-582e-aa56-08c8-b030f3a15d99"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "ebe1f4da-3160-5f2c-8b74-d540a282b476",
+              "time": 0.6,
+              "frames": 36
+            },
+            "id": "8daa4977-1e03-a120-834e-da7119463d71"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Parag: New school.\nNew faces.\nJarring.",
+                "Parag: But you\ntried again. And\nagain.",
+                "That's the whole\ntrick. Second try."
+              ],
+              "avatarId": ""
+            },
+            "id": "6f2c0e01-dd64-df95-035d-56d2c203020d"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "ebe1f4da-3160-5f2c-8b74-d540a282b476",
+              "time": 0.6,
+              "frames": 36
+            },
+            "id": "96300f68-56b5-25db-effd-b916a79cd27d"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "ebe1f4da-3160-5f2c-8b74-d540a282b476"
+            },
+            "id": "c33f3d4b-7f51-a06d-6685-b7d1ac694f0c"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "174"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "174",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "e52145af-7cb4-5230-24b8-7f51ddd5e0c1"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "136"
+                  },
+                  "id": "605523b0-087b-6fba-400e-1ed2443c79c6"
+                }
+              ],
+              "false": []
+            },
+            "id": "052a6b42-f629-c66c-d649-58cad274ac67"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            },
+            "id": "1304c18e-c7db-5e4e-e63d-9f6771364a4b"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+              "persist": true
+            },
+            "id": "8f63c6b9-c8db-c913-a5bc-4c2486e08613"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "0f601350-5f59-41fd-b4bd-47dafb19874c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Try talking to\nAryan again. And\nagain."
+              ],
+              "avatarId": ""
+            },
+            "id": "3c63bd3c-9ed8-27ef-560d-407ec039a4b4"
+          }
+        ]
+      },
+      "id": "a2238495-b54f-f880-bc8a-c509fa5e50e7"
+    }
+  ],
+  "leaveScript": []
+}

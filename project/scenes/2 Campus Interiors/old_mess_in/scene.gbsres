@@ -1,0 +1,163 @@
+{
+  "_resourceType": "scene",
+  "id": "269f988f-b65a-5276-ad95-bd13ada883d2",
+  "_index": 123,
+  "type": "TOPDOWN",
+  "name": "2 Campus Interiors/Old Mess Food Court",
+  "symbol": "scene_old_mess_in",
+  "x": 1408,
+  "y": 4352,
+  "width": 26,
+  "height": 18,
+  "backgroundId": "ffdbaa73-9dd5-5a77-b6e0-4dcae988c930",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "a94df457-be59-073a-abf3-d9be9053e51c"
+          }
+        ]
+      },
+      "id": "1d1c60cf-2a70-3dc5-fc17-df7f2036ff1a"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "fb247dcc-3ed6-af44-44c5-075318e8d308"
+                }
+              ],
+              "false": []
+            },
+            "id": "46b43d29-ad8e-31b9-e37d-eb499edef30e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "c2bb1aff-b26a-9f1c-dfae-f71aea86a025"
+                }
+              ],
+              "false": []
+            },
+            "id": "e0f7e127-f96f-52ed-0e27-eb2602002d54"
+          }
+        ]
+      },
+      "id": "72f6b9f4-daec-6f36-0ec2-72276abb1136"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fa1+004+0f4+004+0f4+004+0f2+0018+0f2+003+0f2+006+0f2+006+0f2+003+0f2+003+0f2+006+0f2+006+0f2+003+0f2+0018+0f2+003+0f2+006+0f2+006+0f2+003+0f2+003+0f2+006+0f2+006+0f2+003+0f3+0016+0fd+002+0f5b+"
+}

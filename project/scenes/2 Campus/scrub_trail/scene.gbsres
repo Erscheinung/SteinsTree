@@ -1,0 +1,585 @@
+{
+  "_resourceType": "scene",
+  "id": "ee85cd3a-0ae6-539e-b6b5-85374cb85e45",
+  "_index": 103,
+  "type": "TOPDOWN",
+  "name": "2 Campus/Scrub Trail behind B7",
+  "symbol": "scene_scrub_trail",
+  "x": 2088,
+  "y": 2692,
+  "width": 64,
+  "height": 56,
+  "backgroundId": "b0f53359-0c69-5cad-8e8d-9b4d35001430",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "ff35fac2-0f8b-aa00-b458-d55546ec88cc"
+          }
+        ]
+      },
+      "id": "1272bbb0-258d-f210-4819-ebc02c974336"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "0c102ee2-bbeb-497d-10ce-18ff33cbe0d0"
+                }
+              ],
+              "false": []
+            },
+            "id": "333e0b10-d102-ca71-be59-9c9c03855db2"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "81784dd7-9228-888e-8ca5-c451eaa2a8d7"
+                }
+              ],
+              "false": []
+            },
+            "id": "17abfe73-fafa-0d42-e10f-de7df59b77a2"
+          }
+        ]
+      },
+      "id": "e06cce7a-9d02-a63d-c198-ffafed34762c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "DAY 3 - NIGHT WALK BEHIND B7 (seeds Act 3)",
+                    "__collapse": false
+                  },
+                  "id": "9ea9938d-e4ae-7478-e14a-92ec64fdb3e7"
+                },
+                {
+                  "command": "EVENT_MUSIC_PLAY",
+                  "args": {
+                    "musicId": "b7bd58ef-763a-5689-bcfe-de21ef293486",
+                    "loop": true
+                  },
+                  "id": "6613b2d2-03c0-16a3-613e-7f630c901187"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 28
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 30
+                    }
+                  },
+                  "id": "1e53983b-85c7-3b65-0146-652eb27c3a12"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "player",
+                    "direction": {
+                      "type": "direction",
+                      "value": "right"
+                    }
+                  },
+                  "id": "55fa9124-9caf-43d8-abb4-6d3dbe8ee71f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Chai.\nCutting.",
+                      "Two rupees more\nthan last year.\nInflation is real."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "bd426413-1549-04f3-9b4b-6b35a793e929"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: You know\nwhat I like about\nthis place?",
+                      "Out here it's\nquiet enough to\nthink."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "d9e409a6-e3f4-982d-200f-2e3a856688fc"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: So. Why\ndid you come here?",
+                      "For real this\ntime."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "9571ec93-9d60-2895-6915-8d1b7c5b1f22"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "Didn't clear IIT",
+                    "option2": "Didn't know",
+                    "option3": "To meet you lot"
+                  },
+                  "id": "4dd06f56-d07a-4c54-cc12-7e70937aeade"
+                },
+                {
+                  "command": "EVENT_SWITCH",
+                  "args": {
+                    "variable": "119",
+                    "choices": 3,
+                    "__collapseElse": true,
+                    "value0": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "value1": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "value2": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "children": {
+                    "true0": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You: IIT didn't\nhappen. Twelfth\nwas... a lot."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "7af59849-ae55-ac49-1d3c-a2d6d50241a2"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Mayank: Yeah.",
+                            "Everyone here has\nan IIT-shaped hole\nsomewhere.",
+                            "We fill it with\nchai."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "3b71a1c2-f8c5-1243-5b0e-0987214dc84e"
+                      }
+                    ],
+                    "true1": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You: Honestly? I\ndon't know. I just\nended up here."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "e8773eee-7adb-212a-f7bc-fe146f7de87a"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Mayank: That's the\nmost honest answer\nanyone's given me."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "a314413d-f996-a934-8370-db1cf28c3626"
+                      }
+                    ],
+                    "true2": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "You: To meet you\nlot. Obviously."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "15502ce5-3a36-936d-2c39-9b65360a99be"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Mayank: Liar.\n...Thanks though."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "ecdfbbde-fcd8-ab7f-61bc-e22b325922e2"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "122",
+                          "operation": "add",
+                          "other": "val",
+                          "value": "1",
+                          "minValue": "0",
+                          "maxValue": "0",
+                          "clamp": true
+                        },
+                        "id": "efee4c78-9b47-6254-cbb2-c8137ea85af8"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "c335b62c-5b4b-0309-e46b-56110572cc75"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: My nani\nsays life isn't a\nline.",
+                      "It's a circle. You\nend up where you\nstarted,",
+                      "Mayank: but you're\ndifferent, so it's\na different place."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3a2b7268-9ec5-46c2-03af-41d546b4fd28"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Deep,\nright?",
+                      "She also says\ndon't eat Maggi at\n2 AM.",
+                      "Ignored that one."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "641fcf6b-f4e9-df55-1400-b3d14d081404"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "noise",
+                    "priority": "medium",
+                    "pitch": 1,
+                    "frequency": 100,
+                    "duration": 1.0,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "5e44a36d-d48a-ec98-152d-182c99b88124"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.4,
+                    "frames": 24,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "4e591a60-9190-9dd4-e4bb-a5eece2a6200"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Far off, past the\nreservoir,\nsomething howls.",
+                      "Not a dog. Not\nquite."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "8100dc1d-7812-6987-62dd-8dfbfcb2637b"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: ...Let's\nhead back."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "446a2684-7841-6c5c-ce09-658ca474937b"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "101",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "b6889880-b841-d9a1-b55b-9540c2d61153"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "115",
+                    "value": {
+                      "type": "number",
+                      "value": 4
+                    }
+                  },
+                  "id": "32810136-16e5-29a9-6625-98c28c0b09b7"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+                    "x": {
+                      "type": "number",
+                      "value": 14
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "1"
+                  },
+                  "id": "b3ff98b7-e792-0c78-6dc5-2f678aeee8d3"
+                }
+              ],
+              "false": []
+            },
+            "id": "80c62197-6071-9da5-98bd-2c0c069367e8"
+          }
+        ],
+        "false": []
+      },
+      "id": "7a692f7c-529b-8a98-0046-e28ec6321744"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "0e045517-03d5-a1f3-0cf8-6e92c8376cd1"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "7098dbbb-1cb2-c4bb-bab8-f2db3523278d"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Scrub Trail",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "ba19dcb3-e435-abfa-2438-65d564dc948b"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "ccc150db-b53f-e556-db0e-0b4349be4a27"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "14519082-03ac-21fd-705b-30d382285d4a"
+          }
+        ],
+        "false": []
+      },
+      "id": "ff9e66a1-aec9-511f-172a-f09b68e10c25"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1e+004+0f1f+003f+0f!003f+0f!003f+0f!0016+0f2+00d+0f2+004+0f2+008+0f2+004+0f2+00!0f2+00d+0f2+003+0f2+002+0f2+005+0f2+002+0f2+002+0f2+004+0f2+005+0f2+00!0f2+00!0f2+00!0f2+00!0f!007+0f2+002+0f2+00!0f2+003+0f2+009+0f2+002+0f2+00f+0f2+004+0f2+004+0f!004+0f2+00!0f2+002+0f2+008+0f2+002+0f2+005+0f2+008+0f2+004+0f2+00d+0f!004+0f2+003+0f2+007+0f2+00!0f2+002+0f2+005+0f2+002+0f2+004+0f2+004+0f2+003+0f2+008+0f!009+0f2+00!0f2+004+0f2+003+0f2+004+0f2+005+0f2+002+0f2+003+0f2+006+0f2+003+0f2+003+0f2+002+0f2+002+0f2+003+0f2+009+0f2+004+0f2+009+0f2+003+0f2+004+0f2+005+0f2+003+0f2+002+0f2+002+0f2+00a+0f2+00d+0f2+006+0f2+004+0f2+00!0f2+00a+0f2+008+0f2+005+0f2+00!0f2+00!0f2+002+0f2+003+0f2+00!0f2+003+0f2+00!0f2+004+0f2+006+0f2+005+0f2+003+0f2+003+0f2+00!0f2+002+0f2+004+0f2+002+0f2+003+0f2+003+0f2+00!0f2+003+0f2+004+0f2+004+0f2+00!0f2+002+0f2+003+0f2+006+0f2+004+0f2+004+0f2+003+0f2+002+0f2+00!0f2+006+0f2+00!0f2+00!0f2+002+0f2+003+0f2+002+0f2+00!0f2+003+0f2+009+0f2+00!0f2+00!0f2+003+0f2+002+0f2+006+0f2+004+0f2+005+0f2+007+0f2+00!0f2+003+0f2+00!0f2+004+0f2+003+0f2+00f+0f2+00!0f2+009+0f2+002+0f2+005+0f!005+0f2+003+0f2+004+0f2+008+0f2+002+0f2+002+0f2+002+0f2+004+0f2+006+0f2+002+0f2+005+0f!005+0f2+005+0f2+005+0f2+005+0f2+002+0f2+002+0f2+008+0f2+004+0f2+00b+0f!003+0f2+007+0f2+005+0f2+002+0f2+003+0f2+002+0f2+002+0f2+002+0f2+005+0f2+00!0f2+00!0f2+00c+0f2+002+0f2+008+0f2+004+0f2+003+0f2+002+0f2+002+0f2+002+0f2+00!0f2+002+0f2+004+0f2+004+0f2+003+0f!006+0f2+004+0f2+002+0f2+002+0f2+003+0f2+00a+0f2+003+0f2+006+0f2+002+0f2+002+0f2+003+0f!00!0f2+009+0f2+006+0f2+003+0f2+00!0f2+003+0f2+002+0f2+00!0f2+008+0f2+002+0f2+007+0f!00!0f2+006+0f2+003+0f2+007+0f2+003+0f2+003+0f2+005+0f2+00!0f2+002+0f2+003+0f2+002+0f2+004+0f!007+0f2+00!0f2+003+0f2+003+0f2+002+0f2+006+0f2+005+0f2+003+0f2+002+0f2+003+0f2+002+0f2+004+0f!004+0f2+00!0f2+004+0f2+005+0f2+004+0f2+004+0f2+005+0f2+00!0f2+0013+0f!004+0f2+003+0f2+002+0f2+007+0f2+002+0f2+009+0f2+003+0f2+008+0f2+004+0f2+003+0f2+00!0f2+005+0f2+00b+0f2+004+0f2+004+0f2+00!0f2+006+0f2+005+0f2+00!0f2+00!0f2+003+0f2+00!0f2+007+0f2+004+0f2+009+0f2+004+0f2+003+0f2+004+0f2+00!0f2+005+0f2+006+0f2+005+0f2+003+0f2+004+0f2+005+0f2+004+0f2+004+0f2+00!0f2+002+0f2+003+0f2+003+0f2+008+0f2+005+0f2+00!0f2+004+0f2+002+0f2+003+0f2+004+0f2+00!0f2+00!0f2+005+0f2+00!0f2+002+0f2+00!0f2+004+0f2+002+0f2+008+0f2+004+0f2+002+0f2+007+0f2+003+0f2+005+0f2+004+0f2+002+0f2+007+0f2+002+0f2+006+0f2+004+0f2+00d+0f2+00!0f2+007+0f2+006+0f2+005+0f2+006+0f!003+0f2+002+0f2+004+0f2+008+0f2+006+0f2+002+0f2+005+0f2+004+0f2+00!0f2+002+0f2+00!0f2+003+0f!003+0f2+006+0f2+007+0f2+00!0f2+004+0f2+004+0f2+005+0f2+00!0f2+004+0f2+005+0f2+003+0f!006+0f2+003+0f2+004+0f2+00!0f2+007+0f2+006+0f2+006+0f2+0010+0f!006+0f2+009+0f2+005+0f2+007+0f2+002+0f2+002+0f2+004+0f2+002+0fe+003+0f2+002+0f2+003+0f2+009+0f2+00!0f2+004+0f2+006+0f2+00!0f2+00!0f2+003+0fd+003+0f2+002+0f2+003+0f2+00c+0f2+00!0f2+003+0f2+007+0f2+006+0fd+00f+0f2+002+0f2+008+0f2+003+0f2+003+0f2+006+0f2+002+0fd+005+0f2+008+0f2+002+0f2+004+0f2+00c+0f2+003+0f2+00!0f2+002+0fd+005+0f2+002+0f2+006+0f2+002+0f2+002+0f2+003+0f2+004+0f2+003+0f2+00!0f2+005+0ff+007+0f2+003+0f2+00!0f2+002+0f2+007+0f2+004+0f2+003+0f2+003+0f2+003+0ff+005+0f2+005+0f2+003+0f2+002+0f2+008+0f2+004+0f2+002+0f2+00!0f2+003+0fc+004+0f2+002+0f2+00a+0f2+002+0f2+002+0f2+004+0f2+004+0f2+002+0f2+006+0fc+004+0f2+007+0f2+00d+0f2+002+0f2+004+0f2+002+0f2+004+0f2+002+0fd+00!0f2+002+0f2+002+0f2+00!0f2+00!0f2+008+0f2+004+0f2+004+0f2+002+0f2+004+0f2+002+0fd+00!0f2+002+0f2+002+0f2+004+0f2+005+0f2+00!0f2+00c+0f2+004+0f2+004+0fc+008+0f2+00d+0f2+003+0f2+006+0f2+002+0f2+00!0f2+00!0f2+004+0fc+008+0f2+003+0f2+005+0f2+006+0f2+006+0f2+005+0f2+007+0fc+005+0f2+006+0f2+005+0f2+002+0f2+005+0f2+0013+0fd+00!0f2+00!0f2+009+0f2+006+0f2+00!0f2+002+0f2+00!0f2+004+0f2+002+0f2+006+0fd+00!0f2+006+0f2+004+0f2+003+0f2+004+0f2+005+0f2+004+0f2+002+0f2+006+0fc+00a+0f2+009+0f2+001e+0fb+002d+0f5+003+0fe+004+0f7+004+0fd+004+0ff+003+0fb+"
+}

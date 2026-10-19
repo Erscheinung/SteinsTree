@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "494412cd-e16a-5fa8-9883-852bdad07e9b",
+  "_index": 8,
+  "symbol": "trigger_underpass_door_underpass_hostel_side",
+  "prefabId": "",
+  "name": "Door Underpass (hostel side)",
+  "x": 9,
+  "y": 4,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "014a3fca-184b-5c26-aea6-83a1e17b0226",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "cb4bcdbc-2b02-b8b9-9599-b6ddb612bf3c"
+    }
+  ],
+  "leaveScript": []
+}

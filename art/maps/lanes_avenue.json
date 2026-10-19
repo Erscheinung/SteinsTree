@@ -1,0 +1,26 @@
+{
+ "name": "lanes_avenue",
+ "title": "lanes_avenue",
+ "cols": 20,
+ "rows": 18,
+ "doors": [],
+ "exits": [],
+ "spawn": [
+  1,
+  1
+ ],
+ "unique_before_reduce": 50,
+ "tiles_merged": 0,
+ "unique_tiles": 50,
+ "palette_conflicts": 0,
+ "collisions": "0f3c+0012c+",
+ "kind": "special",
+ "lanes_y": [
+  4,
+  7,
+  10,
+  13,
+  16
+ ],
+ "player_x": 2
+}

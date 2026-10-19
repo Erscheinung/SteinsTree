@@ -65,6 +65,521 @@
       "id": "12",
       "name": "PushedIceBlock",
       "symbol": "var_pushediceblock"
+    },
+    {
+      "id": "100",
+      "name": "Chapter",
+      "symbol": "var_chapter"
+    },
+    {
+      "id": "101",
+      "name": "Phase",
+      "symbol": "var_phase"
+    },
+    {
+      "id": "102",
+      "name": "Ret_bluedove_in",
+      "symbol": "var_ret_bluedove_in"
+    },
+    {
+      "id": "103",
+      "name": "Ret_hostel_corridor",
+      "symbol": "var_ret_hostel_corridor"
+    },
+    {
+      "id": "104",
+      "name": "Ret_quess_mess_in",
+      "symbol": "var_ret_quess_mess_in"
+    },
+    {
+      "id": "105",
+      "name": "Ret_block1",
+      "symbol": "var_ret_block1"
+    },
+    {
+      "id": "106",
+      "name": "Ret_pool_in",
+      "symbol": "var_ret_pool_in"
+    },
+    {
+      "id": "107",
+      "name": "Ret_dome_in",
+      "symbol": "var_ret_dome_in"
+    },
+    {
+      "id": "108",
+      "name": "Ret_physics_class",
+      "symbol": "var_ret_physics_class"
+    },
+    {
+      "id": "109",
+      "name": "Ret_maths_class",
+      "symbol": "var_ret_maths_class"
+    },
+    {
+      "id": "110",
+      "name": "Ret_old_mess_in",
+      "symbol": "var_ret_old_mess_in"
+    },
+    {
+      "id": "111",
+      "name": "Ret_chem_lab",
+      "symbol": "var_ret_chem_lab"
+    },
+    {
+      "id": "112",
+      "name": "Ret_workshop_in",
+      "symbol": "var_ret_workshop_in"
+    },
+    {
+      "id": "113",
+      "name": "PrologueBattle",
+      "symbol": "var_prologuebattle"
+    },
+    {
+      "id": "114",
+      "name": "PrologueIntro",
+      "symbol": "var_prologueintro"
+    },
+    {
+      "id": "115",
+      "name": "Objective",
+      "symbol": "var_objective"
+    },
+    {
+      "id": "116",
+      "name": "CardDay",
+      "symbol": "var_cardday"
+    },
+    {
+      "id": "117",
+      "name": "MyHP",
+      "symbol": "var_myhp"
+    },
+    {
+      "id": "118",
+      "name": "EnHP",
+      "symbol": "var_enhp"
+    },
+    {
+      "id": "119",
+      "name": "Pick",
+      "symbol": "var_pick"
+    },
+    {
+      "id": "120",
+      "name": "Tmp",
+      "symbol": "var_tmp"
+    },
+    {
+      "id": "121",
+      "name": "Growled",
+      "symbol": "var_growled"
+    },
+    {
+      "id": "122",
+      "name": "Bond_Mayank",
+      "symbol": "var_bond_mayank"
+    },
+    {
+      "id": "123",
+      "name": "Bond_Divyansh",
+      "symbol": "var_bond_divyansh"
+    },
+    {
+      "id": "124",
+      "name": "Bond_Kanishk",
+      "symbol": "var_bond_kanishk"
+    },
+    {
+      "id": "125",
+      "name": "Bond_Parag",
+      "symbol": "var_bond_parag"
+    },
+    {
+      "id": "126",
+      "name": "Bond_Anshuman",
+      "symbol": "var_bond_anshuman"
+    },
+    {
+      "id": "127",
+      "name": "Bond_Garvita",
+      "symbol": "var_bond_garvita"
+    },
+    {
+      "id": "128",
+      "name": "Step",
+      "symbol": "var_step"
+    },
+    {
+      "id": "129",
+      "name": "SawZombie",
+      "symbol": "var_sawzombie"
+    },
+    {
+      "id": "130",
+      "name": "Alive_Mayank",
+      "symbol": "var_alive_mayank"
+    },
+    {
+      "id": "131",
+      "name": "Alive_Divyansh",
+      "symbol": "var_alive_divyansh"
+    },
+    {
+      "id": "132",
+      "name": "Alive_Kanishk",
+      "symbol": "var_alive_kanishk"
+    },
+    {
+      "id": "133",
+      "name": "Alive_Parag",
+      "symbol": "var_alive_parag"
+    },
+    {
+      "id": "134",
+      "name": "Alive_Anshuman",
+      "symbol": "var_alive_anshuman"
+    },
+    {
+      "id": "135",
+      "name": "Alive_Garvita",
+      "symbol": "var_alive_garvita"
+    },
+    {
+      "id": "136",
+      "name": "MemCount",
+      "symbol": "var_memcount"
+    },
+    {
+      "id": "137",
+      "name": "FinaleTalks",
+      "symbol": "var_finaletalks"
+    },
+    {
+      "id": "138",
+      "name": "Page",
+      "symbol": "var_page"
+    },
+    {
+      "id": "139",
+      "name": "Grade",
+      "symbol": "var_grade"
+    },
+    {
+      "id": "140",
+      "name": "Sawing",
+      "symbol": "var_sawing"
+    },
+    {
+      "id": "141",
+      "name": "Cuts",
+      "symbol": "var_cuts"
+    },
+    {
+      "id": "142",
+      "name": "MarkX",
+      "symbol": "var_markx"
+    },
+    {
+      "id": "143",
+      "name": "MarkY",
+      "symbol": "var_marky"
+    },
+    {
+      "id": "144",
+      "name": "Hung",
+      "symbol": "var_hung"
+    },
+    {
+      "id": "145",
+      "name": "HP",
+      "symbol": "var_hp"
+    },
+    {
+      "id": "146",
+      "name": "ZHP",
+      "symbol": "var_zhp"
+    },
+    {
+      "id": "147",
+      "name": "Read",
+      "symbol": "var_read"
+    },
+    {
+      "id": "148",
+      "name": "Guard",
+      "symbol": "var_guard"
+    },
+    {
+      "id": "149",
+      "name": "Wave",
+      "symbol": "var_wave"
+    },
+    {
+      "id": "150",
+      "name": "Lost",
+      "symbol": "var_lost"
+    },
+    {
+      "id": "151",
+      "name": "ZX0",
+      "symbol": "var_zx0"
+    },
+    {
+      "id": "152",
+      "name": "ZY0",
+      "symbol": "var_zy0"
+    },
+    {
+      "id": "153",
+      "name": "Lives",
+      "symbol": "var_lives"
+    },
+    {
+      "id": "154",
+      "name": "LaneOn",
+      "symbol": "var_laneon"
+    },
+    {
+      "id": "155",
+      "name": "Kills",
+      "symbol": "var_kills"
+    },
+    {
+      "id": "156",
+      "name": "ZX1",
+      "symbol": "var_zx1"
+    },
+    {
+      "id": "157",
+      "name": "ZY1",
+      "symbol": "var_zy1"
+    },
+    {
+      "id": "158",
+      "name": "ZX2",
+      "symbol": "var_zx2"
+    },
+    {
+      "id": "159",
+      "name": "ZY2",
+      "symbol": "var_zy2"
+    },
+    {
+      "id": "160",
+      "name": "ZX3",
+      "symbol": "var_zx3"
+    },
+    {
+      "id": "161",
+      "name": "ZY3",
+      "symbol": "var_zy3"
+    },
+    {
+      "id": "162",
+      "name": "ZX4",
+      "symbol": "var_zx4"
+    },
+    {
+      "id": "163",
+      "name": "ZY4",
+      "symbol": "var_zy4"
+    },
+    {
+      "id": "164",
+      "name": "Hidden",
+      "symbol": "var_hidden"
+    },
+    {
+      "id": "165",
+      "name": "Spotted",
+      "symbol": "var_spotted"
+    },
+    {
+      "id": "166",
+      "name": "PX",
+      "symbol": "var_px"
+    },
+    {
+      "id": "167",
+      "name": "PY",
+      "symbol": "var_py"
+    },
+    {
+      "id": "168",
+      "name": "Caught",
+      "symbol": "var_caught"
+    },
+    {
+      "id": "169",
+      "name": "Chase",
+      "symbol": "var_chase"
+    },
+    {
+      "id": "170",
+      "name": "CheckX",
+      "symbol": "var_checkx"
+    },
+    {
+      "id": "171",
+      "name": "CheckY",
+      "symbol": "var_checky"
+    },
+    {
+      "id": "172",
+      "name": "Mem1",
+      "symbol": "var_mem1"
+    },
+    {
+      "id": "173",
+      "name": "Mem2",
+      "symbol": "var_mem2"
+    },
+    {
+      "id": "174",
+      "name": "Mem3",
+      "symbol": "var_mem3"
+    },
+    {
+      "id": "175",
+      "name": "Mem4",
+      "symbol": "var_mem4"
+    },
+    {
+      "id": "176",
+      "name": "Mem5",
+      "symbol": "var_mem5"
+    },
+    {
+      "id": "177",
+      "name": "Mem6",
+      "symbol": "var_mem6"
+    },
+    {
+      "id": "178",
+      "name": "Mem7",
+      "symbol": "var_mem7"
+    },
+    {
+      "id": "179",
+      "name": "Cycle",
+      "symbol": "var_cycle"
+    },
+    {
+      "id": "180",
+      "name": "HubSeen",
+      "symbol": "var_hubseen"
+    },
+    {
+      "id": "181",
+      "name": "TookCoins",
+      "symbol": "var_tookcoins"
+    },
+    {
+      "id": "182",
+      "name": "MamaTalk",
+      "symbol": "var_mamatalk"
+    },
+    {
+      "id": "183",
+      "name": "LonA",
+      "symbol": "var_lona"
+    },
+    {
+      "id": "184",
+      "name": "LonB",
+      "symbol": "var_lonb"
+    },
+    {
+      "id": "185",
+      "name": "India",
+      "symbol": "var_india"
+    },
+    {
+      "id": "186",
+      "name": "Tries",
+      "symbol": "var_tries"
+    },
+    {
+      "id": "187",
+      "name": "MusCount",
+      "symbol": "var_muscount"
+    },
+    {
+      "id": "188",
+      "name": "Sign0",
+      "symbol": "var_sign0"
+    },
+    {
+      "id": "189",
+      "name": "Sign1",
+      "symbol": "var_sign1"
+    },
+    {
+      "id": "190",
+      "name": "Sign2",
+      "symbol": "var_sign2"
+    },
+    {
+      "id": "191",
+      "name": "Sign3",
+      "symbol": "var_sign3"
+    },
+    {
+      "id": "192",
+      "name": "Sign4",
+      "symbol": "var_sign4"
+    },
+    {
+      "id": "193",
+      "name": "TalkedDivyansh",
+      "symbol": "var_talkeddivyansh"
+    },
+    {
+      "id": "194",
+      "name": "TalkedKanishk",
+      "symbol": "var_talkedkanishk"
+    },
+    {
+      "id": "195",
+      "name": "TalkedParag",
+      "symbol": "var_talkedparag"
+    },
+    {
+      "id": "196",
+      "name": "TalkedAnshuman",
+      "symbol": "var_talkedanshuman"
+    },
+    {
+      "id": "197",
+      "name": "TalkedGarvita",
+      "symbol": "var_talkedgarvita"
+    },
+    {
+      "id": "198",
+      "name": "MarkDir",
+      "symbol": "var_markdir"
+    },
+    {
+      "id": "199",
+      "name": "Snacks",
+      "symbol": "var_snacks"
+    },
+    {
+      "id": "200",
+      "name": "Stress",
+      "symbol": "var_stress"
+    },
+    {
+      "id": "201",
+      "name": "Calm",
+      "symbol": "var_calm"
+    },
+    {
+      "id": "202",
+      "name": "FromWorld",
+      "symbol": "var_fromworld"
     }
   ],
   "constants": []

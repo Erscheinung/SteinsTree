@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "aa42d16c-2ecc-5967-a813-00fb9ca3c4e2",
+  "_index": 6,
+  "symbol": "trigger_workshop_exit_w_2",
+  "prefabId": "",
+  "name": "Exit w 2",
+  "x": 0,
+  "y": 2,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 117
+        },
+        "y": {
+          "type": "number",
+          "value": 69
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "6eedfbb1-2924-9f70-6d6b-1cf7ba73c4c5"
+    }
+  ],
+  "leaveScript": []
+}

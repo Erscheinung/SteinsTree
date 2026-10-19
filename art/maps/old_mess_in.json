@@ -1,0 +1,40 @@
+{
+ "name": "old_mess_in",
+ "title": "Old Mess Food Court",
+ "cols": 26,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 11,
+   "y": 14,
+   "spawn": [
+    11,
+    13
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 12,
+   "y": 14,
+   "spawn": [
+    12,
+    13
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  11,
+  13
+ ],
+ "unique_before_reduce": 17,
+ "tiles_merged": 0,
+ "unique_tiles": 17,
+ "palette_conflicts": 0,
+ "collisions": "0fa1+004+0f4+004+0f4+004+0f2+0018+0f2+003+0f2+006+0f2+006+0f2+003+0f2+003+0f2+006+0f2+006+0f2+003+0f2+0018+0f2+003+0f2+006+0f2+006+0f2+003+0f2+003+0f2+006+0f2+006+0f2+003+0f3+0016+0fd+002+0f5b+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

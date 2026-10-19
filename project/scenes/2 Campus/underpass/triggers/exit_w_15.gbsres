@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "1897dce8-c009-5cb0-9c2b-954b40a3614b",
+  "_index": 6,
+  "symbol": "trigger_underpass_exit_w_15",
+  "prefabId": "",
+  "name": "Exit w 15",
+  "x": 0,
+  "y": 15,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 54
+        },
+        "y": {
+          "type": "number",
+          "value": 74
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "760bd3cc-70dd-885e-ede4-7b0d2260f655"
+    }
+  ],
+  "leaveScript": []
+}

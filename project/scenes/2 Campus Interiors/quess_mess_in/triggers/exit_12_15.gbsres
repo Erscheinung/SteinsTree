@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "669d6327-beb4-5757-9fdf-43c9c4edd142",
+  "_index": 1,
+  "symbol": "trigger_quess_mess_in_exit_12_15",
+  "prefabId": "",
+  "name": "Exit 12 15",
+  "x": 12,
+  "y": 15,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "267ed18d-9036-5992-9095-35ba2a9ff6e8",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 6
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "78e9ead9-b729-aa7c-f112-4a5fd8b03daf"
+    }
+  ],
+  "leaveScript": []
+}

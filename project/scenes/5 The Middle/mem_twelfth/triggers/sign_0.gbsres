@@ -1,0 +1,60 @@
+{
+  "_resourceType": "trigger",
+  "id": "5251f7c3-9923-5a59-a31e-cd62d01cb6f3",
+  "_index": 0,
+  "symbol": "trigger_mem_twelfth_sign_0",
+  "prefabId": "",
+  "name": "Sign 0",
+  "x": 8,
+  "y": 9,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "188"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "JEE MAIN: 47 DAYS"
+              ],
+              "avatarId": ""
+            },
+            "id": "291e520c-5b71-dfb7-b58a-9338f2367a7e"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "188",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "1e24ef40-2daf-1c67-0c92-6e1b72f9300f"
+          }
+        ],
+        "false": []
+      },
+      "id": "c14d8f00-df6b-167d-c84f-4fc09822b99a"
+    }
+  ],
+  "leaveScript": []
+}

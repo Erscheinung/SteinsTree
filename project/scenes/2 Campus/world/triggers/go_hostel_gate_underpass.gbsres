@@ -1,0 +1,162 @@
+{
+  "_resourceType": "trigger",
+  "id": "67823e63-b61e-5d7f-a6c3-23e8ca08852a",
+  "_index": 9,
+  "symbol": "trigger_world_go_hostel_gate_underpass",
+  "prefabId": "",
+  "name": "Go: Hostel Gate & Underpass",
+  "x": 54,
+  "y": 73,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Hostel Gate &\nUnderpass"
+        ],
+        "avatarId": ""
+      },
+      "id": "cefe1f49-6763-3862-d8a0-9cf30ae29dc9"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Enter",
+        "falseText": "Keep walking"
+      },
+      "id": "b2e8850d-b8d4-2f3b-0f34-7253356a3c91"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "128"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "0956e7ea-fe2c-5fc6-bc41-0d8894cca01d",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          },
+                          "direction": "right",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "322b19cf-3559-1099-4b7d-76789a7a49d7"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "No time. Stick to\nthe plan.",
+                            "(Check START for\nthe objective.)"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "0d319db7-0a92-8283-9303-36acd743ed42"
+                      }
+                    ]
+                  },
+                  "id": "52859c79-f12d-e5f0-9d7e-d90e0bed28ab"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "202",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "68e07f47-1dec-72d2-15f8-a7b47c0ab175"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "239a3611-8abd-5334-934f-f3cbd3100024",
+                    "x": {
+                      "type": "number",
+                      "value": 24
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 22
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "98424eb9-1a82-918e-ed71-25ee53ffacd1"
+                }
+              ]
+            },
+            "id": "8959da7b-b960-c14b-c3a6-17be22d9866e"
+          }
+        ],
+        "false": []
+      },
+      "id": "461d428f-c242-4320-d8b1-9d987941f089"
+    }
+  ],
+  "leaveScript": []
+}

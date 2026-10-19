@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-player",
+  "name": "Sprite: Player",
+  "colors": [
+    "F8D0A8",
+    "5878D0",
+    "384890",
+    "202038"
+  ],
+  "defaultName": "Sprite: Player",
+  "defaultColors": [
+    "F8D0A8",
+    "5878D0",
+    "384890",
+    "202038"
+  ]
+}

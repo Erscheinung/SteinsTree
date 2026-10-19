@@ -1,0 +1,336 @@
+{
+  "_resourceType": "scene",
+  "id": "28753070-08be-5490-9cbf-818fb7c62080",
+  "_index": 132,
+  "type": "TOPDOWN",
+  "name": "4 Outbreak/B7 Lounge Council",
+  "symbol": "scene_lounge",
+  "x": 0,
+  "y": 4616,
+  "width": 32,
+  "height": 32,
+  "backgroundId": "4b71c0fa-90a2-5bf7-885c-e0505f5f07f3",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "enr-b7-lounge-0-night",
+    "enr-b7-lounge-1-night",
+    "enr-b7-lounge-2-night",
+    "enr-b7-lounge-3-night",
+    "enr-b7-lounge-4-night",
+    "enr-b7-lounge-5-night",
+    "enr-b7-lounge-6-night",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "f0b3cdf1-eb9c-ae65-6dc2-daa7427cecbc"
+          }
+        ]
+      },
+      "id": "0e889642-4cd5-949d-7b57-64de97960286"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "enr-b7-lounge-0-night",
+        "palette1": "enr-b7-lounge-1-night",
+        "palette2": "enr-b7-lounge-2-night",
+        "palette3": "enr-b7-lounge-3-night",
+        "palette4": "enr-b7-lounge-4-night",
+        "palette5": "enr-b7-lounge-5-night",
+        "palette6": "enr-b7-lounge-6-night",
+        "palette7": "muj-ui"
+      },
+      "id": "dc1b1e76-ef5a-40a0-5325-1c30fe1c317e"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "804ab4ab-17f1-58c7-b815-b56358e32cd1",
+        "loop": true
+      },
+      "id": "0dcb2f3b-5ca6-1d95-38be-53f82e092ad1"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ACT 2 BEGINS - council in the B7 lounge",
+        "__collapse": false
+      },
+      "id": "2d012ee2-1502-258a-2002-4b36e66797f7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 22
+        }
+      },
+      "id": "9c8d1f61-8851-8fea-faa3-4dbc619bcd66"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "9954cf7d-d2e9-3b8d-662c-c11fe3d2acb1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: Facts.\nPhones dead. Gate\nguards gone.",
+          "Those things don't\nclimb stairs well."
+        ],
+        "avatarId": ""
+      },
+      "id": "910604dd-007b-b5cb-9444-878e45f6e875"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: Zombies.\nZOMBIES. Bro, I\ntrained for this.",
+          "Mentally."
+        ],
+        "avatarId": ""
+      },
+      "id": "05db57e5-141f-500b-29b0-4531b29e4878"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: The Dome.\nThe admin block\nhas the PA system",
+          "and the satellite\nphone."
+        ],
+        "avatarId": ""
+      },
+      "id": "eb9e567a-00a6-2ac7-9246-00e71674b50f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: Then we go\nto the Dome.\nTogether.",
+          "Building by\nbuilding."
+        ],
+        "avatarId": ""
+      },
+      "id": "04e715b9-30cf-372d-9f36-9508a7c4d1bd"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kanishk: First the\nQuess Mess.",
+          "Food, knives, a\ndoor that locks.\nTurn by turn.",
+          "I'll call the\nmoves."
+        ],
+        "avatarId": ""
+      },
+      "id": "f1621dce-5874-0f91-6bce-bf76062a9c4b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Parag: The\navenue's a\nstraight line.",
+          "My launcher loves\nstraight lines."
+        ],
+        "avatarId": ""
+      },
+      "id": "9c11d586-9168-a6a3-e22f-d519cfe589a6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: The\nunderpass is dark.\nDark is mine."
+        ],
+        "avatarId": ""
+      },
+      "id": "aaf98dd4-b857-4131-accb-4bd382ac234c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: And from\nAB2 I can get us\nacross the",
+          "rooftops. All the\nway."
+        ],
+        "avatarId": ""
+      },
+      "id": "69f02423-36b3-79c4-1cf8-2892bb7efc7d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: And\nI'll... lead. From\nthe front.",
+          "Probably.\nSpiritually."
+        ],
+        "avatarId": ""
+      },
+      "id": "339a14d0-4d2c-06dc-b68d-6b61417bb3a8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: Okay.\nNobody plays hero.",
+          "Everybody comes\nback."
+        ],
+        "avatarId": ""
+      },
+      "id": "48a65006-92a2-c046-ba6c-a63029563677"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "128",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "e1b2c0c4-7de7-d0cc-6b39-2787d6cb7efd"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "115",
+        "value": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "61bb2cf2-3a38-1062-8b2c-22d12aa23162"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "133",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "459be326-00f1-ad32-0994-6128daeb4cd7"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "134",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "e1dc3abc-276b-545e-c10f-c2e8f1f4147a"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "131",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "57835cc1-51cc-bc5a-bd4d-3e09d1767bb8"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "132",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "6662fc02-288d-d550-9584-90543236ffb4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "135",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "033f62ee-757a-a73c-d6d2-30c7a6118fea"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "130",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "94f5dd49-6676-74f6-073a-81973cc09ac6"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "029ec5ea-594a-592b-9514-82523c6348fe",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "cfc52296-606b-0685-79e0-e9e3dcfaa99f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001a0+0ff+002+0f5+0018+0f4+003+0f!0011+0f6+008+0f!0011+0f!004+0f!008+0f!0011+0f6+008+0f!001f+0f!0019+0f7+0019+0f!0015+0f4+006+0f!0015+0f!002+0f!006+0f!0015+0f4+006+0f!0016+0f2+007+0f!0016+0f2+007+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!0010+0f10+0010+"
+}

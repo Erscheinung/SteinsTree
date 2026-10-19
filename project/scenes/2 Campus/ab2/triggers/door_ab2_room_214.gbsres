@@ -1,0 +1,44 @@
+{
+  "_resourceType": "trigger",
+  "id": "ef4f4468-085f-56e4-9d1a-3ec5a3fd0f3a",
+  "_index": 12,
+  "symbol": "trigger_ab2_door_ab2_room_214",
+  "prefabId": "",
+  "name": "Door AB2 Room 214",
+  "x": 34,
+  "y": 65,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "109",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "5b193238-d6b3-6a38-09e6-34beb494cb18"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "83b28233-e33d-5b19-928f-517c11edaf2f",
+        "x": {
+          "type": "number",
+          "value": 3
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "6092d522-67a0-91d4-801d-846a967e2e5a"
+    }
+  ],
+  "leaveScript": []
+}

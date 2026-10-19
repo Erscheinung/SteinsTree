@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-ui",
+  "name": "MUJ UI",
+  "colors": [
+    "F8F4E0",
+    "C8C0A8",
+    "686078",
+    "181828"
+  ],
+  "defaultName": "MUJ UI",
+  "defaultColors": [
+    "F8F4E0",
+    "C8C0A8",
+    "686078",
+    "181828"
+  ]
+}

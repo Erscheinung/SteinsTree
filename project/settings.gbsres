@@ -12,27 +12,27 @@
   "sgbEnabled": false,
   "customHead": "",
   "defaultBackgroundPaletteIds": [
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg"
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
   ],
   "defaultSpritePaletteIds": [
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg",
-    "dmg"
+    "muj-spr-player",
+    "muj-spr-mayank",
+    "muj-spr-divyansh",
+    "muj-spr-kanishk",
+    "muj-spr-parag",
+    "muj-spr-anshuman",
+    "muj-spr-garvita",
+    "muj-spr-zombie"
   ],
-  "defaultSpritePaletteId": "default-sprite",
-  "defaultUIPaletteId": "default-ui",
+  "defaultSpritePaletteId": "muj-spr-player",
+  "defaultUIPaletteId": "muj-ui",
   "playerPaletteId": "",
   "defaultMonoBGP": [
     0,
@@ -53,14 +53,14 @@
   "defaultFontId": "362aae45-74a8-4f2c-a267-333d02c39169",
   "defaultCharacterEncoding": "",
   "defaultPlayerSprites": {
-    "TOPDOWN": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
-    "PLATFORM": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
-    "ADVENTURE": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
-    "SHMUP": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
-    "POINTNCLICK": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
-    "LOGO": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26"
+    "TOPDOWN": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+    "PLATFORM": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+    "ADVENTURE": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+    "SHMUP": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+    "POINTNCLICK": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+    "LOGO": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe"
   },
-  "musicDriver": "gbt",
+  "musicDriver": "huge",
   "cartType": "mbc5",
   "batterylessEnabled": false,
   "customColorsWhite": "E8F8E0",
@@ -99,7 +99,7 @@
   "customControlsSelect": [
     "Shift"
   ],
-  "colorMode": "mono",
+  "colorMode": "color",
   "colorCorrection": "default",
   "generateDebugFilesEnabled": false,
   "compilerPreset": 3000,
@@ -113,7 +113,5 @@
   "defaultSceneTypeId": "TOPDOWN",
   "disabledSceneTypeIds": [],
   "autoTileFlipEnabled": false,
-  "webTemplate": "",
-  "startMapId": "cb5e225f-e996-4ca8-b068-09a12ec18b75",
-  "playerSpriteSheetId": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26"
+  "webTemplate": ""
 }

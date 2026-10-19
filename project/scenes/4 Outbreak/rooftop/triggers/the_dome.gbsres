@@ -1,0 +1,175 @@
+{
+  "_resourceType": "trigger",
+  "id": "176f548f-6821-587e-ad8b-e60ed000dc90",
+  "_index": 9,
+  "symbol": "trigger_rooftop_the_dome",
+  "prefabId": "",
+  "name": "The Dome",
+  "x": 91,
+  "y": 8,
+  "width": 3,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "128",
+        "value": {
+          "type": "number",
+          "value": 7
+        }
+      },
+      "id": "410239e5-c405-8186-31c1-a76cfb2cda60"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: Last gap.\nI'll jump first\nand catch you.",
+          "Like at the\nground."
+        ],
+        "avatarId": ""
+      },
+      "id": "d6bbfb45-0a25-4a91-2cae-8b8d70a18e08"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.6,
+        "frames": 36,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 4
+        }
+      },
+      "id": "9257b6dc-a834-cdbf-b55c-03df3b9af749"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "crash",
+        "priority": "medium",
+        "pitch": 3,
+        "frequency": 100,
+        "duration": 0.6,
+        "wait": false,
+        "effect": 0
+      },
+      "id": "530db633-9e57-0ae7-bfd3-cf3e94f51750"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The ledge under\nher crumbles.",
+          "She catches the\nedge with one\nhand."
+        ],
+        "avatarId": ""
+      },
+      "id": "73964692-c488-e403-30f2-37ea2bf77447"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You: GARVITA!"
+        ],
+        "avatarId": ""
+      },
+      "id": "f71b46a9-bae7-fb05-c234-99864f354264"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: Hey.\nDon't. If you grab\nme we both go."
+        ],
+        "avatarId": ""
+      },
+      "id": "3250f92c-6807-38ac-64b5-cc7448c2581b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: Funny. I\nalways wanted to\nrun so far nobody",
+          "could call me\nback."
+        ],
+        "avatarId": ""
+      },
+      "id": "b446d11c-beb8-a6c8-6a8a-e876f2461d5f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: ...it's\nnice that\nsomeone's waiting",
+          "at the finish."
+        ],
+        "avatarId": ""
+      },
+      "id": "6d15aee6-4b55-375f-177b-22d1e7bb72e0"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "790b0722-cb77-5f7d-b2f2-e870701c7d85",
+        "time": 1.2,
+        "frames": 72
+      },
+      "id": "de034a52-71dd-06d6-81f1-ffd92607129a"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "790b0722-cb77-5f7d-b2f2-e870701c7d85"
+      },
+      "id": "7cd68b9b-e0aa-d683-64e3-99061003db1d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "135",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "edbe88d1-dc3c-3fd8-7384-9130491800bc"
+    },
+    {
+      "command": "EVENT_VARIABLE_MATH",
+      "args": {
+        "vectorX": "127",
+        "operation": "add",
+        "other": "val",
+        "value": "1",
+        "minValue": "0",
+        "maxValue": "0",
+        "clamp": true
+      },
+      "id": "bef444ed-f170-bcc7-cfad-4e0171712f41"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "8c1225d5-e80d-5dcd-b852-fbce734c69bf",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "direction": "up",
+        "fadeSpeed": "1"
+      },
+      "id": "3561b0c3-b2bc-39fc-62e2-0b09936a12b2"
+    }
+  ],
+  "leaveScript": []
+}

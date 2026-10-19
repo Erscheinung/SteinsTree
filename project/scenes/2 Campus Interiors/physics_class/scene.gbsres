@@ -1,0 +1,719 @@
+{
+  "_resourceType": "scene",
+  "id": "88181b9e-2a34-53b9-bb27-b52fa827a3f9",
+  "_index": 117,
+  "type": "TOPDOWN",
+  "name": "2 Campus Interiors/AB1-101: Engineering Physics",
+  "symbol": "scene_physics_class",
+  "x": 0,
+  "y": 4352,
+  "width": 24,
+  "height": 18,
+  "backgroundId": "424eae1f-54ac-5fe6-9596-7c3ccbc3f0dd",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-student"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "0eeb4ca1-7523-dd11-6ca8-88ad66d34a94"
+          }
+        ]
+      },
+      "id": "ffbea2fa-c80d-d646-7e3c-53d635748f44"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "51eb043d-32d1-f754-ed77-21b77a804e58"
+                }
+              ],
+              "false": []
+            },
+            "id": "7007b907-91f7-d74b-5772-a3a05f8cf5b8"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "1f62de4d-4c93-72c4-f9fb-0942e42789e8"
+                }
+              ],
+              "false": []
+            },
+            "id": "c5c1f03b-bbde-debc-4358-56a39fd29eb9"
+          }
+        ]
+      },
+      "id": "406838cb-c1a6-f2ad-f042-ed9a8a6333b9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "DAY 1 - ENGINEERING PHYSICS (AB1-101)",
+                    "__collapse": false
+                  },
+                  "id": "63e0a06e-c141-e102-d650-d49533c8a38d"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 13
+                    }
+                  },
+                  "id": "e1b85043-db41-7e25-b622-ef39751ea663"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 7
+                    },
+                    "collideWith": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "40386c60-3e05-e343-a52d-6533f6436628"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "player",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "c627e8c7-b997-33a0-dcb5-82cdafc01bca"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Rao: Roll\nnumber 47? ...47?",
+                      "Proxy is a crime,\nbeta. Present\nyourself."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "9d47e8d8-2969-6907-b12d-0bd9fbb8462f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You: Present, sir!"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "526990a0-8325-2d0b-c285-eb794d0777bd"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Rao: Today:\nthe dual nature of\nlight.",
+                      "Is it a wave? Is\nit a particle?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5b3edc7c-717f-475d-789d-5e9d0a3ba9e8"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh:\n(whispering) Sir\ndoesn't know.",
+                      "I'll explain it to\nhim after class."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "c605e954-6050-46d0-6c6e-f43d403791c1"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: (not\nlooking back) You\nwill not."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "13902058-520a-4046-61c1-17e30adedd6f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Rao: Pop\nquiz! Three\nquestions.",
+                      "Hands off your\nphones, I can see\nthe glow."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "deaff159-98ee-1f8b-8fe1-18e75ce13cbe"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Rao:\nPlanck's constant\nhas units of...?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "04c04f31-c72a-d85c-538c-e6fa2ee17b2d"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "J s",
+                    "option2": "kg/m",
+                    "option3": "vibes"
+                  },
+                  "id": "a10b167e-a1bc-605d-31c2-7e5489fb5356"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Rao:\nCorrect! Joule-\nsecond.",
+                            "Someone attended\nJEE classes."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "1446bc2b-ce80-982c-9852-e7d43dfa5005"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "139"
+                        },
+                        "id": "a96eff3e-82f6-5222-c0d2-fcd8003bffb7"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Rao: Vibes\nis not an SI unit.\nYet."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "c99d3827-e7ee-9363-17c7-f7fca6b2e16b"
+                      }
+                    ]
+                  },
+                  "id": "7eb2920f-ef70-8978-5c91-39d8e6fefcfa"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Rao: Light\nbehaves as...?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "6f9e4bb7-9c09-bb29-411a-75dbc753aeba"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "only a wave",
+                    "option2": "only a particle",
+                    "option3": "both"
+                  },
+                  "id": "b560daab-60da-2ec4-a0e3-61c38119b38b"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 3
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Rao: Both!",
+                            "Like you all: a\nwave at 9 AM, a\nparticle at 9 PM."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "68804c53-d7bf-23f4-ce1b-8c30ebbc7c90"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "139"
+                        },
+                        "id": "0cabd016-958e-3a67-db7f-71eefc970a47"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Rao: Half\nmarks for\nconfidence.",
+                            "Zero for physics."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "866b1f14-0faa-cbc4-ef30-12b6be39c74e"
+                      }
+                    ]
+                  },
+                  "id": "3b911009-8964-24b0-4d07-5b7482e0ba74"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Rao: Photon\nenergy rises if\nwavelength..."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "d15ab176-31f3-a127-78fe-f1c2e78aa3e2"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "increases",
+                    "option2": "decreases",
+                    "option3": "goes home"
+                  },
+                  "id": "8197e13d-73d6-f8c1-ef2f-11e1bcaef72e"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Rao: Shorter\nwavelength, more\nenergy.",
+                            "Like this class."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "dbfe5d79-3849-cd61-57c8-a7a47596237a"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "139"
+                        },
+                        "id": "80296cc9-f026-8b4e-8459-efe24c38f30d"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Prof. Rao: It may\ngo home. You may\nnot."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "5ff7c3f7-0e1d-9185-0245-58e9d52d9484"
+                      }
+                    ]
+                  },
+                  "id": "857d1924-3341-610b-ee5a-0266eb8bfc95"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: Easy. I\nwould have got all\nthree.",
+                      "I was just letting\nyou have them."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "8181cc04-1ac9-eb1e-a3e3-7863e383a657"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: (quietly)\nHe got zero last\nweek.",
+                      "In the test about\nhis own name."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "741be887-b24d-d387-24ba-6ace52c0ca66"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "tone",
+                    "priority": "medium",
+                    "pitch": 3,
+                    "frequency": 900,
+                    "duration": 0.4,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "1cd8d0f5-747c-1db7-f818-030559e023cd"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Prof. Rao: Bell.\nGo. Read Chapter\n2. You won't.",
+                      "But go."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5315fbd1-22ad-c913-5a6f-9e978ebc61fa"
+                },
+                {
+                  "command": "EVENT_ACTOR_EFFECTS",
+                  "args": {
+                    "effect": "flicker",
+                    "actorId": "2d5b2fbb-8a7a-55b7-b1fa-89fbc070c769",
+                    "time": 0.3,
+                    "frames": 18
+                  },
+                  "id": "d3c381df-4e9d-3a10-4b05-7bf4f139557a"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "2d5b2fbb-8a7a-55b7-b1fa-89fbc070c769"
+                  },
+                  "id": "cde85581-e2e7-014c-296e-e380c204ea03"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "0e460d24-a81a-55c2-9394-fa2d294f37cc"
+                  },
+                  "id": "bdd73da8-398b-d9c9-bd95-965282744502"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "376291d0-45b8-5e4a-84c6-56d39a7339fe"
+                  },
+                  "id": "c29a2c5e-c9dd-da18-b856-eaf985942fd0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Dinner at\nQuess Mess\ntonight.",
+                      "The whole gang.\nDivyansh promised\nto pay."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "9306e9c9-c679-520b-5f5b-886b7294613e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Divyansh: I\npromised to THINK\nabout paying.",
+                      "Big difference."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "c5e4784e-5935-63f2-0509-20eb6e43319e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: Fifty\nrupees says he\nforgets his",
+                      "wallet."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "75cd9c7f-74b9-6d15-59dd-7f1cf5540965"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "101",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "3d05647d-cbec-4061-014c-78ead14f1710"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "115",
+                    "value": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "id": "ace9d955-925b-8c5d-b293-332a14587113"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "122",
+                    "operation": "add",
+                    "other": "val",
+                    "value": "1",
+                    "minValue": "0",
+                    "maxValue": "0",
+                    "clamp": true
+                  },
+                  "id": "992c8dd2-6d1f-ba83-5c92-b427787655ab"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "4cdff3d2-4644-565c-ab2a-417de24d3959"
+                  },
+                  "id": "54acd230-68ca-ac7c-f4ce-06106e5c141b"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "65984f44-c9a0-5736-a702-7f783a03da85"
+                  },
+                  "id": "29d202db-d4c3-b807-240e-60f3262e1fea"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "296334fa-3357-536e-94b3-7db9686caa58"
+                  },
+                  "id": "716df1c7-62e4-54eb-12eb-827047fe3781"
+                }
+              ],
+              "false": []
+            },
+            "id": "00c9986d-448b-10a3-f8b4-31bbb3a59564"
+          }
+        ],
+        "false": []
+      },
+      "id": "7c35f8d5-dc99-2fa0-bbfc-feb679276893"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f61+00a+0f!00b+0f2+0016+0f2+00!0f2+00!0f2+00!0f2+00!0f2+002+0f2+00!0f2+00!0f4+0016+0f2+0016+0f2+00!0f2+00!0f2+00!0f2+00!0f2+002+0f2+00!0f2+00!0f4+0016+0f2+0016+0f2+00!0f2+00!0f2+00!0f2+00!0f2+002+0f2+00!0f2+00!0f4+0016+0f2+0016+0f3+0014+0fd+002+0f23+"
+}

@@ -1,0 +1,151 @@
+{
+  "_resourceType": "scene",
+  "id": "ec286590-7055-5474-bb90-0526fdb341b7",
+  "_index": 141,
+  "type": "TOPDOWN",
+  "name": "5 The Middle/Memory: Childhood",
+  "symbol": "scene_mem_childhood",
+  "x": 0,
+  "y": 5216,
+  "width": 22,
+  "height": 18,
+  "backgroundId": "1906e9b3-23ea-5d39-91a4-f53f5a3eb3e2",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-memory-grass",
+    "muj-memory-path",
+    "muj-memory-stone",
+    "muj-memory-brick",
+    "muj-memory-roof",
+    "muj-memory-water",
+    "muj-memory-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "muj-spr-mama",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-prof"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "b895bb45-e2a1-a1fc-af47-4b670fd58378"
+          }
+        ]
+      },
+      "id": "e4649539-f3fe-d43f-56a4-cc20bbeab412"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-memory-grass",
+        "palette1": "muj-memory-path",
+        "palette2": "muj-memory-stone",
+        "palette3": "muj-memory-brick",
+        "palette4": "muj-memory-roof",
+        "palette5": "muj-memory-water",
+        "palette6": "muj-memory-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "48392f99-ff3f-6e50-75b7-cc174142a2a3"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "352b406b-199f-53ea-ac30-ac9e915b6900",
+        "loop": true
+      },
+      "id": "f42267a1-20ca-ce8d-b1bf-06f04dcd1292"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "e87a5fd5-9abc-5a88-867b-ba05f5fc3aa9",
+        "persist": true
+      },
+      "id": "7ec97970-e148-80a6-6ebc-2dedb0dec8ae"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 10
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        }
+      },
+      "id": "99e93b74-fadb-1f84-5888-61350c90507d"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY 1 - CHILDHOOD (LIFE: childhood, loneliness, Mama, guilt, stealing)",
+        "__collapse": false
+      },
+      "id": "67c84354-7cc0-96ad-470f-5c0f291fe62c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Before London.",
+          "A house full of\ngrown-ups talking\nover your head."
+        ],
+        "avatarId": ""
+      },
+      "id": "14f595b1-2aa4-396b-baf7-ad0efc6c322d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "182",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "faf430a6-c5a3-0393-71d2-554d2e8f275c"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "181",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "50cf1236-a17c-f8c3-d296-c5de49dfefbb"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f86+0012+0f4+005+0f4+009+0f3+0013+0f3+0014+0f4+0012+0f4+009+0f!00!0f2+005+0f3+0013+0fb+002+0f62+"
+}

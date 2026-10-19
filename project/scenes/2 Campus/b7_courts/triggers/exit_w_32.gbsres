@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "0c86ed64-0493-5edb-bb1d-23f070db379d",
+  "_index": 16,
+  "symbol": "trigger_b7_courts_exit_w_32",
+  "prefabId": "",
+  "name": "Exit w 32",
+  "x": 0,
+  "y": 32,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 27
+        },
+        "y": {
+          "type": "number",
+          "value": 58
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "2cb9dbbc-9069-2dcf-edaa-2d1fc93944cc"
+    }
+  ],
+  "leaveScript": []
+}

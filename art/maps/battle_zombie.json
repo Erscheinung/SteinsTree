@@ -1,0 +1,18 @@
+{
+ "name": "battle_zombie",
+ "title": "battle_zombie",
+ "cols": 20,
+ "rows": 18,
+ "doors": [],
+ "exits": [],
+ "spawn": [
+  1,
+  1
+ ],
+ "unique_before_reduce": 30,
+ "tiles_merged": 0,
+ "unique_tiles": 30,
+ "palette_conflicts": 0,
+ "collisions": "0f3d+00!0f2+002+0f!005+0f2+003+0f!00!0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f2+0012+0f15+",
+ "kind": "special"
+}

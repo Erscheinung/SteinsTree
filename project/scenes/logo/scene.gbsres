@@ -12,7 +12,16 @@
   "backgroundId": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
   "tilesetId": "",
   "colorModeOverride": "none",
-  "paletteIds": [],
+  "paletteIds": [
+    "after-hours",
+    "after-hours",
+    "after-hours",
+    "after-hours",
+    "after-hours",
+    "after-hours",
+    "after-hours",
+    "muj-ui"
+  ],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
   "script": [

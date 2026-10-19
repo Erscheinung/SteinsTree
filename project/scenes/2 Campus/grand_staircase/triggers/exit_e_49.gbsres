@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "c00ea141-f6c5-53d8-9521-5d3006f23664",
+  "_index": 6,
+  "symbol": "trigger_grand_staircase_exit_e_49",
+  "prefabId": "",
+  "name": "Exit e 49",
+  "x": 43,
+  "y": 49,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 84
+        },
+        "y": {
+          "type": "number",
+          "value": 75
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "03165126-bc3e-7d1a-a215-53e5c9f273fb"
+    }
+  ],
+  "leaveScript": []
+}

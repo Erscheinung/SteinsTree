@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "0df65a1c-8000-5bfb-a4a0-774778c50882",
+  "_index": 1,
+  "symbol": "actor_maths_class_mayank",
+  "prefabId": "",
+  "name": "Mayank",
+  "coordinateType": "tiles",
+  "x": 7,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e6c451a2-6ff2-44c2-9f4e-5969df82a7e0",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "b6c2ae27-3408-8154-bf80-c9deca932bbe"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "ne",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "663325d3-17b4-f072-d214-5beb5dba886b"
+                }
+              ],
+              "false": []
+            },
+            "id": "fdb267d8-acd4-74c2-a652-803c79e0861e"
+          }
+        ]
+      },
+      "id": "2fc488e4-2866-04f5-8939-ae6a53d2fc7e"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

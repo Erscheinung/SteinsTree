@@ -1,0 +1,47 @@
+{
+  "_resourceType": "trigger",
+  "id": "62ccc8bb-3d15-51af-8f28-3ca0b36cf101",
+  "_index": 3,
+  "symbol": "trigger_hall_door_if_you_d_never_met_them",
+  "prefabId": "",
+  "name": "Door: If you'd never met them",
+  "x": 19,
+  "y": 6,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "If you'd never met\nthem?"
+        ],
+        "avatarId": ""
+      },
+      "id": "47a9d56b-98d2-dfc2-4be5-e280d671f07d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "..."
+        ],
+        "avatarId": ""
+      },
+      "id": "eef17772-7e47-2747-cc67-54f9b70cf528"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...and every door\nopens onto the\nsame cricket",
+          "ground at dawn."
+        ],
+        "avatarId": ""
+      },
+      "id": "ad221bcc-8ce9-1703-acd5-f3c1cc79d4c5"
+    }
+  ],
+  "leaveScript": []
+}

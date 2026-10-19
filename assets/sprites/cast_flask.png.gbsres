@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "134cb425-eb8f-5315-ab8f-9e1a7c7ca2ab",
+  "name": "cast_flask",
+  "symbol": "sprite_cast_flask",
+  "states": [
+    {
+      "id": "371fbdb8-07b7-570c-916f-5b42a63c3912",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "5118a5fa-884c-5333-9db4-7a1fc92af6f5",
+          "frames": [
+            {
+              "id": "2e5847cb-cd4e-5341-acba-622efa569122",
+              "tiles": [
+                {
+                  "id": "b6c453ad-b2e6-5eba-a364-325e7968f621",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 5,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "235b5aa1-c4b9-5f39-86c6-b9efef83202d",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 5,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "c9d70df5-475d-5746-9b28-3090ff027a2e",
+          "frames": [
+            {
+              "id": "7ad7aa2c-6145-58c9-87b8-b263124096ca",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7caa6b8b-c391-537f-8a8e-658c49663df7",
+          "frames": [
+            {
+              "id": "bd5827f9-e2b0-55a8-a10f-e5c1f2a0fe33",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "fc962886-e1ec-594d-b43b-8a76d58aca2c",
+          "frames": [
+            {
+              "id": "74933d61-7ed5-5df1-9c1c-6a2f38df138b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "36d95217-eb06-5bad-89e4-dd408ea0730f",
+          "frames": [
+            {
+              "id": "8ecd35bd-afbd-5d45-9ea9-ec13bae85103",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "60b50bea-6f33-596c-9a2c-c0df67f4b93e",
+          "frames": [
+            {
+              "id": "0f53ec2c-6f47-52a6-b4bd-52a3353cf9bd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c94c9027-8fd4-5e50-9a23-d0ce5997a672",
+          "frames": [
+            {
+              "id": "b4efcffd-4d05-581b-8d72-0c328c0ae8bc",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "181aceaf-495b-5735-917a-47afd3235f56",
+          "frames": [
+            {
+              "id": "bed6aa76-2e5a-5a4e-a54b-68ae56bef41c",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "cast_flask.png",
+  "width": 16,
+  "height": 16,
+  "checksum": ""
+}

@@ -1,0 +1,1018 @@
+{
+  "_resourceType": "actor",
+  "id": "efcfa32d-4faf-55e9-a679-907640e1f230",
+  "_index": 4,
+  "symbol": "actor_stealth_watcher",
+  "prefabId": "",
+  "name": "Watcher",
+  "coordinateType": "tiles",
+  "x": 46,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b862c31a-fac9-5e5f-b335-8c50f1826451",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "11bd2aa4-c9a8-6d6b-224d-4488d26f753f"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "bc084365-8f84-a9c3-9e37-9a96c9cc4d64"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "164"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "126"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+                  "args": {
+                    "actorId": "player",
+                    "operator": "<=",
+                    "distance": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "otherActorId": "551108d0-c67c-5bfa-ab8a-1402caf733a6",
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "cfaad90f-d661-17a9-cd07-beb5aaf3ebe7"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.4,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "78a945ba-feaa-4ff9-bea7-ea15ae33284d"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "6248d31a-6f4e-19eb-010a-1a47ff852bae"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!! SPOTTED !!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "290742c5-f7a0-43f7-c707-dd093b2acfbd"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Anshuman: (radio)\nBack. Back to the\nlast shadow.",
+                            "Breathe. Again."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "007d289d-ab92-805f-1b66-ca3759155403"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          }
+                        },
+                        "id": "4a007e68-6815-a7ec-c5ff-80414828b9a2"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "a38eb3b8-92d2-e521-1ff1-fc13cfb3777c"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "164",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "c663661b-d877-7403-a6fa-bfcfcbf3be29"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "664cc354-776f-5926-ff0c-03bd5000a352"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+                  "args": {
+                    "actorId": "player",
+                    "operator": "<=",
+                    "distance": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "otherActorId": "d1e6e650-bb93-541f-84d4-1c5cbf8039d4",
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "ed99c3da-56d4-f55c-1951-3a83be12dbdc"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.4,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "48c4c637-ba2b-4478-fee6-cb79cb4e255c"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "2a0dc81a-05ab-463f-8b4a-4f5ec5d5e256"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!! SPOTTED !!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "9e5629e2-8d2a-e280-5df8-37de144caad2"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Anshuman: (radio)\nBack. Back to the\nlast shadow.",
+                            "Breathe. Again."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "5013faee-9cbd-f768-5eb4-3a40a288f686"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          }
+                        },
+                        "id": "d6c2807c-c60a-2006-1bbb-97f615949fa5"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "545a1b41-5ffd-53cd-decd-1f680f1f231c"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "164",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "9816a363-e51e-3166-4ae9-77fe40d10615"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "d2c59ac0-df54-7bc4-56f1-0ae811e49c0b"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+                  "args": {
+                    "actorId": "player",
+                    "operator": "<=",
+                    "distance": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "otherActorId": "4c59bd47-5bd2-59e0-9042-e49806573998",
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "afc909df-fc0a-983d-882e-007bc47da68a"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.4,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "330359c4-0098-a8da-96ad-d7871318cbe6"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "10c1f7d9-216f-a14a-4d8c-8f42c1fd048e"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!! SPOTTED !!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "34274c77-933a-c83d-e39e-6c02c44fdfe0"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Anshuman: (radio)\nBack. Back to the\nlast shadow.",
+                            "Breathe. Again."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "1e522951-935b-aa82-8850-4844fa0866a6"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          }
+                        },
+                        "id": "de81bd47-3599-6a1c-fab7-82730210e2b4"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "493a7c74-f3d9-43cf-cba6-65430e36bafa"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "164",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "2ca5cb24-4f1e-d469-a54d-0803595a43ee"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "d43bf4d9-a148-e911-f5cd-550d3ceb8a94"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+                  "args": {
+                    "actorId": "player",
+                    "operator": "<=",
+                    "distance": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "otherActorId": "595bb090-9977-51ef-b0d8-ad4658393825",
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "5220b350-284d-01e7-a7a1-a73e51dafb39"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.4,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "fb286591-6f99-d949-fb4d-8dc6daae25ff"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "2d81de62-a522-2c0b-ec2f-c98ee007e212"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!! SPOTTED !!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "3ed944d6-1f62-15ed-e7c4-f9d755ba7760"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Anshuman: (radio)\nBack. Back to the\nlast shadow.",
+                            "Breathe. Again."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "5cc7d43e-671f-ed09-c390-55f47e292f67"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          }
+                        },
+                        "id": "508085c1-6dde-aec4-2968-7aa71f3600bc"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "5e9c0af3-a409-4cc4-48cf-c970cb0854da"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "164",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "6d6ac8df-a665-8e14-93ba-7debfb2995ca"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "39389631-0a8a-af7b-ef2b-71fd733c0d52"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+                  "args": {
+                    "actorId": "player",
+                    "operator": "<=",
+                    "distance": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "otherActorId": "551108d0-c67c-5bfa-ab8a-1402caf733a6",
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "d757dcbe-5eea-95c5-c46e-ffdbf3efafa9"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.4,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "4c547022-23f7-fffb-b6e3-291e4ee2442c"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "c696ff20-9393-7525-1986-07b57199888e"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!! SPOTTED !!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "3b13c836-ef2d-4fea-3613-6b4c5880c742"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Anshuman: (radio)\nBack. Back to the\nlast shadow.",
+                            "Breathe. Again."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "73b9e459-48e3-172a-1ba3-473ed2009339"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          }
+                        },
+                        "id": "a7e226ee-8473-b306-892a-5eaede1b05c6"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "1c7c37bc-85ef-4fd5-ae1d-dd1e37a801b0"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "164",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "702fc551-cd2b-498e-4f6a-180c3ff5f90f"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "f400e891-d8bf-be5e-c9e2-6abb14a0cc70"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+                  "args": {
+                    "actorId": "player",
+                    "operator": "<=",
+                    "distance": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "otherActorId": "d1e6e650-bb93-541f-84d4-1c5cbf8039d4",
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "d2abc638-b84d-4f57-932c-daa062a65bcc"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.4,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "d1b4fb0c-1f60-16a7-81b9-2f585f080ca8"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "f9242686-45eb-5fff-2001-16537cf0d5fe"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!! SPOTTED !!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "e1cfc51d-3020-486f-2c34-1bef1ec6cb9c"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Anshuman: (radio)\nBack. Back to the\nlast shadow.",
+                            "Breathe. Again."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "df76e7d1-9c1e-0095-3998-f09445946107"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          }
+                        },
+                        "id": "0ded22ac-ace4-9820-6711-ab66bcca4f48"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "6547b5bf-fc3d-afb2-6703-c5ad3f81d51b"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "164",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "b971b787-6e9b-b471-4cee-5989b64c2dd1"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "cb5aa16c-1884-bacb-ceef-9f2745e7992b"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+                  "args": {
+                    "actorId": "player",
+                    "operator": "<=",
+                    "distance": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "otherActorId": "4c59bd47-5bd2-59e0-9042-e49806573998",
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "cbac3bdb-66bd-3887-8597-2c0dae1659c7"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.4,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "529dc997-3456-5610-11ca-636c027dd838"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "aa7b33f7-db80-4e47-5fbf-5669bbff8d3c"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!! SPOTTED !!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "83ea621c-51ed-3d03-ad93-2c10cc636879"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Anshuman: (radio)\nBack. Back to the\nlast shadow.",
+                            "Breathe. Again."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "6e85fd22-826c-777b-dbf7-dca4165e62f8"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          }
+                        },
+                        "id": "5901cb21-5472-3646-16cb-31955e4f6ecd"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "575c7d53-12ca-20fc-66b0-691dc797b16c"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "164",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "d13c4406-22ad-1bbc-495f-bff8097c4cbd"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "e1c8d736-b0e5-e62e-00a7-e79011582d75"
+                },
+                {
+                  "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+                  "args": {
+                    "actorId": "player",
+                    "operator": "<=",
+                    "distance": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "otherActorId": "595bb090-9977-51ef-b0d8-ad4658393825",
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "fc705f53-1732-392c-3acd-3d72c310bf1b"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.4,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "82ab05c4-8bdf-c384-48e4-b5cc98b76997"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.5,
+                          "frames": 30,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "73bf2e52-1fac-850c-c59e-8ba4c2e6a917"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "!! SPOTTED !!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "b7a7b35e-06c4-abe1-a5aa-24a4ef38f9f6"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Anshuman: (radio)\nBack. Back to the\nlast shadow.",
+                            "Breathe. Again."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "9cc9bd0c-7d17-ef6a-bd0e-df581de56581"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "player",
+                          "x": {
+                            "type": "number",
+                            "value": 6
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 41
+                          }
+                        },
+                        "id": "c0b9bcdc-ce7e-b62e-24d9-82eb65bc6d5d"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "165",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "aac1d583-48fc-8bbe-4928-73e9406a35f6"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "164",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "6a6c9f27-3157-9ad0-3d64-7857abd80de6"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "77460252-4801-17f7-6277-bdc761379d24"
+                }
+              ]
+            },
+            "id": "8bd14387-4527-2b9b-4a16-ede0b57a5739"
+          }
+        ],
+        "false": []
+      },
+      "id": "b1723339-286a-bfad-06d0-7c75afd2566b"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.05
+        },
+        "frames": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "6cc61d48-16a3-9e8d-acb4-bf77b2b5b83d"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

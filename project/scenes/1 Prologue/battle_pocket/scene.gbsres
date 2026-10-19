@@ -1,0 +1,715 @@
+{
+  "_resourceType": "scene",
+  "id": "8ff9e14a-fbe4-546e-9d06-3f278d33944e",
+  "_index": 129,
+  "type": "TOPDOWN",
+  "name": "1 Prologue/Pocket Critters Battle",
+  "symbol": "scene_battle_pocket",
+  "x": 200,
+  "y": 2164,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "64cf021b-2310-5b8f-97b1-7084003b7098",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "muj-spr-sparklet",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-gnawbit",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "ec013a43-461d-41fd-38f0-2ec75f83339a"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "7b6df120-4f24-50e5-8467-5c56ef1c3ecf",
+        "loop": true
+      },
+      "id": "76c2a3aa-8887-694d-946f-7271652aec78"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "POCKET BATTLE - homage only: original critters, no Nintendo assets.",
+        "__collapse": false
+      },
+      "id": "7b03e7b9-8b82-61ec-eb23-c2ccced1c50e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "117",
+        "value": {
+          "type": "number",
+          "value": 20
+        }
+      },
+      "id": "c236e93d-c769-46da-34f2-d4382cebffb2"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "118",
+        "value": {
+          "type": "number",
+          "value": 18
+        }
+      },
+      "id": "c50d8de3-b775-7d49-7289-d69cdab0c25b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "121",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "bb52aba0-d884-3710-48ca-b9bfd0e3b474"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A wild GNAWBIT\nappeared!"
+        ],
+        "avatarId": ""
+      },
+      "id": "68c89de8-e18f-92f2-3cc7-a166ad00efb7"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Go! SPARKLET!"
+        ],
+        "avatarId": ""
+      },
+      "id": "59d3a3bf-06e5-a649-5a0b-d54a6d04bd2d"
+    },
+    {
+      "command": "EVENT_LOOP_WHILE",
+      "args": {
+        "condition": {
+          "type": "gt",
+          "valueA": {
+            "type": "variable",
+            "value": "118"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "SPARKLET  HP $117$\nGNAWBIT   HP $118$"
+              ],
+              "avatarId": ""
+            },
+            "id": "f7538e97-3edf-2a49-caa9-1db96afb348d"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "119",
+              "items": 3,
+              "cancelOnLastOption": false,
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "option1": "Fight",
+              "option2": "Bag",
+              "option3": "Run"
+            },
+            "id": "880dc25e-441b-c3c1-7ba9-be8aa3dd9f8a"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "119",
+              "choices": 3,
+              "__collapseElse": true,
+              "value0": {
+                "type": "number",
+                "value": 1
+              },
+              "value1": {
+                "type": "number",
+                "value": 2
+              },
+              "value2": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "Tackle",
+                    "option2": "Spark",
+                    "option3": "Growl"
+                  },
+                  "id": "0c4ea51f-90ff-78b6-ccce-81a3acd4bd85"
+                },
+                {
+                  "command": "EVENT_SWITCH",
+                  "args": {
+                    "variable": "119",
+                    "choices": 3,
+                    "__collapseElse": true,
+                    "value0": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "value1": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "value2": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "children": {
+                    "true0": [
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "120",
+                          "operation": "set",
+                          "other": "rnd",
+                          "value": "0",
+                          "minValue": "3",
+                          "maxValue": "5",
+                          "clamp": false
+                        },
+                        "id": "d9107b4f-0194-fdee-a8e7-b85f86e2814c"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "SPARKLET used\nTACKLE!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "8950e6e4-671d-a7bd-b349-39ca7b752ae2"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "118",
+                          "operation": "sub",
+                          "other": "var",
+                          "vectorY": "120",
+                          "value": "0",
+                          "minValue": "0",
+                          "maxValue": "0",
+                          "clamp": true
+                        },
+                        "id": "98a1c1c7-9576-fd7f-8dae-c1e916e19ec9"
+                      },
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.2,
+                          "frames": 12,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 2
+                          }
+                        },
+                        "id": "1bfb7075-91ad-cc41-4025-442a99e45278"
+                      }
+                    ],
+                    "true1": [
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "120",
+                          "operation": "set",
+                          "other": "rnd",
+                          "value": "0",
+                          "minValue": "4",
+                          "maxValue": "7",
+                          "clamp": false
+                        },
+                        "id": "d7ca3c65-8879-586a-4fb9-0ab5166eb39c"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "SPARKLET used\nSPARK!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "9374922d-6b3c-f467-75cf-ea681ee12576"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.2,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "b52dab9d-244c-6d9b-a1b7-ae8df55fbda0"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_EFFECTS",
+                        "args": {
+                          "effect": "flicker",
+                          "actorId": "bb3fbe9a-8326-5e3e-bc86-de28e8d0ca10",
+                          "time": 0.4,
+                          "frames": 24
+                        },
+                        "id": "29b57687-bcaa-5b66-41f3-731b2d079337"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "118",
+                          "operation": "sub",
+                          "other": "var",
+                          "vectorY": "120",
+                          "value": "0",
+                          "minValue": "0",
+                          "maxValue": "0",
+                          "clamp": true
+                        },
+                        "id": "c63451d9-b864-86e2-113b-df70c7f931a5"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "gte",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "120"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 7
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_TEXT",
+                              "args": {
+                                "text": [
+                                  "A critical hit!"
+                                ],
+                                "avatarId": ""
+                              },
+                              "id": "9e32ead7-1268-6434-f96b-60499f1355d2"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "a7bfc65e-372c-6323-eaa8-c94ab81d1ab4"
+                      }
+                    ],
+                    "true2": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "SPARKLET used\nGROWL!",
+                            "GNAWBIT's attack\nfell. It looks...\nhungrier?"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "2189644d-6d69-a5f9-c262-ba710d6d4c83"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "121",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "1c0bcfec-e8d8-b78d-e757-a298e85b5665"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "f6cf1a8c-d6d7-007a-64f0-be777ff373bf"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You used Mom's\nladdoo!",
+                      "SPARKLET recovered\n8 HP."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "636d160a-ccab-41ae-cdef-53619659daa3"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "117",
+                    "operation": "add",
+                    "other": "val",
+                    "value": "8",
+                    "minValue": "0",
+                    "maxValue": "0",
+                    "clamp": true
+                  },
+                  "id": "efa610db-d87d-8920-5b8b-318a0b961f61"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "gt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "117"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 20
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "117",
+                          "value": {
+                            "type": "number",
+                            "value": 20
+                          }
+                        },
+                        "id": "2c8f3f14-a648-97f9-b004-f4e636462fbc"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "6a74e79f-0392-c2f7-8407-a525eb3cf852"
+                }
+              ],
+              "true2": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Can't escape!",
+                      "(Nobody escapes\nthe first battle.\nThat's the rule.)"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "7870abce-b1ed-04c8-f453-7047a2f82a21"
+                }
+              ],
+              "false": []
+            },
+            "id": "4a09180e-885b-f992-9685-659348ad0661"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "118"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "120",
+                    "operation": "set",
+                    "other": "rnd",
+                    "value": "0",
+                    "minValue": "2",
+                    "maxValue": "5",
+                    "clamp": false
+                  },
+                  "id": "1a2eacc4-ccbb-59a9-a103-863198edfbc0"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "ne",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "121"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "120",
+                          "operation": "sub",
+                          "other": "val",
+                          "value": "1",
+                          "minValue": "0",
+                          "maxValue": "0",
+                          "clamp": true
+                        },
+                        "id": "391efbe1-4441-3be7-f702-5afafa7f2466"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "445d461f-f040-e364-8f8f-7e2f974ead7a"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Wild GNAWBIT used\nBITE!"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "4deb6daf-c114-7a7c-4030-24083a954d5d"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.3,
+                    "frames": 18,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "f04b6f3e-84e0-aaa2-2348-4521e61e63ae"
+                },
+                {
+                  "command": "EVENT_VARIABLE_MATH",
+                  "args": {
+                    "vectorX": "117",
+                    "operation": "sub",
+                    "other": "var",
+                    "vectorY": "120",
+                    "value": "0",
+                    "minValue": "0",
+                    "maxValue": "0",
+                    "clamp": true
+                  },
+                  "id": "9f960e18-6099-34a8-6fac-0a360b58f68a"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lte",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "117"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "SPARKLET\nfainted...",
+                            "...You hit RESET\nlike a\nprofessional.",
+                            "Round two!"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "e3c673a4-4702-2e47-2a89-961cd1c56ac5"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "117",
+                          "value": {
+                            "type": "number",
+                            "value": 20
+                          }
+                        },
+                        "id": "8acf9a48-0c15-e9d6-3df0-438bc5169dae"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "118",
+                          "value": {
+                            "type": "number",
+                            "value": 18
+                          }
+                        },
+                        "id": "ebf52b6f-c079-79df-00e9-338160cad939"
+                      },
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "121",
+                          "value": {
+                            "type": "number",
+                            "value": 0
+                          }
+                        },
+                        "id": "d1d949ce-8373-a2c2-2e49-acb3df5a4778"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "fe7ca403-e5b9-2837-7525-45417d59a932"
+                }
+              ],
+              "false": []
+            },
+            "id": "f2b7fdc7-d9b8-8d0e-8fbe-2a42927cd265"
+          }
+        ]
+      },
+      "id": "066b9edd-9671-8c7b-a9f2-6d31ddc3d684"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "bb3fbe9a-8326-5e3e-bc86-de28e8d0ca10",
+        "time": 1.0,
+        "frames": 60
+      },
+      "id": "13448951-3cfa-9170-db4c-99333d67cb72"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "bb3fbe9a-8326-5e3e-bc86-de28e8d0ca10"
+      },
+      "id": "5170b532-7b61-0180-3cbe-bb24ee6fe580"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Wild GNAWBIT\nfainted!",
+          "SPARKLET grew to\nLv. 6!"
+        ],
+        "avatarId": ""
+      },
+      "id": "ff736d68-42e6-45c4-13b7-4848241f2628"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "...for a second,\nGNAWBIT looked\nstraight out of",
+          "the screen. At\nyou."
+        ],
+        "avatarId": ""
+      },
+      "id": "f8094bd6-78ec-901d-5aac-40cc2e6c7234"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "113",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "9c5e6322-6777-adc1-7655-2898703b6748"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4ec4e8d9-1c3e-5be9-a4fe-e162d5d7ade0",
+        "x": {
+          "type": "number",
+          "value": 12
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "up",
+        "fadeSpeed": "1"
+      },
+      "id": "bb3f4627-aab0-a33b-b996-686cad5c308e"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

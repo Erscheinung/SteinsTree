@@ -1,0 +1,44 @@
+{
+  "_resourceType": "trigger",
+  "id": "37f01d6d-da51-52b6-b92a-38d125f66441",
+  "_index": 0,
+  "symbol": "trigger_mem_flight_heathrow",
+  "prefabId": "",
+  "name": "Heathrow",
+  "x": 114,
+  "y": 0,
+  "width": 2,
+  "height": 18,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Touchdown. Grey\nsky. Red buses.",
+          "Everything smells\nlike rain and new."
+        ],
+        "avatarId": ""
+      },
+      "id": "0ece246d-0a42-35f5-eb83-e4892bdb9ed2"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "86432bc4-6fc0-50e4-9fa8-10864434c112",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "right",
+        "fadeSpeed": "1"
+      },
+      "id": "52aa0bd9-1ba3-bcfd-30e4-b083dacdb6aa"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,361 @@
+{
+  "_resourceType": "actor",
+  "id": "9c89d423-a50d-54e6-a5ca-6e1a600b1db4",
+  "_index": 7,
+  "symbol": "actor_mem_eleventh_referee",
+  "prefabId": "",
+  "name": "Referee",
+  "coordinateType": "tiles",
+  "x": 19,
+  "y": 0,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b862c31a-fac9-5e5f-b335-8c50f1826451",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "414dbc4e-2c9b-b654-a9eb-8410db61e969"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "c2e77c62-a0b1-de9a-fab6-c8204b4fd508"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "201"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "200"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 6
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "201",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "abbc4f0e-3230-5a6d-b8c7-3c2fa8e26476"
+                },
+                {
+                  "command": "EVENT_TIMER_DISABLE",
+                  "args": {
+                    "timer": 1
+                  },
+                  "id": "8db39876-b20e-f5c8-6ae0-1da432f7d8c6"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 1.0,
+                    "frames": 60,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 6
+                    }
+                  },
+                  "id": "56b8444f-eb20-125c-eccf-b1952eb02e58"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "crash",
+                    "priority": "medium",
+                    "pitch": 4,
+                    "frequency": 100,
+                    "duration": 1.0,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "33290edf-67d7-59f5-7723-577bc8163835"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Too much. The\norbits pull you\nin.",
+                      "Until it crashes.",
+                      "The spaceship is\nlost. You have to\nget out."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "8519c0fa-4af0-594e-8bfe-1b5ca8d67014"
+                },
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dreamb-grass",
+                    "palette1": "muj-dreamb-path",
+                    "palette2": "muj-dreamb-stone",
+                    "palette3": "muj-dreamb-brick",
+                    "palette4": "muj-dreamb-roof",
+                    "palette5": "muj-dreamb-water",
+                    "palette6": "muj-dreamb-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "5a0c0a3a-df2d-0473-efb1-4dd51ae82e9f"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 2,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "Walk",
+                    "option2": "Build it anew"
+                  },
+                  "id": "9a810752-2721-4f92-bfac-14909281bcfe"
+                },
+                {
+                  "command": "EVENT_SWITCH",
+                  "args": {
+                    "variable": "119",
+                    "choices": 2,
+                    "__collapseElse": true,
+                    "value0": {
+                      "type": "number",
+                      "value": 1
+                    },
+                    "value1": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "children": {
+                    "true0": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "So you walk. One\nfoot. Then the\nother."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "78d1a3e8-7c0f-9cca-a1c7-1ec957380cb6"
+                      }
+                    ],
+                    "true1": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "So you build it\nagain. Badly. Then\nless badly."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "eb250ef2-a684-68c9-5282-9cb4e61de0db"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "1a0b0ec4-44de-5550-92e3-4836e404d962"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "MEMORY END - reflection",
+                    "__collapse": false
+                  },
+                  "id": "902e5b3b-edc4-a6ca-b073-16fc7b28ffe1"
+                },
+                {
+                  "command": "EVENT_ACTOR_SHOW",
+                  "args": {
+                    "actorId": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed"
+                  },
+                  "id": "ccfd6af0-4342-84d6-d419-d9ee06725e13"
+                },
+                {
+                  "command": "EVENT_ACTOR_EFFECTS",
+                  "args": {
+                    "effect": "flicker",
+                    "actorId": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed",
+                    "time": 0.6,
+                    "frames": 36
+                  },
+                  "id": "0f5ae0d5-905e-1a99-2d9a-498ff8fe8b70"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: Too many\norbits. Too many\nplans.",
+                      "Everything\npulling.",
+                      "Kanishk: You can't\nplan every\nvariable.",
+                      "You can only\nchoose your next\nmove."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "64bcce02-5630-df88-8b4e-172069677205"
+                },
+                {
+                  "command": "EVENT_ACTOR_EFFECTS",
+                  "args": {
+                    "effect": "flicker",
+                    "actorId": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed",
+                    "time": 0.6,
+                    "frames": 36
+                  },
+                  "id": "a75a3271-3268-6ecc-90ae-3a6e499c4e1c"
+                },
+                {
+                  "command": "EVENT_ACTOR_HIDE",
+                  "args": {
+                    "actorId": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed"
+                  },
+                  "id": "ca3aff88-7c91-b642-6aa5-78594e313a98"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "177"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "177",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "40da6945-4bb3-206a-1d86-5556093c0a28"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "136"
+                        },
+                        "id": "07955093-863c-b601-951f-7f45bc068eb0"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "816c1461-55ce-2210-ede4-d8b87aa5eeb5"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "cb8c8ac9-1d01-994b-fbbb-6b7906586b34"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "7675658b-75f2-fa18-edce-4be9cd0951dd"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "1"
+                  },
+                  "id": "016781e8-cfd4-3be9-69e7-468b85bb396f"
+                }
+              ],
+              "false": []
+            },
+            "id": "225fea59-ef39-5766-48ce-261b262dcd94"
+          }
+        ],
+        "false": []
+      },
+      "id": "19bca51d-ab4e-35c6-b33e-7fe74fa5c347"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.1
+        },
+        "frames": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "137bea42-870f-35c1-93cc-719a6abf488d"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

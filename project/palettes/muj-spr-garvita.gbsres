@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-garvita",
+  "name": "Sprite: Garvita",
+  "colors": [
+    "F8D8B8",
+    "D85890",
+    "983060",
+    "301828"
+  ],
+  "defaultName": "Sprite: Garvita",
+  "defaultColors": [
+    "F8D8B8",
+    "D85890",
+    "983060",
+    "301828"
+  ]
+}

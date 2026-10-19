@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "3bfd612c-763c-5e9b-ba3d-500ddab91c76",
+  "_index": 1,
+  "symbol": "trigger_hostel_avenue_exit_n_19",
+  "prefabId": "",
+  "name": "Exit n 19",
+  "x": 19,
+  "y": 0,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 35
+        },
+        "y": {
+          "type": "number",
+          "value": 84
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "aaa915f9-1195-8947-1d49-7c856b02472c"
+    }
+  ],
+  "leaveScript": []
+}

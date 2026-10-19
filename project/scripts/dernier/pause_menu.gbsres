@@ -1,0 +1,407 @@
+{
+  "_resourceType": "script",
+  "id": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+  "name": "Dernier/Pause Menu",
+  "symbol": "script_pause_menu",
+  "description": "START menu: objective, bonds, save, chapter select, title",
+  "variables": {},
+  "actors": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "115",
+        "choices": 16,
+        "__collapseElse": false,
+        "value0": {
+          "type": "number",
+          "value": 1
+        },
+        "value1": {
+          "type": "number",
+          "value": 2
+        },
+        "value2": {
+          "type": "number",
+          "value": 3
+        },
+        "value3": {
+          "type": "number",
+          "value": 4
+        },
+        "value4": {
+          "type": "number",
+          "value": 5
+        },
+        "value5": {
+          "type": "number",
+          "value": 6
+        },
+        "value6": {
+          "type": "number",
+          "value": 7
+        },
+        "value7": {
+          "type": "number",
+          "value": 8
+        },
+        "value8": {
+          "type": "number",
+          "value": 9
+        },
+        "value9": {
+          "type": "number",
+          "value": 10
+        },
+        "value10": {
+          "type": "number",
+          "value": 11
+        },
+        "value11": {
+          "type": "number",
+          "value": 12
+        },
+        "value12": {
+          "type": "number",
+          "value": 13
+        },
+        "value13": {
+          "type": "number",
+          "value": 14
+        },
+        "value14": {
+          "type": "number",
+          "value": 15
+        },
+        "value15": {
+          "type": "number",
+          "value": 16
+        }
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Physics\nclass, AB1"
+              ],
+              "avatarId": ""
+            },
+            "id": "2f9cc8a3-f6e9-1c78-c45d-dd9806e90157"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Dinner, Quess\nMess"
+              ],
+              "avatarId": ""
+            },
+            "id": "1f9c53da-e6c0-0080-1216-51e14e56fca9"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Free evening.\nFriends: NBC,\navenue, scrub",
+                "trail, cricket,\nDome, B7 courts"
+              ],
+              "avatarId": ""
+            },
+            "id": "e493955c-6c2f-fc89-4254-acc08dd19fe2"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Sleep. B7,\nroom 10"
+              ],
+              "avatarId": ""
+            },
+            "id": "6056ba1f-3386-c089-d8b3-cc79fa2ae135"
+          }
+        ],
+        "true4": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Maths class,\nAB2"
+              ],
+              "avatarId": ""
+            },
+            "id": "b78f7c17-1fc1-0a34-5c3b-6943892de14d"
+          }
+        ],
+        "true5": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Cricket match"
+              ],
+              "avatarId": ""
+            },
+            "id": "54a16522-096c-f645-bba4-8021a0ae1dbb"
+          }
+        ],
+        "true6": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Chemistry\nlab, AB3"
+              ],
+              "avatarId": ""
+            },
+            "id": "058a2f87-d2a1-8318-dcb8-cc19574053fd"
+          }
+        ],
+        "true7": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Workshop\npractical"
+              ],
+              "avatarId": ""
+            },
+            "id": "a876dacd-eb1e-f2c1-c163-2a8982ce4410"
+          }
+        ],
+        "true8": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Night walk\nbehind B7"
+              ],
+              "avatarId": ""
+            },
+            "id": "5300f847-b571-475a-5043-5fe168861eec"
+          }
+        ],
+        "true9": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Hold the\nQuess Mess"
+              ],
+              "avatarId": ""
+            },
+            "id": "e81c5ba5-be3e-9cfa-e698-2128659ca8ce"
+          }
+        ],
+        "true10": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Hostel Avenue"
+              ],
+              "avatarId": ""
+            },
+            "id": "5cab9864-bbc8-fd82-f8da-ea80d7f09dc5"
+          }
+        ],
+        "true11": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: The Underpass"
+              ],
+              "avatarId": ""
+            },
+            "id": "02188940-9df1-8aa1-b101-f83235078cfb"
+          }
+        ],
+        "true12": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: Grand\nStaircase"
+              ],
+              "avatarId": ""
+            },
+            "id": "3e163540-18dc-52a3-aec4-a04c99c53c9b"
+          }
+        ],
+        "true13": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: AB2 rooftops"
+              ],
+              "avatarId": ""
+            },
+            "id": "726baff6-d6d2-b2ec-209f-87bafb2e47e4"
+          }
+        ],
+        "true14": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: The Dome"
+              ],
+              "avatarId": ""
+            },
+            "id": "059df709-0cf4-55c8-feba-0aad865e012e"
+          }
+        ],
+        "true15": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: The middle."
+              ],
+              "avatarId": ""
+            },
+            "id": "11615d6e-9046-b943-843c-c79916152c33"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "NOW: keep going."
+              ],
+              "avatarId": ""
+            },
+            "id": "9281f059-167a-8026-ded6-da618650ddc5"
+          }
+        ]
+      },
+      "id": "bb814d2a-2d04-9ac3-17e9-6909aa1a3538"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "BONDS\nMayank $122$  Divy $123$\nKani $124$  Parag $125$",
+          "BONDS\nAnsh $126$  Garv $127$\nGrade $139$"
+        ],
+        "avatarId": ""
+      },
+      "id": "0a37741e-65db-c679-40c1-8177c5dd775d"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "119",
+        "items": 4,
+        "cancelOnLastOption": false,
+        "cancelOnB": false,
+        "layout": "menu",
+        "option1": "Resume",
+        "option2": "Save",
+        "option3": "Chapters",
+        "option4": "Title"
+      },
+      "id": "5c454345-6a99-a723-1ac3-20bbd9827a2c"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "119",
+        "choices": 3,
+        "__collapseElse": true,
+        "value0": {
+          "type": "number",
+          "value": 2
+        },
+        "value1": {
+          "type": "number",
+          "value": 3
+        },
+        "value2": {
+          "type": "number",
+          "value": 4
+        }
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_SAVE_DATA",
+            "args": {
+              "saveSlot": 0
+            },
+            "children": {
+              "true": [],
+              "load": []
+            },
+            "id": "e1469a49-baee-a93e-90a9-dad2cd3e5865"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Saved."
+              ],
+              "avatarId": ""
+            },
+            "id": "19f80187-eefb-1138-e675-b457b9550a2c"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_SCENE_PUSH_STATE",
+            "args": {},
+            "id": "6d121cfa-5102-418e-0b60-3d1677bdaf2d"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "10cfca53-45fb-52a1-9baa-452524506283",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "7b0aab4b-5a4f-0de8-c858-70e7915ea186"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "4912bee2-387a-472f-ae4f-6679b6149517",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": "2"
+            },
+            "id": "e7393203-2bf6-623e-f72d-411ab108e4a5"
+          }
+        ],
+        "false": []
+      },
+      "id": "bb5dce63-6c88-0cb9-73a1-b5b09e93e21a"
+    }
+  ]
+}

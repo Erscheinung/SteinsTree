@@ -1,0 +1,140 @@
+{
+  "_resourceType": "scene",
+  "id": "ae6ab652-9f4a-5aa3-bce9-48c9ef1d2519",
+  "_index": 145,
+  "type": "TOPDOWN",
+  "name": "5 The Middle/Memory: Muskaan's theme",
+  "symbol": "scene_mem_muskaan",
+  "x": 1872,
+  "y": 5216,
+  "width": 32,
+  "height": 20,
+  "backgroundId": "adbaa27b-99d0-5719-95d0-29e7a11313a8",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-dusk-grass",
+    "muj-dusk-path",
+    "muj-dusk-stone",
+    "muj-dusk-brick",
+    "muj-dusk-roof",
+    "muj-dusk-water",
+    "muj-dusk-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "muj-spr-muskaan",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "579222a8-0ec1-d30d-81bf-129990acf493"
+          }
+        ]
+      },
+      "id": "56e579c3-1a4d-786e-e180-778d5ddcba50"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-dusk-grass",
+        "palette1": "muj-dusk-path",
+        "palette2": "muj-dusk-stone",
+        "palette3": "muj-dusk-brick",
+        "palette4": "muj-dusk-roof",
+        "palette5": "muj-dusk-water",
+        "palette6": "muj-dusk-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "57daf7ee-42da-13e1-add9-b47d7d3d9e68"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "df1e087a-98ee-572d-962f-3952b685ce14",
+        "loop": true
+      },
+      "id": "d9a8d44f-3e92-4fc7-1d06-b9e5601c33a1"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+        "persist": true
+      },
+      "id": "3a3d03af-d32e-83da-0522-b4c243a91c7a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 4
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "31770354-fed9-4000-8c63-1595b0328f26"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "187",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "7a72609a-5927-be76-9939-e8c857e31123"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY 4 - MUSKAAN (mechanic: she keeps reappearing; follow her)",
+        "__collapse": false
+      },
+      "id": "8e91067e-97c9-5866-2b5a-4d16117d09f0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A field at the end\nof the school day.",
+          "The same song is\nplaying that\nalways plays."
+        ],
+        "avatarId": ""
+      },
+      "id": "03a9dc90-f3eb-eb44-b0ef-9c193afc0f42"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0064+0f3+001d+0f3+001d+0f3+0048+0f2+00c7+0f3+001d+0f3+001d+0f3+0085+"
+}

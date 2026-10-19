@@ -1,0 +1,235 @@
+{
+  "_resourceType": "scene",
+  "id": "9166df3b-62a7-5693-aafd-875760597fce",
+  "_index": 106,
+  "type": "TOPDOWN",
+  "name": "2 Campus/Girls' Blocks G1-G4",
+  "symbol": "scene_girls_blocks",
+  "x": 3504,
+  "y": 2692,
+  "width": 72,
+  "height": 42,
+  "backgroundId": "a2a302f5-bb37-56a2-be73-377234445ffb",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "22a717ac-7fab-d22d-d1a2-677bbd9d2fdc"
+          }
+        ]
+      },
+      "id": "6c70ade4-8c08-37bd-ac03-b5fd2ba90abd"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "847d896b-129e-c795-da17-696fbab61876"
+                }
+              ],
+              "false": []
+            },
+            "id": "7bd5750d-4aac-df0e-76aa-e4239fdc0e44"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "3d6da5e3-c3eb-a42f-5ad9-3b41fab43f36"
+                }
+              ],
+              "false": []
+            },
+            "id": "71e2b84a-8f09-6b71-8621-61edd461aa68"
+          }
+        ]
+      },
+      "id": "4980659f-6c4f-c301-b315-79ce67e39ee7"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "2105a550-56b4-80f7-03fb-cb65292f9cab"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "c5ad8f49-6712-6bf9-6a8b-0b1b63ce4e21"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Girls' Blocks",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "30807638-5685-c1fe-e00f-ae1998d21b03"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "679c1e91-ace9-4459-f7d4-4c3298b6fa87"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "8e0dd4e1-3017-d0b3-650c-82e58640c126"
+          }
+        ],
+        "false": []
+      },
+      "id": "9fb8dd27-793c-83a8-32b6-946fdb6e16cc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f22+004+0f23+0046+0f!0047+0f!0047+0f!0042+0f2+003+0f!0033+0f2+004+0f2+007+0f2+003+0f2+001d+0f2+002+0f2+002+0f2+005+0f2+004+0f2+004+0f2+004+0f2+006+0fc+00a+0f2+002+0f2+003+0f2+002+0f2+002+0f2+002+0f2+00!0f2+00!0f2+009+0f2+002+0f2+006+0fc+007+0f2+00!0f2+002+0f2+005+0f2+002+0f2+004+0f2+003+0f7+00!0f2+002+0f2+006+0f2+002+0fe+002+0f2+00!0f2+003+0f2+004+0f2+00!0f2+002+0f12+00!0f2+00a+0f2+002+0fe+002+0f2+00!0f10+003+0f11+0011+0fc+007+0f10+004+0f10+0011+0fc+007+0f10+002+0f12+0011+0fc+007+0f10+002+0fb+008+0f2+00e+0fc+007+0f5+00f+0f5+00c+0f2+00e+0fc+007+0f5+00f+0f5+007+0f2+0013+0fd+006+0f5+00f+0f5+004+0f2+00!0f2+0013+0fd+006+0f5+00f+0f5+004+0f2+00!0f5+007+0f2+007+0fd+006+0f5+00f+0f5+007+0f5+007+0f2+007+0fd+006+0f5+00f+0f5+007+0f5+00a+0f2+005+0fc+007+0f4+00f+0f5+007+0f5+00a+0f2+005+0fc+007+0f4+00f+0f6+006+0f5+008+0f2+007+0fc+007+0f4+00f+0f6+006+0f5+008+0f2+00!0f2+004+0fc+007+0f4+00f+0f6+006+0f5+00b+0f2+003+0fd+007+0f4+00f+0f8+004+0f5+0010+0fd+007+0f4+0010+0f4+00!0f2+004+0f5+0010+0f7+00!0f5+0026+0f5+0010+0f2+0028+0f2+002+0f2+003+0f8+00d+0f2+0028+0f2+002+0f2+002+0f9+004+0f2+007+0f2+0027+0f10+006+0f2+007+0f!0028+0f10+003+0f2+004+0f2+004+0f!0022+0f2+004+0f10+003+0f2+004+0f2+004+0f!0022+0f2+004+0ff+0010+0f!0020+0f2+006+0f4+001b+0f2+001f+0f2+0025+0f2+0022+0f2+0016+0f2+002+0f2+006+0f2+0013+0f2+008+0f2+003+0f2+0016+0f2+002+0f2+006+0f2+00!0f2+004+0f2+00a+0f2+008+0f2+0019+0f2+00c+0f2+00!0f2+00!0f2+00!0f2+0018+0f2+00f+0f2+004+0f2+003+0f2+003+0f2+002+0f!005+0f2+004+0f2+002+0f2+00c+0f2+003+0f2+004+0f2+006+0f2+00!0f2+009+0f2+003+0f2+002+0f!005+0fc+00c+0f2+009+0f2+006+0f2+0015+0f16+004+0f6+003+0f2+004+0f3+004+0f8+004+0f5+003+0f2+002+0f!"
+}

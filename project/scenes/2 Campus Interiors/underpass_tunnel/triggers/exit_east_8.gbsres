@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "d3c7810d-f9ab-54d5-9a96-06149191c04a",
+  "_index": 3,
+  "symbol": "trigger_underpass_tunnel_exit_east_8",
+  "prefabId": "",
+  "name": "Exit east 8",
+  "x": 31,
+  "y": 8,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "239a3611-8abd-5334-934f-f3cbd3100024",
+        "x": {
+          "type": "number",
+          "value": 29
+        },
+        "y": {
+          "type": "number",
+          "value": 4
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "3065acb2-de5c-b65e-b7ea-498c0c0afc7a"
+    }
+  ],
+  "leaveScript": []
+}

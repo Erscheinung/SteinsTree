@@ -1,0 +1,60 @@
+{
+  "_resourceType": "trigger",
+  "id": "66944184-9026-507e-80dc-3a57f818ce9f",
+  "_index": 2,
+  "symbol": "trigger_mem_twelfth_sign_2",
+  "prefabId": "",
+  "name": "Sign 2",
+  "x": 30,
+  "y": 9,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "190"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Rank > Dreams"
+              ],
+              "avatarId": ""
+            },
+            "id": "f0b6e3b6-2472-97e9-48e3-b0b389b51ccc"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "190",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "76b01eb2-3d67-4c7c-7b5e-3cdd51878303"
+          }
+        ],
+        "false": []
+      },
+      "id": "c5d91eb0-3288-96db-0cd4-b083ddfa43ff"
+    }
+  ],
+  "leaveScript": []
+}

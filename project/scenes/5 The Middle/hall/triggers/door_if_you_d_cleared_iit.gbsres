@@ -1,0 +1,45 @@
+{
+  "_resourceType": "trigger",
+  "id": "aa5a025e-07a1-5dc2-9733-dd26db93a8c2",
+  "_index": 0,
+  "symbol": "trigger_hall_door_if_you_d_cleared_iit",
+  "prefabId": "",
+  "name": "Door: If you'd cleared IIT",
+  "x": 4,
+  "y": 6,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "If you'd cleared\nIIT?"
+        ],
+        "avatarId": ""
+      },
+      "id": "ac39646f-58a3-edb5-cfb8-895f3a6598f1"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A different\nhostel. Different\nfriends.",
+          "Somewhere, a\ndifferent room 10."
+        ],
+        "avatarId": ""
+      },
+      "id": "54817f32-c3bc-94f0-844a-b88ac1a792d9"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "",
+        "__collapse": false
+      },
+      "id": "8a439264-a830-8aec-dec9-4b07394ca391"
+    }
+  ],
+  "leaveScript": []
+}

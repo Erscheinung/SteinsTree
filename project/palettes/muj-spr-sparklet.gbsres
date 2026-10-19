@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-sparklet",
+  "name": "Sprite: Sparklet",
+  "colors": [
+    "F8F0B0",
+    "F09838",
+    "A05818",
+    "382010"
+  ],
+  "defaultName": "Sprite: Sparklet",
+  "defaultColors": [
+    "F8F0B0",
+    "F09838",
+    "A05818",
+    "382010"
+  ]
+}

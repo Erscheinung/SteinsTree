@@ -1,0 +1,54 @@
+{
+  "_resourceType": "trigger",
+  "id": "80e27863-7ba3-529b-8c4e-b622c4106a7c",
+  "_index": 8,
+  "symbol": "trigger_rooftop_fall",
+  "prefabId": "",
+  "name": "Fall",
+  "x": 0,
+  "y": 17,
+  "width": 100,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.3,
+        "frames": 18,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "id": "a80f7981-c026-88e3-9c8c-941ac74ab60d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: Got you!\nAgain. Momentum,\nthen jump."
+        ],
+        "avatarId": ""
+      },
+      "id": "8e16b71f-4597-dd39-75db-4920cc55fad4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "variable",
+          "value": "170"
+        },
+        "y": {
+          "type": "variable",
+          "value": "171"
+        }
+      },
+      "id": "5211c4bf-21c4-16a9-083d-649812d4cacb"
+    }
+  ],
+  "leaveScript": []
+}

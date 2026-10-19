@@ -1,0 +1,64 @@
+{
+  "_resourceType": "scene",
+  "id": "fd223a5f-7148-4705-98a7-b0ef56cb5c74",
+  "_index": 131,
+  "type": "TOPDOWN",
+  "name": "0 Menus/Pause Menu",
+  "symbol": "scene_pause",
+  "x": 0,
+  "y": 1900,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a0c140ac-ce4f-569b-ae2e-30dfaf8c3b57",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "592a4e85-d309-0fa1-d5a8-a69f763efd48"
+    },
+    {
+      "command": "EVENT_CALL_CUSTOM_EVENT",
+      "args": {
+        "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+        "__name": "Pause Menu"
+      },
+      "id": "2756b928-b580-d84a-2eda-60b15181ba18"
+    },
+    {
+      "command": "EVENT_SCENE_POP_STATE",
+      "args": {
+        "fadeSpeed": "2"
+      },
+      "id": "7aa4ae56-1521-9107-35fb-19f2dc9d9342"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

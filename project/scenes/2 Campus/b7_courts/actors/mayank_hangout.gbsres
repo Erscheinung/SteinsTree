@@ -1,0 +1,288 @@
+{
+  "_resourceType": "actor",
+  "id": "175e74af-e27a-53bf-8d49-e357e23b4624",
+  "_index": 0,
+  "symbol": "actor_b7_courts_mayank_hangout",
+  "prefabId": "",
+  "name": "Mayank (hangout)",
+  "coordinateType": "tiles",
+  "x": 20,
+  "y": 20,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e6c451a2-6ff2-44c2-9f4e-5969df82a7e0",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "HANGOUT - Mayank (Persona social link). Raises Bond_Mayank.",
+        "__collapse": false
+      },
+      "id": "63653a6d-f524-a425-c324-cb278e27a62c"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Hang out",
+        "falseText": "Not now"
+      },
+      "id": "8517d93e-fcf7-8b55-a051-e45e497e6239"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: First\nweek's always\nweird.",
+                      "You'll get used to\nit. Or I'll get\nused to you.",
+                      "Mayank: I came\nhere because my\ncousin did.",
+                      "Not a great\nreason. Turned out\nokay.",
+                      "Mayank: Why did\nyou come here?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "74340723-760d-a52a-7f7e-a641b3b6b6b1"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: You didn't\nanswer yesterday.",
+                      "About why you came\nhere.",
+                      "Mayank: It's fine.\nNobody really\nknows.",
+                      "We just end up\nsomewhere and make\nit ours.",
+                      "Mayank: Hey. Glad\nit's you in room\n10."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "7a9a3209-62d3-5320-6812-f8465e0d18d8"
+                }
+              ]
+            },
+            "id": "56598a81-e15f-8eb4-1781-96fa91430014"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "122",
+              "operation": "add",
+              "other": "val",
+              "value": "1",
+              "minValue": "0",
+              "maxValue": "0",
+              "clamp": true
+            },
+            "id": "3dc7b426-3d98-a011-9145-263c6453463f"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The evening slips\naway. You walk\nback to B7."
+              ],
+              "avatarId": ""
+            },
+            "id": "45ed66c7-84ab-855b-641e-e55bd917bc04"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "f82b72f9-6d89-162c-fe48-d4139553a855"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "115",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "52e20095-801a-0186-9f4e-befc7c28f75c"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "144",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "e13c5221-6f35-e3dc-2c87-6f3d7a113f94"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "668c5e68-095f-0fba-eaf1-58d00de94e5f"
+          }
+        ],
+        "false": []
+      },
+      "id": "20be4b0c-0497-9b3f-91d7-586f7a0690f8"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "101"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "b4a0c1a4-70ee-814f-bc98-f9c589adc44f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "4b576ed4-dcec-42fa-8166-c66527494154"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "100"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "b7790645-1fde-cde5-89b3-36d120628db9"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "c0a29b7a-004a-ff6d-2f08-71aee5185e5e"
+                }
+              ]
+            },
+            "id": "98ebd46c-eb3b-7376-3532-a5502c223007"
+          }
+        ]
+      },
+      "id": "fe3420bb-0b2a-58a3-71ef-727fbb9573ee"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

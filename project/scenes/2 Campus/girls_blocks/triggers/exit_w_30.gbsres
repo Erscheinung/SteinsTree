@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "aa503262-d66c-5744-9280-ac5a9a365883",
+  "_index": 10,
+  "symbol": "trigger_girls_blocks_exit_w_30",
+  "prefabId": "",
+  "name": "Exit w 30",
+  "x": 0,
+  "y": 30,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "number",
+          "value": 98
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "90c204e3-d299-ca3b-44a0-38b827642a2b"
+    }
+  ],
+  "leaveScript": []
+}

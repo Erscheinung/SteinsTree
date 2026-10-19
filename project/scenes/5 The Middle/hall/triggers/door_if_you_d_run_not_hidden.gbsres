@@ -1,0 +1,45 @@
+{
+  "_resourceType": "trigger",
+  "id": "30fa992c-5ead-576b-8228-883094afe298",
+  "_index": 4,
+  "symbol": "trigger_hall_door_if_you_d_run_not_hidden",
+  "prefabId": "",
+  "name": "Door: If you'd run, not hidden",
+  "x": 22,
+  "y": 6,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "If you'd run, not\nhidden?"
+        ],
+        "avatarId": ""
+      },
+      "id": "bbcfcc73-7edb-512e-0e6a-ca2b1eb6aa4c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You'd have been\nsomewhere else.",
+          "The middle would\nstill be the\nmiddle."
+        ],
+        "avatarId": ""
+      },
+      "id": "10681945-9835-e48f-29e3-8558e9969779"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "",
+        "__collapse": false
+      },
+      "id": "23f16b5d-6ddd-92be-d389-4b109df125f9"
+    }
+  ],
+  "leaveScript": []
+}

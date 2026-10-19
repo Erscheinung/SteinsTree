@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-storm",
+  "name": "Sprite: Storm",
+  "colors": [
+    "F0F0F8",
+    "8890A8",
+    "585870",
+    "202030"
+  ],
+  "defaultName": "Sprite: Storm",
+  "defaultColors": [
+    "F0F0F8",
+    "8890A8",
+    "585870",
+    "202030"
+  ]
+}

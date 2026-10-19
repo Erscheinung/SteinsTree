@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-prof",
+  "name": "Sprite: Prof",
+  "colors": [
+    "F0C8A0",
+    "987048",
+    "604028",
+    "282018"
+  ],
+  "defaultName": "Sprite: Prof",
+  "defaultColors": [
+    "F0C8A0",
+    "987048",
+    "604028",
+    "282018"
+  ]
+}

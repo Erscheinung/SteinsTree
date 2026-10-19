@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "1906e9b3-23ea-5d39-91a4-f53f5a3eb3e2",
+  "name": "home_india",
+  "symbol": "bg_home_india",
+  "tileColors": "0242+0319+04!033+04!035+04!034+02!036+04!039+04!039+06!023+039+026+06!032+06!023+032+064+033+022+032+022+06!032+024+039+026+00!032+024+039+027+034+0212+034+0212+032+00!0213+03b+062+03a+0258+",
+  "filename": "muj/home_india.png",
+  "width": 22,
+  "height": 18,
+  "imageWidth": 176,
+  "imageHeight": 144
+}

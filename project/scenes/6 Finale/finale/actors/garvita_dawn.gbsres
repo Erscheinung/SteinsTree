@@ -1,0 +1,117 @@
+{
+  "_resourceType": "actor",
+  "id": "195fc82a-49ce-5942-b924-b7d48a15f16f",
+  "_index": 4,
+  "symbol": "actor_finale_garvita_dawn",
+  "prefabId": "",
+  "name": "Garvita (dawn)",
+  "coordinateType": "tiles",
+  "x": 41,
+  "y": 28,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5ecd17ee-15a6-5e5c-a15b-2bec9d34f800",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "197"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "137"
+            },
+            "id": "3da1da8b-f992-1e2f-7b24-109c13c5f205"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "197",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "aa59e2e8-3182-cdb9-d293-c1eee3869e8f"
+          }
+        ],
+        "false": []
+      },
+      "id": "c6d625a3-66c3-1464-8cb3-3a7aa3ac93ad"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "127"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Garvita: I ran so\nfar.",
+                "And look who's\nwaiting at the\nfinish."
+              ],
+              "avatarId": ""
+            },
+            "id": "b7b97cf4-e50f-83a5-d8f9-4d160050b368"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Garvita: Race you\nto the pavilion.",
+                "For real this\ntime."
+              ],
+              "avatarId": ""
+            },
+            "id": "f7e52c11-c478-19bf-0095-36812eac917e"
+          }
+        ]
+      },
+      "id": "22041b8f-a476-966c-4233-374789fe4296"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

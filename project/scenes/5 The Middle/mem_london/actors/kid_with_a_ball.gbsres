@@ -1,0 +1,62 @@
+{
+  "_resourceType": "actor",
+  "id": "ec38787f-f8d3-5352-bef8-49bf7d4b8149",
+  "_index": 0,
+  "symbol": "actor_mem_london_kid_with_a_ball",
+  "prefabId": "",
+  "name": "Kid with a ball",
+  "coordinateType": "tiles",
+  "x": 10,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "703e607f-7f18-5da5-a5e7-99bfaf73f6be",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Kid: Oi! You any\ngood? We need a\nkeeper."
+        ],
+        "avatarId": ""
+      },
+      "id": "968cb194-0eee-17cc-2ebc-3d94bd550739"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "You were terrible.\nYou were happy.",
+          "(LIFE: football\nwith friends, fun\nwith kids)"
+        ],
+        "avatarId": ""
+      },
+      "id": "c8014cb2-e5e2-7f77-a42e-3bdb02975747"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "183",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "b5984ff3-a83e-6ff6-2b0b-5da26d1bf53b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

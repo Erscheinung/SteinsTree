@@ -1,0 +1,229 @@
+{
+  "_resourceType": "actor",
+  "id": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+  "_index": 0,
+  "symbol": "actor_mayank",
+  "prefabId": "",
+  "name": "Mayank",
+  "coordinateType": "tiles",
+  "x": 9,
+  "y": 11,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "dfa75239-299d-41fe-a6cd-9e9438da1938",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "daf198f9-0a90-4db3-b422-6ed3f49a407a",
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapse": false,
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "e35d5f62-2347-41ff-b978-37175c19f7f8",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Something weird is\ngoing on..."
+              ]
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "startScript": [
+    {
+      "id": "68384fa5-44fc-4c90-a690-7bef98297a8a",
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L0",
+        "__collapseElse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "2541af5d-bdea-43a1-be2a-6224fa360654",
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+              "speed": 3
+            }
+          },
+          {
+            "id": "12f49f93-23b2-4f2b-acee-8aa2c271f406",
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "useCollisions": false,
+              "verticalFirst": false,
+              "collideWith": []
+            }
+          },
+          {
+            "id": "8c21b75c-7cac-4c58-8a01-da70f89e8954",
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+              "x": {
+                "type": "number",
+                "value": 15
+              },
+              "y": {
+                "type": "number",
+                "value": 18
+              },
+              "useCollisions": false,
+              "verticalFirst": false,
+              "collideWith": []
+            }
+          },
+          {
+            "id": "9d7e3e4c-1f46-4fef-8c81-02d5de82e6ee",
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+              "x": {
+                "type": "number",
+                "value": 18
+              },
+              "y": {
+                "type": "number",
+                "value": 18
+              },
+              "useCollisions": false,
+              "verticalFirst": false,
+              "collideWith": []
+            }
+          },
+          {
+            "id": "f67cd030-9224-4be2-9a0a-73a40ed80987",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Hey! Did\nyou\nhear that?"
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "e6561cee-cd4c-4768-9eda-82d43392fd89",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You: Yeah, what\nwas that?"
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "9dbbd971-67ee-41be-a75c-f9901a049a38",
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+              "emoteId": "7054718e-2614-42fc-9ca3-9c10cf5c6199"
+            }
+          },
+          {
+            "id": "902682df-7d84-49b8-9923-9e91a674e4b6",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: I don't\nknow but it seems\nlike it",
+                "came from the B7\nmain gate area."
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "4bda1f48-df0a-42d2-b00e-d6ec28e0b3e1",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You: I'm gonna\ncheck it out."
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "6459be52-ae71-4d27-8a50-feea03f28c31",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Ok, I'll\nwait here."
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "ee7f477b-022d-471c-ac2b-42a21c240024",
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "$self$",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    },
+    {
+      "id": "66a18f6e-b94e-4bad-925c-023e8f55d21f",
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "L0",
+        "value": {
+          "type": "true"
+        }
+      }
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

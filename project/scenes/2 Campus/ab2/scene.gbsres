@@ -1,0 +1,235 @@
+{
+  "_resourceType": "scene",
+  "id": "a451ebb9-48d6-5fb1-971a-03446032d3f3",
+  "_index": 111,
+  "type": "TOPDOWN",
+  "name": "2 Campus/Academic Block 2 & Amphitheatre",
+  "symbol": "scene_ab2",
+  "x": 0,
+  "y": 3672,
+  "width": 64,
+  "height": 70,
+  "backgroundId": "94416ccd-38d5-5f19-b91a-c486e7624f35",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "cccece5d-5231-414d-4e33-4012953c6867"
+          }
+        ]
+      },
+      "id": "70e67eb0-fb48-7787-5e2e-2a6e81aeb51f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "9b8b9336-3202-a094-c9c5-514a3a1889b1"
+                }
+              ],
+              "false": []
+            },
+            "id": "04d84c97-9840-c9e2-dfbc-bc206a2eb21e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "dedeea80-a959-6aca-b979-b1d57ea101ae"
+                }
+              ],
+              "false": []
+            },
+            "id": "979faf22-e1d0-d2eb-21ef-b2641ace1979"
+          }
+        ]
+      },
+      "id": "ace4506f-0e95-b11b-ae57-77c767dffc73"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "62e988fd-075b-2281-46a7-8de6ee495fe3"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "f37c4ad8-4ce7-7b59-dfbc-f75f15f12a47"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "AB2 & Amphitheatre",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "44b8afae-5260-f027-3c1d-40c71f3554f0"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "894f81a8-c1b7-b72a-adc7-52ef9c7f3c56"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "6569465e-9424-402f-00c1-7917b4828cae"
+          }
+        ],
+        "false": []
+      },
+      "id": "714fff6a-6ba0-1336-587f-296aa6eee141"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1e+004+0f1f+00bf+0f!00!0f2+004+0f2+00d+0f2+00d+0f2+004+0f2+00e+0f2+00!0f2+00!0f2+00!0f36+00!0f4+005+0f36+00!0f4+005+0f36+00!0f4+005+0f36+002+0f7+00!0f36+002+0f7+00!0f36+002+0f7+00!0f36+002+0f3e+002+0f93+0020+0fb+002+0f13+001b+0f2+003+0fb+002+0f13+001b+0f2+003+0fb+002+0f13+0020+0fb+002+0f13+0018+0f2+006+0fb+002+0f13+007+0f2+00f+0f2+006+0fb+002+0f13+007+0f2+00!0f2+0014+0fb+002+0f13+00a+0f2+00!0f2+0011+0fb+002+0f13+008+0f2+003+0f2+00b+0f2+004+0fb+002+0f13+008+0f2+009+0f2+005+0f2+004+0fd+00!0f12+00a+0f2+007+0f2+00b+0fd+00!0f12+00a+0f2+009+0f2+009+0fb+003+0f12+0015+0f2+009+0fb+003+0f12+008+0f2+00f+0f2+005+0fb+003+0f12+008+0f2+00f+0f2+005+0fb+003+0f12+0020+0fd+00!0f12+0018+0f2+006+0fd+00!0f12+0018+0f2+006+0fb+003+0f12+0020+0fb+003+0f12+0020+0fb+003+0f12+0017+0f2+007+0fb+003+0f12+0017+0f2+007+0fb+003+0f12+0020+0fb+003+0f12+0019+0f2+005+0fb+004+0f11+0019+0f2+005+0fb+003+0f12+0020+0fb+003+0f12+0015+0f2+003+0f2+004+0fb+003+0f12+0015+0f2+003+0f2+004+0fb+003+0f12+008+0f2+006+0f2+00e+0fb+004+0f11+008+0f2+002+0f2+002+0f2+00!0f2+00b+0fb+004+0f11+00c+0f2+005+0f2+00!0f2+002+0f2+004+0fb+004+0f11+00a+0f2+005+0f2+003+0f2+002+0f2+004+0fd+003+0f10+00a+0f2+005+0f2+00d+0fd+003+0f10+008+0f2+002+0f2+006+0f2+00a+0fb+005+0f10+008+0f2+002+0f2+006+0f2+00a+0fb+00!0f2+00!0f11+00f+0f2+00f+0fb+00!0f2+00!0f2+004+0fb+00f+0f2+00f+0fb+004+0f2+004+0fb+0020+0fd+002+0f2+004+0fb+0020+0fd+002+0f2+004+0fb+0020+0fb+004+0f2+004+0f19+004+0f19+004+0f2+004+0f19+004+0f19+004+0f2+004+0f19+004+0f19+004+0f!005+0f19+004+0f19+00a+0f19+00!0f2+00!0f19+00a+0f19+00!0f2+00!0f19+00a+0f19+004+0f19+005+0f!004+0f1b+002+0f19+004+0f2+004+0f1b+002+0f19+004+0f2+004+0f19+002+0f2+00!0f18+004+0f2+001f+0f2+001d+0f2+009+0f2+002+0f2+006+0f2+004+0f2+0021+0f2+009+0f2+002+0f2+00!0f2+003+0f2+004+0f2+0021+0f2+0010+0f2+002c+0f4+004+0f5+002+0f5+003+0f2+004+0f10+004+0f10+"
+}

@@ -1,0 +1,40 @@
+{
+ "name": "prologue_bedroom",
+ "title": "Bedroom, 2009",
+ "cols": 20,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 9,
+   "y": 13,
+   "spawn": [
+    9,
+    12
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 10,
+   "y": 13,
+   "spawn": [
+    10,
+    12
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  9,
+  12
+ ],
+ "unique_before_reduce": 20,
+ "tiles_merged": 0,
+ "unique_tiles": 20,
+ "palette_conflicts": 0,
+ "collisions": "0f7b+00f+0f5+00f+0f3+00b+0f!006+0f2+0012+0f2+002+0f!00e+0f3+0012+0f3+0011+0fa+002+0f59+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

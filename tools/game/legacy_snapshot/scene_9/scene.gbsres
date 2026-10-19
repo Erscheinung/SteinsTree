@@ -1,0 +1,23 @@
+{
+  "_resourceType": "scene",
+  "id": "b63ffe64-20be-42e1-9488-4fb58e1bc82f",
+  "_index": 7,
+  "type": "TOPDOWN",
+  "name": "Scene 9",
+  "symbol": "scene_scene_9",
+  "x": 1004,
+  "y": 981.3333333333331,
+  "width": 32,
+  "height": 32,
+  "backgroundId": "9c24c38a-084d-4dbe-9e9c-ad958644d100",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "autoFadeSpeed": 1,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "001a0+0ff+002+0f5+0018+0f4+003+0f!0011+0f6+008+0f!0011+0f!004+0f!008+0f!0011+0f6+008+0f!001f+0f!0019+0f7+0019+0f!0015+0f4+006+0f!0015+0f!002+0f!006+0f!0015+0f4+006+0f!0016+0f2+007+0f!0016+0f2+007+0f!001f+0f!001f+0f!001f+0f!001f+0f!001f+0f!0010+0f10+0010+"
+}

@@ -1,0 +1,162 @@
+{
+  "_resourceType": "trigger",
+  "id": "540f331b-f078-5ca2-a9ec-5a266f99a1ed",
+  "_index": 13,
+  "symbol": "trigger_world_go_old_mess_grand_staircase",
+  "prefabId": "",
+  "name": "Go: Old Mess & Grand Staircase",
+  "x": 84,
+  "y": 73,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Old Mess & Grand\nStaircase"
+        ],
+        "avatarId": ""
+      },
+      "id": "3b239c42-8987-95a8-e6d8-16d978bea768"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Enter",
+        "falseText": "Keep walking"
+      },
+      "id": "53e23b4c-3cc9-d3ed-b5d2-df271a502248"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "128"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 4
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "d43619b1-9bfd-5d04-aa3c-f2a285329492",
+                          "x": {
+                            "type": "number",
+                            "value": 24
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 50
+                          },
+                          "direction": "right",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "17cd511c-7414-381c-1e7d-1dc4c4c15fef"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "No time. Stick to\nthe plan.",
+                            "(Check START for\nthe objective.)"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "ca44d11b-d47d-df04-c341-abdcd531dda9"
+                      }
+                    ]
+                  },
+                  "id": "b6f9f088-62df-857d-e70a-9840bbe74a37"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "202",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "c9a41d44-e23f-2ba9-cac1-cc47ff31517c"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "dfdc9fea-7f15-5237-a2cc-c1654f6e2c06",
+                    "x": {
+                      "type": "number",
+                      "value": 13
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 34
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "817babc1-c662-2ce4-887b-68d69593c441"
+                }
+              ]
+            },
+            "id": "fe361dcf-ce67-5220-9f89-dc6097693702"
+          }
+        ],
+        "false": []
+      },
+      "id": "70cb36f1-5df6-177e-568e-44d9c2cadb02"
+    }
+  ],
+  "leaveScript": []
+}

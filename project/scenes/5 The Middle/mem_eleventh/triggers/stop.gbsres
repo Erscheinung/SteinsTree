@@ -1,0 +1,269 @@
+{
+  "_resourceType": "trigger",
+  "id": "acba6409-4991-5df7-9229-db2c9728325f",
+  "_index": 0,
+  "symbol": "trigger_mem_eleventh_stop",
+  "prefabId": "",
+  "name": "Stop",
+  "x": 8,
+  "y": 8,
+  "width": 4,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "201"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "201",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "d6ee75ec-25aa-f748-2eb3-7d980690207b"
+          },
+          {
+            "command": "EVENT_TIMER_DISABLE",
+            "args": {
+              "timer": 1
+            },
+            "id": "234cb0b5-902e-220d-f063-f93c66d441d9"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "muj-dreama-grass",
+              "palette1": "muj-dreama-path",
+              "palette2": "muj-dreama-stone",
+              "palette3": "muj-dreama-brick",
+              "palette4": "muj-dreama-roof",
+              "palette5": "muj-dreama-water",
+              "palette6": "muj-dreama-wood",
+              "palette7": "muj-ui"
+            },
+            "id": "10e4e386-6c1b-e418-29d7-dfd0418acd35"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You stop chasing.\nYou stand still in\nthe middle of it.",
+                "The orbits keep\nspinning.",
+                "They just don't\npull as hard."
+              ],
+              "avatarId": ""
+            },
+            "id": "b2507cbb-3093-8ebf-2a6a-449d79db8977"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "119",
+              "items": 2,
+              "cancelOnLastOption": false,
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "option1": "Walk",
+              "option2": "Build it anew"
+            },
+            "id": "8c4ea808-e7b6-c835-090d-a8a8475ec2a4"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "119",
+              "choices": 2,
+              "__collapseElse": true,
+              "value0": {
+                "type": "number",
+                "value": 1
+              },
+              "value1": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "So you walk. One\nfoot. Then the\nother."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "280bcefc-dca2-ca73-5387-9e0db84c7d69"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "So you build it\nagain. Badly. Then\nless badly."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "0c82aa44-2ad4-6b27-0075-f5245d65ded5"
+                }
+              ],
+              "false": []
+            },
+            "id": "0e14a35d-1151-734c-853e-26728aca9772"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MEMORY END - reflection",
+              "__collapse": false
+            },
+            "id": "dc38f31f-293a-81b6-75e1-ca160bd1a2e3"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed"
+            },
+            "id": "89b893cb-2e67-5858-030c-6e380c6897dc"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed",
+              "time": 0.6,
+              "frames": 36
+            },
+            "id": "eea0b2ce-8bef-6b6b-19fa-c85500fc061c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Kanishk: Too many\norbits. Too many\nplans.",
+                "Everything\npulling.",
+                "Kanishk: You can't\nplan every\nvariable.",
+                "You can only\nchoose your next\nmove."
+              ],
+              "avatarId": ""
+            },
+            "id": "cfcad144-9a3a-7b77-47db-fc68b9c3c66f"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed",
+              "time": 0.6,
+              "frames": 36
+            },
+            "id": "489ba6c9-d03f-4b50-ed09-e15be972f6c5"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed"
+            },
+            "id": "d3a63b2f-f314-8cd3-a512-d184f617c105"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "177"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "177",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "69e3fb07-695b-f034-61f6-6511f7ba6ba4"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "136"
+                  },
+                  "id": "d8d324c4-5b8d-fd1a-cb94-c503dfb5dcf0"
+                }
+              ],
+              "false": []
+            },
+            "id": "1c707afb-0896-3fc9-c807-03317806604b"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            },
+            "id": "ab46370a-e68b-2cb5-ad82-cbcbb60f904f"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+              "persist": true
+            },
+            "id": "fb0456a3-d378-25c8-f2a3-87701c82eab3"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "24277fb2-9043-a49c-0142-e1ca33758a12"
+          }
+        ],
+        "false": []
+      },
+      "id": "833add5c-552c-387c-9792-0fdfda19e35d"
+    }
+  ],
+  "leaveScript": []
+}

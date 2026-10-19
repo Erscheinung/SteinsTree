@@ -1,0 +1,213 @@
+{
+  "_resourceType": "scene",
+  "id": "16b417ab-7a4d-5d5f-a25a-254ef818c7fe",
+  "_index": 139,
+  "type": "PLATFORM",
+  "name": "4 Outbreak/Rooftop Run (Garvita)",
+  "symbol": "scene_rooftop",
+  "x": 2008,
+  "y": 4616,
+  "width": 100,
+  "height": 18,
+  "backgroundId": "cfbe64ef-5683-513b-b4f2-f3eaa38bc8c0",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-night-grass",
+    "muj-night-path",
+    "muj-night-stone",
+    "muj-night-brick",
+    "muj-night-roof",
+    "muj-night-water",
+    "muj-night-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "0edac6c7-1790-9479-8c58-7b00f505e5e5"
+          }
+        ]
+      },
+      "id": "b91918c8-e118-b620-7e35-23e40d12f8aa"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-night-grass",
+        "palette1": "muj-night-path",
+        "palette2": "muj-night-stone",
+        "palette3": "muj-night-brick",
+        "palette4": "muj-night-roof",
+        "palette5": "muj-night-water",
+        "palette6": "muj-night-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "80b8506a-74e1-cbb6-4ee2-834e8870284e"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "c920adb0-8140-5d4a-acfa-d5ea724ae9fc",
+        "loop": true
+      },
+      "id": "bf0bc7ac-aea3-94df-9880-245d6fdcef67"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "GARVITA - PLATFORMER over the AB2 rooftops to the Dome",
+        "__collapse": false
+      },
+      "id": "d5fc132f-1e30-13ce-2e60-9e7163d729d3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "170",
+        "value": {
+          "type": "number",
+          "value": 2
+        }
+      },
+      "id": "7c7d848b-2369-87cc-aa1d-398ec10cbb03"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "171",
+        "value": {
+          "type": "number",
+          "value": 12
+        }
+      },
+      "id": "a4fca305-a32d-a7b5-0c2a-89671d65239a"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        }
+      },
+      "id": "c8aedb17-a8fb-5a14-cd1a-d39430cd43e7"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: Rooftops\nall the way to the\nDome.",
+          "Left/Right to run,\nA to jump."
+        ],
+        "avatarId": ""
+      },
+      "id": "e109850b-6a49-1d1b-b7a0-ce0fa489f30c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: Don't\nlook down.",
+          "Actually, look\ndown a bit. Gaps\nare down."
+        ],
+        "avatarId": ""
+      },
+      "id": "51fbbf97-c294-38f1-bb52-2c83a4925bbd"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "127"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Garvita: I cleared\nthe roofs on my\nwarm-up lap.",
+                "You're welcome."
+              ],
+              "avatarId": ""
+            },
+            "id": "588d9466-780b-43f0-1864-760a368b1e40"
+          }
+        ],
+        "false": []
+      },
+      "id": "f4e8c50d-38dc-0144-e649-ecb000a9d444"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "790b0722-cb77-5f7d-b2f2-e870701c7d85",
+        "speed": 2
+      },
+      "id": "aa03567d-173f-9541-1c7c-0449afe653c6"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "790b0722-cb77-5f7d-b2f2-e870701c7d85",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "7f65c344-cd04-b731-f7d3-e2800afcb056"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "003ae+0f!0028+0f!002f+0f!00a+0f!0028+0f!00a+0f!00a+0f!0019+0f!006+0f9+0020+0f8+007+0f!00a+0f!00c+0f!008+0f8+003+0f9+009+0f!00e+0f!007+0f8+002+0f15+008+0f!008+0f8+003+0f9+009+0f!00e+0f!007+0f8+002+0f15+003+0fb+003+0f8+003+0f9+003+0fd+003+0fa+003+0f8+002+0f15+003+0fb+003+0f8+003+0f9+003+0fd+003+0fa+003+0f8+002+0f15+003+0fb+003+0f8+003+0f9+003+0fd+003+0fa+003+0f8+002+0f15+003+0fb+003+0f8+003+0f9+003+0fd+003+0fa+003+0f8+002+0fb+"
+}

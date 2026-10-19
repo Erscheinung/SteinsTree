@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "79a0c5bf-e4dc-531b-8c13-1d2b955ddf4c",
+  "_index": 1,
+  "symbol": "trigger_chem_lab_exit_11_15",
+  "prefabId": "",
+  "name": "Exit 11 15",
+  "x": 11,
+  "y": 15,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "977518a2-ecb8-5450-9968-fcade317e562",
+        "x": {
+          "type": "number",
+          "value": 22
+        },
+        "y": {
+          "type": "number",
+          "value": 57
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "7130c772-5fb4-61a0-6d0d-ee400871b085"
+    }
+  ],
+  "leaveScript": []
+}

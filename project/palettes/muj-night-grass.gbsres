@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-night-grass",
+  "name": "MUJ night grass",
+  "colors": [
+    "6379B1",
+    "45677E",
+    "294D64",
+    "142848"
+  ],
+  "defaultName": "MUJ night grass",
+  "defaultColors": [
+    "6379B1",
+    "45677E",
+    "294D64",
+    "142848"
+  ]
+}

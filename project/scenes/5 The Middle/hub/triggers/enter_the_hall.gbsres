@@ -1,0 +1,56 @@
+{
+  "_resourceType": "trigger",
+  "id": "eb105789-1b1f-571e-a1f7-2e5b27cb9703",
+  "_index": 7,
+  "symbol": "trigger_hub_enter_the_hall",
+  "prefabId": "",
+  "name": "Enter the Hall",
+  "x": 9,
+  "y": 8,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "136"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 7
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "d214967c-3519-56e2-9fbd-cc8b263398a5",
+              "x": {
+                "type": "number",
+                "value": 13
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "9749597d-081f-6e57-ec77-d8e8233c0063"
+          }
+        ],
+        "false": []
+      },
+      "id": "7407eb93-3729-4b97-9249-5887b1ac4052"
+    }
+  ],
+  "leaveScript": []
+}

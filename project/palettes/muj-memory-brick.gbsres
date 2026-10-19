@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-memory-brick",
+  "name": "MUJ memory brick",
+  "colors": [
+    "F9D198",
+    "BA9A6F",
+    "755F43",
+    "3A2C1D"
+  ],
+  "defaultName": "MUJ memory brick",
+  "defaultColors": [
+    "F9D198",
+    "BA9A6F",
+    "755F43",
+    "3A2C1D"
+  ]
+}

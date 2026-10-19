@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-blood-path",
+  "name": "MUJ blood path",
+  "colors": [
+    "C2333E",
+    "A22A34",
+    "7E2029",
+    "992831"
+  ],
+  "defaultName": "MUJ blood path",
+  "defaultColors": [
+    "C2333E",
+    "A22A34",
+    "7E2029",
+    "992831"
+  ]
+}

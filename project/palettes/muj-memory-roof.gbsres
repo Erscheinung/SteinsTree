@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-memory-roof",
+  "name": "MUJ memory roof",
+  "colors": [
+    "FFDA9F",
+    "C3A275",
+    "786145",
+    "382A1B"
+  ],
+  "defaultName": "MUJ memory roof",
+  "defaultColors": [
+    "FFDA9F",
+    "C3A275",
+    "786145",
+    "382A1B"
+  ]
+}

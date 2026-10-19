@@ -9,13 +9,83 @@
   "y": 130,
   "width": 32,
   "height": 32,
-  "backgroundId": "94e83ccf-a9c3-441f-8876-45a540382fd6",
+  "backgroundId": "c1cb8010-41c6-5e68-9fc7-719f0da235e4",
   "tilesetId": "",
   "colorModeOverride": "none",
-  "paletteIds": [],
+  "paletteIds": [
+    "enr-b7-back-exit-right-0",
+    "enr-b7-back-exit-right-1",
+    "enr-b7-back-exit-right-2",
+    "enr-b7-back-exit-right-3",
+    "enr-b7-back-exit-right-4",
+    "enr-b7-back-exit-right-5",
+    "enr-b7-back-exit-right-6",
+    "muj-ui"
+  ],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "enr-b7-back-exit-right-0-night",
+              "palette1": "enr-b7-back-exit-right-1-night",
+              "palette2": "enr-b7-back-exit-right-2-night",
+              "palette3": "enr-b7-back-exit-right-3-night",
+              "palette4": "enr-b7-back-exit-right-4-night",
+              "palette5": "enr-b7-back-exit-right-5-night",
+              "palette6": "enr-b7-back-exit-right-6-night",
+              "palette7": "muj-ui"
+            },
+            "id": "f21a2883-e119-f137-dd81-17da40a486ee"
+          }
+        ],
+        "false": []
+      },
+      "id": "9113b63a-e4bb-76a2-123b-ad57747ea8f2"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "14605710-8648-6cd7-3229-65ab4dafb237"
+          }
+        ]
+      },
+      "id": "c9bd5cd2-3f6e-47fb-4297-57b5468a8a36"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

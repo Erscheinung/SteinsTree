@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "d9b4510c-a15f-5836-8cd3-222f206871ea",
+  "_index": 1,
+  "symbol": "actor_chem_lab_mayank",
+  "prefabId": "",
+  "name": "Mayank",
+  "coordinateType": "tiles",
+  "x": 4,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e6c451a2-6ff2-44c2-9f4e-5969df82a7e0",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "74b5b0db-68e2-8187-76c0-f693b7dee879"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "ne",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "76fac324-3fb9-c885-a6e7-fa0a77cea1d2"
+                }
+              ],
+              "false": []
+            },
+            "id": "7ff05368-2cb4-c0d9-33dd-ba748d072522"
+          }
+        ]
+      },
+      "id": "c9d1328e-4b0c-8885-0946-7d751292c034"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

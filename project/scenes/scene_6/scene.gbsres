@@ -9,13 +9,83 @@
   "y": 400,
   "width": 32,
   "height": 32,
-  "backgroundId": "958c985b-229c-4b1d-a8e8-05f81834c3a5",
+  "backgroundId": "0b3cca07-8075-5813-b1f2-1dde478ac967",
   "tilesetId": "",
   "colorModeOverride": "none",
-  "paletteIds": [],
+  "paletteIds": [
+    "enr-b7-back-0",
+    "enr-b7-back-1",
+    "enr-b7-back-2",
+    "enr-b7-back-3",
+    "enr-b7-back-4",
+    "enr-b7-back-5",
+    "enr-b7-back-6",
+    "muj-ui"
+  ],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "enr-b7-back-0-night",
+              "palette1": "enr-b7-back-1-night",
+              "palette2": "enr-b7-back-2-night",
+              "palette3": "enr-b7-back-3-night",
+              "palette4": "enr-b7-back-4-night",
+              "palette5": "enr-b7-back-5-night",
+              "palette6": "enr-b7-back-6-night",
+              "palette7": "muj-ui"
+            },
+            "id": "78a6458a-657f-283e-3d2b-f0484fded312"
+          }
+        ],
+        "false": []
+      },
+      "id": "1177281b-2c46-9b99-2068-3cfe40ee5305"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "dbaf3cac-66d5-2382-4461-ca4931bccdc8"
+          }
+        ]
+      },
+      "id": "9e0f0dea-ecae-e2b6-424f-d4d2edbf0a65"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

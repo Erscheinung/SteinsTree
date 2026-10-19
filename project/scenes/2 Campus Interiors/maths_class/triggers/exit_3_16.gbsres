@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "f34ea643-e7ab-518b-8b03-ee9920f20541",
+  "_index": 0,
+  "symbol": "trigger_maths_class_exit_3_16",
+  "prefabId": "",
+  "name": "Exit 3 16",
+  "x": 3,
+  "y": 16,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a451ebb9-48d6-5fb1-971a-03446032d3f3",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "number",
+          "value": 66
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "11575c12-236d-d3df-a270-976e2e776b12"
+    }
+  ],
+  "leaveScript": []
+}

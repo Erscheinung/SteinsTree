@@ -1,0 +1,329 @@
+{
+  "_resourceType": "scene",
+  "id": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+  "_index": 150,
+  "type": "TOPDOWN",
+  "name": "5 The Middle/The Middle (hub)",
+  "symbol": "scene_hub",
+  "x": 3416,
+  "y": 5216,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a0c140ac-ce4f-569b-ae2e-30dfaf8c3b57",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-dreama-grass",
+    "muj-dreama-path",
+    "muj-dreama-stone",
+    "muj-dreama-brick",
+    "muj-dreama-roof",
+    "muj-dreama-water",
+    "muj-dreama-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-gold",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "321c2cdd-6c74-721d-696c-b4fb10a1d814"
+          }
+        ]
+      },
+      "id": "67a95791-b833-eff7-620d-e48203aaee56"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-dreama-grass",
+        "palette1": "muj-dreama-path",
+        "palette2": "muj-dreama-stone",
+        "palette3": "muj-dreama-brick",
+        "palette4": "muj-dreama-roof",
+        "palette5": "muj-dreama-water",
+        "palette6": "muj-dreama-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "f2b7ae95-7961-048e-f135-c81b1c1fced0"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bb6d35fc-b31c-553c-bd55-d8edfe476fa9",
+        "loop": true
+      },
+      "id": "454980fd-0f35-f757-86e4-33c26aa19548"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ACT 3 HUB - palette cycling makes the void breathe",
+        "__collapse": false
+      },
+      "id": "1ac05829-e6a9-c9bd-806f-854f5ca6231b"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 0.6,
+        "frames": 36
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "179"
+            },
+            "id": "a6a388a6-61f4-8e6d-947a-b25e51d3e3ed"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "179"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "179",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "06d13caa-eddc-498f-dc9e-2b97d1928920"
+                }
+              ],
+              "false": []
+            },
+            "id": "946e2028-1686-7dad-1454-f0d75a6b4647"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "179",
+              "choices": 3,
+              "__collapseElse": true,
+              "value0": {
+                "type": "number",
+                "value": 0
+              },
+              "value1": {
+                "type": "number",
+                "value": 1
+              },
+              "value2": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dreama-grass",
+                    "palette1": "muj-dreama-path",
+                    "palette2": "muj-dreama-stone",
+                    "palette3": "muj-dreama-brick",
+                    "palette4": "muj-dreama-roof",
+                    "palette5": "muj-dreama-water",
+                    "palette6": "muj-dreama-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "def63c3a-d2eb-ba1d-314e-d6ebe0892b37"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dreamb-grass",
+                    "palette1": "muj-dreamb-path",
+                    "palette2": "muj-dreamb-stone",
+                    "palette3": "muj-dreamb-brick",
+                    "palette4": "muj-dreamb-roof",
+                    "palette5": "muj-dreamb-water",
+                    "palette6": "muj-dreamb-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "0d8ddfe5-7918-3d82-7ebb-f6a21d906ce8"
+                }
+              ],
+              "true2": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dreamc-grass",
+                    "palette1": "muj-dreamc-path",
+                    "palette2": "muj-dreamc-stone",
+                    "palette3": "muj-dreamc-brick",
+                    "palette4": "muj-dreamc-roof",
+                    "palette5": "muj-dreamc-water",
+                    "palette6": "muj-dreamc-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "dc24f885-1fba-ad20-6d1d-f77efc2dbc5c"
+                }
+              ],
+              "false": []
+            },
+            "id": "1ecd0622-22b9-d519-226d-fa520668143d"
+          }
+        ]
+      },
+      "id": "3b350109-a1ab-d559-3af5-5240498ed8bf"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "180"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "..."
+              ],
+              "avatarId": ""
+            },
+            "id": "75991122-4d1c-ecd6-8fbd-d38d98b01e5b"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "It's quiet here.\nNot empty. Quiet."
+              ],
+              "avatarId": ""
+            },
+            "id": "bcc71b26-37e7-54d5-6e90-5e39f66de5fa"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank:\n(somewhere)\nEverything before",
+                "this is still in\nthere. Go find out\nwhy you came."
+              ],
+              "avatarId": ""
+            },
+            "id": "9dc047b6-693f-8928-1850-66db1b65517c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "(Walk into the\nlights. Each one\nis a memory.)"
+              ],
+              "avatarId": ""
+            },
+            "id": "fc8a63ff-15dd-bbf9-e569-b53020aeeaf8"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "180",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "12c25fa7-1b69-202d-aced-644c0a41347d"
+          }
+        ],
+        "false": []
+      },
+      "id": "4215b0d8-1120-b2d6-7a38-4db8deed8cdc"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "136"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 7
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The centre is open\nnow."
+              ],
+              "avatarId": ""
+            },
+            "id": "b21b69d4-77e7-0ef8-dc2e-db28661a7546"
+          }
+        ],
+        "false": []
+      },
+      "id": "b0560dd3-73e2-9478-8f7a-f05b95ebc184"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

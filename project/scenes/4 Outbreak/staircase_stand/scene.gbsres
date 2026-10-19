@@ -1,0 +1,587 @@
+{
+  "_resourceType": "scene",
+  "id": "d43619b1-9bfd-5d04-aa3c-f2a285329492",
+  "_index": 137,
+  "type": "TOPDOWN",
+  "name": "4 Outbreak/Grand Staircase (Divyansh)",
+  "symbol": "scene_staircase_stand",
+  "x": 1416,
+  "y": 4616,
+  "width": 44,
+  "height": 60,
+  "backgroundId": "afcee32b-eeaa-525c-9deb-65a9ebfc8c67",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-night-grass",
+    "muj-night-path",
+    "muj-night-stone",
+    "muj-night-brick",
+    "muj-night-roof",
+    "muj-night-water",
+    "muj-night-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-gold",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "97115be7-7ba6-fbba-ab9a-5900494130ae"
+          }
+        ]
+      },
+      "id": "91b60355-0a58-1f02-8af6-7e273651654b"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-night-grass",
+        "palette1": "muj-night-path",
+        "palette2": "muj-night-stone",
+        "palette3": "muj-night-brick",
+        "palette4": "muj-night-roof",
+        "palette5": "muj-night-water",
+        "palette6": "muj-night-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "87d8c403-7db7-7b68-8964-4cb9abc2e42d"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "804ab4ab-17f1-58c7-b815-b56358e32cd1",
+        "loop": true
+      },
+      "id": "68ceaba9-cb30-2abe-bb55-61046dd7e4b2"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "DIVYANSH - ALL TALK, NO WALK. Then he walks. Then the chase.",
+        "__collapse": false
+      },
+      "id": "adc8ed48-2937-397b-925d-91f2fab1feba"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 24
+        },
+        "y": {
+          "type": "number",
+          "value": 50
+        }
+      },
+      "id": "16dfd2b3-b4c6-9ed1-578b-effb243d6d6e"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "603842df-2a9c-5851-1005-7079104aa93e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "169",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e8fd9966-9983-46d2-d9a6-c91699874c5d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "168",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "1fd0ef93-ad07-0525-d4a5-156b53012b8b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: Okay.\nOKAY. Listen. I've\ngot this.",
+          "I've literally\nbeen waiting my\nwhole life."
+        ],
+        "avatarId": ""
+      },
+      "id": "9a1eb683-e0fe-0894-574b-9ad791c90fab"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "119",
+        "items": 3,
+        "cancelOnLastOption": false,
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "option1": "You've got this",
+        "option2": "Divyansh, run",
+        "option3": "We go together"
+      },
+      "id": "7f9e4e59-b2e7-cc69-3f8a-32928ca2a6b1"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "119",
+        "choices": 3,
+        "__collapseElse": true,
+        "value0": {
+          "type": "number",
+          "value": 1
+        },
+        "value1": {
+          "type": "number",
+          "value": 2
+        },
+        "value2": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Divyansh: SEE?\nFinally someone\ngets it."
+              ],
+              "avatarId": ""
+            },
+            "id": "1949d462-44ba-6923-85bc-b81fd98b6696"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "123",
+              "operation": "add",
+              "other": "val",
+              "value": "1",
+              "minValue": "0",
+              "maxValue": "0",
+              "clamp": true
+            },
+            "id": "64fa2211-0593-ecfc-9148-8540142ccee5"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Divyansh: Run?\nBro.",
+                "I've been running\nmy mouth for 18\nyears.",
+                "Time to run the\nother thing."
+              ],
+              "avatarId": ""
+            },
+            "id": "3e4b89cc-c919-8d74-ca7e-4fb33f7b6f20"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Divyansh:\nTogether's slow.\nI'm slow.",
+                "Do the math,\nKanishk would."
+              ],
+              "avatarId": ""
+            },
+            "id": "6a0b71d0-c493-fe71-6648-9ea53cfc8800"
+          }
+        ],
+        "false": []
+      },
+      "id": "5c9da03d-3a50-f9cc-6c9f-c30645925537"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: Everyone\nback home says I'm\nall talk.",
+          "Big promises. No\nfollow through."
+        ],
+        "avatarId": ""
+      },
+      "id": "d76b8640-9a6b-e830-26f4-c122ac063d67"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: Gym on\nMonday. Topper by\nsem two.",
+          "Six over the Dome."
+        ],
+        "avatarId": ""
+      },
+      "id": "0f4bb2e2-4ebe-8113-1d00-00bf5197067d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: Watch me\nwalk the walk.\nONCE."
+        ],
+        "avatarId": ""
+      },
+      "id": "b7dc4aa5-3498-b8e9-3d1f-2c9dc68bff31"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Garvita: Divyansh,\nNO--"
+        ],
+        "avatarId": ""
+      },
+      "id": "07089b5e-eeb1-46b7-699e-c7963f5dc185"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "6b2fa0e2-62c6-5988-8bf6-b57b70fd4e9d",
+        "speed": 2
+      },
+      "id": "838f3e80-821e-04eb-f7be-28729c3c9365"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "6b2fa0e2-62c6-5988-8bf6-b57b70fd4e9d",
+        "x": {
+          "type": "number",
+          "value": 24
+        },
+        "y": {
+          "type": "number",
+          "value": 42
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "2051aa60-c791-ac6b-fda6-159fc4e2da80"
+    },
+    {
+      "command": "EVENT_CAMERA_SHAKE",
+      "args": {
+        "time": 0.8,
+        "frames": 48,
+        "shakeDirection": "horizontal",
+        "magnitude": {
+          "type": "number",
+          "value": 5
+        }
+      },
+      "id": "06985788-0d1b-11b4-cee8-122fb8ec70e3"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "crash",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 100,
+        "duration": 0.8,
+        "wait": false,
+        "effect": 0
+      },
+      "id": "ecda24e3-3a9a-ae6d-1af8-70b12f3eabd5"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "830f8589-c0e2-517a-b9ac-e973ce5af15e",
+        "x": {
+          "type": "number",
+          "value": 24
+        },
+        "y": {
+          "type": "number",
+          "value": 43
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "822b4a44-c7fc-bb6c-b895-4da4203c35f3"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "315f778f-9a40-580c-baf4-370509a91b5f",
+        "x": {
+          "type": "number",
+          "value": 24
+        },
+        "y": {
+          "type": "number",
+          "value": 43
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "efe29b54-aa6b-fb03-9f58-9058f4dd31b2"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "7a7c791b-19b1-58ed-a8db-df173c1fe61d",
+        "x": {
+          "type": "number",
+          "value": 24
+        },
+        "y": {
+          "type": "number",
+          "value": 43
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "5184e7cf-9acb-4ce2-dcec-e3a92ba08ab4"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "c1b453df-dea5-5453-957d-1b64619dc8ae",
+        "x": {
+          "type": "number",
+          "value": 24
+        },
+        "y": {
+          "type": "number",
+          "value": 43
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "392df4c0-7b4d-c4d0-3a1d-3253006629ca"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: HA!\nSee?! I'm doing\nit! I'm actually--"
+        ],
+        "avatarId": ""
+      },
+      "id": "96d037bd-b9bf-c816-ed01-7ddca941fe44"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "6b2fa0e2-62c6-5988-8bf6-b57b70fd4e9d",
+        "time": 1.5,
+        "frames": 90
+      },
+      "id": "c324a898-7c21-c69c-ef58-72fb1b4a1e6e"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "6b2fa0e2-62c6-5988-8bf6-b57b70fd4e9d"
+      },
+      "id": "0866169d-663e-3963-016b-e1f779e8be3c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: (far\naway) ...tell my\nmom I topped.",
+          "Lie a little..."
+        ],
+        "avatarId": ""
+      },
+      "id": "1d5ac1b8-d72c-c140-718a-d9a7c59b3103"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "131",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "b9269823-4b51-9569-bb8f-c22a52cc752f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: He bought\nus the whole\nstaircase. MOVE!"
+        ],
+        "avatarId": ""
+      },
+      "id": "255eccbe-ace8-ac95-e595-5fce1dc6bb94"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "4212ab82-2fc5-5b07-9333-6ab1a72c09ab"
+      },
+      "id": "b8f9be38-ce1c-f12b-9960-7e65d273a219"
+    },
+    {
+      "command": "EVENT_ACTOR_DEACTIVATE",
+      "args": {
+        "actorId": "25db56c2-3118-5be0-948b-60aa24fccac8"
+      },
+      "id": "a81c17c1-fd90-6355-addd-73d586a90be6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "RUN for the Old\nMess, down the\npath to the south-",
+          "west!"
+        ],
+        "avatarId": ""
+      },
+      "id": "65e713a5-dddb-0bf4-2c7f-5ed8ef5ceb70"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "0ce7afd4-83fe-5e46-9046-e18e599efaa7"
+      },
+      "id": "96ad078c-e7f7-830d-796a-ab817d01a7a3"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "c48e4403-c56d-53bd-a764-743a0a10dfcb"
+      },
+      "id": "045b9403-9034-9a58-be27-e4d02a691e4c"
+    },
+    {
+      "command": "EVENT_ACTOR_ACTIVATE",
+      "args": {
+        "actorId": "2599a44b-b5ca-54e5-9517-a05df84a4970"
+      },
+      "id": "93320e66-e2d9-9452-e1c4-08532d4e8eb9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "123"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "2599a44b-b5ca-54e5-9517-a05df84a4970"
+            },
+            "id": "7bb5c9d4-f832-e9e2-1ce8-555096417c2c"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "One of them is\nstill stuck on\nDivyansh.",
+                "He's still buying\nyou time."
+              ],
+              "avatarId": ""
+            },
+            "id": "c63078be-6965-a9af-6f64-05c703bf95b9"
+          }
+        ],
+        "false": []
+      },
+      "id": "03a47572-3013-38ff-b059-75ab78937b1a"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 1.0
+        },
+        "frames": {
+          "type": "number",
+          "value": 60
+        }
+      },
+      "id": "330ca376-8ed1-348c-4beb-0db0bd409371"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "169",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "8977af78-0ee6-59f3-a52d-cfe0b60b6e4e"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "168",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "60cf537b-93ee-7e58-aaec-781c6573e6e8"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f4+004+0f19+004+0f7+00c+0f14+006+0f6+00d+0f13+006+0f6+00d+0f13+006+0fa+009+0f13+006+0fa+004+0f2+003+0f13+002+0f2+002+0f3+003+0f4+004+0f2+003+0f13+002+0f2+008+0f4+00!0f2+006+0f13+00a+0f6+00!0f2+002+0f2+002+0f13+004+0f2+002+0f8+005+0f2+002+0f13+004+0f2+002+0f8+007+0f15+006+0fa+00!0f2+004+0f16+00!0f2+002+0fa+00!0f2+002+0f2+002+0f14+00!0f2+004+0f8+005+0f2+002+0f14+004+0f2+00!0f8+009+0f14+004+0f2+00!0f8+003+0f2+004+0f14+007+0f8+003+0f2+00!0f2+002+0f13+005+0fb+005+0f2+002+0f13+00!0f2+002+0fb+009+0f13+00!0f2+005+0f8+006+0f2+00!0f13+003+0f2+005+0f6+002+0f2+002+0f2+00!0f13+003+0f2+005+0f6+002+0f2+005+0f13+005+0f2+004+0f5+009+0f13+005+0f2+004+0f5+005+0f2+002+0f13+00b+0f2+008+0f2+002+0f13+00b+0f!00d+0f13+00a+0f!00e+0f14+009+0f!00e+0f14+002+0f2+004+0f2+00b+0f2+00!0f14+002+0f2+00!0f5+00b+0f2+002+0f13+005+0f6+00e+0f13+00!0f2+002+0f6+00b+0f2+00!0f13+00!0f2+003+0fa+002+0f2+002+0f2+00!0f13+006+0fa+002+0f2+005+0f13+006+0fa+005+0f2+002+0f15+004+0fa+005+0f2+002+0f15+00!0f2+00!0fa+009+0f13+003+0f2+00!0fa+002+0f2+005+0f13+006+0fa+002+0f2+005+0f13+007+0f9+005+0f2+002+0f13+004+0f2+00!0f9+005+0f2+002+0fd+00a+0f2+00!0f9+001c+0f2+005+0f9+004+0f2+0016+0f2+005+0f9+004+0f2+0019+0f2+004+0f7+001f+0f2+002+0f9+00!0f2+0020+0f9+00!0f2+0017+0f2+004+0f2+00!0f9+001a+0f2+004+0f2+00!0f9+002+0f2+001f+0fa+00!0f2+001d+0f2+003+0f7+0020+0f2+003+0f7+0025+0f7+001e+0f2+002a+0f2+00!0f2+00!0f!0028+0f2+00!0f4+0023+0f2+004+0f3+003+0f2+001e+0f2+007+0f2+00!0f2+0027+0f2+0027+0f!002+0f14+004+0f11+"
+}

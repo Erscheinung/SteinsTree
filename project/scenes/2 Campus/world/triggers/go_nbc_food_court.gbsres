@@ -1,0 +1,120 @@
+{
+  "_resourceType": "trigger",
+  "id": "08e2dfc8-3cdf-5f16-85bb-e61b0f944205",
+  "_index": 17,
+  "symbol": "trigger_world_go_nbc_food_court",
+  "prefabId": "",
+  "name": "Go: NBC Food Court",
+  "x": 60,
+  "y": 46,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "NBC Food Court"
+        ],
+        "avatarId": ""
+      },
+      "id": "454e8ec2-1fb3-ba38-9171-8bbfc219ebb8"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Enter",
+        "falseText": "Keep walking"
+      },
+      "id": "e2fb44db-6220-4801-7f62-a9dd6dc01849"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Shapes move behind\nthe windows. Not\nhere. Not now."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "6c813798-01a5-3730-f533-80467f2caa32"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "202",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "a9beef30-e6d9-1ef4-9f7f-90df359add9e"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "8bd8c200-cd76-5c5f-9a89-19f44c8a2c04",
+                    "x": {
+                      "type": "number",
+                      "value": 22
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 26
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "05dec56b-3230-fc36-0d91-e6eab121e256"
+                }
+              ]
+            },
+            "id": "15573732-4bf6-c833-73ac-4a58081e4ae7"
+          }
+        ],
+        "false": []
+      },
+      "id": "3a3a8aec-da7a-e173-cdd0-1aa42b36916e"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "enr-b7-chiller-0-night",
+  "name": "B7-chiller night 0",
+  "colors": [
+    "4B7391",
+    "3D5D80",
+    "314C6C",
+    "23374E"
+  ],
+  "defaultName": "B7-chiller night 0",
+  "defaultColors": [
+    "4B7391",
+    "3D5D80",
+    "314C6C",
+    "23374E"
+  ]
+}

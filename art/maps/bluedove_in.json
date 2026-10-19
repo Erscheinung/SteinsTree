@@ -1,0 +1,40 @@
+{
+ "name": "bluedove_in",
+ "title": "BlueDove Mess",
+ "cols": 22,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 9,
+   "y": 13,
+   "spawn": [
+    9,
+    12
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 10,
+   "y": 13,
+   "spawn": [
+    10,
+    12
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  9,
+  12
+ ],
+ "unique_before_reduce": 20,
+ "tiles_merged": 0,
+ "unique_tiles": 20,
+ "palette_conflicts": 0,
+ "collisions": "0f85+00!0f8+00b+0f2+0014+0f2+002+0f2+004+0f2+004+0f2+004+0f2+002+0f2+004+0f2+004+0f2+004+0f2+0014+0f2+002+0f2+004+0f2+004+0f2+003+0f3+0014+0fa+002+0f63+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "64cf021b-2310-5b8f-97b1-7084003b7098",
+  "name": "battle_pocket",
+  "symbol": "bg_battle_pocket",
+  "tileColors": "0442+003+046+002+04!0034+019+00b+019+00c+017+002f+01!00e+01b+009+01b+00a+019+0046+",
+  "filename": "muj/battle_pocket.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

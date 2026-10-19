@@ -1,0 +1,222 @@
+{
+  "_resourceType": "sprite",
+  "id": "fe9d0403-68f4-42eb-9c13-4722df167791",
+  "name": "afterhours_scholar_idle",
+  "symbol": "sprite_afterhours_scholar_i",
+  "states": [
+    {
+      "id": "890eaeb7-9272-4ecf-a9c8-a39440ac9ba9",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "e906cb94-f908-41a2-b167-7e8330b6a989",
+          "frames": [
+            {
+              "id": "c57b34ba-583a-406f-bb61-2776aa6c3a82",
+              "tiles": [
+                {
+                  "id": "f033f7f4-e71d-4034-8c42-5ed98d8cf694",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 7,
+                  "paletteIndex": 7,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "d4a2c9a2-fe32-4e4c-a819-061e4352c30d",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 7,
+                  "paletteIndex": 7,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "3f23acb9-076e-410b-833f-3da4a8839c17",
+              "tiles": [
+                {
+                  "id": "2d151804-6ded-42bb-a3a8-148eb630436e",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 7,
+                  "paletteIndex": 7,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "b3640738-7482-4476-80f5-7eb5c817b7b8",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 7,
+                  "paletteIndex": 7,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "7ee7b412-af12-43f1-a69a-4ad9142ee496",
+              "tiles": [
+                {
+                  "id": "c701d401-3222-46fc-88b3-c286a05170df",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 32,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 7,
+                  "paletteIndex": 7,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "124283e7-2ca7-4907-b72e-8a3ad1ac8339",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 40,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 7,
+                  "paletteIndex": 7,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "115b386c-37fd-4b9b-8d08-64989af89731",
+              "tiles": [
+                {
+                  "id": "05a118be-b5db-455d-ba3b-cd8813ea5514",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 48,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 7,
+                  "paletteIndex": 7,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "6270e423-8f9a-403a-86a6-765348a00eac",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 56,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 7,
+                  "paletteIndex": 7,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "5bcb5701-f109-4b2d-a195-2255b5485cd0",
+          "frames": [
+            {
+              "id": "31342a6b-4413-41f0-b94b-cc6b384353be",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "0f6ed96b-4e7d-4d56-8a3a-c1e0ea64c765",
+          "frames": [
+            {
+              "id": "fdb24134-5d77-4d60-8cdc-343ad92f8142",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "5068f437-3f68-4c16-8298-92ad088cf3cf",
+          "frames": [
+            {
+              "id": "936335cd-b505-44fa-95cf-10372c9e20de",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "031cbf30-14eb-4acf-827d-88002c333cc7",
+          "frames": [
+            {
+              "id": "56888dd1-b4a6-4685-9694-c8d51a2710bf",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a3c28548-e4c0-4609-b183-2297dfe85642",
+          "frames": [
+            {
+              "id": "c0ae17cb-c9c8-4fa4-ac61-3d5c9faff3c1",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2d0a8ece-4547-4037-9d3c-b409d6e64629",
+          "frames": [
+            {
+              "id": "8139087c-7927-423e-befa-9e200d57f750",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "406e76dc-84dd-411a-8c13-e2871a561c1a",
+          "frames": [
+            {
+              "id": "f9bc3a60-157e-48dc-9c73-aab0ca5feadb",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 8,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "afterhours_scholar_idle.png",
+  "width": 64,
+  "height": 16,
+  "checksum": "45243830c3c31b08d26901b5a8e17801f4212eba"
+}

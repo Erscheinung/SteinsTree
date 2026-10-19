@@ -1,0 +1,44 @@
+{
+  "_resourceType": "actor",
+  "id": "b3956737-e5ba-5b96-bb48-ebba9927bb1d",
+  "_index": 3,
+  "symbol": "actor_mem_childhood_anshuman_spirit",
+  "prefabId": "",
+  "name": "Anshuman (spirit)",
+  "coordinateType": "tiles",
+  "x": 10,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2099ab6a-d26d-5694-a34e-ed11b1e5a865",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "0d2bddf8-9099-b238-c08c-cb624e8d943f"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "0bc0e453-1b0a-0a20-987e-366448c94666"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

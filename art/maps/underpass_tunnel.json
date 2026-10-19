@@ -1,0 +1,80 @@
+{
+ "name": "underpass_tunnel",
+ "title": "The Underpass",
+ "cols": 32,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 0,
+   "y": 8,
+   "spawn": [
+    1,
+    8
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 31,
+   "y": 8,
+   "spawn": [
+    29,
+    8
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 0,
+   "y": 9,
+   "spawn": [
+    1,
+    9
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 31,
+   "y": 9,
+   "spawn": [
+    29,
+    9
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 0,
+   "y": 10,
+   "spawn": [
+    1,
+    10
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 31,
+   "y": 10,
+   "spawn": [
+    29,
+    10
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  1,
+  8
+ ],
+ "unique_before_reduce": 12,
+ "tiles_merged": 0,
+ "unique_tiles": 12,
+ "palette_conflicts": 0,
+ "collisions": "0f100+0060+0fe0+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

@@ -1,0 +1,108 @@
+{
+  "_resourceType": "actor",
+  "id": "8d313476-7652-5fba-ba29-3133f0e4354e",
+  "_index": 7,
+  "symbol": "actor_hub_hall_of_doors",
+  "prefabId": "",
+  "name": "Hall of Doors",
+  "coordinateType": "tiles",
+  "x": 9,
+  "y": 9,
+  "frame": 0,
+  "animate": true,
+  "spriteSheetId": "b862c31a-fac9-5e5f-b335-8c50f1826451",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "136"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 7
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "d214967c-3519-56e2-9fbd-cc8b263398a5",
+              "x": {
+                "type": "number",
+                "value": 13
+              },
+              "y": {
+                "type": "number",
+                "value": 11
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "d9ef5303-46c4-49c1-94f9-873808445221"
+          }
+        ],
+        "false": []
+      },
+      "id": "00c3662b-6ccc-4b91-3bbe-0574fea688ed"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "c6c251aa-8c19-3596-643f-2f0ddde7b864"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "136"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 7
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "908f6e39-366e-1fbc-761a-ae64fb2bcaad"
+          }
+        ],
+        "false": []
+      },
+      "id": "f61b0c70-b88d-e8d2-6898-ebf88cdf2e38"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

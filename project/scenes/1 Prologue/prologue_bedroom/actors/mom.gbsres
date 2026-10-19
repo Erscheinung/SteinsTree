@@ -1,0 +1,84 @@
+{
+  "_resourceType": "actor",
+  "id": "0511bd48-62f6-5149-8eea-6e54c137815c",
+  "_index": 1,
+  "symbol": "actor_prologue_bedroom_mom",
+  "prefabId": "",
+  "name": "Mom",
+  "coordinateType": "tiles",
+  "x": 4,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "4a108507-d241-5d54-aa19-03598a239468",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "113"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mom: Beta, ten\nminutes. Then\nlights off. Deal?"
+              ],
+              "avatarId": ""
+            },
+            "id": "56eeaa52-8e72-1662-dc57-0dfd1d5be0c4"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You: Deal.\nFifteen."
+              ],
+              "avatarId": ""
+            },
+            "id": "f82a2d7c-973c-5f6d-a847-96c6ebeaf7c8"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mom: Sleep now.\nThe critters will\nbe there tomorrow."
+              ],
+              "avatarId": ""
+            },
+            "id": "41898c7d-ba1b-f719-8ab4-0d7e9a2ae6f6"
+          }
+        ]
+      },
+      "id": "bb596529-ecb4-831f-cfbc-9da16b034f8f"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

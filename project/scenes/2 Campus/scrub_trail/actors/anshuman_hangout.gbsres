@@ -1,0 +1,289 @@
+{
+  "_resourceType": "actor",
+  "id": "89ffede0-d8c6-5f10-91e8-a60eac346ad5",
+  "_index": 0,
+  "symbol": "actor_scrub_trail_anshuman_hangout",
+  "prefabId": "",
+  "name": "Anshuman (hangout)",
+  "coordinateType": "tiles",
+  "x": 28,
+  "y": 30,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2099ab6a-d26d-5694-a34e-ed11b1e5a865",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "HANGOUT - Anshuman (Persona social link). Raises Bond_Anshuman.",
+        "__collapse": false
+      },
+      "id": "88c21ba0-878d-3521-cb74-47e6076881b5"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Hang out",
+        "falseText": "Not now"
+      },
+      "id": "40cb5ae1-775c-6b58-035e-04a583cc1177"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Anshuman: ...",
+                      "Anshuman: You\nfound me. Most\npeople don't.",
+                      "That's kind of the\npoint.",
+                      "Anshuman: Peacocks\nsleep in these\ntrees.",
+                      "If you're quiet\nenough you can\nhear them."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "eb75f379-b74d-d8d8-dbbe-97df59bc5832"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Anshuman: I used\nto hide in the\nlibrary at school.",
+                      "Not from bullies.\nFrom noise.",
+                      "Anshuman: Stealth\ngames are honest.",
+                      "Stay in the\nshadow, nobody\ngets hurt.",
+                      "Anshuman: Thanks\nfor walking out\nhere.",
+                      "Even if you made\nnoise the whole\nway."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "362d85e5-c83e-864c-6ba4-ed1ebd0d09f0"
+                }
+              ]
+            },
+            "id": "aee38f87-42b7-4ca0-e562-3cfe683e4747"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "126",
+              "operation": "add",
+              "other": "val",
+              "value": "1",
+              "minValue": "0",
+              "maxValue": "0",
+              "clamp": true
+            },
+            "id": "4c954f51-6b8d-4698-2c9c-eec5f4cf88fe"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The evening slips\naway. You walk\nback to B7."
+              ],
+              "avatarId": ""
+            },
+            "id": "55b25131-0a3b-8101-2ad1-f89494c090a6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "32e43f0a-7617-1a70-5a2f-31149cf0c778"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "115",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "f40ab8e0-273a-bd19-0a48-1a2782bbcad3"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "144",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "1e017d70-47b3-e33d-6559-54febd7f8dff"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "f4035693-49c2-c039-3420-72d9b64432dd"
+          }
+        ],
+        "false": []
+      },
+      "id": "62552fb9-61cb-8fda-bde1-7a2ac6f43dad"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "101"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "30c112db-ba49-3633-7e45-f545a8e7f057"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "96e3b4c9-9be9-84d5-281a-cdefb7930393"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "100"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "92c9fe89-ecfb-7ab0-fed6-a2b87ba14588"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "0d7a33dc-d958-1925-a701-444df05dd46a"
+                }
+              ]
+            },
+            "id": "e7ed0ff3-39ac-eded-2fbe-434aca33380f"
+          }
+        ]
+      },
+      "id": "f035723c-bacb-10b5-c777-e59a62ac45a4"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

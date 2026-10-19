@@ -1,0 +1,103 @@
+{
+  "_resourceType": "actor",
+  "id": "e544bd51-c2f3-5a4b-aaa6-b53ec8df7c9d",
+  "_index": 0,
+  "symbol": "actor_prologue_bedroom_handheld",
+  "prefabId": "",
+  "name": "Handheld",
+  "coordinateType": "tiles",
+  "x": 12,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "9386794b-95da-5ba9-a26d-d047b2a59b94",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "113"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A PocketBoy.\nBatteries at 2\nbars.",
+                "Enough for one\nmore battle."
+              ],
+              "avatarId": ""
+            },
+            "id": "a034818c-ffcf-949e-b16d-98e5b3581eaf"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You: Just one.\nThen homework.\nProbably."
+              ],
+              "avatarId": ""
+            },
+            "id": "e7a03e69-9f66-de55-3b2d-1dfbea2f6e0a"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "8ff9e14a-fbe4-546e-9d06-3f278d33944e",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 16
+              },
+              "direction": "",
+              "fadeSpeed": "1"
+            },
+            "id": "61db551b-034e-9e52-85b1-7843681ae7d2"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The screen is\nwarm.",
+                "SPARKLET is asleep\nin the corner of\nit."
+              ],
+              "avatarId": ""
+            },
+            "id": "0bda4230-7590-1a33-eb57-e41e3f996d3c"
+          }
+        ]
+      },
+      "id": "9af3e9c6-c86a-a5da-dcda-adb702e6d860"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

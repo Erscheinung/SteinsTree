@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "ca587cca-d8fe-57be-b96e-b4c0a229b638",
+  "_index": 8,
+  "symbol": "trigger_girls_blocks_exit_e_19",
+  "prefabId": "",
+  "name": "Exit e 19",
+  "x": 71,
+  "y": 19,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "number",
+          "value": 98
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "0a6de78a-6da6-21b5-efe6-2f63a01748ab"
+    }
+  ],
+  "leaveScript": []
+}

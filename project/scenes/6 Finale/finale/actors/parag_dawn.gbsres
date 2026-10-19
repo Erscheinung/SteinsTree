@@ -1,0 +1,116 @@
+{
+  "_resourceType": "actor",
+  "id": "65a79d4e-72f3-5176-8d06-1c2ea3a273e9",
+  "_index": 2,
+  "symbol": "actor_finale_parag_dawn",
+  "prefabId": "",
+  "name": "Parag (dawn)",
+  "coordinateType": "tiles",
+  "x": 31,
+  "y": 28,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "555228cd-be2f-5844-9f6b-8b9693573206",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "195"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "137"
+            },
+            "id": "6315d6e5-ce70-4fa6-aeb8-2279ec10c18a"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "195",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "a62ad52b-4362-c849-f0f0-d0ff3ee8b17b"
+          }
+        ],
+        "false": []
+      },
+      "id": "7552f20f-55a8-a77b-24bf-496ec7992264"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "125"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Parag: Second try\nworked. Look, I'm\nhere. Kind of."
+              ],
+              "avatarId": ""
+            },
+            "id": "71e0a542-766e-6e2c-48a6-f8ae2f6cbfe6"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Parag: Burnt\nchip's still in my\nwallet.",
+                "You keep it now."
+              ],
+              "avatarId": ""
+            },
+            "id": "d1171812-ae8e-555e-0edc-7d4f02748fc3"
+          }
+        ]
+      },
+      "id": "63dcee78-3921-4308-8f6e-6c408b2261eb"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

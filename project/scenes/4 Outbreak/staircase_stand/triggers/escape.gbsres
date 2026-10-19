@@ -1,0 +1,109 @@
+{
+  "_resourceType": "trigger",
+  "id": "4ba741a2-a812-51cb-99eb-46606b4c9e4d",
+  "_index": 0,
+  "symbol": "trigger_staircase_stand_escape",
+  "prefabId": "",
+  "name": "Escape",
+  "x": 3,
+  "y": 53,
+  "width": 4,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "169"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "169",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "41bcac0f-23d2-3973-69aa-0b54ec7d8c17"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "0ce7afd4-83fe-5e46-9046-e18e599efaa7"
+            },
+            "id": "b0f3e9dd-f57a-4506-984e-8b52ea45ed03"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "c48e4403-c56d-53bd-a764-743a0a10dfcb"
+            },
+            "id": "6edae95f-fc34-acfb-eb4c-3489d0b2f0b2"
+          },
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "2599a44b-b5ca-54e5-9517-a05df84a4970"
+            },
+            "id": "c5b64828-1b08-5c56-979c-117e5c9bea51"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Old Mess!\nKanishk's light is\non!"
+              ],
+              "avatarId": ""
+            },
+            "id": "f30f264b-ccfa-6efa-ba36-15a6d5473bf6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "128",
+              "value": {
+                "type": "number",
+                "value": 5
+              }
+            },
+            "id": "fdb8db83-0d9a-019f-1192-4cec68b93609"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "530ac373-1fd1-5fad-a3b8-9309eb0a262f",
+              "x": {
+                "type": "number",
+                "value": 3
+              },
+              "y": {
+                "type": "number",
+                "value": 13
+              },
+              "direction": "right",
+              "fadeSpeed": "2"
+            },
+            "id": "1176f3a7-c2bd-8774-f07f-bd50378e66d0"
+          }
+        ],
+        "false": []
+      },
+      "id": "cce195f7-b50e-321c-4d46-dcd781ebfb06"
+    }
+  ],
+  "leaveScript": []
+}

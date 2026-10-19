@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "enr-b7-chiller-1",
+  "name": "B7-chiller day 1",
+  "colors": [
+    "F6D2AB",
+    "D9D97F",
+    "AFB553",
+    "8C943E"
+  ],
+  "defaultName": "B7-chiller day 1",
+  "defaultColors": [
+    "F6D2AB",
+    "D9D97F",
+    "AFB553",
+    "8C943E"
+  ]
+}

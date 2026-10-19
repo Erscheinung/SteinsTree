@@ -1,0 +1,92 @@
+{
+  "_resourceType": "actor",
+  "id": "595bb090-9977-51ef-b0d8-ad4658393825",
+  "_index": 3,
+  "symbol": "actor_stealth_patrol_4",
+  "prefabId": "",
+  "name": "Patrol 4",
+  "coordinateType": "tiles",
+  "x": 30,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "97aff541-4f98-52ab-8ea2-25e7d4f4c66a",
+  "paletteId": "",
+  "direction": "right",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "b9747074-0c93-e9c0-7329-5011f0178c30"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.4
+        },
+        "frames": {
+          "type": "number",
+          "value": 24
+        }
+      },
+      "id": "eb1995a6-ffd9-ec0b-9d69-80b3614c20a6"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 30
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "669cf65c-73fe-3fbc-5bc5-b460a29d8ca9"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.4
+        },
+        "frames": {
+          "type": "number",
+          "value": 24
+        }
+      },
+      "id": "655bc125-0e2f-afda-3e41-bd18d99b4b10"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

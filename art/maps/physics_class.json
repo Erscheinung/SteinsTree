@@ -1,0 +1,40 @@
+{
+ "name": "physics_class",
+ "title": "AB1-101: Engineering Physics",
+ "cols": 24,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 11,
+   "y": 16,
+   "spawn": [
+    11,
+    15
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 12,
+   "y": 16,
+   "spawn": [
+    12,
+    15
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  11,
+  15
+ ],
+ "unique_before_reduce": 21,
+ "tiles_merged": 0,
+ "unique_tiles": 21,
+ "palette_conflicts": 0,
+ "collisions": "0f61+00a+0f!00b+0f2+0016+0f2+00!0f2+00!0f2+00!0f2+00!0f2+002+0f2+00!0f2+00!0f4+0016+0f2+0016+0f2+00!0f2+00!0f2+00!0f2+00!0f2+002+0f2+00!0f2+00!0f4+0016+0f2+0016+0f2+00!0f2+00!0f2+00!0f2+00!0f2+002+0f2+00!0f2+00!0f4+0016+0f2+0016+0f3+0014+0fd+002+0f23+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

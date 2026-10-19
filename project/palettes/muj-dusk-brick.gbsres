@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-dusk-brick",
+  "name": "MUJ dusk brick",
+  "colors": [
+    "FEAC8E",
+    "EE7354",
+    "B23F37",
+    "561F25"
+  ],
+  "defaultName": "MUJ dusk brick",
+  "defaultColors": [
+    "FEAC8E",
+    "EE7354",
+    "B23F37",
+    "561F25"
+  ]
+}

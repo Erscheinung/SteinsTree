@@ -1,0 +1,160 @@
+{
+  "_resourceType": "sprite",
+  "id": "8e2bab08-66b8-5e06-977d-6db9a23c7eeb",
+  "name": "cast_pea",
+  "symbol": "sprite_cast_pea",
+  "states": [
+    {
+      "id": "633853db-998c-5b72-aee1-15d51451a19b",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "db8a2f34-a7cb-57b3-8a60-cc4344459ec5",
+          "frames": [
+            {
+              "id": "1deccce6-29ad-5674-b135-ff0d9c40f802",
+              "tiles": [
+                {
+                  "id": "90a116f3-e7e4-561a-87c1-13019181ff48",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 6,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "64fef81f-a1d2-5e2c-ae33-cac9e8cad72f",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 6,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            },
+            {
+              "id": "ec152978-708b-5627-a13e-d46ef5d82d65",
+              "tiles": [
+                {
+                  "id": "a4727a49-7cf6-5e03-9d27-89e632944375",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 16,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 6,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "ab287f18-395b-514c-a199-b9d55dcfcb2a",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 24,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 6,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "4ba18867-a77d-5893-95d2-8b45cdc31e5b",
+          "frames": [
+            {
+              "id": "1d2669e0-c056-55b6-9a72-f576e2597e6f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "c0ad89eb-63dc-583c-a844-29195e697486",
+          "frames": [
+            {
+              "id": "46431363-d055-5336-8c9e-ec084909e9bd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "465400e8-c0de-5a4f-92d5-efa6609257d2",
+          "frames": [
+            {
+              "id": "49bd8b12-269c-55d2-89b9-8d70a8bf1b59",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "81192c0e-12f5-590e-b432-07750a2dd4ec",
+          "frames": [
+            {
+              "id": "c0f57e79-95a4-5991-a98a-ea9d028a8665",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "f25b1984-c798-58f4-9be4-76b5dfb21e30",
+          "frames": [
+            {
+              "id": "f4bb3a9c-dc3c-558b-bf22-0a69602122fd",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "7ca0d01a-422d-55af-9d58-3127f1bea81b",
+          "frames": [
+            {
+              "id": "1e02efe5-c44a-5883-86f8-f7695897efb2",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "66093221-2e05-58aa-a302-17dead934eb4",
+          "frames": [
+            {
+              "id": "fe84c3d7-e1f1-5d36-b560-94f68fa38666",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 4,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "cast_pea.png",
+  "width": 32,
+  "height": 16,
+  "checksum": ""
+}

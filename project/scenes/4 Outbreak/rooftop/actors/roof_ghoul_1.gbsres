@@ -1,0 +1,142 @@
+{
+  "_resourceType": "actor",
+  "id": "ab176b39-685b-5dab-9304-c060660ab3b6",
+  "_index": 2,
+  "symbol": "actor_rooftop_roof_ghoul_1",
+  "prefabId": "",
+  "name": "Roof ghoul 1",
+  "coordinateType": "tiles",
+  "x": 68,
+  "y": 13,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "97aff541-4f98-52ab-8ea2-25e7d4f4c66a",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "127"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "f7f7d597-8933-9691-a06c-919b1b7b56b9"
+          }
+        ],
+        "false": []
+      },
+      "id": "6ec52909-0f04-5b0a-20de-1612dbcd924a"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 73
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "a8e2f39c-d14e-ed26-5ca6-70a7056d418d"
+    },
+    {
+      "command": "EVENT_ACTOR_MOVE_TO",
+      "args": {
+        "actorId": "$self$",
+        "x": {
+          "type": "number",
+          "value": 68
+        },
+        "y": {
+          "type": "number",
+          "value": 13
+        },
+        "collideWith": [],
+        "moveType": "horizontal"
+      },
+      "id": "598ec87a-b59e-d7dc-520b-e99fba1554c6"
+    },
+    {
+      "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+      "args": {
+        "actorId": "$self$",
+        "operator": "<=",
+        "distance": {
+          "type": "number",
+          "value": 1
+        },
+        "otherActorId": "player",
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.3,
+              "frames": 18,
+              "shakeDirection": "horizontal",
+              "magnitude": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "64ac72f6-a0ab-090f-7d56-7ea678287f72"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "player",
+              "x": {
+                "type": "variable",
+                "value": "170"
+              },
+              "y": {
+                "type": "variable",
+                "value": "171"
+              }
+            },
+            "id": "f9543425-1e22-e7fe-e897-314bc158de77"
+          }
+        ],
+        "false": []
+      },
+      "id": "ea972db4-0823-469b-51e1-47d8343b2961"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

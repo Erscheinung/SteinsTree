@@ -1,0 +1,116 @@
+{
+  "_resourceType": "actor",
+  "id": "a98c4bb3-727f-568b-b3ce-2833795d8eaa",
+  "_index": 3,
+  "symbol": "actor_finale_anshuman_dawn",
+  "prefabId": "",
+  "name": "Anshuman (dawn)",
+  "coordinateType": "tiles",
+  "x": 36,
+  "y": 30,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "2099ab6a-d26d-5694-a34e-ed11b1e5a865",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "196"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "137"
+            },
+            "id": "d81706a3-b359-1483-4436-ab9d36c997a0"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "196",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "fbba43a2-3a5b-45c4-0286-f27f11d8a1fa"
+          }
+        ],
+        "false": []
+      },
+      "id": "4257efca-f0ec-fdb3-88b9-0cca1eac4fb8"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "126"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Anshuman: You can\nsee me. Everyone\ncan, here. It's...",
+                "nice."
+              ],
+              "avatarId": ""
+            },
+            "id": "a1972ef1-b191-70ee-6a47-30d75b5ba574"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Anshuman: Thanks\nfor the noise on\nthe trail."
+              ],
+              "avatarId": ""
+            },
+            "id": "df7a6e19-9fdc-c2ab-41d9-0490a8aa1dce"
+          }
+        ]
+      },
+      "id": "c64a19b9-80d9-5250-c24d-bc35f3a183c5"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

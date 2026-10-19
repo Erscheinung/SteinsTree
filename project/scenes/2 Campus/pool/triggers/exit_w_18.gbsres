@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "35a4cd46-91a3-5fb1-8c9e-18fd483a905b",
+  "_index": 10,
+  "symbol": "trigger_pool_exit_w_18",
+  "prefabId": "",
+  "name": "Exit w 18",
+  "x": 0,
+  "y": 18,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 22
+        },
+        "y": {
+          "type": "number",
+          "value": 105
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "a370ac44-7830-8dc5-ad41-535d2cfee8a0"
+    }
+  ],
+  "leaveScript": []
+}

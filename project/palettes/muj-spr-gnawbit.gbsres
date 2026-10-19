@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-gnawbit",
+  "name": "Sprite: Gnawbit",
+  "colors": [
+    "F0E8F0",
+    "9870C0",
+    "604080",
+    "302040"
+  ],
+  "defaultName": "Sprite: Gnawbit",
+  "defaultColors": [
+    "F0E8F0",
+    "9870C0",
+    "604080",
+    "302040"
+  ]
+}

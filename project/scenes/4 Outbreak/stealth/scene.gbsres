@@ -1,0 +1,190 @@
+{
+  "_resourceType": "scene",
+  "id": "0956e7ea-fe2c-5fc6-bc41-0d8894cca01d",
+  "_index": 135,
+  "type": "TOPDOWN",
+  "name": "4 Outbreak/Underpass Stealth (Anshuman)",
+  "symbol": "scene_stealth",
+  "x": 696,
+  "y": 4616,
+  "width": 48,
+  "height": 44,
+  "backgroundId": "bfe010ea-de78-55d6-9357-d67c5bee324f",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-night-grass",
+    "muj-night-path",
+    "muj-night-stone",
+    "muj-night-brick",
+    "muj-night-roof",
+    "muj-night-water",
+    "muj-night-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-gold",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "34321a0a-973e-bac5-c811-cfe4536ffe90"
+          }
+        ]
+      },
+      "id": "8cfab946-8504-ea28-3cc7-278df8c818d7"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-night-grass",
+        "palette1": "muj-night-path",
+        "palette2": "muj-night-stone",
+        "palette3": "muj-night-brick",
+        "palette4": "muj-night-roof",
+        "palette5": "muj-night-water",
+        "palette6": "muj-night-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "084ba088-e797-7a43-d9db-e26684ea0d3d"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "b240b473-9df0-591e-9986-1bf0077605a7",
+        "loop": true
+      },
+      "id": "2c25d490-69d6-7765-ef37-210b7369171c"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "ANSHUMAN - STEALTH. Patrols walk fixed routes; shadows (triggers) hide you.",
+        "__collapse": false
+      },
+      "id": "275f6159-bb57-5a62-1733-bfe0d36dd4ec"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 6
+        },
+        "y": {
+          "type": "number",
+          "value": 41
+        }
+      },
+      "id": "5e8f6b62-fe01-04d0-c3f1-75d48e3a9f5f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "d31e5c7f-ef94-637f-63c1-668a3c478701"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "164",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "2478b4d4-b049-1f85-cebd-97593730fd29"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: (radio)\nSplinter rules.",
+          "Patrols walk\nlines. Lines have\ngaps."
+        ],
+        "avatarId": ""
+      },
+      "id": "c91b6687-2346-b1d0-046c-f823883132ee"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: (radio)\nGet within two\nsteps of one in",
+          "the open and it\nsees you.",
+          "Anshuman: Stand in\na shadow and you\ndon't exist.",
+          "Reach the hostel-\nside tunnel door,\ntop left."
+        ],
+        "avatarId": ""
+      },
+      "id": "507722be-857a-1496-e1e6-69212ad67b1b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "126"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Anshuman: (radio)\nYou walked the\ntrail with me.",
+                "You're quieter\nnow. One step is\nenough."
+              ],
+              "avatarId": ""
+            },
+            "id": "e0047150-f6b7-b68e-ad9c-cbc145b30bce"
+          }
+        ],
+        "false": []
+      },
+      "id": "e6b14fc7-8022-e535-adee-853f326ad620"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f5+004+0fa+004+0ff+004+0f7+00!0f3+005+0f3+0011+0f3+00e+0f2+00!0f3+005+0f3+0012+0f2+00e+0f2+00!0f3+006+0f3+0011+0f2+00e+0f6+006+0f3+0011+0f2+00e+0f6+006+0f5+00f+0f2+00e+0f6+002+0f2+002+0f5+00f+0f3+00d+0fa+002+0f3+0011+0f3+00d+0f8+004+0f3+00c+0f2+003+0f3+00d+0f8+004+0f3+00c+0f2+00!0f2+00!0f2+00d+0fa+002+0f4+002+0f2+00a+0f2+00!0f2+00d+0fa+003+0f3+002+0f2+00d+0f2+008+0f2+003+0f8+005+0f3+004+0f2+005+0f2+00b+0f2+00!0f2+003+0f2+00b+0f3+004+0f2+005+0f2+008+0f2+00!0f2+006+0f2+00b+0f3+00e+0f2+002+0f2+00!0f2+009+0f!007+0f2+003+0f!005+0f2+009+0f2+002+0f2+00c+0f!007+0f2+009+0f2+007+0f2+0012+0f!00e+0f2+00b+0f2+00!0f2+002+0f2+00b+0f!00e+0f2+003+0f2+009+0f2+002+0f2+00b+0f2+002+0f2+00e+0f2+007+0f2+002+0f2+00d+0f2+002+0f2+002+0f2+0013+0f2+002+0f2+00e+0f3+004+0f2+007+0f2+0011+0f2+00b+0f3+00!0f2+00a+0f2+00b+0f2+004+0f2+00b+0f!003+0f2+002+0f2+0013+0f2+0011+0f2+006+0f2+00a+0f2+00a+0f2+00d+0f3+0012+0f2+00a+0f2+00d+0f3+007+0f2+001a+0f2+008+0f3+007+0f2+0013+0f2+005+0f2+008+0f3+001c+0f2+00!0f2+00c+0f3+008+0f2+0015+0f2+00c+0f3+008+0f2+007+0f2+001a+0f2+0012+0f2+001a+0f2+006+0f2+0026+0f2+002+0f2+002+0f2+0026+0f2+002+0f2+006+0f2+0022+0f!006+0f2+003+0f2+0022+0f!006+0f2+0027+0f!004+0f2+002+0f2+0025+0f!004+0f2+002+0f2+0025+0f2+002e+0f2+002e+0f2+0011+0f2+001b+0f2+0011+0f2+001b+0f8+004+0f14+004+0fd+"
+}

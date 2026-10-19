@@ -1,0 +1,56 @@
+{
+  "_resourceType": "trigger",
+  "id": "7a1219d8-635c-5f2e-ba77-d7b78107cbcf",
+  "_index": 0,
+  "symbol": "trigger_tunnel_out_university_side",
+  "prefabId": "",
+  "name": "Out (university side)",
+  "x": 31,
+  "y": 8,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "128"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+              "x": {
+                "type": "number",
+                "value": 84
+              },
+              "y": {
+                "type": "number",
+                "value": 75
+              },
+              "direction": "down",
+              "fadeSpeed": "2"
+            },
+            "id": "8c794bc6-2ad8-828d-8862-8fd90c9625f3"
+          }
+        ],
+        "false": []
+      },
+      "id": "88ed66b7-7602-0b10-413a-ae77e5d39e05"
+    }
+  ],
+  "leaveScript": []
+}

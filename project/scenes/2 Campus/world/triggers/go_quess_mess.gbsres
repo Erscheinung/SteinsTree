@@ -1,0 +1,120 @@
+{
+  "_resourceType": "trigger",
+  "id": "9224d2a2-b59d-573c-a328-384a8b35255a",
+  "_index": 2,
+  "symbol": "trigger_world_go_quess_mess",
+  "prefabId": "",
+  "name": "Go: Quess Mess",
+  "x": 28,
+  "y": 81,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Quess Mess"
+        ],
+        "avatarId": ""
+      },
+      "id": "5924d771-a752-3622-413d-ebe4443f1aa9"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Enter",
+        "falseText": "Keep walking"
+      },
+      "id": "8030b3f9-7a08-aec6-38b7-e31f8556c7d2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Shapes move behind\nthe windows. Not\nhere. Not now."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "84cc8195-3ba8-6f38-3f76-6626421dd420"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "202",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "8bb9665b-7bfb-8164-276f-a53ab816514c"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "267ed18d-9036-5992-9095-35ba2a9ff6e8",
+                    "x": {
+                      "type": "number",
+                      "value": 4
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "fa57f421-32fb-19ab-8b98-38fdae447c9f"
+                }
+              ]
+            },
+            "id": "1aac8b9f-947a-b420-02c5-75a9d1070284"
+          }
+        ],
+        "false": []
+      },
+      "id": "3f837741-10a6-9c90-f26f-eeabda4d0fc1"
+    }
+  ],
+  "leaveScript": []
+}

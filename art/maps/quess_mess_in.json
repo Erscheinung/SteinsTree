@@ -1,0 +1,40 @@
+{
+ "name": "quess_mess_in",
+ "title": "Quess Mess",
+ "cols": 26,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 11,
+   "y": 15,
+   "spawn": [
+    11,
+    14
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 12,
+   "y": 15,
+   "spawn": [
+    12,
+    14
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  11,
+  14
+ ],
+ "unique_before_reduce": 18,
+ "tiles_merged": 0,
+ "unique_tiles": 18,
+ "palette_conflicts": 0,
+ "collisions": "0f69+00!0fc+00b+0f2+0018+0f2+002+0f4+004+0f4+004+0f4+002+0f2+002+0f4+004+0f4+004+0f4+002+0f2+0018+0f2+002+0f4+004+0f4+004+0f4+002+0f2+002+0f4+004+0f4+004+0f4+002+0f2+0018+0f2+002+0f4+004+0f4+004+0f4+002+0f2+0018+0f3+0016+0fd+002+0f41+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

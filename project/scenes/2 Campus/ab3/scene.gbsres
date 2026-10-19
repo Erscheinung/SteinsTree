@@ -1,0 +1,235 @@
+{
+  "_resourceType": "scene",
+  "id": "977518a2-ecb8-5450-9968-fcade317e562",
+  "_index": 113,
+  "type": "TOPDOWN",
+  "name": "2 Campus/Academic Block 3 & Labs",
+  "symbol": "scene_ab3",
+  "x": 944,
+  "y": 3672,
+  "width": 52,
+  "height": 64,
+  "backgroundId": "8a4564a4-5920-569b-9b7c-7af461477359",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "88c298c9-96a7-e1f8-1946-61e6f64c2058"
+          }
+        ]
+      },
+      "id": "2d5a285b-d3c3-b248-ac89-011d057b89f1"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "45da2cc3-3bd7-696c-b951-7c6b0fda551d"
+                }
+              ],
+              "false": []
+            },
+            "id": "1b1db244-e274-fd10-56da-5f1fbc6f354c"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "6b6eff61-4072-1c8b-012c-b1f1d5f001bc"
+                }
+              ],
+              "false": []
+            },
+            "id": "47ab7dc7-1167-eb86-85fc-2cf0c69910fa"
+          }
+        ]
+      },
+      "id": "471fc23b-b36b-f03a-1571-ad9f09461942"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "b06912ec-d427-3403-85bb-f0f318b7aac5"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "39c27841-f31e-a861-333f-a6029a255fa5"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "AB3 & Labs",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "18d3bae6-dcdc-2ed5-342b-60726a073402"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "737d4b4a-55e1-3cf1-8e1e-32ae3231c48c"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "cf5290e8-20c0-d7f7-9697-3508a9d00d89"
+          }
+        ],
+        "false": []
+      },
+      "id": "5d2aad39-ad3e-f1e3-977a-78f576f722e6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f18+004+0f19+0033+0f!0033+0f2+0032+0f3+00c+0f2+006+0f2+001b+0f5+00a+0f2+003+0f12+008+0fa+003+0f2+005+0f18+008+0fc+00!0f2+005+0f18+008+0f9+00!0f2+003+0f2+003+0f18+008+0f9+006+0f2+003+0f18+008+0f8+00!0f2+002+0f2+005+0f18+009+0f7+00!0f2+002+0f2+005+0f18+009+0f6+008+0f2+003+0f18+009+0f6+003+0f2+003+0f2+003+0f19+005+0f2+00!0f6+003+0f2+008+0fd+00!0fb+005+0f2+00!0f6+00!0f2+003+0f2+005+0fc+002+0fb+008+0f6+00!0f2+003+0f2+00!0f2+002+0fc+002+0fb+008+0f5+005+0f2+003+0f2+002+0fc+003+0fa+005+0f2+00!0f5+005+0f2+007+0fb+004+0fa+005+0f2+00!0f5+003+0f2+0018+0fa+008+0f6+002+0f2+002+0f2+0014+0fa+008+0f8+004+0f2+0014+0fa+008+0fa+0018+0fa+008+0fc+003+0f2+00c+0f2+003+0fa+008+0fd+002+0f2+008+0f2+002+0ff+008+0ff+007+0f16+008+0ff+007+0f16+008+0f11+005+0f17+007+0fe+00!0f2+005+0f17+007+0fe+008+0f17+007+0fd+003+0f2+004+0f17+007+0fd+003+0f2+004+0f17+008+0fb+00!0f2+008+0f16+008+0fb+00!0f2+008+0f16+008+0fa+005+0f2+005+0f16+008+0fc+003+0f2+005+0f16+008+0f9+00!0f2+00a+0f16+008+0f9+003+0f2+0014+0fa+008+0f8+00!0f2+00!0f2+0014+0fa+008+0f8+00!0f2+0017+0fa+008+0f7+006+0f2+0013+0fa+008+0f7+006+0f2+00b+0f2+006+0fa+008+0f6+00!0f2+0011+0f2+006+0fb+007+0f5+002+0f2+002+0f2+007+0f2+002+0f2+002+0f2+004+0fb+007+0f5+006+0f2+007+0f2+002+0f2+002+0f2+002+0f2+00!0fa+007+0f5+00a+0f10+00!0f2+00!0fa+007+0f5+00!0f2+007+0f10+004+0fa+007+0f5+00!0f2+002+0f2+003+0f10+004+0fa+007+0f4+006+0f2+003+0f10+004+0fa+007+0f4+00b+0f11+003+0fa+007+0f4+005+0f2+005+0f1d+007+0f5+00!0f2+00!0f2+005+0f1d+007+0f5+00!0f2+008+0f1d+008+0f3+00c+0f1d+008+0f3+00c+0f1d+008+0f3+00c+0fa+00!0fa+0010+0f6+009+0f6+001f+0f6+002e+0f3+0010+0f2+001f+0f3+0010+0f2+001f+0f!00!0f!0052+0f2+005+0f2+00d+0f!001d+0f2+005+0f2+00d+0fd+004+0ff+004+0f7+004+0f5+"
+}

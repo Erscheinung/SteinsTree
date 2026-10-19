@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "b09c2c91-5cf0-5f99-93d9-dfa4883bed84",
+  "name": "flight_sky",
+  "symbol": "bg_flight_sky",
+  "tileColors": "04870+",
+  "filename": "muj/flight_sky.png",
+  "width": 120,
+  "height": 18,
+  "imageWidth": 960,
+  "imageHeight": 144
+}

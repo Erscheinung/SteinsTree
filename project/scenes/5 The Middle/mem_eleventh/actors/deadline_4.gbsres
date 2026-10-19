@@ -1,0 +1,171 @@
+{
+  "_resourceType": "actor",
+  "id": "13cc53de-b876-57b2-ba94-b2423d75159f",
+  "_index": 3,
+  "symbol": "actor_mem_eleventh_deadline_4",
+  "prefabId": "",
+  "name": "Deadline 4",
+  "coordinateType": "tiles",
+  "x": 3,
+  "y": 9,
+  "frame": 0,
+  "animate": true,
+  "spriteSheetId": "b862c31a-fac9-5e5f-b335-8c50f1826451",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "201"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "player",
+              "vectorX": "166",
+              "vectorY": "167"
+            },
+            "id": "f611f5dd-ad48-5be1-5242-d11eed44e0e5"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "variable",
+                "value": "166"
+              },
+              "y": {
+                "type": "variable",
+                "value": "167"
+              },
+              "collideWith": [],
+              "moveType": "horizontal"
+            },
+            "id": "5e77fabc-5610-3619-2ed8-7a79e7cac7a1"
+          },
+          {
+            "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+            "args": {
+              "actorId": "$self$",
+              "operator": "<=",
+              "distance": {
+                "type": "number",
+                "value": 1
+              },
+              "otherActorId": "player",
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "200"
+                  },
+                  "id": "ab49c58a-90ad-273c-6849-2baa8248e586"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "noise",
+                    "priority": "medium",
+                    "pitch": 3,
+                    "frequency": 200,
+                    "duration": 0.2,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "8594a0dd-4db8-ec47-7032-16c2316f93de"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 12,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "9f15f46c-99e9-4c42-b1c0-47a805336eb1"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Coaching till 9.\nSchool till 2."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "a2519c54-9b2c-9d81-a117-c4b244bdef44"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "be17f510-8f4b-0b3a-124c-708c4d5538c2"
+                }
+              ],
+              "false": []
+            },
+            "id": "f9782337-26fc-953e-02f6-6ed25f77e2d2"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.2
+              },
+              "frames": {
+                "type": "number",
+                "value": 12
+              }
+            },
+            "id": "5765248d-d824-6e1c-03b0-16e08215388f"
+          }
+        ]
+      },
+      "id": "393b9053-b63e-b8aa-4974-cd23a1135d56"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

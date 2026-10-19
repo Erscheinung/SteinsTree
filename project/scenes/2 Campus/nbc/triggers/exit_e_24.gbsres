@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "ac0f4ebd-a4ae-5a22-8604-9924bbfab647",
+  "_index": 7,
+  "symbol": "trigger_nbc_exit_e_24",
+  "prefabId": "",
+  "name": "Exit e 24",
+  "x": 43,
+  "y": 24,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 60
+        },
+        "y": {
+          "type": "number",
+          "value": 48
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "a9c63cfd-3031-39e1-4b32-d1c9e6a9d95e"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "dc54355f-3c3c-599c-98ef-701dcfa64c91",
+  "_index": 3,
+  "symbol": "trigger_underpass_exit_s_7",
+  "prefabId": "",
+  "name": "Exit s 7",
+  "x": 7,
+  "y": 43,
+  "width": 4,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 54
+        },
+        "y": {
+          "type": "number",
+          "value": 74
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "d2e9a633-756d-710d-49db-3f70a481cba9"
+    }
+  ],
+  "leaveScript": []
+}

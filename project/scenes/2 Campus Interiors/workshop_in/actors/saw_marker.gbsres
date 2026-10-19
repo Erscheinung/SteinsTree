@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "f4888aff-68ac-5c59-ad29-4f05c675f1dd",
+  "_index": 2,
+  "symbol": "actor_workshop_in_saw_marker",
+  "prefabId": "",
+  "name": "Saw Marker",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 7,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "140b73ff-a5d2-5bd0-876b-76e1a98b3541",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "ce196040-d332-95da-7316-74223bb68058"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "ne",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "e0e083d9-f530-8139-a42a-5d632b5bc4ea"
+                }
+              ],
+              "false": []
+            },
+            "id": "450e0037-e496-08f4-ca56-25d98edb833b"
+          }
+        ]
+      },
+      "id": "155429db-127a-ea25-4004-5d6ec32dbb78"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

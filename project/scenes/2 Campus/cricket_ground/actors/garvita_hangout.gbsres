@@ -1,0 +1,289 @@
+{
+  "_resourceType": "actor",
+  "id": "d3541174-9d65-58f0-aa92-66306e83c40e",
+  "_index": 5,
+  "symbol": "actor_cricket_ground_garvita_hangout",
+  "prefabId": "",
+  "name": "Garvita (hangout)",
+  "coordinateType": "tiles",
+  "x": 20,
+  "y": 20,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5ecd17ee-15a6-5e5c-a15b-2bec9d34f800",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "HANGOUT - Garvita (Persona social link). Raises Bond_Garvita.",
+        "__collapse": false
+      },
+      "id": "fe44c827-e316-dfdf-8e08-07a91ccfa79a"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Hang out",
+        "falseText": "Not now"
+      },
+      "id": "9ec8370a-a882-515b-33a9-887f5d80aecc"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Garvita: Race you\nto the pavilion!\n...No? Coward.",
+                      "Garvita: I run\nbecause when I\nstop, I start",
+                      "thinking. Running\nis cheaper than\ntherapy.",
+                      "Garvita: Tomorrow\nI'm doing the AB2\nstairs.",
+                      "All of them.\nTwice."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3a58cef6-873b-203b-c37b-8e29056dbaba"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Garvita: Back home\nI was 'the girl\nwho climbs",
+                      "things'. Here I'm\njust me. It's\nnice.",
+                      "Garvita: One day I\nwant to run so far\nnobody can call me",
+                      "back.",
+                      "Garvita: But\nalso...",
+                      "it's nice when\nsomeone waits at\nthe finish."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "e2128dcc-a698-8acb-9db1-66a2f9d87127"
+                }
+              ]
+            },
+            "id": "31eb45d5-569a-7051-22c8-2c5c40952046"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "127",
+              "operation": "add",
+              "other": "val",
+              "value": "1",
+              "minValue": "0",
+              "maxValue": "0",
+              "clamp": true
+            },
+            "id": "78cda830-552a-6439-61cc-a32515ec94bf"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The evening slips\naway. You walk\nback to B7."
+              ],
+              "avatarId": ""
+            },
+            "id": "b9542096-aa1f-864d-b82a-dd4fe76c674f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "b7761a1f-3f5c-482a-cf6e-832ed63c8b21"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "115",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "e92071e4-225a-31d3-f226-c1f4a644ac66"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "144",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "3b0888d8-6b22-6331-4ec0-b46e4bd21129"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "2f37698f-eb0a-c3bf-2428-da6db55cbe5d"
+          }
+        ],
+        "false": []
+      },
+      "id": "601a6368-8a79-e345-dc0c-a83011dac536"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "101"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "b76a72d9-8988-829e-2519-c42b03901b82"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "7aab872e-3cab-60ae-d874-ba91f057fdd2"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "100"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "10f3cf78-aa90-1f31-f6bd-c62d89d1a530"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "2caa0f73-aea9-9557-ca92-b7e0b5684bb9"
+                }
+              ]
+            },
+            "id": "9d7accc5-1c27-c7e9-fe5e-404fe3794a2d"
+          }
+        ]
+      },
+      "id": "c9189b26-9b02-35d2-14ca-e41a8ed3ccea"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

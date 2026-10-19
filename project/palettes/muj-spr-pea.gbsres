@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-pea",
+  "name": "Sprite: Pea",
+  "colors": [
+    "E0F8A0",
+    "60B830",
+    "387018",
+    "184018"
+  ],
+  "defaultName": "Sprite: Pea",
+  "defaultColors": [
+    "E0F8A0",
+    "60B830",
+    "387018",
+    "184018"
+  ]
+}

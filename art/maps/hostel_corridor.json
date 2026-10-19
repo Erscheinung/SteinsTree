@@ -1,0 +1,40 @@
+{
+ "name": "hostel_corridor",
+ "title": "Hostel Corridor",
+ "cols": 30,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 14,
+   "y": 11,
+   "spawn": [
+    14,
+    10
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 15,
+   "y": 11,
+   "spawn": [
+    14,
+    10
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  14,
+  10
+ ],
+ "unique_before_reduce": 13,
+ "tiles_merged": 0,
+ "unique_tiles": 13,
+ "palette_conflicts": 0,
+ "collisions": "0ff1+001c+0f2+001c+0ff+002+0f7+002+0f13+002+0fc2+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

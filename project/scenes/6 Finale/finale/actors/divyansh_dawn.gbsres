@@ -1,0 +1,117 @@
+{
+  "_resourceType": "actor",
+  "id": "4bd882ba-27e9-5abc-ab8e-9b6625acf74a",
+  "_index": 0,
+  "symbol": "actor_finale_divyansh_dawn",
+  "prefabId": "",
+  "name": "Divyansh (dawn)",
+  "coordinateType": "tiles",
+  "x": 21,
+  "y": 28,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0eeee60a-0644-53cf-96cc-0d4aa4b9c725",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "193"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "137"
+            },
+            "id": "fcce98ed-7d4a-19b6-8c58-1b00cd5d9bf6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "193",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "5a5c8c6b-846b-99c3-9f40-eff0fff304c1"
+          }
+        ],
+        "false": []
+      },
+      "id": "c25cce36-8a72-b058-8db7-3405a86e3c92"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "123"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Divyansh: Bro! I\nhit it! Six! Over\nthe Dome!",
+                "...okay it's a\ndream, but it\nCOUNTS."
+              ],
+              "avatarId": ""
+            },
+            "id": "eff86e03-07e8-73b4-1d63-94a590d05ac1"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Divyansh: I walked\nthe walk. Once.",
+                "Turns out once is\nenough."
+              ],
+              "avatarId": ""
+            },
+            "id": "b6a08d43-7d7f-6c10-7a79-b2986a7cfeb0"
+          }
+        ]
+      },
+      "id": "d49d8ecc-3464-d454-ce10-0d49a8265e60"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

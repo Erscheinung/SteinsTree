@@ -1,0 +1,44 @@
+{
+  "_resourceType": "trigger",
+  "id": "d92818ef-9442-5529-b51f-338989df60c8",
+  "_index": 14,
+  "symbol": "trigger_block1_door_b1_lobby",
+  "prefabId": "",
+  "name": "Door B1 Lobby",
+  "x": 7,
+  "y": 39,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "103",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "caf3cf51-2239-35cf-97b7-2098811dc2fc"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "2a328d30-13f8-55f8-b08a-78efc760a510",
+        "x": {
+          "type": "number",
+          "value": 14
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "6dcd9b94-8f57-fc21-7143-fd27f4d61510"
+    }
+  ],
+  "leaveScript": []
+}

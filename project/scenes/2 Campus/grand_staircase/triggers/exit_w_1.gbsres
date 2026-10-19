@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "a0fcbeb6-b7ce-504e-9567-d6f24ee53bd0",
+  "_index": 8,
+  "symbol": "trigger_grand_staircase_exit_w_1",
+  "prefabId": "",
+  "name": "Exit w 1",
+  "x": 0,
+  "y": 1,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 84
+        },
+        "y": {
+          "type": "number",
+          "value": 75
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "2754290f-b949-4093-acbf-a9a90d53c782"
+    }
+  ],
+  "leaveScript": []
+}

@@ -10,7 +10,7 @@
   "y": 11,
   "frame": 0,
   "animate": false,
-  "spriteSheetId": "dfa75239-299d-41fe-a6cd-9e9438da1938",
+  "spriteSheetId": "e6c451a2-6ff2-44c2-9f4e-5969df82a7e0",
   "paletteId": "",
   "direction": "down",
   "moveSpeed": 1,
@@ -22,204 +22,309 @@
   "prefabScriptOverrides": {},
   "script": [
     {
-      "id": "daf198f9-0a90-4db3-b422-6ed3f49a407a",
       "command": "EVENT_IF",
       "args": {
-        "variable": "L0",
-        "__collapse": false,
-        "__collapseElse": false,
         "condition": {
           "type": "eq",
           "valueA": {
             "type": "variable",
-            "value": "L0"
+            "value": "100"
           },
           "valueB": {
-            "type": "false"
+            "type": "number",
+            "value": 4
           }
-        }
+        },
+        "__collapseElse": true
       },
       "children": {
         "true": [
           {
-            "id": "e35d5f62-2347-41ff-b978-37175c19f7f8",
-            "command": "EVENT_TEXT",
+            "id": "fbd5cf21-4a71-c576-00ed-b253f2c1190b",
+            "command": "EVENT_IF",
             "args": {
-              "text": [
-                "Something weird is\ngoing on..."
-              ]
+              "variable": "L0",
+              "__collapse": false,
+              "__collapseElse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "13a26c97-73a0-3c7c-e668-a5c6e1fcd0af",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Something weird is\ngoing on..."
+                    ]
+                  }
+                }
+              ],
+              "false": []
             }
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "129"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: You saw it\ntoo. Okay. Okay.\nLounge.",
+                      "Everyone's there.\nNOW."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "f1cab2e3-782a-2d8b-f4fd-5572bf2b2f0b"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "28753070-08be-5490-9cbf-818fb7c62080",
+                    "x": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 22
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "002848de-fdea-0873-94e0-23dc3200ec08"
+                }
+              ],
+              "false": []
+            },
+            "id": "cee89590-4833-1246-87d6-a63fb5056bca"
           }
         ],
         "false": []
-      }
+      },
+      "id": "8be313ce-1e16-6f73-f8d9-d437f438c3e4"
     }
   ],
   "startScript": [
     {
-      "id": "68384fa5-44fc-4c90-a690-7bef98297a8a",
       "command": "EVENT_IF",
       "args": {
-        "variable": "L0",
-        "__collapseElse": false,
         "condition": {
           "type": "eq",
           "valueA": {
             "type": "variable",
-            "value": "L0"
+            "value": "100"
           },
           "valueB": {
-            "type": "false"
+            "type": "number",
+            "value": 4
           }
-        }
+        },
+        "__collapseElse": false
       },
       "children": {
         "true": [
           {
-            "id": "2541af5d-bdea-43a1-be2a-6224fa360654",
-            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "id": "d707627d-1c03-e9e5-75fe-55d6384f5861",
+            "command": "EVENT_IF",
             "args": {
-              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
-              "speed": 3
-            }
-          },
-          {
-            "id": "12f49f93-23b2-4f2b-acee-8aa2c271f406",
-            "command": "EVENT_ACTOR_MOVE_TO",
-            "args": {
-              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
-              "x": {
-                "type": "number",
-                "value": 14
-              },
-              "y": {
-                "type": "number",
-                "value": 11
-              },
-              "useCollisions": false,
-              "verticalFirst": false,
-              "collideWith": []
-            }
-          },
-          {
-            "id": "8c21b75c-7cac-4c58-8a01-da70f89e8954",
-            "command": "EVENT_ACTOR_MOVE_TO",
-            "args": {
-              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
-              "x": {
-                "type": "number",
-                "value": 15
-              },
-              "y": {
-                "type": "number",
-                "value": 18
-              },
-              "useCollisions": false,
-              "verticalFirst": false,
-              "collideWith": []
-            }
-          },
-          {
-            "id": "9d7e3e4c-1f46-4fef-8c81-02d5de82e6ee",
-            "command": "EVENT_ACTOR_MOVE_TO",
-            "args": {
-              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
-              "x": {
-                "type": "number",
-                "value": 18
-              },
-              "y": {
-                "type": "number",
-                "value": 18
-              },
-              "useCollisions": false,
-              "verticalFirst": false,
-              "collideWith": []
-            }
-          },
-          {
-            "id": "f67cd030-9224-4be2-9a0a-73a40ed80987",
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Mayank: Hey! Did\nyou\nhear that?"
+              "variable": "L0",
+              "__collapseElse": false,
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "L0"
+                },
+                "valueB": {
+                  "type": "false"
+                }
+              }
+            },
+            "children": {
+              "true": [
+                {
+                  "id": "09359082-c28f-75cb-8aa8-1f5b294c3be2",
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+                    "speed": 3
+                  }
+                },
+                {
+                  "id": "60d1f90d-d968-71b7-9a02-3b3c98a1792b",
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+                    "x": {
+                      "type": "number",
+                      "value": 14
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    },
+                    "useCollisions": false,
+                    "verticalFirst": false,
+                    "collideWith": []
+                  }
+                },
+                {
+                  "id": "6e14c711-5f7f-0061-52cc-e0817fe092f4",
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+                    "x": {
+                      "type": "number",
+                      "value": 15
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 18
+                    },
+                    "useCollisions": false,
+                    "verticalFirst": false,
+                    "collideWith": []
+                  }
+                },
+                {
+                  "id": "4a981082-1b65-d262-20c8-cb288db2dcd3",
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+                    "x": {
+                      "type": "number",
+                      "value": 18
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 18
+                    },
+                    "useCollisions": false,
+                    "verticalFirst": false,
+                    "collideWith": []
+                  }
+                },
+                {
+                  "id": "ac44d3bb-e877-2179-c225-ba7cd683ba2a",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Hey! Did\nyou\nhear that?"
+                    ],
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "50cc2b29-a4d0-5fff-427c-8eb585363ae8",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You: Yeah, what\nwas that?"
+                    ],
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "c66b26c2-45c8-c6fe-bd4e-84818c5baf7a",
+                  "command": "EVENT_ACTOR_EMOTE",
+                  "args": {
+                    "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
+                    "emoteId": "7054718e-2614-42fc-9ca3-9c10cf5c6199"
+                  }
+                },
+                {
+                  "id": "483f2d3f-621f-721a-20f0-eb1410e3d51c",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: I don't\nknow but it seems\nlike it",
+                      "came from the B7\nmain gate area."
+                    ],
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "4fcbc7c6-920f-bba0-75c0-c28acde29e22",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You: I'm gonna\ncheck it out."
+                    ],
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "57a816c6-447c-b205-04de-8b6eae03a947",
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Ok, I'll\nwait here."
+                    ],
+                    "avatarId": ""
+                  }
+                },
+                {
+                  "id": "3e154b0c-7a5d-eb3f-7f53-b222bbcd36a0",
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "$self$",
+                    "direction": {
+                      "type": "direction",
+                      "value": "down"
+                    }
+                  }
+                }
               ],
-              "avatarId": ""
+              "false": []
             }
           },
           {
-            "id": "e6561cee-cd4c-4768-9eda-82d43392fd89",
-            "command": "EVENT_TEXT",
+            "id": "1ab516ab-adc0-ffa3-ee4b-79ce97886720",
+            "command": "EVENT_SET_VALUE",
             "args": {
-              "text": [
-                "You: Yeah, what\nwas that?"
-              ],
-              "avatarId": ""
-            }
-          },
-          {
-            "id": "9dbbd971-67ee-41be-a75c-f9901a049a38",
-            "command": "EVENT_ACTOR_EMOTE",
-            "args": {
-              "actorId": "a85c4ba5-9bc0-4daa-94bc-4ef68a690659",
-              "emoteId": "7054718e-2614-42fc-9ca3-9c10cf5c6199"
-            }
-          },
-          {
-            "id": "902682df-7d84-49b8-9923-9e91a674e4b6",
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Mayank: I don't\nknow but it seems\nlike it",
-                "came from the B7\nmain gate area."
-              ],
-              "avatarId": ""
-            }
-          },
-          {
-            "id": "4bda1f48-df0a-42d2-b00e-d6ec28e0b3e1",
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "You: I'm gonna\ncheck it out."
-              ],
-              "avatarId": ""
-            }
-          },
-          {
-            "id": "6459be52-ae71-4d27-8a50-feea03f28c31",
-            "command": "EVENT_TEXT",
-            "args": {
-              "text": [
-                "Mayank: Ok, I'll\nwait here."
-              ],
-              "avatarId": ""
-            }
-          },
-          {
-            "id": "ee7f477b-022d-471c-ac2b-42a21c240024",
-            "command": "EVENT_ACTOR_SET_DIRECTION",
-            "args": {
-              "actorId": "$self$",
-              "direction": {
-                "type": "direction",
-                "value": "down"
+              "variable": "L0",
+              "value": {
+                "type": "true"
               }
             }
           }
         ],
-        "false": []
-      }
-    },
-    {
-      "id": "66a18f6e-b94e-4bad-925c-023e8f55d21f",
-      "command": "EVENT_SET_VALUE",
-      "args": {
-        "variable": "L0",
-        "value": {
-          "type": "true"
-        }
-      }
+        "false": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "4ab518da-56c6-a45d-0166-76e17c640b80"
+          }
+        ]
+      },
+      "id": "5260022a-4cd2-2de4-cba1-5ef1132298cd"
     }
   ],
   "updateScript": [],

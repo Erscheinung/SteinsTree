@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "adbaa27b-99d0-5719-95d0-29e7a11313a8",
+  "name": "flower_field",
+  "symbol": "bg_flower_field",
+  "tileColors": "00ef+062+002f+0140+00120+",
+  "filename": "muj/flower_field.png",
+  "width": 32,
+  "height": 20,
+  "imageWidth": 256,
+  "imageHeight": 160
+}

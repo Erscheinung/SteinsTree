@@ -1,0 +1,97 @@
+{
+  "_resourceType": "trigger",
+  "id": "4e150580-3f8c-4326-9771-808ae2918024",
+  "_index": 0,
+  "symbol": "trigger_29",
+  "prefabId": "",
+  "name": "",
+  "x": 11,
+  "y": 14,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "49a35cf3-dfe2-4b18-9309-ccb2d315ca22",
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "bdd73ca3-4cd8-4630-bb76-e185db8bc9e9",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 27
+        },
+        "direction": "",
+        "fadeSpeed": "1",
+        "__collapse": false
+      }
+    },
+    {
+      "id": "fb044438-8c43-4df0-aa75-7b92cf41eb5d",
+      "command": "EVENT_IF",
+      "args": {
+        "variable": "L2",
+        "__collapseElse": false,
+        "__collapse": false,
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L2"
+          },
+          "valueB": {
+            "type": "false"
+          }
+        }
+      },
+      "children": {
+        "true": [
+          {
+            "id": "ee017a6a-c3c9-4ec0-a065-2775820b87c8",
+            "command": "EVENT_ACTOR_EMOTE",
+            "args": {
+              "actorId": "player",
+              "emoteId": "12c9fe97-17a0-47bf-b087-6cf06d8736d8"
+            }
+          },
+          {
+            "id": "75eadf22-1f27-4e70-9543-61e4b5373446",
+            "command": "EVENT_ACTOR_SET_DIRECTION",
+            "args": {
+              "actorId": "player",
+              "direction": {
+                "type": "direction",
+                "value": "down"
+              }
+            }
+          },
+          {
+            "id": "c367712f-3b35-4c37-bca4-a28718457c20",
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "What was that? I\nmust tell Mayank\nimmediately!"
+              ],
+              "avatarId": ""
+            }
+          },
+          {
+            "id": "35025065-3626-4068-a0fd-149bc3ae2823",
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "L0",
+              "value": {
+                "type": "true"
+              }
+            }
+          }
+        ],
+        "false": []
+      }
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,145 @@
+{
+  "_resourceType": "trigger",
+  "id": "b804bfc4-8ee6-5bec-9fc0-5ffd6924340d",
+  "_index": 0,
+  "symbol": "trigger_mem_ninth_door",
+  "prefabId": "",
+  "name": "Door",
+  "x": 3,
+  "y": 16,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY END - reflection",
+        "__collapse": false
+      },
+      "id": "8c7d86ff-c5b4-e751-acdd-be6975cdb151"
+    },
+    {
+      "command": "EVENT_ACTOR_SHOW",
+      "args": {
+        "actorId": "529cc95a-0d38-5248-83ff-187b6a2c046b"
+      },
+      "id": "d7ccd1ef-5508-f69a-225d-9787c2ac5920"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "529cc95a-0d38-5248-83ff-187b6a2c046b",
+        "time": 0.6,
+        "frames": 36
+      },
+      "id": "d509d872-4c91-9bef-2ce4-3dab6de752ab"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Divyansh: You\nloved someone out\nloud.",
+          "Big promises.",
+          "Divyansh: It\nbroke. You didn't.",
+          "Takes one to know\none, bro."
+        ],
+        "avatarId": ""
+      },
+      "id": "fa0676ee-73a9-ff83-6490-05193653b1d9"
+    },
+    {
+      "command": "EVENT_ACTOR_EFFECTS",
+      "args": {
+        "effect": "flicker",
+        "actorId": "529cc95a-0d38-5248-83ff-187b6a2c046b",
+        "time": 0.6,
+        "frames": 36
+      },
+      "id": "9f2bc7c2-b2ba-7a88-9768-672d8873276f"
+    },
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "529cc95a-0d38-5248-83ff-187b6a2c046b"
+      },
+      "id": "423ad38a-4d60-f713-1b2f-ba1be3c6b866"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "176"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "176",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "a5e91d6c-fb1f-0f3d-5755-30a9da8ab4c0"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "136"
+            },
+            "id": "ba3d9b9a-c263-9c98-828f-9357ca5e639e"
+          }
+        ],
+        "false": []
+      },
+      "id": "24fc1252-a9fa-8d4d-0dbc-885d9b01ca21"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 1
+      },
+      "id": "808da438-0556-316d-87e5-04fcb76c7023"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+        "persist": true
+      },
+      "id": "7a0aff82-9005-515f-bf9f-6dd4e2303175"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "up",
+        "fadeSpeed": "1"
+      },
+      "id": "74d14c43-0ed0-0fb4-902f-8f227040c46c"
+    }
+  ],
+  "leaveScript": []
+}

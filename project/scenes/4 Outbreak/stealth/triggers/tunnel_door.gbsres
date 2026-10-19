@@ -1,0 +1,44 @@
+{
+  "_resourceType": "trigger",
+  "id": "d161f8d4-9049-5759-8d59-ba5c9b448b5b",
+  "_index": 7,
+  "symbol": "trigger_stealth_tunnel_door",
+  "prefabId": "",
+  "name": "Tunnel door",
+  "x": 9,
+  "y": 4,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: (radio)\nThe tunnel. I'm\ninside already.",
+          "Come."
+        ],
+        "avatarId": ""
+      },
+      "id": "9e6fa004-d387-cd7c-f1ee-196db3f37e32"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a244d1aa-0559-5698-9db9-187935c8b693",
+        "x": {
+          "type": "number",
+          "value": 1
+        },
+        "y": {
+          "type": "number",
+          "value": 9
+        },
+        "direction": "right",
+        "fadeSpeed": "2"
+      },
+      "id": "ac02eb31-8d80-d3b3-62eb-94517f0e6e62"
+    }
+  ],
+  "leaveScript": []
+}

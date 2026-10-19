@@ -1,0 +1,235 @@
+{
+  "_resourceType": "scene",
+  "id": "db016166-9fb3-5587-bb15-ce12e8b5ef15",
+  "_index": 107,
+  "type": "TOPDOWN",
+  "name": "2 Campus/Ocean Hills Pool",
+  "symbol": "scene_pool",
+  "x": 4120,
+  "y": 2692,
+  "width": 40,
+  "height": 34,
+  "backgroundId": "b05a42f3-399c-5d45-b816-6fda591cb615",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "6d364450-fa52-7f34-afee-8efa4531d675"
+          }
+        ]
+      },
+      "id": "72a7e137-c21d-5d0a-a418-352dd7134c95"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "fde47f49-518c-da58-9a56-a4594d607245"
+                }
+              ],
+              "false": []
+            },
+            "id": "c21d7bbf-d973-7773-8912-f767b822344e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "3bc6387c-1b8a-ea12-46ab-4b750e73335f"
+                }
+              ],
+              "false": []
+            },
+            "id": "7b0e86d2-4530-64bf-8110-bbdefbb12748"
+          }
+        ]
+      },
+      "id": "eb588107-aa24-de34-13c7-788601b943bd"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "1a6c5008-1115-9240-0374-cbfb90204f70"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "b0e2fc23-923b-a03a-125a-1d667162a03b"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "Ocean Hills Pool",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "0ffa9bea-2335-5a7b-c2c8-0fd639792390"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "db50edad-1665-9007-e1aa-6cbfda4dde72"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "45c5b2ac-e80d-9143-3207-8675dca2498e"
+          }
+        ],
+        "false": []
+      },
+      "id": "9eea81ea-13eb-7ade-5e77-1775b47799f1"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f12+004+0f13+0026+0f2+0026+0f2+0026+0f2+0022+0f2+002+0f2+00a+0f2+006+0f2+00e+0f2+002+0f!007+0f2+002+0f2+003+0f2+00!0f2+007+0f2+009+0f!007+0f2+007+0f2+003+0f2+002+0f2+00!0f2+009+0f!00a+0f2+002+0f2+002+0f2+00!0f2+002+0f5+009+0f!00a+0f2+00!0f11+009+0f2+009+0f14+009+0f2+009+0f16+007+0f2+009+0f16+007+0f2+009+0f14+00a+0f!009+0f14+00!0f2+007+0f!00!0f2+006+0f14+00!0f2+007+0f!00!0f2+006+0f14+00a+0f!009+0f16+007+0f!00a+0f16+007+0f!003+0f2+005+0f15+00!0f2+005+0f!003+0f2+006+0f14+00!0f2+005+0f!00b+0f14+008+0f2+00a+0f14+003+0f2+003+0f2+00a+0f14+003+0f2+003+0f4+008+0f14+00!0f2+005+0f4+008+0f9+00!0f8+003+0f2+005+0f2+00a+0f4+0018+0f2+00!0f2+0010+0f2+006+0f2+004+0f2+003+0f2+00!0f2+009+0f2+002+0f2+00!0f2+006+0f2+004+0f2+003+0f!00d+0f2+002+0f2+005+0f2+004+0f2+004+0f2+00!0f!00b+0f2+002+0f2+002+0f2+003+0f2+004+0f2+00!0f2+00!0f2+00!0f!00b+0f2+002+0f2+002+0f2+00!0f2+004+0f2+003+0f2+001b+0f2+004+0f2+00a+0f4+004+0f5+002+0f2+002+0f5+004+0f2+003+0f2+004+0f!"
+}

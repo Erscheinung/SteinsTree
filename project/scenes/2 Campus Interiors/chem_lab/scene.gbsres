@@ -1,0 +1,569 @@
+{
+  "_resourceType": "scene",
+  "id": "69545c6e-0a49-5e58-9be4-546e5f3ec87a",
+  "_index": 119,
+  "type": "TOPDOWN",
+  "name": "2 Campus Interiors/AB3 Chemistry Lab",
+  "symbol": "scene_chem_lab",
+  "x": 464,
+  "y": 4352,
+  "width": 24,
+  "height": 18,
+  "backgroundId": "64d3c9d2-e915-518a-a568-78e345ebc824",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-prof"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "48a80cbf-2b3c-0914-8898-5b0e3b0a5d29"
+          }
+        ]
+      },
+      "id": "b6223eb1-6e74-47fe-b690-c45f189b2dc2"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "1655ea46-a430-972a-3890-3b8e6643bcd9"
+                }
+              ],
+              "false": []
+            },
+            "id": "03d60d44-551f-e05d-7466-22ce1e18132b"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "fc26a213-771a-d757-651c-c1531993a755"
+                }
+              ],
+              "false": []
+            },
+            "id": "1dda76b0-1de5-240a-36f4-f12ecf102df1"
+          }
+        ]
+      },
+      "id": "ef349445-7364-1138-c25c-78be3fa78966"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "DAY 3 - CHEMISTRY LAB (AB3)",
+                    "__collapse": false
+                  },
+                  "id": "9051fd07-f212-af26-a990-722526bf43b9"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 13
+                    }
+                  },
+                  "id": "e49a7491-7dbf-4e56-b659-a9e591b00ecf"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "collideWith": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "1cdbba92-90e4-a758-6f91-00b55409193b"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "player",
+                    "direction": {
+                      "type": "direction",
+                      "value": "up"
+                    }
+                  },
+                  "id": "1b4f9b26-b6f0-39db-8a7d-b0cae9f9e22e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Dr. Mehra: Goggles\nON.",
+                      "Mr. Parag, goggles\nare not a\nheadband."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "d643e6a8-bab8-e0e1-9961-aae0cfff662e"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: Sir, it's\naerodynamic."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "2ed623f7-cdae-9de6-f6ea-4e77a676c77f"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Dr. Mehra:\nTitration.",
+                      "Burette, pipette,\nflask.",
+                      "Indicator turns\npink at the end\npoint."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "faf55087-87cd-a118-e441-a12a91857c5b"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Dr. Mehra: Step\none. Diluting the\nacid.",
+                      "What goes into\nwhat?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "da6651c6-6a60-b71f-a3f3-72d1541cd9f6"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "Water into acid",
+                    "option2": "Acid into water",
+                    "option3": "Mix very fast"
+                  },
+                  "id": "b63fe77c-eaed-d356-41e7-1884e38997e3"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Dr. Mehra:\nCorrect! Acid into\nwater. Always.",
+                            "Like my coffee\ninto me."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "b47dca11-d4c9-79ee-b672-92b6fa601764"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "139"
+                        },
+                        "id": "3c810571-e3c3-960d-7030-6144736125d9"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_CAMERA_SHAKE",
+                        "args": {
+                          "time": 0.6,
+                          "frames": 36,
+                          "shakeDirection": "horizontal",
+                          "magnitude": {
+                            "type": "number",
+                            "value": 6
+                          }
+                        },
+                        "id": "0b85e50d-5011-a5f1-cf75-19d94ab6d8ad"
+                      },
+                      {
+                        "command": "EVENT_SOUND_PLAY_EFFECT",
+                        "args": {
+                          "type": "crash",
+                          "priority": "medium",
+                          "pitch": 4,
+                          "frequency": 200,
+                          "duration": 0.5,
+                          "wait": false,
+                          "effect": 0
+                        },
+                        "id": "ea2f06e9-4181-0c09-3660-fae5914d0d97"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "FSSSSSHHH."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "4beeba63-4219-acd7-b907-b62b882b9d25"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Parag: Bro your\neyebrows are still\nthere. Lucky."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "a830ef4d-28b9-135e-7272-07fed8e762a3"
+                      },
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Dr. Mehra: Acid.\nInto. Water.",
+                            "Write it a hundred\ntimes. Write it on\nyour heart."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "eec2e7b8-e812-fb2b-324d-0012e0f09d90"
+                      }
+                    ]
+                  },
+                  "id": "0120aa77-a71f-17ef-4b41-a210e2453d05"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Dr. Mehra: Step\ntwo. Add drops\nuntil...?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "61e841fd-5f8b-e04c-62c1-22b7e86eed4e"
+                },
+                {
+                  "command": "EVENT_MENU",
+                  "args": {
+                    "variable": "119",
+                    "items": 3,
+                    "cancelOnLastOption": false,
+                    "cancelOnB": false,
+                    "layout": "dialogue",
+                    "option1": "Bright pink",
+                    "option2": "Faint pink",
+                    "option3": "Purple party"
+                  },
+                  "id": "a145f167-648d-f5ec-9614-8b04a4a014fc"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Dr. Mehra: Faint\npink. Subtle.\nUnlike this batch."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "216c08b7-e65f-17e7-a911-b0dcb793a2c0"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "139"
+                        },
+                        "id": "06df2758-e356-9284-83b8-77eaa94a138b"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Dr. Mehra: That is\nnot the end point.",
+                            "That is a\nfestival."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "6835df2f-a576-9777-fa05-0ddbd9b2a299"
+                      }
+                    ]
+                  },
+                  "id": "941d1bfa-b773-f4cb-7c94-85d6c5e26428"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Workshop\nafter this. Saws,\nfiles, welding.",
+                      "Try to keep ten\nfingers."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "4cefb5f8-d8bb-1ef6-98ff-5b3e69bf2f41"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: I've got a\nplan for the scrap\npipes there.",
+                      "A launcher. For\nthe fest."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "1e4dc073-f219-83f5-b1e1-1aec31305952"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: Fires peas.\nOr tennis balls.",
+                      "Or Divyansh, if he\nfits."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "d500c46b-005e-2edb-8152-3daef685bc57"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "101",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "3faca54e-eeaf-1589-0f99-023fb4aa5b47"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "115",
+                    "value": {
+                      "type": "number",
+                      "value": 8
+                    }
+                  },
+                  "id": "215a827b-316b-1801-4d64-78766f936ff3"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "2ff22973-f20f-54f5-920c-0d083f46d897"
+                  },
+                  "id": "52974941-2ce8-60df-dd42-2fbc6e706dec"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "d9b4510c-a15f-5836-8cd3-222f206871ea"
+                  },
+                  "id": "36fb31fc-3fa1-81cc-931b-dc401cc3bb45"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "7b7be8cb-d11c-59ad-bc5a-6b8a79a5fd70"
+                  },
+                  "id": "ea5217bf-ed86-5c2a-45e0-7d3bd5ff8fe6"
+                }
+              ],
+              "false": []
+            },
+            "id": "d8a0bcc2-c031-1719-6385-8863324f2a5f"
+          }
+        ],
+        "false": []
+      },
+      "id": "f2073fc8-6fb9-6093-e578-48091b39500d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f61+0016+0f2+00!0f6+004+0f6+005+0f2+0014+0f!00!0f2+0016+0f2+00!0f6+004+0f6+005+0f2+0016+0f2+0016+0f2+00!0f6+004+0f6+002+0f2+00!0f2+0016+0f2+0016+0f3+0013+0f!00!0fb+002+0f3c+"
+}

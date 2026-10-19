@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "0d9a67ba-92d8-538a-aeb8-780f87de7b94",
+  "name": "underpass_tunnel",
+  "symbol": "bg_underpass_tunnel",
+  "tileColors": "02a0+0325+04!039+04!039+04!0326+06!021e+062+021e+062+021e+06!0340+02a0+",
+  "filename": "muj/underpass_tunnel.png",
+  "width": 32,
+  "height": 18,
+  "imageWidth": 256,
+  "imageHeight": 144
+}

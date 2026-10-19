@@ -1,0 +1,44 @@
+{
+  "_resourceType": "actor",
+  "id": "ca16d4b9-28dc-5f3b-a6c9-c76b489421cd",
+  "_index": 1,
+  "symbol": "actor_mem_muskaan_mayank_spirit",
+  "prefabId": "",
+  "name": "Mayank (spirit)",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e6c451a2-6ff2-44c2-9f4e-5969df82a7e0",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "2f1fb973-c8ac-7c5d-5e1b-ec78aebb96b7"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "31464f88-f5e8-15fc-c4e6-86a84a53e8b7"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,290 @@
+{
+  "_resourceType": "actor",
+  "id": "6e9eda05-2c4a-51b8-a8f9-d31a722412ba",
+  "_index": 0,
+  "symbol": "actor_dome_in_kanishk_hangout",
+  "prefabId": "",
+  "name": "Kanishk (hangout)",
+  "coordinateType": "tiles",
+  "x": 13,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "dab951b9-dc0c-5e77-ad40-46859349f940",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "HANGOUT - Kanishk (Persona social link). Raises Bond_Kanishk.",
+        "__collapse": false
+      },
+      "id": "295afdaf-a2d3-e04a-f35d-5d45a52d6e50"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Hang out",
+        "falseText": "Not now"
+      },
+      "id": "80811c19-872f-113e-42d6-48014efe808c"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: This\nlibrary has 14\nexits. I counted.",
+                      "Habit.",
+                      "Kanishk: I plan\neverything.",
+                      "Semester, meals,\nwhich stairs are\nfastest.",
+                      "Kanishk: If you\nhave a plan,\nnothing can",
+                      "surprise you.\nThat's the theory."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3bf2ecb5-9e37-4df9-52a6-754e68611586"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Kanishk: Chess?\nYou lost in nine\nmoves. Good.",
+                      "You'll lose in ten\nnext time.",
+                      "Kanishk: My dad\nsays I calculate\npeople like",
+                      "pieces. I don't.\nMostly.",
+                      "Kanishk: There's\nalways one\nvariable you can't",
+                      "plan for. I hate\nthat variable."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "22149554-32dd-adf2-bf30-c1485bf8de37"
+                }
+              ]
+            },
+            "id": "c9653d86-5372-ce04-d451-63c19ae603d6"
+          },
+          {
+            "command": "EVENT_VARIABLE_MATH",
+            "args": {
+              "vectorX": "124",
+              "operation": "add",
+              "other": "val",
+              "value": "1",
+              "minValue": "0",
+              "maxValue": "0",
+              "clamp": true
+            },
+            "id": "6c559464-42a6-9066-114e-b53e1d290863"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "The evening slips\naway. You walk\nback to B7."
+              ],
+              "avatarId": ""
+            },
+            "id": "bf317fb5-d465-97d1-cd95-3150a8ddfe34"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "75a64e8c-8903-b446-c429-285ef17e66fd"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "115",
+              "value": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "2a8ace81-4acd-8fce-379e-6e60e91e6a73"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "144",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "060cb272-b006-1aec-0c5c-17328b9367db"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "94c18861-b352-4f49-a64d-52f2e3415077",
+              "x": {
+                "type": "number",
+                "value": 14
+              },
+              "y": {
+                "type": "number",
+                "value": 17
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "168df5be-f6f3-8ad6-0553-d70ec8e01dcc"
+          }
+        ],
+        "false": []
+      },
+      "id": "0a487be0-1724-f003-1b92-2e61889c37f9"
+    }
+  ],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "101"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "8933dd15-90af-2643-81e7-899f1083a4b3"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "0db6faf5-f463-0374-be65-c11fd3c1bc74"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "lt",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "100"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_ACTOR_DEACTIVATE",
+                        "args": {
+                          "actorId": "$self$"
+                        },
+                        "id": "9fe630e2-bb97-0f47-c038-a5621b716a04"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "34fbcb0d-9a0c-68b6-7bd6-d725108091ee"
+                }
+              ]
+            },
+            "id": "a14caca7-364f-daeb-988c-bd9174fda5bf"
+          }
+        ]
+      },
+      "id": "dcf82678-b6f7-bcac-e917-ae29a64caf4c"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

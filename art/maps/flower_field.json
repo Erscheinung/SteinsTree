@@ -1,0 +1,18 @@
+{
+ "name": "flower_field",
+ "title": "flower_field",
+ "cols": 32,
+ "rows": 20,
+ "doors": [],
+ "exits": [],
+ "spawn": [
+  1,
+  1
+ ],
+ "unique_before_reduce": 38,
+ "tiles_merged": 0,
+ "unique_tiles": 38,
+ "palette_conflicts": 0,
+ "collisions": "0064+0f3+001d+0f3+001d+0f3+0048+0f2+00c7+0f3+001d+0f3+001d+0f3+0085+",
+ "kind": "special"
+}

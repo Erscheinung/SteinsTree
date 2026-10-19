@@ -1,0 +1,593 @@
+{
+  "_resourceType": "actor",
+  "id": "3f40a006-35ff-54a4-a541-4ffaa0418f18",
+  "_index": 6,
+  "symbol": "actor_lanes_referee",
+  "prefabId": "",
+  "name": "Referee",
+  "coordinateType": "tiles",
+  "x": 19,
+  "y": 1,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "b862c31a-fac9-5e5f-b335-8c50f1826451",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "a8d8b63a-51f4-8ea5-527a-b0a67468df3b"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "e13e8ea7-2c4b-b90c-bcd1-43324312c05c"
+    }
+  ],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "154"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "155"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 15
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "154",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "53942d6c-24f8-23ea-d2a6-f836d9ee0c49"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "9b1f9301-d308-5d4f-b9dc-c9ce381fb948"
+                  },
+                  "id": "1ab911bc-782a-7c89-8e93-95b6f04cad79"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "b67be7bb-fc74-53fd-b53a-bded64ca6645"
+                  },
+                  "id": "7ab58b8a-95a1-fb64-4f1e-c3ef428dcdb8"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "4da8b894-c2ea-51bd-9963-88fb9fefc103"
+                  },
+                  "id": "c078982a-3c0c-5b90-80cc-568f9ac51b69"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "967e3ca9-6ec9-5598-a328-b52cc4e2f2a1"
+                  },
+                  "id": "569ab3cf-6a8a-1300-97ea-8a09f1355334"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "c98ef14a-7672-569b-85ab-d8db296f0013"
+                  },
+                  "id": "979eb841-9e3d-8519-33a2-840d326e6867"
+                },
+                {
+                  "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "a"
+                    ]
+                  },
+                  "id": "c84c6b3f-d343-b69e-d356-d35398dfe50a"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: FIFTEEN!\nThe Mark I is a\nlegend! A LEGEND--"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "bee35f1f-4c8e-8ebc-8524-ec93c5f9f268"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "noise",
+                    "priority": "medium",
+                    "pitch": 3,
+                    "frequency": 200,
+                    "duration": 0.4,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "f751569a-4772-7c9d-0947-b717b0dfbdf3"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "CLK. CLK. The\nlauncher jams."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "40902a84-88c4-f3dd-98ab-7e33e6b71786"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: ...jammed.\nOf course. Once,\nwhen it matters.",
+                      "I said 'when it\ndoesn't'."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "88e5d52f-3cbb-777a-761a-7b054e0e20ca"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "9b1f9301-d308-5d4f-b9dc-c9ce381fb948"
+                  },
+                  "id": "52e3278a-2dd3-2d2f-44bc-bfe4181472b4"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "b67be7bb-fc74-53fd-b53a-bded64ca6645"
+                  },
+                  "id": "85d09f7c-f8c5-12eb-adb9-4798d38f051a"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "4da8b894-c2ea-51bd-9963-88fb9fefc103"
+                  },
+                  "id": "43abe8e6-ee8c-8733-2966-bb641b7aa959"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "967e3ca9-6ec9-5598-a328-b52cc4e2f2a1"
+                  },
+                  "id": "428c4549-2e8b-af3c-4d5c-ab4be007cb37"
+                },
+                {
+                  "command": "EVENT_ACTOR_ACTIVATE",
+                  "args": {
+                    "actorId": "c98ef14a-7672-569b-85ab-d8db296f0013"
+                  },
+                  "id": "c44bc05f-0d9a-fb7a-23eb-3d2b87d7c5a8"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "9b1f9301-d308-5d4f-b9dc-c9ce381fb948",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 4
+                    }
+                  },
+                  "id": "8aefb0d7-0298-1351-f500-a8575c8c7a87"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "b67be7bb-fc74-53fd-b53a-bded64ca6645",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 7
+                    }
+                  },
+                  "id": "cb3244d1-07fc-697f-85aa-5fbd841efba7"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "4da8b894-c2ea-51bd-9963-88fb9fefc103",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    }
+                  },
+                  "id": "a23c110e-e641-5cc1-2032-de476d0791c3"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "967e3ca9-6ec9-5598-a328-b52cc4e2f2a1",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 13
+                    }
+                  },
+                  "id": "ed7b63ae-708c-9c18-4448-8864f9f79f3f"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "c98ef14a-7672-569b-85ab-d8db296f0013",
+                    "x": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 16
+                    }
+                  },
+                  "id": "5c75881b-8c9f-ae1e-192f-740130df59f0"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: Go.\nUnderpass. I'll\nclear it.",
+                      "I always clear it.\nSecond try,\nremember?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "158717fa-5ba2-7b82-d360-b2e241082026"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "119",
+                    "trueText": "Not without you",
+                    "falseText": "Clear it fast"
+                  },
+                  "id": "6f056354-fabf-4aad-4183-b6bce6afb3a9"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Parag: Bro.",
+                            "Somebody has to\nbuild the second\ntry. GO."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "4eebb22e-2d8f-7c0a-a440-f590ab21760a"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "125",
+                          "operation": "add",
+                          "other": "val",
+                          "value": "1",
+                          "minValue": "0",
+                          "maxValue": "0",
+                          "clamp": true
+                        },
+                        "id": "92b8a28a-fa1c-33a9-9fb3-59d3ad39f092"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Parag: That's the\nspirit.",
+                            "Burnt chip's in my\nwallet. For luck."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "d22e7d7c-5b4b-930d-017f-a9344faff8e8"
+                      }
+                    ]
+                  },
+                  "id": "511fbe8e-f619-aa85-46c2-b743fcd56ec8"
+                },
+                {
+                  "command": "EVENT_ACTOR_MOVE_TO",
+                  "args": {
+                    "actorId": "36e149f2-b320-5b88-8d9b-1d33c39be1a1",
+                    "x": {
+                      "type": "number",
+                      "value": 6
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 3
+                    },
+                    "collideWith": [],
+                    "moveType": "horizontal"
+                  },
+                  "id": "c22e9f4e-d2ab-0f1a-73b5-0a43c47aa8d9"
+                },
+                {
+                  "command": "EVENT_ACTOR_EFFECTS",
+                  "args": {
+                    "effect": "flicker",
+                    "actorId": "36e149f2-b320-5b88-8d9b-1d33c39be1a1",
+                    "time": 1.2,
+                    "frames": 72
+                  },
+                  "id": "1dfbedc5-06f6-b4cf-76bd-cf19f8319a75"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "36e149f2-b320-5b88-8d9b-1d33c39be1a1"
+                  },
+                  "id": "fede5432-e646-dfc6-66ac-70a9b5e6bafc"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Behind you, the\nlauncher fires\nonce more.",
+                      "Then once more.\nThen nothing."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "410d858e-11ab-bd19-0ac8-50f8bb26f09d"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "133",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "fce3e48e-1898-4131-fd8c-a3752bf09d47"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "128",
+                    "value": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "e2d5cf7f-f264-f9e2-fc68-a4c52ae0423b"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "115",
+                    "value": {
+                      "type": "number",
+                      "value": 12
+                    }
+                  },
+                  "id": "938cddf8-2f5f-c80a-c992-1a35729772d7"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+                    "x": {
+                      "type": "number",
+                      "value": 35
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 84
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "edac8d17-17d8-cec3-71f2-ee551c3d011c"
+                }
+              ],
+              "false": []
+            },
+            "id": "12ed16f1-2792-e760-d2af-e5deae02e27b"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "153"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "154",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "6b7b1673-2777-a89f-5fb5-46450713e56c"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "9b1f9301-d308-5d4f-b9dc-c9ce381fb948"
+                  },
+                  "id": "f10c7632-eeb0-fcdc-baa8-6ea39ce3eaa6"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "b67be7bb-fc74-53fd-b53a-bded64ca6645"
+                  },
+                  "id": "61028db1-42de-0d85-ec73-712808457d04"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "4da8b894-c2ea-51bd-9963-88fb9fefc103"
+                  },
+                  "id": "0ec3deff-16b2-ad84-26b8-0a65b9828e38"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "967e3ca9-6ec9-5598-a328-b52cc4e2f2a1"
+                  },
+                  "id": "3d6a0f5e-a897-cc4d-74ce-1ce05db9c2f0"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "c98ef14a-7672-569b-85ab-d8db296f0013"
+                  },
+                  "id": "6f83b86a-95fc-9856-ef6c-b3bbc679d09c"
+                },
+                {
+                  "command": "EVENT_REMOVE_INPUT_SCRIPT",
+                  "args": {
+                    "input": [
+                      "a"
+                    ]
+                  },
+                  "id": "cec0d337-eb27-a96b-5308-21e0510a682d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: Overrun!\nOkay, okay. Reset.\nAgain. Second try."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "b687e2db-d6a1-5b52-e231-cf60913a9b2f"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "d4a3008d-31da-5edc-b9e4-486446a67437",
+                    "x": {
+                      "type": "number",
+                      "value": 2
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 10
+                    },
+                    "direction": "right",
+                    "fadeSpeed": "1"
+                  },
+                  "id": "f028308d-854f-b243-2003-655209fa63da"
+                }
+              ],
+              "false": []
+            },
+            "id": "e2c18c86-db57-72ec-0d79-557cdba5c5ab"
+          }
+        ],
+        "false": []
+      },
+      "id": "aa2c09e7-9a28-0f25-3552-214a4fc19f15"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.1
+        },
+        "frames": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "809496d1-5c3d-3a4a-b068-618fb88095c8"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

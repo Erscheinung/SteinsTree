@@ -1,0 +1,270 @@
+{
+  "_resourceType": "scene",
+  "id": "7f07aea7-64f3-5392-81b7-36824734404e",
+  "_index": 147,
+  "type": "TOPDOWN",
+  "name": "5 The Middle/Memory: Eleventh",
+  "symbol": "scene_mem_eleventh",
+  "x": 2400,
+  "y": 5216,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "df77c835-ea6b-52e6-b5f4-9f9324b2b023",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-dreamb-grass",
+    "muj-dreamb-path",
+    "muj-dreamb-stone",
+    "muj-dreamb-brick",
+    "muj-dreamb-roof",
+    "muj-dreamb-water",
+    "muj-dreamb-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-gold",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "d0cf0e2d-fe44-1b8d-d759-e45cefc4e6b6"
+          }
+        ]
+      },
+      "id": "cf3ed77e-aa25-0a47-e2ac-aa61edb6ee4f"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-dreamb-grass",
+        "palette1": "muj-dreamb-path",
+        "palette2": "muj-dreamb-stone",
+        "palette3": "muj-dreamb-brick",
+        "palette4": "muj-dreamb-roof",
+        "palette5": "muj-dreamb-water",
+        "palette6": "muj-dreamb-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "d3c609cc-26a5-cd1d-0ea7-9c3737bb4c0f"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bb6d35fc-b31c-553c-bd55-d8edfe476fa9",
+        "loop": true
+      },
+      "id": "a9b25365-8dba-fe9e-ca85-2a7e98774c2c"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY 6 - ELEVENTH (playable: deadlines chase you; the calm centre ends it)",
+        "__collapse": false
+      },
+      "id": "33ae03d4-1ece-1078-664d-5995c20814e4"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 15
+        }
+      },
+      "id": "24fdad36-a180-1ab2-eca3-2ba00d4e03da"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "200",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "11c82eb0-14b5-7591-a87a-7265aa0b8620"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "201",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "2c2a4695-b8cc-bf07-a35e-7cd7c1358ece"
+    },
+    {
+      "command": "EVENT_SET_TIMER_SCRIPT",
+      "args": {
+        "timer": 1,
+        "duration": 0.3,
+        "frames": 18
+      },
+      "children": {
+        "script": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "179"
+            },
+            "id": "20e79d06-cbbf-f3c8-015b-51a72ed3ea57"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "179"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "179",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "230aeb04-17bd-44b5-60b5-d6251cd6dc26"
+                }
+              ],
+              "false": []
+            },
+            "id": "9f5c0aea-5926-d958-de41-9e12822ad27a"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "179",
+              "choices": 3,
+              "__collapseElse": true,
+              "value0": {
+                "type": "number",
+                "value": 0
+              },
+              "value1": {
+                "type": "number",
+                "value": 1
+              },
+              "value2": {
+                "type": "number",
+                "value": 2
+              }
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dreama-grass",
+                    "palette1": "muj-dreama-path",
+                    "palette2": "muj-dreama-stone",
+                    "palette3": "muj-dreama-brick",
+                    "palette4": "muj-dreama-roof",
+                    "palette5": "muj-dreama-water",
+                    "palette6": "muj-dreama-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "4ba47f46-32ae-ee56-2922-97faa29178df"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dreamc-grass",
+                    "palette1": "muj-dreamc-path",
+                    "palette2": "muj-dreamc-stone",
+                    "palette3": "muj-dreamc-brick",
+                    "palette4": "muj-dreamc-roof",
+                    "palette5": "muj-dreamc-water",
+                    "palette6": "muj-dreamc-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "66120f87-7f78-9317-d0e7-b5fe864e60f4"
+                }
+              ],
+              "true2": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-blood-grass",
+                    "palette1": "muj-blood-path",
+                    "palette2": "muj-blood-stone",
+                    "palette3": "muj-blood-brick",
+                    "palette4": "muj-blood-roof",
+                    "palette5": "muj-blood-water",
+                    "palette6": "muj-blood-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "137165a3-2445-1e17-ec34-e5df4d2ad2c3"
+                }
+              ],
+              "false": []
+            },
+            "id": "ebd20073-cb56-f65f-9e43-da7429c7ebc1"
+          }
+        ]
+      },
+      "id": "a00682a7-1027-6649-1924-45b66490653f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Eleventh. Too\nmuch. Everything\nat once.",
+          "(The deadlines\nchase you.",
+          "Or you could stop,\nin the middle.)"
+        ],
+        "avatarId": ""
+      },
+      "id": "36d0d044-c26f-c1fa-084e-6c489cdd732f"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

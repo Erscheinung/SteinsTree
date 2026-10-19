@@ -1,0 +1,366 @@
+{
+  "_resourceType": "scene",
+  "id": "4ec4e8d9-1c3e-5be9-a4fe-e162d5d7ade0",
+  "_index": 128,
+  "type": "TOPDOWN",
+  "name": "1 Prologue/Bedroom, 2009",
+  "symbol": "scene_prologue_bedroom",
+  "x": 0,
+  "y": 2164,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "876a3360-13f9-5ccf-bd17-ca9fbdbdae2f",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-memory-grass",
+    "muj-memory-path",
+    "muj-memory-stone",
+    "muj-memory-brick",
+    "muj-memory-roof",
+    "muj-memory-water",
+    "muj-memory-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "muj-spr-mama",
+    "",
+    "",
+    "muj-spr-gold",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "1b3bdc43-4195-77c7-dc47-9b76d38b2cd0"
+          }
+        ]
+      },
+      "id": "70d5dad0-ea16-cdbc-775b-232c4be9bf93"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-memory-grass",
+        "palette1": "muj-memory-path",
+        "palette2": "muj-memory-stone",
+        "palette3": "muj-memory-brick",
+        "palette4": "muj-memory-roof",
+        "palette5": "muj-memory-water",
+        "palette6": "muj-memory-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "60b6918d-128d-9ac2-65a1-f05eb21affd0"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "e87a5fd5-9abc-5a88-867b-ba05f5fc3aa9",
+        "persist": true
+      },
+      "id": "042b4ba8-795e-b903-b1bb-54876fba0448"
+    },
+    {
+      "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+      "args": {
+        "speedIn": -1,
+        "speedOut": -1,
+        "speed": 1,
+        "allowFastForward": true
+      },
+      "id": "fcb70361-b0e1-cadf-0ead-33d82c27005a"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "7bedf935-2b7b-5903-a868-38a8bb6c602f",
+        "loop": true
+      },
+      "id": "b933cd90-1aa6-216d-b562-eb58cdd93bb1"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "113"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "PROLOGUE - edit freely. The first thing the player sees.",
+              "__collapse": false
+            },
+            "id": "7ebb365f-9e7a-b4e2-58a3-133947899695"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "114"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Jaipur. 2009.",
+                      "A small room. A\nbig world on a\ntiny screen."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "078108a8-e139-6e3a-9822-986bf3123e78"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mom: Homework\ndone?"
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "144d95fd-1d71-91d5-cd27-d9a0d60af54a"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "You: ...define\n'done'."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "9698ff35-df7a-2cb8-1a73-f04234284a6b"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mom: Ten minutes\nof your critters.\nThen sleep."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "64cc06e6-87ef-d2e2-0593-f7856b2e2fba"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "114",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "c9f54962-4692-3047-29a2-ffc456d47f77"
+                }
+              ],
+              "false": []
+            },
+            "id": "d94c6790-1886-492a-ae16-b45ea663b6c8"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "GNAWBIT's eyes\nglowed for a\nsecond before it",
+                "fainted. Weird."
+              ],
+              "avatarId": ""
+            },
+            "id": "9dc4d29b-8c1e-3477-a447-752f50a8ecc0"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mom: Lights off,\nbeta."
+              ],
+              "avatarId": ""
+            },
+            "id": "d92642da-dbfc-d812-6903-85f373a11483"
+          },
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "muj-night-grass",
+              "palette1": "muj-night-path",
+              "palette2": "muj-night-stone",
+              "palette3": "muj-night-brick",
+              "palette4": "muj-night-roof",
+              "palette5": "muj-night-water",
+              "palette6": "muj-night-wood",
+              "palette7": "muj-ui"
+            },
+            "id": "057f5f7e-1be4-edf5-629d-9e988a9e635c"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "0511bd48-62f6-5149-8eea-6e54c137815c"
+            },
+            "id": "9cda493f-98a5-387e-f860-ebd7ea3929bb"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "player"
+            },
+            "id": "47410b1e-6366-4a5f-8bbe-e1634d826cc2"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.8
+              },
+              "frames": {
+                "type": "number",
+                "value": 48
+              }
+            },
+            "id": "55abacb3-58f7-6ce5-9c5e-43a70448df83"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Eleven years\nlater..."
+              ],
+              "avatarId": ""
+            },
+            "id": "2b8dd3f6-b0b2-15d4-60d8-964bc70b60ec"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Manipal University\nJaipur.",
+                "B.Tech, Computer\nScience. First\nyear.",
+                "Block B7. Room 10."
+              ],
+              "avatarId": ""
+            },
+            "id": "bd413ea2-dbbb-26d6-2e59-63cdacc2dda6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "100",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "3c1d6f41-e3d9-8b7b-5527-ed23af11d734"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "101",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "abd1a499-7a04-0bad-856c-c1c20083040e"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "115",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "c8e41bd0-adf5-9b0f-0c13-1a5681a89ea1"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+              "persist": true
+            },
+            "id": "d2d74517-0538-d9c2-6b68-e4a9ceb6127f"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "116",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "097b4353-bbfc-95c3-84e2-e351adfb88f7"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "4d0a5af8-e106-5c91-ab63-722fbd5af13c",
+              "x": {
+                "type": "number",
+                "value": 1
+              },
+              "y": {
+                "type": "number",
+                "value": 16
+              },
+              "direction": "",
+              "fadeSpeed": "1"
+            },
+            "id": "f49d4abd-e620-c149-7a5f-f37024de8384"
+          }
+        ]
+      },
+      "id": "426fa880-3259-3c47-1262-98822caa557d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f7b+00f+0f5+00f+0f3+00b+0f!006+0f2+0012+0f2+002+0f!00e+0f3+0012+0f3+0011+0fa+002+0f59+"
+}

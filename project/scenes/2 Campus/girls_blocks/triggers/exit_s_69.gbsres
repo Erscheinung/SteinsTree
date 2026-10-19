@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "b89f7c86-f07d-58eb-b098-307ad7a8e653",
+  "_index": 7,
+  "symbol": "trigger_girls_blocks_exit_s_69",
+  "prefabId": "",
+  "name": "Exit s 69",
+  "x": 69,
+  "y": 41,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 34
+        },
+        "y": {
+          "type": "number",
+          "value": 98
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "da320273-858c-7edf-5324-cc262a7cb797"
+    }
+  ],
+  "leaveScript": []
+}

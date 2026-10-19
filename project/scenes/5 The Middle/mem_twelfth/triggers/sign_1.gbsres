@@ -1,0 +1,60 @@
+{
+  "_resourceType": "trigger",
+  "id": "d100bf11-a178-558b-a4df-e28089b23e7d",
+  "_index": 1,
+  "symbol": "trigger_mem_twelfth_sign_1",
+  "prefabId": "",
+  "name": "Sign 1",
+  "x": 19,
+  "y": 9,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "189"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Don't fly too\nhigh."
+              ],
+              "avatarId": ""
+            },
+            "id": "236e53f8-3a8b-2cd9-6e9e-f9dabde43c91"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "189",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "4df18145-337d-e7e6-9e59-023e7ad8b301"
+          }
+        ],
+        "false": []
+      },
+      "id": "c8053fdc-6d4f-cca5-6a30-3b4c27490e15"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,45 @@
+{
+  "_resourceType": "trigger",
+  "id": "a1ad3686-b5ab-5136-a604-30b3a82bbde7",
+  "_index": 1,
+  "symbol": "trigger_hall_door_if_you_d_stayed_in_london",
+  "prefabId": "",
+  "name": "Door: If you'd stayed in London",
+  "x": 7,
+  "y": 6,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "If you'd stayed in\nLondon?"
+        ],
+        "avatarId": ""
+      },
+      "id": "ef7a656f-9ada-6633-cdc9-49b8acc3c41b"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Rain. Red buses.",
+          "A version of you\nwho never learned\nthe word 'mess'."
+        ],
+        "avatarId": ""
+      },
+      "id": "3c20e859-c5b6-15b6-bda8-ec43f6594f14"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "",
+        "__collapse": false
+      },
+      "id": "5902eed7-38df-ff8a-e54d-cd42e8eaaea2"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,162 @@
+{
+  "_resourceType": "trigger",
+  "id": "24802be2-6f33-595b-94af-e956d4305db4",
+  "_index": 3,
+  "symbol": "trigger_world_go_ghs_hostel_avenue",
+  "prefabId": "",
+  "name": "Go: GHS Hostel Avenue",
+  "x": 35,
+  "y": 83,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "GHS Hostel Avenue"
+        ],
+        "avatarId": ""
+      },
+      "id": "ba66f765-2424-d8f3-0fe5-b453cd8ba493"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Enter",
+        "falseText": "Keep walking"
+      },
+      "id": "62bbbba3-7013-cfd3-2dba-02c456cc9ac9"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "128"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 2
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SWITCH_SCENE",
+                        "args": {
+                          "sceneId": "d4a3008d-31da-5edc-b9e4-486446a67437",
+                          "x": {
+                            "type": "number",
+                            "value": 2
+                          },
+                          "y": {
+                            "type": "number",
+                            "value": 10
+                          },
+                          "direction": "right",
+                          "fadeSpeed": "2"
+                        },
+                        "id": "e1188d27-546a-83e2-3a5d-e861765e5c56"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "No time. Stick to\nthe plan.",
+                            "(Check START for\nthe objective.)"
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "f93e0035-be73-d98c-8aae-eb360ac5482e"
+                      }
+                    ]
+                  },
+                  "id": "78be956c-26b5-4dcc-9557-5abaf8352e42"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "202",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "3046a764-62c2-1a8d-6276-ca1df83a6507"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "267ed18d-9036-5992-9095-35ba2a9ff6e8",
+                    "x": {
+                      "type": "number",
+                      "value": 36
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 17
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "88e0c36c-dc6c-a12c-5c4c-c6e77460d5e7"
+                }
+              ]
+            },
+            "id": "fa2b3227-94b3-3a61-5360-f6ad4bf3f113"
+          }
+        ],
+        "false": []
+      },
+      "id": "c6e90bd4-055e-b022-9f41-492d1e92d6ce"
+    }
+  ],
+  "leaveScript": []
+}

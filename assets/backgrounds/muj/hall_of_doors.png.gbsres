@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "d476294c-0de6-519f-beb8-033d9231cff5",
+  "name": "hall_of_doors",
+  "symbol": "bg_hall_of_doors",
+  "tileColors": "0254+031d+06!032+06!032+06!032+06!032+06!032+06!032+06!032+06!032+06!033c+02!034+02!035+02!035+02!035+02!033c+02!034+02!035+02!035+02!035+02!0347+062+03d+0270+",
+  "filename": "muj/hall_of_doors.png",
+  "width": 28,
+  "height": 18,
+  "imageWidth": 224,
+  "imageHeight": 144
+}

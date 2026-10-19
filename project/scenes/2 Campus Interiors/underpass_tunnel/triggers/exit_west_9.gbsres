@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "dadf089c-4999-5191-b0d2-5a97fe1e675d",
+  "_index": 1,
+  "symbol": "trigger_underpass_tunnel_exit_west_9",
+  "prefabId": "",
+  "name": "Exit west 9",
+  "x": 0,
+  "y": 9,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "239a3611-8abd-5334-934f-f3cbd3100024",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 5
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "f17220c4-3dd1-c2df-315f-dad1ef8cce66"
+    }
+  ],
+  "leaveScript": []
+}

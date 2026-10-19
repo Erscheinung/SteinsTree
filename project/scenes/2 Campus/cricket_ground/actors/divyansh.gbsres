@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "f12b94c1-f62c-5d2c-98ed-6d5e2fa0425a",
+  "_index": 0,
+  "symbol": "actor_cricket_ground_divyansh",
+  "prefabId": "",
+  "name": "Divyansh",
+  "coordinateType": "tiles",
+  "x": 31,
+  "y": 34,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "0eeee60a-0644-53cf-96cc-0d4aa4b9c725",
+  "paletteId": "",
+  "direction": "up",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "1d06c3f8-8642-3bcd-ed0a-b9846163e221"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "ne",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "7d110822-97f7-d5f6-e1ea-29cf7728d68e"
+                }
+              ],
+              "false": []
+            },
+            "id": "0ef23149-ffb2-ee72-a851-43316105ca14"
+          }
+        ]
+      },
+      "id": "92390b24-74fa-f124-ef45-6b857f2bf172"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

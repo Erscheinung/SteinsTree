@@ -1,0 +1,132 @@
+{
+  "_resourceType": "scene",
+  "id": "d214967c-3519-56e2-9fbd-cc8b263398a5",
+  "_index": 149,
+  "type": "TOPDOWN",
+  "name": "5 The Middle/Hall of Doors",
+  "symbol": "scene_hall",
+  "x": 3152,
+  "y": 5216,
+  "width": 28,
+  "height": 18,
+  "backgroundId": "d476294c-0de6-519f-beb8-033d9231cff5",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-dreamc-grass",
+    "muj-dreamc-path",
+    "muj-dreamc-stone",
+    "muj-dreamc-brick",
+    "muj-dreamc-roof",
+    "muj-dreamc-water",
+    "muj-dreamc-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "137ba80d-3f92-7952-2ce2-1afac94d7747"
+          }
+        ]
+      },
+      "id": "1bbd5f7a-1f02-b108-8aed-c5211e144184"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-dreamc-grass",
+        "palette1": "muj-dreamc-path",
+        "palette2": "muj-dreamc-stone",
+        "palette3": "muj-dreamc-brick",
+        "palette4": "muj-dreamc-roof",
+        "palette5": "muj-dreamc-water",
+        "palette6": "muj-dreamc-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "95914c9d-d023-2677-7e8b-7cf11646824c"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bb6d35fc-b31c-553c-bd55-d8edfe476fa9",
+        "loop": true
+      },
+      "id": "555a8a24-61e8-88fd-01fa-75b035a221a6"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "HALL OF DOORS - questioning choices",
+        "__collapse": false
+      },
+      "id": "1d232112-29a1-ba63-75b1-e7faf53756ef"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 13
+        },
+        "y": {
+          "type": "number",
+          "value": 11
+        }
+      },
+      "id": "9abd04c8-73f0-8c2a-7275-2c501b0336d7"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "62c8f9cf-fdf5-c635-8dba-e3972d4a443a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A hall of doors.",
+          "Every 'what if'\nyou ever had, with\na handle."
+        ],
+        "avatarId": ""
+      },
+      "id": "7f44b1fe-ed22-f7fb-baf8-03dbd6a04611"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0fa9+001a+0f2+00!0f!004+0f!005+0f!005+0f!005+0f!00!0f2+001a+0f2+001a+0f2+00!0f!004+0f!005+0f!005+0f!005+0f!00!0f2+001a+0f2+001a+0fe+002+0f7d+"
+}

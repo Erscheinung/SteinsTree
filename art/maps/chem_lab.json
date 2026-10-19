@@ -1,0 +1,40 @@
+{
+ "name": "chem_lab",
+ "title": "AB3 Chemistry Lab",
+ "cols": 24,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 10,
+   "y": 15,
+   "spawn": [
+    10,
+    14
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 11,
+   "y": 15,
+   "spawn": [
+    11,
+    14
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  10,
+  14
+ ],
+ "unique_before_reduce": 23,
+ "tiles_merged": 0,
+ "unique_tiles": 23,
+ "palette_conflicts": 0,
+ "collisions": "0f61+0016+0f2+00!0f6+004+0f6+005+0f2+0014+0f!00!0f2+0016+0f2+00!0f6+004+0f6+005+0f2+0016+0f2+0016+0f2+00!0f6+004+0f6+002+0f2+00!0f2+0016+0f2+0016+0f3+0013+0f!00!0fb+002+0f3c+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

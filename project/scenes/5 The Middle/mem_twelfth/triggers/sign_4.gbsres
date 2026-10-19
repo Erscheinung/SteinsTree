@@ -1,0 +1,60 @@
+{
+  "_resourceType": "trigger",
+  "id": "9e2e9851-890a-5ebb-a9cd-741479b131d3",
+  "_index": 4,
+  "symbol": "trigger_mem_twelfth_sign_4",
+  "prefabId": "",
+  "name": "Sign 4",
+  "x": 52,
+  "y": 9,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "192"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Almost."
+              ],
+              "avatarId": ""
+            },
+            "id": "b7cf32a8-d0f8-036d-9bea-b52e9e77e1e4"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "192",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "42429aa1-0736-ad35-1e23-9f467dd8a84a"
+          }
+        ],
+        "false": []
+      },
+      "id": "fec059cd-9a3f-1f9a-b233-ce87174aad97"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,65 @@
+{
+ "name": "cricket_ground",
+ "title": "Cricket Ground",
+ "cols": 64,
+ "rows": 62,
+ "doors": [],
+ "exits": [
+  {
+   "side": "n",
+   "cells": [
+    30,
+    31,
+    32,
+    33
+   ]
+  },
+  {
+   "side": "s",
+   "cells": [
+    22,
+    23,
+    24,
+    25
+   ]
+  },
+  {
+   "side": "s",
+   "cells": [
+    50,
+    51,
+    52,
+    53
+   ]
+  },
+  {
+   "side": "e",
+   "cells": [
+    29,
+    30,
+    31,
+    32
+   ]
+  },
+  {
+   "side": "w",
+   "cells": [
+    28,
+    29,
+    30,
+    31
+   ]
+  }
+ ],
+ "spawn": [
+  32,
+  31
+ ],
+ "unique_before_reduce": 153,
+ "tiles_merged": 0,
+ "unique_tiles": 153,
+ "palette_conflicts": 0,
+ "collisions": "0f1e+004+0f1f+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f!003f+0f!00c0+0f!003f+0f!003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+00e+0f6+0010+0f4+0016+0f16+006+0fe+0016+0f17+004+0f18+004+0fa+",
+ "unreachable_doors": [],
+ "kind": "exterior"
+}

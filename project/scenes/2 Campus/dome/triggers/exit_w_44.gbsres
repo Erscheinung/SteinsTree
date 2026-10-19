@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "eeba3fae-80d4-56c7-89ce-c80bd5475a2f",
+  "_index": 15,
+  "symbol": "trigger_dome_exit_w_44",
+  "prefabId": "",
+  "name": "Exit w 44",
+  "x": 0,
+  "y": 44,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 86
+        },
+        "y": {
+          "type": "number",
+          "value": 96
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "03930113-1fe4-034c-4414-d00ef7ece5b1"
+    }
+  ],
+  "leaveScript": []
+}

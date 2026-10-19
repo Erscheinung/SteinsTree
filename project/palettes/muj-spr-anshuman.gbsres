@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-anshuman",
+  "name": "Sprite: Anshuman",
+  "colors": [
+    "E0C0A0",
+    "4C5C70",
+    "303848",
+    "101018"
+  ],
+  "defaultName": "Sprite: Anshuman",
+  "defaultColors": [
+    "E0C0A0",
+    "4C5C70",
+    "303848",
+    "101018"
+  ]
+}

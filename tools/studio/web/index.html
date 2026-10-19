@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dernier Studio</title>
+<link rel="stylesheet" href="/web/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">DERNIER <span>studio</span></div>
+  <nav id="tabs">
+    <button data-tab="flow" class="on">Story flow</button>
+    <button data-tab="scene">Scene</button>
+    <button data-tab="dialogue">Dialogue</button>
+    <button data-tab="map">Campus map</button>
+    <button data-tab="sprites">Sprites</button>
+    <button data-tab="palettes">Palettes</button>
+    <button data-tab="vars">Variables</button>
+    <button data-tab="guide">Guide</button>
+    <button data-tab="check">Check</button>
+  </nav>
+</header>
+<main>
+  <section id="flow" class="tab on">
+    <div class="bar">
+      <input id="flowFilter" placeholder="filter scenes (e.g. Outbreak, Day, Campus)">
+      <label><input type="checkbox" id="flowThumbs" checked> thumbnails</label>
+      <span class="hint">Columns are the folders you see in GB Studio. Arrows are "Change Scene" events. Click a scene to open it.</span>
+    </div>
+    <div id="flowCanvas"></div>
+  </section>
+
+  <section id="scene" class="tab">
+    <div class="bar">
+      <select id="scenePick"></select>
+      <label><input type="checkbox" id="showColl"> collisions</label>
+      <label><input type="checkbox" id="showTrig" checked> triggers</label>
+      <label><input type="checkbox" id="showActors" checked> actors</label>
+      <label>zoom <select id="zoom"><option>1</option><option selected>2</option><option>3</option></select></label>
+      <span id="sceneFile" class="hint"></span>
+    </div>
+    <div class="split">
+      <div id="stage"></div>
+      <aside id="inspector"><p class="hint">Click an actor (sprite) or a trigger (yellow box) to read and edit its script. The scene's own script is listed first.</p></aside>
+    </div>
+  </section>
+
+  <section id="dialogue" class="tab">
+    <div class="bar">
+      <input id="dlgFilter" placeholder="search text, scene, speaker...">
+      <select id="dlgType"><option value="">all</option><option>text</option><option>choice</option><option>menu</option></select>
+      <span class="hint">Edit in place, then Save. 18 characters per line, 3 lines per box. Use one box per paragraph; "Auto-wrap" does the line breaks for you.</span>
+    </div>
+    <div id="dlgList"></div>
+  </section>
+
+  <section id="map" class="tab">
+    <div class="bar"><span class="hint">The campus world map, generated from OpenStreetMap (rotated 17.4 degrees so roads run straight). Click a location to open its scene.</span></div>
+    <div id="mapStage"></div>
+  </section>
+
+  <section id="sprites" class="tab"><div id="spriteGrid" class="grid"></div></section>
+  <section id="palettes" class="tab"><div id="palGrid"></div></section>
+  <section id="vars" class="tab"><div id="varList"></div></section>
+  <section id="guide" class="tab">
+    <div class="bar">
+      <select id="docPick">
+        <option value="EDITING_GUIDE">Editing guide</option>
+        <option value="STORY">Story bible</option>
+        <option value="LIFE">Life-story levels</option>
+        <option value="MAP">Campus map notes</option>
+        <option value="PLAN">Plan</option>
+      </select>
+    </div>
+    <article id="doc"></article>
+  </section>
+  <section id="check" class="tab">
+    <div class="bar"><button id="runCheck">Run layout audit + validation</button></div>
+    <pre id="checkOut" class="hint">Runs tools/game/check_maps.py and build_game.py --check.</pre>
+  </section>
+</main>
+<div id="toast"></div>
+<script src="/web/app.js"></script>
+</body>
+</html>

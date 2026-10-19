@@ -1,0 +1,92 @@
+{
+  "_resourceType": "trigger",
+  "id": "20d6fd07-e5f2-5b56-be0a-28167dfe3a4e",
+  "_index": 0,
+  "symbol": "trigger_mem_childhood_coin_jar",
+  "prefabId": "",
+  "name": "Coin jar",
+  "x": 13,
+  "y": 12,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "181"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "A steel jar of\ncoins on the\nshelf.",
+                "Nobody's looking."
+              ],
+              "avatarId": ""
+            },
+            "id": "ac153639-34f2-0640-0b6b-32d460b11efc"
+          },
+          {
+            "command": "EVENT_CHOICE",
+            "args": {
+              "variable": "181",
+              "trueText": "Take some",
+              "falseText": "Leave it"
+            },
+            "id": "d419ff69-066e-a37e-f053-60d3cc47b8cc"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "181"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Clink. Your pocket\nis heavy. So is\nsomething else."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "2561f47a-f427-8b2d-df78-bade5625bad0"
+                }
+              ],
+              "false": []
+            },
+            "id": "e54e8332-4d75-a00f-168b-b2c50a2af8dc"
+          }
+        ],
+        "false": []
+      },
+      "id": "60b706c5-a68f-8f09-d675-fc9511463163"
+    }
+  ],
+  "leaveScript": []
+}

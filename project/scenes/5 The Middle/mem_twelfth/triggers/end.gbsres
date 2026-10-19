@@ -1,0 +1,141 @@
+{
+  "_resourceType": "trigger",
+  "id": "d5cde188-4c10-5514-80b8-8bbe87bff1d4",
+  "_index": 5,
+  "symbol": "trigger_mem_twelfth_end",
+  "prefabId": "",
+  "name": "End",
+  "x": 61,
+  "y": 7,
+  "width": 2,
+  "height": 8,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Twelfth passes.\nSlowly.",
+          "You can't fly too\nhigh. So you walk."
+        ],
+        "avatarId": ""
+      },
+      "id": "2c61694f-266d-9bc0-78bc-bc66d10e12cc"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Then MUJ."
+        ],
+        "avatarId": ""
+      },
+      "id": "78e921ab-02ed-3d32-45c2-2b83aea15f0d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Mayank: (from very\nfar) ...room 10.\nHey.",
+          "Glad it's you."
+        ],
+        "avatarId": ""
+      },
+      "id": "0f2d1f2f-c07c-12da-b40e-c791b54f2ce1"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY END - reflection",
+        "__collapse": false
+      },
+      "id": "bd3bbd85-ed92-19eb-4c96-5db52299ed3c"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Can't fly too\nhigh. IIT\npressure.",
+          "Then... MUJ."
+        ],
+        "avatarId": ""
+      },
+      "id": "37f6519e-5f7d-bb4a-4719-4f6819e6e97e"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "178"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "178",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "f50849a3-45b8-e90e-3d55-df8e19945113"
+          },
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "136"
+            },
+            "id": "13c549e9-06f9-bbf8-64da-e37130775540"
+          }
+        ],
+        "false": []
+      },
+      "id": "c79aa6e0-429c-a6b5-d435-d18ee3f1bbf1"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+      "args": {
+        "actorId": "player",
+        "speed": 1
+      },
+      "id": "fc0e13c7-34df-af29-8e71-bc1682ff8162"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+        "persist": true
+      },
+      "id": "7182d481-b192-f64e-790c-de7221ba5db8"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "up",
+        "fadeSpeed": "1"
+      },
+      "id": "28f6c9f8-e5e7-438f-4433-2ffd09ae1757"
+    }
+  ],
+  "leaveScript": []
+}

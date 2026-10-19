@@ -1,0 +1,48 @@
+{
+  "_resourceType": "trigger",
+  "id": "927b4219-0e9a-43cb-a80c-51e80f0f209c",
+  "_index": 0,
+  "symbol": "trigger_begin",
+  "prefabId": "",
+  "name": "Begin",
+  "x": 23,
+  "y": 20,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "534a72d4-4be7-41ed-ac81-8b02c281379a",
+      "command": "EVENT_TEXT_SET_ANIMATION_SPEED",
+      "args": {
+        "speedIn": 0,
+        "speedOut": 0,
+        "speed": 1,
+        "allowFastForward": true
+      }
+    },
+    {
+      "id": "7ca2899b-285a-4c35-b344-e4d5681d96e2",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Life is\nmeaningless..."
+        ],
+        "avatarId": ""
+      },
+      "__type": "event"
+    },
+    {
+      "id": "74025419-f468-4cd6-a497-393f4279a076",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "And college sucks!"
+        ],
+        "avatarId": ""
+      },
+      "__type": "event"
+    }
+  ],
+  "leaveScript": []
+}

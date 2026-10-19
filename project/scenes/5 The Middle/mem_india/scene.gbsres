@@ -1,0 +1,151 @@
+{
+  "_resourceType": "scene",
+  "id": "ee2047ce-c011-5497-b0bf-55249ae25140",
+  "_index": 144,
+  "type": "TOPDOWN",
+  "name": "5 The Middle/Memory: Back to India",
+  "symbol": "scene_mem_india",
+  "x": 1576,
+  "y": 5216,
+  "width": 32,
+  "height": 24,
+  "backgroundId": "2b7f632e-4dfd-52a8-a8cf-3dcb6efda6d7",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-memory-grass",
+    "muj-memory-path",
+    "muj-memory-stone",
+    "muj-memory-brick",
+    "muj-memory-roof",
+    "muj-memory-water",
+    "muj-memory-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-student"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "46377baf-01a3-1224-13ad-d815f8731d23"
+          }
+        ]
+      },
+      "id": "d7b5504b-4512-8f26-aa68-b88ab6eb27f9"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-memory-grass",
+        "palette1": "muj-memory-path",
+        "palette2": "muj-memory-stone",
+        "palette3": "muj-memory-brick",
+        "palette4": "muj-memory-roof",
+        "palette5": "muj-memory-water",
+        "palette6": "muj-memory-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "0baecff9-14f6-672e-b3ab-b65f3f3266fd"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "df1e087a-98ee-572d-962f-3952b685ce14",
+        "loop": true
+      },
+      "id": "06b24575-9de0-577e-8432-6b62120c17b5"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "e87a5fd5-9abc-5a88-867b-ba05f5fc3aa9",
+        "persist": true
+      },
+      "id": "b9d8267d-54a4-b1cd-2909-e6dcc04329ca"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 15
+        },
+        "y": {
+          "type": "number",
+          "value": 18
+        }
+      },
+      "id": "0406a7f6-10cc-3dc3-a0a4-60d4ca9e5216"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "186",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "9b98cbce-12f3-9e6f-1a62-f9a4ddfe803b"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "185",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "e0db7931-b563-4d9e-ecbe-986c4118f994"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY 3 - BACK TO INDIA (mechanic: it only works if you keep trying)",
+        "__collapse": false
+      },
+      "id": "c7244983-b172-f55d-7150-2f480f56b9ed"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "A new world.\nIndia.",
+          "Familiar and\nstrange at the\nsame time."
+        ],
+        "avatarId": ""
+      },
+      "id": "c8554395-b2b9-8afc-a21d-bbdaf418c48d"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "002+0f1c+004+0f1c+004+0f1c+004+0f1c+004+0f1c+004+0f1c+004+0fd+002+0fd+0025+0f!005+0f!00b+0f!004+0f!00e7+0f3+00!0f3+00f+0f3+00!0f3+003+0f3+00!0f3+00f+0f3+00!0f3+003+0f3+00!0f5+00a+0f2+00!0f3+00!0f3+00a1+"
+}

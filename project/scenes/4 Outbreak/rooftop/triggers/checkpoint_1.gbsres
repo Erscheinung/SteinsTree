@@ -1,0 +1,38 @@
+{
+  "_resourceType": "trigger",
+  "id": "6019909f-c031-58c5-b67f-6b3ba358f97e",
+  "_index": 1,
+  "symbol": "trigger_rooftop_checkpoint_1",
+  "prefabId": "",
+  "name": "Checkpoint 1",
+  "x": 14,
+  "y": 11,
+  "width": 1,
+  "height": 3,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "170",
+        "value": {
+          "type": "number",
+          "value": 14
+        }
+      },
+      "id": "b163d9f8-a94c-622b-b449-2a846e5dbe46"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "171",
+        "value": {
+          "type": "number",
+          "value": 13
+        }
+      },
+      "id": "6f0d49ba-2f4f-3f3a-5d7e-4b0275252362"
+    }
+  ],
+  "leaveScript": []
+}

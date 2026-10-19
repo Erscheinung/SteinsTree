@@ -1,0 +1,18 @@
+{
+ "name": "corridor12",
+ "title": "corridor12",
+ "cols": 64,
+ "rows": 18,
+ "doors": [],
+ "exits": [],
+ "spawn": [
+  1,
+  1
+ ],
+ "unique_before_reduce": 7,
+ "tiles_merged": 0,
+ "unique_tiles": 7,
+ "palette_conflicts": 0,
+ "collisions": "0f1c0+009+0f9+0012+0f9+0012+0f!009+0f9+0012+0f9+0012+0f!00180+0fc0+",
+ "kind": "special"
+}

@@ -1,0 +1,60 @@
+{
+  "_resourceType": "trigger",
+  "id": "c0265b28-77a2-581a-902b-aa56fe54e815",
+  "_index": 3,
+  "symbol": "trigger_mem_twelfth_sign_3",
+  "prefabId": "",
+  "name": "Sign 3",
+  "x": 41,
+  "y": 9,
+  "width": 1,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "191"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Slowly. Slowly."
+              ],
+              "avatarId": ""
+            },
+            "id": "294ad7e3-13f4-649f-4a1a-dc7559bf9393"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "191",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "bde702c5-4fb4-9412-c3a9-4eae9d7affc2"
+          }
+        ],
+        "false": []
+      },
+      "id": "cd959a7c-7941-71eb-23bb-2604fb71785b"
+    }
+  ],
+  "leaveScript": []
+}

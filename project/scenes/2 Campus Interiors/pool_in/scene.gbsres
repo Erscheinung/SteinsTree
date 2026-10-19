@@ -1,0 +1,163 @@
+{
+  "_resourceType": "scene",
+  "id": "78f2c498-0654-5e38-92fd-d4796c925381",
+  "_index": 125,
+  "type": "TOPDOWN",
+  "name": "2 Campus Interiors/Ocean Hills Pool Hall",
+  "symbol": "scene_pool_in",
+  "x": 1920,
+  "y": 4352,
+  "width": 26,
+  "height": 18,
+  "backgroundId": "406285ac-2b60-5e83-bc59-c15e0ac05812",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "9960bc05-3535-aac4-a1ba-06eb154bc0fc"
+          }
+        ]
+      },
+      "id": "71c3b394-c4d4-cf47-6fb4-f8245f0039a4"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "72c487df-9601-cf41-2b41-2be2b84f5b6f"
+                }
+              ],
+              "false": []
+            },
+            "id": "e54d5f6b-d655-7d2d-2ee9-dc5a4a30fcad"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "a6645013-89a2-9edb-f0e8-7806a0cf404f"
+                }
+              ],
+              "false": []
+            },
+            "id": "67e63884-a191-9887-991a-64f199620a8b"
+          }
+        ]
+      },
+      "id": "0b69bbc4-2c37-61e2-50b3-449a20102f8c"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f83+0018+0f2+0018+0f2+002+0f14+002+0f2+002+0f14+002+0f2+002+0f14+002+0f2+002+0f14+002+0f2+002+0f14+002+0f2+0018+0f3+0016+0fd+002+0f5b+"
+}

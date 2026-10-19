@@ -1,0 +1,77 @@
+{
+  "_resourceType": "trigger",
+  "id": "832ad424-1911-5b46-b752-02f4e17fec93",
+  "_index": 6,
+  "symbol": "trigger_hub_enter_mem7",
+  "prefabId": "",
+  "name": "Enter Mem7",
+  "x": 4,
+  "y": 4,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "178"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 4,
+              "frequency": 1800,
+              "duration": 0.3,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "a198801e-f1ac-56c3-0d9d-5cec724a21ac"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            },
+            "id": "659815e3-556a-ac0e-e6f3-08a16000064b"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "46051024-29c5-5cba-9845-246b8d942e61",
+              "x": {
+                "type": "number",
+                "value": 2
+              },
+              "y": {
+                "type": "number",
+                "value": 14
+              },
+              "direction": "down",
+              "fadeSpeed": "1"
+            },
+            "id": "5675b7d9-0382-0f20-b85c-9a2203c3792d"
+          }
+        ],
+        "false": []
+      },
+      "id": "528f9b8c-2ef5-47a6-0e9f-b224c80b7b27"
+    }
+  ],
+  "leaveScript": []
+}

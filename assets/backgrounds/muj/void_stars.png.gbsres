@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "a0c140ac-ce4f-569b-ae2e-30dfaf8c3b57",
+  "name": "void_stars",
+  "symbol": "bg_void_stars",
+  "tileColors": "02168+",
+  "filename": "muj/void_stars.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

@@ -1,0 +1,40 @@
+{
+ "name": "pool_in",
+ "title": "Ocean Hills Pool Hall",
+ "cols": 26,
+ "rows": 18,
+ "doors": [
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 11,
+   "y": 14,
+   "spawn": [
+    11,
+    13
+   ]
+  },
+  {
+   "label": "Exit",
+   "target": null,
+   "x": 12,
+   "y": 14,
+   "spawn": [
+    12,
+    13
+   ]
+  }
+ ],
+ "exits": [],
+ "spawn": [
+  11,
+  13
+ ],
+ "unique_before_reduce": 37,
+ "tiles_merged": 0,
+ "unique_tiles": 37,
+ "palette_conflicts": 0,
+ "collisions": "0f83+0018+0f2+0018+0f2+002+0f14+002+0f2+002+0f14+002+0f2+002+0f14+002+0f2+002+0f14+002+0f2+002+0f14+002+0f2+0018+0f3+0016+0fd+002+0f5b+",
+ "unreachable_doors": [],
+ "kind": "interior"
+}

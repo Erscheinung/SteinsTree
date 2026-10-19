@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-gold",
+  "name": "Sprite: Gold",
+  "colors": [
+    "F8F8F0",
+    "F0C060",
+    "B07830",
+    "604020"
+  ],
+  "defaultName": "Sprite: Gold",
+  "defaultColors": [
+    "F8F8F0",
+    "F0C060",
+    "B07830",
+    "604020"
+  ]
+}

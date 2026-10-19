@@ -1,0 +1,129 @@
+{
+  "_resourceType": "sprite",
+  "id": "9386794b-95da-5ba9-a26d-d047b2a59b94",
+  "name": "cast_handheld",
+  "symbol": "sprite_cast_handheld",
+  "states": [
+    {
+      "id": "9c6b21de-0a1b-5f47-864f-d1decd2f3361",
+      "name": "",
+      "animationType": "fixed",
+      "flipLeft": false,
+      "animations": [
+        {
+          "id": "3506ee9a-fac4-5436-b10f-111a2af2fe81",
+          "frames": [
+            {
+              "id": "af086349-98bf-561a-98a9-57ac448f9e89",
+              "tiles": [
+                {
+                  "id": "5ac79e42-2b12-534d-abe2-810493539ae1",
+                  "x": 0,
+                  "y": 0,
+                  "sliceX": 0,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 5,
+                  "objPalette": "OBP0",
+                  "priority": false
+                },
+                {
+                  "id": "5e96cae6-d256-5e03-8009-5e95f238f41e",
+                  "x": 8,
+                  "y": 0,
+                  "sliceX": 8,
+                  "sliceY": 0,
+                  "flipX": false,
+                  "flipY": false,
+                  "palette": 0,
+                  "paletteIndex": 5,
+                  "objPalette": "OBP0",
+                  "priority": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "d88aec09-47f6-5d17-ac44-9efefe640a09",
+          "frames": [
+            {
+              "id": "8f0b7688-5608-55b4-a111-cd8467c3554f",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a93f980d-2844-5626-bca8-c50617e3f281",
+          "frames": [
+            {
+              "id": "a36b34a3-59f2-5815-abba-3aff11ece1d2",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "2fd95cb6-6a72-562b-86cb-395b09c384ff",
+          "frames": [
+            {
+              "id": "65e439c2-cf18-515a-be06-f3df75282d9b",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "aeac27d5-8867-547f-a5fa-53f94655bdf1",
+          "frames": [
+            {
+              "id": "a8955024-0cc8-5284-81d0-d0775dbc42c1",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "a8cd9b7b-391e-5971-a22f-8d40c96ca210",
+          "frames": [
+            {
+              "id": "ae822286-8027-51a8-835e-0676bf2cbc76",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "ea5cad50-6766-5450-8d36-c29351d9730b",
+          "frames": [
+            {
+              "id": "d24a5409-fed6-5cf4-985b-9fdd9212aac3",
+              "tiles": []
+            }
+          ]
+        },
+        {
+          "id": "518eb1d2-7dca-552e-a0bf-44cd667b5e3a",
+          "frames": [
+            {
+              "id": "68a704ac-fe75-516e-8cff-7b906da2af80",
+              "tiles": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "numTiles": 2,
+  "canvasOriginX": 0,
+  "canvasOriginY": 0,
+  "canvasWidth": 16,
+  "canvasHeight": 16,
+  "boundsX": 0,
+  "boundsY": 0,
+  "boundsWidth": 16,
+  "boundsHeight": 8,
+  "animSpeed": 15,
+  "filename": "cast_handheld.png",
+  "width": 16,
+  "height": 16,
+  "checksum": ""
+}

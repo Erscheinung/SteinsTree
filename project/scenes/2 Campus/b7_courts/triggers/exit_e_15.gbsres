@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "d1c91e83-55db-516d-9cfb-f0e1b66aae8d",
+  "_index": 9,
+  "symbol": "trigger_b7_courts_exit_e_15",
+  "prefabId": "",
+  "name": "Exit e 15",
+  "x": 47,
+  "y": 15,
+  "width": 1,
+  "height": 4,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 27
+        },
+        "y": {
+          "type": "number",
+          "value": 58
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "3d99a9c1-2b6e-c2f8-e261-1bf545826d70"
+    }
+  ],
+  "leaveScript": []
+}

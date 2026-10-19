@@ -1,0 +1,116 @@
+{
+  "_resourceType": "actor",
+  "id": "83ee12a4-bcb8-5ef0-9ac9-f84c5bed379a",
+  "_index": 1,
+  "symbol": "actor_finale_kanishk_dawn",
+  "prefabId": "",
+  "name": "Kanishk (dawn)",
+  "coordinateType": "tiles",
+  "x": 26,
+  "y": 30,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "dab951b9-dc0c-5e77-ad40-46859349f940",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "194"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_INC_VALUE",
+            "args": {
+              "variable": "137"
+            },
+            "id": "24cdf575-b207-f7a4-5405-74c82f9ea1b6"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "194",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "102fa86a-a63f-bf24-c1cf-7c62ec7544df"
+          }
+        ],
+        "false": []
+      },
+      "id": "145a9b79-d533-0bd5-aa43-e8d34863b86b"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "124"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Kanishk: I finally\nplanned for the\none variable.",
+                "It was you showing\nup."
+              ],
+              "avatarId": ""
+            },
+            "id": "1eed77cf-8a32-23d4-ea76-4cbfb7350e54"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Kanishk: Eleven\nmoves. You lasted\neleven. Told you."
+              ],
+              "avatarId": ""
+            },
+            "id": "e5ab2cb3-7a99-5283-9325-a57381a74e9d"
+          }
+        ]
+      },
+      "id": "428d6365-cf0a-a6fc-e397-021e9e516374"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

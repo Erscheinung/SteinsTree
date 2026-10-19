@@ -1,0 +1,1056 @@
+{
+  "_resourceType": "actor",
+  "id": "83e40779-73db-559c-85b8-0ff4dce89021",
+  "_index": 0,
+  "symbol": "actor_mem_muskaan_muskaan",
+  "prefabId": "",
+  "name": "Muskaan",
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 9,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "3b7a3ace-6b26-59ea-ac9d-6f0261610376",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "LIFE: Muskaan returns - make her theme a recurring music track",
+        "__collapse": false
+      },
+      "id": "74e54aa8-fb27-8214-c044-0b8e4371316e"
+    },
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "187",
+        "choices": 4,
+        "__collapseElse": true,
+        "value0": {
+          "type": "number",
+          "value": 0
+        },
+        "value1": {
+          "type": "number",
+          "value": 1
+        },
+        "value2": {
+          "type": "number",
+          "value": 2
+        },
+        "value3": {
+          "type": "number",
+          "value": 3
+        }
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MUSKAAN'S MOTIF",
+              "__collapse": false
+            },
+            "id": "bfb91800-8c01-6091-891b-0458874f24d1"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "c83b4560-96b4-9bc2-7a76-b772602ee013"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "6877cdba-99a2-18b8-cc15-0606c7be92db"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "8c512449-b80a-be47-1534-0539465c6e2d"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "c9e2bca1-8996-86f7-c7d1-e18b931ed2cf"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 880,
+              "duration": 0.34,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "468dfbeb-df6a-d3d5-ac81-e53494d02945"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.38
+              },
+              "frames": {
+                "type": "number",
+                "value": 22
+              }
+            },
+            "id": "8c2aec49-7686-cbb5-0fa3-876ecfbb8860"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "78f37509-e3c2-1f41-31a6-938020e9e605"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "08832ee6-3a9a-eb6e-5535-fa3834fdc4eb"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "1458c217-a0ca-f885-5500-858304fb9e8a"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "c788bf7f-4863-9129-cbfb-29201848a184"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 587,
+              "duration": 0.5,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "5a626199-4b7c-22ed-0140-43495ecc42c8"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.54
+              },
+              "frames": {
+                "type": "number",
+                "value": 32
+              }
+            },
+            "id": "8b15d07e-e4ba-39d7-e6d8-fc59b890d3b3"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Sixth class.\nMuskaan. New\nfriends again, but",
+                "she laughs at your\ndrawings in the\ngood way."
+              ],
+              "avatarId": ""
+            },
+            "id": "56d7c71a-8d87-1a37-d03a-bc463a97d104"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "83e40779-73db-559c-85b8-0ff4dce89021",
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "f664b551-0d7a-4d17-106e-b5ca41b78cce"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "83e40779-73db-559c-85b8-0ff4dce89021",
+              "x": {
+                "type": "number",
+                "value": 26
+              },
+              "y": {
+                "type": "number",
+                "value": 4
+              }
+            },
+            "id": "d05c2cda-1d79-b4f1-8ebe-356d48588200"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MUSKAAN'S MOTIF",
+              "__collapse": false
+            },
+            "id": "5fac5878-4ec4-e814-88d0-598d89d3df08"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "00366a9e-bb43-ee0a-d866-a11c118788bd"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "c7942f84-ecb8-5644-8096-36e66532b839"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "babfe886-228a-c2c2-9ca7-0c22567d5b64"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "c1321e52-1724-0689-08a6-8d93ab810aa9"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 880,
+              "duration": 0.34,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "6df7b68e-d6ac-5ee2-cb6b-498308e3ee95"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.38
+              },
+              "frames": {
+                "type": "number",
+                "value": 22
+              }
+            },
+            "id": "4a341ebc-17cc-3aaf-406b-492c88be80b8"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "02f23eda-797b-c7c8-ae4d-5cd68ef29873"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "8c689294-6391-cb0c-b081-1676250e37e5"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "71952f9b-06cc-380e-5190-d964a1653398"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "83576a03-3c39-1572-3a54-5ed1d6943657"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 587,
+              "duration": 0.5,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "24ab28b4-7fe9-0a0f-58bf-b6508f5d8df8"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.54
+              },
+              "frames": {
+                "type": "number",
+                "value": 32
+              }
+            },
+            "id": "a6442471-7521-eee8-cb83-27e0864eb459"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Seventh. Love\nfound again.\nShort.",
+                "But life goes on.\nYou win a drawing\ncompetition."
+              ],
+              "avatarId": ""
+            },
+            "id": "6f04caef-0ea6-41b9-ee6b-c673e7f2f2d3"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "83e40779-73db-559c-85b8-0ff4dce89021",
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "54cceab0-fb66-4eb9-7015-86e8316839b2"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "83e40779-73db-559c-85b8-0ff4dce89021",
+              "x": {
+                "type": "number",
+                "value": 5
+              },
+              "y": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "2e0785b9-dae4-8e22-9df0-56cf675663de"
+          }
+        ],
+        "true2": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MUSKAAN'S MOTIF",
+              "__collapse": false
+            },
+            "id": "dafd2544-1408-8beb-f529-89c9f194adba"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "c1c5a0d5-8ee4-66e3-e5cb-47540d5ad5c9"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "4e597aaa-3440-3b3e-568f-aca2c01a4cdc"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "f6b3e2d9-ed73-3830-3962-e36b7fcac823"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "87772367-56a0-937f-2b8d-cc90186baadd"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 880,
+              "duration": 0.34,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "84b37020-39b9-ab1d-907b-bc71057ebfce"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.38
+              },
+              "frames": {
+                "type": "number",
+                "value": 22
+              }
+            },
+            "id": "6479d44d-c224-2ef4-66dd-c517351c0d86"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "4f3c46be-5769-2b75-b73e-39d86cee2bae"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "2d677682-f644-42d3-ef41-b05be0a85ca5"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "b9afeb0f-6c48-fde0-ad15-25959e0b58ae"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "8c8e0962-8431-c45e-2a56-00ef367e6346"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 587,
+              "duration": 0.5,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "f230f71a-fe49-2ba1-433c-47cebaa52efe"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.54
+              },
+              "frames": {
+                "type": "number",
+                "value": 32
+              }
+            },
+            "id": "2ee3ecc9-ff94-0771-cef5-6e29080598f5"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Eighth. PSP, PS2,\nfootball at lunch.",
+                "One of the best\nyears of your\nlife."
+              ],
+              "avatarId": ""
+            },
+            "id": "62b3dc95-9065-36c6-cd36-474964cc120a"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "83e40779-73db-559c-85b8-0ff4dce89021",
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "14ca2421-c9c8-6883-9aa5-50856dc00886"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "83e40779-73db-559c-85b8-0ff4dce89021",
+              "x": {
+                "type": "number",
+                "value": 22
+              },
+              "y": {
+                "type": "number",
+                "value": 16
+              }
+            },
+            "id": "362ed9e0-dd85-868e-a14a-6aa5d7eee12e"
+          }
+        ],
+        "true3": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MUSKAAN'S MOTIF",
+              "__collapse": false
+            },
+            "id": "96a546e0-5712-4e42-5658-caa1cc494f3a"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "22a83ce1-d8ed-3c7a-30b1-9a2a7eed7038"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "9b7494f1-2c1d-1140-a4da-8ebbd6aaccbd"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "fea79e86-471a-e5fd-965f-93ee3baedc65"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "e66bf46c-3b6a-bfa4-a946-eb5df1b75e2c"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 880,
+              "duration": 0.34,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "cbbda25e-927e-8d98-7261-a4c082c3e89c"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.38
+              },
+              "frames": {
+                "type": "number",
+                "value": 22
+              }
+            },
+            "id": "50d230f0-b2b0-9845-b6a3-ddf39aa6e2db"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "be352576-ffc9-8c42-9320-8e54411d8b47"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "4007da5c-f770-8975-481b-58cda05e6b91"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "5adfbcef-756b-b437-9543-e4559ecf7d51"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "5391a2bd-6045-d4b5-56d5-85d2fbfbce25"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 587,
+              "duration": 0.5,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "b4996324-791e-68c3-420c-378cc9c91c8f"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.54
+              },
+              "frames": {
+                "type": "number",
+                "value": 32
+              }
+            },
+            "id": "400ff42b-62d1-2338-ae33-fe5f14f9b77e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Tenth. Muskaan,\nagain. Same music.",
+                "Some people are a\ntheme, not a\nscene."
+              ],
+              "avatarId": ""
+            },
+            "id": "e34b3003-0fc6-42ef-dfd1-21993273d1b8"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "83e40779-73db-559c-85b8-0ff4dce89021",
+              "time": 0.5,
+              "frames": 30
+            },
+            "id": "fdb4c161-c7d0-c625-54a4-1381b7fa17c1"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_POSITION",
+            "args": {
+              "actorId": "83e40779-73db-559c-85b8-0ff4dce89021",
+              "x": {
+                "type": "number",
+                "value": 16
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              }
+            },
+            "id": "a029bcc0-5436-ea87-5bfe-ad556d02f2b2"
+          }
+        ],
+        "false": []
+      },
+      "id": "aceacd3c-a3d4-14bc-020e-9daf1e59b7e9"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "187"
+      },
+      "id": "f249b6cf-e93b-21f8-761f-9b84b553aee7"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "187"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MEMORY END - reflection",
+              "__collapse": false
+            },
+            "id": "06e89f7d-010d-7b4d-672f-05d1596c2a32"
+          },
+          {
+            "command": "EVENT_ACTOR_SHOW",
+            "args": {
+              "actorId": "ca16d4b9-28dc-5f3b-a6c9-c76b489421cd"
+            },
+            "id": "0ca91b57-0f76-08d0-68bf-f1df46c2683d"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "ca16d4b9-28dc-5f3b-a6c9-c76b489421cd",
+              "time": 0.6,
+              "frames": 36
+            },
+            "id": "8abd13ab-a5f4-9847-3f77-2dbe26534100"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Some\npeople keep coming\nback into your",
+                "life. Like a song.",
+                "Mayank: That's not\na coincidence.\nThat's a theme."
+              ],
+              "avatarId": ""
+            },
+            "id": "88182061-9a4e-ebba-3226-f82ff061c5c6"
+          },
+          {
+            "command": "EVENT_ACTOR_EFFECTS",
+            "args": {
+              "effect": "flicker",
+              "actorId": "ca16d4b9-28dc-5f3b-a6c9-c76b489421cd",
+              "time": 0.6,
+              "frames": 36
+            },
+            "id": "c80843fa-61c7-c97b-22ca-76fffb05d61f"
+          },
+          {
+            "command": "EVENT_ACTOR_HIDE",
+            "args": {
+              "actorId": "ca16d4b9-28dc-5f3b-a6c9-c76b489421cd"
+            },
+            "id": "412b5876-f1f0-7fe7-bdba-cd99835d2c3c"
+          },
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "175"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 0
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "175",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "26bb8e2a-7ea9-48a2-0072-ee1d7a42bff6"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "136"
+                  },
+                  "id": "126297ae-916a-2c5f-b0b7-2d98981c2269"
+                }
+              ],
+              "false": []
+            },
+            "id": "a9f0d2ba-f920-f1e0-5792-7cb660553b5a"
+          },
+          {
+            "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+            "args": {
+              "actorId": "player",
+              "speed": 1
+            },
+            "id": "9cc2c93a-28af-5346-d7f7-3685fb052fe3"
+          },
+          {
+            "command": "EVENT_PLAYER_SET_SPRITE",
+            "args": {
+              "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+              "persist": true
+            },
+            "id": "ed6194f1-76bb-74fe-e657-4a26f5993780"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 12
+              },
+              "direction": "up",
+              "fadeSpeed": "1"
+            },
+            "id": "e675b0a6-5c89-9111-699b-620e0a296ef8"
+          }
+        ],
+        "false": []
+      },
+      "id": "2aba2df3-8a79-ea9b-09fb-346e66e86966"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

@@ -1,0 +1,235 @@
+{
+  "_resourceType": "scene",
+  "id": "71874c3c-0511-5d17-b044-dd0bb22d38da",
+  "_index": 109,
+  "type": "TOPDOWN",
+  "name": "2 Campus/The Dome - Administrative Block",
+  "symbol": "scene_dome",
+  "x": 4904,
+  "y": 2692,
+  "width": 68,
+  "height": 48,
+  "backgroundId": "f899e322-f49d-5e03-b5e3-b9d65a5a8b42",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "2aab293f-ecb8-1f3d-8701-8c2e5371c905"
+          }
+        ]
+      },
+      "id": "fe223b59-9bd8-877b-0ea1-d56a54d49717"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "dc2caeda-14c9-bd57-729e-63afc3988523"
+                }
+              ],
+              "false": []
+            },
+            "id": "9df4fd72-8a8c-68af-e74b-ef53eba4ec3f"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "b321eade-a29f-71aa-1bd6-836933872a75"
+                }
+              ],
+              "false": []
+            },
+            "id": "99cc2cc4-df10-a01a-d07a-56c38cd299a4"
+          }
+        ]
+      },
+      "id": "7bd3a3aa-3384-09b6-bf10-d5d20b725781"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "202"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "202",
+              "value": {
+                "type": "number",
+                "value": 0
+              }
+            },
+            "id": "566cf554-c73b-aba1-90d8-16272dbad588"
+          },
+          {
+            "command": "EVENT_OVERLAY_SHOW",
+            "args": {
+              "color": "white",
+              "x": 0,
+              "y": 16
+            },
+            "id": "d8057ec8-4071-95be-7fe4-e0f87c8d5911"
+          },
+          {
+            "command": "EVENT_TEXT_DRAW",
+            "args": {
+              "text": "The Dome",
+              "x": 1,
+              "y": 0,
+              "location": "overlay"
+            },
+            "id": "4b34ab4d-3e05-448e-3d81-f662a9ff6739"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 1.4
+              },
+              "frames": {
+                "type": "number",
+                "value": 84
+              }
+            },
+            "id": "b54b43c7-8c45-40c9-5844-777a7bf56ce7"
+          },
+          {
+            "command": "EVENT_OVERLAY_HIDE",
+            "args": {},
+            "id": "a293a204-c3bc-9537-1b26-ce16361991e4"
+          }
+        ],
+        "false": []
+      },
+      "id": "9ee57ef6-507c-038e-662f-bac801e683c2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f20+004+0f21+0042+0f2+0042+0f2+0042+0f2+008+0f2+00c+0f2+00d+0f2+004+0f2+00a+0f2+009+0f2+008+0f2+003+0f2+003+0f2+002+0f2+005+0f2+002+0f2+002+0f2+004+0f2+005+0f2+003+0f2+00!0f3+005+0f!007+0f2+005+0f2+003+0f2+009+0f2+002+0f2+00f+0f2+005+0f4+005+0f!007+0f2+00c+0f2+002+0f2+009+0f2+004+0f2+004+0f2+005+0f8+004+0f!006+0f2+004+0f2+004+0f2+00!0f2+002+0f2+00!0f2+006+0f2+004+0f2+00!0f2+00!0f2+002+0fb+004+0f!006+0f4+002+0f2+00!0f2+00!0f2+003+0f2+003+0f2+00a+0f2+003+0f2+002+0fe+004+0f2+002+0fb+00!0f2+006+0f2+00!0f2+002+0f9+00!0f2+004+0f12+003+0f2+002+0f10+007+0f2+00!0fb+00!0f2+00!0f14+003+0f2+004+0f12+005+0f24+003+0f2+004+0f3c+002+0f2+003+0f3d+002+0f2+00!0f3b+006+0f2+00!0f38+00e+0f33+0012+0f!002+0f2c+001d+0f24+0013+0f3+004+0f2+009+0f1c+005+0f2+00e+0f4+00!0f2+00!0f2+00d+0f16+003+0f2+002+0f2+007+0f2+005+0f2+003+0f2+006+0f2+00d+0f3+00!0fa+006+0f2+00b+0f2+005+0f2+00!0f2+002+0f2+004+0f2+00!0f2+00e+0f9+00a+0f2+005+0f2+003+0f2+003+0f2+00!0f2+002+0f2+002+0f2+003+0f2+002+0f2+00b+0f8+00a+0f2+002+0f2+00!0f2+003+0f2+003+0f!00a+0f2+00!0f2+004+0f2+00b+0f8+007+0f2+005+0f2+004+0f2+005+0f!00d+0f2+00!0f2+00e+0f8+007+0f2+003+0f2+006+0f2+005+0f!0010+0f2+002+0f2+001e+0f2+00!0f2+00a+0f!0014+0f2+0021+0f2+00!0f2+007+0f2+0034+0f2+003+0f2+007+0f2+00!0f2+002a+0f2+002+0f2+00!0f2+00c+0f2+00!0f2+0012+0f2+0016+0f2+002+0f2+00f+0f2+006+0f2+00d+0f2+0018+0f2+005+0f2+006+0f2+002+0f2+002+0f2+002+0f2+0027+0f2+00!0f2+002+0f2+006+0f2+002+0f2+002+0f2+0010+0f2+0016+0f2+004+0f2+008+0f2+004+0f!006+0f2+003+0f2+008+0f2+0016+0f2+006+0f2+006+0f2+00!0f2+00!0f!006+0f2+003+0f2+0022+0f2+004+0f2+009+0f2+00!0f!004+0f2+002+0f2+003+0f2+0020+0f2+00!0f2+006+0f2+007+0f!004+0f2+002+0f2+003+0f2+0019+0f2+008+0f2+006+0f2+002+0f2+004+0f!00f+0f2+0016+0f2+006+0f2+006+0f2+004+0f2+004+0f!005+0f2+008+0f2+001a+0f2+002+0f2+006+0f2+00a+0f!005+0f2+002+0f2+006+0f2+0018+0f2+008+0f2+004+0f2+006+0f3+007+0f2+003+0f2+00!0f2+00a+0f2+004+0f2+008+0f2+006+0f2+004+0f2+005+0f4+005+0f2+005+0f2+00d+0f2+00!0f!002+0f2+008+0f2+008+0f2+006+0f2+00!0f!004+0f2+002+0f2+00c+0f2+0020+0f2+003+0f2+00!0f2+00!0f!004+0f2+007+0f2+007+0f2+0014+0f2+008+0f2+005+0f2+0012+0f2+001d+0f2+008+0f2+00c+0f!003+0f3+004+0f5+004+0fc+004+0fc+004+0f4+004+0f3+004+0f!"
+}

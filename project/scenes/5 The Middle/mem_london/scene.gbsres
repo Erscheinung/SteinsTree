@@ -1,0 +1,140 @@
+{
+  "_resourceType": "scene",
+  "id": "86432bc4-6fc0-50e4-9fa8-10864434c112",
+  "_index": 143,
+  "type": "TOPDOWN",
+  "name": "5 The Middle/Memory: London",
+  "symbol": "scene_mem_london",
+  "x": 1216,
+  "y": 5216,
+  "width": 40,
+  "height": 18,
+  "backgroundId": "d8f3eb7c-66df-5b4e-ba6c-fbd2bea09ae6",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-memory-grass",
+    "muj-memory-path",
+    "muj-memory-stone",
+    "muj-memory-brick",
+    "muj-memory-roof",
+    "muj-memory-water",
+    "muj-memory-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-student"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "0f655de6-70b1-202b-c948-74cb8005e4c3"
+          }
+        ]
+      },
+      "id": "092a4073-371d-e2bc-e6d8-39e8ee3cd0a5"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-memory-grass",
+        "palette1": "muj-memory-path",
+        "palette2": "muj-memory-stone",
+        "palette3": "muj-memory-brick",
+        "palette4": "muj-memory-roof",
+        "palette5": "muj-memory-water",
+        "palette6": "muj-memory-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "1b043059-bb51-bb9e-5c57-68514b5fb1e0"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "df1e087a-98ee-572d-962f-3952b685ce14",
+        "loop": true
+      },
+      "id": "a17c4426-9ddc-2845-aa07-834a0c6012e7"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "e87a5fd5-9abc-5a88-867b-ba05f5fc3aa9",
+        "persist": true
+      },
+      "id": "fb86c82a-3436-6c3c-f432-e7682ba89651"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 10
+        }
+      },
+      "id": "241d41ae-02b8-6ae4-ba38-72006e18692d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "183",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "3def125c-90b3-a55e-d813-63b3fdff207f"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "184",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "31ca9948-b524-4c93-d75c-f22bf68cfab4"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY 2b - LONDON (LIFE: discovery, fun music, football, first love)",
+        "__collapse": false
+      },
+      "id": "496d629a-2182-4f3b-2e2b-8e91295101fc"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f3+00!0f3+00!0f3+00!0f3+00!0f3+00!0f3+00!0f3+00!0f3+00!0f3+00!0f3+0012+0f!0027+0f!00de+0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!0f7+00!"
+}

@@ -9,13 +9,83 @@
   "y": 1567.289323415425,
   "width": 32,
   "height": 32,
-  "backgroundId": "238481e9-d392-494c-af6d-8493b5626ada",
+  "backgroundId": "f93fe22f-304c-5353-89f5-8920190a4f3f",
   "tilesetId": "",
   "colorModeOverride": "none",
-  "paletteIds": [],
+  "paletteIds": [
+    "enr-b7-chiller-0",
+    "enr-b7-chiller-1",
+    "enr-b7-chiller-2",
+    "enr-b7-chiller-3",
+    "enr-b7-chiller-4",
+    "enr-b7-chiller-5",
+    "enr-b7-chiller-6",
+    "muj-ui"
+  ],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "enr-b7-chiller-0-night",
+              "palette1": "enr-b7-chiller-1-night",
+              "palette2": "enr-b7-chiller-2-night",
+              "palette3": "enr-b7-chiller-3-night",
+              "palette4": "enr-b7-chiller-4-night",
+              "palette5": "enr-b7-chiller-5-night",
+              "palette6": "enr-b7-chiller-6-night",
+              "palette7": "muj-ui"
+            },
+            "id": "b76af0a7-a5e4-2368-19f9-48d93f6dd807"
+          }
+        ],
+        "false": []
+      },
+      "id": "102a96ca-dec7-88df-231b-47bcf5425708"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "719fd829-2338-07f2-c488-4f9ab39b1d69"
+          }
+        ]
+      },
+      "id": "fd70f511-508f-baa5-775e-aa771f36202d"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

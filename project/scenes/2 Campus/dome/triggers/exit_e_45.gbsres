@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "b49988e9-4ff3-5c89-abba-71d225eb3268",
+  "_index": 10,
+  "symbol": "trigger_dome_exit_e_45",
+  "prefabId": "",
+  "name": "Exit e 45",
+  "x": 67,
+  "y": 45,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 86
+        },
+        "y": {
+          "type": "number",
+          "value": 96
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "8aafa09b-9fc7-e299-3c69-d7aaeb975a2e"
+    }
+  ],
+  "leaveScript": []
+}

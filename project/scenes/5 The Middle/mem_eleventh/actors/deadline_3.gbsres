@@ -1,0 +1,171 @@
+{
+  "_resourceType": "actor",
+  "id": "b8004735-f8da-5376-86a7-69d16abd8e83",
+  "_index": 2,
+  "symbol": "actor_mem_eleventh_deadline_3",
+  "prefabId": "",
+  "name": "Deadline 3",
+  "coordinateType": "tiles",
+  "x": 16,
+  "y": 14,
+  "frame": 0,
+  "animate": true,
+  "spriteSheetId": "b862c31a-fac9-5e5f-b335-8c50f1826451",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 0.5,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "201"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 0
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_GET_POSITION",
+            "args": {
+              "actorId": "player",
+              "vectorX": "166",
+              "vectorY": "167"
+            },
+            "id": "0c25d565-e516-9ddc-3618-bcd590e70437"
+          },
+          {
+            "command": "EVENT_ACTOR_MOVE_TO",
+            "args": {
+              "actorId": "$self$",
+              "x": {
+                "type": "variable",
+                "value": "166"
+              },
+              "y": {
+                "type": "variable",
+                "value": "167"
+              },
+              "collideWith": [],
+              "moveType": "horizontal"
+            },
+            "id": "27684499-16b9-a7c8-8c6a-c1702bcb3852"
+          },
+          {
+            "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+            "args": {
+              "actorId": "$self$",
+              "operator": "<=",
+              "distance": {
+                "type": "number",
+                "value": 1
+              },
+              "otherActorId": "player",
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "200"
+                  },
+                  "id": "352ec06d-e8d7-6a1c-4534-90e44f5f82d9"
+                },
+                {
+                  "command": "EVENT_SOUND_PLAY_EFFECT",
+                  "args": {
+                    "type": "noise",
+                    "priority": "medium",
+                    "pitch": 3,
+                    "frequency": 200,
+                    "duration": 0.2,
+                    "wait": false,
+                    "effect": 0
+                  },
+                  "id": "44ba8b57-af50-5687-1c0a-1fd428877efb"
+                },
+                {
+                  "command": "EVENT_CAMERA_SHAKE",
+                  "args": {
+                    "time": 0.2,
+                    "frames": 12,
+                    "shakeDirection": "horizontal",
+                    "magnitude": {
+                      "type": "number",
+                      "value": 3
+                    }
+                  },
+                  "id": "9463669f-2689-211d-70a0-9563337f3c8d"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Sharma ji's son\ngot 99.4."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3e0919b5-3700-23b7-d227-20d4c46908e4"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "$self$",
+                    "x": {
+                      "type": "number",
+                      "value": 8
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 15
+                    }
+                  },
+                  "id": "9666391d-81e0-dde5-0ba8-789942b92f63"
+                }
+              ],
+              "false": []
+            },
+            "id": "162243b0-9d13-4fb5-f945-43b341e570a0"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.2
+              },
+              "frames": {
+                "type": "number",
+                "value": 12
+              }
+            },
+            "id": "f8925c62-0824-2d2c-d2c0-d86c5dd3ceb4"
+          }
+        ]
+      },
+      "id": "b815ec38-b055-f3d0-0c8e-84caf4980543"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

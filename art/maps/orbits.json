@@ -1,0 +1,18 @@
+{
+ "name": "orbits",
+ "title": "orbits",
+ "cols": 20,
+ "rows": 18,
+ "doors": [],
+ "exits": [],
+ "spawn": [
+  1,
+  1
+ ],
+ "unique_before_reduce": 194,
+ "tiles_merged": 0,
+ "unique_tiles": 194,
+ "palette_conflicts": 0,
+ "collisions": "00168+",
+ "kind": "special"
+}

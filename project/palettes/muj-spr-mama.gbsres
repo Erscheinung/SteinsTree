@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-mama",
+  "name": "Sprite: Mama",
+  "colors": [
+    "F0C8A0",
+    "E05878",
+    "A03050",
+    "281820"
+  ],
+  "defaultName": "Sprite: Mama",
+  "defaultColors": [
+    "F0C8A0",
+    "E05878",
+    "A03050",
+    "281820"
+  ]
+}

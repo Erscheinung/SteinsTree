@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-blood-stone",
+  "name": "MUJ blood stone",
+  "colors": [
+    "C4343F",
+    "9C2932",
+    "711D25",
+    "3B0E15"
+  ],
+  "defaultName": "MUJ blood stone",
+  "defaultColors": [
+    "C4343F",
+    "9C2932",
+    "711D25",
+    "3B0E15"
+  ]
+}

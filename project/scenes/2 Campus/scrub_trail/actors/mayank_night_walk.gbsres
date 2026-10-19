@@ -1,0 +1,91 @@
+{
+  "_resourceType": "actor",
+  "id": "4a5e2f89-9490-5515-8ace-4c29d179a2d5",
+  "_index": 1,
+  "symbol": "actor_scrub_trail_mayank_night_walk",
+  "prefabId": "",
+  "name": "Mayank (night walk)",
+  "coordinateType": "tiles",
+  "x": 32,
+  "y": 29,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e6c451a2-6ff2-44c2-9f4e-5969df82a7e0",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "ne",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_ACTOR_DEACTIVATE",
+            "args": {
+              "actorId": "$self$"
+            },
+            "id": "99e31845-46af-665d-d332-5c881df4fe17"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "ne",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "$self$"
+                  },
+                  "id": "932776e2-5550-f24c-665d-fcbd428e24fe"
+                }
+              ],
+              "false": []
+            },
+            "id": "8988805f-7ccd-274c-f1c9-ed1f211fc5e4"
+          }
+        ]
+      },
+      "id": "04bad25a-be1c-35c0-5702-dc086733ecc5"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

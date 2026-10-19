@@ -1,0 +1,44 @@
+{
+  "_resourceType": "trigger",
+  "id": "574de258-3286-58a3-ad26-1db692c4fc77",
+  "_index": 12,
+  "symbol": "trigger_girls_blocks_door_bluedove_mess",
+  "prefabId": "",
+  "name": "Door BlueDove Mess",
+  "x": 6,
+  "y": 27,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "102",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "16430328-1fc9-1604-4c12-91b4ba959486"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "a286be15-e60a-5b78-952f-5e0faa65ad3b",
+        "x": {
+          "type": "number",
+          "value": 9
+        },
+        "y": {
+          "type": "number",
+          "value": 12
+        },
+        "direction": "up",
+        "fadeSpeed": "2"
+      },
+      "id": "ff131b85-5d04-e2fc-b08c-5f1b8d2cbea2"
+    }
+  ],
+  "leaveScript": []
+}

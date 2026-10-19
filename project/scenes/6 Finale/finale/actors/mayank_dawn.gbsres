@@ -1,0 +1,415 @@
+{
+  "_resourceType": "actor",
+  "id": "25be2f82-f34f-54c7-986e-50035dc538ff",
+  "_index": 5,
+  "symbol": "actor_finale_mayank_dawn",
+  "prefabId": "",
+  "name": "Mayank (dawn)",
+  "coordinateType": "tiles",
+  "x": 31,
+  "y": 24,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "e6c451a2-6ff2-44c2-9f4e-5969df82a7e0",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "lt",
+          "valueA": {
+            "type": "variable",
+            "value": "137"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 5
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Say hi to\neveryone first.\nWe've got time.",
+                "Weirdly."
+              ],
+              "avatarId": ""
+            },
+            "id": "fcccd13a-b5a0-806a-6b63-6660b3a9dccd"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: So. You\nfound out? Why you\ncame here?"
+              ],
+              "avatarId": ""
+            },
+            "id": "eebf4582-ba13-57cd-a321-cd915a3ba8a8"
+          },
+          {
+            "command": "EVENT_MENU",
+            "args": {
+              "variable": "119",
+              "items": 3,
+              "cancelOnLastOption": false,
+              "cancelOnB": false,
+              "layout": "dialogue",
+              "option1": "For you lot",
+              "option2": "Still don't know",
+              "option3": "To get here"
+            },
+            "id": "0cde26a2-31dd-1da9-1e7c-a06663a41f38"
+          },
+          {
+            "command": "EVENT_SWITCH",
+            "args": {
+              "variable": "119",
+              "choices": 3,
+              "__collapseElse": true,
+              "value0": {
+                "type": "number",
+                "value": 1
+              },
+              "value1": {
+                "type": "number",
+                "value": 2
+              },
+              "value2": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "children": {
+              "true0": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Cheesy.\nCorrect."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "db9dc9f3-4ff0-85bb-85c8-95ab5f826a19"
+                }
+              ],
+              "true1": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: That's\nallowed. That's\nmost people."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "c9c3ef03-3d84-a071-95c8-bc583d84b2ec"
+                }
+              ],
+              "true2": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: Yeah.\nHere. Right here."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "6307aa90-af94-c144-faae-c8281f5dfd02"
+                }
+              ],
+              "false": []
+            },
+            "id": "6a472178-d584-4060-aaaa-d5abb1daa431"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: You know\nthis isn't real,\nright?"
+              ],
+              "avatarId": ""
+            },
+            "id": "54d327c7-d2d5-6393-00df-68c0ee9000ac"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You: I know."
+              ],
+              "avatarId": ""
+            },
+            "id": "dfc90067-d583-af83-ceff-d0cca662aaea"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Is it\nenough?"
+              ],
+              "avatarId": ""
+            },
+            "id": "191e8da1-7b2d-4e6d-5446-aec49bb6efbb"
+          },
+          {
+            "command": "EVENT_COMMENT",
+            "args": {
+              "text": "MUSKAAN'S MOTIF",
+              "__collapse": false
+            },
+            "id": "4604f781-2dfb-839a-c7c0-0fafd4ba7b38"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "69d3ed47-dda6-f10b-b312-92e629b9193c"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "4dd46dae-2af7-904e-9144-1edd515a1a4b"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "0bf49ee1-4eea-df94-1d6e-259e95b19727"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "5ec5dfab-18df-f60e-5397-1278dc559180"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 880,
+              "duration": 0.34,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "572948d7-d234-1c0f-5d0d-6421f56e6619"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.38
+              },
+              "frames": {
+                "type": "number",
+                "value": 22
+              }
+            },
+            "id": "368a2663-bad6-925f-1a48-995fa137d844"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 784,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "20b60bb9-0c17-f415-7938-3e463b58fd73"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "32f207ba-18d1-1c46-2ba8-99da6a4050e0"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 659,
+              "duration": 0.22,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "bd58dbf7-4de5-d255-77ea-042dc1a25541"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.26
+              },
+              "frames": {
+                "type": "number",
+                "value": 15
+              }
+            },
+            "id": "f818dc9f-d671-9cd3-7b4d-ac57df474b1d"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "tone",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 587,
+              "duration": 0.5,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "3ba52e0f-03e1-4043-2937-5b6c23d8f44f"
+          },
+          {
+            "command": "EVENT_WAIT",
+            "args": {
+              "time": {
+                "type": "number",
+                "value": 0.54
+              },
+              "frames": {
+                "type": "number",
+                "value": 32
+              }
+            },
+            "id": "585ce864-ecf5-4a99-47b2-a5c26fdf5f2e"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "You: ...It's\nenough."
+              ],
+              "avatarId": ""
+            },
+            "id": "1d1e6174-f414-2eae-db05-b02cab369d70"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Nani was\nright. It's a\ncircle.",
+                "You'll end up back\nwhere you started."
+              ],
+              "avatarId": ""
+            },
+            "id": "a92b97ed-619b-2762-6f01-eda3a9ffcbd7"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Different\nyou. Different\nplace."
+              ],
+              "avatarId": ""
+            },
+            "id": "2415d5ac-f2d1-0a03-6b45-fd6752178770"
+          },
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Mayank: Death\nisn't the end,\nroom 10.",
+                "It's just the\nmiddle."
+              ],
+              "avatarId": ""
+            },
+            "id": "f5567e10-2acc-c271-f971-7b0989456802"
+          },
+          {
+            "command": "EVENT_FADE_OUT",
+            "args": {
+              "speed": "1"
+            },
+            "id": "4d12e18a-a982-498c-2c81-96685eb84857"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "69b0c111-a6d9-59b3-806c-2ddce455aec0",
+              "x": {
+                "type": "number",
+                "value": 9
+              },
+              "y": {
+                "type": "number",
+                "value": 9
+              },
+              "direction": "",
+              "fadeSpeed": "1"
+            },
+            "id": "a3fe9c71-d00c-267a-e1ee-3825e43578bb"
+          }
+        ]
+      },
+      "id": "e98598fb-faac-b37a-50e7-f905f7a6aa9b"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

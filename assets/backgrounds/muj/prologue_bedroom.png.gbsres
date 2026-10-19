@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "876a3360-13f9-5ccf-bd17-ca9fbdbdae2f",
+  "name": "prologue_bedroom",
+  "symbol": "bg_prologue_bedroom",
+  "tileColors": "023c+0317+04!033+04!035+04!033+02!035+04!039+04!039+067+036+063+034+067+036+063+032+069+032+04!033+063+032+069+036+063+032+0611+00!032+062+03!06f+032+00!0611+03a+062+039+0250+",
+  "filename": "muj/prologue_bedroom.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

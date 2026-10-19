@@ -1,0 +1,106 @@
+{
+  "_resourceType": "actor",
+  "id": "96543ea8-d3c1-5423-983e-8824847dfded",
+  "_index": 0,
+  "symbol": "actor_mem_india_aryan",
+  "prefabId": "",
+  "name": "Aryan",
+  "coordinateType": "tiles",
+  "x": 14,
+  "y": 12,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "703e607f-7f18-5da5-a5e7-99bfaf73f6be",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH",
+      "args": {
+        "variable": "186",
+        "choices": 2,
+        "__collapseElse": false,
+        "value0": {
+          "type": "number",
+          "value": 0
+        },
+        "value1": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "children": {
+        "true0": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Aryan: ..."
+              ],
+              "avatarId": ""
+            },
+            "id": "a0ee9a4e-9b4a-b4ad-ce4f-7ed7143b22bd"
+          }
+        ],
+        "true1": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Aryan: You talk\nfunny. Like a BBC\nnews guy."
+              ],
+              "avatarId": ""
+            },
+            "id": "3b49ceeb-02ca-e42a-1449-eb6b03f64e4e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Aryan: Okay fine.\nYou can be on my\nteam.",
+                "But you're\ngoalkeeper.",
+                "Aryan: (LIFE:\nAryan. Uncertain\nbut heavenly.",
+                "A familiar abode.)"
+              ],
+              "avatarId": ""
+            },
+            "id": "94dce5ab-5006-359e-a450-35a5d4645a26"
+          },
+          {
+            "command": "EVENT_SET_VALUE",
+            "args": {
+              "variable": "185",
+              "value": {
+                "type": "number",
+                "value": 1
+              }
+            },
+            "id": "efb6281e-8ee1-0c9f-91f0-cca15b14e99b"
+          }
+        ]
+      },
+      "id": "203651a0-c9a2-2802-eadb-8c675ff86336"
+    },
+    {
+      "command": "EVENT_INC_VALUE",
+      "args": {
+        "variable": "186"
+      },
+      "id": "63aa44c3-6a5d-1fb6-f9a3-62c53c464f6d"
+    }
+  ],
+  "startScript": [],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

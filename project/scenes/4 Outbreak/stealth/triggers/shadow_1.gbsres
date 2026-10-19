@@ -1,0 +1,49 @@
+{
+  "_resourceType": "trigger",
+  "id": "fd3524df-795d-5506-8e7d-b510693fbd24",
+  "_index": 0,
+  "symbol": "trigger_stealth_shadow_1",
+  "prefabId": "",
+  "name": "Shadow 1",
+  "x": 5,
+  "y": 29,
+  "width": 3,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "164",
+        "value": {
+          "type": "number",
+          "value": 1
+        }
+      },
+      "id": "f54adaf0-35a7-51c3-f9eb-02ed9badd00e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Anshuman: (radio)\nGood. You're a\nshadow."
+        ],
+        "avatarId": ""
+      },
+      "id": "e17d8b6e-8ffc-f14b-4adc-3a227137f228"
+    }
+  ],
+  "leaveScript": [
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "164",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "206c1c47-7c87-358a-3bc7-26ff1c0d1a5d"
+    }
+  ]
+}

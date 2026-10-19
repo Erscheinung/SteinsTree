@@ -1,0 +1,120 @@
+{
+  "_resourceType": "trigger",
+  "id": "bde1dfa6-1a70-5f81-b4ea-30a25161a6dc",
+  "_index": 7,
+  "symbol": "trigger_world_go_ocean_hills_pool",
+  "prefabId": "",
+  "name": "Go: Ocean Hills Pool",
+  "x": 22,
+  "y": 103,
+  "width": 2,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Ocean Hills Pool"
+        ],
+        "avatarId": ""
+      },
+      "id": "6eb72466-efa2-e9c7-e496-2c779199085c"
+    },
+    {
+      "command": "EVENT_CHOICE",
+      "args": {
+        "variable": "119",
+        "trueText": "Enter",
+        "falseText": "Keep walking"
+      },
+      "id": "ed4bd2e7-a591-5037-047d-deb323846ecb"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "119"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 4
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Shapes move behind\nthe windows. Not\nhere. Not now."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3be606fd-944e-0585-251e-05a6aeba26a5"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "202",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "3567299d-4448-67b3-7d60-6b77d2c48613"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "db016166-9fb3-5587-bb15-ce12e8b5ef15",
+                    "x": {
+                      "type": "number",
+                      "value": 22
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 27
+                    },
+                    "direction": "down",
+                    "fadeSpeed": "2"
+                  },
+                  "id": "440a3168-d9ee-99e0-1ee8-53fc367654fb"
+                }
+              ]
+            },
+            "id": "4816aab0-fb1d-0763-e387-a20722b1cb44"
+          }
+        ],
+        "false": []
+      },
+      "id": "d132c96d-124f-fa16-6034-ee93ac951447"
+    }
+  ],
+  "leaveScript": []
+}

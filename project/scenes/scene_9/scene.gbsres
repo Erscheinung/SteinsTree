@@ -9,13 +9,83 @@
   "y": 981.3333333333331,
   "width": 32,
   "height": 32,
-  "backgroundId": "9c24c38a-084d-4dbe-9e9c-ad958644d100",
+  "backgroundId": "4b71c0fa-90a2-5bf7-885c-e0505f5f07f3",
   "tilesetId": "",
   "colorModeOverride": "none",
-  "paletteIds": [],
+  "paletteIds": [
+    "enr-b7-lounge-0",
+    "enr-b7-lounge-1",
+    "enr-b7-lounge-2",
+    "enr-b7-lounge-3",
+    "enr-b7-lounge-4",
+    "enr-b7-lounge-5",
+    "enr-b7-lounge-6",
+    "muj-ui"
+  ],
   "spritePaletteIds": [],
   "autoFadeSpeed": 1,
-  "script": [],
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_PALETTE_SET_BACKGROUND",
+            "args": {
+              "palette0": "enr-b7-lounge-0-night",
+              "palette1": "enr-b7-lounge-1-night",
+              "palette2": "enr-b7-lounge-2-night",
+              "palette3": "enr-b7-lounge-3-night",
+              "palette4": "enr-b7-lounge-4-night",
+              "palette5": "enr-b7-lounge-5-night",
+              "palette6": "enr-b7-lounge-6-night",
+              "palette7": "muj-ui"
+            },
+            "id": "467e922d-8432-831e-dec6-ceb06a1d8ea1"
+          }
+        ],
+        "false": []
+      },
+      "id": "965c8cff-0273-a4fa-ec5a-6200d153a7d6"
+    },
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "e335cc02-24ea-6b9e-6bf5-96173f632708"
+          }
+        ]
+      },
+      "id": "6f11bad5-82bc-7290-53e7-e26f969c87b0"
+    }
+  ],
   "playerHit1Script": [],
   "playerHit2Script": [],
   "playerHit3Script": [],

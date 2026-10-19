@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "738b6f18-9a37-572a-a5aa-0a21f3e4d873",
+  "name": "battle_zombie",
+  "symbol": "bg_battle_zombie",
+  "tileColors": "0318+04!033+06!035+04!033+02!035+04!039+04!036+02!062+022+06!025+062+023+06!02!032+0212+032+0212+032+0212+032+0212+032+0212+032+0212+032+0212+032+0212+032+0212+032+0212+032+0212+032+0212+032+0212+0315+",
+  "filename": "muj/battle_zombie.png",
+  "width": 20,
+  "height": 18,
+  "imageWidth": 160,
+  "imageHeight": 144
+}

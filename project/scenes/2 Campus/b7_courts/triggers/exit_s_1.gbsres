@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "a6429200-5ed1-59b7-91d0-c14438f9b615",
+  "_index": 2,
+  "symbol": "trigger_b7_courts_exit_s_1",
+  "prefabId": "",
+  "name": "Exit s 1",
+  "x": 1,
+  "y": 39,
+  "width": 3,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 27
+        },
+        "y": {
+          "type": "number",
+          "value": 58
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "bd74e27b-74cf-e310-1d25-0dff115ad7b9"
+    }
+  ],
+  "leaveScript": []
+}

@@ -1,0 +1,176 @@
+{
+  "_resourceType": "scene",
+  "id": "46051024-29c5-5cba-9845-246b8d942e61",
+  "_index": 148,
+  "type": "PLATFORM",
+  "name": "5 The Middle/Memory: Twelfth",
+  "symbol": "scene_mem_twelfth",
+  "x": 2600,
+  "y": 5216,
+  "width": 64,
+  "height": 18,
+  "backgroundId": "bf842127-971e-5af4-8495-64b100792328",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-memory-grass",
+    "muj-memory-path",
+    "muj-memory-stone",
+    "muj-memory-brick",
+    "muj-memory-roof",
+    "muj-memory-water",
+    "muj-memory-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "31b547e0-78d3-c59d-2205-6c05d508c18f"
+          }
+        ]
+      },
+      "id": "25358e36-5d02-3eb5-996a-b14617d8949d"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-memory-grass",
+        "palette1": "muj-memory-path",
+        "palette2": "muj-memory-stone",
+        "palette3": "muj-memory-brick",
+        "palette4": "muj-memory-roof",
+        "palette5": "muj-memory-water",
+        "palette6": "muj-memory-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "b43c25d8-f317-daf6-5ce3-99ed4c66d5b0"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bb6d35fc-b31c-553c-bd55-d8edfe476fa9",
+        "loop": true
+      },
+      "id": "d9196137-75a8-80a4-8cc7-ff1ef45aec32"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "MEMORY 7 - TWELFTH (platformer with a low ceiling: you can't jump high here)",
+        "__collapse": false
+      },
+      "id": "acfb98a8-176d-7730-aae6-9ec69065eb34"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 2
+        },
+        "y": {
+          "type": "number",
+          "value": 14
+        }
+      },
+      "id": "34e522a6-b5cd-2af9-2c2c-ca293620faab"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "188",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "9fe4892a-a8fc-9515-3280-f3e42f082069"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "189",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "a176f0d5-5315-b215-af27-98f304fdd5fa"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "190",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "581ea1cd-b867-0024-748a-aa2ab9d1a232"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "191",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "c711ad13-2009-6a53-bb25-f6aa23b3e409"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "192",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "53282d9d-a339-9aa8-6edb-c06abc444205"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Twelfth. You can't\nfly too high. IIT\npressure.",
+          "(Left/Right to\nwalk, A to jump.\nMind your head.)"
+        ],
+        "avatarId": ""
+      },
+      "id": "6666f69c-9e66-8b2d-00f6-7bb800d453f9"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1c0+009+0f9+0012+0f9+0012+0f!009+0f9+0012+0f9+0012+0f!00180+0fc0+"
+}

@@ -1,0 +1,215 @@
+{
+  "_resourceType": "scene",
+  "id": "4c318444-28b8-5881-89d0-07d3f1398cb0",
+  "_index": 151,
+  "type": "TOPDOWN",
+  "name": "6 Finale/Reunion at Dawn",
+  "symbol": "scene_finale",
+  "x": 0,
+  "y": 5528,
+  "width": 64,
+  "height": 62,
+  "backgroundId": "997dc07a-ec1a-5ffc-ab41-3b2f5fed5962",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-dusk-grass",
+    "muj-dusk-path",
+    "muj-dusk-stone",
+    "muj-dusk-brick",
+    "muj-dusk-roof",
+    "muj-dusk-water",
+    "muj-dusk-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "d55f23f6-830e-92e6-2a21-ccfdf3080b78"
+          }
+        ]
+      },
+      "id": "0904123f-5503-03c0-710d-cc44a18906b1"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-dusk-grass",
+        "palette1": "muj-dusk-path",
+        "palette2": "muj-dusk-stone",
+        "palette3": "muj-dusk-brick",
+        "palette4": "muj-dusk-roof",
+        "palette5": "muj-dusk-water",
+        "palette6": "muj-dusk-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "47481afe-8a6c-f0f9-c46c-f970406eb50e"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "df1e087a-98ee-572d-962f-3952b685ce14",
+        "loop": true
+      },
+      "id": "977e49d5-8ad1-f10c-c21b-7d28d528b1d1"
+    },
+    {
+      "command": "EVENT_PLAYER_SET_SPRITE",
+      "args": {
+        "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+        "persist": true
+      },
+      "id": "ddc1d919-4ee8-e349-ed58-5da7df124af3"
+    },
+    {
+      "command": "EVENT_COMMENT",
+      "args": {
+        "text": "FINALE - the reunion. Lines change with each friend's Bond.",
+        "__collapse": false
+      },
+      "id": "a4d6236d-61bf-84e5-9e9e-6449778d5366"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "137",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "279b6667-b7ff-c200-7fd6-54178d831731"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "193",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "626f5842-a285-3919-7bed-86608d912fe4"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "194",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "bbdaa6dd-80a4-efdb-c4f8-cffa3708edf3"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "195",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "83f02fe0-2203-ea4c-d581-35c3ed9ac440"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "196",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "a72842d1-8beb-d6d7-7dc4-ae26c3a2784d"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "197",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "aa8b3114-e332-c31e-4976-19bcf7af0f4f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_POSITION",
+      "args": {
+        "actorId": "player",
+        "x": {
+          "type": "number",
+          "value": 31
+        },
+        "y": {
+          "type": "number",
+          "value": 36
+        }
+      },
+      "id": "b0561815-fc3a-c3c5-ec7c-1275fe1c7c9f"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_DIRECTION",
+      "args": {
+        "actorId": "player",
+        "direction": {
+          "type": "direction",
+          "value": "up"
+        }
+      },
+      "id": "2f985539-ffe0-36d5-8e57-d1d53f8ea137"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Dawn. The cricket\nground. Dew on\neverything."
+        ],
+        "avatarId": ""
+      },
+      "id": "41907478-90cd-e2a3-4ae3-78a6155899d9"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "They're all here."
+        ],
+        "avatarId": ""
+      },
+      "id": "5f082442-2299-5e2a-4b8f-0599ac67b6c6"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f1e+004+0f1f+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f!003f+0f!00c0+0f!003f+0f!003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+003e+0f2+00e+0f6+0010+0f4+0016+0f16+006+0fe+0016+0f17+004+0f18+004+0fa+"
+}

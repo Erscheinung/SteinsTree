@@ -1,0 +1,44 @@
+{
+  "_resourceType": "actor",
+  "id": "2866b95f-2346-5a85-abfe-138d25bde819",
+  "_index": 2,
+  "symbol": "actor_mem_london_garvita_spirit",
+  "prefabId": "",
+  "name": "Garvita (spirit)",
+  "coordinateType": "tiles",
+  "x": 20,
+  "y": 10,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "5ecd17ee-15a6-5e5c-a15b-2bec9d34f800",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "bbbb49e6-61f2-78ee-5905-02870089fc94"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "ee2932e5-5084-4ba4-d95f-264ecc546629"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

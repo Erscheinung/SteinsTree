@@ -1,0 +1,822 @@
+{
+  "_resourceType": "scene",
+  "id": "f1609901-d9c4-53ef-802c-1fb8ed4bde32",
+  "_index": 120,
+  "type": "TOPDOWN",
+  "name": "2 Campus Interiors/Workshop: Fitting, Carpentry & Welding",
+  "symbol": "scene_workshop_in",
+  "x": 696,
+  "y": 4352,
+  "width": 26,
+  "height": 18,
+  "backgroundId": "0c5b058a-0c7f-5f1f-8d7e-12567cbf6d6f",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-day-grass",
+    "muj-day-path",
+    "muj-day-stone",
+    "muj-day-brick",
+    "muj-day-roof",
+    "muj-day-water",
+    "muj-day-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "muj-spr-gold",
+    "",
+    "muj-spr-prof"
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_SET_INPUT_SCRIPT",
+      "args": {
+        "input": [
+          "start"
+        ],
+        "override": true,
+        "persist": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CALL_CUSTOM_EVENT",
+            "args": {
+              "customEventId": "d0d55d7c-5aa3-53a4-9961-6f7f4f731953",
+              "__name": "Pause Menu"
+            },
+            "id": "3c8b2800-fc8f-2361-4268-12d53d365fbb"
+          }
+        ]
+      },
+      "id": "9e011211-8d1a-2772-406e-a8694b6b4f7f"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "gte",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 4
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "lt",
+                "valueA": {
+                  "type": "variable",
+                  "value": "100"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 5
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-night-grass",
+                    "palette1": "muj-night-path",
+                    "palette2": "muj-night-stone",
+                    "palette3": "muj-night-brick",
+                    "palette4": "muj-night-roof",
+                    "palette5": "muj-night-water",
+                    "palette6": "muj-night-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "8ddd5d99-5048-5e6c-22c7-dbd44a59cf39"
+                }
+              ],
+              "false": []
+            },
+            "id": "20c18850-aa6c-2c72-6e18-15045826ca57"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "gte",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 2
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_PALETTE_SET_BACKGROUND",
+                  "args": {
+                    "palette0": "muj-dusk-grass",
+                    "palette1": "muj-dusk-path",
+                    "palette2": "muj-dusk-stone",
+                    "palette3": "muj-dusk-brick",
+                    "palette4": "muj-dusk-roof",
+                    "palette5": "muj-dusk-water",
+                    "palette6": "muj-dusk-wood",
+                    "palette7": "muj-ui"
+                  },
+                  "id": "9e5efd36-d9a8-09ca-1c2f-310fe3436b15"
+                }
+              ],
+              "false": []
+            },
+            "id": "6cad51e4-764a-cc80-c791-7b0a5ec01d5b"
+          }
+        ]
+      },
+      "id": "f30814a6-33e7-ee05-ed94-e670abbb3299"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "100"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 3
+          }
+        },
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "101"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": true
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "DAY 3 - WORKSHOP PRACTICAL (saw minigame)",
+                    "__collapse": false
+                  },
+                  "id": "b4c09487-e322-a78b-24d0-a87cb3542675"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_POSITION",
+                  "args": {
+                    "actorId": "player",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 11
+                    }
+                  },
+                  "id": "ccb4ea75-255e-7801-a4ae-f22304ff0ea9"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_DIRECTION",
+                  "args": {
+                    "actorId": "player",
+                    "direction": {
+                      "type": "direction",
+                      "value": "right"
+                    }
+                  },
+                  "id": "b665d422-dce5-790f-110e-8e53c22723cf"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Instructor:\nCarpentry first.\nHacksaw.",
+                      "Three cuts on the\nline. Fingers stay\nattached."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "f2ad9d14-ee0d-8c30-089c-bd06634383af"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Instructor: Press\nA when the marker\ncrosses the pencil",
+                      "line in the middle\nof the bench."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "7ae07d02-da49-a7c4-842e-210c7a8a98bd"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: Pro tip:\nbreathe out when\nyou cut.",
+                      "Like a sniper.\nLike a carpenter\nsniper."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "52bad50b-5f61-7e10-614b-f35cbbbf39ea"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "141",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "226a497e-ef0f-4607-5a3c-9b056ba1fde7"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "140",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "aec9aac1-d150-4413-1ce1-cd3a0f2f0739"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "142",
+                    "value": {
+                      "type": "number",
+                      "value": 15
+                    }
+                  },
+                  "id": "629c5ce1-dea9-d15b-688c-2b6604c5f106"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "143",
+                    "value": {
+                      "type": "number",
+                      "value": 7
+                    }
+                  },
+                  "id": "1bc2dfac-a4bf-507b-3b29-3b0eac440d04"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "198",
+                    "value": {
+                      "type": "number",
+                      "value": 1
+                    }
+                  },
+                  "id": "a5d9fe3c-177a-ab54-7f9b-b213031c5f9e"
+                },
+                {
+                  "command": "EVENT_LOOP_WHILE",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "140"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    }
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "142",
+                          "operation": "add",
+                          "other": "var",
+                          "vectorY": "198",
+                          "value": "0",
+                          "minValue": "0",
+                          "maxValue": "0",
+                          "clamp": false
+                        },
+                        "id": "1175b74a-b5ad-1e4b-706d-3eab828408b6"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "gte",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "142"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 22
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "198",
+                                "value": {
+                                  "type": "number",
+                                  "value": -1
+                                }
+                              },
+                              "id": "07f4a3d0-14e9-6e2c-24d6-7f7f6d6d9028"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "f7e76a50-e6eb-4008-ded4-b26cd18f7a96"
+                      },
+                      {
+                        "command": "EVENT_IF",
+                        "args": {
+                          "condition": {
+                            "type": "lte",
+                            "valueA": {
+                              "type": "variable",
+                              "value": "142"
+                            },
+                            "valueB": {
+                              "type": "number",
+                              "value": 15
+                            }
+                          },
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_SET_VALUE",
+                              "args": {
+                                "variable": "198",
+                                "value": {
+                                  "type": "number",
+                                  "value": 1
+                                }
+                              },
+                              "id": "9ab8c75c-f9c4-ebba-8a59-e3ef49b04c97"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "a26175f6-d253-ac2b-8811-23cd74a5d7d5"
+                      },
+                      {
+                        "command": "EVENT_ACTOR_SET_POSITION",
+                        "args": {
+                          "actorId": "f4888aff-68ac-5c59-ad29-4f05c675f1dd",
+                          "x": {
+                            "type": "variable",
+                            "value": "142"
+                          },
+                          "y": {
+                            "type": "variable",
+                            "value": "143"
+                          }
+                        },
+                        "id": "8153d897-5a94-1c80-4eb7-2369a82b4a6a"
+                      },
+                      {
+                        "command": "EVENT_IF_INPUT",
+                        "args": {
+                          "input": [
+                            "a"
+                          ],
+                          "__collapseElse": true
+                        },
+                        "children": {
+                          "true": [
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "gte",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "142"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 18
+                                  }
+                                },
+                                "__collapseElse": false
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_IF",
+                                    "args": {
+                                      "condition": {
+                                        "type": "lte",
+                                        "valueA": {
+                                          "type": "variable",
+                                          "value": "142"
+                                        },
+                                        "valueB": {
+                                          "type": "number",
+                                          "value": 20
+                                        }
+                                      },
+                                      "__collapseElse": false
+                                    },
+                                    "children": {
+                                      "true": [
+                                        {
+                                          "command": "EVENT_SOUND_PLAY_EFFECT",
+                                          "args": {
+                                            "type": "crash",
+                                            "priority": "medium",
+                                            "pitch": 2,
+                                            "frequency": 300,
+                                            "duration": 0.2,
+                                            "wait": false,
+                                            "effect": 0
+                                          },
+                                          "id": "6e35e10c-0f84-9ca6-99d4-28bf62651dfa"
+                                        },
+                                        {
+                                          "command": "EVENT_INC_VALUE",
+                                          "args": {
+                                            "variable": "141"
+                                          },
+                                          "id": "2ed152b9-5fda-4192-d595-234fe697e5fd"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "SHHK! Clean cut.\n$141$ of 3"
+                                            ],
+                                            "avatarId": ""
+                                          },
+                                          "id": "3bcc4b01-2551-ce6f-d0bd-d5a1ce8d538f"
+                                        }
+                                      ],
+                                      "false": [
+                                        {
+                                          "command": "EVENT_CAMERA_SHAKE",
+                                          "args": {
+                                            "time": 0.2,
+                                            "frames": 12,
+                                            "shakeDirection": "horizontal",
+                                            "magnitude": {
+                                              "type": "number",
+                                              "value": 2
+                                            }
+                                          },
+                                          "id": "e0fc69fb-0526-4379-4a65-eaaca806c895"
+                                        },
+                                        {
+                                          "command": "EVENT_TEXT",
+                                          "args": {
+                                            "text": [
+                                              "Instructor: Off\nthe line! Again."
+                                            ],
+                                            "avatarId": ""
+                                          },
+                                          "id": "8a43038a-4d1c-d936-6ed7-c488f60b18f5"
+                                        }
+                                      ]
+                                    },
+                                    "id": "66e6c749-3e3e-dc96-443a-3c262b7d8e31"
+                                  }
+                                ],
+                                "false": [
+                                  {
+                                    "command": "EVENT_CAMERA_SHAKE",
+                                    "args": {
+                                      "time": 0.2,
+                                      "frames": 12,
+                                      "shakeDirection": "horizontal",
+                                      "magnitude": {
+                                        "type": "number",
+                                        "value": 2
+                                      }
+                                    },
+                                    "id": "54f15180-87e7-e6db-de55-152fa5f4b58a"
+                                  },
+                                  {
+                                    "command": "EVENT_TEXT",
+                                    "args": {
+                                      "text": [
+                                        "Instructor: Off\nthe line! Again."
+                                      ],
+                                      "avatarId": ""
+                                    },
+                                    "id": "d7a2d952-fff9-f361-c403-8395d1493373"
+                                  }
+                                ]
+                              },
+                              "id": "58126b2d-ad0c-8f40-afe1-3caf0a3ad4d5"
+                            },
+                            {
+                              "command": "EVENT_IF",
+                              "args": {
+                                "condition": {
+                                  "type": "gte",
+                                  "valueA": {
+                                    "type": "variable",
+                                    "value": "141"
+                                  },
+                                  "valueB": {
+                                    "type": "number",
+                                    "value": 3
+                                  }
+                                },
+                                "__collapseElse": true
+                              },
+                              "children": {
+                                "true": [
+                                  {
+                                    "command": "EVENT_SET_VALUE",
+                                    "args": {
+                                      "variable": "140",
+                                      "value": {
+                                        "type": "number",
+                                        "value": 2
+                                      }
+                                    },
+                                    "id": "8a71bebe-7091-57c0-deaa-fc931e188152"
+                                  }
+                                ],
+                                "false": []
+                              },
+                              "id": "99474168-7df6-eb16-f276-eb6a341629a7"
+                            },
+                            {
+                              "command": "EVENT_WAIT",
+                              "args": {
+                                "time": {
+                                  "type": "number",
+                                  "value": 0.3
+                                },
+                                "frames": {
+                                  "type": "number",
+                                  "value": 18
+                                }
+                              },
+                              "id": "901d9ba0-2d54-ede5-4de4-e6476bff5f35"
+                            }
+                          ],
+                          "false": []
+                        },
+                        "id": "96d77840-de10-4154-f1ae-b64cd01fb09b"
+                      },
+                      {
+                        "command": "EVENT_WAIT",
+                        "args": {
+                          "time": {
+                            "type": "number",
+                            "value": 0.08
+                          },
+                          "frames": {
+                            "type": "number",
+                            "value": 4
+                          }
+                        },
+                        "id": "a85be0e8-d7bf-5fb4-6e1b-239c0e2cd06c"
+                      }
+                    ]
+                  },
+                  "id": "660a04f3-9a87-b8b3-ba50-6f769250a437"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "140",
+                    "value": {
+                      "type": "number",
+                      "value": 0
+                    }
+                  },
+                  "id": "cd98dd10-bbf6-0ea8-85fe-bd0a4af3bd8b"
+                },
+                {
+                  "command": "EVENT_INC_VALUE",
+                  "args": {
+                    "variable": "139"
+                  },
+                  "id": "8073005f-d8d3-dc15-0874-e254341fdf1c"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Instructor: Good.\nNow fitting. File\nit smooth.",
+                      "Then welding...\nfrom far away.\nWatching."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "3858adc4-b0ad-faf8-070d-4485060e83c7"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: Look! Scrap\nPVC, a spring, a\nbike valve.",
+                      "The Pea Launcher\nMark I."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "5c1d7fa8-bfde-3977-2d21-42355b2cdaec"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Parag: It jams if\nyou look at it\nwrong, but it",
+                      "WORKS."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "4a3d4068-11b9-390d-edee-f3d55f5b55f1"
+                },
+                {
+                  "command": "EVENT_CHOICE",
+                  "args": {
+                    "variable": "119",
+                    "trueText": "It's genius.",
+                    "falseText": "It'll jam."
+                  },
+                  "id": "02511226-5cd0-6c63-207e-f548e53e4855"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "119"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 1
+                      }
+                    },
+                    "__collapseElse": false
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Parag: Finally\nsomeone with\nvision."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "c3ce2c3f-1228-638f-9797-06e62863e64e"
+                      },
+                      {
+                        "command": "EVENT_VARIABLE_MATH",
+                        "args": {
+                          "vectorX": "125",
+                          "operation": "add",
+                          "other": "val",
+                          "value": "1",
+                          "minValue": "0",
+                          "maxValue": "0",
+                          "clamp": true
+                        },
+                        "id": "224b2636-ead5-a266-8a25-093778eca538"
+                      }
+                    ],
+                    "false": [
+                      {
+                        "command": "EVENT_TEXT",
+                        "args": {
+                          "text": [
+                            "Parag: It'll jam\nONCE. When it\ndoesn't matter.",
+                            "Probably."
+                          ],
+                          "avatarId": ""
+                        },
+                        "id": "f6ca159b-c1a0-9e29-dcc2-3561648b3668"
+                      }
+                    ]
+                  },
+                  "id": "e5c7e89d-f69e-5e30-27a4-0bcbccad3a85"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Mayank: (on the\nphone) Night walk\nbehind B7 later?",
+                      "The scrub trail.\nI'll bring chai."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "fa40cde0-16ac-41d6-4cbd-6f056d3686d8"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "101",
+                    "value": {
+                      "type": "number",
+                      "value": 2
+                    }
+                  },
+                  "id": "cf0fe6ab-e2ef-e076-01ff-658972e8562f"
+                },
+                {
+                  "command": "EVENT_SET_VALUE",
+                  "args": {
+                    "variable": "115",
+                    "value": {
+                      "type": "number",
+                      "value": 9
+                    }
+                  },
+                  "id": "097077e5-1931-6d53-5844-a993f4092e2e"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "49ed8604-cf1b-5ae7-85fc-acc8202a14c3"
+                  },
+                  "id": "e6e54a42-e5ee-4654-4af6-64b64ba99088"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "b22da03c-2286-5a16-953c-3dee91d6e881"
+                  },
+                  "id": "f76c67a6-5ac4-fb3b-d79c-ac5b9c8f027c"
+                },
+                {
+                  "command": "EVENT_ACTOR_DEACTIVATE",
+                  "args": {
+                    "actorId": "f4888aff-68ac-5c59-ad29-4f05c675f1dd"
+                  },
+                  "id": "876b0064-6e45-acc1-0750-49484bdc36e4"
+                }
+              ],
+              "false": []
+            },
+            "id": "da99fef3-6752-8822-d175-0b64236aa67c"
+          }
+        ],
+        "false": []
+      },
+      "id": "51647b71-eae3-0964-36fb-0e5d52fcd49b"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "0f83+0018+0f2+00!0f2+00!0f2+00!0f2+006+0f2+00!0f2+00!0f2+00!0f2+0018+0f2+00!0f2+00!0f2+00!0f2+006+0f2+00!0f2+00!0f2+00!0f2+0018+0f2+00f+0f4+005+0f2+004+0f!0013+0f2+0018+0f2+00!0f2+0011+0f3+00!0f2+0018+0fc+002+0f41+"
+}

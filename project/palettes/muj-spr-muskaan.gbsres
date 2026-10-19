@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-muskaan",
+  "name": "Sprite: Muskaan",
+  "colors": [
+    "F8D8C0",
+    "7890E0",
+    "4858A8",
+    "202040"
+  ],
+  "defaultName": "Sprite: Muskaan",
+  "defaultColors": [
+    "F8D8C0",
+    "7890E0",
+    "4858A8",
+    "202040"
+  ]
+}

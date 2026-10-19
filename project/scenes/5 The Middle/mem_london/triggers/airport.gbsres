@@ -1,0 +1,224 @@
+{
+  "_resourceType": "trigger",
+  "id": "4ba384ad-de44-5a97-90f6-77d8a5b47335",
+  "_index": 0,
+  "symbol": "trigger_mem_london_airport",
+  "prefabId": "",
+  "name": "Airport",
+  "x": 38,
+  "y": 6,
+  "width": 2,
+  "height": 6,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "183"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 1
+          }
+        },
+        "__collapseElse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_IF",
+            "args": {
+              "condition": {
+                "type": "eq",
+                "valueA": {
+                  "type": "variable",
+                  "value": "184"
+                },
+                "valueB": {
+                  "type": "number",
+                  "value": 1
+                }
+              },
+              "__collapseElse": false
+            },
+            "children": {
+              "true": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Then back from\nLondon.",
+                      "Jarring."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "63b61c75-51f8-1d47-7d06-5124bd8169a5"
+                },
+                {
+                  "command": "EVENT_COMMENT",
+                  "args": {
+                    "text": "MEMORY END - reflection",
+                    "__collapse": false
+                  },
+                  "id": "10d9f038-7b00-226c-9e47-0c9e8239aa55"
+                },
+                {
+                  "command": "EVENT_ACTOR_SHOW",
+                  "args": {
+                    "actorId": "2866b95f-2346-5a85-abfe-138d25bde819"
+                  },
+                  "id": "9520d36d-f217-d65c-70ca-ad45c3daccbd"
+                },
+                {
+                  "command": "EVENT_ACTOR_EFFECTS",
+                  "args": {
+                    "effect": "flicker",
+                    "actorId": "2866b95f-2346-5a85-abfe-138d25bde819",
+                    "time": 0.6,
+                    "frames": 36
+                  },
+                  "id": "dc0f836f-3e4b-65be-11e1-c7b1988dc737"
+                },
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Garvita: You flew\nall the way to\nLondon before you",
+                      "were ten.",
+                      "Garvita: And you\nstill came back.",
+                      "Running far isn't\nthe same as\nrunning away."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "040cf4a3-eed2-7142-4c22-72318647435e"
+                },
+                {
+                  "command": "EVENT_ACTOR_EFFECTS",
+                  "args": {
+                    "effect": "flicker",
+                    "actorId": "2866b95f-2346-5a85-abfe-138d25bde819",
+                    "time": 0.6,
+                    "frames": 36
+                  },
+                  "id": "c2828646-6608-c71c-d59a-f8b7f4617a90"
+                },
+                {
+                  "command": "EVENT_ACTOR_HIDE",
+                  "args": {
+                    "actorId": "2866b95f-2346-5a85-abfe-138d25bde819"
+                  },
+                  "id": "97e40395-7a48-6821-5690-faf9ff672fbb"
+                },
+                {
+                  "command": "EVENT_IF",
+                  "args": {
+                    "condition": {
+                      "type": "eq",
+                      "valueA": {
+                        "type": "variable",
+                        "value": "173"
+                      },
+                      "valueB": {
+                        "type": "number",
+                        "value": 0
+                      }
+                    },
+                    "__collapseElse": true
+                  },
+                  "children": {
+                    "true": [
+                      {
+                        "command": "EVENT_SET_VALUE",
+                        "args": {
+                          "variable": "173",
+                          "value": {
+                            "type": "number",
+                            "value": 1
+                          }
+                        },
+                        "id": "b4744aca-7d69-6f2f-8c38-e6cb775e16c5"
+                      },
+                      {
+                        "command": "EVENT_INC_VALUE",
+                        "args": {
+                          "variable": "136"
+                        },
+                        "id": "d61d3051-186b-3de6-6381-811c34a0d3d7"
+                      }
+                    ],
+                    "false": []
+                  },
+                  "id": "e5fb8fb8-3dad-eaf1-5637-cb74346baa8e"
+                },
+                {
+                  "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                  "args": {
+                    "actorId": "player",
+                    "speed": 1
+                  },
+                  "id": "7f598ff1-b014-49a4-7c46-b56241d1eceb"
+                },
+                {
+                  "command": "EVENT_PLAYER_SET_SPRITE",
+                  "args": {
+                    "spriteSheetId": "c4607284-0464-4cb5-96ec-6b9ef7e9c2fe",
+                    "persist": true
+                  },
+                  "id": "17e0ba64-56a1-5128-4315-93aca5d3258c"
+                },
+                {
+                  "command": "EVENT_SWITCH_SCENE",
+                  "args": {
+                    "sceneId": "f9c44474-3031-5aae-8fba-9fb65da8ada0",
+                    "x": {
+                      "type": "number",
+                      "value": 9
+                    },
+                    "y": {
+                      "type": "number",
+                      "value": 12
+                    },
+                    "direction": "up",
+                    "fadeSpeed": "1"
+                  },
+                  "id": "464bd020-425d-6547-f018-75f37f01cc8d"
+                }
+              ],
+              "false": [
+                {
+                  "command": "EVENT_TEXT",
+                  "args": {
+                    "text": [
+                      "Not yet. The\nlibrary's still\nopen."
+                    ],
+                    "avatarId": ""
+                  },
+                  "id": "b228e59e-34ce-9ce2-5702-a05fedd651af"
+                }
+              ]
+            },
+            "id": "3c565088-8a03-61a7-c23f-df02010d858e"
+          }
+        ],
+        "false": [
+          {
+            "command": "EVENT_TEXT",
+            "args": {
+              "text": [
+                "Not yet. The kids\nare still playing."
+              ],
+              "avatarId": ""
+            },
+            "id": "bdbbbcfe-f9f8-54b2-5e33-0ccaaf6c8489"
+          }
+        ]
+      },
+      "id": "5e37ad02-f88b-928f-6621-c8cae4e6897c"
+    }
+  ],
+  "leaveScript": []
+}

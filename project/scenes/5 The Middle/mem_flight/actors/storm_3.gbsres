@@ -1,0 +1,89 @@
+{
+  "_resourceType": "actor",
+  "id": "7ca23c96-65e4-5f3e-8e5f-71d56bbd4cb8",
+  "_index": 3,
+  "symbol": "actor_mem_flight_storm_3",
+  "prefabId": "",
+  "name": "Storm 3",
+  "coordinateType": "tiles",
+  "x": 51,
+  "y": 6,
+  "frame": 0,
+  "animate": true,
+  "spriteSheetId": "601967cf-e5a5-5d8b-b1dd-d336b8d612c3",
+  "paletteId": "",
+  "direction": "left",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [],
+  "updateScript": [
+    {
+      "command": "EVENT_IF_ACTOR_DISTANCE_FROM_ACTOR",
+      "args": {
+        "actorId": "$self$",
+        "operator": "<=",
+        "distance": {
+          "type": "number",
+          "value": 1
+        },
+        "otherActorId": "player",
+        "__collapseElse": true
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_CAMERA_SHAKE",
+            "args": {
+              "time": 0.3,
+              "frames": 18,
+              "shakeDirection": "horizontal",
+              "magnitude": {
+                "type": "number",
+                "value": 3
+              }
+            },
+            "id": "43758888-973d-c3d4-8cee-160806722749"
+          },
+          {
+            "command": "EVENT_SOUND_PLAY_EFFECT",
+            "args": {
+              "type": "noise",
+              "priority": "medium",
+              "pitch": 2,
+              "frequency": 100,
+              "duration": 0.2,
+              "wait": false,
+              "effect": 0
+            },
+            "id": "c3f49ca5-9feb-9a99-ca18-5b623f8a1b24"
+          }
+        ],
+        "false": []
+      },
+      "id": "656cfb9d-b116-9491-3128-2b1bba43394c"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 0.1
+        },
+        "frames": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "5a313d44-5a38-7cbc-58e9-63fe00b613dd"
+    }
+  ],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

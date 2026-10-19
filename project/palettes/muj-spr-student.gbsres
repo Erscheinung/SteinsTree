@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-spr-student",
+  "name": "Sprite: Student",
+  "colors": [
+    "F0C8A0",
+    "6890B0",
+    "405870",
+    "202030"
+  ],
+  "defaultName": "Sprite: Student",
+  "defaultColors": [
+    "F0C8A0",
+    "6890B0",
+    "405870",
+    "202030"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "_resourceType": "trigger",
+  "id": "2d8be966-bede-4a6c-b89e-3efd223dfee9",
+  "_index": 0,
+  "symbol": "trigger_1",
+  "prefabId": "",
+  "name": "",
+  "x": 9,
+  "y": 21,
+  "width": 1,
+  "height": 1,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "id": "d2777730-aaab-47da-9325-7012189b2a5a",
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "An old friend used\nto live here..."
+        ],
+        "avatarId": ""
+      }
+    }
+  ],
+  "leaveScript": []
+}

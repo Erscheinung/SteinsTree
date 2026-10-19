@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-memory-stone",
+  "name": "MUJ memory stone",
+  "colors": [
+    "FFD99E",
+    "C9A879",
+    "8C7352",
+    "403120"
+  ],
+  "defaultName": "MUJ memory stone",
+  "defaultColors": [
+    "FFD99E",
+    "C9A879",
+    "8C7352",
+    "403120"
+  ]
+}

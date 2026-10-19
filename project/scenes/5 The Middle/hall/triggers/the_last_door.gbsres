@@ -1,0 +1,54 @@
+{
+  "_resourceType": "trigger",
+  "id": "777658a4-d10f-5b18-aeb6-928bcd1ed9f6",
+  "_index": 5,
+  "symbol": "trigger_hall_the_last_door",
+  "prefabId": "",
+  "name": "The last door",
+  "x": 13,
+  "y": 13,
+  "width": 2,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "The last door is\njust a door. You\nopen it."
+        ],
+        "avatarId": ""
+      },
+      "id": "5ec847b5-6514-4779-3a86-7c4616abd1f2"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "100",
+        "value": {
+          "type": "number",
+          "value": 6
+        }
+      },
+      "id": "3eeea277-632b-d041-a2a8-55a1461df0a9"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4c318444-28b8-5881-89d0-07d3f1398cb0",
+        "x": {
+          "type": "number",
+          "value": 28
+        },
+        "y": {
+          "type": "number",
+          "value": 40
+        },
+        "direction": "up",
+        "fadeSpeed": "1"
+      },
+      "id": "0fefb3b1-bbd5-09d4-5c6c-c5023c95c6be"
+    }
+  ],
+  "leaveScript": []
+}

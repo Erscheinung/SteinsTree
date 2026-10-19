@@ -1,0 +1,467 @@
+{
+ "B7": {
+  "background_id": "c12d9a04-52c6-5236-ba47-4fc24b9d03f9",
+  "cropped_to": null,
+  "name": "B7",
+  "palette_ids": {
+   "day": [
+    "enr-b7-0",
+    "enr-b7-1",
+    "enr-b7-2",
+    "enr-b7-3",
+    "enr-b7-4",
+    "enr-b7-5",
+    "enr-b7-6"
+   ],
+   "night": [
+    "enr-b7-0-night",
+    "enr-b7-1-night",
+    "enr-b7-2-night",
+    "enr-b7-3-night",
+    "enr-b7-4-night",
+    "enr-b7-5-night",
+    "enr-b7-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 46,
+  "unique_tiles": 46
+ },
+ "B7-10": {
+  "background_id": "5423e038-2201-5938-a9ae-a49e67669f16",
+  "cropped_to": [
+   256,
+   256
+  ],
+  "name": "B7-10",
+  "palette_ids": {
+   "day": [
+    "enr-b7-10-0",
+    "enr-b7-10-1",
+    "enr-b7-10-2",
+    "enr-b7-10-3",
+    "enr-b7-10-4",
+    "enr-b7-10-5",
+    "enr-b7-10-6"
+   ],
+   "night": [
+    "enr-b7-10-0-night",
+    "enr-b7-10-1-night",
+    "enr-b7-10-2-night",
+    "enr-b7-10-3-night",
+    "enr-b7-10-4-night",
+    "enr-b7-10-5-night",
+    "enr-b7-10-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-10.png",
+  "source_size": [
+   257,
+   257
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 200,
+  "unique_tiles": 200
+ },
+ "B7-back": {
+  "background_id": "0b3cca07-8075-5813-b1f2-1dde478ac967",
+  "cropped_to": null,
+  "name": "B7-back",
+  "palette_ids": {
+   "day": [
+    "enr-b7-back-0",
+    "enr-b7-back-1",
+    "enr-b7-back-2",
+    "enr-b7-back-3",
+    "enr-b7-back-4",
+    "enr-b7-back-5",
+    "enr-b7-back-6"
+   ],
+   "night": [
+    "enr-b7-back-0-night",
+    "enr-b7-back-1-night",
+    "enr-b7-back-2-night",
+    "enr-b7-back-3-night",
+    "enr-b7-back-4-night",
+    "enr-b7-back-5-night",
+    "enr-b7-back-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-back.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 42,
+  "unique_tiles": 42
+ },
+ "B7-back-exit": {
+  "background_id": "b4866c18-c4aa-57f4-8061-ccbda4282929",
+  "cropped_to": null,
+  "name": "B7-back-exit",
+  "palette_ids": {
+   "day": [
+    "enr-b7-back-exit-0",
+    "enr-b7-back-exit-1",
+    "enr-b7-back-exit-2",
+    "enr-b7-back-exit-3",
+    "enr-b7-back-exit-4",
+    "enr-b7-back-exit-5",
+    "enr-b7-back-exit-6"
+   ],
+   "night": [
+    "enr-b7-back-exit-0-night",
+    "enr-b7-back-exit-1-night",
+    "enr-b7-back-exit-2-night",
+    "enr-b7-back-exit-3-night",
+    "enr-b7-back-exit-4-night",
+    "enr-b7-back-exit-5-night",
+    "enr-b7-back-exit-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-back-exit.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 77,
+  "unique_tiles": 77
+ },
+ "B7-back-exit-right": {
+  "background_id": "c1cb8010-41c6-5e68-9fc7-719f0da235e4",
+  "cropped_to": null,
+  "name": "B7-back-exit-right",
+  "palette_ids": {
+   "day": [
+    "enr-b7-back-exit-right-0",
+    "enr-b7-back-exit-right-1",
+    "enr-b7-back-exit-right-2",
+    "enr-b7-back-exit-right-3",
+    "enr-b7-back-exit-right-4",
+    "enr-b7-back-exit-right-5",
+    "enr-b7-back-exit-right-6"
+   ],
+   "night": [
+    "enr-b7-back-exit-right-0-night",
+    "enr-b7-back-exit-right-1-night",
+    "enr-b7-back-exit-right-2-night",
+    "enr-b7-back-exit-right-3-night",
+    "enr-b7-back-exit-right-4-night",
+    "enr-b7-back-exit-right-5-night",
+    "enr-b7-back-exit-right-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-back-exit-right.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 121,
+  "unique_tiles": 121
+ },
+ "B7-back-left": {
+  "background_id": "57c24ae2-2afa-583b-988d-0863c0ce6ff0",
+  "cropped_to": null,
+  "name": "B7-back-left",
+  "palette_ids": {
+   "day": [
+    "enr-b7-back-left-0",
+    "enr-b7-back-left-1",
+    "enr-b7-back-left-2",
+    "enr-b7-back-left-3",
+    "enr-b7-back-left-4",
+    "enr-b7-back-left-5",
+    "enr-b7-back-left-6"
+   ],
+   "night": [
+    "enr-b7-back-left-0-night",
+    "enr-b7-back-left-1-night",
+    "enr-b7-back-left-2-night",
+    "enr-b7-back-left-3-night",
+    "enr-b7-back-left-4-night",
+    "enr-b7-back-left-5-night",
+    "enr-b7-back-left-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-back-left.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 104,
+  "unique_tiles": 104
+ },
+ "B7-chiller": {
+  "background_id": "f93fe22f-304c-5353-89f5-8920190a4f3f",
+  "cropped_to": null,
+  "name": "B7-chiller",
+  "palette_ids": {
+   "day": [
+    "enr-b7-chiller-0",
+    "enr-b7-chiller-1",
+    "enr-b7-chiller-2",
+    "enr-b7-chiller-3",
+    "enr-b7-chiller-4",
+    "enr-b7-chiller-5",
+    "enr-b7-chiller-6"
+   ],
+   "night": [
+    "enr-b7-chiller-0-night",
+    "enr-b7-chiller-1-night",
+    "enr-b7-chiller-2-night",
+    "enr-b7-chiller-3-night",
+    "enr-b7-chiller-4-night",
+    "enr-b7-chiller-5-night",
+    "enr-b7-chiller-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-chiller.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 216,
+  "unique_tiles": 216
+ },
+ "B7-entrance": {
+  "background_id": "c5888075-bb77-50a0-891d-cd63a2a5c6af",
+  "cropped_to": null,
+  "name": "B7-entrance",
+  "palette_ids": {
+   "day": [
+    "enr-b7-entrance-0",
+    "enr-b7-entrance-1",
+    "enr-b7-entrance-2",
+    "enr-b7-entrance-3",
+    "enr-b7-entrance-4",
+    "enr-b7-entrance-5",
+    "enr-b7-entrance-6"
+   ],
+   "night": [
+    "enr-b7-entrance-0-night",
+    "enr-b7-entrance-1-night",
+    "enr-b7-entrance-2-night",
+    "enr-b7-entrance-3-night",
+    "enr-b7-entrance-4-night",
+    "enr-b7-entrance-5-night",
+    "enr-b7-entrance-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-entrance.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 64,
+  "unique_tiles": 64
+ },
+ "B7-front": {
+  "background_id": "92e6c11a-e9bf-5e37-8c3e-1040c4265d73",
+  "cropped_to": null,
+  "name": "B7-front",
+  "palette_ids": {
+   "day": [
+    "enr-b7-front-0",
+    "enr-b7-front-1",
+    "enr-b7-front-2",
+    "enr-b7-front-3",
+    "enr-b7-front-4",
+    "enr-b7-front-5",
+    "enr-b7-front-6"
+   ],
+   "night": [
+    "enr-b7-front-0-night",
+    "enr-b7-front-1-night",
+    "enr-b7-front-2-night",
+    "enr-b7-front-3-night",
+    "enr-b7-front-4-night",
+    "enr-b7-front-5-night",
+    "enr-b7-front-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-front.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 104,
+  "unique_tiles": 104
+ },
+ "B7-front-left": {
+  "background_id": "b865c00d-9bb6-5d98-9d92-73b8daa62d7f",
+  "cropped_to": null,
+  "name": "B7-front-left",
+  "palette_ids": {
+   "day": [
+    "enr-b7-front-left-0",
+    "enr-b7-front-left-1",
+    "enr-b7-front-left-2",
+    "enr-b7-front-left-3",
+    "enr-b7-front-left-4",
+    "enr-b7-front-left-5",
+    "enr-b7-front-left-6"
+   ],
+   "night": [
+    "enr-b7-front-left-0-night",
+    "enr-b7-front-left-1-night",
+    "enr-b7-front-left-2-night",
+    "enr-b7-front-left-3-night",
+    "enr-b7-front-left-4-night",
+    "enr-b7-front-left-5-night",
+    "enr-b7-front-left-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-front-left.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 79,
+  "unique_tiles": 79
+ },
+ "B7-front-right": {
+  "background_id": "e55113b9-523d-5306-8939-c6160c06a0a2",
+  "cropped_to": null,
+  "name": "B7-front-right",
+  "palette_ids": {
+   "day": [
+    "enr-b7-front-right-0",
+    "enr-b7-front-right-1",
+    "enr-b7-front-right-2",
+    "enr-b7-front-right-3",
+    "enr-b7-front-right-4",
+    "enr-b7-front-right-5",
+    "enr-b7-front-right-6"
+   ],
+   "night": [
+    "enr-b7-front-right-0-night",
+    "enr-b7-front-right-1-night",
+    "enr-b7-front-right-2-night",
+    "enr-b7-front-right-3-night",
+    "enr-b7-front-right-4-night",
+    "enr-b7-front-right-5-night",
+    "enr-b7-front-right-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-front-right.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 63,
+  "unique_tiles": 63
+ },
+ "B7-lounge": {
+  "background_id": "4b71c0fa-90a2-5bf7-885c-e0505f5f07f3",
+  "cropped_to": null,
+  "name": "B7-lounge",
+  "palette_ids": {
+   "day": [
+    "enr-b7-lounge-0",
+    "enr-b7-lounge-1",
+    "enr-b7-lounge-2",
+    "enr-b7-lounge-3",
+    "enr-b7-lounge-4",
+    "enr-b7-lounge-5",
+    "enr-b7-lounge-6"
+   ],
+   "night": [
+    "enr-b7-lounge-0-night",
+    "enr-b7-lounge-1-night",
+    "enr-b7-lounge-2-night",
+    "enr-b7-lounge-3-night",
+    "enr-b7-lounge-4-night",
+    "enr-b7-lounge-5-night",
+    "enr-b7-lounge-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-lounge.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 68,
+  "unique_tiles": 68
+ },
+ "B7-right-exit": {
+  "background_id": "ae8bc134-991b-5851-8332-0cf2e1566326",
+  "cropped_to": null,
+  "name": "B7-right-exit",
+  "palette_ids": {
+   "day": [
+    "enr-b7-right-exit-0",
+    "enr-b7-right-exit-1",
+    "enr-b7-right-exit-2",
+    "enr-b7-right-exit-3",
+    "enr-b7-right-exit-4",
+    "enr-b7-right-exit-5",
+    "enr-b7-right-exit-6"
+   ],
+   "night": [
+    "enr-b7-right-exit-0-night",
+    "enr-b7-right-exit-1-night",
+    "enr-b7-right-exit-2-night",
+    "enr-b7-right-exit-3-night",
+    "enr-b7-right-exit-4-night",
+    "enr-b7-right-exit-5-night",
+    "enr-b7-right-exit-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/B7-right-exit.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 15,
+  "unique_tiles": 15
+ },
+ "mess-to-main": {
+  "background_id": "1a7a984d-3b68-52f8-a88b-f604d6c740a7",
+  "cropped_to": null,
+  "name": "mess-to-main",
+  "palette_ids": {
+   "day": [
+    "enr-mess-to-main-0",
+    "enr-mess-to-main-1",
+    "enr-mess-to-main-2",
+    "enr-mess-to-main-3",
+    "enr-mess-to-main-4",
+    "enr-mess-to-main-5",
+    "enr-mess-to-main-6"
+   ],
+   "night": [
+    "enr-mess-to-main-0-night",
+    "enr-mess-to-main-1-night",
+    "enr-mess-to-main-2-night",
+    "enr-mess-to-main-3-night",
+    "enr-mess-to-main-4-night",
+    "enr-mess-to-main-5-night",
+    "enr-mess-to-main-6-night"
+   ]
+  },
+  "source": "assets/backgrounds/mess-to-main.png",
+  "source_size": [
+   256,
+   256
+  ],
+  "tiles_merged": 0,
+  "unique_before_merge": 68,
+  "unique_tiles": 68
+ }
+}

@@ -1,0 +1,33 @@
+{
+  "_resourceType": "trigger",
+  "id": "916e36e8-3f7c-545b-9010-4573abf2bb53",
+  "_index": 8,
+  "symbol": "trigger_pool_exit_e_31",
+  "prefabId": "",
+  "name": "Exit e 31",
+  "x": 39,
+  "y": 31,
+  "width": 1,
+  "height": 2,
+  "prefabScriptOverrides": {},
+  "script": [
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "6e5f5c0d-d3f5-5517-b2cd-7dd332f65539",
+        "x": {
+          "type": "number",
+          "value": 22
+        },
+        "y": {
+          "type": "number",
+          "value": 105
+        },
+        "direction": "down",
+        "fadeSpeed": "2"
+      },
+      "id": "095866cf-7f0e-cb36-09d1-d7ca8ed86ba4"
+    }
+  ],
+  "leaveScript": []
+}

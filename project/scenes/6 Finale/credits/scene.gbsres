@@ -1,0 +1,190 @@
+{
+  "_resourceType": "scene",
+  "id": "69b0c111-a6d9-59b3-806c-2ddce455aec0",
+  "_index": 152,
+  "type": "TOPDOWN",
+  "name": "6 Finale/Credits",
+  "symbol": "scene_credits",
+  "x": 552,
+  "y": 5528,
+  "width": 20,
+  "height": 18,
+  "backgroundId": "a0c140ac-ce4f-569b-ae2e-30dfaf8c3b57",
+  "tilesetId": "",
+  "colorModeOverride": "none",
+  "paletteIds": [
+    "muj-dreama-grass",
+    "muj-dreama-path",
+    "muj-dreama-stone",
+    "muj-dreama-brick",
+    "muj-dreama-roof",
+    "muj-dreama-water",
+    "muj-dreama-wood",
+    "muj-ui"
+  ],
+  "spritePaletteIds": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "autoFadeSpeed": 1,
+  "script": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "player"
+      },
+      "id": "e74d8225-5ce2-756f-bcd1-3264d666e47b"
+    },
+    {
+      "command": "EVENT_PALETTE_SET_BACKGROUND",
+      "args": {
+        "palette0": "muj-dreama-grass",
+        "palette1": "muj-dreama-path",
+        "palette2": "muj-dreama-stone",
+        "palette3": "muj-dreama-brick",
+        "palette4": "muj-dreama-roof",
+        "palette5": "muj-dreama-water",
+        "palette6": "muj-dreama-wood",
+        "palette7": "muj-ui"
+      },
+      "id": "8e5c10d7-3d81-7e70-c102-775075a986c3"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "bb6d35fc-b31c-553c-bd55-d8edfe476fa9",
+        "loop": true
+      },
+      "id": "fc4cd39e-a8e4-0124-42f0-507a228db25a"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "DERNIER"
+        ],
+        "avatarId": ""
+      },
+      "id": "edace179-ca56-a48f-df8e-19ca8c8531d6"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "a game about the\nmiddle"
+        ],
+        "avatarId": ""
+      },
+      "id": "6ef0e4cf-f22f-c78a-57ff-fc485727b021"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Story, art and\nlife: KC"
+        ],
+        "avatarId": ""
+      },
+      "id": "a8dd9713-5e08-4986-4780-c32b4b453be9"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Friends: Mayank,\nDivyansh, Kanishk,\nParag, Anshuman,",
+          "Garvita"
+        ],
+        "avatarId": ""
+      },
+      "id": "0c659e00-7d65-880d-693f-e466320a21db"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Inspired by Before\nYour Eyes, Lost,\nand Until Then"
+        ],
+        "avatarId": ""
+      },
+      "id": "3ab07764-2cbf-f19d-817c-3617931d5807"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Music: GB Studio\nsample songs by\nRulz (placeholder)"
+        ],
+        "avatarId": ""
+      },
+      "id": "ae4cc8b4-3466-a202-3a85-9044df77cc31"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Map data (c)\nOpenStreetMap\ncontributors"
+        ],
+        "avatarId": ""
+      },
+      "id": "670c0ec5-65cc-015f-1495-b6e260b4bd65"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Made with GB\nStudio"
+        ],
+        "avatarId": ""
+      },
+      "id": "00dd6b03-04b5-3518-fba9-49bb1c0aeb36"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "Draft 1. The end\nis never the end."
+        ],
+        "avatarId": ""
+      },
+      "id": "ae348339-c977-c0fe-915f-d3890cc4b261"
+    },
+    {
+      "command": "EVENT_SET_VALUE",
+      "args": {
+        "variable": "100",
+        "value": {
+          "type": "number",
+          "value": 0
+        }
+      },
+      "id": "765f6395-f3a5-0823-3dae-603194b95eec"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4912bee2-387a-472f-ae4f-6679b6149517",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "",
+        "fadeSpeed": "1"
+      },
+      "id": "b6f83010-fc67-cf15-ffb3-26e270db13d2"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "collisions": "00168+"
+}

@@ -1,0 +1,18 @@
+{
+  "_resourceType": "palette",
+  "id": "muj-memory-path",
+  "name": "MUJ memory path",
+  "colors": [
+    "FED59C",
+    "D2AF7F",
+    "9F835E",
+    "C4A376"
+  ],
+  "defaultName": "MUJ memory path",
+  "defaultColors": [
+    "FED59C",
+    "D2AF7F",
+    "9F835E",
+    "C4A376"
+  ]
+}

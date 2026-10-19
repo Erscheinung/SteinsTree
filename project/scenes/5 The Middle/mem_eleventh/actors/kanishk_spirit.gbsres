@@ -1,0 +1,44 @@
+{
+  "_resourceType": "actor",
+  "id": "9b148d3a-f2f5-5c47-9f62-b893cc53eaed",
+  "_index": 8,
+  "symbol": "actor_mem_eleventh_kanishk_spirit",
+  "prefabId": "",
+  "name": "Kanishk (spirit)",
+  "coordinateType": "tiles",
+  "x": 9,
+  "y": 5,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "dab951b9-dc0c-5e77-ad40-46859349f940",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "1fc01630-5b9b-65ed-67eb-45b08aa9862f"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "c5cfc5c9-cb5c-e599-6692-e4f073f5829b"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}

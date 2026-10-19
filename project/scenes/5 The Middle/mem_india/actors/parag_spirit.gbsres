@@ -1,0 +1,44 @@
+{
+  "_resourceType": "actor",
+  "id": "ebe1f4da-3160-5f2c-8b74-d540a282b476",
+  "_index": 1,
+  "symbol": "actor_mem_india_parag_spirit",
+  "prefabId": "",
+  "name": "Parag (spirit)",
+  "coordinateType": "tiles",
+  "x": 15,
+  "y": 18,
+  "frame": 0,
+  "animate": false,
+  "spriteSheetId": "555228cd-be2f-5844-9f6b-8b9693573206",
+  "paletteId": "",
+  "direction": "down",
+  "moveSpeed": 1,
+  "animSpeed": 15,
+  "isPinned": false,
+  "persistent": false,
+  "collisionGroup": "",
+  "collisionExtraFlags": [],
+  "prefabScriptOverrides": {},
+  "script": [],
+  "startScript": [
+    {
+      "command": "EVENT_ACTOR_HIDE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "3b269ef6-cf43-f890-360b-24d6aadc38d4"
+    },
+    {
+      "command": "EVENT_ACTOR_COLLISIONS_DISABLE",
+      "args": {
+        "actorId": "$self$"
+      },
+      "id": "7450789f-cc29-ef10-b924-03b8a9d49564"
+    }
+  ],
+  "updateScript": [],
+  "hit1Script": [],
+  "hit2Script": [],
+  "hit3Script": []
+}
