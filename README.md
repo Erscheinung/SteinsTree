@@ -1,5 +1,10 @@
 # Dernier / SteinsTree
 
+Draft 2 (`draft-2-own-style`) restores the original room opening and B7 art,
+uses compact owner-art campus maps, and includes a tested Day 1 route. See
+[the map guide](docs/MAP.md) and [editing guide](docs/EDITING_GUIDE.md) for
+the current workflow; draft-1 map/enrichment descriptions below are historical.
+
 A Game Boy Color game made in **GB Studio 4**, set in Manipal University
 Jaipur. Three funny first-year days with five friends. A zombie outbreak that
 takes them, one by one. Then a journey back through your whole life, and a

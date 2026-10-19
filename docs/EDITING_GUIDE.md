@@ -98,9 +98,13 @@ and `\n` is a line break), save as TSV, then import it.
   you've hand-edited a PNG, the generator leaves it alone.
 - **Maps:** see `docs/MAP.md`. You can paint over `assets/backgrounds/muj/*.png`
   in LibreSprite (keep the four greens) and colour the result in GB Studio.
-- **Your original B7 art** is untouched in `assets/backgrounds/*.png`. The game
-  uses enriched GBC copies from `assets/backgrounds/enriched/`. To go back to
-  an original, pick it as the scene's background in GB Studio.
+  For draft 2 layouts, edit `tools/map/owner_layouts.json`; the owner tile
+  library and source-patch provenance are in `art/tilesets/owner_library.*`.
+- **Your original B7 art** uses explicit monochrome rendering in this draft
+  and is untouched in `assets/backgrounds/*.png`. The game
+  uses the original backgrounds again. Keep these files unchanged; make a
+  separate copy for experiments. `assets/backgrounds/enriched/` contains retired
+  draft-1 conversions, not the source of the owner's scenes.
 
 ## 6. Test
 - **Chapter select** (§1) jumps to any part.
@@ -124,17 +128,22 @@ dialogue is plain text there too.
 ```
 python3 tools/sprites/cast_build.py      # sprites
 python3 tools/map/build_maps.py          # maps (or: build_maps.py ab1 dome)
-python3 tools/map/enrich.py              # GBC copies of your original backgrounds
 python3 tools/game/build_game.py         # scenes, palettes, variables, settings
 ```
+Draft 2 uses owner-art map sources in `tools/map/owner.py` and
+`tools/map/owner_layouts.json`; see `docs/MAP.md`. Do not run `enrich.py`
+for this draft: the enriched legacy copies are retired.
+
 **Safety:** every generated file is fingerprinted. If you've edited it in GB
 Studio or the studio, the generator skips it and lists it. Pass
 `--force <scene_key>` only when you want the script version back.
 `python3 tools/game/build_game.py --check` validates without writing.
 
 ## 8. What the generator changed in your original scenes
-- **Title screen:** "New Game" now starts the prologue (Bedroom, 2009) and
-  resets the story variables. The logo and title use the After Hours palette.
+- **Title screen:** "New Game" resets story variables and starts in the original
+  **Outside** room at **(22,20)**. Interact with the handheld in that room to
+  play the childhood pocket battle and return to the room. The generated
+  Bedroom, 2009 is retired from the opening.
 - **Outside (B7 room 10):** your rumble events are wrapped in *If Chapter = 4*
   (the outbreak night). On other days the room runs the morning call and
   bedtime script. Your "Life is meaningless... And college sucks!" trigger is
@@ -145,10 +154,10 @@ Studio or the studio, the generator skips it and lists it. Pass
 - **Scene 13 (scholar):** the scholar uses *afterhours_scholar_walk*. The
   scene's original events run only in Chapter 4, and they set `SawZombie`.
 - **All B7 scenes:**
-  - their backgrounds point at the enriched GBC copies, with fitted palettes;
-  - a night palette is applied in Chapter 4;
+  - their backgrounds point at the owner's original PNGs;
+  - original scenes keep explicit monochrome rendering;
   - Start opens the pause menu;
-  - edge triggers that were empty now lead to the campus world map.
+  - edge triggers that were empty now lead to the compact campus overview.
 - **Pristine copies** of your originals are kept in
   `tools/game/legacy_snapshot/`.
 

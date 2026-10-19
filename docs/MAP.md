@@ -1,87 +1,107 @@
-# Campus map: how it was made, and how to change it
+# Campus maps — draft 2, owner's art
 
-## Sources
-- **OpenStreetMap** (Overpass API, fetched 2026-10-19), © OpenStreetMap
-  contributors, ODbL 1.0: `art/maps/source/muj_osm.json`. It covers 583
-  features: buildings, roads, footpaths, pitches, the pool, the reservoir and
-  forest.
-- **Land cover** (trees, scrub, bare earth, farms) classified from Esri World
-  Imagery colour samples: `art/maps/source/landcover_campus.json`. Only the
-  derived grid is stored; the imagery itself is not included.
-- Cross-checks: MUJ hostel and campus pages, the Hafeez Contractor project
-  page, student reviews. The full research notes and confidence levels are in
-  the Todoist "Map" task comment.
+The original B7 scenes are the visual reference and the core of the game.
+Their PNGs in `assets/backgrounds/` and the pristine scenes in
+`tools/game/legacy_snapshot/` must remain unchanged. The enriched draft-1
+copies are retired from the owner's scenes.
 
-## Key facts the map follows
-- Two walled zones on either side of a public road: the **hostels (GHS)** to
-  the west and the **university** to the east, joined by a **pedestrian
-  underpass** under that road. It runs under the road between the zones, not
-  under NH-48, which is 1.3 km south.
-- The tree-lined **hostel avenue** runs west to east. Boys' blocks
-  B1–B7 (B8–B10 are new) are north of it; girls' blocks G1–G4 and the BlueDove
-  mess are south.
-- **B7** is in the north-west, with the **Quess Mess** next to it, and courts
-  inside the U.
-- **AB1** and **AB2** are ring buildings with courtyards. The amphitheatre is
-  in the AB2 courtyard.
-- The **Dome** is the Administrative Block, with the Central Library.
-- The **Cricket ground** (a circle with a running track) is north; the courts
-  are next to it.
-- **NBC/BABA** food stalls are by the road; the **Workshop** is east of AB2;
-  the **Ocean Hills Pool** is south-west of the girls' blocks.
-- Your sketch matches this if you rotate it so that real west is at the top.
+## Layout and connections
 
-## Rotation
-Everything is rotated **−17.4°** so the public road runs vertically and the
-avenue horizontally. That gives clean Game Boy roads instead of staircases.
-North on the in-game map is therefore tilted.
+Campus geography determines connections, rather than literal building
+footprints. The compact campus overview replaces the 122×115-tile map.
+Local scenes use 20×18 to 32×32 tiles. Existing scene keys and IDs remain
+stable so the story, menus and saved editing references keep working.
 
-## Files
-| What | Where |
+The main destinations are:
+
+| Place | Map keys |
 |---|---|
-| Runtime backgrounds (GBC, canonical greens + per-tile palettes) | `assets/backgrounds/muj/*.png` + `.gbsres` |
-| Colour previews | `art/maps/preview/*.png` |
-| Map metadata (doors, exits, spawn, tile counts, collisions) | `art/maps/*.json` |
-| Enriched copies of your original B7 art | `assets/backgrounds/enriched/` (originals untouched; provenance in `art/maps/enriched_provenance.json`) |
-| Map specs (size, centre, doors, interiors as ASCII) | `tools/map/maps_local.py` |
-| World map builder | `tools/map/world.py` |
-| Tile and object painter (grass, paths, trees, buildings, shadows) | `tools/map/painter.py` |
-| Palettes (day, night, dusk, blood, memory, dreamA/B/C) | `tools/map/gbc.py` |
-| **Tile catalogue** (every texture + variants, edges, trees, hedges, roofs, walls; per palette bank) | `art/tilesets/muj/catalogue_<bank>.png` |
-| **Per-map tile atlases** (the unique tiles each map uses) | `art/tilesets/muj/atlas_<map>.png` |
+| AB1 / physics | `ab1`, `physics_class` |
+| AB2 / maths | `ab2`, `maths_class` |
+| AB3 / chemistry | `ab3`, `chem_lab` |
+| Quess Mess / B7 approach | `hostel_avenue`, `quess_mess_in`, original B7 scenes |
+| Workshop | `workshop`, `workshop_in` |
+| Cricket ground | `cricket_ground` |
+| Dome / administration | `dome`, `dome_in` |
+| Underpass | `underpass`, `underpass_tunnel` |
+| Scrub behind B7 | `scrub_trail` |
+| NBC food court | `nbc` |
 
-## Maps
-- **World map** (`world_campus`, 122×115 tiles, 7 m per tile): the
-  Chrono Trigger-style travel map. It has 18 locations, and every location is
-  guaranteed reachable: woods are cut by dirt trails where needed.
-- **Exteriors** (cut from the same OSM world at 2–3 m per tile):
-  - Hostel Avenue, B7 Courts, Scrub Trail behind B7
-  - Block 1, Block 2, Girls' Blocks, Ocean Hills Pool
-  - Hostel Gate & Underpass
-  - The Dome, AB1, AB2 & Amphitheatre, Old Mess & Grand Staircase, AB3 & Labs
-  - Workshop, Cricket Ground, NBC & BABA
-- **Interiors** (ASCII layouts):
-  - Physics (AB1-101), Maths (AB2-214), Chemistry lab, Workshop floor
-  - Quess Mess, BlueDove Mess, Old Mess
-  - Dome rotunda and library, Pool hall, Underpass tunnel, Hostel corridor
-  - Bedroom 2009
-- **Set pieces:** pocket battle, zombie battle hall, lane defence, rooftop
-  run, starfield void, flight sky, London street, childhood school, home,
-  orbits, low corridor, day card, Hall of Doors, flower field.
-- **Your original B7 scenes** remain the B7 interiors and front. The world map's
-  "B7 Hostel" leads into them, and their empty edge triggers lead back out.
+Secondary locations retain their keys too: `b7_courts`, `block1`, `block2`,
+`girls_blocks`, `pool`, and `grand_staircase`. These are compact compatibility
+maps, not additional giant satellite tracings. Act 2 mechanics and Act 3
+memory maps retain their story roles.
 
-## Changing maps
-- **Paint by hand** in LibreSprite: open `assets/backgrounds/muj/<map>.png`.
-  It uses the four canonical greens (light → dark). Recolour tiles in GB
-  Studio with the Colorize brush (palette slots: 0 grass, 1 path/sand,
-  2 stone, 3 brick, 4 roof/glass, 5 water, 6 wood, 7 UI). After hand-editing,
-  the generator will not overwrite the PNG (`art/maps/.generated.json`).
-- **Regenerate**: edit `tools/map/maps_local.py` (an interior's ASCII, a
-  door's position), then run `python3 tools/map/build_maps.py <name>` and
-  `python3 tools/game/build_game.py`.
-- **Check layouts**: `python3 tools/game/check_maps.py`. It reports
-  unreachable doors, arrival points on walls or inside triggers, and
-  overlapping triggers.
-- The tile budget is 384 unique tiles per background in GBC mode. The builder
-  merges rare look-alike tiles automatically and reports how many.
+The hostel side connects to the academic side through the pedestrian
+underpass. B7, Quess Mess and scrub remain on the hostel side; AB1/2/3,
+Workshop, Dome and cricket remain academic destinations. NBC is by the road.
+The geographical reference is documented in `art/maps/source/muj_osm.json`
+(© OpenStreetMap contributors, ODbL); it does not dictate pixel geometry.
+
+## Editable sources
+
+| File | Purpose |
+|---|---|
+| `tools/map/owner.py` | Owner-art tile extraction and compact map construction |
+| `tools/map/owner_layouts.json` | Editable local layouts |
+| `art/tilesets/owner_library.png` and `.json` | Reusable tiles and source provenance |
+| `assets/backgrounds/muj/*.png` and `.gbsres` | Runtime art and background metadata |
+| `art/maps/*.json` | Collisions, spawns, doors and exits |
+| `art/maps/preview/compare/` | Original and colour candidates side by side |
+| `art/maps/preview/ingame/` | Screenshots from the built ROM |
+| `tools/game/story/*.py` | Actors, scene changes, dialogue and story conditions |
+
+Never overwrite the original PNGs when trying a palette conversion. Make a
+separate candidate and compare small details: door frames, window mullions,
+planter edges and octagon paving should remain distinct.
+
+## Regenerate and verify
+
+Run from the worktree:
+
+```
+python3 tools/map/build_maps.py
+python3 tools/game/build_game.py
+python3 tools/game/build_game.py --check
+python3 tools/game/check_maps.py
+```
+
+A scene change must arrive away from the destination's own exit trigger.
+The player is two tiles wide. Keep actors, doors and paths compatible with
+that width, and rerun the map audit after moving any of them. Follow scene
+regeneration's edit guard when a scene has been changed manually.
+
+Original `B7-10.png` is 257×257; preserve it. The compiler's size warning for
+that original is separate from a tile-budget error. ROM compilation and the
+GB Studio load/denormalize check are both necessary: one cannot substitute
+for the other.
+
+## Colour choice and the salmon editor rendering
+
+For the original scenes, the selected approach is **monochrome** (option c),
+inside the CGB-only project. They reference the original PNGs and explicit
+DMG palettes. This retains their original pixel structure without using the
+flattened enriched copies. The comparison sheets include the original, the
+fixed-colour candidate, and the selected mono rendering. Keep in mind that
+mono cannot reproduce the original RGB hues.
+
+New maps use a four-shade indexed PNG and an explicit palette slot per tile.
+Their contiguous facade, paving and planter patches keep the original
+compositions coherent. The shared day brick ramp is warm plaster/ochre/brown/
+mauve (`E8D0A8`, `D0A078`, `A87868`, `786078`); other banks support the existing
+night, outbreak and dream logic. This is a constrained GBC conversion, so
+some source colours necessarily merge. The tile-library JSON records source
+patches for further manual refinement.
+
+GB Studio 4.3.2's `ColorizedImage.worker.ts` reads only the source **green
+channel** to select shade 3/2/1/0 at thresholds 65/130/205. It then selects the
+palette with `tiles[t] & 7`. It does not render arbitrary RGB colours in the
+manual-colour path. The old maps' large warm roofs and walls used the brick
+slot's salmon ramp; that colour was a palette/design result rather than an
+AutoColor failure. New indexed backgrounds, tile-slot data and palette
+resources are regenerated together. The editor's separate AutoColor solver
+was not used for the selected runtime art; an earlier local approximation
+was removed from the final comparisons.
+
+The stylised overview is **48×32 tiles**, with 18 destination markers; local
+exteriors remain at most 32×32. It describes connections, not campus scale.

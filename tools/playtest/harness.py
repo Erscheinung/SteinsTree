@@ -81,13 +81,20 @@ class Game:
         for _ in range(times):
             self.press(button, 4, gap)
 
-    UI = {(200, 192, 168), (248, 240, 224), (24, 24, 40), (104, 96, 120)}
+    DIALOG_BG = (248, 240, 224)
 
     def dialog_open(self):
         """True when GB Studio's dialogue/menu window covers the bottom rows."""
         im = self.pb.screen.image.convert("RGB")
-        hits = sum(1 for x in range(0, 160, 4) for y in (130, 136, 142) if im.getpixel((x, y)) in self.UI)
-        return hits > 60
+        # Map art can contain the old UI colours, so counting a few sampled
+        # pixels produces false positives after palette enrichment.  The
+        # dialogue panel has a broad cream interior spanning most of the
+        # bottom rows; require that contiguous visual signature instead.
+        rows = sum(
+            sum(im.getpixel((x, y)) == self.DIALOG_BG for x in range(4, 156)) >= 100
+            for y in range(102, 143)
+        )
+        return rows >= 10
 
     def clear(self, max_presses=40, button="a"):
         """Advance dialogue until the window closes (or max presses)."""

@@ -1,0 +1,1121 @@
+{
+  "project": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2",
+  "screenshots": [
+    {
+      "kind": "continuous",
+      "label": "outside_start",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_continuous_outside_start.png",
+      "scene": "outside",
+      "map": "outside",
+      "tile": [
+        22,
+        20
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "handheld_interaction",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_continuous_handheld_interaction.png",
+      "scene": "outside",
+      "map": "outside",
+      "tile": [
+        21,
+        20
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "pocket_battle",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/003_continuous_pocket_battle.png",
+      "scene": "battle_pocket",
+      "map": null,
+      "tile": [
+        1,
+        16
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "outside_after_battle",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/004_continuous_outside_after_battle.png",
+      "scene": "outside",
+      "map": "outside",
+      "tile": [
+        22,
+        20
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 0,
+        "Objective": 1,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "day1_morning",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/005_continuous_day1_morning.png",
+      "scene": "outside",
+      "map": "outside",
+      "tile": [
+        22,
+        20
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 0,
+        "Objective": 1,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "ab1",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/006_continuous_ab1.png",
+      "scene": "ab1",
+      "map": "ab1",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 0,
+        "Objective": 1,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "physics_class",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/007_continuous_physics_class.png",
+      "scene": "physics_class",
+      "map": "physics_class",
+      "tile": [
+        11,
+        7
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 0,
+        "Objective": 1,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "physics_arrival",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/008_continuous_physics_arrival.png",
+      "scene": "physics_class",
+      "map": "physics_class",
+      "tile": [
+        11,
+        7
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 0,
+        "Objective": 1,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "physics_complete",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/009_continuous_physics_complete.png",
+      "scene": "physics_class",
+      "map": "physics_class",
+      "tile": [
+        11,
+        7
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 1,
+        "Objective": 2,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "quess_mess_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/010_continuous_quess_mess_in.png",
+      "scene": "quess_mess_in",
+      "map": "quess_mess_in",
+      "tile": [
+        12,
+        11
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 1,
+        "Objective": 2,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "dinner_arrival",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/011_continuous_dinner_arrival.png",
+      "scene": "quess_mess_in",
+      "map": "quess_mess_in",
+      "tile": [
+        12,
+        11
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 1,
+        "Objective": 2,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "dinner_complete",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/012_continuous_dinner_complete.png",
+      "scene": "quess_mess_in",
+      "map": "quess_mess_in",
+      "tile": [
+        12,
+        11
+      ],
+      "variables": {
+        "Chapter": 1,
+        "Phase": 2,
+        "Objective": 3,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "evening_hangout",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/013_continuous_evening_hangout.png",
+      "scene": "b7_courts",
+      "map": "b7_courts",
+      "tile": [
+        22,
+        20
+      ],
+      "variables": {
+        "Chapter": 2,
+        "Phase": 0,
+        "Objective": 5,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "continuous",
+      "label": "day1_sleep_complete",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/014_continuous_day1_sleep_complete.png",
+      "scene": "outside",
+      "map": "outside",
+      "tile": [
+        22,
+        20
+      ],
+      "variables": {
+        "Chapter": 2,
+        "Phase": 0,
+        "Objective": 5,
+        "PrologueBattle": 1,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab1",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_ab1.png",
+      "scene": "ab1",
+      "map": "ab1",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab1",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_ab1.png",
+      "scene": "ab1",
+      "map": "ab1",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab2",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_ab2.png",
+      "scene": "ab2",
+      "map": "ab2",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab2",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_ab2.png",
+      "scene": "ab2",
+      "map": "ab2",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab3",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_ab3.png",
+      "scene": "ab3",
+      "map": "ab3",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab3",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_ab3.png",
+      "scene": "ab3",
+      "map": "ab3",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "quess_mess_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_quess_mess_in.png",
+      "scene": "quess_mess_in",
+      "map": "quess_mess_in",
+      "tile": [
+        11,
+        14
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "quess_mess_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_quess_mess_in.png",
+      "scene": "quess_mess_in",
+      "map": "quess_mess_in",
+      "tile": [
+        11,
+        14
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "workshop",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_workshop.png",
+      "scene": "workshop",
+      "map": "workshop",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "workshop",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_workshop.png",
+      "scene": "workshop",
+      "map": "workshop",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "cricket_ground",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_cricket_ground.png",
+      "scene": "cricket_ground",
+      "map": "cricket_ground",
+      "tile": [
+        15,
+        20
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "cricket_ground",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_cricket_ground.png",
+      "scene": "cricket_ground",
+      "map": "cricket_ground",
+      "tile": [
+        15,
+        20
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "dome",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_dome.png",
+      "scene": "dome",
+      "map": "dome",
+      "tile": [
+        14,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "dome",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_dome.png",
+      "scene": "dome",
+      "map": "dome",
+      "tile": [
+        14,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "underpass",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_underpass.png",
+      "scene": "underpass",
+      "map": "underpass",
+      "tile": [
+        14,
+        19
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "underpass",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_underpass.png",
+      "scene": "underpass",
+      "map": "underpass",
+      "tile": [
+        14,
+        19
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "scrub_trail",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_scrub_trail.png",
+      "scene": "scrub_trail",
+      "map": "scrub_trail",
+      "tile": [
+        13,
+        18
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "scrub_trail",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_scrub_trail.png",
+      "scene": "scrub_trail",
+      "map": "scrub_trail",
+      "tile": [
+        13,
+        18
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "nbc",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_nbc.png",
+      "scene": "nbc",
+      "map": "nbc",
+      "tile": [
+        13,
+        20
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "nbc",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_nbc.png",
+      "scene": "nbc",
+      "map": "nbc",
+      "tile": [
+        13,
+        20
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab1",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_ab1.png",
+      "scene": "ab1",
+      "map": "ab1",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "physics_class",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_physics_class.png",
+      "scene": "physics_class",
+      "map": "physics_class",
+      "tile": [
+        11,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "physics_class",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/003_warp_physics_class.png",
+      "scene": "physics_class",
+      "map": "physics_class",
+      "tile": [
+        11,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab2",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_ab2.png",
+      "scene": "ab2",
+      "map": "ab2",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "maths_class",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_maths_class.png",
+      "scene": "maths_class",
+      "map": "maths_class",
+      "tile": [
+        3,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "maths_class",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/003_warp_maths_class.png",
+      "scene": "maths_class",
+      "map": "maths_class",
+      "tile": [
+        3,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "ab3",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_ab3.png",
+      "scene": "ab3",
+      "map": "ab3",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "chem_lab",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_chem_lab.png",
+      "scene": "chem_lab",
+      "map": "chem_lab",
+      "tile": [
+        10,
+        14
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "chem_lab",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/003_warp_chem_lab.png",
+      "scene": "chem_lab",
+      "map": "chem_lab",
+      "tile": [
+        10,
+        14
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "workshop",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_workshop.png",
+      "scene": "workshop",
+      "map": "workshop",
+      "tile": [
+        13,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "workshop_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_workshop_in.png",
+      "scene": "workshop_in",
+      "map": "workshop_in",
+      "tile": [
+        11,
+        14
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "workshop_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/003_warp_workshop_in.png",
+      "scene": "workshop_in",
+      "map": "workshop_in",
+      "tile": [
+        11,
+        14
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "dome",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/001_warp_dome.png",
+      "scene": "dome",
+      "map": "dome",
+      "tile": [
+        14,
+        15
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "dome_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/002_warp_dome_in.png",
+      "scene": "dome_in",
+      "map": "dome_in",
+      "tile": [
+        13,
+        14
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "warp",
+      "label": "dome_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/003_warp_dome_in.png",
+      "scene": "dome_in",
+      "map": "dome_in",
+      "tile": [
+        13,
+        14
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_world",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_world.png",
+      "scene": "world",
+      "map": "world",
+      "tile": [
+        4,
+        10
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_hostel_avenue",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_hostel_avenue.png",
+      "scene": "hostel_avenue",
+      "map": "hostel_avenue",
+      "tile": [
+        14,
+        20
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_block1",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_block1.png",
+      "scene": "block1",
+      "map": "block1",
+      "tile": [
+        11,
+        13
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_block2",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_block2.png",
+      "scene": "block2",
+      "map": "block2",
+      "tile": [
+        11,
+        13
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_girls_blocks",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_girls_blocks.png",
+      "scene": "girls_blocks",
+      "map": "girls_blocks",
+      "tile": [
+        13,
+        13
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_pool",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_pool.png",
+      "scene": "pool",
+      "map": "pool",
+      "tile": [
+        11,
+        16
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_grand_staircase",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_grand_staircase.png",
+      "scene": "grand_staircase",
+      "map": "grand_staircase",
+      "tile": [
+        15,
+        24
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_bluedove_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_bluedove_in.png",
+      "scene": "bluedove_in",
+      "map": "bluedove_in",
+      "tile": [
+        9,
+        12
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_old_mess_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_old_mess_in.png",
+      "scene": "old_mess_in",
+      "map": "old_mess_in",
+      "tile": [
+        11,
+        13
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_pool_in",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_pool_in.png",
+      "scene": "pool_in",
+      "map": "pool_in",
+      "tile": [
+        11,
+        13
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_underpass",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_underpass.png",
+      "scene": "underpass",
+      "map": "underpass",
+      "tile": [
+        14,
+        19
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_underpass_tunnel",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_002_warp_underpass_tunnel.png",
+      "scene": "underpass_tunnel",
+      "map": "underpass_tunnel",
+      "tile": [
+        1,
+        9
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    },
+    {
+      "kind": "extra_warp",
+      "label": "extra_hostel_corridor",
+      "path": "/private/tmp/claude-501/-Users-kartikeyachaauhan-Desktop-Code-SteinsTree/ea00e1da-d1e5-4937-a2cb-cae92479e1b8/scratchpad/wt2/art/maps/preview/ingame/coverage/extra_001_warp_hostel_corridor.png",
+      "scene": "hostel_corridor",
+      "map": "hostel_corridor",
+      "tile": [
+        14,
+        10
+      ],
+      "variables": {
+        "Chapter": 0,
+        "Phase": 0,
+        "Objective": 0,
+        "PrologueBattle": 0,
+        "MemCount": 0
+      }
+    }
+  ]
+}
