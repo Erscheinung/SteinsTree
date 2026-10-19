@@ -26,8 +26,7 @@ class _Fake:
 
 
 def _ids(events, prefix):
-    gbs._assign_ids(events, prefix)
-    return events
+    return gbs._assign_ids(events, prefix)
 
 
 def pause_hook(ctx):

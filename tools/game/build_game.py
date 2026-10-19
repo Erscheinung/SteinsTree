@@ -338,9 +338,10 @@ def duplicate_event_ids():
     c = Counter()
     for p in list((ROOT / "project" / "scenes").rglob("*.gbsres")) + list((ROOT / "project" / "scripts").rglob("*.gbsres")):
         for e in gbs.walk_events(_scripts_of(json.loads(p.read_text()))):
-            if "id" in e:
-                c[e["id"]] += 1
-    return [k for k, n in c.items() if n > 1]
+            # a missing id makes GB Studio's loader recurse forever (normalizr
+            # merges every id-less event into one entity)
+            c[e.get("id") or "<missing id in %s>" % p.relative_to(ROOT)] += 1
+    return [k for k, n in c.items() if n > 1 or k.startswith("<missing")]
 
 
 def _scripts_of(d):
@@ -383,7 +384,7 @@ def main(argv):
         V.save()
     dup = duplicate_event_ids()
     if dup:
-        problems.append("%d event ids are used more than once (e.g. %s)" % (len(dup), dup[0]))
+        problems.append("%d event ids are missing or used more than once (e.g. %s)" % (len(dup), dup[0]))
     w.prune()
     w.save()
     if w.removed:
