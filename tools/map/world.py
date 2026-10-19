@@ -11,6 +11,7 @@ from collections import deque
 import gbc
 import landcover
 import osm
+import owner
 import painter as pt
 
 CELL = 7.0
@@ -183,6 +184,15 @@ def smooth(mask, rounds=1):
 def build(feats=None):
     """Build, then guarantee every location is reachable from B7: any location
     walled off by woods or buildings gets a dirt trail carved to it."""
+    # Draft 2 uses the compact owner-style overview.  Keep this dispatch in
+    # the world builder so the stable world_campus key and location targets
+    # remain available to the story worker without carrying the old OSM canvas
+    # into the editor.
+    return owner.build_world(LOCATIONS)
+
+
+def build_osm(feats=None):
+    """Build the retired OSM overview for reference/debugging."""
     feats = feats if feats is not None else osm.load_features()
     cv, meta = _build(feats, set())
     carve = connect(cv, meta)

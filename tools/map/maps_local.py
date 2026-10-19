@@ -5,6 +5,9 @@ Edit a spec, then run:  python3 tools/map/build_maps.py [name ...]
 Exterior spec keys: center (lat, lon) or center_m (rotated metres), cols, rows,
 cell (metres per tile), doors [{label, target, latlon|tile, building?}],
 rings, add_buildings, skip_buildings, terrain_fns, decorate, woods, wall_rows.
+Names in owner.COMPACT_MAPS use the editable owner's tile layouts instead of
+the satellite rasteriser; their dimensions, doors and edge exits live in
+tools/map/owner_layouts.json.
 Interior spec keys: layout (ASCII, see interior.py), floor, alt_floor.
 """
 

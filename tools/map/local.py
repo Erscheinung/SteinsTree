@@ -15,6 +15,7 @@ from collections import deque
 import gbc
 import landcover
 import osm
+import owner
 import painter as pt
 from world import STYLE_BY_NAME, smooth
 
@@ -45,6 +46,11 @@ def _style(tags):
 
 
 def build(spec, feats=None):
+    # The owner-style maps are compact, hand-editable layouts assembled from
+    # tiles cut from the owner's original B7 art.  They intentionally bypass
+    # the satellite rasteriser while retaining the same metadata contract.
+    if spec.get("owner_layout") or spec.get("name") in owner.COMPACT_MAPS:
+        return owner.build(spec)
     feats = feats if feats is not None else osm.load_features()
     cols, rows, cell = spec["cols"], spec["rows"], spec.get("cell", 2.0)
     cx, cy = spec["center_m"] if "center_m" in spec else osm.project(*spec["center"])

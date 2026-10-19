@@ -15,6 +15,7 @@ Legend (edit layouts in maps_local.py; every char is one tile):
 """
 
 import gbc
+import owner
 import painter as pt
 from painter import G, P, S, B, R, W, T
 
@@ -54,6 +55,10 @@ def build(spec):
             elif ch == "_":
                 terrain[y][x] = "paving"
     pt.paint_terrain(cv, terrain)
+    patches = spec.get("owner_patches", owner.INTERIOR_PATCHES.get(spec.get("name"), []))
+    # Furniture and wall symbols are painted afterwards and may legitimately
+    # claim their own palette slot over a floor patch.
+    owner._apply_patches(cv, [dict(patch, lock=False) for patch in patches])
     doors = []
     for y, row in enumerate(rows):
         for x, ch in enumerate(row):
@@ -176,4 +181,6 @@ def build(spec):
                 cv.solid[y][x] = 0x0F
     for fn in spec.get("decorate", []):
         fn(cv)
+    if patches:
+        cv.owner_source_patches = patches
     return cv, doors

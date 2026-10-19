@@ -30,11 +30,28 @@
   10,
   14
  ],
- "unique_before_reduce": 23,
+ "unique_before_reduce": 39,
  "tiles_merged": 0,
- "unique_tiles": 23,
+ "unique_tiles": 39,
  "palette_conflicts": 0,
  "collisions": "0f61+0016+0f2+00!0f6+004+0f6+005+0f2+0014+0f!00!0f2+0016+0f2+00!0f6+004+0f6+005+0f2+0016+0f2+0016+0f2+00!0f6+004+0f6+002+0f2+00!0f2+0016+0f2+0016+0f3+0013+0f!00!0fb+002+0f3c+",
  "unreachable_doors": [],
- "kind": "interior"
+ "kind": "interior",
+ "source_patches": [
+  {
+   "source": "B7-10",
+   "src": [
+    12,
+    16
+   ],
+   "dst": [
+    2,
+    3
+   ],
+   "size": [
+    12,
+    8
+   ]
+  }
+ ]
 }

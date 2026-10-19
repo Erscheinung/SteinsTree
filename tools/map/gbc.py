@@ -36,13 +36,24 @@ SLOT = {name: i for i, name in enumerate(SLOTS)}
 # edges can carry grass tufts; BRICK[0] is plaster for beige facades.
 BANKS = {
     "day": {
-        "grass": ["E8F4A8", "98D060", "4C9848", "1E4430"],
-        "path":  ["F8ECC8", "E0BC80", "B08850", "98D060"],
-        "stone": ["F0F0EC", "B4B8C0", "747C90", "2C3044"],
-        "brick": ["F8E4C4", "E89468", "A84C38", "48201C"],
-        "roof":  ["E8F4F8", "88BCE8", "3C70B4", "1C2850"],
-        "water": ["F0FCFC", "78D4F0", "3090D0", "184878"],
-        "wood":  ["F8DCA0", "C88C50", "885030", "3A2014"],
+        # These ramps are sampled from the protected B7 originals.  The
+        # earlier bank used very high-chroma Emerald greens/oranges, which
+        # made the fixed slot renderer look fluorescent even when the source
+        # geometry was faithful.  Keep the four values ordered light -> dark
+        # so every existing tile pattern and night/dream derivation remains
+        # valid, while matching the owner's warm plaster, yellow grass,
+        # slate, and blue-glass language.
+        "grass": ["D8D888", "B0B858", "649A3B", "456C33"],
+        "path":  ["F0B050", "D89050", "A87848", "647A43"],
+        "stone": ["E8E8D8", "B8B8C0", "707078", "404048"],
+        # Warm plaster/ochre with a muted mauve shadow.  The previous
+        # red-pink ramp made the owner's paving and wall bands fluorescent;
+        # the dark mauve keeps the original paving cue without dominating the
+        # yellow grass and facade details.
+        "brick": ["E8D0A8", "D0A078", "A87868", "786078"],
+        "roof":  ["E8F0F0", "98C0F0", "6070A8", "303048"],
+        "water": ["E0F0E0", "90D8D0", "4898A0", "285878"],
+        "wood":  ["F0D8A0", "C09050", "885030", "4B2B13"],
     },
 }
 

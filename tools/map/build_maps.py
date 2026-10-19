@@ -56,6 +56,8 @@ def build_interior(spec):
                         [{"label": "Exit", "target": None, "x": d["x"], "y": d["y"], "spawn": inside(d)}
                          for d in doors])
     meta["kind"] = "interior"
+    if getattr(cv, "owner_source_patches", None):
+        meta["source_patches"] = cv.owner_source_patches
     return cv, meta
 
 

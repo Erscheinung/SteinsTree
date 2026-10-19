@@ -1,0 +1,1213 @@
+{
+ "world_campus": {
+  "title": "MUJ Campus Overview",
+  "base_patches": [
+   {
+    "source": "B7-front",
+    "src": [
+     0,
+     0
+    ],
+    "dst": [
+     0,
+     0
+    ],
+    "size": [
+     32,
+     32
+    ]
+   },
+   {
+    "source": "B7-front-right",
+    "src": [
+     0,
+     0
+    ],
+    "dst": [
+     32,
+     0
+    ],
+    "size": [
+     16,
+     32
+    ]
+   }
+  ],
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggTRRRRRggTRRRRRggTRRRRRggTRRRRRggTRRRRRggggggh",
+   "hggWWWWWWWgWWWWWWWgWWWWWWWgWWWWWWWgWWWWWWWgggggh",
+   "hggfffffffgfffffffgfffffffgfffffffgfffffffgggggh",
+   "hgggggDg.gggggDg.gggggDg.gggggDg.gggggDg.ggggggh",
+   "hgggPggg.gggPggg.gggPggg.gggPggg.gggPggg.gggPggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "h..............................................h",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.gggsssssssssggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.gggsssssssssggg.ggggggg.ggggggh",
+   "h..............................................h",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "h..............................................h",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hggggggg.ggggggg.ggggggg.ggggggg.ggggggg.ggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [],
+  "locations": [
+   {
+    "target": "legacy_b7_front",
+    "at": [
+     4,
+     8
+    ]
+   },
+   {
+    "target": "b7_courts",
+    "at": [
+     10,
+     8
+    ]
+   },
+   {
+    "target": "quess_mess",
+    "at": [
+     16,
+     8
+    ]
+   },
+   {
+    "target": "hostel_avenue",
+    "at": [
+     22,
+     8
+    ]
+   },
+   {
+    "target": "block1",
+    "at": [
+     28,
+     8
+    ]
+   },
+   {
+    "target": "block2",
+    "at": [
+     34,
+     8
+    ]
+   },
+   {
+    "target": "girls_blocks",
+    "at": [
+     40,
+     8
+    ]
+   },
+   {
+    "target": "pool",
+    "at": [
+     44,
+     8
+    ]
+   },
+   {
+    "target": "scrub_trail",
+    "at": [
+     4,
+     15
+    ]
+   },
+   {
+    "target": "underpass",
+    "at": [
+     10,
+     15
+    ]
+   },
+   {
+    "target": "dome",
+    "at": [
+     16,
+     15
+    ]
+   },
+   {
+    "target": "ab1",
+    "at": [
+     22,
+     15
+    ]
+   },
+   {
+    "target": "ab2",
+    "at": [
+     28,
+     15
+    ]
+   },
+   {
+    "target": "grand_staircase",
+    "at": [
+     34,
+     15
+    ]
+   },
+   {
+    "target": "ab3",
+    "at": [
+     40,
+     15
+    ]
+   },
+   {
+    "target": "workshop",
+    "at": [
+     44,
+     15
+    ]
+   },
+   {
+    "target": "cricket_ground",
+    "at": [
+     16,
+     22
+    ]
+   },
+   {
+    "target": "nbc",
+    "at": [
+     32,
+     22
+    ]
+   }
+  ]
+ },
+ "hostel_avenue": {
+  "title": "GHS Hostel Avenue",
+  "source_base": {
+   "source": "B7-front-right",
+   "src": [
+    0,
+    0
+   ],
+   "size": [
+    32,
+    24
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffWfffggh",
+   "hggfffffDfffffffDfffffffDffffggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgTTggTTggTTggTT..TTPgTTggTTg|gh",
+   "hgggPgggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "h..............................h",
+   "h..............................h",
+   "h..............................h",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggPTggh",
+   "hgTgggTgggTgPgT...TgggTgggTggKgh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgTgggggggggggg...gggggggggggTgh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "Quess Mess",
+    "target": "quess_mess_in",
+    "at": [
+     8,
+     5
+    ]
+   },
+   {
+    "label": "BlueDove Mess",
+    "target": "bluedove_in",
+    "at": [
+     16,
+     5
+    ]
+   },
+   {
+    "label": "B1 Block",
+    "target": "block1",
+    "at": [
+     24,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   14,
+   18
+  ]
+ },
+ "b7_courts": {
+  "title": "B7 Courts",
+  "source_base": {
+   "source": "B7-front",
+   "src": [
+    2,
+    2
+   ],
+   "size": [
+    28,
+    24
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffggh",
+   "hggfffffffffffDffffffffffggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggg||||||||||||||||||ggggh",
+   "hgKTgggcggcggc..cgPcggcgg|gh",
+   "hgggPgcggcggc..cggcggcgggggh",
+   "hggggcggcggcg.c.gcggcggggggh",
+   "h......c..c..c..c..c..c....h",
+   "h.....c..c..c..c..c..c.....h",
+   "h....c..c..c..c..c..c......h",
+   "hggggggcggcggc..cggcggcggggh",
+   "hgggggcggcggc..cggcggcgPTggh",
+   "hg|gg||||||||||||||||||ggKgh",
+   "hgggggggggggg...gggggggggggh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTgggggggggg...gggggggggTgh",
+   "hgggggggggggg...gggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "B7 Boy's Block",
+    "target": "LEGACY_B7_ENTRANCE",
+    "at": [
+     14,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   13,
+   18
+  ]
+ },
+ "scrub_trail": {
+  "title": "Scrub Trail behind B7",
+  "source_base": {
+   "source": "B7-back-left",
+   "src": [
+    4,
+    4
+   ],
+   "size": [
+    28,
+    24
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTRTRRRRTRRR..RRRRTRRRRTTgh",
+   "hggFWWFFWWFFW..FWWFFWWFFWggh",
+   "hggffWffffWfff.WffffWffffggh",
+   "hggTffffTffff..fffTffffTfggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTTgggTggggT...gTPgggTgg|gh",
+   "hgggPgggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "h....T....T....T....T....T.h",
+   "h..........................h",
+   "h..........................h",
+   "hgggTggggTggg...gggTggggTggh",
+   "hgggggggggggg...gggggggPTggh",
+   "hg|gggggggPgg...gggggggggKgh",
+   "hggTggggTgggg...ggTggggTgggh",
+   "hggFWWFFWWFFW..FWWFFWWFFWggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTggggTggggT...gTggggTggggh",
+   "hgTgggggggggg...gggggggggTgh",
+   "hgggggggggggg...gggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [],
+  "spawn": [
+   13,
+   18
+  ]
+ },
+ "block1": {
+  "title": "Block 1 (B1)",
+  "source_base": {
+   "source": "B7-front",
+   "src": [
+    4,
+    2
+   ],
+   "size": [
+    24,
+    20
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggg...gggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWggh",
+   "hggfffffffffDffffffffggh",
+   "hgggggggggg...ggPggggggh",
+   "hgggPgggggg...gggggggggh",
+   "hgPTggggggg...gggggggPgh",
+   "h......................h",
+   "h......................h",
+   "h.P.................TP.h",
+   "hgggggggggg...gggggggggh",
+   "hgggggggggg...gggggPgggh",
+   "hggFWWFFPWFFWWFFWWFFWggh",
+   "hgggggggggg...gggggggggh",
+   "hgggggggggg...gggggggggh",
+   "hgTgggggggg...gggggggTgh",
+   "hgggggggggg...gggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "B1 Lobby",
+    "target": "hostel_corridor",
+    "at": [
+     12,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   11,
+   14
+  ]
+ },
+ "block2": {
+  "title": "Block 2 (B2)",
+  "source_base": {
+   "source": "B7-front-right",
+   "src": [
+    4,
+    2
+   ],
+   "size": [
+    24,
+    20
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggg...gggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWggh",
+   "hggfffffffffDffffffffggh",
+   "hgggggggggg...ggPggggggh",
+   "hgggPgggggg...gggggggggh",
+   "hgPTggggggg...gggggggPgh",
+   "h......................h",
+   "h......................h",
+   "h.P.................TP.h",
+   "hgggggggggg...gggggggggh",
+   "hgggggggggg...gggggPgggh",
+   "hggFWWFFPWFFWWFFWWFFWggh",
+   "hgggggggggg...gggggggggh",
+   "hgggggggggg...gggggggggh",
+   "hgTgggggggg...gggggggTgh",
+   "hgggggggggg...gggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "B2 Lobby",
+    "target": "hostel_corridor",
+    "at": [
+     12,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   11,
+   14
+  ]
+ },
+ "girls_blocks": {
+  "title": "Girls' Blocks G1-G4",
+  "source_base": {
+   "source": "B7-front",
+   "src": [
+    2,
+    6
+   ],
+   "size": [
+    28,
+    20
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffggh",
+   "hggfffffffffffDffffffffffggh",
+   "hgggggggggggg...ggPggggggggh",
+   "hgggPgggggggg...gggggggggggh",
+   "hgPTggggggggg...gggggggggPgh",
+   "h..........................h",
+   "h..........................h",
+   "h.P.....................TP.h",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggPgggh",
+   "hggFWWFFWWPFWWFFWWFFWWFFWggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTgggggggggg...gggggggggTgh",
+   "hgggggggggggg...gggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "BlueDove Mess",
+    "target": "bluedove_in",
+    "at": [
+     14,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   13,
+   14
+  ]
+ },
+ "pool": {
+  "title": "Ocean Hills Pool",
+  "source_base": {
+   "source": "B7-back-left",
+   "src": [
+    4,
+    4
+   ],
+   "size": [
+    24,
+    20
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggg...gggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWggh",
+   "hggfffffffffDffffffffggh",
+   "hggggssssssssssssssggggh",
+   "hgggs~~~~~~~~~~~~~~sgggh",
+   "hggTs~~~~~~~.~~~~~~sgggh",
+   "h...s~~~~~~~.~~~~~~s...h",
+   "h...s~~~~~~~.~~~~~~s...h",
+   "h...s~~~~~~~.~~~~~~sT..h",
+   "hgggs~~~~~~~~~~~~~~sgggh",
+   "hggggssssssssssssssPgggh",
+   "hggFWWFFPWFFWWFFWWFFWggh",
+   "hgggggggggg...gggggggggh",
+   "hgggggggggg...gggggggggh",
+   "hgTgggggggg...gggggggTgh",
+   "hgggggggggg...gggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "Pool Hall",
+    "target": "pool_in",
+    "at": [
+     12,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   11,
+   14
+  ]
+ },
+ "underpass": {
+  "title": "Hostel Gate & Underpass",
+  "source_base": {
+   "source": "mess-to-main",
+   "src": [
+    2,
+    2
+   ],
+   "size": [
+    30,
+    22
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hggggggggggggg...ggggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWWFggh",
+   "hggffWffffWffffWffffWffffWfggh",
+   "hggffffffffffffffffffffffffggh",
+   "hggggggggggggg...ggggggggggggh",
+   "hg||||||||||||...|||||||||||gh",
+   "hg..........................gh",
+   "hg|........................|gh",
+   "h.|..D..................D..|.h",
+   "h.|ssssssssssssssssssssssss|.h",
+   "h.|........................|.h",
+   "hg|ssssssssssssssssssssssss|gh",
+   "hg||||||||||||...|||||||||||gh",
+   "hg|ggggggggPgg...ggggggggggKgh",
+   "hggFWWFFWWFFWW...WFFWWFFWWFggh",
+   "hggggggggggggg...ggggggggggggh",
+   "hggggggggggggg...ggggggggggggh",
+   "hgTggggggggggg...ggggggggggTgh",
+   "hggggggggggggg...ggggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "Underpass (hostel side)",
+    "target": "underpass_tunnel",
+    "at": [
+     5,
+     10
+    ],
+    "spawn": [
+     5,
+     10
+    ]
+   },
+   {
+    "label": "Underpass (university side)",
+    "target": "underpass_tunnel",
+    "at": [
+     24,
+     10
+    ],
+    "spawn": [
+     23,
+     10
+    ]
+   }
+  ],
+  "spawn": [
+   14,
+   19
+  ]
+ },
+ "dome": {
+  "title": "The Dome - Administrative Block",
+  "source_base": {
+   "source": "B7-front-right",
+   "src": [
+    0,
+    4
+   ],
+   "size": [
+    30,
+    22
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hggggggggggggg...ggggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWWFggh",
+   "hggffWffffWffffWffffWffffWfggh",
+   "hggffffffffffffDfffffffffffggh",
+   "hggggggggggggg...ggggggggggggh",
+   "hgKgggg,,,,,,,,,,,,,,,,gggg|gh",
+   "hggTPgg|,,,,,,,,,,,,,,|ggggggh",
+   "hgggggg,,P,,,,P,,,,P,,,ggggggh",
+   "h......,,,,,,,,,,,,,,,,......h",
+   "h......|,,,,,,,,,,,,,,|......h",
+   "h......,,,,,,,,,,,,,,,,......h",
+   "hgggggg,,,,,,,,,,,,,,,,gggTggh",
+   "hgggggg,,,,,,,,,,,,,,,,ggPgggh",
+   "hg|ggggggggPgg...ggggggggggKgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWWFggh",
+   "hggggggggggggg...ggggggggggggh",
+   "hggggggggggggg...ggggggggggggh",
+   "hgTggggggggggg...ggggggggggTgh",
+   "hggggggggggggg...ggggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "Dome Rotunda",
+    "target": "dome_in",
+    "at": [
+     15,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   14,
+   16
+  ]
+ },
+ "ab1": {
+  "title": "Academic Block 1",
+  "source_base": {
+   "source": "B7-front",
+   "src": [
+    2,
+    2
+   ],
+   "size": [
+    28,
+    22
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffggh",
+   "hggfffffffffffDffffffffffggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgKgggggggggg...ggPgggggg|gh",
+   "hggTKKggKKggKK..KKggKKgggggh",
+   "hgggggggggggg...gggggggggggh",
+   "h..........................h",
+   "h..........................h",
+   "h..........................h",
+   "hgggPgggPgggP...PgggPgggTggh",
+   "hgggggggggggg...gggggggPgggh",
+   "hg|gggggggPgg...gggggggggKgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTgggggggggg...gggggggggTgh",
+   "hgggggggggggg...gggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "AB1 Classroom 101",
+    "target": "physics_class",
+    "at": [
+     14,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   13,
+   16
+  ]
+ },
+ "ab2": {
+  "title": "Academic Block 2 & Amphitheatre",
+  "source_base": {
+   "source": "mess-to-main",
+   "src": [
+    4,
+    0
+   ],
+   "size": [
+    28,
+    22
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffggh",
+   "hggfffffffffffDffffffffffggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgKgggggggggg...ggPgggggg|gh",
+   "hggTKKggKKggKK..KKggKKgggggh",
+   "hgggggggggggg...gggggggggggh",
+   "h..........................h",
+   "h..........................h",
+   "h..........................h",
+   "hgggPgggPgggP...PgggPgggTggh",
+   "hgggggggggggg...gggggggPgggh",
+   "hg|gggggggPgg...gggggggggKgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTgggggggggg...gggggggggTgh",
+   "hgggggggggggg...gggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "AB2 Room 214",
+    "target": "maths_class",
+    "at": [
+     14,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   13,
+   16
+  ]
+ },
+ "grand_staircase": {
+  "title": "Old Mess & Grand Staircase",
+  "source_base": {
+   "source": "B7-front-right",
+   "src": [
+    0,
+    0
+   ],
+   "size": [
+    32,
+    32
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffWfffggh",
+   "hggfffffffffffffDffffffffffffggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggSSSSSSSSSSSSSggggggggh",
+   "hggTgggggggSSSSSSSSSSSgggggggggh",
+   "hgggggggggggSSSSSSSSSggggggggggh",
+   "hggggggggggggSSSSSSSgggggggggggh",
+   "hgggggggggggggSSSSSggggggggggggh",
+   "hgKggggggggggggSSSggPgggggggg|gh",
+   "hgggPgggggggggg.S.gggggggggggggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "h..............................h",
+   "h..............................h",
+   "h..............................h",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggPgggh",
+   "hg|gggggggggPgg...gggggggggggKgh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...ggggggggggTggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hggFWWFFWWFFWWFF.WFFWWFFWWFFWggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgTgggggggggggg...gggggggggggTgh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "Old Mess",
+    "target": "old_mess_in",
+    "at": [
+     16,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   15,
+   24
+  ]
+ },
+ "ab3": {
+  "title": "Academic Block 3 & Labs",
+  "source_base": {
+   "source": "B7-front",
+   "src": [
+    0,
+    4
+   ],
+   "size": [
+    28,
+    22
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffggh",
+   "hggfffffffffffDffffffffffggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgKgggggggggg...ggPgggggg|gh",
+   "hggTKKggKKggKK..KKggKKgggggh",
+   "hgggggggggggg...gggggggggggh",
+   "h..........................h",
+   "h..........................h",
+   "h..........................h",
+   "hgggPgggPgggP...PgggPgggTggh",
+   "hgggggggggggg...gggggggPgggh",
+   "hg|gggggggPgg...gggggggggKgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTgggggggggg...gggggggggTgh",
+   "hgggggggggggg...gggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "Chemistry Lab",
+    "target": "chem_lab",
+    "at": [
+     14,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   13,
+   16
+  ]
+ },
+ "workshop": {
+  "title": "Workshop Building",
+  "source_base": {
+   "source": "B7-front-right",
+   "src": [
+    4,
+    4
+   ],
+   "size": [
+    28,
+    22
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffggh",
+   "hggfffffffffffDffffffffffggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgKgggggggggg...ggPgggggg|gh",
+   "hggTK|ggK|ggg...ggK|ggK|gggh",
+   "hgggggggggggg...gggggggggggh",
+   "h...S...S...S...S...S......h",
+   "h..........................h",
+   "h..........................h",
+   "hgggggggggggg...ggggggggTggh",
+   "hgggK|ggK|ggg...ggK|ggK|gggh",
+   "hg|gggggggPgg...gggggggggKgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTgggggggggg...gggggggggTgh",
+   "hgggggggggggg...gggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [
+   {
+    "label": "Workshop Floor",
+    "target": "workshop_in",
+    "at": [
+     14,
+     5
+    ]
+   }
+  ],
+  "spawn": [
+   13,
+   16
+  ]
+ },
+ "cricket_ground": {
+  "title": "Cricket Ground",
+  "source_base": {
+   "source": "B7-back-left",
+   "src": [
+    0,
+    0
+   ],
+   "size": [
+    32,
+    28
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffWffffWffffWffffWffffWfffggh",
+   "hggTffffffffffffffffffffffffTggh",
+   "hggggccccccccccccccccccccccggggh",
+   "hggggccccccccccccccccccccccggggh",
+   "hggTgccccccccccccccccccccccgTggh",
+   "hggggccccccccccccccccccccccggggh",
+   "hgKggccccccccccccccccccccccgg|gh",
+   "hggTPccccccccccccccccccccccgTggh",
+   "hggggccccssssssssssssssccccggggh",
+   "h....ccccsssssssssssssscccc....h",
+   "h..T.ccccsssssssssssssscccc.T..h",
+   "h....ccccsssssssssssssscccc....h",
+   "hggggccccssssssssssssssccccggggh",
+   "hggTgccccccccccccccccccccccPTggh",
+   "hg|ggccccccccccccccccccccccggKgh",
+   "hggggccccccccccccccccccccccgTggh",
+   "hggTgccccccccccccccccccccccgTggh",
+   "hggggccccccccccccccccccccccggggh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hgTgggggggggggg...gggggggggggTgh",
+   "hgggggggggggggg...gggggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [],
+  "spawn": [
+   15,
+   20
+  ]
+ },
+ "nbc": {
+  "title": "NBC Food Court & BABA",
+  "source_base": {
+   "source": "mess-to-main",
+   "src": [
+    4,
+    0
+   ],
+   "size": [
+    28,
+    24
+   ],
+   "dst": [
+    0,
+    0
+   ]
+  },
+  "rows": [
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTRRRRRRRRRRRRRRRRRRRRRRTgh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hggffRRRRRWffRRRRRffWRRRRRgh",
+   "hggffffDfffffffDfffffffDffgh",
+   "hggggffDffgggffDffgggffDffgh",
+   "hgggggggggggg...gggggggggggh",
+   "hgKTggggggggg...ggPgggggg|gh",
+   "hgggPgggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "h..........................h",
+   "h..........................h",
+   "h..........................h",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggPTggh",
+   "hg|gggggggPgg...gggggggggKgh",
+   "hgggKKKKKKKKKKKKKKKKKKKKgggh",
+   "hggFWWFFWWFFWWFFWWFFWWFFWggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgggggggggggg...gggggggggggh",
+   "hgTgggggggggg...gggggggggTgh",
+   "hgggggggggggg...gggggggggggh",
+   "hhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+  ],
+  "exits": [
+   "n",
+   "s",
+   "e",
+   "w"
+  ],
+  "doors": [],
+  "spawn": [
+   13,
+   18
+  ]
+ }
+}
